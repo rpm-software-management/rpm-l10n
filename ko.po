@@ -10,16 +10,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
 "POT-Creation-Date: 2022-04-07 13:03+0300\n"
-"PO-Revision-Date: 2022-07-21 16:19+0000\n"
+"PO-Revision-Date: 2022-11-13 09:19+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/rpm/"
-"master/ko/>\n"
+"rpm-l10n/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.13\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #, c-format
 msgid "%s: %s\n"
@@ -1871,11 +1871,11 @@ msgstr "꾸러미 스크릿트립을 실행하지 않습니다"
 
 #, c-format
 msgid "do not execute %%pre scriptlet (if any)"
-msgstr "%%pre 스크립트릿을 실행하지 않습니다 (있을 경우)"
+msgstr "%%pre 구현을 실행하지 않습니다 (있을 경우)"
 
 #, c-format
 msgid "do not execute %%post scriptlet (if any)"
-msgstr "%%post 스크립트릿을 실행하지 않습니다 (있을 경우)"
+msgstr "%%post 구현을 실행하지 않습니다 (있을 경우)"
 
 #, c-format
 msgid "do not execute %%preun scriptlet (if any)"
@@ -1887,11 +1887,11 @@ msgstr "%%postun 스크립틀릿을 실행하지 않습니다 (있을 경우)"
 
 #, c-format
 msgid "do not execute %%pretrans scriptlet (if any)"
-msgstr "%%pretrans 스크립트릿을 실행하지 않습니다 (가능한 경우)"
+msgstr "%%pretrans 구현을 실행하지 않습니다 (가능한 경우)"
 
 #, c-format
 msgid "do not execute %%posttrans scriptlet (if any)"
-msgstr "%%posttrans 스크립트릿을 실행하지 않습니다 (가능한 경우)"
+msgstr "%%posttrans 구현을 실행하지 않습니다 (가능한 경우)"
 
 msgid "do not execute any scriptlet(s) triggered by this package"
 msgstr ""
@@ -2377,14 +2377,13 @@ msgid "header tags are always sorted after being loaded."
 msgstr "헤더 태그는 적재된 후에 항상 정렬됩니다."
 
 msgid "the scriptlet interpreter can use arguments from header."
-msgstr "스크립트릿 인터프리터는 헤더에서 인수를 사용 할 수 있습니다."
+msgstr "구현 인터프리터는 헤더에서 인수를 사용 할 수 있습니다."
 
 msgid "a hardlink file set may be installed without being complete."
 msgstr "하드링크 파일 구성은 완료 하지 않고 설치 될 수 있습니다."
 
 msgid "package scriptlets may access the rpm database while installing."
-msgstr ""
-"꾸러미 스크립트릿은 설치 할 때에 rpm 데이타베이스를 접근 할 수 있습니다."
+msgstr "꾸러미 구현은 설치 할 때에 rpm 데이타베이스를 접근 할 수 있습니다."
 
 msgid "internal support for lua scripts."
 msgstr "lua 스크립트를 위한 내부지원."
@@ -2396,7 +2395,7 @@ msgid "support for POSIX.1e file capabilities"
 msgstr "POSIX.1e 파일 능력을 위한 지원"
 
 msgid "package scriptlets can be expanded at install time."
-msgstr "꾸러미 스크립트릿은 설치 시간에 확장 될 수 있습니다."
+msgstr "꾸러미 구현은 설치 시간에 확장 될 수 있습니다."
 
 msgid "dependency comparison supports versions with tilde."
 msgstr "의존성 비교는 ~와 함께 지원합니다."
@@ -2769,7 +2768,7 @@ msgstr "현재 디렉토리를 복구 할 수 없습니다: %m"
 
 #, c-format
 msgid "failed to exec scriptlet interpreter %s: %s\n"
-msgstr "스크립트릿 인터프리터 실행에 실패했습니다 %s: %s\n"
+msgstr "구현 인터프리터 실행에 실패했습니다 %s: %s\n"
 
 #, c-format
 msgid "Couldn't create temporary file for %s: %s\n"
@@ -2785,15 +2784,15 @@ msgstr "Fwrite 실패하였습니다: %s"
 
 #, c-format
 msgid "%s scriptlet failed, waitpid(%d) rc %d: %s\n"
-msgstr "%s 스크립트릿에 실패했습니다, waitpid(%d) rc %d: %s\n"
+msgstr "%s 구현에 실패했습니다, waitpid(%d) rc %d: %s\n"
 
 #, c-format
 msgid "%s scriptlet failed, signal %d\n"
-msgstr "%s 스크립트릿에 실패했습니다, 신호 %d\n"
+msgstr "%s 구현에 실패했습니다, 신호 %d\n"
 
 #, c-format
 msgid "%s scriptlet failed, exit status %d\n"
-msgstr "%s 스크립트릿에 실패했습니다, 종료 상태 %d\n"
+msgstr "%s 구현에 실패했습니다, 종료 상태 %d\n"
 
 msgid "Unknown format"
 msgstr "잘못된 형식"
@@ -3104,7 +3103,7 @@ msgstr "기록에 쓰기 오류"
 
 #, c-format
 msgid "invalid syntax in lua scriptlet: %s\n"
-msgstr "lua 스크립트릿에서 잘못된 구문: %s\n"
+msgstr "lua 구현에서 잘못된 구문: %s\n"
 
 #, c-format
 msgid "invalid syntax in lua script: %s\n"
