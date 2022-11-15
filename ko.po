@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
 "POT-Creation-Date: 2022-04-07 13:03+0300\n"
-"PO-Revision-Date: 2022-11-13 09:19+0000\n"
+"PO-Revision-Date: 2022-11-16 10:19+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/ko/>\n"
@@ -866,7 +866,7 @@ msgstr "%s(을)를 열 수 없음: %s\n"
 
 #, c-format
 msgid "Unable to write package: %s\n"
-msgstr "꾸러미(package)를 작성 할 수 없음: %s\n"
+msgstr "꾸러미를 작성 할 수 없음: %s\n"
 
 #, c-format
 msgid "Wrote: %s\n"
@@ -1997,25 +1997,25 @@ msgid "rpm verify mode"
 msgstr "rpm 검증 모드"
 
 msgid "query/verify the package(s) which require a dependency"
-msgstr "의존성을 필요로 하는 꾸러미(package)에 대해 질의/검증 합니다"
+msgstr "의존성을 필요로 하는 꾸러미에 대해 질의/검증 합니다"
 
 msgid "query/verify the package(s) which obsolete a dependency"
-msgstr "의존성을 제공하는 꾸러미(packages)에 대해 질의/검증 합니다"
+msgstr "의존성을 제공하는 꾸러미에 대해 질의/검증 합니다"
 
 msgid "query/verify the package(s) which provide a dependency"
-msgstr "의존성을 제공하는 꾸러미(package)에 대해 질의/검증 합니다"
+msgstr "의존성을 제공하는 꾸러미에 대해 질의/검증 합니다"
 
 msgid "query/verify the package(s) which recommends a dependency"
-msgstr "의존성을 필요로 하는 꾸러미(packages)에 대해 질의/검증 합니다"
+msgstr "의존성을 필요로 하는 꾸러미에 대해 질의/검증 합니다"
 
 msgid "query/verify the package(s) which suggests a dependency"
-msgstr "의존성을 제공하는 꾸러미(pacakages)에 대해 질의/검증 합니다"
+msgstr "의존성을 제공하는 꾸러미에 대해 질의/검증 합니다"
 
 msgid "query/verify the package(s) which supplements a dependency"
-msgstr "의존성을 제공하는 꾸러미(packages)에 대해 질의/검증 합니다"
+msgstr "의존성을 제공하는 꾸러미에 대해 질의/검증 합니다"
 
 msgid "query/verify the package(s) which enhances a dependency"
-msgstr "의존성을 향상하는 꾸러미(packages)에 대해 질의/검증 합니다"
+msgstr "의존성을 향상하는 꾸러미에 대해 질의/검증 합니다"
 
 msgid "do not glob arguments"
 msgstr "glob 인수를 하지 않습니다"
@@ -2084,7 +2084,7 @@ msgid "don't verify files in package"
 msgstr "꾸러미(package) 안의 파일을 검사하지 않습니다"
 
 msgid "don't verify package dependencies"
-msgstr "꾸러미(package) 의존성을 검사하지 않습니다"
+msgstr "꾸러미 의존성을 검사하지 않습니다"
 
 msgid "don't execute verify script(s)"
 msgstr "확인 스크립트(s)를 실행하지 않습니다"
