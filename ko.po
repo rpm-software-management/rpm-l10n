@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
 "POT-Creation-Date: 2022-04-07 13:03+0300\n"
-"PO-Revision-Date: 2022-11-16 10:19+0000\n"
+"PO-Revision-Date: 2022-11-29 13:20+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/ko/>\n"
@@ -285,7 +285,7 @@ msgstr "%s 파일은 spec 파일이 아닌 것 같습니다.\n"
 
 #, c-format
 msgid "Building target platforms: %s\n"
-msgstr "목표대상(target) 플랫폼으로 제작 중: %s\n"
+msgstr "대상 기술환경으로 제작 중: %s\n"
 
 #, c-format
 msgid "Building for target %s\n"
