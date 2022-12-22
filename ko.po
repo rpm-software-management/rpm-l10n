@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
 "POT-Creation-Date: 2022-04-07 13:03+0300\n"
-"PO-Revision-Date: 2022-11-29 13:20+0000\n"
+"PO-Revision-Date: 2022-12-23 04:20+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/ko/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 4.15\n"
 
 #, c-format
 msgid "%s: %s\n"
@@ -1453,7 +1453,7 @@ msgstr "꾸러미 %s에서 유효 적재량( %s)를 지원하지 않습니다\n"
 
 #, c-format
 msgid "package %s was already added, skipping %s\n"
-msgstr "꾸러미 %s는 이미 추가되었으며, %s를 건너 띄기합니다\n"
+msgstr "꾸러미 %s는 이미 추가되었으며, %s를 건너 뛰기합니다\n"
 
 #, c-format
 msgid "package %s was already added, replacing with %s\n"
@@ -2279,7 +2279,7 @@ msgid "no dbpath has been set\n"
 msgstr "db경로가 설정되어 있지 않습니다\n"
 
 msgid "miFreeHeader: skipping"
-msgstr "miFreeHeader: 건너 띄기"
+msgstr "miFreeHeader: 건너 뛰기"
 
 #, c-format
 msgid "error(%d) storing record #%d into %s\n"
@@ -2566,7 +2566,7 @@ msgstr "%s을 복구합니다\n"
 
 #, c-format
 msgid "skipping %s - transfer failed\n"
-msgstr "건너띄기 %s -전송에 실패하였습니다\n"
+msgstr "건너 뛰기 %s -전송에 실패하였습니다\n"
 
 #, c-format
 msgid "package %s is not relocatable\n"
