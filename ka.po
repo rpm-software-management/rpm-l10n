@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
 "POT-Creation-Date: 2022-04-07 13:03+0300\n"
-"PO-Revision-Date: 2022-11-13 09:19+0000\n"
+"PO-Revision-Date: 2023-01-22 16:20+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/ka/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 4.15.1\n"
 
 #, c-format
 msgid "%s: %s\n"
@@ -990,7 +990,7 @@ msgstr "ხატულის (%s) გახსნის შეცდომა: 
 
 #, c-format
 msgid "Unable to read icon %s: %s\n"
-msgstr ""
+msgstr "ხატულის (%s) გახსნის შეცდომა: %s\n"
 
 #, c-format
 msgid "Unknown icon type: %s\n"
