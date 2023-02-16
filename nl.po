@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
 "POT-Creation-Date: 2022-04-07 13:03+0300\n"
-"PO-Revision-Date: 2020-03-23 08:39-0400\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
-"Language-Team: Dutch (http://www.transifex.com/rpm-team/rpm/language/nl/)\n"
+"PO-Revision-Date: 2023-02-17 16:20+0000\n"
+"Last-Translator: Richard E. van der Luit <fedoraproject@veneax.nl>\n"
+"Language-Team: Dutch <https://translate.fedoraproject.org/projects/rpm/"
+"rpm-l10n/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Zanata 4.6.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.15.2\n"
 
 #, c-format
 msgid "%s: %s\n"
@@ -786,9 +787,9 @@ msgid ""
 "%s"
 msgstr ""
 
-#, fuzzy, c-format
+#, c-format
 msgid "package %s already exists\n"
-msgstr "pakket %s is reeds geïnstalleerd"
+msgstr "pakket %s is reeds geïnstalleerd\n"
 
 #, c-format
 msgid "%s was mapped to multiple filenames"
@@ -1763,9 +1764,8 @@ msgstr ""
 msgid "<package>+"
 msgstr "<pakket>+"
 
-#, fuzzy
 msgid "do not install artifacts"
-msgstr "niet geïnstalleerd "
+msgstr "niet geïnstalleerd"
 
 msgid "do not install configuration files"
 msgstr ""
@@ -2601,9 +2601,9 @@ msgstr ""
 msgid "package %s is already installed"
 msgstr "pakket %s is reeds geïnstalleerd"
 
-#, fuzzy, c-format
+#, c-format
 msgid "package %s is not installed"
-msgstr "pakket %s is reeds geïnstalleerd"
+msgstr "pakket %s is niet geïnstalleerd"
 
 #, c-format
 msgid "path %s in package %s is not relocatable"
@@ -2907,9 +2907,8 @@ msgstr ""
 msgid "expanded string: %s\n"
 msgstr ""
 
-#, fuzzy
 msgid "unterminated string in expression"
-msgstr "{ verwacht na ? in expressie"
+msgstr "onbeëindigde string in expressie"
 
 msgid "invalid version"
 msgstr ""
@@ -2917,16 +2916,14 @@ msgstr ""
 msgid "bare words are no longer supported, please use \"...\""
 msgstr ""
 
-#, fuzzy
 msgid "parse error in expression"
-msgstr "? verwacht in expressie"
+msgstr "parse-fout in expressie"
 
 msgid "unsupported function argument type"
 msgstr ""
 
-#, fuzzy
 msgid "syntax error in expression"
-msgstr "? verwacht in expressie"
+msgstr "syntaxfout in expressie"
 
 msgid "unsupported funcion"
 msgstr ""
@@ -2937,9 +2934,8 @@ msgstr ""
 msgid "- only on numbers"
 msgstr ""
 
-#, fuzzy
 msgid "unexpected end of expression"
-msgstr "? verwacht in expressie"
+msgstr "onverwacht einde van expressie"
 
 msgid "types must match"
 msgstr ""
@@ -3012,13 +3008,11 @@ msgstr ""
 msgid "no such macro: '%s'\n"
 msgstr ""
 
-#, fuzzy
 msgid "argument expected"
-msgstr "onverwachte ]"
+msgstr "argument verwacht"
 
-#, fuzzy
 msgid "unexpected argument"
-msgstr "onverwachte ]"
+msgstr "onverwacht argument"
 
 #, c-format
 msgid "Unterminated %c: %s\n"
