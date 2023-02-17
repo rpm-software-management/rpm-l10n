@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: RPM\n"
 "Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
 "POT-Creation-Date: 2022-04-07 13:03+0300\n"
-"PO-Revision-Date: 2017-08-10 07:39+0000\n"
-"Last-Translator: pmatilai <pmatilai@laiskiainen.org>\n"
-"Language-Team: Portuguese (http://www.transifex.com/rpm-team/rpm/language/"
-"pt/)\n"
+"PO-Revision-Date: 2023-02-19 00:20+0000\n"
+"Last-Translator: Pedro Farinha <pedrofarinha@protonmail.com>\n"
+"Language-Team: Portuguese <https://translate.fedoraproject.org/projects/rpm/"
+"rpm-l10n/pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Weblate 4.15.2\n"
 
 #, c-format
 msgid "%s: %s\n"
@@ -28,23 +29,24 @@ msgstr "RPM versão %s\n"
 
 #, c-format
 msgid "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
-msgstr ""
+msgstr "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
 
 #, c-format
 msgid ""
 "This program may be freely redistributed under the terms of the GNU GPL\n"
 msgstr ""
+"Este programa pode ser distribuído livremente sob os termos do GNU GPL\n"
 
 #, c-format
 msgid "creating a pipe for --pipe failed: %m\n"
-msgstr ""
+msgstr "falha ao criar um pipe com --pipe falhou: %m\n"
 
 #, c-format
 msgid "exec failed\n"
 msgstr "o exec falhou\n"
 
 msgid "create uncompressed tar file"
-msgstr ""
+msgstr "criar um ficheiro tar não comprimido"
 
 #, c-format
 msgid "argument is not an RPM package\n"
@@ -61,6 +63,8 @@ msgstr "não consigo aceder de novo ao conteúdo: %s\n"
 #, c-format
 msgid "files over 4GB not supported by cpio, use rpm2archive instead\n"
 msgstr ""
+"ficheiros acima de 4G não são suportados pelo cpio, utilize o rpm2archive em "
+"alternativa\n"
 
 #, c-format
 msgid "buildroot already specified, ignoring %s\n"
@@ -75,12 +79,12 @@ msgstr ""
 msgid "<specfile>"
 msgstr "<fichspec>"
 
-#, c-format
+#, c-format, fuzzy
 msgid "build through %conf (%prep, then %conf) from <specfile>"
-msgstr ""
+msgstr "criar através do %build (%prep e depois compilar) do <fichspec>"
 
 msgid "build through %build (%prep, %conf, then compile) from <specfile>"
-msgstr ""
+msgstr "criar através do %build (%prep e depois compilar) do <fichspec>"
 
 msgid "check build dependencies <specfile>"
 msgstr ""
