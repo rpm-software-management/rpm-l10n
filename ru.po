@@ -12,18 +12,18 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
 "POT-Creation-Date: 2022-04-07 13:03+0300\n"
-"PO-Revision-Date: 2022-10-28 00:20+0000\n"
-"Last-Translator: Olga Smirnova <mistresssilvara@hotmail.com>\n"
+"PO-Revision-Date: 2023-03-08 16:20+0000\n"
+"Last-Translator: Коренберг Марк <socketpair@gmail.com>\n"
 "Language-Team: Russian <https://translate.fedoraproject.org/projects/rpm/"
-"master/ru/>\n"
+"rpm-l10n/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
-"%100>=11 && n%100<=14)? 2 : 3);\n"
-"X-Generator: Weblate 4.14.1\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || ("
+"n%100>=11 && n%100<=14)? 2 : 3);\n"
+"X-Generator: Weblate 4.15.2\n"
 
 #, c-format
 msgid "%s: %s\n"
@@ -338,13 +338,13 @@ msgid "verify package signature(s)"
 msgstr "проверить подпись(и) пакета"
 
 msgid "import an armored public key"
-msgstr "импортировать открытый ключ"
+msgstr "импортировать защищённый открытый ключ"
 
 msgid "don't import, but tell if it would work or not"
-msgstr ""
+msgstr "не импортировать, но сообщить будет оно работать или нет"
 
 msgid "list keys from RPM keyring"
-msgstr ""
+msgstr "перечислить ключи из связки ключей RPM"
 
 msgid "Keyring options:"
 msgstr ""
@@ -2011,7 +2011,7 @@ msgid "query/verify the package(s) which provide a dependency"
 msgstr "найти/проверить пакеты, предоставляющие сервис"
 
 msgid "query/verify the package(s) which recommends a dependency"
-msgstr ""
+msgstr "найти/проверить пакеты, рекомендующие зависимость"
 
 msgid "query/verify the package(s) which suggests a dependency"
 msgstr ""
@@ -2042,15 +2042,15 @@ msgstr ""
 
 #, c-format
 msgid "exclude %%ghost files"
-msgstr ""
+msgstr "исключить файлы %%ghost"
 
 #, c-format
 msgid "exclude %%config files"
-msgstr ""
+msgstr "исключить файлы %%config"
 
 #, c-format
 msgid "exclude %%artifact files"
-msgstr ""
+msgstr "исключить файлы %%artifact"
 
 msgid "dump basic file information"
 msgstr "показать основную информацию о файле"
@@ -2080,10 +2080,10 @@ msgid "don't verify mode of files"
 msgstr "не проверять права доступа файлов пакета"
 
 msgid "don't verify file security contexts"
-msgstr ""
+msgstr "Не проверять контексты безопасности"
 
 msgid "don't verify capabilities of files"
-msgstr ""
+msgstr "Не проверять capabilities файлов"
 
 msgid "don't verify files in package"
 msgstr "не проверять файлы пакета"
@@ -2138,7 +2138,7 @@ msgstr "(сост. нет)   "
 
 #, c-format
 msgid "(unknown %3d) "
-msgstr "(неизв. %3d)  "
+msgstr "(неизв. %3d) "
 
 msgid "package has not file owner/group lists\n"
 msgstr "пакет не содержит списков владельцев/групп-владельцев файлов\n"
