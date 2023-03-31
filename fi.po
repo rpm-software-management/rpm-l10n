@@ -11,16 +11,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
 "POT-Creation-Date: 2022-04-07 13:03+0300\n"
-"PO-Revision-Date: 2022-05-17 11:18+0000\n"
-"Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
+"PO-Revision-Date: 2023-04-01 10:20+0000\n"
+"Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/rpm/"
-"master/fi/>\n"
+"rpm-l10n/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.12.2\n"
+"X-Generator: Weblate 4.15.2\n"
 
 #, c-format
 msgid "%s: %s\n"
@@ -216,7 +216,7 @@ msgid "do not execute any stages of the build"
 msgstr "älä suorita mitään käännöksen vaiheita"
 
 msgid "do not verify build dependencies"
-msgstr "älä tarkista käännösriippuvuuksia"
+msgstr "älä tarkista koontiriippuvuuksia"
 
 msgid "generate package header(s) compatible with (legacy) rpm v3 packaging"
 msgstr ""
@@ -582,7 +582,7 @@ msgid "Bad exit status from %s (%s)\n"
 msgstr "Virheellinen poistumistila kohteesta %s (%s)\n"
 
 msgid "Failed build dependencies:\n"
-msgstr "Puuttuvia käännösriippuvuuksia:\n"
+msgstr "Epäonnistuneita koontiriippuvuuksia:\n"
 
 #, c-format
 msgid "setting %s=%s\n"
@@ -2570,7 +2570,7 @@ msgid "Verifying packages..."
 msgstr "Paketteja tarkistetaan ..."
 
 msgid "Failed dependencies:\n"
-msgstr "Puuttuvia riippuvuuksia:\n"
+msgstr "Epäonnistuneita riippuvuuksia:\n"
 
 #, c-format
 msgid "%s: not an rpm package (or package manifest): %s\n"
