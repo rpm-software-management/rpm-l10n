@@ -1,4 +1,22 @@
 find_package(Gettext REQUIRED)
+find_program(XGETTEXT xgettext REQUIRED)
+
+# Generate an up-to-date translation source .pot file from the C sources.
+# NOTE: this is not your average build-something rule, this updates the
+# rpm.pot SOURCE, which you then should commit into git.
+add_custom_target(update-pot
+	  COMMENT "Updating translation source"
+	  COMMAND ${XGETTEXT}
+			--package-name=${CMAKE_PROJECT_NAME}
+			--package-version=${CMAKE_PROJECT_VERSION}
+			--output=${CMAKE_CURRENT_SOURCE_DIR}/rpm.pot
+			--language=C
+			--no-location
+			--keyword=_ --keyword=N_
+			--files-from=${CMAKE_CURRENT_SOURCE_DIR}/POTFILES.in
+	  WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+	  SOURCES ${POT_SOURCES}
+)
 
 # Discover our translations
 file(READ LINGUAS linguas)
