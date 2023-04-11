@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
 "POT-Creation-Date: 2022-04-07 13:03+0300\n"
-"PO-Revision-Date: 2023-02-17 16:20+0000\n"
-"Last-Translator: Richard E. van der Luit <fedoraproject@veneax.nl>\n"
+"PO-Revision-Date: 2023-04-12 11:20+0000\n"
+"Last-Translator: Philip Goto <philip.goto@gmail.com>\n"
 "Language-Team: Dutch <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/nl/>\n"
 "Language: nl\n"
@@ -42,7 +42,7 @@ msgstr ""
 
 #, c-format
 msgid "exec failed\n"
-msgstr ""
+msgstr "uitvoeren mislukt\n"
 
 msgid "create uncompressed tar file"
 msgstr ""
@@ -111,7 +111,7 @@ msgid ""
 msgstr ""
 
 msgid "<source package>"
-msgstr ""
+msgstr "<bronpakket>"
 
 msgid "build through %build (%prep, %conf, then compile) from <source package>"
 msgstr ""
@@ -284,7 +284,7 @@ msgid "arguments to --root (-r) must begin with a /"
 msgstr ""
 
 msgid "initialize database"
-msgstr ""
+msgstr "database initialiseren"
 
 msgid "rebuild database inverted lists from installed package headers"
 msgstr ""
@@ -320,7 +320,7 @@ msgid "list keys from RPM keyring"
 msgstr ""
 
 msgid "Keyring options:"
-msgstr ""
+msgstr "Sleutelbosopties:"
 
 msgid "no arguments given"
 msgstr ""
@@ -439,7 +439,7 @@ msgid "no arguments given for verify"
 msgstr ""
 
 msgid "sign package(s)"
-msgstr ""
+msgstr "pakket(ten) ondertekenen"
 
 msgid "sign package(s) (identical to --addsign)"
 msgstr ""
@@ -463,25 +463,25 @@ msgid "algorithm to use for verity signatures, default sha256"
 msgstr ""
 
 msgid "<algorithm>"
-msgstr ""
+msgstr "<algoritme>"
 
 msgid "use file signing cert <cert>"
 msgstr ""
 
 msgid "<cert>"
-msgstr ""
+msgstr "<certificaat>"
 
 msgid "use file signing key <key>"
 msgstr ""
 
 msgid "<key>"
-msgstr ""
+msgstr "<sleutel>"
 
 msgid "prompt for file signing key password"
 msgstr ""
 
 msgid "Signature options:"
-msgstr ""
+msgstr "Handtekeningopties:"
 
 #, c-format
 msgid "You must set \"%%_gpg_name\" in your macro file\n"
@@ -1120,7 +1120,7 @@ msgid "No rich dependencies allowed for this type"
 msgstr ""
 
 msgid "invalid dependency"
-msgstr ""
+msgstr "ongeldige afhankelijkheid"
 
 msgid "Version required"
 msgstr ""
@@ -1440,10 +1440,10 @@ msgid "(not a string)"
 msgstr ""
 
 msgid "(invalid type)"
-msgstr ""
+msgstr "(ongeldig type)"
 
 msgid "(not base64)"
-msgstr ""
+msgstr "(niet base64)"
 
 msgid "(invalid xml type)"
 msgstr ""
@@ -1456,13 +1456,13 @@ msgid "Invalid date %u"
 msgstr ""
 
 msgid "normal"
-msgstr ""
+msgstr "normaal"
 
 msgid "replaced"
-msgstr ""
+msgstr "vervangen"
 
 msgid "not installed"
-msgstr ""
+msgstr "niet geïnstalleerd"
 
 msgid "net shared"
 msgstr ""
@@ -1471,10 +1471,10 @@ msgid "wrong color"
 msgstr ""
 
 msgid "missing"
-msgstr ""
+msgstr "ontbrekend"
 
 msgid "(unknown)"
-msgstr ""
+msgstr "(onbekend)"
 
 #, c-format
 msgid "failed to open dir %s of %s: %s\n"
@@ -1493,10 +1493,10 @@ msgid "%s %s: remove failed: %s\n"
 msgstr ""
 
 msgid "directory"
-msgstr ""
+msgstr "map"
 
 msgid "file"
-msgstr ""
+msgstr "bestand"
 
 #, c-format
 msgid "tag[%d]: BAD, tag %d type %d offset %d count %d len %d"
@@ -1552,7 +1552,7 @@ msgid "sigh pad(%zd): BAD, read %zd bytes"
 msgstr ""
 
 msgid "signature "
-msgstr ""
+msgstr "handtekening "
 
 msgid "hdr length: BAD"
 msgstr ""
@@ -1648,7 +1648,7 @@ msgid "undefine MACRO"
 msgstr ""
 
 msgid "MACRO"
-msgstr ""
+msgstr "MACRO"
 
 msgid "print macro expansion of EXPR"
 msgstr ""
@@ -1660,7 +1660,7 @@ msgid "Specify target platform"
 msgstr ""
 
 msgid "CPU-VENDOR-OS"
-msgstr ""
+msgstr "CPU-LEVERANCIER-BESTURINGSSYSTEEM"
 
 msgid "read <FILE:...> instead of default file(s)"
 msgstr ""
@@ -1672,7 +1672,7 @@ msgid "load a single macro file"
 msgstr ""
 
 msgid "<FILE>"
-msgstr ""
+msgstr "<BESTAND>"
 
 msgid "don't enable any plugins"
 msgstr ""
@@ -1702,7 +1702,7 @@ msgid "use database in DIRECTORY"
 msgstr ""
 
 msgid "DIRECTORY"
-msgstr ""
+msgstr "MAP"
 
 msgid "display known query tags"
 msgstr ""
@@ -1807,7 +1807,7 @@ msgid "install documentation"
 msgstr ""
 
 msgid "install package(s)"
-msgstr ""
+msgstr "pakket(ten) installeren"
 
 msgid "update the database, but do not modify the filesystem"
 msgstr ""
@@ -1897,7 +1897,7 @@ msgid "relocate files from path <old> to <new>"
 msgstr ""
 
 msgid "<old>=<new>"
-msgstr ""
+msgstr "<oud>=<nieuw>"
 
 msgid "ignore file conflicts between packages"
 msgstr ""
@@ -1909,13 +1909,13 @@ msgid "don't install, but tell if it would work or not"
 msgstr ""
 
 msgid "upgrade package(s)"
-msgstr ""
+msgstr "pakket(ten) upgraden"
 
 msgid "reinstall package(s)"
-msgstr ""
+msgstr "pakket(ten) herinstalleren"
 
 msgid "restore package(s)"
-msgstr ""
+msgstr "pakket(ten) herstellen"
 
 msgid "query/verify all packages"
 msgstr ""
@@ -2064,7 +2064,7 @@ msgid "unpacking of archive failed%s%s: %s\n"
 msgstr ""
 
 msgid " on file "
-msgstr ""
+msgstr " op bestand "
 
 #, c-format
 msgid "incorrect format: %s\n"
@@ -2077,7 +2077,7 @@ msgid "normal        "
 msgstr "normaal        "
 
 msgid "replaced      "
-msgstr ""
+msgstr "vervangen      "
 
 msgid "not installed "
 msgstr "niet geïnstalleerd "
@@ -2089,7 +2089,7 @@ msgid "wrong color   "
 msgstr ""
 
 msgid "(no state)    "
-msgstr ""
+msgstr "(geen toestand)    "
 
 #, c-format
 msgid "(unknown %3d) "
@@ -2196,10 +2196,10 @@ msgid "digests"
 msgstr ""
 
 msgid "SIGNATURES"
-msgstr ""
+msgstr "HANDTEKENINGEN"
 
 msgid "signatures"
-msgstr ""
+msgstr "handtekeningen"
 
 msgid "NOT OK"
 msgstr "NIET OK"
@@ -2378,7 +2378,7 @@ msgid "Unknown rich dependency op '%.*s'"
 msgstr ""
 
 msgid "Name required"
-msgstr ""
+msgstr "Naam vereist"
 
 msgid "Illegal ops in with/without"
 msgstr ""
@@ -2436,7 +2436,7 @@ msgid "%s: base64 decode success, len %li\n"
 msgstr ""
 
 msgid "Bad magic"
-msgstr ""
+msgstr "Slechte magie"
 
 msgid "Bad/unreadable  header"
 msgstr ""
@@ -2451,7 +2451,7 @@ msgid "Unknown file type"
 msgstr "Onbekend bestandstype"
 
 msgid "Missing file(s)"
-msgstr ""
+msgstr "Ontbrekend(e) bestand(en)"
 
 msgid "Digest mismatch"
 msgstr ""
@@ -2463,7 +2463,7 @@ msgid "Archive file not in header"
 msgstr ""
 
 msgid "Invalid symlink"
-msgstr ""
+msgstr "Ongeldige symlink"
 
 msgid "File from package already exists as a directory in system"
 msgstr ""
@@ -2496,16 +2496,16 @@ msgid "Cleaning up / removing...\n"
 msgstr ""
 
 msgid "Preparing..."
-msgstr ""
+msgstr "Voorbereiden…"
 
 msgid "Verifying..."
-msgstr ""
+msgstr "Verifiëren…"
 
 msgid "Preparing packages..."
-msgstr ""
+msgstr "Pakketten voorbereiden…"
 
 msgid "Verifying packages..."
-msgstr ""
+msgstr "Pakketten verifiëren…"
 
 msgid "Failed dependencies:\n"
 msgstr ""
@@ -2755,16 +2755,16 @@ msgid "Unknown format"
 msgstr ""
 
 msgid "install"
-msgstr ""
+msgstr "installeren"
 
 msgid "erase"
-msgstr ""
+msgstr "wissen"
 
 msgid "rpmdb"
-msgstr ""
+msgstr "rpmdb"
 
 msgid "restored"
-msgstr ""
+msgstr "hersteld"
 
 #, c-format
 msgid "cannot open Packages database in %s\n"
@@ -2799,7 +2799,7 @@ msgid "invalid package verify level %s\n"
 msgstr ""
 
 msgid "transaction"
-msgstr ""
+msgstr "transactie"
 
 #, c-format
 msgid "%s tag %u: invalid type %u"
@@ -2834,19 +2834,19 @@ msgstr ""
 
 #, c-format
 msgid "%s%s"
-msgstr ""
+msgstr "%s%s"
 
 msgid "signature"
-msgstr ""
+msgstr "handtekening"
 
 msgid "header"
-msgstr ""
+msgstr "header"
 
 msgid "package"
-msgstr ""
+msgstr "pakket"
 
 msgid "Header "
-msgstr ""
+msgstr "Header "
 
 msgid "Payload "
 msgstr ""
@@ -2861,10 +2861,10 @@ msgid "no digest"
 msgstr ""
 
 msgid "skipped"
-msgstr ""
+msgstr "overgeslagen"
 
 msgid "failed"
-msgstr ""
+msgstr "mislukt"
 
 msgid "no state"
 msgstr ""
@@ -2957,7 +2957,7 @@ msgstr ""
 
 #, c-format
 msgid "%3d>%*s(empty)\n"
-msgstr ""
+msgstr "%3d>%*s(leeg)\n"
 
 msgid ""
 "Too many levels of recursion in macro expansion. It is likely caused by "
@@ -3039,7 +3039,7 @@ msgid "File %s is smaller than %u bytes\n"
 msgstr ""
 
 msgid "[none]"
-msgstr ""
+msgstr "[geen]"
 
 msgid "(no error)"
 msgstr "(geen fout)"
@@ -3097,7 +3097,7 @@ msgid "V%d %s/%s %s, key ID %s"
 msgstr ""
 
 msgid "(none)"
-msgstr ""
+msgstr "(geen)"
 
 #, c-format
 msgid "exiting on signal %d from pid %d\n"
