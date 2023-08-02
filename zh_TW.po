@@ -15,16 +15,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
 "POT-Creation-Date: 2022-04-07 13:03+0300\n"
-"PO-Revision-Date: 2020-08-29 08:29+0000\n"
-"Last-Translator: Yi-Jyun Pan <pan93412@gmail.com>\n"
+"PO-Revision-Date: 2023-08-03 17:21+0000\n"
+"Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.fedoraproject.org/"
-"projects/rpm/master/zh_TW/>\n"
+"projects/rpm/rpm-l10n/zh_TW/>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.2.1\n"
+"X-Generator: Weblate 4.18.2\n"
 
 #, c-format
 msgid "%s: %s\n"
@@ -52,7 +52,7 @@ msgid "exec failed\n"
 msgstr "執行失敗\n"
 
 msgid "create uncompressed tar file"
-msgstr ""
+msgstr "製作未壓縮 tar 檔"
 
 #, c-format
 msgid "argument is not an RPM package\n"
@@ -76,20 +76,20 @@ msgstr "buildroot 已被指定，忽略 %s\n"
 
 #, c-format
 msgid "build through %prep (unpack sources and apply patches) from <specfile>"
-msgstr "從 <specfile> 透過 %prep (解包源碼並套用修補程式) 來組建"
+msgstr "從 <specfile> 透過 %prep (解包源碼並套用修補程式) 來建置"
 
 msgid "<specfile>"
 msgstr "<specfile>"
 
 #, c-format
 msgid "build through %conf (%prep, then %conf) from <specfile>"
-msgstr ""
+msgstr "從 <specfile> 透過 %conf (%prep，接著 %conf) 建置"
 
 msgid "build through %build (%prep, %conf, then compile) from <specfile>"
-msgstr ""
+msgstr "從 <specfile> 透過 %build (%prep、%conf，接著編譯) 建置"
 
 msgid "check build dependencies <specfile>"
-msgstr ""
+msgstr "檢查建置依賴關係 <specfile>"
 
 msgid ""
 "build through %install (%prep, %conf, %build, then install) from <specfile>"
@@ -100,22 +100,22 @@ msgid "verify %files section from <specfile>"
 msgstr "從 <specfile> 核驗 %files 區段"
 
 msgid "build source and binary packages from <specfile>"
-msgstr "根據 <specfile> 組建源碼軟體包與二進位軟體包"
+msgstr "根據 <specfile> 建置源碼軟體包與二進位軟體包"
 
 msgid "build binary package only from <specfile>"
-msgstr "只根據 <specfile> 組建二進位軟體包"
+msgstr "只根據 <specfile> 建置二進位軟體包"
 
 msgid "build source package only from <specfile>"
-msgstr "只根據 <specfile> 組建源碼軟體包"
+msgstr "只根據 <specfile> 建置源碼軟體包"
 
 msgid ""
 "build source package only from <specfile> - calculate dynamic build requires"
-msgstr "只從 <specfile> 組建來源軟體包 - 計算動態組建需求"
+msgstr "只從 <specfile> 建置源碼軟體包 - 計算動態建置需求"
 
 #, c-format
 msgid ""
 "build through %prep (unpack sources and apply patches) from <source package>"
-msgstr "從 <source package> 透過 %prep 組建（解開來源和套用補丁）"
+msgstr "從 <source package> 透過 %prep 建置（解開源碼和套用補丁）"
 
 msgid "<source package>"
 msgstr "<source package>"
@@ -136,22 +136,22 @@ msgid "verify %files section from <source package>"
 msgstr "從 <source package> 核驗 %files 區段"
 
 msgid "build source and binary packages from <source package>"
-msgstr "從 <source package> 組建來源與二進位軟體包"
+msgstr "從 <source package> 建置源碼與二進位軟體包"
 
 msgid "build binary package only from <source package>"
-msgstr "只從 <source package> 組建二進位軟體包"
+msgstr "只從 <source package> 建置二進位軟體包"
 
 msgid "build source package only from <source package>"
-msgstr "只從 <source package> 組建來源軟體包"
+msgstr "只從 <source package> 建置源碼軟體包"
 
 msgid ""
 "build source package only from <source package> - calculate dynamic build "
 "requires"
-msgstr "只從 <source package> 組建來源軟體包 - 計算動態組建需求"
+msgstr "只從 <source package> 建置源碼軟體包 - 計算動態建置需求"
 
 #, c-format
 msgid "build through %prep (unpack sources and apply patches) from <tarball>"
-msgstr "從 <tarball> 透過 %prep (解包源碼和套用修補檔) 來組建"
+msgstr "從 <tarball> 透過 %prep (解包源碼和套用修補檔) 來建置"
 
 msgid "<tarball>"
 msgstr "<tarball>"
@@ -171,33 +171,33 @@ msgid "verify %files section from <tarball>"
 msgstr "從 <tarball> 核驗 %files 區段"
 
 msgid "build source and binary packages from <tarball>"
-msgstr "從 <tarball> 中組建源碼軟體包與二進位軟體包"
+msgstr "從 <tarball> 中建置源碼軟體包與二進位軟體包"
 
 msgid "build binary package only from <tarball>"
-msgstr "從 <tarball> 中只組建二進位軟體包"
+msgstr "從 <tarball> 中只建置二進位軟體包"
 
 msgid "build source package only from <tarball>"
-msgstr "從 <tarball> 中只組建源碼軟體包"
+msgstr "從 <tarball> 中只建置源碼軟體包"
 
 msgid ""
 "build source package only from <tarball> - calculate dynamic build requires"
-msgstr "只從 <tarball> 組建來源軟體包 - 計算動態組建需求"
+msgstr "只從 <tarball> 建置源碼軟體包 - 計算動態建置需求"
 
 msgid "build binary package from <source package>"
-msgstr "從 <source package> 中組建二進位軟體包"
+msgstr "從 <source package> 中建置二進位軟體包"
 
 msgid ""
 "build through %install (%prep, %build, then install) from <source package>"
-msgstr "從 <source package> 透過 %install (%prep，%build，然後安裝) 來組建"
+msgstr "從 <source package> 透過 %install (%prep，%build，然後安裝) 來建置"
 
 msgid "override build root"
-msgstr "強制覆寫組建根目錄"
+msgstr "強制覆寫建置根目錄"
 
 msgid "run build in current directory"
-msgstr "在目前位置上執行組建"
+msgstr "在目前位置上執行建置"
 
 msgid "remove build tree when done"
-msgstr "完成後移除組建樹"
+msgstr "完成後移除建置樹"
 
 msgid "ignore ExcludeArch: directives from spec file"
 msgstr "忽略 ExcludeArch：根據規格檔的指示"
@@ -206,25 +206,25 @@ msgid "debug file state machine"
 msgstr "除錯檔案狀態機器"
 
 msgid "do not execute any stages of the build"
-msgstr "不執行組建程序裡的任何步驟"
+msgstr "不執行建置程序裡的任何步驟"
 
 msgid "do not verify build dependencies"
-msgstr "不核驗組建依賴關係"
+msgstr "不核驗建置依賴關係"
 
 msgid "generate package header(s) compatible with (legacy) rpm v3 packaging"
 msgstr "生成相容於 (舊的) rpm v3 軟體包的軟體包標頭"
 
 #, c-format
 msgid "do not execute %clean stage of the build"
-msgstr "不在組建階段執行 %clean 動作"
+msgstr "不在建置階段執行 %clean 動作"
 
 #, c-format
 msgid "do not execute %prep stage of the build"
-msgstr "不在組建階段執行 %prep 動作"
+msgstr "不在建置階段執行 %prep 動作"
 
 #, c-format
 msgid "do not execute %check stage of the build"
-msgstr "不在組建階段執行 %check 動作"
+msgstr "不在建置階段執行 %check 動作"
 
 msgid "do not accept i18N msgstr's from specfile"
 msgstr "不接受來自規格檔的 i18N msgstr"
@@ -242,7 +242,7 @@ msgid "override target platform"
 msgstr "無視目標平臺"
 
 msgid "Build options with [ <specfile> | <tarball> | <source package> ]:"
-msgstr "組建選項中使用 [ <specfile> | <tarball> | <source package> ]："
+msgstr "建置選項中使用 [ <specfile> | <tarball> | <source package> ]："
 
 msgid "Common options for all rpm modes and executables:"
 msgstr "用於所有 rpm 模式和可執行檔案的共同選項："
@@ -281,11 +281,11 @@ msgstr "%s 似乎不是規格檔。\n"
 
 #, c-format
 msgid "Building target platforms: %s\n"
-msgstr "組建目標平台：%s\n"
+msgstr "建置目標平台：%s\n"
 
 #, c-format
 msgid "Building for target %s\n"
-msgstr "組建目標 %s\n"
+msgstr "建置目標 %s\n"
 
 msgid "arguments to --root (-r) must begin with a /"
 msgstr "--root (-r) 的引數必須以「/」開頭"
@@ -418,7 +418,7 @@ msgstr "--justdb 只能在軟體包安裝和抹除時指定"
 msgid ""
 "script disabling options may only be specified during package installation "
 "and erasure"
-msgstr "與指令小稿停用有關的選項只能在軟體包安裝和抹除時指定"
+msgstr "與小令稿停用有關的選項只能在軟體包安裝和抹除時指定"
 
 msgid ""
 "trigger disabling options may only be specified during package installation "
@@ -558,7 +558,7 @@ msgid "Bad exit status from %s (%s)\n"
 msgstr "來自 %s 不良的離開狀態 (%s)\n"
 
 msgid "Failed build dependencies:\n"
-msgstr "依賴關係組建失敗：\n"
+msgstr "依賴關係建置失敗：\n"
 
 #, c-format
 msgid "setting %s=%s\n"
@@ -588,7 +588,7 @@ msgstr "在 %s(%s 中有遺漏的「)」\n"
 
 #, c-format
 msgid "Invalid %s token: %s\n"
-msgstr "無效的 %s 符記：%s\n"
+msgstr "無效的 %s 代符：%s\n"
 
 #, c-format
 msgid "Missing %s in %s(%s)\n"
@@ -1004,7 +1004,7 @@ msgstr "不明的圖示類型：%s\n"
 
 #, c-format
 msgid "line %d: Tag takes single token only: %s\n"
-msgstr "列 %d：標籤只需單一符記：%s\n"
+msgstr "列 %d：標籤只需單一代符：%s\n"
 
 #, c-format
 msgid "line %d: %s in: %s\n"
@@ -1120,7 +1120,7 @@ msgid "line %d: second %%prep\n"
 msgstr "列 %d：第二個 %%prep\n"
 
 msgid "Dependency tokens must begin with alpha-numeric, '_' or '/'"
-msgstr "依賴關係符記必須以字母或數字、'_' 或 '/' 為開頭"
+msgstr "依賴關係代符必須以字母或數字、'_' 或 '/' 為開頭"
 
 msgid "Versioned file name not permitted"
 msgstr "包含版本的檔案名稱不被允許"
@@ -1167,11 +1167,11 @@ msgstr "列 %d：解析 %s 時發生錯誤：%s\n"
 
 #, c-format
 msgid "line %d: internal script must end with '>': %s\n"
-msgstr "列 %d：內部指令小稿必須以「>」結尾：%s\n"
+msgstr "列 %d：內部小令稿必須以「>」結尾：%s\n"
 
 #, c-format
 msgid "line %d: script program must begin with '/': %s\n"
-msgstr "列 %d：指令小稿程式必須以「/」開頭：%s\n"
+msgstr "列 %d：小令稿程式必須以「/」開頭：%s\n"
 
 #, c-format
 msgid "line %d: Priorities are allowed only for file triggers : %s\n"
@@ -1183,7 +1183,7 @@ msgstr "列 %d：第二個 %s\n"
 
 #, c-format
 msgid "line %d: unsupported internal script: %s\n"
-msgstr "列 %d：不支援的內部指令小稿：%s\n"
+msgstr "列 %d：不支援的內部小令稿：%s\n"
 
 #, c-format
 msgid "line %d: file trigger condition must begin with '/': %s"
@@ -1195,7 +1195,7 @@ msgstr "第 %d 列：「翻譯員」參數不允許在觸發器內：%s\n"
 
 #, c-format
 msgid "extra tokens at the end of %s directive in line %d:  %s\n"
-msgstr "%s 命令（在第 %d 列）的結尾有多餘的符記：%s\n"
+msgstr "%s 命令（在第 %d 列）的結尾有多餘的代符：%s\n"
 
 #, c-format
 msgid "Macro expanded in comment on line %d: %s\n"
@@ -1254,7 +1254,7 @@ msgid "line %d doesn't belong to any section: %s\n"
 msgstr "第 %d 行並不屬於任何區段：%s\n"
 
 msgid "No compatible architectures found for build\n"
-msgstr "找不到可供組建的相容架構\n"
+msgstr "找不到可供建置的相容架構\n"
 
 #, c-format
 msgid "Package has no %%description: %s\n"
@@ -1402,7 +1402,7 @@ msgid "Detected outdated index databases\n"
 msgstr "偵測到過時的索引資料庫\n"
 
 msgid "Rebuilding outdated index databases\n"
-msgstr "正在重新組建過時的索引資料庫\n"
+msgstr "正在重新建置過時的索引資料庫\n"
 
 #, c-format
 msgid "rpmidx: Version mismatch. Expected version: %u. Found version: %u\n"
@@ -1845,50 +1845,50 @@ msgid "do not reorder package installation to satisfy dependencies"
 msgstr "不重新排列軟體包安裝順序以滿足依賴關係"
 
 msgid "do not execute package scriptlet(s)"
-msgstr "不執行軟體包指令小稿片段"
+msgstr "不執行軟體包小令稿片段"
 
 #, c-format
 msgid "do not execute %%pre scriptlet (if any)"
-msgstr "不執行 %%pre 指令小稿片段 (如果有)"
+msgstr "不執行 %%pre 小令稿片段 (如果有)"
 
 #, c-format
 msgid "do not execute %%post scriptlet (if any)"
-msgstr "不執行 %%post 指令小稿片段 (如果有)"
+msgstr "不執行 %%post 小令稿片段 (如果有)"
 
 #, c-format
 msgid "do not execute %%preun scriptlet (if any)"
-msgstr "不執行 %%preun 指令小稿片段 (如果有)"
+msgstr "不執行 %%preun 小令稿片段 (如果有)"
 
 #, c-format
 msgid "do not execute %%postun scriptlet (if any)"
-msgstr "不執行%%postun 指令小稿片段 (如果有)"
+msgstr "不執行%%postun 小令稿片段 (如果有)"
 
 #, c-format
 msgid "do not execute %%pretrans scriptlet (if any)"
-msgstr "永不執行 %%pretrans 指令小稿"
+msgstr "永不執行 %%pretrans 小令稿"
 
 #, c-format
 msgid "do not execute %%posttrans scriptlet (if any)"
-msgstr "永不執行 %%posttrans 指令小稿"
+msgstr "永不執行 %%posttrans 小令稿"
 
 msgid "do not execute any scriptlet(s) triggered by this package"
-msgstr "不執行任何此軟體包觸發的指令小稿片段"
+msgstr "不執行任何此軟體包觸發的小令稿片段"
 
 #, c-format
 msgid "do not execute any %%triggerprein scriptlet(s)"
-msgstr "不執行任何 %%triggerprein 指令小稿片段"
+msgstr "不執行任何 %%triggerprein 小令稿片段"
 
 #, c-format
 msgid "do not execute any %%triggerin scriptlet(s)"
-msgstr "不執行任何 %%triggerin 指令小稿片段"
+msgstr "不執行任何 %%triggerin 小令稿片段"
 
 #, c-format
 msgid "do not execute any %%triggerun scriptlet(s)"
-msgstr "不執行任何 %%triggerun 指令小稿片段"
+msgstr "不執行任何 %%triggerun 小令稿片段"
 
 #, c-format
 msgid "do not execute any %%triggerpostun scriptlet(s)"
-msgstr "不執行任何 %%triggerpostun 指令小稿片段"
+msgstr "不執行任何 %%triggerpostun 小令稿片段"
 
 msgid ""
 "upgrade to an old version of the package (--force on upgrades does this "
@@ -2058,7 +2058,7 @@ msgid "don't verify package dependencies"
 msgstr "不核驗軟體包的依賴關係"
 
 msgid "don't execute verify script(s)"
-msgstr "不執行核驗指令小稿"
+msgstr "不執行核驗小令稿"
 
 #, c-format
 msgid "Missing rpmlib features for %s:\n"
@@ -2346,16 +2346,16 @@ msgid "header tags are always sorted after being loaded."
 msgstr "表頭標籤總在載入之後排序。"
 
 msgid "the scriptlet interpreter can use arguments from header."
-msgstr "指令小稿片段解譯器可以使用來自表頭的引數。"
+msgstr "小令稿片段解譯器可以使用來自表頭的引數。"
 
 msgid "a hardlink file set may be installed without being complete."
 msgstr "硬鏈結檔案組也許沒有被完整安裝。"
 
 msgid "package scriptlets may access the rpm database while installing."
-msgstr "軟體包指令小稿片段在安裝過程中可以存取 rpm 資料庫。"
+msgstr "軟體包小令稿片段在安裝過程中可以存取 rpm 資料庫。"
 
 msgid "internal support for lua scripts."
-msgstr "lua 指令小稿的內部支援。"
+msgstr "lua 小令稿的內部支援。"
 
 msgid "file digest algorithm is per package configurable"
 msgstr "每個軟體包皆可設定檔案摘要算法"
@@ -2364,7 +2364,7 @@ msgid "support for POSIX.1e file capabilities"
 msgstr "支援 POSIX.1e 檔案功能"
 
 msgid "package scriptlets can be expanded at install time."
-msgstr "軟體包指令小稿可以在安裝期間展開。"
+msgstr "軟體包小令稿可以在安裝期間展開。"
 
 msgid "dependency comparison supports versions with tilde."
 msgstr "依賴關係比較支援包含代字號的版本。"
@@ -2379,7 +2379,7 @@ msgid "support for rich dependencies."
 msgstr "支援豐富依賴關係。"
 
 msgid "support for dynamic buildrequires."
-msgstr "支援動態的組建需求。"
+msgstr "支援動態的建置需求。"
 
 msgid "package payload can be compressed using zstd."
 msgstr "軟體包酬載可以使用 zstd 壓縮。"
@@ -2496,7 +2496,7 @@ msgstr "清單遞歸的最大級別超出：%s\n"
 
 #, c-format
 msgid "%s: not an rpm package (or package manifest)\n"
-msgstr "%s：非 RPM 軟體包（或軟體包清單）\n"
+msgstr "%s：非 RPM 軟體包（或軟體包 manifest）\n"
 
 #, c-format
 msgid "Updating / installing...\n"
@@ -2736,7 +2736,7 @@ msgstr "無法恢復目前的目錄：%m"
 
 #, c-format
 msgid "failed to exec scriptlet interpreter %s: %s\n"
-msgstr "無法執行指令小稿的 %s 直譯器：%s\n"
+msgstr "無法執行小令稿的 %s 直譯器：%s\n"
 
 #, c-format
 msgid "Couldn't create temporary file for %s: %s\n"
@@ -2752,15 +2752,15 @@ msgstr "Fwrite 失敗：%s"
 
 #, c-format
 msgid "%s scriptlet failed, waitpid(%d) rc %d: %s\n"
-msgstr "%s 指令小稿 失敗，waitpid(%d) rc %d: %s\n"
+msgstr "%s 小令稿 失敗，waitpid(%d) rc %d: %s\n"
 
 #, c-format
 msgid "%s scriptlet failed, signal %d\n"
-msgstr "%s 指令小稿 失敗，訊號 %d\n"
+msgstr "%s 小令稿 失敗，訊號 %d\n"
 
 #, c-format
 msgid "%s scriptlet failed, exit status %d\n"
-msgstr "%s 指令小稿 失敗，離開狀態碼 %d\n"
+msgstr "%s 小令稿 失敗，離開狀態碼 %d\n"
 
 msgid "Unknown format"
 msgstr "未知格式"
@@ -3069,15 +3069,15 @@ msgstr "寫入至紀錄檔時發生錯誤"
 
 #, c-format
 msgid "invalid syntax in lua scriptlet: %s\n"
-msgstr "Lua 指令小稿 包含無效的語法：%s\n"
+msgstr "Lua 小令稿 包含無效的語法：%s\n"
 
 #, c-format
 msgid "invalid syntax in lua script: %s\n"
-msgstr "Lua 指令小稿包含無效的語法：%s\n"
+msgstr "Lua 小令稿包含無效的語法：%s\n"
 
 #, c-format
 msgid "lua script failed: %s\n"
-msgstr "lua 指令小稿失敗：%s\n"
+msgstr "lua 小令稿失敗：%s\n"
 
 #, c-format
 msgid "result print failed: %s\n"
