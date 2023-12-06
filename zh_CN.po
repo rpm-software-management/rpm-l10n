@@ -32,7 +32,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
 "POT-Creation-Date: 2022-04-07 13:03+0300\n"
-"PO-Revision-Date: 2023-12-04 13:44+0000\n"
+"PO-Revision-Date: 2023-12-06 06:47+0000\n"
 "Last-Translator: Jingge Chen <mariocanfly@hotmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/rpm/rpm-l10n/zh_CN/>\n"
@@ -545,7 +545,7 @@ msgstr "使用这种格式打印信息"
 msgid "Spec options:"
 msgstr "Spec 选项："
 
-#, c-format, fuzzy
+#, c-format
 msgid "RPM version %s macro shell\n"
 msgstr "RPM 版本 %s 宏 shell\n"
 
@@ -1181,7 +1181,7 @@ msgstr "列 %d：触发器必须包含有 --：%s\n"
 
 #, c-format
 msgid "line %d: missing trigger condition: %s\n"
-msgstr ""
+msgstr "行 %d：缺少触发器条件：%s\n"
 
 #, c-format
 msgid "line %d: Error parsing %s: %s\n"
@@ -1209,7 +1209,7 @@ msgstr "行 %d：不支持的内部脚本：%s\n"
 
 #, c-format
 msgid "line %d: file trigger condition must begin with '/': %s"
-msgstr ""
+msgstr "行 %d：文件触发器条件必须以 '/' 开头：%s"
 
 #, c-format
 msgid "line %d: interpreter arguments not allowed in triggers: %s\n"
@@ -1217,7 +1217,7 @@ msgstr "行 %d：触发器中不允许使用解释器参数：%s\n"
 
 #, c-format
 msgid "extra tokens at the end of %s directive in line %d:  %s\n"
-msgstr ""
+msgstr "%s 命令在第 %d 行有多余的标志：%s\n"
 
 #, c-format
 msgid "Macro expanded in comment on line %d: %s\n"
@@ -1241,15 +1241,15 @@ msgstr "行 %d：宏未闭合，或换行文本出错\n"
 
 #, c-format
 msgid "%s: line %d: %s with no %%if\n"
-msgstr ""
+msgstr "%s: 行 %d：%s 没有 %%if\n"
 
 #, c-format
 msgid "%s: line %d: %s after %s\n"
-msgstr ""
+msgstr "%s: 行 %d: %s 在 %s 之后\n"
 
 #, c-format
 msgid "%s:%d: bad %s condition: %s\n"
-msgstr ""
+msgstr "%s:%d: 不正确的 %s 条件：%s\n"
 
 #, c-format
 msgid "%s:%d: malformed %%include statement\n"
@@ -1265,15 +1265,15 @@ msgstr "软件包 %s：无效的 %s 编码于 %s：%s - %s\n"
 
 #, c-format
 msgid "line %d: %%end doesn't take any arguments: %s\n"
-msgstr ""
+msgstr "行 %d: %%end 没有任何参数：%s\n"
 
 #, c-format
 msgid "line %d: %%end not expected here, no section to close: %s\n"
-msgstr ""
+msgstr "行 %d: %%end 不应该在这，没有需要关闭的段：%s\n"
 
 #, c-format
 msgid "line %d doesn't belong to any section: %s\n"
-msgstr ""
+msgstr "第%d行不属于任何段：%s\n"
 
 msgid "No compatible architectures found for build\n"
 msgstr "没有找到可供构建的兼容构架\n"
@@ -1313,7 +1313,7 @@ msgstr "确定策略名称失败：%s\n"
 msgid ""
 "'%s' type given with other types in %%semodule %s. Compacting types to "
 "'%s'.\n"
-msgstr ""
+msgstr "%s 类型于 %%semodule %s 中与其他类型一同给定。压缩类型为 %s。\n"
 
 #, c-format
 msgid "Error parsing %s: %s\n"
@@ -1321,7 +1321,7 @@ msgstr "解析 %s 发生错误：%s\n"
 
 #, c-format
 msgid "Expecting %%semodule tag: %s\n"
-msgstr ""
+msgstr "预期的 %%semodule 标签：%s\n"
 
 #, c-format
 msgid "Missing module path in line: %s\n"
@@ -1341,7 +1341,7 @@ msgstr "忽略无效的正则表达式 %s\n"
 
 #, c-format
 msgid "%s: mime and magic supplied, only mime will be used\n"
-msgstr ""
+msgstr "%s：同时提供 mime 和 magic，但只有 mine 会被使用\n"
 
 #, c-format
 msgid "Couldn't create pipe for %s: %m\n"
@@ -1383,7 +1383,7 @@ msgstr "文件 \"%s\" 辨识失败：模式 %06o %s\n"
 
 #, c-format
 msgid "Recognition of file mtype \"%s\" failed: mode %06o %s\n"
-msgstr ""
+msgstr "文件 mtype \"%s\" 辨识失败：模式 %06o %s\n"
 
 #, c-format
 msgid "Finding  %s: %s\n"
@@ -1394,15 +1394,15 @@ msgid "Failed to find %s:\n"
 msgstr "查找 %s 失败：\n"
 
 msgid "Deprecated external dependency generator is used!\n"
-msgstr ""
+msgstr "强烈不推荐使用外部的依赖关系生成器！\n"
 
 #, c-format
 msgid "line %d: %s: package %s does not exist\n"
-msgstr ""
+msgstr "第%d行: %s: 包 %s 不存在\n"
 
 #, c-format
 msgid "line %d: %s: package %s already exists\n"
-msgstr ""
+msgstr "第%d行: %s: 包 %s 已存在\n"
 
 #, c-format
 msgid "query of specfile %s failed, can't parse\n"
@@ -1410,36 +1410,36 @@ msgstr "查询 spec 文件 %s 失败，无法解析\n"
 
 #, c-format
 msgid "invalid %%_db_backend: %s\n"
-msgstr ""
+msgstr "%% _db_backend 无效：%s\n"
 
 #, c-format
 msgid "Converting database from %s to %s backend\n"
-msgstr ""
+msgstr "将资料库从 %s 转换至 %s 后端\n"
 
-#, c-format
+#, c-format, fuzzy
 msgid "Found %s %s database while attempting %s backend: using %s backend.\n"
-msgstr ""
+msgstr "尝试 %3$s 后端时发现 %1$s %2$s 数据库：使用 %4$s 后端。\n"
 
 msgid "Detected outdated index databases\n"
-msgstr ""
+msgstr "发现过时的索引数据库\n"
 
 msgid "Rebuilding outdated index databases\n"
-msgstr ""
+msgstr "正在重建过时的索引数据库\n"
 
 #, c-format
 msgid "rpmidx: Version mismatch. Expected version: %u. Found version: %u\n"
-msgstr ""
+msgstr "rpmidx：版本不符。预期版本：%u。找到版本：%u\n"
 
 #, c-format
 msgid "rpmpkg: Version mismatch. Expected version: %u. Found version: %u\n"
-msgstr ""
+msgstr "rpmpkg：版本不符。预期版本：%u。找到版本：%u\n"
 
 msgid "rpmpkg: detected non-zero blob, trying auto repair\n"
-msgstr ""
+msgstr "rpmpkg：检测到非 0 的 blob，尝试自动修复\n"
 
 #, c-format
 msgid "rpmxdb: Version mismatch. Expected version: %u. Found version: %u\n"
-msgstr ""
+msgstr "rpmxdb：版本不符。预期版本：%u。找到版本：%u\n"
 
 #, c-format
 msgid "Unable to open sqlite database %s: %s\n"
@@ -1451,7 +1451,7 @@ msgstr "%s 是一个 Delta RPM 并且无法直接被安装。\n"
 
 #, c-format
 msgid "Unsupported payload (%s) in package %s\n"
-msgstr ""
+msgstr "不支持的有效载荷 %s 于软件包 %s 中\n"
 
 #, c-format
 msgid "package %s was already added, skipping %s\n"
@@ -1509,15 +1509,15 @@ msgstr "(未知)"
 
 #, c-format
 msgid "failed to open dir %s of %s: %s\n"
-msgstr ""
+msgstr "打开目录 %s （来自%s）失败：%s\n"
 
 #, c-format
 msgid "%s%s saved as %s%s\n"
-msgstr ""
+msgstr "%s%s 另存为 %s%s\n"
 
 #, c-format
 msgid "%s%s created as %s%s\n"
-msgstr ""
+msgstr "%s%s 创建为 %s%s\n"
 
 #, c-format
 msgid "%s %s: remove failed: %s\n"
@@ -1531,13 +1531,13 @@ msgstr "文件"
 
 #, c-format
 msgid "tag[%d]: BAD, tag %d type %d offset %d count %d len %d"
-msgstr ""
+msgstr "标签[%d]: 错误, 标签%d 类型%d 偏移%d 数量%d 长度%d"
 
 msgid "hdr load: BAD"
 msgstr "头部载入：不当"
 
 msgid "region: no tags"
-msgstr ""
+msgstr "区域：没有标签"
 
 #, c-format
 msgid "region tag: BAD, tag %d type %d offset %d count %d"
@@ -1553,19 +1553,19 @@ msgstr "区域结尾：不当，标记 %d 类型 %d 偏移 %d 计数 %d"
 
 #, c-format
 msgid "region %d size: BAD, ril %d il %d rdl %d dl %d"
-msgstr ""
+msgstr "区域%d 大小: 不当, ril %d il %d rdl %d dl %d"
 
 #, c-format
 msgid "region %d: tag number mismatch il %d ril %d dl %d rdl %d\n"
-msgstr ""
+msgstr "区域 %d：标签号码不符 il %d ril %d dl %d rdl %d\n"
 
 #, c-format
 msgid "hdr tags: BAD, no. of tags(%<PRIu32>) out of range"
-msgstr ""
+msgstr "头部标签：不当，标签(%<PRIu32>)的编号超出范围"
 
 #, c-format
 msgid "hdr data: BAD, no. of bytes(%<PRIu32>) out of range"
-msgstr ""
+msgstr "头部数据：不当，字节(%<PRIu32>)的编号超出范围"
 
 #, c-format
 msgid "hdr size(%d): BAD, read returned %d"
@@ -1586,7 +1586,7 @@ msgid "signature "
 msgstr "签名 "
 
 msgid "hdr length: BAD"
-msgstr ""
+msgstr "头部长度：不当"
 
 #, c-format
 msgid "blob size(%d): BAD, 8 + 16 * il(%d) + dl(%d)"
@@ -1597,11 +1597,11 @@ msgstr "无效的字段宽度"
 
 #, c-format
 msgid "missing { after %%"
-msgstr ""
+msgstr "在 %% 之后缺少 {"
 
 #, c-format
 msgid "missing } after %%{"
-msgstr ""
+msgstr "在 %%{ 之后缺少 }"
 
 msgid "empty tag format"
 msgstr "空白标签格式"
@@ -1623,22 +1623,22 @@ msgid "unexpected }"
 msgstr "未预期的 }"
 
 msgid "escaped char expected after \\"
-msgstr ""
+msgstr "\\ 之后应为转义字符"
 
 msgid "? expected in expression"
 msgstr "? 预期于表达式中"
 
 msgid "{ expected after ? in expression"
-msgstr ""
+msgstr "{ 应在表达式中的 ? 之后"
 
 msgid "} expected in expression"
 msgstr "} 预期在表达式中"
 
 msgid ": expected following ? subexpression"
-msgstr ""
+msgstr "：应跟随 ? 子表达式"
 
 msgid "{ expected after : in expression"
-msgstr ""
+msgstr "{ 应在表达式的: 之后"
 
 msgid "| expected at end of expression"
 msgstr "| 预期于表达式结尾"
@@ -1651,15 +1651,15 @@ msgid "RPM v3 packages are deprecated: %s\n"
 msgstr "RPM v3 软件包已被弃用：%s\n"
 
 msgid "Error writing to stdout"
-msgstr ""
+msgstr "写入 stdout 出错"
 
 #, c-format
 msgid "failed to load macro file %s\n"
-msgstr ""
+msgstr "加载宏文件 %s 失败\n"
 
 #, c-format
 msgid "arguments to --dbpath must begin with '/'\n"
-msgstr ""
+msgstr "传入 --dbpath 的参数开头必须是 '/'\n"
 
 #, c-format
 msgid ""
@@ -1688,10 +1688,11 @@ msgid "'EXPR'"
 msgstr "“EXPR”"
 
 msgid "Specify target platform"
-msgstr ""
+msgstr "指定目标平台"
 
+#, fuzzy
 msgid "CPU-VENDOR-OS"
-msgstr ""
+msgstr "CPU-VENDOR-OS"
 
 msgid "read <FILE:...> instead of default file(s)"
 msgstr "从文件 <FILE:...> 读取宏，不使用默认文件"
@@ -1700,10 +1701,10 @@ msgid "<FILE:...>"
 msgstr "<FILE:…>"
 
 msgid "load a single macro file"
-msgstr ""
+msgstr "载入单一宏文件"
 
 msgid "<FILE>"
-msgstr ""
+msgstr "<FILE>"
 
 msgid "don't enable any plugins"
 msgstr "不要启用任何插件"
@@ -1757,7 +1758,7 @@ msgid "debug rpmio I/O"
 msgstr "debug rpmio I/O"
 
 msgid "disable user namespace support"
-msgstr ""
+msgstr "停用用户命名空间支持"
 
 #, c-format
 msgid "%s: option table misconfigured (%d)\n"
@@ -1834,7 +1835,7 @@ msgid "don't check disk space before installing"
 msgstr "在安装前不检查磁盘空间"
 
 msgid "short hand for --ignorepayload --ignoresignature"
-msgstr ""
+msgstr "--ignorepayload --ignoresignature 的缩写"
 
 msgid "install documentation"
 msgstr "安装程序文档"
@@ -1846,7 +1847,7 @@ msgid "update the database, but do not modify the filesystem"
 msgstr "更新数据库，但不修改文件系统"
 
 msgid "do not update the database, but modify the filesystem"
-msgstr ""
+msgstr "不更新数据库，但修改文件系统"
 
 msgid "do not verify package dependencies"
 msgstr "不验证软件包依赖"
@@ -1861,7 +1862,7 @@ msgid "don't install file security contexts"
 msgstr "不安装文件的安全上下文"
 
 msgid "don't install file capabilities"
-msgstr ""
+msgstr "不安装文件功能"
 
 msgid "do not reorder package installation to satisfy dependencies"
 msgstr "不对软件包安装重新排序以满足依赖关系"
@@ -1948,7 +1949,7 @@ msgid "reinstall package(s)"
 msgstr "重新安装软件包"
 
 msgid "restore package(s)"
-msgstr ""
+msgstr "恢复软件包"
 
 msgid "query/verify all packages"
 msgstr "查询/验证所有软件包"
@@ -1957,10 +1958,10 @@ msgid "rpm checksig mode"
 msgstr "rpm 检查签名模式"
 
 msgid "query/verify package(s) owning installed file"
-msgstr ""
+msgstr "查询/验证拥有已安装文件的软件包"
 
 msgid "query/verify package(s) owning path, installed or not"
-msgstr ""
+msgstr "查询/验证拥有路径的软件包是否已安装"
 
 msgid "query/verify package(s) in group"
 msgstr "查询/验证组中的软件包"
@@ -2017,28 +2018,28 @@ msgid "do not process non-package files as manifests"
 msgstr "不把非软件包文件作为清单处理"
 
 msgid "only include configuration files"
-msgstr ""
+msgstr "只包含设定文件"
 
 msgid "only include documentation files"
-msgstr ""
+msgstr "只包含文档文件"
 
 msgid "only include license files"
-msgstr ""
+msgstr "只包括许可证文件"
 
 msgid "only include artifact files"
-msgstr ""
+msgstr "只包括 artifact 文件"
 
 #, c-format
 msgid "exclude %%ghost files"
-msgstr ""
+msgstr "排除 %%ghost 文件"
 
 #, c-format
 msgid "exclude %%config files"
-msgstr ""
+msgstr "排除 %%config 文件"
 
 #, c-format
 msgid "exclude %%artifact files"
-msgstr ""
+msgstr "排除 %%artifact 文件"
 
 msgid "dump basic file information"
 msgstr "转储基本文件信息"
@@ -2152,11 +2153,11 @@ msgstr "没有软件包和 %s 匹配：%s\n"
 
 #, c-format
 msgid "no package conflicts %s\n"
-msgstr ""
+msgstr "没有与 %s 冲突的包\n"
 
 #, c-format
 msgid "no package obsoletes %s\n"
-msgstr ""
+msgstr "没有弃用 %s 的包\n"
 
 #, c-format
 msgid "no package requires %s\n"
@@ -2223,13 +2224,13 @@ msgid "Fread failed: %s"
 msgstr "Fread 失败：%s"
 
 msgid "DIGESTS"
-msgstr ""
+msgstr "DIGESTS"
 
 msgid "digests"
-msgstr ""
+msgstr "摘要"
 
 msgid "SIGNATURES"
-msgstr ""
+msgstr "SIGNATURES"
 
 msgid "signatures"
 msgstr "签名"
@@ -2262,11 +2263,11 @@ msgstr "无法恢复根目录：%m\n"
 
 #, c-format
 msgid "Generating %d missing index(es), please wait...\n"
-msgstr ""
+msgstr "正在生成缺失的 %d 个索引，请稍后……\n"
 
-#, c-format
+#, c-format, fuzzy
 msgid "cannot open %s index using %s - %s (%d)\n"
-msgstr ""
+msgstr "无法使用%2$s - %3$s (%4$d) 开启 %1$s 索引\n"
 
 msgid "no dbpath has been set\n"
 msgstr "没有设置 dbpath\n"
@@ -2274,9 +2275,9 @@ msgstr "没有设置 dbpath\n"
 msgid "miFreeHeader: skipping"
 msgstr "miFreeHeader：跳过"
 
-#, c-format
+#, c-format, fuzzy
 msgid "error(%d) storing record #%d into %s\n"
-msgstr ""
+msgstr "保存记录 #%2$d 到 %3$s 时发生 %1$d个错误\n"
 
 #, c-format
 msgid "%s: regexec failed: %s\n"
@@ -2298,23 +2299,23 @@ msgid "%s: cannot read header at 0x%x\n"
 msgstr "%s：无法读取位于 0x%x 的表头\n"
 
 msgid "could not move new database in place\n"
-msgstr ""
+msgstr "无法将新数据库移动到位\n"
 
 #, c-format
 msgid "could also not restore old database from %s\n"
-msgstr ""
+msgstr "也无法从 %s 恢复旧数据库\n"
 
-#, c-format
+#, c-format, fuzzy
 msgid "replace files in %s with files from %s to recover\n"
-msgstr ""
+msgstr "用 %2$s 中的文件替换 %1$s 中的文件以恢复\n"
 
 #, c-format
 msgid "Could not get public keys from %s\n"
-msgstr ""
+msgstr "无法从 %s 取得公钥\n"
 
 #, c-format
 msgid "could not delete old database at %s\n"
-msgstr ""
+msgstr "无法移除在%s的旧数据库\n"
 
 msgid "no dbpath has been set"
 msgstr "没有设置 dbpath"
@@ -2325,7 +2326,7 @@ msgstr "無法建立 %s 目录： %s\n"
 
 #, c-format
 msgid "header #%u in the database is bad -- skipping.\n"
-msgstr ""
+msgstr "在数据库中有不当的标头#%u —— 跳过。\n"
 
 #, c-format
 msgid "cannot add record originally at %u\n"
@@ -2344,10 +2345,10 @@ msgid "YES"
 msgstr "是"
 
 msgid "PreReq:, Provides:, and Obsoletes: dependencies support versions."
-msgstr ""
+msgstr "PreReq:, Provides:, 和 Obsoletes: 依赖支持版本。"
 
 msgid "file name(s) stored as (dirName,baseName,dirIndex) tuple, not as path."
-msgstr ""
+msgstr "档案名称储存为 (dirName,baseName,dirIndex) 元组，而非路径。"
 
 msgid "package payload can be compressed using bzip2."
 msgstr "软件包净负荷可以使用 bzip2 压缩。"
