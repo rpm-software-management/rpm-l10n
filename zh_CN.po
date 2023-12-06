@@ -32,7 +32,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
 "POT-Creation-Date: 2022-04-07 13:03+0300\n"
-"PO-Revision-Date: 2023-12-06 06:47+0000\n"
+"PO-Revision-Date: 2023-12-07 08:44+0000\n"
 "Last-Translator: Jingge Chen <mariocanfly@hotmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/rpm/rpm-l10n/zh_CN/>\n"
@@ -2369,7 +2369,7 @@ msgid "header tags are always sorted after being loaded."
 msgstr "头标签总是排序后被加载。"
 
 msgid "the scriptlet interpreter can use arguments from header."
-msgstr ""
+msgstr "脚本解释器可以使用头文件中的参数。"
 
 msgid "a hardlink file set may be installed without being complete."
 msgstr "硬链接文件集没有被完整的安装。"
@@ -2381,19 +2381,19 @@ msgid "internal support for lua scripts."
 msgstr "lua 脚本的内部支持。"
 
 msgid "file digest algorithm is per package configurable"
-msgstr ""
+msgstr "文件摘要算法可以每个软件包不同配置"
 
 msgid "support for POSIX.1e file capabilities"
-msgstr ""
+msgstr "支持 POSIX.1e 文件功能"
 
 msgid "package scriptlets can be expanded at install time."
-msgstr ""
+msgstr "可以在安装时展开软件包脚本。"
 
 msgid "dependency comparison supports versions with tilde."
-msgstr ""
+msgstr "依赖关系对比支持带'~'的版本。"
 
 msgid "dependency comparison supports versions with caret."
-msgstr ""
+msgstr "依赖关系对比支持带'^'的版本。"
 
 msgid "support files larger than 4GB"
 msgstr "支持超过 4G 的文件"
@@ -2402,7 +2402,7 @@ msgid "support for rich dependencies."
 msgstr "富依赖关系支持。"
 
 msgid "support for dynamic buildrequires."
-msgstr ""
+msgstr "支持动态的构建需求。"
 
 msgid "package payload can be compressed using zstd."
 msgstr "软件包负载可以使用 zstd 压缩。"
@@ -2415,13 +2415,13 @@ msgid "Name required"
 msgstr "名称是必填项"
 
 msgid "Illegal ops in with/without"
-msgstr ""
+msgstr "with/without 中的操作非法"
 
 msgid "Illegal context for 'unless', please use 'or' instead"
-msgstr ""
+msgstr "'unless' 的上下文非法，请改用 'or'"
 
 msgid "Illegal context for 'if', please use 'and' instead"
-msgstr ""
+msgstr "'if' 的上下文非法，请改用 'and'"
 
 msgid "Rich dependency does not start with '('"
 msgstr "富依赖关系未以“(”开头"
@@ -2437,37 +2437,37 @@ msgid "Unterminated rich dependency: %s"
 msgstr "富依赖关系缺少结尾：%s"
 
 msgid "Cannot chain different ops"
-msgstr ""
+msgstr "无法连接不同操作"
 
 msgid "Can only chain and/or/with ops"
-msgstr ""
+msgstr "只能连接 and/or/with 操作"
 
 msgid "Junk after rich dependency"
 msgstr "富依赖关系后有多余内容"
 
 #, c-format
 msgid "user %s does not exist - using %s\n"
-msgstr ""
+msgstr "用户 %s 不存在，请改用 %s\n"
 
 #, c-format
 msgid "group %s does not exist - using %s\n"
-msgstr ""
+msgstr "组 %s 不存在，请改用 %s\n"
 
 #, c-format
 msgid "Wrong number of entries for tag %s: %u found but %u expected.\n"
-msgstr ""
+msgstr "标签 %s 的条目数错误：找到 %u个，但应为 %u 个。\n"
 
 #, c-format
 msgid "Malformed data for tag %s: %u bytes found but %lu expected.\n"
-msgstr ""
+msgstr "标签 %s 的数据异常：发现 %u 字节，但应为 %lu 字节。\n"
 
 #, c-format
 msgid "%s: base64 decode failed, len %li\n"
-msgstr ""
+msgstr "%s: base64 解码失败，长度 %li\n"
 
 #, c-format
 msgid "%s: base64 decode success, len %li\n"
-msgstr ""
+msgstr "%s: base64 解码成功，长度 %li\n"
 
 msgid "Bad magic"
 msgstr "错误的魔数"
@@ -2497,10 +2497,10 @@ msgid "Archive file not in header"
 msgstr "在头中不存在归档"
 
 msgid "Invalid symlink"
-msgstr ""
+msgstr "无效的 symlink"
 
 msgid "File from package already exists as a directory in system"
-msgstr ""
+msgstr "软件包中的文件已经作为目录存在于系统中"
 
 msgid " failed - "
 msgstr " 失败 - "
@@ -2515,7 +2515,7 @@ msgstr "打开 %s 失败： %s\n"
 
 #, c-format
 msgid "Max level of manifest recursion exceeded: %s\n"
-msgstr ""
+msgstr "超出清单递归的最大级别：%s\n"
 
 #, c-format
 msgid "%s: not an rpm package (or package manifest)\n"
@@ -2533,13 +2533,13 @@ msgid "Preparing..."
 msgstr "准备中..."
 
 msgid "Verifying..."
-msgstr ""
+msgstr "校验中……"
 
 msgid "Preparing packages..."
 msgstr "软件包准备中..."
 
 msgid "Verifying packages..."
-msgstr ""
+msgstr "正在校验软件包……"
 
 msgid "Failed dependencies:\n"
 msgstr "依赖检测失败：\n"
@@ -2639,17 +2639,17 @@ msgstr "软件包 %s 已经安装"
 msgid "package %s is not installed"
 msgstr "软件包 %s 未安装"
 
-#, c-format
+#, c-format, fuzzy
 msgid "path %s in package %s is not relocatable"
-msgstr ""
+msgstr "无法重新定位 %2$s 软件包的 %1$s 路径"
 
 #, c-format
 msgid "file %s conflicts between attempted installs of %s and %s"
 msgstr "试图安装 %2$s 和 %3$s 会导致文件 %1$s 冲突"
 
-#, c-format
+#, c-format, fuzzy
 msgid "file %s from install of %s conflicts with file from package %s"
-msgstr ""
+msgstr "从%2$s安装的文件%1$s与来自软件包%3$s的文件发生冲突"
 
 #, c-format
 msgid "package %s (which is newer than %s) is already installed"
@@ -2658,11 +2658,11 @@ msgstr "软件包 %s (比 %s 还要新) 已经安装"
 #, c-format
 msgid ""
 "installing package %s needs %<PRIu64>%cB more space on the %s filesystem"
-msgstr ""
+msgstr "安装%s软件包需要额外 %<PRIu64>%cB 位于%s档案系统的空间"
 
 #, c-format
 msgid "installing package %s needs %<PRIu64> more inodes on the %s filesystem"
-msgstr ""
+msgstr "安装%s软件包需要额外 %<PRIu64> 位于%s文件系统的索引节点"
 
 #, c-format
 msgid "%s is needed by %s%s"
@@ -2681,7 +2681,7 @@ msgstr "%s 被 %s%s 取代"
 
 #, c-format
 msgid "package %s does not verify: %s"
-msgstr ""
+msgstr "%s软件包未核验：%s"
 
 #, c-format
 msgid "unknown error %d encountered while manipulating package %s"
@@ -2721,7 +2721,7 @@ msgstr "丢失 ':' (找到 0x%02x) 在 %s:%d\n"
 
 #, c-format
 msgid "missing argument for %s at %s:%d\n"
-msgstr ""
+msgstr "%s 遗漏的参数位于 %s:%d\n"
 
 #, c-format
 msgid "cannot open %s at %s:%d: %m\n"
@@ -2759,7 +2759,7 @@ msgstr "无法恢复当前目录：%m"
 
 #, c-format
 msgid "failed to exec scriptlet interpreter %s: %s\n"
-msgstr ""
+msgstr "执行脚本解释器 %s 失败： %s\n"
 
 #, c-format
 msgid "Couldn't create temporary file for %s: %s\n"
@@ -2798,7 +2798,7 @@ msgid "rpmdb"
 msgstr "rpmdb"
 
 msgid "restored"
-msgstr ""
+msgstr "已恢复"
 
 #, c-format
 msgid "cannot open Packages database in %s\n"
@@ -2822,42 +2822,42 @@ msgstr "读出公钥失败：%s\n"
 
 #, c-format
 msgid "unknown keyring type: %s, using rpmdb\n"
-msgstr ""
+msgstr "未知密钥环类型：%s，使用 rpmdb\n"
 
 #, c-format
 msgid "failed to import key: %s: %s\n"
-msgstr ""
+msgstr "导入秘钥%s失败：%s\n"
 
 #, c-format
 msgid "invalid package verify level %s\n"
-msgstr ""
+msgstr "无效的软件包核验级别%s\n"
 
 msgid "transaction"
 msgstr "事务"
 
 #, c-format
 msgid "%s tag %u: invalid type %u"
-msgstr ""
+msgstr "%s 标签 %u: 无效的类型 %u"
 
 #, c-format
 msgid "%s: tag %u: invalid count %u"
-msgstr ""
+msgstr "%s: 标签 %u: 无效数量 %u"
 
 #, c-format
 msgid "%s tag %u: invalid data %p (%u)"
-msgstr ""
+msgstr "%s 标签 %u: 无效数据 %p (%u)"
 
 #, c-format
 msgid "%s tag %u: invalid size %u"
-msgstr ""
+msgstr "%s 标签 %u: 无效大小 %u"
 
 #, c-format
 msgid "%s tag %u: invalid OpenPGP signature"
-msgstr ""
+msgstr "%s 标签%u: 无效 OpenPGP 签名"
 
 #, c-format
 msgid "%s: tag %u: invalid hex"
-msgstr ""
+msgstr "%s: 标签 %u: 无效的16进制码"
 
 #, c-format
 msgid "%s%s%s %s"
@@ -2874,7 +2874,7 @@ msgid "signature"
 msgstr "签名"
 
 msgid "header"
-msgstr ""
+msgstr "头文件"
 
 msgid "package"
 msgstr "软件包"
@@ -2883,16 +2883,16 @@ msgid "Header "
 msgstr "头 "
 
 msgid "Payload "
-msgstr ""
+msgstr "负载 "
 
 msgid "Unable to reload signature header.\n"
 msgstr "无法重载签名头。\n"
 
 msgid "no signature"
-msgstr ""
+msgstr "没有签名"
 
 msgid "no digest"
-msgstr ""
+msgstr "没有摘要"
 
 msgid "skipped"
 msgstr "已跳过"
@@ -2916,11 +2916,11 @@ msgstr "未满足的依赖关系 %s：\n"
 
 #, c-format
 msgid "Unable to reset nice value: %s"
-msgstr ""
+msgstr "无法重设 nice 的值：%s"
 
 #, c-format
 msgid "Unable to reset I/O priority: %s"
-msgstr ""
+msgstr "无法重设I/O优先级：%s"
 
 msgid "syntax error while parsing =="
 msgstr "解析 == 时出现语法错误"
@@ -2932,10 +2932,10 @@ msgid "syntax error while parsing ||"
 msgstr "解析 || 时出现语法错误"
 
 msgid "macro expansion returned a bare word, please use \"...\""
-msgstr ""
+msgstr "宏展开只返回了一个没有引号的词，请使用 \"...\""
 
 msgid "macro expansion did not return an integer"
-msgstr ""
+msgstr "宏展开没有返回整数"
 
 #, c-format
 msgid "expanded string: %s\n"
@@ -2948,19 +2948,19 @@ msgid "invalid version"
 msgstr "无效版本"
 
 msgid "bare words are no longer supported, please use \"...\""
-msgstr ""
+msgstr "不支持无引号的单词，请使用 \"...\""
 
 msgid "parse error in expression"
 msgstr "表达式解析错误"
 
 msgid "unsupported function argument type"
-msgstr ""
+msgstr "不支持的函数参数类型"
 
 msgid "syntax error in expression"
 msgstr "表达式有语法错误"
 
 msgid "unsupported funcion"
-msgstr ""
+msgstr "不支持的函数"
 
 msgid "unmatched ("
 msgstr "不成对的 ("
@@ -2978,13 +2978,13 @@ msgid "division by zero"
 msgstr "除以零"
 
 msgid "* and / not supported for versions"
-msgstr ""
+msgstr "版本不支持 * 和 /"
 
 msgid "* and / not supported for strings"
 msgstr "字符串不支持 * 与 /"
 
 msgid "+ and - not supported for versions"
-msgstr ""
+msgstr "版本不支持 + 和 -"
 
 msgid "- not supported for strings"
 msgstr "字符串不支持 -"
@@ -3004,11 +3004,11 @@ msgstr "为此命令打开 shell 展开管道失败：%s: %m \n"
 
 #, c-format
 msgid "Macro %%%s has illegal name (%s)\n"
-msgstr ""
+msgstr "宏 %%%s 含有非法名称 (%s)\n"
 
 #, c-format
 msgid "Macro %%%s is a built-in (%s)\n"
-msgstr ""
+msgstr "宏 %%%s 是内建宏 (%s)\n"
 
 #, c-format
 msgid "Macro %%%s has unterminated opts\n"
@@ -3040,7 +3040,7 @@ msgstr "宏 %%%s 已经定义但是没有使用\n"
 
 #, c-format
 msgid "no such macro: '%s'\n"
-msgstr ""
+msgstr "没有这个宏：'%s'\n"
 
 msgid "argument expected"
 msgstr "预期为参数"
@@ -3088,7 +3088,7 @@ msgid "warning: "
 msgstr "警告："
 
 msgid "Error writing to log"
-msgstr ""
+msgstr "写入日志时发生错误"
 
 #, c-format
 msgid "invalid syntax in lua scriptlet: %s\n"
@@ -3104,7 +3104,7 @@ msgstr "lua 脚本执行失败：%s\n"
 
 #, c-format
 msgid "result print failed: %s\n"
-msgstr ""
+msgstr "结果打印失败：%s\n"
 
 #, c-format
 msgid "invalid syntax in lua file: %s\n"
@@ -3194,21 +3194,21 @@ msgid "unable to read the signature\n"
 msgstr "无法读取签名\n"
 
 msgid "file signing support not built in\n"
-msgstr ""
+msgstr "没有内置文件签名支持\n"
 
 #, c-format
 msgid "Searching for algorithm %s got %i\n"
-msgstr ""
+msgstr "搜索算法 %s 得到 %i\n"
 
 #, c-format
 msgid "Unsupported fsverity algorithm %s\n"
-msgstr ""
+msgstr "不支持的fsverity算法 %s\n"
 
 msgid "fsverity signatures requires a key and a cert\n"
-msgstr ""
+msgstr "fsverity 签名需要密钥和证书\n"
 
 msgid "fsverity signing support not built in\n"
-msgstr ""
+msgstr "未内置fsverity签名支持\n"
 
 #, c-format
 msgid "%s: rpmReadSignature failed: %s"
@@ -3241,16 +3241,16 @@ msgid "replacing %s failed: %s\n"
 msgstr "替换 %s 失败：%s\n"
 
 msgid "sign_hash failed\n"
-msgstr ""
+msgstr "sign_hash 失败\n"
 
 msgid "File digest algorithm id is invalid"
-msgstr ""
+msgstr "文件摘要算法 ID 无效"
 
 msgid "signFile failed\n"
-msgstr ""
+msgstr "signFile 失败\n"
 
 msgid "headerPutString failed\n"
-msgstr ""
+msgstr "headerPutString 失败\n"
 
 #, c-format
 msgid "%s: read manifest failed: %s\n"
@@ -3260,19 +3260,19 @@ msgid "don't verify header+payload signature"
 msgstr "不验证报头+净负荷签名"
 
 msgid "getopt string for scripts options"
-msgstr ""
+msgstr "getopt 字符串，用于获取脚本选项"
 
 msgid "execute statement"
-msgstr ""
+msgstr "执行语句"
 
 msgid "interactive session"
-msgstr ""
+msgstr "交互式会话"
 
 msgid "extract an archive"
-msgstr ""
+msgstr "解压"
 
 msgid "only print what would be done"
-msgstr ""
+msgstr "只打印会做的事"
 
 #~ msgid "build through %build (%prep, then compile) from <specfile>"
 #~ msgstr "依据 <specfile> 从 %build (%prep 之后编译) 开始构建"
