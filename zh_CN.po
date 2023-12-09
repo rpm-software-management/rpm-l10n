@@ -32,7 +32,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
 "POT-Creation-Date: 2022-04-07 13:03+0300\n"
-"PO-Revision-Date: 2023-12-07 08:44+0000\n"
+"PO-Revision-Date: 2023-12-10 10:44+0000\n"
 "Last-Translator: Jingge Chen <mariocanfly@hotmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/rpm/rpm-l10n/zh_CN/>\n"
@@ -526,7 +526,6 @@ msgstr "解析 spec 文件到标准输出"
 msgid "query spec file(s)"
 msgstr "查询 spec 文件"
 
-#, fuzzy
 msgid "interactive macro shell"
 msgstr "交互式宏 shell"
 
@@ -1690,7 +1689,6 @@ msgstr "“EXPR”"
 msgid "Specify target platform"
 msgstr "指定目标平台"
 
-#, fuzzy
 msgid "CPU-VENDOR-OS"
 msgstr "CPU-VENDOR-OS"
 
