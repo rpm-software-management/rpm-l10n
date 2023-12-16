@@ -14,6 +14,9 @@ add_custom_target(update-pot
 			--no-location
 			--keyword=_ --keyword=N_
 			--files-from=${CMAKE_CURRENT_SOURCE_DIR}/POTFILES.in
+			--directory=tools
+			--directory=build
+			--directory=.
 	  WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
 	  SOURCES ${POT_SOURCES}
 )
