@@ -1,13 +1,4 @@
 # List of files which contain translatable strings.
-cliutils.c
-rpm2archive.c
-rpm2cpio.c
-rpmbuild.c
-rpmdb.c
-rpmkeys.c
-rpm.c
-rpmsign.c
-rpmspec.c
 build/build.c
 build/files.c
 build/misc.c
@@ -96,7 +87,15 @@ rpmio/rpmvercmp.c
 rpmio/url.c
 sign/rpmgensig.c
 sign/rpmsignfiles.c
+tools/cliutils.c
+tools/rpm.c
+tools/rpm2archive.c
+tools/rpmdb.c
+tools/rpmbuild.c
 tools/rpmdeps.c
 tools/rpmgraph.c
+tools/rpmkeys.c
 tools/rpmlua.c
+tools/rpmsign.c
+tools/rpmspec.c
 tools/rpmuncompress.c
