@@ -11,16 +11,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
 "POT-Creation-Date: 2022-04-07 13:03+0300\n"
-"PO-Revision-Date: 2021-09-13 00:04+0000\n"
-"Last-Translator: Didik Supriadi <didiksupriadi41@gmail.com>\n"
+"PO-Revision-Date: 2024-01-02 17:37+0000\n"
+"Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/rpm/"
-"master/id/>\n"
+"rpm-l10n/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.8\n"
+"X-Generator: Weblate 5.3.1\n"
 
 #, c-format
 msgid "%s: %s\n"
@@ -49,7 +49,7 @@ msgid "exec failed\n"
 msgstr "eksekusi gagal\n"
 
 msgid "create uncompressed tar file"
-msgstr ""
+msgstr "membuat file tar yang tidak terkompresi"
 
 #, c-format
 msgid "argument is not an RPM package\n"
@@ -66,6 +66,8 @@ msgstr "Tidak dapat membuka ulang payload: %s\n"
 #, c-format
 msgid "files over 4GB not supported by cpio, use rpm2archive instead\n"
 msgstr ""
+"file lebih dari 4GB tidak didukung oleh cpio, gunakan rpm2archive sebagai "
+"gantinya\n"
 
 #, c-format
 msgid "buildroot already specified, ignoring %s\n"
@@ -82,17 +84,19 @@ msgstr "<specfile>"
 
 #, c-format
 msgid "build through %conf (%prep, then %conf) from <specfile>"
-msgstr ""
+msgstr "build melalui %conf (%prep, lalu %conf) dari <specfile>"
 
 msgid "build through %build (%prep, %conf, then compile) from <specfile>"
-msgstr ""
+msgstr "membangun melalui %build (%prep, %conf, lalu compile) dari <specfile>"
 
 msgid "check build dependencies <specfile>"
-msgstr ""
+msgstr "periksa dependensi build <specfile>"
 
 msgid ""
 "build through %install (%prep, %conf, %build, then install) from <specfile>"
 msgstr ""
+"membangun melalui %install (%prep, %conf, %build, lalu install) dari "
+"<specfile>"
 
 #, c-format
 msgid "verify %files section from <specfile>"
@@ -110,43 +114,51 @@ msgstr "membangun paket sumber dari <specfile>"
 msgid ""
 "build source package only from <specfile> - calculate dynamic build requires"
 msgstr ""
+"membangun paket sumber hanya dari <specfile> - menghitung kebutuhan build "
+"dinamis"
 
 #, c-format
 msgid ""
 "build through %prep (unpack sources and apply patches) from <source package>"
 msgstr ""
+"build melalui %prep (membongkar paket sumber dan menerapkan patch) dari "
+"<paket sumber>"
 
 msgid "<source package>"
 msgstr "<source package>"
 
 msgid "build through %build (%prep, %conf, then compile) from <source package>"
-msgstr ""
+msgstr "build melalui %build (%prep, %conf, lalu kompilasi) dari <paket sumber>"
 
 msgid "check build dependencies <source package>"
-msgstr ""
+msgstr "periksa dependensi build <paket sumber>"
 
 msgid ""
 "build through %install (%prep, %conf, %build, then install) from <source "
 "package>"
 msgstr ""
+"build melalui %install (%prep, %conf, %build, lalu install) dari <paket "
+"sumber>"
 
 #, c-format
 msgid "verify %files section from <source package>"
-msgstr ""
+msgstr "verifikasi bagian %files dari <paket sumber>"
 
 msgid "build source and binary packages from <source package>"
-msgstr ""
+msgstr "build paket sumber dan biner dari <paket sumber>"
 
 msgid "build binary package only from <source package>"
-msgstr ""
+msgstr "build paket biner hanya dari <paket sumber>"
 
 msgid "build source package only from <source package>"
-msgstr ""
+msgstr "build paket sumber hanya dari <paket sumber>"
 
 msgid ""
 "build source package only from <source package> - calculate dynamic build "
 "requires"
 msgstr ""
+"build paket sumber hanya dari <paket sumber> - menghitung kebutuhan build "
+"dinamis"
 
 #, c-format
 msgid "build through %prep (unpack sources and apply patches) from <tarball>"
@@ -158,14 +170,15 @@ msgid "<tarball>"
 msgstr "<tarball>"
 
 msgid "build through %build (%prep, %conf, then compile) from <tarball>"
-msgstr ""
+msgstr "build melalui %build (%prep, %conf, lalu compile) dari <tarball>"
 
 msgid "check build dependencies <tarball>"
-msgstr ""
+msgstr "periksa dependensi build <tarball>"
 
 msgid ""
 "build through %install (%prep, %conf, %build, then install) from <tarball>"
 msgstr ""
+"build melalui %install (%prep, %conf, %build, lalu install) dari <tarball>"
 
 #, c-format
 msgid "verify %files section from <tarball>"
@@ -183,6 +196,7 @@ msgstr "pembangunan paket sumber saja dari <tarball>"
 msgid ""
 "build source package only from <tarball> - calculate dynamic build requires"
 msgstr ""
+"build paket sumber hanya dari <tarball> - hitung kebutuhan build dinamis"
 
 msgid "build binary package from <source package>"
 msgstr "pembangunan paket binari dari <source package>"
@@ -197,7 +211,7 @@ msgid "override build root"
 msgstr "kesampingkan build root"
 
 msgid "run build in current directory"
-msgstr ""
+msgstr "jalankan build di direktori saat ini"
 
 msgid "remove build tree when done"
 msgstr "hapus build tree ketika selesai"
@@ -206,140 +220,142 @@ msgid "ignore ExcludeArch: directives from spec file"
 msgstr "abaikan ExcludeArch: arahan dari berkas spec"
 
 msgid "debug file state machine"
-msgstr ""
+msgstr "file debug status mesin"
 
 msgid "do not execute any stages of the build"
-msgstr ""
+msgstr "jangan mengeksekusi tahapan apa pun dari build"
 
 msgid "do not verify build dependencies"
-msgstr ""
+msgstr "jangan memverifikasi dependensi build"
 
 msgid "generate package header(s) compatible with (legacy) rpm v3 packaging"
-msgstr ""
+msgstr "hasilkan header paket yang kompatibel dengan pemaketan rpm v3 (lama)"
 
 #, c-format
 msgid "do not execute %clean stage of the build"
-msgstr ""
+msgstr "jangan jalankan tahap %clean dari build"
 
 #, c-format
 msgid "do not execute %prep stage of the build"
-msgstr ""
+msgstr "jangan jalankan tahap %prep dari build"
 
 #, c-format
 msgid "do not execute %check stage of the build"
-msgstr ""
+msgstr "jangan jalankan tahap %check dari build"
 
 msgid "do not accept i18N msgstr's from specfile"
-msgstr ""
+msgstr "jangan menerima i18N msgstr dari specfile"
 
 msgid "remove sources when done"
-msgstr ""
+msgstr "hapus sumber jika sudah selesai"
 
 msgid "remove specfile when done"
-msgstr ""
+msgstr "hapus specfile ketika selesai"
 
 msgid "skip straight to specified stage (only for c,i)"
-msgstr ""
+msgstr "lompat langsung ke tahap yang ditentukan (hanya untuk c,i)"
 
 msgid "override target platform"
-msgstr ""
+msgstr "menimpa platform target"
 
 msgid "Build options with [ <specfile> | <tarball> | <source package> ]:"
-msgstr ""
+msgstr "Opsi build dengan [ <specfile> | <tarball> | <paket sumber> ]:"
 
 msgid "Common options for all rpm modes and executables:"
 msgstr "Opsi umum untuk semua mode rpm dan eksekutabel:"
 
 #, c-format
 msgid "Unable to open spec file %s: %s\n"
-msgstr ""
+msgstr "Tidak dapat membuka file spesifikasi %s: %s\n"
 
 #, c-format
 msgid "Failed to open tar pipe: %m\n"
-msgstr ""
+msgstr "Gagal membuka pipe tar: %m\n"
 
 #, c-format
 msgid "Found more than one spec file in %s\n"
-msgstr ""
+msgstr "Ditemukan lebih dari satu file spesifikasi di %s\n"
 
 #, c-format
 msgid "Failed to read spec file from %s\n"
-msgstr ""
+msgstr "Gagal membaca file spesifikasi dari %s\n"
 
 #, c-format
 msgid "Failed to rename %s to %s: %m\n"
-msgstr ""
+msgstr "Gagal mengganti nama %s menjadi %s: %m\n"
 
 #, c-format
 msgid "failed to stat %s: %m\n"
-msgstr ""
+msgstr "Gagal untuk menyatakan %s: %m\n"
 
 #, c-format
 msgid "File %s is not a regular file.\n"
-msgstr ""
+msgstr "File %s bukan file biasa.\n"
 
 #, c-format
 msgid "File %s does not appear to be a specfile.\n"
-msgstr ""
+msgstr "File %s tampaknya bukan merupakan specfile.\n"
 
 #, c-format
 msgid "Building target platforms: %s\n"
-msgstr ""
+msgstr "Building platform target: %s\n"
 
 #, c-format
 msgid "Building for target %s\n"
-msgstr ""
+msgstr "Building untuk target %s\n"
 
 msgid "arguments to --root (-r) must begin with a /"
 msgstr "argumen untuk --root (-r) harus diawali dengan /"
 
 msgid "initialize database"
-msgstr ""
+msgstr "menginisialisasi basis data"
 
 msgid "rebuild database inverted lists from installed package headers"
 msgstr ""
+"membangun kembali daftar basis data yang dibalik dari header paket yang "
+"diinstal"
 
 msgid "verify database files"
-msgstr ""
+msgstr "memverifikasi file database"
 
 msgid "salvage database"
-msgstr ""
+msgstr "menyimpan basis data"
 
 msgid "export database to stdout header list"
-msgstr ""
+msgstr "mengekspor basis data ke daftar header stdout"
 
 msgid "import database from stdin header list"
-msgstr ""
+msgstr "mengimpor basis data dari daftar header stdin"
 
 msgid "Database options:"
-msgstr ""
+msgstr "Opsi-opsi basis data:"
 
 msgid "only one major mode may be specified"
 msgstr "hanya satu mode utama yang bisa ditentukan"
 
 msgid "verify package signature(s)"
-msgstr ""
+msgstr "memverifikasi tanda tangan paket"
 
 msgid "import an armored public key"
-msgstr ""
+msgstr "mengimpor kunci publik yang dilindungi"
 
 msgid "don't import, but tell if it would work or not"
-msgstr ""
+msgstr "jangan mengimpor, tetapi beri tahu apakah itu akan berhasil atau tidak"
 
 msgid "list keys from RPM keyring"
-msgstr ""
+msgstr "membuat daftar kunci dari keyring RPM"
 
 msgid "Keyring options:"
-msgstr ""
+msgstr "Opsi kunci:"
 
 msgid "no arguments given"
-msgstr ""
+msgstr "tidak ada argumen yang diberikan"
 
 msgid "Query/Verify package selection options:"
 msgstr "Opsi seleksi kueri/Verifikasi paket:"
 
 msgid "Query/Verify file selection options:"
-msgstr ""
+msgstr "Opsi pemilihan file Query/Verifikasi:"
 
 msgid "Query options (with -q or --query):"
 msgstr "Opsi Kueri (dengan -q atau --query):"
@@ -458,53 +474,53 @@ msgid "no arguments given for verify"
 msgstr "tidak ada argumen untuk verifikasi"
 
 msgid "sign package(s)"
-msgstr ""
+msgstr "menandai paket(-paket)"
 
 msgid "sign package(s) (identical to --addsign)"
-msgstr ""
+msgstr "menandatangani paket (identik dengan --addsign)"
 
 msgid "delete package signatures"
-msgstr ""
+msgstr "menghapus tanda tangan paket"
 
 msgid "delete IMA and fsverity file signatures"
-msgstr ""
+msgstr "hapus tanda tangan berkas IMA dan fsverity"
 
 msgid "create rpm v3 header+payload signatures"
-msgstr ""
+msgstr "membuat header rpm v3 + tanda tangan payload"
 
 msgid "sign package(s) files"
-msgstr ""
+msgstr "menandatangani berkas-berkas paket"
 
 msgid "generate fsverity signatures for package(s) files"
-msgstr ""
+msgstr "menghasilkan tanda tangan fsverity untuk berkas-berkas paket"
 
 msgid "algorithm to use for verity signatures, default sha256"
-msgstr ""
+msgstr "algoritma yang digunakan untuk tanda tangan verifikasi, sha256 default"
 
 msgid "<algorithm>"
-msgstr ""
+msgstr "<algoritma"
 
 msgid "use file signing cert <cert>"
-msgstr ""
+msgstr "gunakan sertifikat penandatanganan berkas <cert>"
 
 msgid "<cert>"
-msgstr ""
+msgstr "<cert>"
 
 msgid "use file signing key <key>"
-msgstr ""
+msgstr "gunakan kunci penandatanganan berkas key <key>"
 
 msgid "<key>"
-msgstr ""
+msgstr "<key>"
 
 msgid "prompt for file signing key password"
-msgstr ""
+msgstr "meminta kata sandi kunci penandatanganan file"
 
 msgid "Signature options:"
-msgstr ""
+msgstr "Opsi tanda tangan:"
 
 #, c-format
 msgid "You must set \"%%_gpg_name\" in your macro file\n"
-msgstr ""
+msgstr "Anda harus mengatur \"\"%%_gpg_name\"\" di file makro Anda\n"
 
 #, c-format
 msgid ""
