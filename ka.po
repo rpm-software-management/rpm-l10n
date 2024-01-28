@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
 "POT-Creation-Date: 2022-04-07 13:03+0300\n"
-"PO-Revision-Date: 2023-05-30 05:01+0000\n"
+"PO-Revision-Date: 2024-01-29 08:36+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/ka/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.3.1\n"
 
 #, c-format
 msgid "%s: %s\n"
@@ -183,7 +183,7 @@ msgid ""
 msgstr ""
 
 msgid "override build root"
-msgstr ""
+msgstr "აგების ძირითადი საქაღალდის გადაფარვა"
 
 msgid "run build in current directory"
 msgstr ""
@@ -231,7 +231,7 @@ msgid "skip straight to specified stage (only for c,i)"
 msgstr ""
 
 msgid "override target platform"
-msgstr ""
+msgstr "სამიზნე პლატფორმის გადაფარვა"
 
 msgid "Build options with [ <specfile> | <tarball> | <source package> ]:"
 msgstr ""
@@ -307,7 +307,7 @@ msgid "only one major mode may be specified"
 msgstr ""
 
 msgid "verify package signature(s)"
-msgstr ""
+msgstr "პაკეტის ხელმოწერების გადაფარვა"
 
 msgid "import an armored public key"
 msgstr ""
@@ -319,10 +319,10 @@ msgid "list keys from RPM keyring"
 msgstr ""
 
 msgid "Keyring options:"
-msgstr ""
+msgstr "ბრელოკის მორგება:"
 
 msgid "no arguments given"
-msgstr ""
+msgstr "არგუმენტები მითითებული არაა"
 
 msgid "Query/Verify package selection options:"
 msgstr ""
@@ -337,19 +337,19 @@ msgid "Verify options (with -V or --verify):"
 msgstr ""
 
 msgid "Install/Upgrade/Erase options:"
-msgstr ""
+msgstr "დაყენების/განახლების/წაშლის პარამეტრები:"
 
 msgid "one type of query/verify may be performed at a time"
 msgstr ""
 
 msgid "unexpected query flags"
-msgstr ""
+msgstr "მოულოდნელი მოთხოვნის ალმები"
 
 msgid "unexpected query format"
-msgstr ""
+msgstr "მოულოდნელი მოთხოვნის ფორმატი"
 
 msgid "unexpected query source"
-msgstr ""
+msgstr "მოულოდნელი მოთხოვნის წყარო"
 
 msgid "only installation and upgrading may be forced"
 msgstr ""
@@ -690,7 +690,7 @@ msgid "%s: failed to encode\n"
 msgstr ""
 
 msgid "failed symlink"
-msgstr ""
+msgstr "ჩავარდნილი სიმბმული"
 
 #, c-format
 msgid "Duplicate build-id, stat %s: %m\n"
@@ -2096,7 +2096,7 @@ msgstr "(მდგომარეობის გარეშე)    "
 
 #, c-format
 msgid "(unknown %3d) "
-msgstr ""
+msgstr "(უცნობი %3d) "
 
 msgid "package has not file owner/group lists\n"
 msgstr ""
@@ -3012,10 +3012,10 @@ msgid "no such macro: '%s'\n"
 msgstr ""
 
 msgid "argument expected"
-msgstr ""
+msgstr "მოველოდი არგუმენტს"
 
 msgid "unexpected argument"
-msgstr ""
+msgstr "მოულოდნელი არგუმენტი"
 
 #, c-format
 msgid "Unterminated %c: %s\n"
@@ -3232,10 +3232,10 @@ msgid "getopt string for scripts options"
 msgstr ""
 
 msgid "execute statement"
-msgstr ""
+msgstr "გამოსახულების შესრულება"
 
 msgid "interactive session"
-msgstr ""
+msgstr "ინტერაქტიური სესია"
 
 msgid "extract an archive"
 msgstr ""
