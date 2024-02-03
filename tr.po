@@ -12,16 +12,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
 "POT-Creation-Date: 2022-04-07 13:03+0300\n"
-"PO-Revision-Date: 2022-05-02 11:18+0000\n"
-"Last-Translator: Ferhat Gecdogan <ferhatgectao@gmail.com>\n"
+"PO-Revision-Date: 2024-02-04 18:36+0000\n"
+"Last-Translator: Oğuz Ersen <oguz@ersen.moe>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/rpm/"
-"master/tr/>\n"
+"rpm-l10n/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n>1);\n"
-"X-Generator: Weblate 4.12.1\n"
+"X-Generator: Weblate 5.3.1\n"
 
 #, c-format
 msgid "%s: %s\n"
@@ -605,11 +605,15 @@ msgid ""
 "\n"
 "RPM build warnings:\n"
 msgstr ""
+"\n"
+"RPM oluşturma uyarıları:\n"
 
 msgid ""
 "\n"
 "RPM build errors:\n"
 msgstr ""
+"\n"
+"RPM oluşturma hataları:\n"
 
 #, c-format
 msgid "Missing '(' in %s %s\n"
@@ -808,7 +812,7 @@ msgstr ""
 
 #, c-format
 msgid "More than one file on a line: %s\n"
-msgstr ""
+msgstr "Bir satırda birden fazla dosya: %s\n"
 
 msgid "Generating build-id links failed\n"
 msgstr ""
@@ -819,13 +823,15 @@ msgstr "Dosya hatalı: %s: %s\n"
 
 #, c-format
 msgid "Checking for unpackaged file(s): %s\n"
-msgstr ""
+msgstr "Paketlenmeyen dosya(lar) denetleniyor: %s\n"
 
 #, c-format
 msgid ""
 "Installed (but unpackaged) file(s) found:\n"
 "%s"
 msgstr ""
+"Kurulan (ancak paketlenmeyen) dosya(lar) bulundu:\n"
+"%s"
 
 #, c-format
 msgid "package %s already exists\n"
@@ -833,7 +839,7 @@ msgstr "%s paketi zaten var\n"
 
 #, c-format
 msgid "%s was mapped to multiple filenames"
-msgstr ""
+msgstr "%s birden fazla dosya adıyla eşlendi"
 
 #, c-format
 msgid "Processing files: %s\n"
@@ -848,11 +854,11 @@ msgstr ""
 
 #, c-format
 msgid "create archive failed on file %s: %s\n"
-msgstr ""
+msgstr "arşiv oluşturma %s dosyasında başarısız oldu: %s\n"
 
 #, c-format
 msgid "create archive failed: %s\n"
-msgstr ""
+msgstr "arşiv oluşturma başarısız oldu: %s\n"
 
 #, c-format
 msgid "Unknown payload compression: %s\n"
@@ -864,7 +870,7 @@ msgstr ""
 
 #, c-format
 msgid "Failed to read %jd bytes in file %s: %s\n"
-msgstr ""
+msgstr "%jd bayt %s dosyasında okunamadı: %s\n"
 
 msgid "Unable to create immutable header region\n"
 msgstr ""
@@ -895,7 +901,7 @@ msgstr "\"%s\"in yürütülmesi başarısız oldu.\n"
 
 #, c-format
 msgid "Package check \"%s\" failed.\n"
-msgstr ""
+msgstr "Paket denetimi \"%s\" başarısız oldu.\n"
 
 #, c-format
 msgid "cannot create %s: %s\n"
@@ -911,11 +917,11 @@ msgstr ""
 
 #, c-format
 msgid "line %d: second %s\n"
-msgstr "%d satır: %s saniye\n"
+msgstr "satır %d: ikinci %s\n"
 
 #, c-format
 msgid "bogus date in %%changelog: %s\n"
-msgstr ""
+msgstr "%%changelog içinde tarih hatası: %s\n"
 
 #, c-format
 msgid "%%changelog entries must start with *\n"
@@ -931,7 +937,7 @@ msgstr "%%changelog içinde tarih hatası: %s\n"
 
 #, c-format
 msgid "%%changelog not in descending chronological order\n"
-msgstr ""
+msgstr "%%changelog azalan kronolojik sırada değil\n"
 
 #, c-format
 msgid "missing name in %%changelog\n"
@@ -943,7 +949,7 @@ msgstr "%%changelog içinde açıklama yok\n"
 
 #, c-format
 msgid "line %d: second %%changelog\n"
-msgstr ""
+msgstr "satır %d: ikinci %%changelog\n"
 
 #, c-format
 msgid "line %d: Error parsing %%description: %s\n"
@@ -963,15 +969,15 @@ msgstr "satır %d: %%files ayrıştırılırken hata: %s\n"
 
 #, c-format
 msgid "line %d: multiple %%files for package '%s'\n"
-msgstr ""
+msgstr "satır %d: '%s' paketi için birden fazla %%file\n"
 
 #, c-format
 msgid "line %d: Error parsing %%policies: %s\n"
-msgstr ""
+msgstr "satır %d: %%policies ayrıştırılırken hata oluştu: %s\n"
 
 #, c-format
 msgid "Error parsing tag field: %s\n"
-msgstr ""
+msgstr "Etiket alanı ayrıştırılırken hata oluştu: %s\n"
 
 #, c-format
 msgid "line %d: Bad number: %s\n"
@@ -987,7 +993,7 @@ msgstr ""
 
 #, c-format
 msgid "Couldn't download %s\n"
-msgstr ""
+msgstr "%s indirilemedi\n"
 
 #, c-format
 msgid "line %d: Bad %s number: %s\n"
@@ -995,7 +1001,7 @@ msgstr "satır %d: Hatalı %s numarası: %s\n"
 
 #, c-format
 msgid "%s %d defined multiple times\n"
-msgstr ""
+msgstr "%s %d birden fazla kez tanımlandı\n"
 
 #, c-format
 msgid "Architecture is excluded: %s\n"
@@ -1047,13 +1053,13 @@ msgstr ""
 
 #, c-format
 msgid "Illegal char '%c' (0x%x)"
-msgstr ""
+msgstr "Geçersiz karakter '%c' (0x%x)"
 
 msgid "Possible unexpanded macro"
-msgstr ""
+msgstr "Olası genişletilmeyen makro"
 
 msgid "Illegal sequence \"..\""
-msgstr ""
+msgstr "Geçersiz dizi \"..\""
 
 #, c-format
 msgid "line %d: Malformed tag: %s\n"
@@ -1073,7 +1079,7 @@ msgstr "satır %d: Docdir '/' ile başlamalı: %s\n"
 
 #, c-format
 msgid "line %d: Epoch field must be an unsigned number: %s\n"
-msgstr ""
+msgstr "satır %d: Epoch alanı işaretsiz bir sayı olmalıdır: %s\n"
 
 #, c-format
 msgid "line %d: Bad %s: qualifiers: %s\n"
@@ -1085,11 +1091,11 @@ msgstr "satır %d: BuildArchitecture biçimi hatalı: %s\n"
 
 #, c-format
 msgid "line %d: Duplicate BuildArch entry: %s\n"
-msgstr ""
+msgstr "satır %d: Yinelenen BuildArch girdisi: %s\n"
 
 #, c-format
 msgid "line %d: Only noarch subpackages are supported: %s\n"
-msgstr ""
+msgstr "satır %d: Yalnızca noarch alt paketleri destekleniyor: %s\n"
 
 #, c-format
 msgid "Internal error: Bogus tag %d\n"
@@ -1097,7 +1103,7 @@ msgstr "İçsel hata: %d etiketi sahte\n"
 
 #, c-format
 msgid "line %d: %s is deprecated: %s\n"
-msgstr ""
+msgstr "satır %d: %s kullanımdan kaldırıldı: %s\n"
 
 #, c-format
 msgid "Bad package specification: %s\n"
@@ -1112,11 +1118,11 @@ msgstr "satır %d: Bilinmeyen etiket: %s\n"
 
 #, c-format
 msgid "%%{buildroot} couldn't be empty\n"
-msgstr ""
+msgstr "%%{buildroot} boş olamaz\n"
 
 #, c-format
 msgid "%%{buildroot} can not be \"/\"\n"
-msgstr ""
+msgstr "%%{buildroot} \"/\" olamaz\n"
 
 #, c-format
 msgid "No patch number %u\n"
@@ -1140,7 +1146,7 @@ msgstr "satır %d: %%setup seçeneği %s hatalı: %s\n"
 
 #, c-format
 msgid "Patch number not specified: %s\n"
-msgstr ""
+msgstr "Yama numarası belirtilmedi: %s\n"
 
 #, c-format
 msgid "Invalid patch number %s: %s\n"
@@ -1191,7 +1197,7 @@ msgstr "satır %d: tetikleyiciler -- içermeli: %s\n"
 
 #, c-format
 msgid "line %d: missing trigger condition: %s\n"
-msgstr ""
+msgstr "satır %d: tetikleyici koşulu eksik: %s\n"
 
 #, c-format
 msgid "line %d: Error parsing %s: %s\n"
@@ -1208,10 +1214,11 @@ msgstr "satır %d: betik programı '/' ile başlamalı: %s\n"
 #, c-format
 msgid "line %d: Priorities are allowed only for file triggers : %s\n"
 msgstr ""
+"satır %d: Önceliklere yalnızca dosya tetikleyicileri için izin verilir : %s\n"
 
 #, c-format
 msgid "line %d: Second %s\n"
-msgstr "satır %d: %s saniye\n"
+msgstr "satır %d: İkinci %s\n"
 
 #, c-format
 msgid "line %d: unsupported internal script: %s\n"
@@ -1219,11 +1226,12 @@ msgstr "satır %d: desteklenmeyen içsel betik: %s\n"
 
 #, c-format
 msgid "line %d: file trigger condition must begin with '/': %s"
-msgstr ""
+msgstr "satır %d: dosya tetikleyici koşulu '/' ile başlamalıdır: %s"
 
 #, c-format
 msgid "line %d: interpreter arguments not allowed in triggers: %s\n"
 msgstr ""
+"satır %d: tetikleyicilerde yorumlayıcı argümanlarına izin verilmiyor: %s\n"
 
 #, c-format
 msgid "extra tokens at the end of %s directive in line %d:  %s\n"
@@ -1231,7 +1239,7 @@ msgstr ""
 
 #, c-format
 msgid "Macro expanded in comment on line %d: %s\n"
-msgstr ""
+msgstr "%d. satırdaki yorumda makro genişletildi: %s\n"
 
 #, c-format
 msgid "Unable to open %s: %s\n"
@@ -1239,19 +1247,19 @@ msgstr "%s açılamadı: %s\n"
 
 #, c-format
 msgid "%s:%d: Argument expected for %s\n"
-msgstr ""
+msgstr "%s:%d: %s için argüman bekleniyor\n"
 
 #, c-format
 msgid "line %d: Unclosed %%if\n"
-msgstr ""
+msgstr "satır %d: Kapatılmayan %%if\n"
 
 #, c-format
 msgid "line %d: unclosed macro or bad line continuation\n"
-msgstr ""
+msgstr "satır %d: kapatılmayan makro veya hatalı satır devamı\n"
 
 #, c-format
 msgid "%s: line %d: %s with no %%if\n"
-msgstr ""
+msgstr "%s: satır %d: %%if olmayan %s\n"
 
 #, c-format
 msgid "%s: line %d: %s after %s\n"
@@ -1259,15 +1267,15 @@ msgstr ""
 
 #, c-format
 msgid "%s:%d: bad %s condition: %s\n"
-msgstr ""
+msgstr "%s:%d: hatalı %s koşulu: %s\n"
 
 #, c-format
 msgid "%s:%d: malformed %%include statement\n"
-msgstr ""
+msgstr "%s:%d: %%include koşulu bozuk\n"
 
 #, c-format
 msgid "encoding %s not supported by system\n"
-msgstr ""
+msgstr "%s kodlaması sistem tarafından desteklenmiyor\n"
 
 #, c-format
 msgid "Package %s: invalid %s encoding in %s: %s - %s\n"
@@ -1275,15 +1283,15 @@ msgstr ""
 
 #, c-format
 msgid "line %d: %%end doesn't take any arguments: %s\n"
-msgstr ""
+msgstr "satır %d: %%end herhangi bir argüman almaz: %s\n"
 
 #, c-format
 msgid "line %d: %%end not expected here, no section to close: %s\n"
-msgstr ""
+msgstr "satır %d: %%end burada beklenmiyor, kapatılacak bölüm yok: %s\n"
 
 #, c-format
 msgid "line %d doesn't belong to any section: %s\n"
-msgstr ""
+msgstr "%d. satır herhangi bir bölüme ait değil: %s\n"
 
 msgid "No compatible architectures found for build\n"
 msgstr "Derleme için uyumlu mimariler bulunamadı\n"
