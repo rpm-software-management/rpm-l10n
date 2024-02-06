@@ -8,15 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
 "POT-Creation-Date: 2022-04-07 13:03+0300\n"
-"PO-Revision-Date: 2020-03-23 08:37-0400\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
-"Language-Team: Czech (http://www.transifex.com/rpm-team/rpm/language/cs/)\n"
+"PO-Revision-Date: 2024-02-06 09:54+0000\n"
+"Last-Translator: Petr Ptacek <petr106@atlas.cz>\n"
+"Language-Team: Czech <https://translate.fedoraproject.org/projects/rpm/"
+"rpm-l10n/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Zanata 4.6.2\n"
+"X-Generator: Weblate 5.3.1\n"
 
 #, c-format
 msgid "%s: %s\n"
@@ -52,7 +53,7 @@ msgstr "parametr není RPM balíček\n"
 
 #, c-format
 msgid "error reading header from package\n"
-msgstr "chyba při při čtení hlavičky balíčku\n"
+msgstr "chyba při čtení hlavičky balíčku\n"
 
 #, c-format
 msgid "cannot re-open payload: %s\n"
@@ -77,10 +78,10 @@ msgstr "<spec_soubor>"
 
 #, c-format
 msgid "build through %conf (%prep, then %conf) from <specfile>"
-msgstr ""
+msgstr "sestavit pomocí %conf (%prep, poté %conf) z <specfile>"
 
 msgid "build through %build (%prep, %conf, then compile) from <specfile>"
-msgstr ""
+msgstr "sestavit pomocí %build (%prep, %conf, poté zkompilovat) z <specfile>"
 
 msgid "check build dependencies <specfile>"
 msgstr ""
@@ -88,6 +89,8 @@ msgstr ""
 msgid ""
 "build through %install (%prep, %conf, %build, then install) from <specfile>"
 msgstr ""
+"sestavit pomocí %install (%prep, %conf, %build, pak nainstalovat) z "
+"<specfile>"
 
 #, c-format
 msgid "verify %files section from <specfile>"
@@ -110,6 +113,8 @@ msgstr ""
 msgid ""
 "build through %prep (unpack sources and apply patches) from <source package>"
 msgstr ""
+"sestavit pomocí %prep (rozbalit zdroje a použít opravy) ze <zdrojového "
+"balíčku>"
 
 msgid "<source package>"
 msgstr "<zdrojový balíček>"
@@ -124,16 +129,18 @@ msgid ""
 "build through %install (%prep, %conf, %build, then install) from <source "
 "package>"
 msgstr ""
+"sestavit pomocí %install (%prep, %conf, %build, pak nainstalovat) ze "
+"<zdrojového balíčku>"
 
 #, c-format
 msgid "verify %files section from <source package>"
 msgstr ""
 
 msgid "build source and binary packages from <source package>"
-msgstr ""
+msgstr "sestavit zdrojové a binární balíčky ze <zdrojového balíčku>"
 
 msgid "build binary package only from <source package>"
-msgstr ""
+msgstr "sestavit binární balíček pouze ze <zdrojového balíčku>"
 
 msgid "build source package only from <source package>"
 msgstr ""
@@ -153,7 +160,7 @@ msgid "<tarball>"
 msgstr "<tar_soubor>"
 
 msgid "build through %build (%prep, %conf, then compile) from <tarball>"
-msgstr ""
+msgstr "sestavit pomocí %build (%prep, %conf, poté zkompilovat) z <tar_souboru>"
 
 msgid "check build dependencies <tarball>"
 msgstr ""
@@ -161,6 +168,8 @@ msgstr ""
 msgid ""
 "build through %install (%prep, %conf, %build, then install) from <tarball>"
 msgstr ""
+"sestavit pomocí %install (%prep, %conf, %build, pak nainstalovat) z "
+"<tar_souboru>"
 
 #, c-format
 msgid "verify %files section from <tarball>"
@@ -212,15 +221,15 @@ msgstr ""
 
 #, c-format
 msgid "do not execute %clean stage of the build"
-msgstr ""
+msgstr "neprovádějte %clean fázi sestavení"
 
 #, c-format
 msgid "do not execute %prep stage of the build"
-msgstr ""
+msgstr "neprovádějte %prep fázi sestavení"
 
 #, c-format
 msgid "do not execute %check stage of the build"
-msgstr ""
+msgstr "neprovádějte %check fázi sestavení"
 
 msgid "do not accept i18N msgstr's from specfile"
 msgstr "neakceptovat i18N popisky ze spec souboru"
@@ -296,9 +305,8 @@ msgstr "znovu sestav obrácené seznamy z instalovaných hlaviček balíčků"
 msgid "verify database files"
 msgstr "zkontrolovat databázové soubory"
 
-#, fuzzy
 msgid "salvage database"
-msgstr "inicializuj databázi"
+msgstr "záchranná databáze"
 
 msgid "export database to stdout header list"
 msgstr ""
@@ -319,7 +327,7 @@ msgid "import an armored public key"
 msgstr "importuj obrněný veřejný klíč"
 
 msgid "don't import, but tell if it would work or not"
-msgstr ""
+msgstr "neimportujte, ale řekněte, zda by to fungovalo nebo ne"
 
 msgid "list keys from RPM keyring"
 msgstr ""
@@ -379,10 +387,10 @@ msgstr "parametry pro --prefix musejí začínat znakem /"
 
 msgid ""
 "--hash (-h) may only be specified during package installation and erasure"
-msgstr ""
+msgstr "--hash (-h) lze zadat pouze během instalace a mazání balíčku"
 
 msgid "--percent may only be specified during package installation and erasure"
-msgstr ""
+msgstr "--percent lze zadat pouze během instalace a mazání balíčku"
 
 msgid "--replacepkgs may only be specified during package installation"
 msgstr "--replacepkgs může být použit jen při instalaci balíčků"
@@ -434,7 +442,7 @@ msgid ""
 msgstr ""
 
 msgid "--test may only be specified during package installation and erasure"
-msgstr ""
+msgstr "--test lze zadat pouze během instalace a mazání balíčku"
 
 msgid "no packages given for erase"
 msgstr "nezadány žádné balíčky pro vymazání"
@@ -460,9 +468,8 @@ msgstr "vymazat podpisy balíčku"
 msgid "delete IMA and fsverity file signatures"
 msgstr ""
 
-#, fuzzy
 msgid "create rpm v3 header+payload signatures"
-msgstr "neověřuj podpis hlavičky a payloadu"
+msgstr "vytvořit hlavičku rpm v3 + podpisy užitečného zatížení"
 
 msgid "sign package(s) files"
 msgstr ""
@@ -536,7 +543,7 @@ msgid "RPM version %s macro shell\n"
 msgstr ""
 
 msgid "no arguments given for parse"
-msgstr ""
+msgstr "nejsou uvedeny žádné argumenty pro parsování"
 
 msgid "unable to parse SOURCE_DATE_EPOCH\n"
 msgstr ""
@@ -551,7 +558,7 @@ msgstr ""
 
 #, c-format
 msgid "Unable to open stream: %s\n"
-msgstr ""
+msgstr "Nelze otevřít stream: %s\n"
 
 #, c-format
 msgid "Executing(%s): %s\n"
@@ -581,6 +588,8 @@ msgid ""
 "\n"
 "RPM build errors:\n"
 msgstr ""
+"\n"
+"chyby sestavení RPM:\n"
 
 #, c-format
 msgid "Missing '(' in %s %s\n"
@@ -596,7 +605,7 @@ msgstr "Neplatný %s token: %s\n"
 
 #, c-format
 msgid "Missing %s in %s(%s)\n"
-msgstr ""
+msgstr "Chybí %s v %s(%s)\n"
 
 #, c-format
 msgid "Non-white space follows %s(): %s\n"
@@ -635,7 +644,7 @@ msgstr "Soubor musí začínat na \"/\": %s\n"
 
 #, c-format
 msgid "unable to parse %s=%s\n"
-msgstr ""
+msgstr "nelze parsovat %s=%s\n"
 
 #, c-format
 msgid "Unknown file digest algorithm %u, falling back to MD5\n"
@@ -675,11 +684,11 @@ msgstr "Soubor nenalezen: %s\n"
 
 #, c-format
 msgid "Not a directory: %s\n"
-msgstr ""
+msgstr "Není to adresář: %s\n"
 
-#, fuzzy, c-format
+#, c-format
 msgid "Can't read content of file: %s\n"
-msgstr "%s: čtení seznamu selhalo: %s\n"
+msgstr "Nelze přečíst obsah souboru: %s\n"
 
 #, c-format
 msgid "%s: can't load unknown tag (%d).\n"
@@ -732,7 +741,7 @@ msgid "build-id found in %s too large\n"
 msgstr ""
 
 msgid "failed to create directory"
-msgstr ""
+msgstr "nepodařilo se vytvořit adresář"
 
 msgid "Mixing main ELF and debug files in package"
 msgstr ""
@@ -753,13 +762,13 @@ msgstr ""
 msgid "File not found by glob: %s. Trying without globbing.\n"
 msgstr ""
 
-#, fuzzy, c-format
+#, c-format
 msgid "Could not open %s file %s: %m\n"
-msgstr "Nemohu otevřít %%files soubor %s: %m\n"
+msgstr "Nelze otevřít %s soubor %s: %m\n"
 
-#, fuzzy, c-format
+#, c-format
 msgid "Empty %s file %s\n"
-msgstr "otevření %s selhalo: %s\n"
+msgstr "Vyprázdnit %s soubor %s\n"
 
 #, c-format
 msgid "illegal _docdir_fmt %s: %s\n"
@@ -800,9 +809,9 @@ msgstr ""
 "Nalezeny instalované, ale nezabalené soubory:\n"
 "%s"
 
-#, fuzzy, c-format
+#, c-format
 msgid "package %s already exists\n"
-msgstr "balíček %s je již nainstalován"
+msgstr "balíček %s je již existuje\n"
 
 #, c-format
 msgid "%s was mapped to multiple filenames"
@@ -888,7 +897,7 @@ msgstr "řádek: %d: druhý %s\n"
 
 #, c-format
 msgid "bogus date in %%changelog: %s\n"
-msgstr ""
+msgstr "falešné datum v %%changelog: %s\n"
 
 #, c-format
 msgid "%%changelog entries must start with *\n"
@@ -940,7 +949,7 @@ msgstr ""
 
 #, c-format
 msgid "line %d: Error parsing %%policies: %s\n"
-msgstr ""
+msgstr "řádek %d: Chyba při parsování %%policies: %s\n"
 
 #, c-format
 msgid "Error parsing tag field: %s\n"
@@ -952,7 +961,7 @@ msgstr "řádek %d: Špatné číslo: %s\n"
 
 #, c-format
 msgid "line %d: Bad no%s number: %u\n"
-msgstr ""
+msgstr "řádek %d: Špatné číslo %s: %u\n"
 
 #, c-format
 msgid "Downloading %s to %s\n"
@@ -1299,7 +1308,7 @@ msgstr ""
 
 #, c-format
 msgid "Error parsing %s: %s\n"
-msgstr ""
+msgstr "Chyba při parsování %s: %s\n"
 
 #, c-format
 msgid "Expecting %%semodule tag: %s\n"
@@ -1423,9 +1432,9 @@ msgstr ""
 msgid "rpmxdb: Version mismatch. Expected version: %u. Found version: %u\n"
 msgstr ""
 
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to open sqlite database %s: %s\n"
-msgstr "Nelze otevřít spec soubor %s: %s\n"
+msgstr "Nelze otevřít sqlite databázi %s: %s\n"
 
 #, c-format
 msgid "%s is a Delta RPM and cannot be directly installed\n"
@@ -1469,13 +1478,13 @@ msgid "Invalid date %u"
 msgstr ""
 
 msgid "normal"
-msgstr ""
+msgstr "normální"
 
 msgid "replaced"
 msgstr ""
 
 msgid "not installed"
-msgstr ""
+msgstr "není instalován"
 
 msgid "net shared"
 msgstr ""
@@ -1491,7 +1500,7 @@ msgstr ""
 
 #, c-format
 msgid "failed to open dir %s of %s: %s\n"
-msgstr ""
+msgstr "nepodařilo se otevřít adresář %s z %s: %s\n"
 
 #, c-format
 msgid "%s%s saved as %s%s\n"
@@ -1499,17 +1508,17 @@ msgstr ""
 
 #, c-format
 msgid "%s%s created as %s%s\n"
-msgstr ""
+msgstr "%s%s vytvořeno jako %s%s\n"
 
 #, c-format
 msgid "%s %s: remove failed: %s\n"
 msgstr ""
 
 msgid "directory"
-msgstr ""
+msgstr "adresář"
 
 msgid "file"
-msgstr ""
+msgstr "soubor"
 
 #, c-format
 msgid "tag[%d]: BAD, tag %d type %d offset %d count %d len %d"
@@ -1565,7 +1574,7 @@ msgid "sigh pad(%zd): BAD, read %zd bytes"
 msgstr ""
 
 msgid "signature "
-msgstr ""
+msgstr "podpis "
 
 msgid "hdr length: BAD"
 msgstr ""
@@ -1780,9 +1789,8 @@ msgstr "smazat (deinstalovat) balíček"
 msgid "<package>+"
 msgstr "<balíček>"
 
-#, fuzzy
 msgid "do not install artifacts"
-msgstr "neinstalovat dokumentaci"
+msgstr "neinstalujte artefakty"
 
 msgid "do not install configuration files"
 msgstr "neinstaluj konfigurační soubory"
@@ -2093,22 +2101,22 @@ msgid "(contains no files)\n"
 msgstr "(neobsahuje žádné soubory)\n"
 
 msgid "normal        "
-msgstr "normální      "
+msgstr "normální        "
 
 msgid "replaced      "
 msgstr "nahrazen      "
 
 msgid "not installed "
-msgstr "neinstalován  "
+msgstr "neinstalován "
 
 msgid "net shared    "
-msgstr "sdílen v síti "
+msgstr "sdílen v síti    "
 
 msgid "wrong color   "
-msgstr "špatná barva  "
+msgstr "špatná barva   "
 
 msgid "(no state)    "
-msgstr "(chybí stav)  "
+msgstr "(žádný stav)    "
 
 #, c-format
 msgid "(unknown %3d) "
@@ -2488,7 +2496,7 @@ msgid "File from package already exists as a directory in system"
 msgstr ""
 
 msgid " failed - "
-msgstr "selhal - "
+msgstr " selhal - "
 
 #, c-format
 msgid "%s: (error 0x%x)"
@@ -2620,9 +2628,9 @@ msgstr "balíček %s je určený pro operační systém %s"
 msgid "package %s is already installed"
 msgstr "balíček %s je již nainstalován"
 
-#, fuzzy, c-format
+#, c-format
 msgid "package %s is not installed"
-msgstr "balíček %s není nainstalován\n"
+msgstr "balíček %s není nainstalován"
 
 #, c-format
 msgid "path %s in package %s is not relocatable"
@@ -2907,17 +2915,14 @@ msgstr ""
 msgid "Unable to reset I/O priority: %s"
 msgstr ""
 
-#, fuzzy
 msgid "syntax error while parsing =="
-msgstr "chyba syntaxe při zpracování ==\n"
+msgstr "chyba syntaxe při parsování =="
 
-#, fuzzy
 msgid "syntax error while parsing &&"
-msgstr "chyba syntaxe při zpracování &&\n"
+msgstr "chyba syntaxe při parsování &&"
 
-#, fuzzy
 msgid "syntax error while parsing ||"
-msgstr "chyba syntaxe při zpracování ||\n"
+msgstr "chyba syntaxe při parsování ||"
 
 msgid "macro expansion returned a bare word, please use \"...\""
 msgstr ""
@@ -2929,46 +2934,38 @@ msgstr ""
 msgid "expanded string: %s\n"
 msgstr ""
 
-#, fuzzy
 msgid "unterminated string in expression"
-msgstr "ve výrazu je po ? očekávána {"
+msgstr "neukončený řetězec ve výrazu"
 
-#, fuzzy
 msgid "invalid version"
-msgstr "(neplatný typ)"
+msgstr "neplatná verze"
 
 msgid "bare words are no longer supported, please use \"...\""
 msgstr ""
 
-#, fuzzy
 msgid "parse error in expression"
-msgstr "chyba při parsování ve výrazu\n"
+msgstr "chyba při parsování ve výrazu"
 
 msgid "unsupported function argument type"
 msgstr ""
 
-#, fuzzy
 msgid "syntax error in expression"
-msgstr "chyba syntaxe ve výrazu\n"
+msgstr "chyba syntaxe ve výrazu"
 
 msgid "unsupported funcion"
 msgstr ""
 
-#, fuzzy
 msgid "unmatched ("
-msgstr "nedoplněná (\n"
+msgstr "neodpovídající ("
 
-#, fuzzy
 msgid "- only on numbers"
-msgstr "- jen na číslech\n"
+msgstr "- jen na číslech"
 
-#, fuzzy
 msgid "unexpected end of expression"
-msgstr "na konci výrazu je očekáváno |"
+msgstr "nečekaný konec výrazu"
 
-#, fuzzy
 msgid "types must match"
-msgstr "typy musí souhlasit\n"
+msgstr "typy se musí shodovat"
 
 msgid "division by zero"
 msgstr ""
@@ -2976,16 +2973,14 @@ msgstr ""
 msgid "* and / not supported for versions"
 msgstr ""
 
-#, fuzzy
 msgid "* and / not supported for strings"
-msgstr "* / nejsou podporovány pro řetězce\n"
+msgstr "* / nejsou podporovány pro řetězce"
 
 msgid "+ and - not supported for versions"
 msgstr ""
 
-#, fuzzy
 msgid "- not supported for strings"
-msgstr "- není podporováno pro řetězce\n"
+msgstr "- není podporováno pro řetězce"
 
 #, c-format
 msgid "%3d>%*s(empty)\n"
@@ -2996,9 +2991,9 @@ msgid ""
 "recursive macro declaration.\n"
 msgstr ""
 
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to open shell expansion pipe for command: %s: %m \n"
-msgstr "Nelze otevřít rouru pro tar: %m\n"
+msgstr "Nepodařilo se otevřít rouru pro příkaz: %s: %m \n"
 
 #, c-format
 msgid "Macro %%%s has illegal name (%s)\n"
@@ -3040,13 +3035,11 @@ msgstr ""
 msgid "no such macro: '%s'\n"
 msgstr ""
 
-#, fuzzy
 msgid "argument expected"
-msgstr "neočekávaná ]"
+msgstr "argument je očekáván"
 
-#, fuzzy
 msgid "unexpected argument"
-msgstr "neočekávaná ]"
+msgstr "neočekávaný argument"
 
 #, c-format
 msgid "Unterminated %c: %s\n"
@@ -3079,7 +3072,7 @@ msgid "(no error)"
 msgstr "(žádná chyba)"
 
 msgid "fatal error: "
-msgstr "fatální chyba:"
+msgstr "fatální chyba: "
 
 msgid "error: "
 msgstr "chyba: "
@@ -3160,21 +3153,21 @@ msgstr ""
 msgid "Unsupported PGP pubkey algorithm %u\n"
 msgstr ""
 
-#, fuzzy, c-format
+#, c-format
 msgid "Could not create pipe for signing: %m\n"
-msgstr "Nemohu vytvořit rouru pro %s: %m\n"
+msgstr "Nelze vytvořit rouru pro podepisování: %m\n"
 
-#, fuzzy, c-format
+#, c-format
 msgid "Could not set GPG_TTY to stdin: %m\n"
-msgstr "Nemohu otevřít %%files soubor %s: %m\n"
+msgstr "Nelze nastavit GPG_TTY na stdin: %m\n"
 
 #, c-format
 msgid "Could not exec %s: %s\n"
 msgstr "Nemohu spustit %s: %s\n"
 
-#, fuzzy, c-format
+#, c-format
 msgid "Could not open pipe for writing: %m\n"
-msgstr "Nemohu vytvořit rouru pro %s: %m\n"
+msgstr "Nelze otevřít rouru pro zápis: %m\n"
 
 msgid "Could not write to pipe\n"
 msgstr ""
