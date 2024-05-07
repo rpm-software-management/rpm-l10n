@@ -13,8 +13,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
 "POT-Creation-Date: 2022-04-07 13:03+0300\n"
-"PO-Revision-Date: 2023-04-04 18:20+0000\n"
-"Last-Translator: Joachim Philipp <joachim.philipp@gmail.com>\n"
+"PO-Revision-Date: 2024-05-08 18:36+0000\n"
+"Last-Translator: Adrien Ricciardi <ricad552@hotmail.com>\n"
 "Language-Team: German <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/de/>\n"
 "Language: de\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15.2\n"
+"X-Generator: Weblate 5.5.2\n"
 
 #, c-format
 msgid "%s: %s\n"
@@ -326,7 +326,6 @@ msgstr ""
 msgid "verify database files"
 msgstr "Datenbank-Dateien überprüfen"
 
-#, fuzzy
 msgid "salvage database"
 msgstr "Datenbank retten"
 
@@ -1265,7 +1264,7 @@ msgstr "Zeile %d: Interpreter-Argumente sind in Triggern nicht erlaubt: %s\n"
 
 #, c-format
 msgid "extra tokens at the end of %s directive in line %d:  %s\n"
-msgstr ""
+msgstr "Zusätzliche Token am Ende der %s-Direktive in Zeile %d: %s\n"
 
 #, c-format
 msgid "Macro expanded in comment on line %d: %s\n"
@@ -1398,7 +1397,7 @@ msgstr "Ungültiger regulärer Ausdruck %s wird ignoriert\n"
 
 #, c-format
 msgid "%s: mime and magic supplied, only mime will be used\n"
-msgstr ""
+msgstr "%s: Mime und Magie sind bereitgestellt, aber nur Mime wird verwendet\n"
 
 #, c-format
 msgid "Couldn't create pipe for %s: %m\n"
@@ -1440,7 +1439,7 @@ msgstr "Erkennung der Datei »%s« fehlgeschlagen: Modus %06o %s\n"
 
 #, c-format
 msgid "Recognition of file mtype \"%s\" failed: mode %06o %s\n"
-msgstr ""
+msgstr "Erkennung der Datei »%s« fehlgeschlagen: Modus %06o %s\n"
 
 #, c-format
 msgid "Finding  %s: %s\n"
@@ -1468,15 +1467,17 @@ msgstr ""
 
 #, c-format
 msgid "invalid %%_db_backend: %s\n"
-msgstr ""
+msgstr "ungültiges %%_db_backend%s\n"
 
 #, c-format
 msgid "Converting database from %s to %s backend\n"
-msgstr ""
+msgstr "Die Datenbank wird von %s- in das %s-Backend konvertiert\n"
 
 #, c-format
 msgid "Found %s %s database while attempting %s backend: using %s backend.\n"
 msgstr ""
+"%s %s Datenbank wurde anstatt %s-Backend basierter gefunden: %s Backend wird "
+"verwendet.\n"
 
 msgid "Detected outdated index databases\n"
 msgstr "Veraltete Indexdatenbanken erkannt\n"
@@ -1498,6 +1499,8 @@ msgstr ""
 
 msgid "rpmpkg: detected non-zero blob, trying auto repair\n"
 msgstr ""
+"rpmpkg: Blob ungleich Null erkannt, eine automatische Reparatur wird "
+"versucht\n"
 
 #, c-format
 msgid "rpmxdb: Version mismatch. Expected version: %u. Found version: %u\n"
@@ -1573,7 +1576,7 @@ msgstr "(unbekannt)"
 
 #, c-format
 msgid "failed to open dir %s of %s: %s\n"
-msgstr ""
+msgstr "Fehler beim Öffnen des Ordners %s von %s: %s\n"
 
 #, c-format
 msgid "%s%s saved as %s%s\n"
@@ -1595,66 +1598,69 @@ msgstr "Datei"
 
 #, c-format
 msgid "tag[%d]: BAD, tag %d type %d offset %d count %d len %d"
-msgstr ""
+msgstr "Tag[%d]: FEHLER, Tag %d Typ %d Position %d Anzahl %d Länge %d"
 
 msgid "hdr load: BAD"
-msgstr ""
+msgstr "hdr Ladung: FEHLER"
 
 msgid "region: no tags"
-msgstr ""
+msgstr "Region: keine Tags"
 
 #, c-format
 msgid "region tag: BAD, tag %d type %d offset %d count %d"
-msgstr ""
+msgstr "Region-Tag: FEHLER, Tag %d Typ %d Position %d Anzahl %d"
 
 #, c-format
 msgid "region offset: BAD, tag %d type %d offset %d count %d"
-msgstr ""
+msgstr "Regions-Position: FEHLER, Tag %d Typ %d Position %d Anzahl %d"
 
 #, c-format
 msgid "region trailer: BAD, tag %d type %d offset %d count %d"
-msgstr ""
+msgstr "Region-Trailer: FEHLER, Tag %d Typ %d Position %d Anzahl %d"
 
 #, c-format
 msgid "region %d size: BAD, ril %d il %d rdl %d dl %d"
-msgstr ""
+msgstr "Region %d Größe: FEHLER, ril %d il %d rdl %d dl %d"
 
 #, c-format
 msgid "region %d: tag number mismatch il %d ril %d dl %d rdl %d\n"
-msgstr ""
+msgstr "Region %d: Tag-Nummer passt nicht il %d ril %d dl %d rdl %d\n"
 
 #, c-format
 msgid "hdr tags: BAD, no. of tags(%<PRIu32>) out of range"
 msgstr ""
+"hdr-Tags: FEHLER, Anzahl der Tags (%<PRIu32>) nicht im vorgesehen Bereich"
 
 #, c-format
 msgid "hdr data: BAD, no. of bytes(%<PRIu32>) out of range"
 msgstr ""
+"hdr data: FEHLER, Anzahl an bytes(%<PRIu32>) außerhalb des vorgesehen "
+"Bereichs"
 
 #, c-format
 msgid "hdr size(%d): BAD, read returned %d"
-msgstr ""
+msgstr "hdr size(%d): FEHLER, lesen ergab %d"
 
 msgid "hdr magic: BAD"
-msgstr ""
+msgstr "hdr magic: FEHLER"
 
 #, c-format
 msgid "hdr blob(%zd): BAD, read returned %d"
-msgstr ""
+msgstr "hdr blobl(%zd): FEHLER, lesen ergab %d"
 
 #, c-format
 msgid "sigh pad(%zd): BAD, read %zd bytes"
-msgstr ""
+msgstr "sigh pad(%zd): FEHLER, las %zd Bytes"
 
 msgid "signature "
 msgstr "Signatur "
 
 msgid "hdr length: BAD"
-msgstr ""
+msgstr "hdr length: FEHLER"
 
 #, c-format
 msgid "blob size(%d): BAD, 8 + 16 * il(%d) + dl(%d)"
-msgstr ""
+msgstr "blob size(%d): FEHLER, 8 + 16 * il(%d) + dl(%d)"
 
 msgid "invalid field width"
 msgstr "ungültige Feldbreite"
@@ -1675,7 +1681,7 @@ msgstr "Leerer Tag-Name"
 
 #, c-format
 msgid "unknown tag: \"%s\""
-msgstr ""
+msgstr "Unbekannter Tag: \"%s\""
 
 msgid "] expected at end of array"
 msgstr "] erwartet am Ende des Arrays"
@@ -2032,7 +2038,7 @@ msgid "query/verify package(s) owning installed file"
 msgstr "Abfrage/Verifizierung von Paketen, die installierte Dateien besitzen"
 
 msgid "query/verify package(s) owning path, installed or not"
-msgstr ""
+msgstr "suche/bestätige Paket(e), die den Pfad besitzen, installiert oder nicht"
 
 msgid "query/verify package(s) in group"
 msgstr "Abfragen/überprüfen eines Pakets einer Gruppe"
@@ -2299,7 +2305,7 @@ msgstr "%s: Importieren fehlgeschlagen (%d).\n"
 
 #, c-format
 msgid "Fread failed: %s"
-msgstr ""
+msgstr "read() fehlgeschlagen: %s"
 
 msgid "DIGESTS"
 msgstr "PRÜFSUMMEN"
@@ -2485,7 +2491,7 @@ msgid "support files larger than 4GB"
 msgstr "Dateien größer als 4 GB werden unterstützt"
 
 msgid "support for rich dependencies."
-msgstr ""
+msgstr "Unterstützung für reiche Abhängigkeiten."
 
 msgid "support for dynamic buildrequires."
 msgstr "Dynamische Erstellungsabhängigkeiten werden unterstützt."
@@ -2495,32 +2501,32 @@ msgstr "Paket-Nutzdaten können mit zstd komprimiert werden."
 
 #, c-format
 msgid "Unknown rich dependency op '%.*s'"
-msgstr ""
+msgstr "Unbekannte reiche Abhängigkeit op '%.*s'"
 
 msgid "Name required"
 msgstr "Name wird benötigt"
 
 msgid "Illegal ops in with/without"
-msgstr ""
+msgstr "Verbotene Operation in with/without"
 
 msgid "Illegal context for 'unless', please use 'or' instead"
-msgstr ""
+msgstr "Verbotener Kontext für 'unles; verwenden Sie stattdessen bitte 'and'"
 
 msgid "Illegal context for 'if', please use 'and' instead"
 msgstr "Unzulässiger Kontext für »if«, bitte verwenden Sie stattdessen »and«"
 
 msgid "Rich dependency does not start with '('"
-msgstr ""
+msgstr "Reiche Abhängigkeit fängt nicht mit '(' an"
 
 msgid "Missing argument to rich dependency op"
-msgstr ""
+msgstr "Fehlendes Argument für reiche Abhängigkeits-Operation"
 
 msgid "Empty rich dependency"
-msgstr ""
+msgstr "Leere reiche Abhängigkeit"
 
 #, c-format
 msgid "Unterminated rich dependency: %s"
-msgstr ""
+msgstr "Unbeendete reiche Abhängigkeit: %s"
 
 msgid "Cannot chain different ops"
 msgstr "Verschiedene Operatoren können nicht verkettet werden"
@@ -2529,7 +2535,7 @@ msgid "Can only chain and/or/with ops"
 msgstr "Nur die Operatoren »and«, »or« und »with« können verkettet werden"
 
 msgid "Junk after rich dependency"
-msgstr ""
+msgstr "Junk nach reicher Abhängigkeit"
 
 #, c-format
 msgid "user %s does not exist - using %s\n"
@@ -2550,11 +2556,11 @@ msgstr "Unzulässige Daten für Tag %s - %u Bytes gefunden, aber %lu erwartet.\n
 
 #, c-format
 msgid "%s: base64 decode failed, len %li\n"
-msgstr ""
+msgstr "%s: base64-Dekodierung fehlgeschlagen, Länge %li\n"
 
 #, c-format
 msgid "%s: base64 decode success, len %li\n"
-msgstr ""
+msgstr "%s: base64-Dekodierung erfolgreich, Länge %li\n"
 
 msgid "Bad magic"
 msgstr "Ungültige Magic"
@@ -2952,7 +2958,7 @@ msgstr "%s-Tag %u: ungültige OpenPGP-Signatur"
 
 #, c-format
 msgid "%s: tag %u: invalid hex"
-msgstr ""
+msgstr "%s: tag %u: ungültiges Hex"
 
 #, c-format
 msgid "%s%s%s %s"
@@ -3028,9 +3034,10 @@ msgstr "Syntax-Fehler beim Auswerten von ||"
 
 msgid "macro expansion returned a bare word, please use \"...\""
 msgstr ""
+"Makro-Ausschachtelung ergab ein einziges Wort, bitte benutzen Sie \"...\""
 
 msgid "macro expansion did not return an integer"
-msgstr ""
+msgstr "Makro-Ausschachtelung ergab keinen Ganzzahl-Wert"
 
 #, c-format
 msgid "expanded string: %s\n"
@@ -3043,7 +3050,7 @@ msgid "invalid version"
 msgstr "ungültige Version"
 
 msgid "bare words are no longer supported, please use \"...\""
-msgstr ""
+msgstr "Einzelne Wörter werden nicht mehr unterstützt, benutzen Sie \"...\""
 
 msgid "parse error in expression"
 msgstr "Fehler beim Auswerten des Ausdrucks"
@@ -3095,9 +3102,9 @@ msgstr ""
 "Zu viele Rekursionsebenen bei der Expansion des Makros. Dies wird "
 "wahrscheinlich durch eine rekursive Makro-Deklaration verursacht.\n"
 
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to open shell expansion pipe for command: %s: %m \n"
-msgstr "\n"
+msgstr "Konnte die Pipe-Shell für den Befehl \"%s: %m\" nicht öffnen \n"
 
 #, c-format
 msgid "Macro %%%s has illegal name (%s)\n"
@@ -3258,9 +3265,9 @@ msgstr "Nicht unterstützter PGP-Prüfsummenalgorithmus %u\n"
 msgid "Unsupported PGP pubkey algorithm %u\n"
 msgstr "Nicht unterstützter PGP-Algorithmus %u für öffentlichen Schlüssel\n"
 
-#, fuzzy, c-format
+#, c-format
 msgid "Could not create pipe for signing: %m\n"
-msgstr "Pipe für %s konnte nicht erzeugt werden: %m\n"
+msgstr "Pipe für Signatur konnte nicht erzeugt werden: %m\n"
 
 #, c-format
 msgid "Could not set GPG_TTY to stdin: %m\n"
@@ -3272,7 +3279,7 @@ msgstr "%s konnte nicht ausgeführt werden: %s\n"
 
 #, c-format
 msgid "Could not open pipe for writing: %m\n"
-msgstr ""
+msgstr "Konnte Pipe nicht fürs Schreiben öffnen: %m\n"
 
 msgid "Could not write to pipe\n"
 msgstr "In die Pipe konnte nicht geschrieben werden\n"
@@ -3358,7 +3365,7 @@ msgid "don't verify header+payload signature"
 msgstr "Keine Überprüfung der Header- und Nutzdaten-Signatur"
 
 msgid "getopt string for scripts options"
-msgstr ""
+msgstr "getopt-Zeichenkette für Skript-Optionen"
 
 msgid "execute statement"
 msgstr "Anweisung ausführen"
