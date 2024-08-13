@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
 "POT-Creation-Date: 2022-04-07 13:03+0300\n"
-"PO-Revision-Date: 2024-02-04 18:36+0000\n"
+"PO-Revision-Date: 2024-08-14 13:40+0000\n"
 "Last-Translator: Oğuz Ersen <oguz@ersen.moe>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/tr/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n>1);\n"
-"X-Generator: Weblate 5.3.1\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #, c-format
 msgid "%s: %s\n"
@@ -790,9 +790,9 @@ msgstr ""
 msgid "Could not open %s file %s: %m\n"
 msgstr "%s dosyası açılamadı %s: %m\n"
 
-#, fuzzy, c-format
+#, c-format
 msgid "Empty %s file %s\n"
-msgstr "%s açılamadı: %s\n"
+msgstr "Boş %s dosyası %s\n"
 
 #, c-format
 msgid "illegal _docdir_fmt %s: %s\n"
@@ -941,7 +941,7 @@ msgstr "%%changelog azalan kronolojik sırada değil\n"
 
 #, c-format
 msgid "missing name in %%changelog\n"
-msgstr "%%changelog içinde isim yok\n"
+msgstr "%%changelog içinde ad yok\n"
 
 #, c-format
 msgid "no description in %%changelog\n"
@@ -961,7 +961,7 @@ msgstr "satır %d: %s seçeneği hatalı: %s\n"
 
 #, c-format
 msgid "line %d: Too many names: %s\n"
-msgstr "satır %d: İsim sayısı fazla: %s\n"
+msgstr "satır %d: Ad sayısı fazla: %s\n"
 
 #, c-format
 msgid "line %d: Error parsing %%files: %s\n"
