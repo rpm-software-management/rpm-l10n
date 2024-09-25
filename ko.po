@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
 "POT-Creation-Date: 2022-04-07 13:03+0300\n"
-"PO-Revision-Date: 2024-09-24 06:57+0000\n"
+"PO-Revision-Date: 2024-09-25 03:53+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/ko/>\n"
@@ -1453,7 +1453,7 @@ msgstr "꾸러미 %s에서 유효 적재량( %s)를 지원하지 않습니다\n"
 
 #, c-format
 msgid "package %s was already added, skipping %s\n"
-msgstr "꾸러미 %s는 이미 추가되었으며, %s를 건너 뛰기합니다\n"
+msgstr "꾸러미 %s는 이미 추가되었으며, %s를 건너뜁니다\n"
 
 #, c-format
 msgid "package %s was already added, replacing with %s\n"
