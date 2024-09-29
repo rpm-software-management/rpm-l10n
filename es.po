@@ -17,16 +17,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
 "POT-Creation-Date: 2022-04-07 13:03+0300\n"
-"PO-Revision-Date: 2022-03-26 12:16+0000\n"
-"Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
+"PO-Revision-Date: 2024-09-30 08:55+0000\n"
+"Last-Translator: Adolfo Jayme Barrientos <fitoschido@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/rpm/"
-"master/es/>\n"
+"rpm-l10n/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.11.2\n"
+"X-Generator: Weblate 5.7.2\n"
 
 #, c-format
 msgid "%s: %s\n"
@@ -34,22 +34,20 @@ msgstr "%s: %s\n"
 
 #, c-format
 msgid "RPM version %s\n"
-msgstr "versión de RPM %s\n"
+msgstr "Versión de RPM %s\n"
 
 #, c-format
 msgid "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
-msgstr "Copyright © 1998-2002 - Red Hat, Inc.\n"
+msgstr "Derechos de autor © 1998-2002 de Red Hat, Inc.\n"
 
 #, c-format
 msgid ""
 "This program may be freely redistributed under the terms of the GNU GPL\n"
-msgstr ""
-"Este programa puede redistribuirse libremente bajo los términos de la "
-"licencia GNU GPL\n"
+msgstr "Este programa puede redistribuirse libremente según la GPL de GNU\n"
 
 #, c-format
 msgid "creating a pipe for --pipe failed: %m\n"
-msgstr "falló la creación de la tubería para --pipe: %m\n"
+msgstr "no se pudo crear una canalización para --pipe: %m\n"
 
 #, c-format
 msgid "exec failed\n"
@@ -277,7 +275,7 @@ msgstr "No se puede abrir el archivo spec %s: %s\n"
 
 #, c-format
 msgid "Failed to open tar pipe: %m\n"
-msgstr "Falló la apertura de la tuberia para tar: %m\n"
+msgstr "No se pudo abrir la canalización para tar: %m\n"
 
 #, c-format
 msgid "Found more than one spec file in %s\n"
@@ -323,7 +321,7 @@ msgstr ""
 "paquetes instalados"
 
 msgid "verify database files"
-msgstr "verificar archivos de la base de datos"
+msgstr "verificar archivos de base de datos"
 
 #, fuzzy
 msgid "salvage database"
@@ -342,10 +340,10 @@ msgid "only one major mode may be specified"
 msgstr "solo puede especificarse un modo principal"
 
 msgid "verify package signature(s)"
-msgstr "verificar firma(s) del paquete"
+msgstr "verificar firmas del paquete"
 
 msgid "import an armored public key"
-msgstr "importar una llave pública con armadura"
+msgstr "importar una clave pública blindada"
 
 msgid "don't import, but tell if it would work or not"
 msgstr "no importar, pero indicar si funcionará o no"
@@ -357,7 +355,7 @@ msgid "Keyring options:"
 msgstr "Opciones del llavero:"
 
 msgid "no arguments given"
-msgstr "no ha sido indicado ningún argumento"
+msgstr "no se proporcionó ningún argumento"
 
 msgid "Query/Verify package selection options:"
 msgstr "Opciones de la selección de paquetes a consultar/verificar:"
@@ -372,7 +370,7 @@ msgid "Verify options (with -V or --verify):"
 msgstr "Opciones de verificación (con -V o --verify):"
 
 msgid "Install/Upgrade/Erase options:"
-msgstr "Opciones de Instalación/Actualización/Remoción:"
+msgstr "Opciones de instalación/actualización/borrado:"
 
 msgid "one type of query/verify may be performed at a time"
 msgstr "solo un tipo de consulta/verificación puede ser ejecutado a la vez"
@@ -535,7 +533,7 @@ msgid "use file signing key <key>"
 msgstr ""
 
 msgid "<key>"
-msgstr ""
+msgstr "<clave>"
 
 msgid "prompt for file signing key password"
 msgstr ""
@@ -633,19 +631,19 @@ msgstr ""
 
 #, c-format
 msgid "Missing '(' in %s %s\n"
-msgstr "'(' ausente en %s %s\n"
+msgstr "«(» faltante en %s %s\n"
 
 #, c-format
 msgid "Missing ')' in %s(%s\n"
-msgstr "')' ausente en %s(%s\n"
+msgstr "«)» faltante en %s(%s\n"
 
 #, c-format
 msgid "Invalid %s token: %s\n"
-msgstr "Elemento %s no válido: %s\n"
+msgstr "Ficha %s no válida: %s\n"
 
 #, c-format
 msgid "Missing %s in %s(%s)\n"
-msgstr ""
+msgstr "%s faltante en %s(%s)\n"
 
 #, c-format
 msgid "Non-white space follows %s(): %s\n"
@@ -712,23 +710,23 @@ msgstr ""
 
 #, c-format
 msgid "Path is outside buildroot: %s\n"
-msgstr ""
+msgstr "La ruta queda fuera de la raíz de compilación: %s\n"
 
 #, c-format
 msgid "Directory not found: %s\n"
-msgstr "No se ha encontrado el directorio: %s\n"
+msgstr "No se encontró el directorio: %s\n"
 
 #, c-format
 msgid "File not found: %s\n"
-msgstr "Archivo no encontrado: %s\n"
+msgstr "No se encontró el archivo: %s\n"
 
 #, c-format
 msgid "Not a directory: %s\n"
-msgstr ""
+msgstr "No es un directorio: %s\n"
 
-#, fuzzy, c-format
+#, c-format
 msgid "Can't read content of file: %s\n"
-msgstr "Falló al leer el archivo de política: %s\n"
+msgstr "No se pudo leer el contenido del archivo: %s\n"
 
 #, c-format
 msgid "%s: can't load unknown tag (%d).\n"
@@ -736,15 +734,15 @@ msgstr "%s: no se puede cargar, etiqueta (%d) desconocida.\n"
 
 #, c-format
 msgid "%s: public key read failed.\n"
-msgstr "%s: falló la lectura de la clave publica.\n"
+msgstr "%s: no se pudo leer la clave pública.\n"
 
 #, c-format
 msgid "%s: not an armored public key.\n"
-msgstr "%s: no es una clave pública con armadura.\n"
+msgstr "%s: no es una clave pública blindada.\n"
 
 #, c-format
 msgid "%s: failed to encode\n"
-msgstr "%s: falló la codificación\n"
+msgstr "%s: no se pudo codificar\n"
 
 msgid "failed symlink"
 msgstr ""
@@ -781,14 +779,14 @@ msgid "build-id found in %s too large\n"
 msgstr ""
 
 msgid "failed to create directory"
-msgstr "falló al crear el directorio"
+msgstr "no se pudo crear el directorio"
 
 msgid "Mixing main ELF and debug files in package"
 msgstr ""
 
 #, c-format
 msgid "File needs leading \"/\": %s\n"
-msgstr "El archivo necesita comenzar con \"/\": %s\n"
+msgstr "El archivo necesita comenzar por «/»: %s\n"
 
 #, c-format
 msgid "%%dev glob not permitted: %s\n"
@@ -802,9 +800,9 @@ msgstr ""
 msgid "File not found by glob: %s. Trying without globbing.\n"
 msgstr ""
 
-#, fuzzy, c-format
+#, c-format
 msgid "Could not open %s file %s: %m\n"
-msgstr "No se pudo abrir el archivo %%files %s: %m\n"
+msgstr "No se pudo abrir el archivo %s %s: %m\n"
 
 #, fuzzy, c-format
 msgid "Empty %s file %s\n"
@@ -812,7 +810,7 @@ msgstr "Clasificador de archivo vacío\n"
 
 #, c-format
 msgid "illegal _docdir_fmt %s: %s\n"
-msgstr "illegal _docdir_fmt %s: %s\n"
+msgstr "«_docdir_fmt» %s no válido: %s\n"
 
 #, c-format
 msgid "File not found by glob: %s\n"
@@ -849,9 +847,9 @@ msgstr ""
 "Se encontraron archivos instalados (pero desempaquetados):\n"
 "%s"
 
-#, fuzzy, c-format
+#, c-format
 msgid "package %s already exists\n"
-msgstr "el paquete %s ya está instalado"
+msgstr "el paquete %s ya existe\n"
 
 #, c-format
 msgid "%s was mapped to multiple filenames"
@@ -911,15 +909,15 @@ msgstr "Escrito: %s\n"
 
 #, c-format
 msgid "Executing \"%s\":\n"
-msgstr "Ejecutando \"%s\":\n"
+msgstr "Ejecutando «%s»:\n"
 
 #, c-format
 msgid "Execution of \"%s\" failed.\n"
-msgstr "Falló la ejecución de \"%s\":\n"
+msgstr "Falló la ejecución de «%s».\n"
 
 #, c-format
 msgid "Package check \"%s\" failed.\n"
-msgstr "Falló la verificación \"%s\" del paquete\n"
+msgstr "Falló la comprobación de paquete «%s».\n"
 
 #, c-format
 msgid "cannot create %s: %s\n"
@@ -1322,16 +1320,14 @@ msgstr "El paquete no tiene %%description: %s\n"
 
 #, c-format
 msgid "Policy module '%s' duplicated with overlapping types\n"
-msgstr ""
-"El módulo '%s' de políticas se encuentra duplicado con tipos que se "
-"superponen\n"
+msgstr "El módulo de directivas «%s» se duplica con tipos que interfieren\n"
 
 #, c-format
 msgid "Base modules '%s' and '%s' have overlapping types\n"
-msgstr "Los módulos base '%s' y '%s' poseen tipos que se suporponen\n"
+msgstr "Los módulos de base «%s» y «%s» tienen tipos que interfieren\n"
 
 msgid "Failed to get policies from header\n"
-msgstr "Falló al obtener poíticas del encabezado\n"
+msgstr "No se pudieron obtener directivas de la cabecera\n"
 
 #, c-format
 msgid "%%semodule requires a file path\n"
@@ -1339,15 +1335,15 @@ msgstr "%%semodule necesita una ruta de archivo\n"
 
 #, c-format
 msgid "Failed to read  policy file: %s\n"
-msgstr "Falló al leer el archivo de política: %s\n"
+msgstr "No se pudo leer el archivo de directiva: %s\n"
 
 #, c-format
 msgid "Failed to encode policy file: %s\n"
-msgstr "Falló al codificar el archivo de política: %s\n"
+msgstr "No se pudo codificar el archivo de directiva: %s\n"
 
 #, c-format
 msgid "Failed to determine a policy name: %s\n"
-msgstr "Falló al determinar el nombre de la política: %s\n"
+msgstr "No se pudo determinar un nombre de directiva: %s\n"
 
 #, c-format
 msgid ""
@@ -1359,7 +1355,7 @@ msgstr ""
 
 #, c-format
 msgid "Error parsing %s: %s\n"
-msgstr "Error analizando %s: %s\n"
+msgstr "Error al analizar %s: %s\n"
 
 #, c-format
 msgid "Expecting %%semodule tag: %s\n"
@@ -1371,11 +1367,11 @@ msgstr "No se encuentra ruta de módulo en la línea: %s\n"
 
 #, c-format
 msgid "Too many arguments in line: %s\n"
-msgstr "Demasiados argumentos en la línea: %s\n"
+msgstr "Demasiados argumentos en el renglón: %s\n"
 
 #, c-format
 msgid "Processing policies: %s\n"
-msgstr "Procesando políticas: %s\n"
+msgstr "Procesando directivas: %s\n"
 
 #, c-format
 msgid "Ignoring invalid regex %s\n"
@@ -1387,15 +1383,15 @@ msgstr ""
 
 #, c-format
 msgid "Couldn't create pipe for %s: %m\n"
-msgstr "No se pudo crear una tuberia para %s: %m\n"
+msgstr "No se pudo crear una canalización para %s: %m\n"
 
 #, c-format
 msgid "Couldn't fork %s: %s\n"
-msgstr "No se pudo ejecutar la llamada al sistema fork para %s: %s\n"
+msgstr "No se pudo bifurcar %s: %s\n"
 
 #, c-format
 msgid "Couldn't exec %s: %s\n"
-msgstr "No se pudo ejecutar la llamada exec %s: %s\n"
+msgstr "No se pudo ejecutar %s: %s\n"
 
 #, c-format
 msgid "%s failed: %x\n"
@@ -1409,19 +1405,19 @@ msgid "Empty file classifier\n"
 msgstr "Clasificador de archivo vacío\n"
 
 msgid "No file attributes configured\n"
-msgstr "No han sido configurados atributos de archivo\n"
+msgstr "No se han configurado atributos de archivo\n"
 
 #, c-format
 msgid "magic_open(0x%x) failed: %s\n"
-msgstr "falló magic_open(0x%x): %s\n"
+msgstr "falló «magic_open(0x%x)»: %s\n"
 
 #, c-format
 msgid "magic_load failed: %s\n"
-msgstr "falló magic_load: %s\n"
+msgstr "falló «magic_load»: %s\n"
 
 #, c-format
 msgid "Recognition of file \"%s\" failed: mode %06o %s\n"
-msgstr "Falló la identificación del archivo \"%s\": modo %06o %s\n"
+msgstr "No se pudo reconocer el archivo «%s»: modo %06o %s\n"
 
 #, c-format
 msgid "Recognition of file mtype \"%s\" failed: mode %06o %s\n"
@@ -1433,7 +1429,7 @@ msgstr "Buscando %s: %s\n"
 
 #, c-format
 msgid "Failed to find %s:\n"
-msgstr "Falló la búsqueda de %s:\n"
+msgstr "No se pudo encontrar %s:\n"
 
 msgid "Deprecated external dependency generator is used!\n"
 msgstr ""
@@ -1483,9 +1479,9 @@ msgstr ""
 msgid "rpmxdb: Version mismatch. Expected version: %u. Found version: %u\n"
 msgstr ""
 
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to open sqlite database %s: %s\n"
-msgstr "No se puede abrir el archivo spec %s: %s\n"
+msgstr "No se puede abrir la base de datos SQLite %s: %s\n"
 
 #, c-format
 msgid "%s is a Delta RPM and cannot be directly installed\n"
@@ -1493,7 +1489,7 @@ msgstr "%s es un RPM Delta y no puede ser instalado directamente\n"
 
 #, c-format
 msgid "Unsupported payload (%s) in package %s\n"
-msgstr "Carga útil (%s) no soportada en el paquete %s\n"
+msgstr "Carga no admitida (%s) en el paquete %s\n"
 
 #, c-format
 msgid "package %s was already added, skipping %s\n"
@@ -1504,7 +1500,7 @@ msgid "package %s was already added, replacing with %s\n"
 msgstr "el paquete %s ya fue añadido, reemplazando con %s\n"
 
 msgid "(not a blob)"
-msgstr "(no es un blob)"
+msgstr "(no es un objeto inmutable)"
 
 msgid "(not a number)"
 msgstr "(no es un número)"
@@ -1516,23 +1512,23 @@ msgid "(invalid type)"
 msgstr "(tipo no válido)"
 
 msgid "(not base64)"
-msgstr "(no base64)"
+msgstr "(no es base64)"
 
 msgid "(invalid xml type)"
-msgstr "(tipo xml no válido)"
+msgstr "(tipo XML no válido)"
 
 msgid "(not an OpenPGP signature)"
 msgstr "(no es una firma OpenPGP)"
 
 #, c-format
 msgid "Invalid date %u"
-msgstr "Fecha no válida %u"
+msgstr "La fecha %u no es válida"
 
 msgid "normal"
-msgstr "normal        "
+msgstr "normal"
 
 msgid "replaced"
-msgstr "reemplazado"
+msgstr "reemplazadoo"
 
 msgid "not installed"
 msgstr "no instalado"
@@ -1544,10 +1540,10 @@ msgid "wrong color"
 msgstr "color incorrecto"
 
 msgid "missing"
-msgstr "no se encuentra"
+msgstr "faltante"
 
 msgid "(unknown)"
-msgstr "(desconocido) "
+msgstr "(desconocido)"
 
 #, c-format
 msgid "failed to open dir %s of %s: %s\n"
@@ -1625,7 +1621,7 @@ msgid "sigh pad(%zd): BAD, read %zd bytes"
 msgstr ""
 
 msgid "signature "
-msgstr ""
+msgstr "firma "
 
 msgid "hdr length: BAD"
 msgstr ""
@@ -1653,7 +1649,7 @@ msgstr "nombre de etiqueta vacío"
 
 #, c-format
 msgid "unknown tag: \"%s\""
-msgstr ""
+msgstr "etiqueta desconocida: «%s»"
 
 msgid "] expected at end of array"
 msgstr "] esperado al final del arreglo"
@@ -1688,9 +1684,9 @@ msgstr "se esperaba | al final de la expresión"
 msgid "array iterator used with different sized arrays"
 msgstr "iterador de arreglo usado con arreglos de diferente tamaño"
 
-#, fuzzy, c-format
+#, c-format
 msgid "RPM v3 packages are deprecated: %s\n"
-msgstr "línea %d: %s se encuentra obsoleta: %s\n"
+msgstr "los paquetes RPM v3 son obsoletos: %s\n"
 
 msgid "Error writing to stdout"
 msgstr ""
@@ -1761,19 +1757,19 @@ msgid "don't verify package signature(s)"
 msgstr "no verificar la firma(s) del paquete"
 
 msgid "send stdout to CMD"
-msgstr "enviar stdout a CMD"
+msgstr "enviar salida estándar a ORDEN"
 
 msgid "CMD"
-msgstr "CMD"
+msgstr "ORDEN"
 
 msgid "use ROOT as top level directory"
-msgstr "utilizar ROOT como el directorio superior"
+msgstr "usar RAÍZ como directorio de nivel superior"
 
 msgid "ROOT"
-msgstr "ROOT"
+msgstr "RAÍZ"
 
 msgid "use database in DIRECTORY"
-msgstr "utilizar base de datos en DIRECTORIO"
+msgstr "usar base de datos en DIRECTORIO"
 
 msgid "DIRECTORY"
 msgstr "DIRECTORIO"
@@ -1804,7 +1800,7 @@ msgstr ""
 
 #, c-format
 msgid "%s: option table misconfigured (%d)\n"
-msgstr "%s: misconfiguración de la opción table (%d)\n"
+msgstr "%s: tabla de opciones mal configurada (%d)\n"
 
 msgid "exclude paths must begin with a /"
 msgstr "las rutas de exclusión deben iniciar con una /"
@@ -1856,7 +1852,7 @@ msgid "skip files with leading component <path> "
 msgstr "omitir archivos con el componente inicial <path>"
 
 msgid "<path>"
-msgstr "<path>"
+msgstr "<ruta>"
 
 msgid "short hand for --replacepkgs --replacefiles"
 msgstr "abreviatura para --replacepkgs --replacefiles"
@@ -2152,29 +2148,29 @@ msgid "incorrect format: %s\n"
 msgstr "formato incorrecto: %s\n"
 
 msgid "(contains no files)\n"
-msgstr "(no contiene archivos)\n"
+msgstr "(no contiene ningún archivo)\n"
 
 msgid "normal        "
 msgstr "normal        "
 
 msgid "replaced      "
-msgstr "reemplazado"
+msgstr "reemplazado      "
 
 msgid "not installed "
-msgstr "no instalado"
+msgstr "no instalado "
 
 msgid "net shared    "
-msgstr "compartido en red"
+msgstr "compartido en red    "
 
 msgid "wrong color   "
-msgstr "color incorrecto"
+msgstr "color incorrecto   "
 
 msgid "(no state)    "
-msgstr "(sin estado)"
+msgstr "(ningún estado)    "
 
 #, c-format
 msgid "(unknown %3d) "
-msgstr "(desconocido %3d) "
+msgstr "(%3d desconocido) "
 
 msgid "package has not file owner/group lists\n"
 msgstr "el paquete no tiene lista de propietario/grupo de archivo\n"
@@ -2244,7 +2240,7 @@ msgstr "número de paquete inválido: %s\n"
 
 #, c-format
 msgid "record %u could not be read\n"
-msgstr "el registro %u no pudo ser leído\n"
+msgstr "no se pudo leer el registro %u\n"
 
 #, c-format
 msgid "package %s is not installed\n"
@@ -2252,7 +2248,7 @@ msgstr "el paquete %s no está instalado\n"
 
 #, c-format
 msgid "unknown tag: \"%s\"\n"
-msgstr "etiqueta desconocida:\"%s\"\n"
+msgstr "etiqueta desconocida: «%s»\n"
 
 #, c-format
 msgid "%s: key %d import failed.\n"
@@ -2260,7 +2256,7 @@ msgstr "%s: falló la importación de la llave %d\n"
 
 #, c-format
 msgid "%s: key %d not an armored public key.\n"
-msgstr "%s: la llave %d no es una llave pública protegida.\n"
+msgstr "%s: la clave %d no está blindada.\n"
 
 #, c-format
 msgid "%s: import read failed(%d).\n"
@@ -2271,16 +2267,16 @@ msgid "Fread failed: %s"
 msgstr ""
 
 msgid "DIGESTS"
-msgstr ""
+msgstr "RESÚMENES"
 
 msgid "digests"
-msgstr ""
+msgstr "resúmenes"
 
 msgid "SIGNATURES"
-msgstr ""
+msgstr "FIRMAS"
 
 msgid "signatures"
-msgstr ""
+msgstr "firmas"
 
 msgid "NOT OK"
 msgstr "NO ESTA BIEN"
@@ -2358,7 +2354,7 @@ msgstr ""
 
 #, c-format
 msgid "Could not get public keys from %s\n"
-msgstr ""
+msgstr "No se pudieron obtener las claves públicas de %s\n"
 
 #, c-format
 msgid "could not delete old database at %s\n"
@@ -2380,19 +2376,16 @@ msgid "cannot add record originally at %u\n"
 msgstr "no se puede añadir el registro original en %u\n"
 
 msgid "failed to rebuild database: original database remains in place\n"
-msgstr ""
-"falló la reconstrucción de la base de datos: la base de datos original "
-"permanece en su lugar\n"
+msgstr "no se pudo reconstruir la base de datos: se conservó la original\n"
 
 msgid "failed to replace old database with new database!\n"
-msgstr ""
-"¡falló el remplazo de la base de datos antigua con la nueva base de datos!\n"
+msgstr "no se pudo reemplazar la base de datos antigua con la nueva\n"
 
 msgid "NO "
 msgstr "NO "
 
 msgid "YES"
-msgstr "SI"
+msgstr "SÍ"
 
 msgid "PreReq:, Provides:, and Obsoletes: dependencies support versions."
 msgstr "PreReq:, Provides:, y Obsoletes: dependencias soportan versiones."
@@ -2403,13 +2396,13 @@ msgstr ""
 "no como ruta."
 
 msgid "package payload can be compressed using bzip2."
-msgstr "la carga del paquete puede ser comprimida utilizando bzip2."
+msgstr "la carga del paquete puede comprimirse con bzip2."
 
 msgid "package payload can be compressed using xz."
-msgstr "la carga del paquete puede ser comprimida utilizando xz."
+msgstr "la carga del paquete puede comprimirse con xz."
 
 msgid "package payload can be compressed using lzma."
-msgstr "la carga del paquete puede ser comprimida tilizando bzip2. "
+msgstr "la carga del paquete puede comprimirse con lzma."
 
 msgid "package payload file(s) have \"./\" prefix."
 msgstr "los archivos de carga del paquete tienen el prefijo  \"./\"."
@@ -2442,7 +2435,7 @@ msgid "file digest algorithm is per package configurable"
 msgstr "el algoritmo de digest se puede configurar por paquete"
 
 msgid "support for POSIX.1e file capabilities"
-msgstr "soporte para capacidades de archivo POSIX1e."
+msgstr "compatibilidad con capacidades de archivos POSIX.1e"
 
 msgid "package scriptlets can be expanded at install time."
 msgstr ""
@@ -2472,7 +2465,7 @@ msgid "Unknown rich dependency op '%.*s'"
 msgstr ""
 
 msgid "Name required"
-msgstr ""
+msgstr "Se requiere un nombre"
 
 msgid "Illegal ops in with/without"
 msgstr ""
@@ -2536,7 +2529,7 @@ msgid "Bad/unreadable  header"
 msgstr "Encabezado erróneo/imposible de leer"
 
 msgid "Header size too big"
-msgstr "El tamaño del encabezado es demasiado extenso"
+msgstr "La cabecera es demasiado grande"
 
 msgid "File too large for archive"
 msgstr "Archivo muy grande para compactar"
@@ -2545,22 +2538,22 @@ msgid "Unknown file type"
 msgstr "Tipo de archivo desconocido"
 
 msgid "Missing file(s)"
-msgstr ""
+msgstr "Faltan archivos"
 
 msgid "Digest mismatch"
-msgstr "El digest no coincide"
+msgstr "No coinciden los resúmenes"
 
 msgid "Internal error"
 msgstr "Error interno"
 
 msgid "Archive file not in header"
-msgstr "El fichero del archivo no se encuentra en el encabezado"
+msgstr "El archivador no está en la cabecera"
 
 msgid "Invalid symlink"
-msgstr ""
+msgstr "Enlace simbólico no válido"
 
 msgid "File from package already exists as a directory in system"
-msgstr ""
+msgstr "El archivo del paquete ya existe como directorio en el sistema"
 
 msgid " failed - "
 msgstr " falló - "
@@ -2583,26 +2576,26 @@ msgstr "%s: no es un paquete rpm (o manifiesto de paquete)\n"
 
 #, c-format
 msgid "Updating / installing...\n"
-msgstr "Actualizando / instalando...\n"
+msgstr "Actualizando/instalando...\n"
 
 #, c-format
 msgid "Cleaning up / removing...\n"
-msgstr "Limpiando / eliminando...\n"
+msgstr "Limpiando/eliminando...\n"
 
 msgid "Preparing..."
 msgstr "Preparando..."
 
 msgid "Verifying..."
-msgstr ""
+msgstr "Verificando..."
 
 msgid "Preparing packages..."
 msgstr "Preparando paquetes..."
 
 msgid "Verifying packages..."
-msgstr ""
+msgstr "Verificando paquetes..."
 
 msgid "Failed dependencies:\n"
-msgstr "Error de dependencias:\n"
+msgstr "Dependencias fallidas:\n"
 
 #, c-format
 msgid "%s: not an rpm package (or package manifest): %s\n"
@@ -2610,7 +2603,7 @@ msgstr "%s: no es un paquete rpm (o manifiesto de paquete): %s\n"
 
 #, c-format
 msgid "%s cannot be installed\n"
-msgstr "%s no puede ser instalado\n"
+msgstr "%s no puede instalarse\n"
 
 #, c-format
 msgid "Retrieving %s\n"
@@ -2678,7 +2671,7 @@ msgstr ""
 
 #, c-format
 msgid "Plugin %s not loaded\n"
-msgstr "El complemento %s no ha sido cargado\n"
+msgstr "No se cargó el complemento %s\n"
 
 msgid "different"
 msgstr "diferente"
@@ -2811,7 +2804,7 @@ msgstr "Sistema desconocido: %s\n"
 
 #, c-format
 msgid "Please contact %s\n"
-msgstr "Por favor contacte %s\n"
+msgstr "Póngase en contacto con %s\n"
 
 #, c-format
 msgid "Unable to open %s for reading: %m.\n"
@@ -2853,10 +2846,10 @@ msgid "%s scriptlet failed, exit status %d\n"
 msgstr "%s: macro de ejecución de guión fallido, estado de terminación %d\n"
 
 msgid "Unknown format"
-msgstr "formato desconocido"
+msgstr "Formato desconocido"
 
 msgid "install"
-msgstr "instalar "
+msgstr "instalar"
 
 msgid "erase"
 msgstr "borrar"
@@ -2873,19 +2866,19 @@ msgstr "no se puede abrir la base de datos Packages en %s\n"
 
 #, c-format
 msgid "extra '(' in package label: %s\n"
-msgstr "'(' extra en la etiqueta del paquete: %s\n"
+msgstr "«(» adicional en la etiqueta del paquete: %s\n"
 
 #, c-format
 msgid "missing '(' in package label: %s\n"
-msgstr "'(' ausente en la etiqueta del paquete: %s\n"
+msgstr "«(» faltante en la etiqueta del paquete: %s\n"
 
 #, c-format
 msgid "missing ')' in package label: %s\n"
-msgstr "')' ausente en la etiqueta del paquete: %s\n"
+msgstr "«)» faltante en la etiqueta del paquete: %s\n"
 
 #, c-format
 msgid "%s: reading of public key failed.\n"
-msgstr "%s: lectura de la clave publica fallida.\n"
+msgstr "%s: no se pudo leer la clave pública.\n"
 
 #, c-format
 msgid "unknown keyring type: %s, using rpmdb\n"
@@ -2931,51 +2924,51 @@ msgid "%s%s%s %s"
 msgstr ""
 
 msgid "digest"
-msgstr ""
+msgstr "resumen"
 
 #, c-format
 msgid "%s%s"
-msgstr ""
+msgstr "%s%s"
 
 msgid "signature"
-msgstr ""
+msgstr "firma"
 
 msgid "header"
-msgstr ""
+msgstr "cabecera"
 
 msgid "package"
-msgstr ""
+msgstr "paquete"
 
 msgid "Header "
-msgstr "Encabezado"
+msgstr "Cabecera "
 
 msgid "Payload "
-msgstr ""
+msgstr "Carga "
 
 msgid "Unable to reload signature header.\n"
-msgstr "Incapaz de recargar el encabezado de la firma\n"
+msgstr "No se puede volver a cargar la cabecera de firma.\n"
 
 msgid "no signature"
-msgstr ""
+msgstr "ninguna firma"
 
 msgid "no digest"
-msgstr ""
+msgstr "ningún resumen"
 
 msgid "skipped"
-msgstr "ignorado"
+msgstr "omitido"
 
 msgid "failed"
-msgstr "falló"
+msgstr "fallo"
 
 msgid "no state"
-msgstr ""
+msgstr "ningún estado"
 
 msgid "unknown state"
-msgstr ""
+msgstr "estado desconocido"
 
 #, c-format
 msgid "missing   %c %s"
-msgstr "falta %c %s"
+msgstr "falta   %c %s"
 
 #, c-format
 msgid "Unsatisfied dependencies for %s:\n"
@@ -2989,17 +2982,14 @@ msgstr ""
 msgid "Unable to reset I/O priority: %s"
 msgstr ""
 
-#, fuzzy
 msgid "syntax error while parsing =="
-msgstr "error de sintaxis durante el análisis ==\n"
+msgstr "error de sintaxis al analizar =="
 
-#, fuzzy
 msgid "syntax error while parsing &&"
-msgstr "error de sintaxis durante el análisis &&\n"
+msgstr "error de sintaxis al analizar &&"
 
-#, fuzzy
 msgid "syntax error while parsing ||"
-msgstr "error de sintaxis durante el análisis ||\n"
+msgstr "error de sintaxis al analizar ||"
 
 msgid "macro expansion returned a bare word, please use \"...\""
 msgstr ""
@@ -3029,16 +3019,14 @@ msgstr "error de análisis en la expresión\n"
 msgid "unsupported function argument type"
 msgstr ""
 
-#, fuzzy
 msgid "syntax error in expression"
-msgstr "error de sintaxis en la expresión\n"
+msgstr "error de sintaxis en la expresión"
 
 msgid "unsupported funcion"
-msgstr ""
+msgstr "función no admitida"
 
-#, fuzzy
 msgid "unmatched ("
-msgstr "no coincidente (\n"
+msgstr "( sin correspondiente"
 
 #, fuzzy
 msgid "- only on numbers"
@@ -3053,21 +3041,19 @@ msgid "types must match"
 msgstr "los tipos deben coincidir\n"
 
 msgid "division by zero"
-msgstr ""
+msgstr "división por cero"
 
 msgid "* and / not supported for versions"
-msgstr ""
+msgstr "* y / no se admiten en las versiones"
 
-#, fuzzy
 msgid "* and / not supported for strings"
-msgstr "* / no está soportado en cadenas\n"
+msgstr "* y / no se admiten en las cadenas"
 
 msgid "+ and - not supported for versions"
-msgstr ""
+msgstr "+ y - no se admiten en las versiones"
 
-#, fuzzy
 msgid "- not supported for strings"
-msgstr "- no está soportado en cadenas\n"
+msgstr "- no se admite en las cadenas"
 
 #, c-format
 msgid "%3d>%*s(empty)\n"
@@ -3244,9 +3230,9 @@ msgstr "Algoritmo hash PGP no soportado %u\n"
 msgid "Unsupported PGP pubkey algorithm %u\n"
 msgstr "Algoritmo de llave pública PGP no soportado %u\n"
 
-#, fuzzy, c-format
+#, c-format
 msgid "Could not create pipe for signing: %m\n"
-msgstr "No se pudo crear una tuberia para %s: %m\n"
+msgstr "No se pudo crear una canalización para firmar: %m\n"
 
 #, fuzzy, c-format
 msgid "Could not set GPG_TTY to stdin: %m\n"
@@ -3256,16 +3242,16 @@ msgstr "No se pudo abrir el archivo %%files %s: %m\n"
 msgid "Could not exec %s: %s\n"
 msgstr "No se pudo ejecutar %s: %s\n"
 
-#, fuzzy, c-format
+#, c-format
 msgid "Could not open pipe for writing: %m\n"
-msgstr "No se pudo crear una tuberia para %s: %m\n"
+msgstr "No se pudo crear una canalización para escribir: %m\n"
 
 msgid "Could not write to pipe\n"
-msgstr ""
+msgstr "No se pudo escribir en la canalización\n"
 
 #, c-format
 msgid "Could not read from file %s: %s\n"
-msgstr ""
+msgstr "No se pudo leer del archivo %s: %s\n"
 
 #, c-format
 msgid "gpg exec failed (%d)\n"
@@ -3296,11 +3282,11 @@ msgstr ""
 
 #, c-format
 msgid "%s: rpmReadSignature failed: %s"
-msgstr "%s: rpmReadSignature falló: %s"
+msgstr "%s: falló «rpmReadSignature»: %s"
 
 #, c-format
 msgid "%s: headerRead failed: %s\n"
-msgstr "%s: falló headerRead: %s\n"
+msgstr "%s: falló «headerRead»: %s\n"
 
 msgid "Cannot sign RPM v3 packages\n"
 msgstr "No es posible firmar paquetes RPM v3\n"
@@ -3311,10 +3297,10 @@ msgstr "%s ya contiene una firma idéntica, ignorando\n"
 
 #, c-format
 msgid "%s: rpmWriteSignature failed: %s\n"
-msgstr "%s: rpmWriteSignature falló: %s\n"
+msgstr "%s: falló «rpmWriteSignature»: %s\n"
 
 msgid "rpmMkTemp failed\n"
-msgstr "faló makeTempFile\n"
+msgstr "Falló «rpmMkTemp»\n"
 
 #, c-format
 msgid "%s: writeLead failed: %s\n"
@@ -3322,41 +3308,41 @@ msgstr "%s: writeLead falló: %s\n"
 
 #, c-format
 msgid "replacing %s failed: %s\n"
-msgstr "falló el reemplazo %s: %s\n"
+msgstr "no se pudo reemplazar %s: %s\n"
 
 msgid "sign_hash failed\n"
-msgstr ""
+msgstr "Falló «sign_hash»\n"
 
 msgid "File digest algorithm id is invalid"
 msgstr ""
 
 msgid "signFile failed\n"
-msgstr ""
+msgstr "Falló «signFile»\n"
 
 msgid "headerPutString failed\n"
-msgstr ""
+msgstr "Falló «headerPutString»\n"
 
 #, c-format
 msgid "%s: read manifest failed: %s\n"
 msgstr "%s: falló la lectura del manifiesto: %s\n"
 
 msgid "don't verify header+payload signature"
-msgstr "no verificar firma de encabezado+carga"
+msgstr "no verificar firma de cabecera+carga"
 
 msgid "getopt string for scripts options"
 msgstr ""
 
 msgid "execute statement"
-msgstr ""
+msgstr "ejecutar instrucción"
 
 msgid "interactive session"
-msgstr ""
+msgstr "sesión interactiva"
 
 msgid "extract an archive"
-msgstr ""
+msgstr "extraer un archivador"
 
 msgid "only print what would be done"
-msgstr ""
+msgstr "solo mostrar lo que se haría"
 
 #~ msgid "build through %build (%prep, then compile) from <specfile>"
 #~ msgstr ""
