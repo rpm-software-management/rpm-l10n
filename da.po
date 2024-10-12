@@ -9,20 +9,20 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
 "POT-Creation-Date: 2022-04-07 13:03+0300\n"
-"PO-Revision-Date: 2020-10-11 06:30+0000\n"
-"Last-Translator: scootergrisen <scootergrisen@gmail.com>\n"
+"PO-Revision-Date: 2024-10-13 19:38+0000\n"
+"Last-Translator: DK Guy <peter@nozen.dk>\n"
 "Language-Team: Danish <https://translate.fedoraproject.org/projects/rpm/"
-"master/da/>\n"
+"rpm-l10n/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.2.2\n"
+"X-Generator: Weblate 5.7.2\n"
 
 #, c-format
 msgid "%s: %s\n"
-msgstr ""
+msgstr "%s:%s\n"
 
 #, c-format
 msgid "RPM version %s\n"
@@ -30,23 +30,24 @@ msgstr "RPM version %s\n"
 
 #, c-format
 msgid "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
-msgstr ""
+msgstr "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
 
 #, c-format
 msgid ""
 "This program may be freely redistributed under the terms of the GNU GPL\n"
 msgstr ""
+"Dette program kan frit videredistribueres under betingelserne i GNU GPL\n"
 
 #, c-format
 msgid "creating a pipe for --pipe failed: %m\n"
-msgstr ""
+msgstr "Kunne ikke oprette en pipe til --pipe: %m\n"
 
 #, c-format
 msgid "exec failed\n"
 msgstr "eksekvering mislykkedes\n"
 
 msgid "create uncompressed tar file"
-msgstr ""
+msgstr "lav ukomprimeret tar fil"
 
 #, c-format
 msgid "argument is not an RPM package\n"
@@ -62,7 +63,7 @@ msgstr "kan ikke genåbne pakkeindhold: %s\n"
 
 #, c-format
 msgid "files over 4GB not supported by cpio, use rpm2archive instead\n"
-msgstr ""
+msgstr "filer over 4GB understøttes ikke af cpio, brug rpm2archive i stedet\n"
 
 #, c-format
 msgid "buildroot already specified, ignoring %s\n"
