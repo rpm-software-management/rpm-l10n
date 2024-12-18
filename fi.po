@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
 "POT-Creation-Date: 2022-04-07 13:03+0300\n"
-"PO-Revision-Date: 2023-04-01 10:20+0000\n"
+"PO-Revision-Date: 2024-12-19 10:38+0000\n"
 "Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/fi/>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15.2\n"
+"X-Generator: Weblate 5.9.1\n"
 
 #, c-format
 msgid "%s: %s\n"
@@ -512,14 +512,14 @@ msgstr "Allekirjoitusvalitsimet:"
 
 #, c-format
 msgid "You must set \"%%_gpg_name\" in your macro file\n"
-msgstr "Sinun pitää asettaa \"gpg_name:\" makrotiedostossasi\n"
+msgstr "Sinun on asetettava \"%%_gpg_name\" makrotiedostoosi\n"
 
 #, c-format
 msgid ""
 "You must set \"%%_file_signing_key\" in your macro file or on the command "
 "line with --fskpath\n"
 msgstr ""
-"Sinun on määritettävä \"%% _ file_signing_key\" makrotiedostoon tai "
+"Sinun on asetettava \"%%_file_signing_key\" makrotiedostoon tai "
 "komentoriville '--fskpath':lla\n"
 
 msgid "--fskpath may only be specified when signing files"
@@ -640,7 +640,7 @@ msgstr "Virheellinen hakemisto-oikeusmäärittely %s(%s)\n"
 
 #, c-format
 msgid "Unusual locale length: \"%s\" in %%lang(%s)\n"
-msgstr "Epätavallinen maa-asetuksen pituus: \"%s\" kohteessa %%lang(%s)\n"
+msgstr "Epätavallinen maa-asetuksen pituus: \"%s\" %%lang(%s):ssa\n"
 
 #, c-format
 msgid "Duplicate locale %s in %%lang(%s)\n"
@@ -916,15 +916,15 @@ msgstr "virheellinen päivämäärä %%changelog:ssa: %s\n"
 
 #, c-format
 msgid "%%changelog entries must start with *\n"
-msgstr "%%changelog merkintöjen täytyy alkaa *:llä\n"
+msgstr "%%changelog merkintöjen täytyy alkaa \"*\":llä\n"
 
 #, c-format
 msgid "incomplete %%changelog entry\n"
-msgstr "epätäydellinen merkintä %%changelog:issa\n"
+msgstr "epätäydellinen %%changelog-merkintä\n"
 
 #, c-format
 msgid "bad date in %%changelog: %s\n"
-msgstr "virheellinen päivämäärä %%changelog:issa: %s\n"
+msgstr "virheellinen päivämäärä %%changelogissa: %s\n"
 
 #, c-format
 msgid "%%changelog not in descending chronological order\n"
@@ -932,19 +932,19 @@ msgstr "%%changelog ei ole kronologisessa järjestyksessä\n"
 
 #, c-format
 msgid "missing name in %%changelog\n"
-msgstr "puuttuva nimi %%changelog:issa\n"
+msgstr "puuttuva nimi %%changelogissa\n"
 
 #, c-format
 msgid "no description in %%changelog\n"
-msgstr "ei kuvausta %%changelog:issa\n"
+msgstr "ei kuvausta %%changelogissa\n"
 
 #, c-format
 msgid "line %d: second %%changelog\n"
-msgstr "rivi %d: toinen %%muutoslogi\n"
+msgstr "rivi %d: toinen %%changelog\n"
 
 #, c-format
 msgid "line %d: Error parsing %%description: %s\n"
-msgstr "rivi %d: virhe jäsennettäessä %%description-osiota %s\n"
+msgstr "rivi %d: virhe jäsennettäessä %%description: %s\n"
 
 #, c-format
 msgid "line %d: Bad option %s: %s\n"
@@ -956,7 +956,7 @@ msgstr "rivi %d: liikaa nimiä: %s\n"
 
 #, c-format
 msgid "line %d: Error parsing %%files: %s\n"
-msgstr "rivi %d: virhe jäsennettäessä %%files-osiota: %s\n"
+msgstr "rivi %d: virhe jäsennettäessä %%files: %s\n"
 
 #, c-format
 msgid "line %d: multiple %%files for package '%s'\n"
@@ -964,7 +964,7 @@ msgstr "rivi %d: useita %%files paketille '%s'\n"
 
 #, c-format
 msgid "line %d: Error parsing %%policies: %s\n"
-msgstr "rivi %d: virhe jäsennettäessä %%käytännöt: %s\n"
+msgstr "rivi %d: virhe jäsennettäessä %%policies: %s\n"
 
 #, c-format
 msgid "Error parsing tag field: %s\n"
@@ -1125,7 +1125,7 @@ msgstr "Ei lähdettä numero %u\n"
 
 #, c-format
 msgid "Error parsing %%setup: %s\n"
-msgstr "Virhe jäsennettäessä %%setup-osiota: %s\n"
+msgstr "Virhe jäsennettäessä %%setup: %s\n"
 
 #, c-format
 msgid "line %d: Bad arg to %%setup: %s\n"
@@ -1145,7 +1145,7 @@ msgstr "Virheellinen patch-numero %s: %s\n"
 
 #, c-format
 msgid "line %d: second %%prep\n"
-msgstr "rivi %d: toinen %%prep-osio\n"
+msgstr "rivi %d: toinen %%prep\n"
 
 msgid "Dependency tokens must begin with alpha-numeric, '_' or '/'"
 msgstr ""
@@ -1249,7 +1249,7 @@ msgstr "rivi %d: päättämätön makro tai huono rivin jatko\n"
 
 #, c-format
 msgid "%s: line %d: %s with no %%if\n"
-msgstr "%s: rivi %d: %s puuttuu %%if\n"
+msgstr "%s: rivi %d: %s puuttuvalla %%if\n"
 
 #, c-format
 msgid "%s: line %d: %s after %s\n"
@@ -1277,7 +1277,7 @@ msgstr "rivi %d: %%end ei huoli yhtään argumenttia: %s\n"
 
 #, c-format
 msgid "line %d: %%end not expected here, no section to close: %s\n"
-msgstr "rivi %d: %%end ei odotettu täällä, ei suljettavaa lohkoa : %s\n"
+msgstr "rivi %d: %%end ei odotettu täällä, ei suljettavaa osiota : %s\n"
 
 #, c-format
 msgid "line %d doesn't belong to any section: %s\n"
@@ -1288,7 +1288,7 @@ msgstr "Ei yhteensopivia arkkitehtureeja käännökselle\n"
 
 #, c-format
 msgid "Package has no %%description: %s\n"
-msgstr "Paketissa ei ole %%description-osiota: %s\n"
+msgstr "Paketissa ei ole %%description: %s\n"
 
 #, c-format
 msgid "Policy module '%s' duplicated with overlapping types\n"
@@ -1613,11 +1613,11 @@ msgstr "virheellinen kentän leveys"
 
 #, c-format
 msgid "missing { after %%"
-msgstr "puuttuu { %% jälkeen"
+msgstr "puuttuu { %%:n jälkeen"
 
 #, c-format
 msgid "missing } after %%{"
-msgstr "puuttuu } %%{ jälkeen"
+msgstr "puuttuu } %%:n{ jälkeen"
 
 msgid "empty tag format"
 msgstr "tyhjä nimiön formaatti"
@@ -1890,46 +1890,46 @@ msgstr "älä suorita pakettikohtaisia skriptejä"
 
 #, c-format
 msgid "do not execute %%pre scriptlet (if any)"
-msgstr "älä suorita %%pre-scriptiä"
+msgstr "älä suorita %%pre-sovelmaa (jos sellainen on)"
 
 #, c-format
 msgid "do not execute %%post scriptlet (if any)"
-msgstr "älä suorita %%post-scriptiä"
+msgstr "älä suorita %%post-sovelmaa (jos sellainen on)"
 
 #, c-format
 msgid "do not execute %%preun scriptlet (if any)"
-msgstr "älä suorita %%preun-scriptiä"
+msgstr "älä suorita %%preun-sovelmaa (jos sellainen on)"
 
 #, c-format
 msgid "do not execute %%postun scriptlet (if any)"
-msgstr "älä suorita %%postun scriptiä"
+msgstr "älä suorita %%postun-sovelmaa (jos sellainen on)"
 
 #, c-format
 msgid "do not execute %%pretrans scriptlet (if any)"
-msgstr "älä suorita %%pretrans-komentosarjaa (jos sellaista on)"
+msgstr "älä suorita %%pretrans-sovelmaa (jos sellainen on)"
 
 #, c-format
 msgid "do not execute %%posttrans scriptlet (if any)"
-msgstr "älä suorita %%posttrans-komentosarjaa (jos sellaista on)"
+msgstr "älä suorita %%posttrans-sovelmaa (jos sellainen on)"
 
 msgid "do not execute any scriptlet(s) triggered by this package"
 msgstr "älä suorita tämän paketin laukaisemia skriptejä"
 
 #, c-format
 msgid "do not execute any %%triggerprein scriptlet(s)"
-msgstr "älä suorita %%triggerprein skriptejä"
+msgstr "älä suorita %%triggerprein-sovelmia"
 
 #, c-format
 msgid "do not execute any %%triggerin scriptlet(s)"
-msgstr "älä suorita %%triggerin skriptejä"
+msgstr "älä suorita %%triggerin-sovelmia"
 
 #, c-format
 msgid "do not execute any %%triggerun scriptlet(s)"
-msgstr "älä suorita %%triggerun scriptejä"
+msgstr "älä suorita %%triggerun-sovelmia"
 
 #, c-format
 msgid "do not execute any %%triggerpostun scriptlet(s)"
-msgstr "älä suorita %%triggerpostun scriptejä"
+msgstr "älä suorita %%triggerpostun-sovelmia"
 
 msgid ""
 "upgrade to an old version of the package (--force on upgrades does this "
