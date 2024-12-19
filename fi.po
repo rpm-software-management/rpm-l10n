@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
 "POT-Creation-Date: 2022-04-07 13:03+0300\n"
-"PO-Revision-Date: 2024-12-19 10:38+0000\n"
+"PO-Revision-Date: 2024-12-20 12:38+0000\n"
 "Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/fi/>\n"
@@ -2260,7 +2260,7 @@ msgid "NOT OK"
 msgstr "EI OK"
 
 msgid "OK"
-msgstr "OK"
+msgstr "Hyvä on"
 
 #, c-format
 msgid "%s: open failed: %s\n"
