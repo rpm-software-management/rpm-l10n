@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpm 4.18.90\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-04 09:25+0300\n"
-"PO-Revision-Date: 2024-11-14 15:14+0000\n"
+"PO-Revision-Date: 2025-02-20 06:28+0000\n"
 "Last-Translator: Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>\n"
 "Language-Team: Romanian <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/ro/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 5.8.2\n"
+"X-Generator: Weblate 5.10\n"
 
 #, c-format
 msgid "%s: %s\n"
@@ -1052,7 +1052,7 @@ msgstr "Arhitectura nu este inclusă: %s\n"
 
 #, c-format
 msgid "OS is excluded: %s\n"
-msgstr "OS is excluded: %s\n"
+msgstr "SO-ul este exclus: %s\n"
 
 #, c-format
 msgid "OS is not included: %s\n"
@@ -2021,7 +2021,7 @@ msgid ""
 "automatically)"
 msgstr ""
 "actualizează la o versiune veche a pachetului (opțiunea „--force” la "
-"actualizări face acest lucru  automat)"
+"actualizări face acest lucru automat)"
 
 msgid "print percentages as package installs"
 msgstr ""
