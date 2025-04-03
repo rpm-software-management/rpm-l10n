@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
 "POT-Creation-Date: 2022-04-07 13:03+0300\n"
-"PO-Revision-Date: 2025-04-03 22:49+0000\n"
+"PO-Revision-Date: 2025-04-04 18:23+0000\n"
 "Last-Translator: Javier Francisco <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/es/>\n"
@@ -136,14 +136,18 @@ msgstr "<paquete fuente>"
 
 msgid "build through %build (%prep, %conf, then compile) from <source package>"
 msgstr ""
+"compila a través de %build (%prep, %conf, después compila) desde <source "
+"package>"
 
 msgid "check build dependencies <source package>"
-msgstr ""
+msgstr "comprueba dependencias de compilación de <source package>"
 
 msgid ""
 "build through %install (%prep, %conf, %build, then install) from <source "
 "package>"
 msgstr ""
+"compilar por medio de %install (%prep, %conf, %build, entonces instalar) "
+"desde <source package>"
 
 #, c-format
 msgid "verify %files section from <source package>"
@@ -176,6 +180,7 @@ msgstr "<tarball>"
 
 msgid "build through %build (%prep, %conf, then compile) from <tarball>"
 msgstr ""
+"compilar a través de %build (%prep, %conf, luego compilar) desde <tarball>"
 
 msgid "check build dependencies <tarball>"
 msgstr "comprueba dependencias de compilación en <tarball>"
@@ -539,9 +544,8 @@ msgstr "utiliza llave de firma de archivo <key>"
 msgid "<key>"
 msgstr "<key>"
 
-#, fuzzy
 msgid "prompt for file signing key password"
-msgstr "solicitud para archivo de firma contraseña"
+msgstr "solicitud para archivo de firma clave contraseña"
 
 msgid "Signature options:"
 msgstr "Opciones de firma:"
@@ -555,9 +559,11 @@ msgid ""
 "You must set \"%%_file_signing_key\" in your macro file or on the command "
 "line with --fskpath\n"
 msgstr ""
+"Debe establecer \"%%_file_signing_key\" en su archivo de macro o en la línea "
+"de instrucción con --fskpath\n"
 
 msgid "--fskpath may only be specified when signing files"
-msgstr "--fskpath solo puede ser especificado cunado firme archivos"
+msgstr "--fskpath solo puede ser especificado cuando firme archivos"
 
 msgid "parse spec file(s) to stdout"
 msgstr "interpreta archivo(s) spec a salida estándar"
@@ -618,11 +624,12 @@ msgstr "Fallo al construir las dependencias:\n"
 
 #, c-format
 msgid "setting %s=%s\n"
-msgstr ""
+msgstr "establece %s=%s\n"
 
 #, c-format
 msgid "source_date_epoch_from_changelog set but %%changelog is missing\n"
 msgstr ""
+"source_date_epoch_from_changelog puesto pero %%changelog no se encuentra\n"
 
 msgid ""
 "\n"
@@ -652,7 +659,7 @@ msgstr "Ficha %s no válida: %s\n"
 
 #, c-format
 msgid "Missing %s in %s(%s)\n"
-msgstr "%s faltante en %s(%s)\n"
+msgstr "%s ausente en %s(%s)\n"
 
 #, c-format
 msgid "Non-white space follows %s(): %s\n"
@@ -765,27 +772,27 @@ msgid "Duplicate build-ids %s and %s\n"
 msgstr "Duplica ID de compilación %s y %s\n"
 
 msgid "_build_id_links macro not set, assuming 'compat'\n"
-msgstr ""
+msgstr "_build_id_links de macro no puesta, se asume 'compat'\n"
 
 #, c-format
 msgid "_build_id_links macro set to unknown value '%s'\n"
-msgstr ""
+msgstr "_build_id_links de macro puesta a valor desconocido '%s'\n"
 
 #, c-format
 msgid "error reading build-id in %s: %s\n"
-msgstr ""
+msgstr "error leyendo build-id en %s: %s\n"
 
 #, c-format
 msgid "Missing build-id in %s\n"
-msgstr ""
+msgstr "Ausencia build-id en %s\n"
 
 #, c-format
 msgid "build-id found in %s too small\n"
-msgstr "empotrado encontrado en %s muy pequeño\n"
+msgstr "build-id encontrado en %s muy pequeño\n"
 
 #, c-format
 msgid "build-id found in %s too large\n"
-msgstr "empotrado encontrado en %s muy grande\n"
+msgstr "build-id encontrado en %s muy grande\n"
 
 msgid "failed to create directory"
 msgstr "no se pudo crear el directorio"
@@ -1570,7 +1577,7 @@ msgstr "(desconocido)"
 
 #, c-format
 msgid "failed to open dir %s of %s: %s\n"
-msgstr ""
+msgstr "incorrecto al abrir dir %s de %s: %s\n"
 
 #, c-format
 msgid "%s%s saved as %s%s\n"
@@ -1592,7 +1599,7 @@ msgstr "archivo"
 
 #, c-format
 msgid "tag[%d]: BAD, tag %d type %d offset %d count %d len %d"
-msgstr ""
+msgstr "etiq[%d]: BAD, etiq %d tipo %d desplz %d conteo %d longitud %d"
 
 msgid "hdr load: BAD"
 msgstr "carga cab: INCORRECTO"
@@ -1602,7 +1609,7 @@ msgstr "región: sin etiquetas"
 
 #, c-format
 msgid "region tag: BAD, tag %d type %d offset %d count %d"
-msgstr ""
+msgstr "etiq región: BAD, etiq %d tipo %d despz %d conteo %d"
 
 #, c-format
 msgid "region offset: BAD, tag %d type %d offset %d count %d"
@@ -1662,7 +1669,7 @@ msgstr "falta { tras %%"
 
 #, c-format
 msgid "missing } after %%{"
-msgstr "ausencia de } tras %%{"
+msgstr "falta } tras %%{"
 
 msgid "empty tag format"
 msgstr "formato de etiqueta vacío"
@@ -1712,7 +1719,7 @@ msgid "RPM v3 packages are deprecated: %s\n"
 msgstr "los paquetes RPM v3 son obsoletos: %s\n"
 
 msgid "Error writing to stdout"
-msgstr ""
+msgstr "Error al escribir a salida estándar"
 
 #, c-format
 msgid "failed to load macro file %s\n"
@@ -1737,13 +1744,13 @@ msgid "define MACRO with value EXPR"
 msgstr "define MACRO con valor EXPR"
 
 msgid "undefine MACRO"
-msgstr "MACRO undefine"
+msgstr "MACRO indefinida"
 
 msgid "MACRO"
 msgstr "MACRO"
 
 msgid "print macro expansion of EXPR"
-msgstr "imprimir expansión de macro de EXPR"
+msgstr "declarar expansión de macro de EXPR"
 
 msgid "'EXPR'"
 msgstr "'EXPR'"
@@ -1789,7 +1796,7 @@ msgid "use ROOT as top level directory"
 msgstr "usar RAÍZ como directorio de nivel superior"
 
 msgid "ROOT"
-msgstr "RAÍZ"
+msgstr "ROOT"
 
 msgid "use database in DIRECTORY"
 msgstr "usar base de datos en DIRECTORIO"
@@ -1898,7 +1905,7 @@ msgid "don't check disk space before installing"
 msgstr "no verificar espacio de disco antes de la instalación"
 
 msgid "short hand for --ignorepayload --ignoresignature"
-msgstr ""
+msgstr "negocio para --ignorepayload --ignoresignature"
 
 msgid "install documentation"
 msgstr "instalar documentación"
@@ -1955,7 +1962,7 @@ msgstr "no ejecutar guiones %%pretrans (si hay)"
 
 #, c-format
 msgid "do not execute %%posttrans scriptlet (if any)"
-msgstr "no ejecutar scriptlet de %%posttrans (si hay)"
+msgstr "no ejecutar guiones de %%posttrans (si hay)"
 
 msgid "do not execute any scriptlet(s) triggered by this package"
 msgstr "no ejecutar ningún scriptlet(s) detonado por este paquete"
@@ -1993,7 +2000,7 @@ msgid "<dir>"
 msgstr "<dir>"
 
 msgid "relocate files from path <old> to <new>"
-msgstr "realojar archivos de la ruta <old> a <new>"
+msgstr "realojar archivos desde ruta <old> a <new>"
 
 msgid "<old>=<new>"
 msgstr "<old>=<new>"
@@ -2144,7 +2151,7 @@ msgid "don't verify files in package"
 msgstr "no verificar los archivos en el paquete"
 
 msgid "don't verify package dependencies"
-msgstr "no verificar las dependencias del paquete"
+msgstr "no verificar dependencias del paquete"
 
 msgid "don't execute verify script(s)"
 msgstr "no ejecutar script(s) de verificación"
@@ -2287,7 +2294,7 @@ msgstr "%s: lectura para importar incorrecta (%d).\n"
 
 #, c-format
 msgid "Fread failed: %s"
-msgstr "Lectura de archivo incorrecta: %s"
+msgstr "LecturaF incorrecta: %s"
 
 msgid "DIGESTS"
 msgstr "RESÚMENES"
@@ -2358,7 +2365,7 @@ msgstr "rpmdbNextIterator: omitiendo"
 
 #, c-format
 msgid "rpmdb: damaged header #%u retrieved -- skipping.\n"
-msgstr "rpmdb: encabezado dañado #%u recuperada -- omitiendo.\n"
+msgstr "rpmdb: encabezado dañado #%u recuperada; se omite\n"
 
 #, c-format
 msgid "%s: cannot read header at 0x%x\n"
@@ -2465,10 +2472,10 @@ msgstr ""
 "instalación."
 
 msgid "dependency comparison supports versions with tilde."
-msgstr "la comparación de dependencias admite versiones con virgulilla."
+msgstr "la comparación de dependencias admite versiones con virgulilla (~)."
 
 msgid "dependency comparison supports versions with caret."
-msgstr "la comparación de dependencias admite versiones con intercalado."
+msgstr "la comparación de dependencias admite versiones con intercalado (^)."
 
 msgid "support files larger than 4GB"
 msgstr "admite archivos más grandes que 4GB"
