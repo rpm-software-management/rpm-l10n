@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
 "POT-Creation-Date: 2022-04-07 13:03+0300\n"
-"PO-Revision-Date: 2025-04-04 18:23+0000\n"
+"PO-Revision-Date: 2025-04-12 16:53+0000\n"
 "Last-Translator: Javier Francisco <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/es/>\n"
@@ -38,7 +38,7 @@ msgstr "Versión de RPM %s\n"
 
 #, c-format
 msgid "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
-msgstr "Derechos de autor © 1998-2002 de Red Hat, Inc.\n"
+msgstr "© 1998-2002 de Red Hat, Inc.\n"
 
 #, c-format
 msgid ""
@@ -71,12 +71,12 @@ msgstr "no se puede volver a abrir la carga útil: %s\n"
 #, c-format
 msgid "files over 4GB not supported by cpio, use rpm2archive instead\n"
 msgstr ""
-"archivos de más de 4 Gb no están soportados por cpio, use rpm2archive en su "
+"archivos de más de 4GB no están soportados por cpio, use rpm2archive en su "
 "lugar\n"
 
 #, c-format
 msgid "buildroot already specified, ignoring %s\n"
-msgstr "buildroot ya especificado, ignorando %s\n"
+msgstr "buildroot ya especificado, se descarta %s\n"
 
 #, c-format
 msgid "build through %prep (unpack sources and apply patches) from <specfile>"
@@ -113,7 +113,7 @@ msgid "build source and binary packages from <specfile>"
 msgstr "construir paquetes binarios y fuente desde <specfile>"
 
 msgid "build binary package only from <specfile>"
-msgstr "construir paquetes binarios únicamente desde <specfile>"
+msgstr "construir paquete binario únicamente desde <specfile>"
 
 msgid "build source package only from <specfile>"
 msgstr "construir paquete fuente únicamente desde <specfile>"
@@ -121,52 +121,52 @@ msgstr "construir paquete fuente únicamente desde <specfile>"
 msgid ""
 "build source package only from <specfile> - calculate dynamic build requires"
 msgstr ""
-"compilar el paquete fuente solo desde <specfile> - calcular los requisitos "
-"de compilación dinámica"
+"construye el paquete fuente solo desde <specfile>; calcula requisitos de "
+"construcción dinámica"
 
 #, c-format
 msgid ""
 "build through %prep (unpack sources and apply patches) from <source package>"
 msgstr ""
-"compilar a través de %prep (desempaquetar fuentes y aplicar parches) desde "
-"<source package>"
+"construye a través de %prep (desempaquetar fuentes y aplicar parches) desde "
+"<paquete fuente>"
 
 msgid "<source package>"
 msgstr "<paquete fuente>"
 
 msgid "build through %build (%prep, %conf, then compile) from <source package>"
 msgstr ""
-"compila a través de %build (%prep, %conf, después compila) desde <source "
-"package>"
+"compila a través de %build (%prep, %conf, después compila) desde <paquete "
+"fuente>"
 
 msgid "check build dependencies <source package>"
-msgstr "comprueba dependencias de compilación de <source package>"
+msgstr "comprueba dependencias de compilación de <paquete fuente>"
 
 msgid ""
 "build through %install (%prep, %conf, %build, then install) from <source "
 "package>"
 msgstr ""
-"compilar por medio de %install (%prep, %conf, %build, entonces instalar) "
-"desde <source package>"
+"construye por medio de %install (%prep, %conf, %build, entonces instalar) "
+"desde <paquete fuente>"
 
 #, c-format
 msgid "verify %files section from <source package>"
-msgstr "verificar la sección %files del <source package>"
+msgstr "verificar la sección %files del <paquete fuente>"
 
 msgid "build source and binary packages from <source package>"
-msgstr "compilar los paquetes fuente y binario desde <source package>"
+msgstr "construir los paquetes fuente y binario desde <paquete fuente>"
 
 msgid "build binary package only from <source package>"
-msgstr "construir paquete binario desde <source package>"
+msgstr "construir paquete binario desde <paquete fuente>"
 
 msgid "build source package only from <source package>"
-msgstr "construir paquete fuente sólo desde <source package>"
+msgstr "construir paquete fuente sólo desde <paquete fuente>"
 
 msgid ""
 "build source package only from <source package> - calculate dynamic build "
 "requires"
 msgstr ""
-"construir paquete fuente solo desde <source package> - calcular lo que "
+"construir paquete fuente solo desde <paquete fuente>; calcular lo que "
 "requiere la compilación dinámica"
 
 #, c-format
@@ -180,7 +180,7 @@ msgstr "<tarball>"
 
 msgid "build through %build (%prep, %conf, then compile) from <tarball>"
 msgstr ""
-"compilar a través de %build (%prep, %conf, luego compilar) desde <tarball>"
+"construir a través de %build (%prep, %conf, luego compilar) desde <tarball>"
 
 msgid "check build dependencies <tarball>"
 msgstr "comprueba dependencias de compilación en <tarball>"
@@ -188,7 +188,7 @@ msgstr "comprueba dependencias de compilación en <tarball>"
 msgid ""
 "build through %install (%prep, %conf, %build, then install) from <tarball>"
 msgstr ""
-"compilar a través de %install (%prep, %conf, %build, luego instalar) desde "
+"construir a través de %install (%prep, %conf, %build, luego instalar) desde "
 "<tarball>"
 
 #, c-format
@@ -196,37 +196,37 @@ msgid "verify %files section from <tarball>"
 msgstr "verificar sección %files desde <tarball>"
 
 msgid "build source and binary packages from <tarball>"
-msgstr "compilar paquetes binarios y fuente desde <tarball>"
+msgstr "construir paquetes binario y fuente desde <tarball>"
 
 msgid "build binary package only from <tarball>"
-msgstr "compilar paquete binario únicamente desde <tarball>"
+msgstr "construir paquete binario únicamente desde <tarball>"
 
 msgid "build source package only from <tarball>"
-msgstr "compilar paquete fuente solo desde <tarball>"
+msgstr "construir paquete fuente solo desde <tarball>"
 
 msgid ""
 "build source package only from <tarball> - calculate dynamic build requires"
 msgstr ""
-"compilar paquete fuente solo desde <tarball>; calcular los requerimientos de "
-"compilación dinámica"
+"construir paquete fuente solo desde <tarball>; calcular los requerimientos "
+"de compilación dinámica"
 
 msgid "build binary package from <source package>"
-msgstr "compilar paquete binario desde <paquete fuente>"
+msgstr "construir paquete binario desde <paquete fuente>"
 
 msgid ""
 "build through %install (%prep, %build, then install) from <source package>"
 msgstr ""
-"compilar por medio de %install (%prep, %build, luego instalar) desde "
+"construir por medio de %install (%prep, %build, luego instalar) desde "
 "<paquete fuente>"
 
 msgid "override build root"
-msgstr "sobrescribir raíz de compilación"
+msgstr "sobrescribir raíz de construcción"
 
 msgid "run build in current directory"
-msgstr "ejecutar la compilación en el directorio actual"
+msgstr "ejecutar la construcción en el directorio actual"
 
 msgid "remove build tree when done"
-msgstr "quitar árbol de compilación cuando finalice"
+msgstr "quitar árbol de construcción cuando finalice"
 
 msgid "ignore ExcludeArch: directives from spec file"
 msgstr "descarta directivas ExcludeArch: desde el archivo spec"
@@ -235,36 +235,36 @@ msgid "debug file state machine"
 msgstr "depurar archivo de la máquina de estado"
 
 msgid "do not execute any stages of the build"
-msgstr "no ejecutar ningún nivel de la compilación"
+msgstr "no ejecutar ningún nivel de la construcción"
 
 msgid "do not verify build dependencies"
-msgstr "no verificar dependencias de la compilación"
+msgstr "no verificar dependencias de la construcción"
 
 msgid "generate package header(s) compatible with (legacy) rpm v3 packaging"
 msgstr ""
-"genera cabecera(s) de paquete(s) compatible(s) con el empaquetado compilador "
-"rpm v3 (heredado)"
+"genera cabecera(s) del paquete compatible con el empaquetado rpm v3 "
+"(heredado)"
 
 #, c-format
 msgid "do not execute %clean stage of the build"
-msgstr "no ejecutar la fase %clean de la compilación"
+msgstr "no ejecutar la fase %clean de la construcción"
 
 #, c-format
 msgid "do not execute %prep stage of the build"
-msgstr "no ejecutar el estado %prep de la compilación"
+msgstr "no ejecutar el estado %prep de la construcción"
 
 #, c-format
 msgid "do not execute %check stage of the build"
-msgstr "no ejecutar la fase %check de la compilación"
+msgstr "no ejecutar la fase %check de la construcción"
 
 msgid "do not accept i18N msgstr's from specfile"
 msgstr "no aceptar msgstr i18N desde el archivo spec"
 
 msgid "remove sources when done"
-msgstr "eliminar fuentes al finalizar"
+msgstr "quitar fuentes al finalizar"
 
 msgid "remove specfile when done"
-msgstr "eliminar el archivo spec al finalizar"
+msgstr "quitar el archivo spec al finalizar"
 
 msgid "skip straight to specified stage (only for c,i)"
 msgstr "descartar etapa a estado especificada (solo para c,i)"
@@ -274,8 +274,8 @@ msgstr "sobrescribir plataforma de destino"
 
 msgid "Build options with [ <specfile> | <tarball> | <source package> ]:"
 msgstr ""
-"Opciones de compilación con [ <archivo spec> | <tarball> | <paquete fuente> ]"
-":"
+"Opciones de construcción con "
+"[ <archivo spec> | <tarball> | <paquete fuente> ]:"
 
 msgid "Common options for all rpm modes and executables:"
 msgstr "Opciones comunes para todos los modos rpm y ejecutables:"
@@ -318,18 +318,18 @@ msgstr "Construyendo las plataformas de destino: %s\n"
 
 #, c-format
 msgid "Building for target %s\n"
-msgstr "Compilando para el destino %s\n"
+msgstr "Construyendo para el destino %s\n"
 
 msgid "arguments to --root (-r) must begin with a /"
-msgstr "los argumentos de --root (-r) deben iniciar con una /"
+msgstr "los argumentos de --root (-r) deben comenzar con una /"
 
 msgid "initialize database"
 msgstr "inicializar base de datos"
 
 msgid "rebuild database inverted lists from installed package headers"
 msgstr ""
-"recompilar lista invertida de la base de datos desde los encabezados de "
-"paquetes instalados"
+"recompilar listas invertidas de base de datos desde encabezados del paquete "
+"instalado"
 
 msgid "verify database files"
 msgstr "verificar archivos de base de datos"
@@ -371,7 +371,7 @@ msgid "Query/Verify package selection options:"
 msgstr "Opciones de la selección de paquetes a consultar/verificar:"
 
 msgid "Query/Verify file selection options:"
-msgstr "Opciones de la selección de paquetes a consultar/verificar:"
+msgstr "Opciones de la selección de archivo a consultar/verificar:"
 
 msgid "Query options (with -q or --query):"
 msgstr "Opciones de consulta (con -q o --query):"
@@ -386,7 +386,7 @@ msgid "one type of query/verify may be performed at a time"
 msgstr "solo un tipo de consulta/verificación puede ser ejecutado a la vez"
 
 msgid "unexpected query flags"
-msgstr "opciones de consulta inesperadas"
+msgstr "indicadores de consulta inesperadas"
 
 msgid "unexpected query format"
 msgstr "formato de consulta inesperado"
@@ -395,7 +395,7 @@ msgid "unexpected query source"
 msgstr "fuente de consulta inesperado"
 
 msgid "only installation and upgrading may be forced"
-msgstr "solo puede forzarse la instalación y la actualización"
+msgstr "solo puede forzarse la instalación y la modernización"
 
 msgid "files may only be relocated during package installation"
 msgstr ""
@@ -407,25 +407,25 @@ msgstr "no se puede utilizar --prefix con --relocate o --excludepath"
 msgid ""
 "--relocate and --excludepath may only be used when installing new packages"
 msgstr ""
-"--relocate y --excludepath solo pueden ser utilizados cuando se instalan "
+"solo pueden ser utilizados --relocate y --excludepath cuando se instalan "
 "nuevos paquetes"
 
 msgid "--prefix may only be used when installing new packages"
-msgstr "--prefix solo puede ser utilizado al instalar nuevos paquetes"
+msgstr "solo puede ser utilizado --prefix al instalar paquetes nuevos"
 
 msgid "arguments to --prefix must begin with a /"
-msgstr "los argumentos de --prefix deber iniciar con una /"
+msgstr "los argumentos de --prefix deben comenzar con una /"
 
 msgid ""
 "--hash (-h) may only be specified during package installation and erasure"
 msgstr ""
-"--hash (-h) sólo puede ser indicado durante la instalación o la eliminación "
-"de un paquete"
+"--hash (-h) sólo puede ser especificado durante la instalación y la "
+"desinstalación del paquete"
 
 msgid "--percent may only be specified during package installation and erasure"
 msgstr ""
-"--percent sólo puede ser indicado durante la instalación o la eliminación de "
-"un paquete"
+"--percent sólo puede ser especificado durante la instalación y la "
+"desinstalación del paquete"
 
 msgid "--replacepkgs may only be specified during package installation"
 msgstr ""
@@ -440,7 +440,8 @@ msgstr ""
 "--includedocs solo puede ser especificado durante la instalación del paquete"
 
 msgid "only one of --excludedocs and --includedocs may be specified"
-msgstr "solo se puede especificar una opción: --excludedocs o --includedocs"
+msgstr ""
+"solo se puede especificar una opción de --excludedocs o de --includedocs"
 
 msgid "--ignorearch may only be specified during package installation"
 msgstr ""
@@ -456,7 +457,8 @@ msgstr ""
 
 msgid "--allmatches may only be specified during package erasure"
 msgstr ""
-"--allmatches solo puede ser especificado durante la eliminación del paquete"
+"--allmatches solo puede ser especificado durante la desinstalación del "
+"paquete"
 
 msgid "--allfiles may only be specified during package installation"
 msgstr ""
@@ -464,34 +466,34 @@ msgstr ""
 
 msgid "--justdb may only be specified during package installation and erasure"
 msgstr ""
-"--justdb solo puede ser especificado durante la instalación y eliminación "
+"--justdb solo puede ser especificado durante la instalación y desinstalación "
 "del paquete"
 
 msgid ""
 "script disabling options may only be specified during package installation "
 "and erasure"
 msgstr ""
-"las opciones para desactivar scripts sólo pueden ser especificadas durante "
-"la instalación y eliminación del paquete"
+"las opciones para desactivar los script sólo pueden ser especificadas "
+"durante la instalación y desinstalación del paquete"
 
 msgid ""
 "trigger disabling options may only be specified during package installation "
 "and erasure"
 msgstr ""
 "las opciones de desactivación de detonante sólo pueden ser especificadas "
-"durante la instalación y eliminación del paquete"
+"durante la instalación y desinstalación del paquete"
 
 msgid ""
 "--nodeps may only be specified during package installation, erasure, and "
 "verification"
 msgstr ""
-"solo puede especificarse --nodeps durante la instalación, eliminación o "
+"solo puede especificarse --nodeps durante la instalación, desinstalación y "
 "verificación del paquete"
 
 msgid "--test may only be specified during package installation and erasure"
 msgstr ""
-"solo puede especificarse --test durante la instalación o la eliminación de "
-"un paquete"
+"--test solo puede especificarse durante la instalación y eliminación del "
+"paquete"
 
 msgid "no packages given for erase"
 msgstr "no ha sido indicado ningún paquete para ser eliminado"
@@ -515,7 +517,7 @@ msgid "delete package signatures"
 msgstr "eliminar las firmas del paquete"
 
 msgid "delete IMA and fsverity file signatures"
-msgstr "borra IMA y firma de archivo fsverity"
+msgstr "elimina IMA y firma de archivo fsverity"
 
 msgid "create rpm v3 header+payload signatures"
 msgstr "crea cabecera rpm v3+firma de carga"
@@ -942,7 +944,7 @@ msgstr "no se puede crear %s: %s\n"
 #, c-format
 msgid "Could not generate output filename for package %s: %s\n"
 msgstr ""
-"No se pudo generar el nombre de archivo de salida para el paquete %s: %s \n"
+"No se pudo generar el nombre de archivo de salida para el paquete %s: %s\n"
 
 #, c-format
 msgid "Finished binary package job, result %d, filename %s\n"
@@ -955,7 +957,7 @@ msgstr "línea %d: segundo %s\n"
 
 #, c-format
 msgid "bogus date in %%changelog: %s\n"
-msgstr "fecha incorrecta en %%changelog: %s\n"
+msgstr "fecha fraudulenta en %%changelog: %s\n"
 
 #, c-format
 msgid "%%changelog entries must start with *\n"
@@ -967,7 +969,7 @@ msgstr "entrada %%changelog incompleta\n"
 
 #, c-format
 msgid "bad date in %%changelog: %s\n"
-msgstr "fecha errónea en %%changelog: %s\n"
+msgstr "fecha incorrecta en %%changelog: %s\n"
 
 #, c-format
 msgid "%%changelog not in descending chronological order\n"
@@ -1011,15 +1013,15 @@ msgstr "línea %d: Error al analizar %%policies: %s\n"
 
 #, c-format
 msgid "Error parsing tag field: %s\n"
-msgstr "Error analizando campo de etiqueta: %s\n"
+msgstr "Error interpretando campo de etiqueta: %s\n"
 
 #, c-format
 msgid "line %d: Bad number: %s\n"
-msgstr "línea %d: Número erróneo: %s\n"
+msgstr "línea %d: Número incorrecto: %s\n"
 
 #, c-format
 msgid "line %d: Bad no%s number: %u\n"
-msgstr "línea %d: Número no%s erróneo: %u\n"
+msgstr "línea %d: Número no%s incorrecto: %u\n"
 
 #, c-format
 msgid "Downloading %s to %s\n"
@@ -1063,11 +1065,11 @@ msgstr "Duplicar entradas %s en el paquete: %s\n"
 
 #, c-format
 msgid "Unable to open icon %s: %s\n"
-msgstr "No ha sido posible abrir el icono %s: %s\n"
+msgstr "No es capaz de abrir el icono %s: %s\n"
 
 #, c-format
 msgid "Unable to read icon %s: %s\n"
-msgstr "No ha sido posible leer el icono %s: %s\n"
+msgstr "No es capaz de leer el icono %s: %s\n"
 
 #, c-format
 msgid "Unknown icon type: %s\n"
@@ -1256,7 +1258,7 @@ msgstr ""
 
 #, c-format
 msgid "line %d: Second %s\n"
-msgstr "línea %d: segundo %s\n"
+msgstr "línea %d: Segundo %s\n"
 
 #, c-format
 msgid "line %d: unsupported internal script: %s\n"
@@ -1599,7 +1601,7 @@ msgstr "archivo"
 
 #, c-format
 msgid "tag[%d]: BAD, tag %d type %d offset %d count %d len %d"
-msgstr "etiq[%d]: BAD, etiq %d tipo %d desplz %d conteo %d longitud %d"
+msgstr "etiq[%d]: INCORRECTO, etiq %d tipo %d desplz %d conteo %d longitud %d"
 
 msgid "hdr load: BAD"
 msgstr "carga cab: INCORRECTO"
@@ -1609,46 +1611,46 @@ msgstr "región: sin etiquetas"
 
 #, c-format
 msgid "region tag: BAD, tag %d type %d offset %d count %d"
-msgstr "etiq región: BAD, etiq %d tipo %d despz %d conteo %d"
+msgstr "etiq región: INCORRECTO, etiq %d tipo %d despz %d conteo %d"
 
 #, c-format
 msgid "region offset: BAD, tag %d type %d offset %d count %d"
-msgstr ""
+msgstr "region offset: INCORRECTO, tag %d type %d offset %d count %d"
 
 #, c-format
 msgid "region trailer: BAD, tag %d type %d offset %d count %d"
-msgstr ""
+msgstr "region trailer: INCORRECTO, tag %d type %d offset %d count %d"
 
 #, c-format
 msgid "region %d size: BAD, ril %d il %d rdl %d dl %d"
-msgstr ""
+msgstr "region %d size: INCORRECTO, ril %d il %d rdl %d dl %d"
 
 #, c-format
 msgid "region %d: tag number mismatch il %d ril %d dl %d rdl %d\n"
-msgstr ""
+msgstr "región %d: número de etiqueta no coincide il %d ril %d dl %d rdl %d\n"
 
 #, c-format
 msgid "hdr tags: BAD, no. of tags(%<PRIu32>) out of range"
-msgstr ""
+msgstr "hdr tags: INCORRECTO, no. of tags(%<PRIu32>) out of range"
 
 #, c-format
 msgid "hdr data: BAD, no. of bytes(%<PRIu32>) out of range"
-msgstr ""
+msgstr "hdr data: INCORRECTO, no. of bytes(%<PRIu32>) out of range"
 
 #, c-format
 msgid "hdr size(%d): BAD, read returned %d"
-msgstr ""
+msgstr "cab size(%d): INCORRECTO, lectura devolvió %d"
 
 msgid "hdr magic: BAD"
-msgstr "cab mágica: BAD"
+msgstr "cab mágica: INCORRECTO"
 
 #, c-format
 msgid "hdr blob(%zd): BAD, read returned %d"
-msgstr "cab blob(%zd): BAD, lectura devolvió %d"
+msgstr "cab blob(%zd): INCORRECTO, lectura devolvió %d"
 
 #, c-format
 msgid "sigh pad(%zd): BAD, read %zd bytes"
-msgstr ""
+msgstr "sigh pad(%zd): INCORRECTO, lee %zd bytes"
 
 msgid "signature "
 msgstr "firma "
@@ -1658,7 +1660,7 @@ msgstr "longitud cab: INCORRECTO"
 
 #, c-format
 msgid "blob size(%d): BAD, 8 + 16 * il(%d) + dl(%d)"
-msgstr ""
+msgstr "blob size(%d): INCORRECTO, 8 + 16 * il(%d) + dl(%d)"
 
 msgid "invalid field width"
 msgstr "anchura del campo no válida"
@@ -1703,7 +1705,7 @@ msgid "} expected in expression"
 msgstr "se esperaba } en la expresión"
 
 msgid ": expected following ? subexpression"
-msgstr "se esperaba : siguiendo subexpresión ?"
+msgstr "se esperaba : siguiendo ? como sub-expresión"
 
 msgid "{ expected after : in expression"
 msgstr "se esperaba { tras : en la expresión"
@@ -1733,6 +1735,7 @@ msgstr "argumentos para --dbpath debe comenzar con '/'\n"
 msgid ""
 "%s: error: more than one --pipe specified (incompatible popt aliases?)\n"
 msgstr ""
+"%s: error: más que un --pipe especificado (¿incompatible popt aliases?)\n"
 
 msgid "predefine MACRO with value EXPR"
 msgstr "predefine MACRO con valor EXPR"
@@ -2553,7 +2556,7 @@ msgstr "%s: decodificación en base64 incorrecta, longitud %li\n"
 
 #, c-format
 msgid "%s: base64 decode success, len %li\n"
-msgstr ""
+msgstr "%s: base64 decodifica correcta, lon %li\n"
 
 msgid "Bad magic"
 msgstr "Magic erróneo"
@@ -3119,9 +3122,9 @@ msgstr "Macro %%%s tiene un cuerpo incompleto\n"
 msgid "Macro %%%s has empty body\n"
 msgstr "Macro %%%s tiene un cuerpo vacío\n"
 
-#, c-format, fuzzy
+#, c-format
 msgid "Macro %%%s needs whitespace before body\n"
-msgstr "Macro %%% necesita espacio en blanco antes del cuerpo\n"
+msgstr "Macro %%%s necesita espacio en blanco antes del cuerpo\n"
 
 #, c-format
 msgid "Macro %%%s failed to expand\n"
@@ -3369,7 +3372,7 @@ msgid "extract an archive"
 msgstr "extraer un archivador"
 
 msgid "only print what would be done"
-msgstr "solo mostrar lo que se haría"
+msgstr "solo declara lo que se haría"
 
 #~ msgid "build through %build (%prep, then compile) from <specfile>"
 #~ msgstr ""
