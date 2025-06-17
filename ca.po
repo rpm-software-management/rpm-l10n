@@ -11,15 +11,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
 "POT-Creation-Date: 2022-04-07 13:03+0300\n"
-"PO-Revision-Date: 2020-03-23 08:37-0400\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
-"Language-Team: Catalan (http://www.transifex.com/rpm-team/rpm/language/ca/)\n"
+"PO-Revision-Date: 2025-06-17 13:19+0000\n"
+"Last-Translator: David Medina <dmedinacpnl@gmail.com>\n"
+"Language-Team: Catalan <https://translate.fedoraproject.org/projects/rpm/"
+"rpm-l10n/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Zanata 4.6.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.12.1\n"
 
 #, c-format
 msgid "%s: %s\n"
@@ -2573,7 +2574,7 @@ msgstr "%s: no és un paquet rpm (o un manifest de paquet)\n"
 
 #, c-format
 msgid "Updating / installing...\n"
-msgstr "S'està actualitzant o instal·lant...\n"
+msgstr "S'actualitza o s'instal·la...\n"
 
 #, c-format
 msgid "Cleaning up / removing...\n"
@@ -2628,7 +2629,7 @@ msgstr "no es pot obrir %s: %s\n"
 
 #, c-format
 msgid "Installing %s\n"
-msgstr "S'està instal·lant %s\n"
+msgstr "S'instal·la %s\n"
 
 msgid "not an rpm package"
 msgstr "no és un paquet rpm"
