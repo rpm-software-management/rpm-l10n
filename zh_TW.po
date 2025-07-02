@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
 "POT-Creation-Date: 2022-04-07 13:03+0300\n"
-"PO-Revision-Date: 2025-05-06 05:22+0000\n"
+"PO-Revision-Date: 2025-07-02 17:54+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.fedoraproject.org/"
 "projects/rpm/rpm-l10n/zh_TW/>\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.11.3\n"
+"X-Generator: Weblate 5.12.2\n"
 
 #, c-format
 msgid "%s: %s\n"
@@ -3013,7 +3013,7 @@ msgstr "巨集 %%%s 展開時失敗\n"
 
 #, c-format, fuzzy
 msgid "Unknown option %c in %s(%s)\n"
-msgstr "%s(%s) 中的未知選項 %c\n"
+msgstr "%2$s(%3$s) 中的未知選項 %1$c\n"
 
 #, c-format
 msgid "Macro %%%s defined but not used within scope\n"
