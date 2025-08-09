@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
 "POT-Creation-Date: 2022-04-07 13:03+0300\n"
-"PO-Revision-Date: 2025-07-31 21:53+0000\n"
+"PO-Revision-Date: 2025-08-10 07:42+0000\n"
 "Last-Translator: hsu zangmen <chzang55@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.fedoraproject.org/"
 "projects/rpm/rpm-l10n/zh_TW/>\n"
@@ -3011,9 +3011,9 @@ msgstr "巨集 %%%s 需要在內容以前有一個空白\n"
 msgid "Macro %%%s failed to expand\n"
 msgstr "巨集 %%%s 展開時失敗\n"
 
-#, c-format, fuzzy
+#, c-format
 msgid "Unknown option %c in %s(%s)\n"
-msgstr "%s(%s)中的未知選項 %c\n"
+msgstr "未知選項 %c 中%s(%s)\n"
 
 #, c-format
 msgid "Macro %%%s defined but not used within scope\n"
