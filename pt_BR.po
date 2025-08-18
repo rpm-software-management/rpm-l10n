@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
 "POT-Creation-Date: 2022-04-07 13:03+0300\n"
-"PO-Revision-Date: 2025-08-12 04:43+0000\n"
+"PO-Revision-Date: 2025-08-18 11:06+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/rpm/rpm-l10n/pt_BR/>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.12.2\n"
+"X-Generator: Weblate 5.13\n"
 
 #, c-format
 msgid "%s: %s\n"
@@ -693,7 +693,7 @@ msgstr "a leitura do symlink %s falhou:%s\n"
 
 #, c-format
 msgid "absolute symlink: %s -> %s\n"
-msgstr "symlink absoluto: %s->%s\n"
+msgstr "symlink absoluto: %s -> %s\n"
 
 #, c-format
 msgid "Symlink points to BuildRoot: %s -> %s\n"
@@ -705,11 +705,11 @@ msgstr "Caractere ilegal (0x%x) no nome de arquivo: %s\n"
 
 #, c-format
 msgid "Path is outside buildroot: %s\n"
-msgstr "Path está fora do buildroot:%s\n"
+msgstr "O caminho está fora do buildroot: %s\n"
 
 #, c-format
 msgid "Directory not found: %s\n"
-msgstr "Diretório não encontrado:%s\n"
+msgstr "Diretório não encontrado: %s\n"
 
 #, c-format
 msgid "File not found: %s\n"
@@ -717,11 +717,11 @@ msgstr "Arquivo não encontrado: %s\n"
 
 #, c-format
 msgid "Not a directory: %s\n"
-msgstr "Não é um diretório:%s\n"
+msgstr "Não é um diretório: %s\n"
 
 #, c-format
 msgid "Can't read content of file: %s\n"
-msgstr "Não é possível ler o conteúdo do arquivo:%s\n"
+msgstr "Não é possível ler o conteúdo do arquivo: %s\n"
 
 #, c-format
 msgid "%s: can't load unknown tag (%d).\n"
@@ -805,7 +805,7 @@ msgstr "Arquivo %s vazio %s\n"
 
 #, c-format
 msgid "illegal _docdir_fmt %s: %s\n"
-msgstr "illegal _docdir_fmt %s: %s\n"
+msgstr "_docdir_fmt inválido %s: %s\n"
 
 #, c-format
 msgid "File not found by glob: %s\n"
