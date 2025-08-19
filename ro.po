@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpm 4.18.90\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-04 09:25+0300\n"
-"PO-Revision-Date: 2025-02-20 06:28+0000\n"
+"PO-Revision-Date: 2025-08-19 14:56+0000\n"
 "Last-Translator: Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>\n"
 "Language-Team: Romanian <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/ro/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 5.10\n"
+"X-Generator: Weblate 5.13\n"
 
 #, c-format
 msgid "%s: %s\n"
@@ -745,7 +745,8 @@ msgstr "Caracter ilegal (0x%x) în numele fișierului: %s\n"
 
 #, c-format
 msgid "Path is outside buildroot: %s\n"
-msgstr "Ruta este în afara directorului rădăcină de construire: %s\n"
+msgstr ""
+"Ruta este în afara directorului rădăcină de construire „buildroot”: %s\n"
 
 #, c-format
 msgid "Directory not found: %s\n"
@@ -809,11 +810,11 @@ msgstr "Lipsește identificatorul de construire (build-id) în %s\n"
 
 #, c-format
 msgid "build-id found in %s too small\n"
-msgstr "ID-ul de construire găsit în %s este prea mic\n"
+msgstr "ID-ul de construire „build-id” găsit în %s este prea mic\n"
 
 #, c-format
 msgid "build-id found in %s too large\n"
-msgstr "ID-ul de construire găsit în %s este prea mare\n"
+msgstr "ID-ul de construire „build-id” găsit în %s este prea mare\n"
 
 msgid "failed to create directory"
 msgstr "eșec la crearea directorului"
@@ -918,7 +919,7 @@ msgstr "Nu s-a putut scrie antetul în %s: %s\n"
 
 #, c-format
 msgid "Could not open %s: %s\n"
-msgstr "Nu s-a putut deschide „%s”: %s\n"
+msgstr "Nu s-a putut deschide %s: %s\n"
 
 #, c-format
 msgid "Unable to write package: %s\n"
