@@ -11,8 +11,9 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-04 09:25+0300\n"
-"PO-Revision-Date: 2025-08-20 01:50+0000\n"
-"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"PO-Revision-Date: 2025-08-20 03:07+0000\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/rpm/rpm-l10n/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -3115,10 +3116,9 @@ msgstr ""
 msgid "no such macro: '%s'\n"
 msgstr ""
 
-#, fuzzy, c-format
-#| msgid "invalid package number: %s\n"
+#, c-format
 msgid "invalid argument: %s\n"
-msgstr "número de pacote inválido: %s\n"
+msgstr "Argumento inválido: %s\n"
 
 #, fuzzy, c-format
 #| msgid "failed to create directory %s: %s\n"
