@@ -12,8 +12,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-04 09:25+0300\n"
 "PO-Revision-Date: 2025-08-20 03:07+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/rpm/rpm-l10n/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -62,12 +61,12 @@ msgstr "erro ao ler o cabeçalho do pacote\n"
 
 #, c-format
 msgid "cannot re-open payload: %s\n"
-msgstr "Não foi possível reabrir a carga útil: %s\n"
+msgstr "não foi possível reabrir a carga útil: %s\n"
 
 #, c-format
 msgid "files over 4GB not supported by cpio, use rpm2archive instead\n"
 msgstr ""
-"Arquivos com mais de 4GB não são suportados por cpio, utilize rpm2archive "
+"arquivos com mais de 4GB não são suportados por cpio, utilize rpm2archive "
 "como substituto\n"
 
 #, c-format
@@ -77,75 +76,84 @@ msgstr "buildroot já especificado, ignorando %s\n"
 #, c-format
 msgid "build through %prep (unpack sources and apply patches) from <specfile>"
 msgstr ""
-"construir através de %prep (desempacote os fontes e aplique as correções) a "
-"partir do <specfile>"
+"constrói através de %prep (desempacota os fontes e aplica as correções) a "
+"partir do <arquivo spec>"
 
 msgid "<specfile>"
-msgstr "<specfile>"
+msgstr "<arquivo_spec>"
 
 #, c-format
 msgid "build through %conf (%prep, then %conf) from <specfile>"
 msgstr ""
+"constrói através de %conf (%prep, então %conf) a partir do <arquivo spec>"
 
 msgid "build through %build (%prep, %conf, then compile) from <specfile>"
 msgstr ""
+"constrói através de %build (%prep, %conf, então compila) a partir do "
+"<arquivo spec>"
 
 msgid "check build dependencies <specfile>"
-msgstr ""
+msgstr "verifica as dependências de construção de <arquivo spec>"
 
 msgid ""
 "build through %install (%prep, %conf, %build, then install) from <specfile>"
 msgstr ""
+"constrói através de %install (%prep, %conf, %build, então instala) a partir "
+"do <arquivo spec>"
 
 #, c-format
 msgid "verify %files section from <specfile>"
-msgstr "verificar seção %files do <specfile>"
+msgstr "verifica a seção %files do <arquivo spec>"
 
 msgid "build source and binary packages from <specfile>"
-msgstr "construir os pacotes fontes e binários a partir do <specfile>"
+msgstr "constrói os pacotes fonte e binário a partir do <arquivo spec>"
 
 msgid "build binary package only from <specfile>"
-msgstr "construir pacote binário somente a partir do <specfile>"
+msgstr "constrói somente pacote binário a partir do <arquivo spec>"
 
 msgid "build source package only from <specfile>"
-msgstr "construir pacote fonte somente a partir do <specfile>"
+msgstr "constrói somente pacote fonte a partir do <arquivo spec>"
 
 msgid ""
 "build source package only from <specfile> - calculate dynamic build requires"
 msgstr ""
-"compila o pacote fonte apenas pelo <specfile> - calcular a compilação "
-"dinâmica requer"
+"constrói somente pacote fonte pelo <arquivo spec> - calcula os requisitos "
+"dinâmicos de construção"
 
 #, c-format
 msgid ""
 "build through %prep (unpack sources and apply patches) from <source package>"
 msgstr ""
-"compila pelo %prep (desempacotar o fonte e aplicar patches) do <source "
-"package>"
+"constrói através de %prep (desempacota os fontes e aplica patches) do "
+"<pacote fonte>"
 
 msgid "<source package>"
 msgstr "<pacote fonte>"
 
 msgid "build through %build (%prep, %conf, then compile) from <source package>"
 msgstr ""
+"constrói através de %build (%prep, %conf e depois compila) a partir do "
+"<pacote fonte>"
 
 msgid "check build dependencies <source package>"
-msgstr ""
+msgstr "verifica as dependências de construção do <pacote fonte>"
 
 msgid ""
 "build through %install (%prep, %conf, %build, then install) from <source "
 "package>"
 msgstr ""
+"constróis através de %install (%prep, %build, então instala) a partir do "
+"<pacote fonte>"
 
 #, c-format
 msgid "verify %files section from <source package>"
-msgstr "Verifique a seção %files de <source package>"
+msgstr "verifica a seção %files de <pacote fonte>"
 
 msgid "build source and binary packages from <source package>"
-msgstr "compila os pacotes fontes e binários de <source package>"
+msgstr "constrói os pacotes fonte e binário a partir do <pacote fonte>"
 
 msgid "build binary package only from <source package>"
-msgstr "compila o pacote binário apenas de <source package>"
+msgstr "constrói somente pacote binário a partir do <pacote fonte>"
 
 msgid "build source package only from <source package>"
 msgstr "compila o pacote fonte apenas de <source package>"
@@ -769,7 +777,7 @@ msgstr "macro _build_id_links configurado para valor desconhecido '%s'\n"
 
 #, c-format
 msgid "error reading build-id in %s: %s\n"
-msgstr "erro lendo build-id em %s:%s\n"
+msgstr "erro lendo build-id em %s: %s\n"
 
 #, c-format
 msgid "Missing build-id in %s\n"
@@ -777,11 +785,11 @@ msgstr "Faltando build-id em %s\n"
 
 #, c-format
 msgid "build-id found in %s too small\n"
-msgstr "build-id achado em %s muito pequeno\n"
+msgstr "build-id encontrado em %s muito pequeno\n"
 
 #, c-format
 msgid "build-id found in %s too large\n"
-msgstr "build-id achado em %s muito grande\n"
+msgstr "build-id encontrado em %s muito grande\n"
 
 msgid "failed to create directory"
 msgstr "falha ao criar o diretório"
@@ -949,7 +957,7 @@ msgstr "%%changelog não está na ordem cronológica decrescente\n"
 
 #, c-format
 msgid "missing name in %%changelog\n"
-msgstr "Nome faltando no %%changelog\n"
+msgstr "faltando nome no %%changelog\n"
 
 #, c-format
 msgid "no description in %%changelog\n"
@@ -977,7 +985,7 @@ msgstr "linha %d: Erro ao analisar %%files: %s\n"
 
 #, c-format
 msgid "line %d: multiple %%files for package '%s'\n"
-msgstr "linha %d: múltiplos %%arquivos para o pacote '%s'\n"
+msgstr "linha %d: múltiplos %%files para o pacote '%s'\n"
 
 #, c-format
 msgid "line %d: Error parsing %%policies: %s\n"
@@ -1061,7 +1069,7 @@ msgstr "%s em: %s\n"
 
 #, c-format
 msgid "Illegal char '%c' (0x%x)"
-msgstr "Caractere Ilegal '%c' (0x%x)"
+msgstr "Caractere ilegal '%c' (0x%x)"
 
 msgid "Possible unexpanded macro"
 msgstr "Possível macro não expandido"
@@ -3118,7 +3126,7 @@ msgstr ""
 
 #, c-format
 msgid "invalid argument: %s\n"
-msgstr "Argumento inválido: %s\n"
+msgstr "argumento inválido: %s\n"
 
 #, fuzzy, c-format
 #| msgid "failed to create directory %s: %s\n"
