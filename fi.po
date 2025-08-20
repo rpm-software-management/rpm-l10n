@@ -9,12 +9,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
-"POT-Creation-Date: 2022-04-07 13:03+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-04 09:25+0300\n"
 "PO-Revision-Date: 2024-12-20 12:38+0000\n"
 "Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
-"Language-Team: Finnish <https://translate.fedoraproject.org/projects/rpm/"
-"rpm-l10n/fi/>\n"
+"Language-Team: Finnish <https://translate.fedoraproject.org/projects/rpm/rpm-"
+"l10n/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -487,7 +487,8 @@ msgid "generate fsverity signatures for package(s) files"
 msgstr "luo fsverity-allekirjoitukset pakettitiedostoille"
 
 msgid "algorithm to use for verity signatures, default sha256"
-msgstr "allekirjoituksien todentamiseen käytettävä algoritmi, oletuksena sha256"
+msgstr ""
+"allekirjoituksien todentamiseen käytettävä algoritmi, oletuksena sha256"
 
 msgid "<algorithm>"
 msgstr "<algoritm>"
@@ -653,6 +654,15 @@ msgstr "Virheellinen ominaisuus: %s\n"
 msgid "File capability support not built in\n"
 msgstr "Tiedostotoimintojen tukea ei ole sisäänrakennettu\n"
 
+#, fuzzy, c-format
+#| msgid "Missing module path in line: %s\n"
+msgid "Missing quote: %s\n"
+msgstr "Moduulin polku puuttuu rivistä: %s\n"
+
+#, c-format
+msgid "Trailing backslash: %s\n"
+msgstr ""
+
 #, c-format
 msgid "File must begin with \"/\": %s\n"
 msgstr "Tiedostojen täytyy alkaa \"/\": %s\n"
@@ -758,24 +768,14 @@ msgstr "%s löydetty build-id on liian suuri\n"
 msgid "failed to create directory"
 msgstr "hakemiston luonti epäonnistui"
 
-msgid "Mixing main ELF and debug files in package"
+#, fuzzy
+#| msgid "Mixing main ELF and debug files in package"
+msgid "Mixing main ELF and debug files in package\n"
 msgstr "Sekoitettu ELF- ja virheenkorjaustiedostoja paketissa"
 
 #, c-format
 msgid "File needs leading \"/\": %s\n"
 msgstr "Tiedosto tarvitsee aloitusmerkin \"/\": %s\n"
-
-#, c-format
-msgid "%%dev glob not permitted: %s\n"
-msgstr "%%dev glob ei ole sallittu: %s\n"
-
-#, c-format
-msgid "Directory not found by glob: %s. Trying without globbing.\n"
-msgstr "Hakemistoa ei löytynyt käyttäen glob: %s. Yritetään ilman globia.\n"
-
-#, c-format
-msgid "File not found by glob: %s. Trying without globbing.\n"
-msgstr "Tiedostoa ei löytynyt käyttäen glob: %s. Yritetään ilman globia.\n"
 
 #, c-format
 msgid "Could not open %s file %s: %m\n"
@@ -788,10 +788,6 @@ msgstr "Tyhjennä %s tiedosto %s\n"
 #, c-format
 msgid "illegal _docdir_fmt %s: %s\n"
 msgstr "virheellinen _docdir_fmt %s: %s\n"
-
-#, c-format
-msgid "File not found by glob: %s\n"
-msgstr "Tiedostoa ei löytynyt täydennyksellä: %s\n"
 
 #, c-format
 msgid "Special file in generated file list: %s\n"
@@ -1147,6 +1143,11 @@ msgstr "Virheellinen patch-numero %s: %s\n"
 msgid "line %d: second %%prep\n"
 msgstr "rivi %d: toinen %%prep\n"
 
+#, c-format
+msgid ""
+"%%patchN is deprecated (%i usages found), use %%patch N (or %%patch -P N)\n"
+msgstr ""
+
 msgid "Dependency tokens must begin with alpha-numeric, '_' or '/'"
 msgstr ""
 "Riippuvuusmerkkien on alettava joko aakkosnumeerisella merkillä, '_' tai '/'"
@@ -1365,6 +1366,11 @@ msgstr "Ei voitu suorittaa %s:ää: %s\n"
 #, c-format
 msgid "Couldn't exec %s: %s\n"
 msgstr "Ei voitu suorittaa %s:ää: %s\n"
+
+#, fuzzy, c-format
+#| msgid "failed to open dir %s of %s: %s\n"
+msgid "Failed to wait for exit status of %s: %s\n"
+msgstr "hakemiston %s avaaminen epäonnistui: %s: %s\n"
 
 #, c-format
 msgid "%s failed: %x\n"
@@ -1912,6 +1918,16 @@ msgstr "älä suorita %%pretrans-sovelmaa (jos sellainen on)"
 msgid "do not execute %%posttrans scriptlet (if any)"
 msgstr "älä suorita %%posttrans-sovelmaa (jos sellainen on)"
 
+#, fuzzy, c-format
+#| msgid "do not execute %%pretrans scriptlet (if any)"
+msgid "do not execute %%preuntrans scriptlet (if any)"
+msgstr "älä suorita %%pretrans-sovelmaa (jos sellainen on)"
+
+#, fuzzy, c-format
+#| msgid "do not execute %%posttrans scriptlet (if any)"
+msgid "do not execute %%postuntrans scriptlet (if any)"
+msgstr "älä suorita %%posttrans-sovelmaa (jos sellainen on)"
+
 msgid "do not execute any scriptlet(s) triggered by this package"
 msgstr "älä suorita tämän paketin laukaisemia skriptejä"
 
@@ -1930,6 +1946,10 @@ msgstr "älä suorita %%triggerun-sovelmia"
 #, c-format
 msgid "do not execute any %%triggerpostun scriptlet(s)"
 msgstr "älä suorita %%triggerpostun-sovelmia"
+
+#, c-format
+msgid "do not create %%sysusers users and groups"
+msgstr ""
 
 msgid ""
 "upgrade to an old version of the package (--force on upgrades does this "
@@ -2581,6 +2601,10 @@ msgid "%s cannot be installed\n"
 msgstr "%s:ää ei voida asentaa\n"
 
 #, c-format
+msgid "File not found by glob: %s\n"
+msgstr "Tiedostoa ei löytynyt täydennyksellä: %s\n"
+
+#, c-format
 msgid "Retrieving %s\n"
 msgstr "Haetaan %s\n"
 
@@ -2782,9 +2806,6 @@ msgstr "Ota yhteyttä %s\n"
 #, c-format
 msgid "Unable to open %s for reading: %m.\n"
 msgstr "En voi avata %s luettavaksi: %m.\n"
-
-msgid "No exec() called after fork() in lua scriptlet\n"
-msgstr "exec() ei kutsuttu fork() jälkeen lua-komentosarjassa\n"
 
 #, c-format
 msgid "Unable to restore current directory: %m"
@@ -3078,6 +3099,16 @@ msgstr "Makro %%%s määritetty, mutta ei käytössä piirin sisällä\n"
 msgid "no such macro: '%s'\n"
 msgstr "ei sellaista makroa: '%s'\n"
 
+#, fuzzy, c-format
+#| msgid "invalid package number: %s\n"
+msgid "invalid argument: %s\n"
+msgstr "virheellinen paketin numero: %s\n"
+
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to get available memory for %s\n"
+msgstr "hakemiston %s luonti epäonnistui: %s\n"
+
 msgid "argument expected"
 msgstr "argumentti odotettavissa"
 
@@ -3130,6 +3161,11 @@ msgstr "Virhe kirjoitettaessa lokiin"
 msgid "invalid syntax in lua scriptlet: %s\n"
 msgstr "virheellinen syntaksi lua-skriptissä: %s\n"
 
+#, fuzzy
+#| msgid "No exec() called after fork() in lua scriptlet\n"
+msgid "runaway fork() in Lua script\n"
+msgstr "exec() ei kutsuttu fork() jälkeen lua-komentosarjassa\n"
+
 #, c-format
 msgid "invalid syntax in lua script: %s\n"
 msgstr "virheellinen syntaksi lua-skriptissä: %s\n"
@@ -3155,23 +3191,11 @@ msgid "memory alloc (%u bytes) returned NULL.\n"
 msgstr "muistin varaus (%u tavua) palautti NULL:in.\n"
 
 #, c-format
-msgid "Unsupported version of signature: V%d\n"
-msgstr "Allekirjoituksen versio, jota ei tueta: V%d\n"
-
-#, c-format
-msgid "Unsupported version of key: V%d\n"
-msgstr "Avaimen versiota, jota ei tueta: V%d\n"
-
-#, c-format
 msgid "V%d %s/%s %s, key ID %s"
 msgstr "V%d %s/%s %s, avaimen tunnus %s"
 
 msgid "(none)"
 msgstr "(ei mitään)"
-
-#, c-format
-msgid "exiting on signal %d from pid %d\n"
-msgstr "poistuu signaalilla %d pid:stä %d\n"
 
 #, c-format
 msgid "%s: Fwrite failed: %s\n"
@@ -3185,16 +3209,25 @@ msgstr "%s: Tiedoston luku epäonnistui: %s\n"
 msgid "%s: Fflush failed: %s\n"
 msgstr "%s: Fflush epäonnistui: %s\n"
 
-msgid "Unsupported PGP signature\n"
+#, fuzzy
+#| msgid "Unsupported PGP signature\n"
+msgid "Unsupported OpenPGP signature\n"
 msgstr "PGP-allekirjoitusta ei tueta\n"
 
-#, c-format
-msgid "Unsupported PGP hash algorithm %u\n"
+#, fuzzy, c-format
+#| msgid "Unsupported PGP hash algorithm %u\n"
+msgid "Unsupported OpenPGP hash algorithm %u\n"
 msgstr "Ei tuettu PGP-hajautusalgoritmi %u\n"
 
-#, c-format
-msgid "Unsupported PGP pubkey algorithm %u\n"
+#, fuzzy, c-format
+#| msgid "Unsupported PGP pubkey algorithm %u\n"
+msgid "Unsupported OpenPGP pubkey algorithm %u\n"
 msgstr "PGP-pubkey-algoritmi %u, jota ei tueta\n"
+
+#, fuzzy, c-format
+#| msgid "Unsupported PGP signature\n"
+msgid "Deprecated OpenPGP signature version %d\n"
+msgstr "PGP-allekirjoitusta ei tueta\n"
 
 #, c-format
 msgid "Could not create pipe for signing: %m\n"
@@ -3218,6 +3251,11 @@ msgstr "Putkeen ei voitu kirjoittaa\n"
 #, c-format
 msgid "Could not read from file %s: %s\n"
 msgstr "Tiedoston ”%s” lukeminen ei onnistunut: %s\n"
+
+#, fuzzy, c-format
+#| msgid "gpg exec failed (%d)\n"
+msgid "gpg waitpid failed (%s)\n"
+msgstr "gpg:n suoritus epäonnistui (%d)\n"
 
 #, c-format
 msgid "gpg exec failed (%d)\n"
@@ -3268,9 +3306,10 @@ msgstr "%s: rpmWriteSignature epäonnistui: %s\n"
 msgid "rpmMkTemp failed\n"
 msgstr "rpmMkTemp epäonnistui\n"
 
-#, c-format
-msgid "%s: writeLead failed: %s\n"
-msgstr "%s: writeLead epäonnistui: %s\n"
+#, fuzzy, c-format
+#| msgid "%s: failed to encode\n"
+msgid "%s: failed to copy rpm lead: %s\n"
+msgstr "%s: koodaaminen epäonnistui\n"
 
 #, c-format
 msgid "replacing %s failed: %s\n"
@@ -3309,6 +3348,34 @@ msgstr "pura arkisto"
 
 msgid "only print what would be done"
 msgstr "tulosta vain se, mitä tehdään"
+
+#, c-format
+#~ msgid "%%dev glob not permitted: %s\n"
+#~ msgstr "%%dev glob ei ole sallittu: %s\n"
+
+#, c-format
+#~ msgid "Directory not found by glob: %s. Trying without globbing.\n"
+#~ msgstr "Hakemistoa ei löytynyt käyttäen glob: %s. Yritetään ilman globia.\n"
+
+#, c-format
+#~ msgid "File not found by glob: %s. Trying without globbing.\n"
+#~ msgstr "Tiedostoa ei löytynyt käyttäen glob: %s. Yritetään ilman globia.\n"
+
+#, c-format
+#~ msgid "Unsupported version of signature: V%d\n"
+#~ msgstr "Allekirjoituksen versio, jota ei tueta: V%d\n"
+
+#, c-format
+#~ msgid "Unsupported version of key: V%d\n"
+#~ msgstr "Avaimen versiota, jota ei tueta: V%d\n"
+
+#, c-format
+#~ msgid "exiting on signal %d from pid %d\n"
+#~ msgstr "poistuu signaalilla %d pid:stä %d\n"
+
+#, c-format
+#~ msgid "%s: writeLead failed: %s\n"
+#~ msgstr "%s: writeLead epäonnistui: %s\n"
 
 #~ msgid "build through %build (%prep, then compile) from <specfile>"
 #~ msgstr "käännä %build-osioon asti (%prep ja %build) spec-tiedostosta"

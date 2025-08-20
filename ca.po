@@ -9,12 +9,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
-"POT-Creation-Date: 2022-04-07 13:03+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-04 09:25+0300\n"
 "PO-Revision-Date: 2025-06-17 13:19+0000\n"
 "Last-Translator: David Medina <dmedinacpnl@gmail.com>\n"
-"Language-Team: Catalan <https://translate.fedoraproject.org/projects/rpm/"
-"rpm-l10n/ca/>\n"
+"Language-Team: Catalan <https://translate.fedoraproject.org/projects/rpm/rpm-"
+"l10n/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -675,6 +675,15 @@ msgstr "Capacitat no vàlida: %s\n"
 msgid "File capability support not built in\n"
 msgstr "No s'ha construït amb disponibilitat de fitxers\n"
 
+#, fuzzy, c-format
+#| msgid "Missing module path in line: %s\n"
+msgid "Missing quote: %s\n"
+msgstr "Falta el camí al mòdul en la línia: %s\n"
+
+#, c-format
+msgid "Trailing backslash: %s\n"
+msgstr ""
+
 #, c-format
 msgid "File must begin with \"/\": %s\n"
 msgstr "El fitxer ha de començar amb «/»: %s\n"
@@ -780,24 +789,12 @@ msgstr ""
 msgid "failed to create directory"
 msgstr "no s'ha pogut crear el directori"
 
-msgid "Mixing main ELF and debug files in package"
+msgid "Mixing main ELF and debug files in package\n"
 msgstr ""
 
 #, c-format
 msgid "File needs leading \"/\": %s\n"
 msgstr "El fitxer necessita el «/» principal: %s\n"
-
-#, c-format
-msgid "%%dev glob not permitted: %s\n"
-msgstr ""
-
-#, c-format
-msgid "Directory not found by glob: %s. Trying without globbing.\n"
-msgstr ""
-
-#, c-format
-msgid "File not found by glob: %s. Trying without globbing.\n"
-msgstr ""
 
 #, fuzzy, c-format
 msgid "Could not open %s file %s: %m\n"
@@ -810,10 +807,6 @@ msgstr "Classificador buit de fitxer\n"
 #, c-format
 msgid "illegal _docdir_fmt %s: %s\n"
 msgstr ""
-
-#, c-format
-msgid "File not found by glob: %s\n"
-msgstr "El glob no ha trobat el fitxer: %s\n"
 
 #, c-format
 msgid "Special file in generated file list: %s\n"
@@ -1174,6 +1167,11 @@ msgstr "El número de pedaç %s no és vàlid: %s\n"
 msgid "line %d: second %%prep\n"
 msgstr "línia %d: segon %%prep\n"
 
+#, c-format
+msgid ""
+"%%patchN is deprecated (%i usages found), use %%patch N (or %%patch -P N)\n"
+msgstr ""
+
 msgid "Dependency tokens must begin with alpha-numeric, '_' or '/'"
 msgstr ""
 
@@ -1387,6 +1385,11 @@ msgstr "No s'ha pogut crear el procés fill de «%s»: %s\n"
 #, c-format
 msgid "Couldn't exec %s: %s\n"
 msgstr "No s'ha pogut executar %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "failed to write all data to %s: %s\n"
+msgid "Failed to wait for exit status of %s: %s\n"
+msgstr "ha fallat l'escriptura de totes les dades a %s: %s\n"
 
 #, c-format
 msgid "%s failed: %x\n"
@@ -1932,6 +1935,16 @@ msgstr "no executis el scriptlet %%pretrans (si n'hi hagués)"
 msgid "do not execute %%posttrans scriptlet (if any)"
 msgstr "no executis el scriptlet %%posttrans (si n'hi hagués)"
 
+#, fuzzy, c-format
+#| msgid "do not execute %%pretrans scriptlet (if any)"
+msgid "do not execute %%preuntrans scriptlet (if any)"
+msgstr "no executis el scriptlet %%pretrans (si n'hi hagués)"
+
+#, fuzzy, c-format
+#| msgid "do not execute %%posttrans scriptlet (if any)"
+msgid "do not execute %%postuntrans scriptlet (if any)"
+msgstr "no executis el scriptlet %%posttrans (si n'hi hagués)"
+
 msgid "do not execute any scriptlet(s) triggered by this package"
 msgstr "no executis cap scriptlet invocat per aquest paquet"
 
@@ -1950,6 +1963,10 @@ msgstr "no executis cap scriptlet %%triggerun"
 #, c-format
 msgid "do not execute any %%triggerpostun scriptlet(s)"
 msgstr "no executis cap scriptlet %%triggerpostun"
+
+#, c-format
+msgid "do not create %%sysusers users and groups"
+msgstr ""
 
 msgid ""
 "upgrade to an old version of the package (--force on upgrades does this "
@@ -2604,6 +2621,10 @@ msgid "%s cannot be installed\n"
 msgstr "no es pot instal·lar %s\n"
 
 #, c-format
+msgid "File not found by glob: %s\n"
+msgstr "El glob no ha trobat el fitxer: %s\n"
+
+#, c-format
 msgid "Retrieving %s\n"
 msgstr "S'està obtenint %s\n"
 
@@ -2806,9 +2827,6 @@ msgstr "contacteu amb %s\n"
 #, c-format
 msgid "Unable to open %s for reading: %m.\n"
 msgstr "No s'ha pogut obrir %s per a lectura: %m.\n"
-
-msgid "No exec() called after fork() in lua scriptlet\n"
-msgstr "No s'ha cridat cap exec() després del fork() a l'scriptlet de lua\n"
 
 #, c-format
 msgid "Unable to restore current directory: %m"
@@ -3114,6 +3132,16 @@ msgstr "S'ha definit la macro %%%s però no s'utilitza dins de l'àmbit\n"
 msgid "no such macro: '%s'\n"
 msgstr ""
 
+#, fuzzy, c-format
+#| msgid "invalid package number: %s\n"
+msgid "invalid argument: %s\n"
+msgstr "número de paquet invàlid: %s\n"
+
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to get available memory for %s\n"
+msgstr "ha fallat en crear el directori %s: %s\n"
+
 #, fuzzy
 msgid "argument expected"
 msgstr "no s'esperava ]"
@@ -3168,6 +3196,11 @@ msgstr ""
 msgid "invalid syntax in lua scriptlet: %s\n"
 msgstr "sintaxi no vàlida en el scriptlet lua: %s\n"
 
+#, fuzzy
+#| msgid "No exec() called after fork() in lua scriptlet\n"
+msgid "runaway fork() in Lua script\n"
+msgstr "No s'ha cridat cap exec() després del fork() a l'scriptlet de lua\n"
+
 #, c-format
 msgid "invalid syntax in lua script: %s\n"
 msgstr "sintaxi no vàlida en el script lua: %s\n"
@@ -3193,23 +3226,11 @@ msgid "memory alloc (%u bytes) returned NULL.\n"
 msgstr "l'assignació de memòria (%u bytes) ha retornat NULL.\n"
 
 #, c-format
-msgid "Unsupported version of signature: V%d\n"
-msgstr ""
-
-#, c-format
-msgid "Unsupported version of key: V%d\n"
-msgstr ""
-
-#, c-format
 msgid "V%d %s/%s %s, key ID %s"
 msgstr "V%d %s/%s %s, id. de la clau %s"
 
 msgid "(none)"
 msgstr "(cap)"
-
-#, c-format
-msgid "exiting on signal %d from pid %d\n"
-msgstr ""
 
 #, c-format
 msgid "%s: Fwrite failed: %s\n"
@@ -3223,16 +3244,25 @@ msgstr "%s: Ha fallat el fread: %s\n"
 msgid "%s: Fflush failed: %s\n"
 msgstr "%s: ha fallat el fflush: %s\n"
 
-msgid "Unsupported PGP signature\n"
+#, fuzzy
+#| msgid "Unsupported PGP signature\n"
+msgid "Unsupported OpenPGP signature\n"
 msgstr "Signatura PGP no suportada\n"
 
-#, c-format
-msgid "Unsupported PGP hash algorithm %u\n"
+#, fuzzy, c-format
+#| msgid "Unsupported PGP hash algorithm %u\n"
+msgid "Unsupported OpenPGP hash algorithm %u\n"
 msgstr "Algoritme de dispersió PGP no suportat %u\n"
 
-#, c-format
-msgid "Unsupported PGP pubkey algorithm %u\n"
+#, fuzzy, c-format
+#| msgid "Unsupported PGP pubkey algorithm %u\n"
+msgid "Unsupported OpenPGP pubkey algorithm %u\n"
 msgstr "Algoritme de clau pública PGP no suportat %u\n"
+
+#, fuzzy, c-format
+#| msgid "Unsupported PGP signature\n"
+msgid "Deprecated OpenPGP signature version %d\n"
+msgstr "Signatura PGP no suportada\n"
 
 #, fuzzy, c-format
 msgid "Could not create pipe for signing: %m\n"
@@ -3256,6 +3286,11 @@ msgstr "No s'ha pogut escriure a la canonada\n"
 #, c-format
 msgid "Could not read from file %s: %s\n"
 msgstr "No s'ha pogut llegir des del fitxer %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "gpg exec failed (%d)\n"
+msgid "gpg waitpid failed (%s)\n"
+msgstr "ha fallat l'execució del gpg (%d)\n"
 
 #, c-format
 msgid "gpg exec failed (%d)\n"
@@ -3306,9 +3341,10 @@ msgstr "%s: ha fallat el rpmWriteSignature: %s\n"
 msgid "rpmMkTemp failed\n"
 msgstr "Ha fallat el rpmMkTemp\n"
 
-#, c-format
-msgid "%s: writeLead failed: %s\n"
-msgstr "%s: ha fallat el writeLead: %s\n"
+#, fuzzy, c-format
+#| msgid "%s: failed to encode\n"
+msgid "%s: failed to copy rpm lead: %s\n"
+msgstr "%s: ha fallat la codificació\n"
 
 #, c-format
 msgid "replacing %s failed: %s\n"
@@ -3347,6 +3383,10 @@ msgstr ""
 
 msgid "only print what would be done"
 msgstr ""
+
+#, c-format
+#~ msgid "%s: writeLead failed: %s\n"
+#~ msgstr "%s: ha fallat el writeLead: %s\n"
 
 #~ msgid "build through %build (%prep, then compile) from <specfile>"
 #~ msgstr ""

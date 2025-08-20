@@ -12,8 +12,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
-"POT-Creation-Date: 2022-04-07 13:03+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-04 09:25+0300\n"
 "PO-Revision-Date: 2024-04-06 15:36+0000\n"
 "Last-Translator: Takuya Wakazono <pastalian46@gmail.com>\n"
 "Language-Team: Japanese <https://translate.fedoraproject.org/projects/rpm/"
@@ -640,6 +640,15 @@ msgstr "無効なケーパビリティです: %s\n"
 msgid "File capability support not built in\n"
 msgstr "ファイル ケーパビリティのサポートが組み込まれていません\n"
 
+#, fuzzy, c-format
+#| msgid "Missing module path in line: %s\n"
+msgid "Missing quote: %s\n"
+msgstr "行にモジュールパスが見つかりません: %s\n"
+
+#, c-format
+msgid "Trailing backslash: %s\n"
+msgstr ""
+
 #, c-format
 msgid "File must begin with \"/\": %s\n"
 msgstr "ファイルは \"/\" から始まらなければなりません: %s\n"
@@ -748,24 +757,12 @@ msgstr "%s 中のビルドIDが大きすぎます\n"
 msgid "failed to create directory"
 msgstr "ディレクトリーの作成に失敗しました"
 
-msgid "Mixing main ELF and debug files in package"
+msgid "Mixing main ELF and debug files in package\n"
 msgstr ""
 
 #, c-format
 msgid "File needs leading \"/\": %s\n"
 msgstr "ファイルは先頭に \"/\" が必要です: %s\n"
-
-#, c-format
-msgid "%%dev glob not permitted: %s\n"
-msgstr "%%dev グロブは許可されません: %s\n"
-
-#, c-format
-msgid "Directory not found by glob: %s. Trying without globbing.\n"
-msgstr ""
-
-#, c-format
-msgid "File not found by glob: %s. Trying without globbing.\n"
-msgstr ""
 
 #, c-format
 msgid "Could not open %s file %s: %m\n"
@@ -778,10 +775,6 @@ msgstr "%s ファイル %s が空です\n"
 #, c-format
 msgid "illegal _docdir_fmt %s: %s\n"
 msgstr "不正な _docdir_fmt %s: %s\n"
-
-#, c-format
-msgid "File not found by glob: %s\n"
-msgstr "ファイルが見つかりません (by glob): %s\n"
 
 #, c-format
 msgid "Special file in generated file list: %s\n"
@@ -1139,6 +1132,11 @@ msgstr "無効なパッケージ番号 %s: %s\n"
 msgid "line %d: second %%prep\n"
 msgstr "%d 行目: ふたつ目の %%prep\n"
 
+#, c-format
+msgid ""
+"%%patchN is deprecated (%i usages found), use %%patch N (or %%patch -P N)\n"
+msgstr ""
+
 msgid "Dependency tokens must begin with alpha-numeric, '_' or '/'"
 msgstr "依存関係トークンは、英数字、'_' または '/' で始まらなければいけません"
 
@@ -1356,6 +1354,11 @@ msgstr "%s のフォークに失敗しました: %s\n"
 #, c-format
 msgid "Couldn't exec %s: %s\n"
 msgstr "%s を実行できませんでした: %s\n"
+
+#, fuzzy, c-format
+#| msgid "failed to write all data to %s: %s\n"
+msgid "Failed to wait for exit status of %s: %s\n"
+msgstr "%s へ全データの書き込みに失敗しました: %s\n"
 
 #, c-format
 msgid "%s failed: %x\n"
@@ -1905,6 +1908,16 @@ msgstr "%%pretrans スクリプトを実行しません"
 msgid "do not execute %%posttrans scriptlet (if any)"
 msgstr "%%posttrans スクリプトを実行しません"
 
+#, fuzzy, c-format
+#| msgid "do not execute %%pretrans scriptlet (if any)"
+msgid "do not execute %%preuntrans scriptlet (if any)"
+msgstr "%%pretrans スクリプトを実行しません"
+
+#, fuzzy, c-format
+#| msgid "do not execute %%posttrans scriptlet (if any)"
+msgid "do not execute %%postuntrans scriptlet (if any)"
+msgstr "%%posttrans スクリプトを実行しません"
+
 msgid "do not execute any scriptlet(s) triggered by this package"
 msgstr "このパッケージによってトリガーされるスクリプトを実行しません"
 
@@ -1923,6 +1936,10 @@ msgstr "%%triggerun スクリプトを実行しません"
 #, c-format
 msgid "do not execute any %%triggerpostun scriptlet(s)"
 msgstr "%%triggerpostun スクリプトを実行しません"
+
+#, c-format
+msgid "do not create %%sysusers users and groups"
+msgstr ""
 
 msgid ""
 "upgrade to an old version of the package (--force on upgrades does this "
@@ -2577,6 +2594,10 @@ msgid "%s cannot be installed\n"
 msgstr "%s をインストールできません\n"
 
 #, c-format
+msgid "File not found by glob: %s\n"
+msgstr "ファイルが見つかりません (by glob): %s\n"
+
+#, c-format
 msgid "Retrieving %s\n"
 msgstr "%s を取得中です\n"
 
@@ -2779,9 +2800,6 @@ msgstr "%s へ連絡してください\n"
 #, c-format
 msgid "Unable to open %s for reading: %m.\n"
 msgstr "%s を読み込み用に開けません: %m。\n"
-
-msgid "No exec() called after fork() in lua scriptlet\n"
-msgstr "lua スクリプト中で fork() の後に exec() が呼ばれていません\n"
 
 #, c-format
 msgid "Unable to restore current directory: %m"
@@ -3074,6 +3092,16 @@ msgstr "マクロ %%%s が定義されましたがスコープ内では使用さ
 msgid "no such macro: '%s'\n"
 msgstr "'%s' というマクロはありません\n"
 
+#, fuzzy, c-format
+#| msgid "invalid package number: %s\n"
+msgid "invalid argument: %s\n"
+msgstr "無効なパッケージ番号です: %s\n"
+
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to get available memory for %s\n"
+msgstr "ディレクトリー %s の作成に失敗しました: %s\n"
+
 msgid "argument expected"
 msgstr "期待される引数"
 
@@ -3126,6 +3154,11 @@ msgstr "ログへの書き込みエラーが発生しました"
 msgid "invalid syntax in lua scriptlet: %s\n"
 msgstr "lua スクリプトで無効な文法がありました: %s\n"
 
+#, fuzzy
+#| msgid "No exec() called after fork() in lua scriptlet\n"
+msgid "runaway fork() in Lua script\n"
+msgstr "lua スクリプト中で fork() の後に exec() が呼ばれていません\n"
+
 #, c-format
 msgid "invalid syntax in lua script: %s\n"
 msgstr "lua スクリプトで無効な文法がありました: %s\n"
@@ -3151,23 +3184,11 @@ msgid "memory alloc (%u bytes) returned NULL.\n"
 msgstr "メモリ割り当て (%u バイト) が NULL を返しました。\n"
 
 #, c-format
-msgid "Unsupported version of signature: V%d\n"
-msgstr ""
-
-#, c-format
-msgid "Unsupported version of key: V%d\n"
-msgstr "サポートされていない鍵のバージョンです: V%d\n"
-
-#, c-format
 msgid "V%d %s/%s %s, key ID %s"
 msgstr "V%d %s/%s %s、鍵 ID %s"
 
 msgid "(none)"
 msgstr "(なし)"
-
-#, fuzzy, c-format
-msgid "exiting on signal %d from pid %d\n"
-msgstr "pid %2$d からのシグナル %1$d により終了します\n"
 
 #, c-format
 msgid "%s: Fwrite failed: %s\n"
@@ -3181,16 +3202,25 @@ msgstr "%s: Fread に失敗しました: %s\n"
 msgid "%s: Fflush failed: %s\n"
 msgstr "%s: Fflush に失敗しました: %s\n"
 
-msgid "Unsupported PGP signature\n"
+#, fuzzy
+#| msgid "Unsupported PGP signature\n"
+msgid "Unsupported OpenPGP signature\n"
 msgstr "サポートされない PGP 署名\n"
 
-#, c-format
-msgid "Unsupported PGP hash algorithm %u\n"
+#, fuzzy, c-format
+#| msgid "Unsupported PGP hash algorithm %u\n"
+msgid "Unsupported OpenPGP hash algorithm %u\n"
 msgstr "サポートされない PGP ハッシュアルゴリズム %u\n"
 
-#, c-format
-msgid "Unsupported PGP pubkey algorithm %u\n"
+#, fuzzy, c-format
+#| msgid "Unsupported PGP pubkey algorithm %u\n"
+msgid "Unsupported OpenPGP pubkey algorithm %u\n"
 msgstr "サポートされない PGP 公開鍵アルゴリズム %u\n"
+
+#, fuzzy, c-format
+#| msgid "Unsupported PGP signature\n"
+msgid "Deprecated OpenPGP signature version %d\n"
+msgstr "サポートされない PGP 署名\n"
 
 #, c-format
 msgid "Could not create pipe for signing: %m\n"
@@ -3214,6 +3244,11 @@ msgstr "パイプに書き込めません\n"
 #, c-format
 msgid "Could not read from file %s: %s\n"
 msgstr "ファイル %s から読み込めません: %s\n"
+
+#, fuzzy, c-format
+#| msgid "gpg exec failed (%d)\n"
+msgid "gpg waitpid failed (%s)\n"
+msgstr "gpg の実行に失敗しました (%d)\n"
 
 #, c-format
 msgid "gpg exec failed (%d)\n"
@@ -3264,9 +3299,10 @@ msgstr "%s: rpmWriteSignature に失敗しました: %s\n"
 msgid "rpmMkTemp failed\n"
 msgstr "rpmMkTemp に失敗しました\n"
 
-#, c-format
-msgid "%s: writeLead failed: %s\n"
-msgstr "%s: writeLead に失敗しました: %s\n"
+#, fuzzy, c-format
+#| msgid "%s: failed to encode\n"
+msgid "%s: failed to copy rpm lead: %s\n"
+msgstr "%s: エンコードに失敗\n"
 
 #, c-format
 msgid "replacing %s failed: %s\n"
@@ -3305,6 +3341,22 @@ msgstr ""
 
 msgid "only print what would be done"
 msgstr ""
+
+#, c-format
+#~ msgid "%%dev glob not permitted: %s\n"
+#~ msgstr "%%dev グロブは許可されません: %s\n"
+
+#, c-format
+#~ msgid "Unsupported version of key: V%d\n"
+#~ msgstr "サポートされていない鍵のバージョンです: V%d\n"
+
+#, fuzzy, c-format
+#~ msgid "exiting on signal %d from pid %d\n"
+#~ msgstr "pid %2$d からのシグナル %1$d により終了します\n"
+
+#, c-format
+#~ msgid "%s: writeLead failed: %s\n"
+#~ msgstr "%s: writeLead に失敗しました: %s\n"
 
 #~ msgid "build through %build (%prep, then compile) from <specfile>"
 #~ msgstr "<specfile> の %build (%prep とコンパイル) まで実行します"

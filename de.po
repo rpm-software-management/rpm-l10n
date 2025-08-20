@@ -11,12 +11,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
-"POT-Creation-Date: 2022-04-07 13:03+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-04 09:25+0300\n"
 "PO-Revision-Date: 2024-05-08 18:36+0000\n"
 "Last-Translator: Adrien Ricciardi <ricad552@hotmail.com>\n"
-"Language-Team: German <https://translate.fedoraproject.org/projects/rpm/"
-"rpm-l10n/de/>\n"
+"Language-Team: German <https://translate.fedoraproject.org/projects/rpm/rpm-"
+"l10n/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -683,6 +683,15 @@ msgstr "Ungültige Fähigkeit: %s\n"
 msgid "File capability support not built in\n"
 msgstr "Dateifähigkeits-Unterstützung nicht eingebaut\n"
 
+#, fuzzy, c-format
+#| msgid "Missing module path in line: %s\n"
+msgid "Missing quote: %s\n"
+msgstr "Fehlender Modul-Pfad in Zeile: %s\n"
+
+#, c-format
+msgid "Trailing backslash: %s\n"
+msgstr ""
+
 #, c-format
 msgid "File must begin with \"/\": %s\n"
 msgstr "Datei muss mit »/« beginnen: %s\n"
@@ -788,25 +797,14 @@ msgstr "in %s gefundene build-id ist zu groß\n"
 msgid "failed to create directory"
 msgstr "Erzeugen des Verzeichnisses fehlgeschlagen"
 
-msgid "Mixing main ELF and debug files in package"
+#, fuzzy
+#| msgid "Mixing main ELF and debug files in package"
+msgid "Mixing main ELF and debug files in package\n"
 msgstr "ELF-Hauptdateien und Debug-Dateien im Paket vermischt"
 
 #, c-format
 msgid "File needs leading \"/\": %s\n"
 msgstr "Datei benötigt führenden »/«: %s\n"
-
-#, c-format
-msgid "%%dev glob not permitted: %s\n"
-msgstr "%%dev-glob ist unzulässig: %s\n"
-
-#, c-format
-msgid "Directory not found by glob: %s. Trying without globbing.\n"
-msgstr ""
-"Verzeichnis von »glob« nicht gefunden: %s. Wird ohne Globbing versucht.\n"
-
-#, c-format
-msgid "File not found by glob: %s. Trying without globbing.\n"
-msgstr "Datei von »glob« nicht gefunden: %s. Wird ohne Globbing versucht.\n"
 
 #, c-format
 msgid "Could not open %s file %s: %m\n"
@@ -819,10 +817,6 @@ msgstr "Leere %s Datei %s\n"
 #, c-format
 msgid "illegal _docdir_fmt %s: %s\n"
 msgstr "Ungültiges _docdir_fmt %s: %s\n"
-
-#, c-format
-msgid "File not found by glob: %s\n"
-msgstr "Datei von »glob« nicht gefunden: %s\n"
 
 #, c-format
 msgid "Special file in generated file list: %s\n"
@@ -1184,6 +1178,11 @@ msgstr "Ungültige Patch-Nummer %s: %s\n"
 msgid "line %d: second %%prep\n"
 msgstr "Zeile %d: Zweites %%prep\n"
 
+#, c-format
+msgid ""
+"%%patchN is deprecated (%i usages found), use %%patch N (or %%patch -P N)\n"
+msgstr ""
+
 msgid "Dependency tokens must begin with alpha-numeric, '_' or '/'"
 msgstr ""
 "Token mit Abhängigkeiten müssen mit alphanumerischem Zeichen, »_« oder »/« "
@@ -1410,6 +1409,11 @@ msgstr "fork %s konnte nicht ausgeführt werden: %s\n"
 #, c-format
 msgid "Couldn't exec %s: %s\n"
 msgstr "%s konnte nicht ausgeführt werden: %s\n"
+
+#, fuzzy, c-format
+#| msgid "failed to open dir %s of %s: %s\n"
+msgid "Failed to wait for exit status of %s: %s\n"
+msgstr "Fehler beim Öffnen des Ordners %s von %s: %s\n"
 
 #, c-format
 msgid "%s failed: %x\n"
@@ -1967,6 +1971,16 @@ msgstr "%%pretrans-Scriptlet nicht ausführen (wenn vorhanden)"
 msgid "do not execute %%posttrans scriptlet (if any)"
 msgstr "%%posttrans-Scriptlet nicht ausführen (wenn vorhanden)"
 
+#, fuzzy, c-format
+#| msgid "do not execute %%pretrans scriptlet (if any)"
+msgid "do not execute %%preuntrans scriptlet (if any)"
+msgstr "%%pretrans-Scriptlet nicht ausführen (wenn vorhanden)"
+
+#, fuzzy, c-format
+#| msgid "do not execute %%posttrans scriptlet (if any)"
+msgid "do not execute %%postuntrans scriptlet (if any)"
+msgstr "%%posttrans-Scriptlet nicht ausführen (wenn vorhanden)"
+
 msgid "do not execute any scriptlet(s) triggered by this package"
 msgstr "Keine Scriptlets dieses Pakets ausführen"
 
@@ -1985,6 +1999,10 @@ msgstr "%%triggerun-Scriptlets nicht ausführen"
 #, c-format
 msgid "do not execute any %%triggerpostun scriptlet(s)"
 msgstr "%%triggerpostun-Scriptlets nicht ausführen"
+
+#, c-format
+msgid "do not create %%sysusers users and groups"
+msgstr ""
 
 msgid ""
 "upgrade to an old version of the package (--force on upgrades does this "
@@ -2038,7 +2056,8 @@ msgid "query/verify package(s) owning installed file"
 msgstr "Abfrage/Verifizierung von Paketen, die installierte Dateien besitzen"
 
 msgid "query/verify package(s) owning path, installed or not"
-msgstr "suche/bestätige Paket(e), die den Pfad besitzen, installiert oder nicht"
+msgstr ""
+"suche/bestätige Paket(e), die den Pfad besitzen, installiert oder nicht"
 
 msgid "query/verify package(s) in group"
 msgstr "Abfragen/überprüfen eines Pakets einer Gruppe"
@@ -2087,7 +2106,8 @@ msgstr ""
 "Abfrage/Verifizierung des/der Pakete(s), die eine Abhängigkeit vorschlagen"
 
 msgid "query/verify the package(s) which supplements a dependency"
-msgstr "Abfrage/Verifizierung des/der Pakete(s), die eine Abhängigkeit ergänzen"
+msgstr ""
+"Abfrage/Verifizierung des/der Pakete(s), die eine Abhängigkeit ergänzen"
 
 msgid "query/verify the package(s) which enhances a dependency"
 msgstr ""
@@ -2646,6 +2666,10 @@ msgid "%s cannot be installed\n"
 msgstr "%s kann nicht installiert werden\n"
 
 #, c-format
+msgid "File not found by glob: %s\n"
+msgstr "Datei von »glob« nicht gefunden: %s\n"
+
+#, c-format
 msgid "Retrieving %s\n"
 msgstr "%s wird geholt\n"
 
@@ -2850,9 +2874,6 @@ msgstr "Bitte (in Englisch) %s kontaktieren\n"
 #, c-format
 msgid "Unable to open %s for reading: %m.\n"
 msgstr "%s kann nicht zum Lesen geöffnet werden: %m.\n"
-
-msgid "No exec() called after fork() in lua scriptlet\n"
-msgstr "Kein exec() nach fork() im Lua-Scriptlet aufgerufen\n"
 
 #, c-format
 msgid "Unable to restore current directory: %m"
@@ -3147,6 +3168,16 @@ msgstr ""
 msgid "no such macro: '%s'\n"
 msgstr "kein solches Makro: '%s'\n"
 
+#, fuzzy, c-format
+#| msgid "invalid package number: %s\n"
+msgid "invalid argument: %s\n"
+msgstr "Ungültige Paket-Nummer: %s\n"
+
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to get available memory for %s\n"
+msgstr "Anlegen des Verzeichnisses %s fehlgeschlagen: %s\n"
+
 msgid "argument expected"
 msgstr "Argument erwarted"
 
@@ -3199,6 +3230,11 @@ msgstr "Fehler beim Schreiben in das Protokoll"
 msgid "invalid syntax in lua scriptlet: %s\n"
 msgstr "Ungültige Syntax in Lua-Scriptlet: %s\n"
 
+#, fuzzy
+#| msgid "No exec() called after fork() in lua scriptlet\n"
+msgid "runaway fork() in Lua script\n"
+msgstr "Kein exec() nach fork() im Lua-Scriptlet aufgerufen\n"
+
 #, c-format
 msgid "invalid syntax in lua script: %s\n"
 msgstr "Ungültige Syntax in Lua-Script: %s\n"
@@ -3224,23 +3260,11 @@ msgid "memory alloc (%u bytes) returned NULL.\n"
 msgstr "Speicherbelegung (%u Byte) lieferte NULL zurück.\n"
 
 #, c-format
-msgid "Unsupported version of signature: V%d\n"
-msgstr "Nicht unterstützte Version der Signatur: V%d\n"
-
-#, c-format
-msgid "Unsupported version of key: V%d\n"
-msgstr "Nicht unterstützte Schlüsselversion: V%d\n"
-
-#, c-format
 msgid "V%d %s/%s %s, key ID %s"
 msgstr "V%d %s/%s %s, Schlüssel-ID %s"
 
 msgid "(none)"
 msgstr "(keine)"
-
-#, c-format
-msgid "exiting on signal %d from pid %d\n"
-msgstr "Abbruch durch Signal %d von PID %d\n"
 
 #, c-format
 msgid "%s: Fwrite failed: %s\n"
@@ -3254,16 +3278,25 @@ msgstr "%s: »fread« fehlgeschlagen: %s\n"
 msgid "%s: Fflush failed: %s\n"
 msgstr "%s: Fflush fehlgeschlagen: %s\n"
 
-msgid "Unsupported PGP signature\n"
+#, fuzzy
+#| msgid "Unsupported PGP signature\n"
+msgid "Unsupported OpenPGP signature\n"
 msgstr "Nicht unterstützte PGP-Signatur\n"
 
-#, c-format
-msgid "Unsupported PGP hash algorithm %u\n"
+#, fuzzy, c-format
+#| msgid "Unsupported PGP hash algorithm %u\n"
+msgid "Unsupported OpenPGP hash algorithm %u\n"
 msgstr "Nicht unterstützter PGP-Prüfsummenalgorithmus %u\n"
 
-#, c-format
-msgid "Unsupported PGP pubkey algorithm %u\n"
+#, fuzzy, c-format
+#| msgid "Unsupported PGP pubkey algorithm %u\n"
+msgid "Unsupported OpenPGP pubkey algorithm %u\n"
 msgstr "Nicht unterstützter PGP-Algorithmus %u für öffentlichen Schlüssel\n"
+
+#, fuzzy, c-format
+#| msgid "Unsupported PGP signature\n"
+msgid "Deprecated OpenPGP signature version %d\n"
+msgstr "Nicht unterstützte PGP-Signatur\n"
 
 #, c-format
 msgid "Could not create pipe for signing: %m\n"
@@ -3287,6 +3320,11 @@ msgstr "In die Pipe konnte nicht geschrieben werden\n"
 #, c-format
 msgid "Could not read from file %s: %s\n"
 msgstr "Aus Datei %s konnte nicht gelesen werden: %s\n"
+
+#, fuzzy, c-format
+#| msgid "gpg exec failed (%d)\n"
+msgid "gpg waitpid failed (%s)\n"
+msgstr "Ausführung von GPG fehlgeschlagen (%d)\n"
 
 #, c-format
 msgid "gpg exec failed (%d)\n"
@@ -3337,9 +3375,10 @@ msgstr "%s: rpmWriteSignature fehlgeschlagen: %s\n"
 msgid "rpmMkTemp failed\n"
 msgstr "rpmMk Temp fehlgeschlagen\n"
 
-#, c-format
-msgid "%s: writeLead failed: %s\n"
-msgstr "%s: writeLead fehlgeschlagen: %s\n"
+#, fuzzy, c-format
+#| msgid "%s: failed to encode\n"
+msgid "%s: failed to copy rpm lead: %s\n"
+msgstr "%s: Verschlüsselung fehlgeschlagen\n"
 
 #, c-format
 msgid "replacing %s failed: %s\n"
@@ -3378,6 +3417,35 @@ msgstr "ein Archiv extrahieren"
 
 msgid "only print what would be done"
 msgstr "nur das ausgeben, was getan werden würde"
+
+#, c-format
+#~ msgid "%%dev glob not permitted: %s\n"
+#~ msgstr "%%dev-glob ist unzulässig: %s\n"
+
+#, c-format
+#~ msgid "Directory not found by glob: %s. Trying without globbing.\n"
+#~ msgstr ""
+#~ "Verzeichnis von »glob« nicht gefunden: %s. Wird ohne Globbing versucht.\n"
+
+#, c-format
+#~ msgid "File not found by glob: %s. Trying without globbing.\n"
+#~ msgstr "Datei von »glob« nicht gefunden: %s. Wird ohne Globbing versucht.\n"
+
+#, c-format
+#~ msgid "Unsupported version of signature: V%d\n"
+#~ msgstr "Nicht unterstützte Version der Signatur: V%d\n"
+
+#, c-format
+#~ msgid "Unsupported version of key: V%d\n"
+#~ msgstr "Nicht unterstützte Schlüsselversion: V%d\n"
+
+#, c-format
+#~ msgid "exiting on signal %d from pid %d\n"
+#~ msgstr "Abbruch durch Signal %d von PID %d\n"
+
+#, c-format
+#~ msgid "%s: writeLead failed: %s\n"
+#~ msgstr "%s: writeLead fehlgeschlagen: %s\n"
 
 #~ msgid "build through %build (%prep, then compile) from <specfile>"
 #~ msgstr ""

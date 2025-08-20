@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: RPM\n"
-"Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
-"POT-Creation-Date: 2022-04-07 13:03+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-04 09:25+0300\n"
 "PO-Revision-Date: 2024-02-21 10:35+0000\n"
 "Last-Translator: eirik song <eirik.song@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -627,6 +627,15 @@ msgstr "无效的功能：%s\n"
 msgid "File capability support not built in\n"
 msgstr "档案功能支持未内建于\n"
 
+#, fuzzy, c-format
+#| msgid "Missing module path in line: %s\n"
+msgid "Missing quote: %s\n"
+msgstr "缺少模块路径于列号：%s\n"
+
+#, c-format
+msgid "Trailing backslash: %s\n"
+msgstr ""
+
 #, c-format
 msgid "File must begin with \"/\": %s\n"
 msgstr "档案必须以「/」开头：%s\n"
@@ -732,24 +741,12 @@ msgstr ""
 msgid "failed to create directory"
 msgstr "无法建立目录"
 
-msgid "Mixing main ELF and debug files in package"
+msgid "Mixing main ELF and debug files in package\n"
 msgstr ""
 
 #, c-format
 msgid "File needs leading \"/\": %s\n"
 msgstr "档案需要以「/」开头：%s\n"
-
-#, c-format
-msgid "%%dev glob not permitted: %s\n"
-msgstr "%%dev 不允許透過 glob 解析：%s\n"
-
-#, c-format
-msgid "Directory not found by glob: %s. Trying without globbing.\n"
-msgstr ""
-
-#, c-format
-msgid "File not found by glob: %s. Trying without globbing.\n"
-msgstr ""
 
 #, fuzzy, c-format
 msgid "Could not open %s file %s: %m\n"
@@ -762,10 +759,6 @@ msgstr "空的檔案分類器\n"
 #, c-format
 msgid "illegal _docdir_fmt %s: %s\n"
 msgstr "不合法的 _docdir_fmt %s：%s\n"
-
-#, c-format
-msgid "File not found by glob: %s\n"
-msgstr "透过 glob 解析找不到档案：%s\n"
 
 #, c-format
 msgid "Special file in generated file list: %s\n"
@@ -1121,6 +1114,11 @@ msgstr "无效的修补编号 %s：%s\n"
 msgid "line %d: second %%prep\n"
 msgstr "第 %d 列：第二个 %%prep\n"
 
+#, c-format
+msgid ""
+"%%patchN is deprecated (%i usages found), use %%patch N (or %%patch -P N)\n"
+msgstr ""
+
 msgid "Dependency tokens must begin with alpha-numeric, '_' or '/'"
 msgstr "依存字组必须以英数字、_ 或 / 开头"
 
@@ -1334,6 +1332,11 @@ msgstr "无法分支 %s：%s\n"
 #, c-format
 msgid "Couldn't exec %s: %s\n"
 msgstr "无法执行 %s：%s\n"
+
+#, fuzzy, c-format
+#| msgid "failed to write all data to %s: %s\n"
+msgid "Failed to wait for exit status of %s: %s\n"
+msgstr "无法写入所有数据至 %s：%s\n"
 
 #, c-format
 msgid "%s failed: %x\n"
@@ -1762,8 +1765,9 @@ msgstr "安装所有档案，即使组态可能被略过"
 msgid ""
 "remove all packages which match <package> (normally an error is generated if "
 "<package> specified multiple packages)"
-msgstr "移除所有符合 <package> 的套件 (如果 <package> "
-"被指定为多个套件，常会导致错误出现)"
+msgstr ""
+"移除所有符合 <package> 的套件 (如果 <package> 被指定为多个套件，常会导致错误"
+"出现)"
 
 msgid "relocate files in non-relocatable package"
 msgstr "对不可重新分配位置的套件重新分配档案位置"
@@ -1875,6 +1879,16 @@ msgstr ""
 msgid "do not execute %%posttrans scriptlet (if any)"
 msgstr ""
 
+#, fuzzy, c-format
+#| msgid "do not execute %%preun scriptlet (if any)"
+msgid "do not execute %%preuntrans scriptlet (if any)"
+msgstr "不执行 %%preun 指令稿片段 (如果有)"
+
+#, fuzzy, c-format
+#| msgid "do not execute %%postun scriptlet (if any)"
+msgid "do not execute %%postuntrans scriptlet (if any)"
+msgstr "不执行 %%postun 指令稿片段 (如果有)"
+
 msgid "do not execute any scriptlet(s) triggered by this package"
 msgstr "不执行任何此套件触发的指令稿片段"
 
@@ -1893,6 +1907,10 @@ msgstr "不执行任何 %%triggerun 指令稿片段"
 #, c-format
 msgid "do not execute any %%triggerpostun scriptlet(s)"
 msgstr "不执行任何 %%triggerpostun 指令稿片段"
+
+#, c-format
+msgid "do not create %%sysusers users and groups"
+msgstr ""
 
 msgid ""
 "upgrade to an old version of the package (--force on upgrades does this "
@@ -2259,7 +2277,7 @@ msgstr "尚未设定 dbpath\n"
 msgid "miFreeHeader: skipping"
 msgstr "miFreeHeader：跳过"
 
-#, c-format, fuzzy
+#, fuzzy, c-format
 msgid "error(%d) storing record #%d into %s\n"
 msgstr "储存记录 #%2$d 到 %3$s 时发生错误(%1$d)\n"
 
@@ -2540,6 +2558,10 @@ msgid "%s cannot be installed\n"
 msgstr "%s 无法安装\n"
 
 #, c-format
+msgid "File not found by glob: %s\n"
+msgstr "透过 glob 解析找不到档案：%s\n"
+
+#, c-format
 msgid "Retrieving %s\n"
 msgstr "撷取 %s\n"
 
@@ -2626,15 +2648,15 @@ msgstr "套件 %s 已经安装"
 msgid "package %s is not installed"
 msgstr "套件 %s 尚未安裝\n"
 
-#, c-format, fuzzy
+#, fuzzy, c-format
 msgid "path %s in package %s is not relocatable"
 msgstr "在套件 %2$s 中的路径 %1$s 无法重新分配位置"
 
-#, c-format, fuzzy
+#, fuzzy, c-format
 msgid "file %s conflicts between attempted installs of %s and %s"
 msgstr "在试图安装 %2$s 和 %3$s 之间产生档案 %1$s 冲突"
 
-#, c-format, fuzzy
+#, fuzzy, c-format
 msgid "file %s from install of %s conflicts with file from package %s"
 msgstr "从 %2$s 安装的档案 %1$s 与来自套件 %3$s 的档案产生冲突"
 
@@ -2736,9 +2758,6 @@ msgstr "请联络 %s\n"
 #, c-format
 msgid "Unable to open %s for reading: %m.\n"
 msgstr "无法开启 %s 以供读取：%m。\n"
-
-msgid "No exec() called after fork() in lua scriptlet\n"
-msgstr ""
 
 #, c-format
 msgid "Unable to restore current directory: %m"
@@ -3031,7 +3050,7 @@ msgstr ""
 msgid "Macro %%%s failed to expand\n"
 msgstr "宏 %%%s 展开时失败\n"
 
-#, c-format, fuzzy
+#, fuzzy, c-format
 msgid "Unknown option %c in %s(%s)\n"
 msgstr "在 %2$s(%3$s) 中有不明的选项 %1$c\n"
 
@@ -3042,6 +3061,16 @@ msgstr ""
 #, c-format
 msgid "no such macro: '%s'\n"
 msgstr ""
+
+#, fuzzy, c-format
+#| msgid "invalid package number: %s\n"
+msgid "invalid argument: %s\n"
+msgstr "无效的套件编号：%s\n"
+
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to get available memory for %s\n"
+msgstr "建立目录 %s 时失败：%s\n"
 
 #, fuzzy
 msgid "argument expected"
@@ -3097,6 +3126,9 @@ msgstr ""
 msgid "invalid syntax in lua scriptlet: %s\n"
 msgstr "无效的语法于 lua 指令稿片段：%s\n"
 
+msgid "runaway fork() in Lua script\n"
+msgstr ""
+
 #, c-format
 msgid "invalid syntax in lua script: %s\n"
 msgstr "无效的语法于 lua 指令稿：%s\n"
@@ -3122,23 +3154,11 @@ msgid "memory alloc (%u bytes) returned NULL.\n"
 msgstr "内存配置 (%u 字节) 回传 NULL。\n"
 
 #, c-format
-msgid "Unsupported version of signature: V%d\n"
-msgstr ""
-
-#, c-format
-msgid "Unsupported version of key: V%d\n"
-msgstr ""
-
-#, c-format
 msgid "V%d %s/%s %s, key ID %s"
 msgstr "V%d %s/%s %s，密钥识别号 %s"
 
 msgid "(none)"
 msgstr "(无)"
-
-#, c-format
-msgid "exiting on signal %d from pid %d\n"
-msgstr ""
 
 #, c-format
 msgid "%s: Fwrite failed: %s\n"
@@ -3152,16 +3172,25 @@ msgstr "%s：Fread 失败：%s\n"
 msgid "%s: Fflush failed: %s\n"
 msgstr "%s：Fflush 失败：%s\n"
 
-msgid "Unsupported PGP signature\n"
+#, fuzzy
+#| msgid "Unsupported PGP signature\n"
+msgid "Unsupported OpenPGP signature\n"
 msgstr "未支援的 PGP 簽名\n"
 
-#, c-format
-msgid "Unsupported PGP hash algorithm %u\n"
+#, fuzzy, c-format
+#| msgid "Unsupported PGP hash algorithm %u\n"
+msgid "Unsupported OpenPGP hash algorithm %u\n"
 msgstr "未支援的 PGP 雜湊演算法 %u\n"
 
-#, c-format
-msgid "Unsupported PGP pubkey algorithm %u\n"
+#, fuzzy, c-format
+#| msgid "Unsupported PGP pubkey algorithm %u\n"
+msgid "Unsupported OpenPGP pubkey algorithm %u\n"
 msgstr "未支援的 PGP 公鑰演算法 %u\n"
+
+#, fuzzy, c-format
+#| msgid "Unsupported PGP signature\n"
+msgid "Deprecated OpenPGP signature version %d\n"
+msgstr "未支援的 PGP 簽名\n"
 
 #, fuzzy, c-format
 msgid "Could not create pipe for signing: %m\n"
@@ -3185,6 +3214,11 @@ msgstr ""
 #, c-format
 msgid "Could not read from file %s: %s\n"
 msgstr ""
+
+#, fuzzy, c-format
+#| msgid "gpg exec failed (%d)\n"
+msgid "gpg waitpid failed (%s)\n"
+msgstr "gpg 执行失败 (%d)\n"
 
 #, c-format
 msgid "gpg exec failed (%d)\n"
@@ -3235,9 +3269,10 @@ msgstr "%s：rpmWriteSignature 失败：%s\n"
 msgid "rpmMkTemp failed\n"
 msgstr "rpmMkTemp 失败\n"
 
-#, c-format
-msgid "%s: writeLead failed: %s\n"
-msgstr "%s：writeLead 失敗：%s\n"
+#, fuzzy, c-format
+#| msgid "%s: failed to encode\n"
+msgid "%s: failed to copy rpm lead: %s\n"
+msgstr "%s：编码失败\n"
 
 #, c-format
 msgid "replacing %s failed: %s\n"
@@ -3276,6 +3311,14 @@ msgstr ""
 
 msgid "only print what would be done"
 msgstr ""
+
+#, c-format
+#~ msgid "%%dev glob not permitted: %s\n"
+#~ msgstr "%%dev 不允許透過 glob 解析：%s\n"
+
+#, c-format
+#~ msgid "%s: writeLead failed: %s\n"
+#~ msgstr "%s：writeLead 失敗：%s\n"
 
 #~ msgid "build through %build (%prep, then compile) from <specfile>"
 #~ msgstr "從 <specfile> 透過 %build (%prep，然後編譯) 來建置"

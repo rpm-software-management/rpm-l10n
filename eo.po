@@ -8,8 +8,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
-"POT-Creation-Date: 2022-04-07 13:03+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-04 09:25+0300\n"
 "PO-Revision-Date: 2020-03-23 08:40-0400\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: Esperanto (http://www.transifex.com/rpm-team/rpm/language/"
@@ -640,6 +640,15 @@ msgstr "Nevalida kapablo: %s\n"
 msgid "File capability support not built in\n"
 msgstr "Dosiero-kapabla rego ne integra\n"
 
+#, fuzzy, c-format
+#| msgid "Missing module path in line: %s\n"
+msgid "Missing quote: %s\n"
+msgstr "Manka modulo-pado en linio: %s\n"
+
+#, c-format
+msgid "Trailing backslash: %s\n"
+msgstr ""
+
 #, c-format
 msgid "File must begin with \"/\": %s\n"
 msgstr "Dosiero devas komenciĝi per \"/\": %s\n"
@@ -745,24 +754,12 @@ msgstr ""
 msgid "failed to create directory"
 msgstr "malsukcesis krei dosierujon"
 
-msgid "Mixing main ELF and debug files in package"
+msgid "Mixing main ELF and debug files in package\n"
 msgstr ""
 
 #, c-format
 msgid "File needs leading \"/\": %s\n"
 msgstr "Dosiero devas havi antaŭan \"/\": %s\n"
-
-#, c-format
-msgid "%%dev glob not permitted: %s\n"
-msgstr "Amaso %%dev ne permesata:%s\n"
-
-#, c-format
-msgid "Directory not found by glob: %s. Trying without globbing.\n"
-msgstr ""
-
-#, c-format
-msgid "File not found by glob: %s. Trying without globbing.\n"
-msgstr ""
 
 #, fuzzy, c-format
 msgid "Could not open %s file %s: %m\n"
@@ -775,10 +772,6 @@ msgstr "Vaka dosiero %%files %s\n"
 #, c-format
 msgid "illegal _docdir_fmt %s: %s\n"
 msgstr "nepermesita _docdir_fmt %s: %s\n"
-
-#, c-format
-msgid "File not found by glob: %s\n"
-msgstr "Dosiero ne trovita laŭ amaso: %s\n"
 
 #, c-format
 msgid "Special file in generated file list: %s\n"
@@ -1136,6 +1129,11 @@ msgstr "Nevalida flikaĵo-numero %s: %s\n"
 msgid "line %d: second %%prep\n"
 msgstr "linio %d: dua %%prep\n"
 
+#, c-format
+msgid ""
+"%%patchN is deprecated (%i usages found), use %%patch N (or %%patch -P N)\n"
+msgstr ""
+
 msgid "Dependency tokens must begin with alpha-numeric, '_' or '/'"
 msgstr "Dependaĵo-eroj devas komenciĝi per nombro, litero, '_' aŭ '/'"
 
@@ -1354,6 +1352,11 @@ msgstr "Ne eblis forki: %s: %s\n"
 #, c-format
 msgid "Couldn't exec %s: %s\n"
 msgstr "Ne eblis plenumigi: %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "failed to write all data to %s: %s\n"
+msgid "Failed to wait for exit status of %s: %s\n"
+msgstr "malsukcesis skribi ĉiujn datumojn al %s: %s\n"
 
 #, c-format
 msgid "%s failed: %x\n"
@@ -1896,6 +1899,16 @@ msgstr "ne plenumigi skripteton %%pretrans (se ekzistas)"
 msgid "do not execute %%posttrans scriptlet (if any)"
 msgstr "ne plenumigi skripteton %%posttrans (se ekzistas)"
 
+#, fuzzy, c-format
+#| msgid "do not execute %%pretrans scriptlet (if any)"
+msgid "do not execute %%preuntrans scriptlet (if any)"
+msgstr "ne plenumigi skripteton %%pretrans (se ekzistas)"
+
+#, fuzzy, c-format
+#| msgid "do not execute %%posttrans scriptlet (if any)"
+msgid "do not execute %%postuntrans scriptlet (if any)"
+msgstr "ne plenumigi skripteton %%posttrans (se ekzistas)"
+
 msgid "do not execute any scriptlet(s) triggered by this package"
 msgstr "ne plenumigi iu(j)n ajn skripteto(j)n instigita(j)n de ĉi tiu pakaĵo"
 
@@ -1914,6 +1927,10 @@ msgstr "ne plenumigi la skripteto(j)n %%triggerun"
 #, c-format
 msgid "do not execute any %%triggerpostun scriptlet(s)"
 msgstr "ne plenumigi la skripteto(j)n %%triggerpostrun"
+
+#, c-format
+msgid "do not create %%sysusers users and groups"
+msgstr ""
 
 msgid ""
 "upgrade to an old version of the package (--force on upgrades does this "
@@ -2558,6 +2575,10 @@ msgid "%s cannot be installed\n"
 msgstr "%s ne eblas instaliĝi\n"
 
 #, c-format
+msgid "File not found by glob: %s\n"
+msgstr "Dosiero ne trovita laŭ amaso: %s\n"
+
+#, c-format
 msgid "Retrieving %s\n"
 msgstr "Ricevanta je %s\n"
 
@@ -2754,9 +2775,6 @@ msgstr "Bonvolu kontakti %s\n"
 #, c-format
 msgid "Unable to open %s for reading: %m.\n"
 msgstr "%s ne malfermeblas por legiĝi: %m.\n"
-
-msgid "No exec() called after fork() in lua scriptlet\n"
-msgstr "Neniu exec() vokita post fork() en lua-skripteto\n"
 
 #, c-format
 msgid "Unable to restore current directory: %m"
@@ -3062,6 +3080,16 @@ msgstr "Makroo %%%s difinita sed ne uzata en amplekso\n"
 msgid "no such macro: '%s'\n"
 msgstr ""
 
+#, fuzzy, c-format
+#| msgid "invalid package number: %s\n"
+msgid "invalid argument: %s\n"
+msgstr "nevalida pakaĵo-numero: %s\n"
+
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to get available memory for %s\n"
+msgstr "malsukcesis krei dosierujon %s: %s\n"
+
 #, fuzzy
 msgid "argument expected"
 msgstr "neatendita ]"
@@ -3116,6 +3144,11 @@ msgstr ""
 msgid "invalid syntax in lua scriptlet: %s\n"
 msgstr "nevalida sintakso en lua-skripteto: %s\n"
 
+#, fuzzy
+#| msgid "No exec() called after fork() in lua scriptlet\n"
+msgid "runaway fork() in Lua script\n"
+msgstr "Neniu exec() vokita post fork() en lua-skripteto\n"
+
 #, c-format
 msgid "invalid syntax in lua script: %s\n"
 msgstr "nevalida sintakso en lua-skripto: %s\n"
@@ -3141,23 +3174,11 @@ msgid "memory alloc (%u bytes) returned NULL.\n"
 msgstr "memora generado (%u bajtoj) donis nulon.\n"
 
 #, c-format
-msgid "Unsupported version of signature: V%d\n"
-msgstr ""
-
-#, c-format
-msgid "Unsupported version of key: V%d\n"
-msgstr ""
-
-#, c-format
 msgid "V%d %s/%s %s, key ID %s"
 msgstr "V%d %s/%s %s, ŝlosila identigilo %s"
 
 msgid "(none)"
 msgstr "(neniu)"
-
-#, c-format
-msgid "exiting on signal %d from pid %d\n"
-msgstr ""
 
 #, c-format
 msgid "%s: Fwrite failed: %s\n"
@@ -3171,16 +3192,25 @@ msgstr "%s: Fread malsukcesis: %s\n"
 msgid "%s: Fflush failed: %s\n"
 msgstr "%s: Fflush malsukcesis: %s\n"
 
-msgid "Unsupported PGP signature\n"
+#, fuzzy
+#| msgid "Unsupported PGP signature\n"
+msgid "Unsupported OpenPGP signature\n"
 msgstr "Nekomprenita PGP-pretendo\n"
 
-#, c-format
-msgid "Unsupported PGP hash algorithm %u\n"
+#, fuzzy, c-format
+#| msgid "Unsupported PGP hash algorithm %u\n"
+msgid "Unsupported OpenPGP hash algorithm %u\n"
 msgstr "Nekomprenita krampita algoritmo %u de PGP\n"
 
-#, c-format
-msgid "Unsupported PGP pubkey algorithm %u\n"
+#, fuzzy, c-format
+#| msgid "Unsupported PGP pubkey algorithm %u\n"
+msgid "Unsupported OpenPGP pubkey algorithm %u\n"
 msgstr "Nekomprenita algoritmo publika-ŝlosila %u de PGP\n"
+
+#, fuzzy, c-format
+#| msgid "Unsupported PGP signature\n"
+msgid "Deprecated OpenPGP signature version %d\n"
+msgstr "Nekomprenita PGP-pretendo\n"
 
 #, fuzzy, c-format
 msgid "Could not create pipe for signing: %m\n"
@@ -3204,6 +3234,11 @@ msgstr "Ne eblis skribi al dukto\n"
 #, c-format
 msgid "Could not read from file %s: %s\n"
 msgstr "Ne eblis legi el dosiero %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "gpg exec failed (%d)\n"
+msgid "gpg waitpid failed (%s)\n"
+msgstr "gpg-plenumo malsukcesis (%d)\n"
 
 #, c-format
 msgid "gpg exec failed (%d)\n"
@@ -3254,9 +3289,10 @@ msgstr "%s: rpmWriteSignature malsukcesis: %s\n"
 msgid "rpmMkTemp failed\n"
 msgstr "rpmMkTemp malsukcesis\n"
 
-#, c-format
-msgid "%s: writeLead failed: %s\n"
-msgstr "%s: writeLead malsukcesis: %s\n"
+#, fuzzy, c-format
+#| msgid "%s: failed to encode\n"
+msgid "%s: failed to copy rpm lead: %s\n"
+msgstr "%s: malsukcesis kodiĝi\n"
 
 #, c-format
 msgid "replacing %s failed: %s\n"
@@ -3295,6 +3331,14 @@ msgstr ""
 
 msgid "only print what would be done"
 msgstr ""
+
+#, c-format
+#~ msgid "%%dev glob not permitted: %s\n"
+#~ msgstr "Amaso %%dev ne permesata:%s\n"
+
+#, c-format
+#~ msgid "%s: writeLead failed: %s\n"
+#~ msgstr "%s: writeLead malsukcesis: %s\n"
 
 #~ msgid "build through %build (%prep, then compile) from <specfile>"
 #~ msgstr "munti per %build (%prep, tiam traduki) laŭ <spec-dosiero>"

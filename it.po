@@ -8,12 +8,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
-"POT-Creation-Date: 2022-04-07 13:03+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-04 09:25+0300\n"
 "PO-Revision-Date: 2025-06-01 11:12+0000\n"
 "Last-Translator: Salvatore Cocuzza <info@salvatorecocuzza.it>\n"
-"Language-Team: Italian <https://translate.fedoraproject.org/projects/rpm/"
-"rpm-l10n/it/>\n"
+"Language-Team: Italian <https://translate.fedoraproject.org/projects/rpm/rpm-"
+"l10n/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -687,6 +687,15 @@ msgstr "Capability non valida: %s\n"
 msgid "File capability support not built in\n"
 msgstr "Supporto per capability dei file non disponibile\n"
 
+#, fuzzy, c-format
+#| msgid "Missing module path in line: %s\n"
+msgid "Missing quote: %s\n"
+msgstr "Percorso del modulo mancante alla linea: %s\n"
+
+#, c-format
+msgid "Trailing backslash: %s\n"
+msgstr ""
+
 #, c-format
 msgid "File must begin with \"/\": %s\n"
 msgstr "Il file deve iniziare con \"/\": %s\n"
@@ -792,24 +801,12 @@ msgstr "build-id trovato in %s troppo grande\n"
 msgid "failed to create directory"
 msgstr "impossibile creare la directory"
 
-msgid "Mixing main ELF and debug files in package"
+msgid "Mixing main ELF and debug files in package\n"
 msgstr ""
 
 #, c-format
 msgid "File needs leading \"/\": %s\n"
 msgstr "Il file deve essere preceduto da \"/\": %s\n"
-
-#, c-format
-msgid "%%dev glob not permitted: %s\n"
-msgstr "glob %%dev non consentito: %s\n"
-
-#, c-format
-msgid "Directory not found by glob: %s. Trying without globbing.\n"
-msgstr ""
-
-#, c-format
-msgid "File not found by glob: %s. Trying without globbing.\n"
-msgstr ""
 
 #, c-format
 msgid "Could not open %s file %s: %m\n"
@@ -822,10 +819,6 @@ msgstr "File %s %s vuoto\n"
 #, c-format
 msgid "illegal _docdir_fmt %s: %s\n"
 msgstr "_docdir_fmt %s non valido: %s\n"
-
-#, c-format
-msgid "File not found by glob: %s\n"
-msgstr "File non trovato dal glob: %s\n"
 
 #, c-format
 msgid "Special file in generated file list: %s\n"
@@ -1182,6 +1175,11 @@ msgstr "Numero patch non valido %s: %s\n"
 msgid "line %d: second %%prep\n"
 msgstr "riga %d: secondo %%prep\n"
 
+#, c-format
+msgid ""
+"%%patchN is deprecated (%i usages found), use %%patch N (or %%patch -P N)\n"
+msgstr ""
+
 msgid "Dependency tokens must begin with alpha-numeric, '_' or '/'"
 msgstr "I token delle dipendenze devono iniziare per alfanumerico, '_' o '/'"
 
@@ -1401,6 +1399,11 @@ msgstr "Impossibile biforcare %s: %s\n"
 #, c-format
 msgid "Couldn't exec %s: %s\n"
 msgstr "Impossibile eseguire %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "failed to open dir %s of %s: %s\n"
+msgid "Failed to wait for exit status of %s: %s\n"
+msgstr "impossibile aprire la directory %s di %s: %s\n"
 
 #, c-format
 msgid "%s failed: %x\n"
@@ -1955,6 +1958,16 @@ msgstr "non eseguire scriptlet %%pretrans (quando presente)"
 msgid "do not execute %%posttrans scriptlet (if any)"
 msgstr "non eseguire scriptlet %%posttrans (quando presente)"
 
+#, fuzzy, c-format
+#| msgid "do not execute %%pretrans scriptlet (if any)"
+msgid "do not execute %%preuntrans scriptlet (if any)"
+msgstr "non eseguire scriptlet %%pretrans (quando presente)"
+
+#, fuzzy, c-format
+#| msgid "do not execute %%posttrans scriptlet (if any)"
+msgid "do not execute %%postuntrans scriptlet (if any)"
+msgstr "non eseguire scriptlet %%posttrans (quando presente)"
+
 msgid "do not execute any scriptlet(s) triggered by this package"
 msgstr "non eseguire alcun scriptlet causato/i da questo pacchetto"
 
@@ -1973,6 +1986,10 @@ msgstr "non eseguire alcun scriptlet %%triggerun"
 #, c-format
 msgid "do not execute any %%triggerpostun scriptlet(s)"
 msgstr "non eseguire alcun scriptlet %%triggerpostun"
+
+#, c-format
+msgid "do not create %%sysusers users and groups"
+msgstr ""
 
 msgid ""
 "upgrade to an old version of the package (--force on upgrades does this "
@@ -2061,7 +2078,8 @@ msgid "query/verify the package(s) which require a dependency"
 msgstr "interrogare/verificare il pacchetto/i che necessita di una dipendenza"
 
 msgid "query/verify the package(s) which obsolete a dependency"
-msgstr "interroga/verifica il/i pacchetto/i che rendono obsoleta una dipendenza"
+msgstr ""
+"interroga/verifica il/i pacchetto/i che rendono obsoleta una dipendenza"
 
 msgid "query/verify the package(s) which provide a dependency"
 msgstr "interrogare/verificare il pacchetto/i che fornisce una dipendenza"
@@ -2631,6 +2649,10 @@ msgid "%s cannot be installed\n"
 msgstr "%s non può essere installato\n"
 
 #, c-format
+msgid "File not found by glob: %s\n"
+msgstr "File non trovato dal glob: %s\n"
+
+#, c-format
 msgid "Retrieving %s\n"
 msgstr "Ripristino di %s\n"
 
@@ -2837,9 +2859,6 @@ msgstr "Si prega di contattare %s\n"
 #, c-format
 msgid "Unable to open %s for reading: %m.\n"
 msgstr "Impossibile aprire %s per la lettura: %m.\n"
-
-msgid "No exec() called after fork() in lua scriptlet\n"
-msgstr "Funzione exec() non chiamata dopo fork() nello scriptlet lua\n"
 
 #, c-format
 msgid "Unable to restore current directory: %m"
@@ -3136,6 +3155,16 @@ msgstr "Macro %%%s definita ma non usata nello scope\n"
 msgid "no such macro: '%s'\n"
 msgstr "nessuna macro di questo tipo: '%s'\n"
 
+#, fuzzy, c-format
+#| msgid "invalid package number: %s\n"
+msgid "invalid argument: %s\n"
+msgstr "numero del pacchetto non valido: %s\n"
+
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to get available memory for %s\n"
+msgstr "impossibile creare la cartella %s: %s\n"
+
 msgid "argument expected"
 msgstr "argomento atteso"
 
@@ -3188,6 +3217,11 @@ msgstr "Errore durante la scrittura nel log"
 msgid "invalid syntax in lua scriptlet: %s\n"
 msgstr "sintassi non valida nella scriptlet lua: %s\n"
 
+#, fuzzy
+#| msgid "No exec() called after fork() in lua scriptlet\n"
+msgid "runaway fork() in Lua script\n"
+msgstr "Funzione exec() non chiamata dopo fork() nello scriptlet lua\n"
+
 #, c-format
 msgid "invalid syntax in lua script: %s\n"
 msgstr "sintassi non valida nello script lua: %s\n"
@@ -3213,23 +3247,11 @@ msgid "memory alloc (%u bytes) returned NULL.\n"
 msgstr "allocazione memoria (%u byte) ha ritornato NULL.\n"
 
 #, c-format
-msgid "Unsupported version of signature: V%d\n"
-msgstr ""
-
-#, c-format
-msgid "Unsupported version of key: V%d\n"
-msgstr ""
-
-#, c-format
 msgid "V%d %s/%s %s, key ID %s"
 msgstr "V%d %s/%s %s, ID chiave %s"
 
 msgid "(none)"
 msgstr "(nessuno)"
-
-#, c-format
-msgid "exiting on signal %d from pid %d\n"
-msgstr ""
 
 #, c-format
 msgid "%s: Fwrite failed: %s\n"
@@ -3243,16 +3265,25 @@ msgstr "%s: Fread fallito: %s\n"
 msgid "%s: Fflush failed: %s\n"
 msgstr "%s: Fflush fallito: %s\n"
 
-msgid "Unsupported PGP signature\n"
+#, fuzzy
+#| msgid "Unsupported PGP signature\n"
+msgid "Unsupported OpenPGP signature\n"
 msgstr "Firma PGP non supportata\n"
 
-#, c-format
-msgid "Unsupported PGP hash algorithm %u\n"
+#, fuzzy, c-format
+#| msgid "Unsupported PGP hash algorithm %u\n"
+msgid "Unsupported OpenPGP hash algorithm %u\n"
 msgstr "Algoritmo hash PGP %u non supportato\n"
 
-#, c-format
-msgid "Unsupported PGP pubkey algorithm %u\n"
+#, fuzzy, c-format
+#| msgid "Unsupported PGP pubkey algorithm %u\n"
+msgid "Unsupported OpenPGP pubkey algorithm %u\n"
 msgstr "Algoritmo di chiave privata PGP non supportato %u\n"
+
+#, fuzzy, c-format
+#| msgid "Unsupported PGP signature\n"
+msgid "Deprecated OpenPGP signature version %d\n"
+msgstr "Firma PGP non supportata\n"
 
 #, c-format
 msgid "Could not create pipe for signing: %m\n"
@@ -3276,6 +3307,11 @@ msgstr "Impossibile scrivere nella pipe\n"
 #, c-format
 msgid "Could not read from file %s: %s\n"
 msgstr "Impossibile leggere dal file %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "gpg exec failed (%d)\n"
+msgid "gpg waitpid failed (%s)\n"
+msgstr "esecuzione gpg fallita (%d)\n"
 
 #, c-format
 msgid "gpg exec failed (%d)\n"
@@ -3326,9 +3362,10 @@ msgstr "%s: rpmWriteSignature fallito: %s\n"
 msgid "rpmMkTemp failed\n"
 msgstr "rpmMkTemp fallito\n"
 
-#, c-format
-msgid "%s: writeLead failed: %s\n"
-msgstr "%s: writeLead fallito: %s\n"
+#, fuzzy, c-format
+#| msgid "%s: failed to encode\n"
+msgid "%s: failed to copy rpm lead: %s\n"
+msgstr "%s: errore durante l'encoding\n"
 
 #, c-format
 msgid "replacing %s failed: %s\n"
@@ -3367,6 +3404,14 @@ msgstr "estrai un archivio"
 
 msgid "only print what would be done"
 msgstr "stampa solo ciò che verrebbe fatto"
+
+#, c-format
+#~ msgid "%%dev glob not permitted: %s\n"
+#~ msgstr "glob %%dev non consentito: %s\n"
+
+#, c-format
+#~ msgid "%s: writeLead failed: %s\n"
+#~ msgstr "%s: writeLead fallito: %s\n"
 
 #~ msgid "build through %build (%prep, then compile) from <specfile>"
 #~ msgstr "compila attraverso %build (%prep, e poi compila) da <specfile>"

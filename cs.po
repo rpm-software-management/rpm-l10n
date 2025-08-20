@@ -6,12 +6,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
-"POT-Creation-Date: 2022-04-07 13:03+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-04 09:25+0300\n"
 "PO-Revision-Date: 2024-02-09 08:36+0000\n"
 "Last-Translator: Petr Ptacek <petr106@atlas.cz>\n"
-"Language-Team: Czech <https://translate.fedoraproject.org/projects/rpm/"
-"rpm-l10n/cs/>\n"
+"Language-Team: Czech <https://translate.fedoraproject.org/projects/rpm/rpm-"
+"l10n/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -167,7 +167,8 @@ msgid "<tarball>"
 msgstr "<tar_soubor>"
 
 msgid "build through %build (%prep, %conf, then compile) from <tarball>"
-msgstr "sestavit pomocí %build (%prep, %conf, poté zkompilovat) z <tar_souboru>"
+msgstr ""
+"sestavit pomocí %build (%prep, %conf, poté zkompilovat) z <tar_souboru>"
 
 msgid "check build dependencies <tarball>"
 msgstr "kontrola závislostí sestavení <tar_souboru>"
@@ -653,6 +654,15 @@ msgstr "Neplatná funkce: %s\n"
 msgid "File capability support not built in\n"
 msgstr "Podpora funkcí souborů není integrována\n"
 
+#, fuzzy, c-format
+#| msgid "Missing module path in line: %s\n"
+msgid "Missing quote: %s\n"
+msgstr "Chybějící cesta modulu na řádku: %s\n"
+
+#, c-format
+msgid "Trailing backslash: %s\n"
+msgstr ""
+
 #, c-format
 msgid "File must begin with \"/\": %s\n"
 msgstr "Soubor musí začínat na \"/\": %s\n"
@@ -758,24 +768,12 @@ msgstr "ID sestavení v %s je příliš velké\n"
 msgid "failed to create directory"
 msgstr "nepodařilo se vytvořit adresář"
 
-msgid "Mixing main ELF and debug files in package"
+msgid "Mixing main ELF and debug files in package\n"
 msgstr ""
 
 #, c-format
 msgid "File needs leading \"/\": %s\n"
 msgstr "Soubor potřebuje úvodní \"/\": %s\n"
-
-#, c-format
-msgid "%%dev glob not permitted: %s\n"
-msgstr ""
-
-#, c-format
-msgid "Directory not found by glob: %s. Trying without globbing.\n"
-msgstr ""
-
-#, c-format
-msgid "File not found by glob: %s. Trying without globbing.\n"
-msgstr ""
 
 #, c-format
 msgid "Could not open %s file %s: %m\n"
@@ -788,10 +786,6 @@ msgstr "Vyprázdnit %s soubor %s\n"
 #, c-format
 msgid "illegal _docdir_fmt %s: %s\n"
 msgstr "illegal _docdir_fmt %s: %s\n"
-
-#, c-format
-msgid "File not found by glob: %s\n"
-msgstr "Soubor nenalezen globem: %s\n"
 
 #, c-format
 msgid "Special file in generated file list: %s\n"
@@ -1147,6 +1141,11 @@ msgstr "Neplatné číslo záplaty %s: %s\n"
 msgid "line %d: second %%prep\n"
 msgstr "řádek %d: druhý %%prep\n"
 
+#, c-format
+msgid ""
+"%%patchN is deprecated (%i usages found), use %%patch N (or %%patch -P N)\n"
+msgstr ""
+
 msgid "Dependency tokens must begin with alpha-numeric, '_' or '/'"
 msgstr "Tokeny závislosti musí začínat alfanumerickými znaky, '_' nebo '/'"
 
@@ -1361,6 +1360,11 @@ msgstr "Nemohu provést fork %s: %s\n"
 #, c-format
 msgid "Couldn't exec %s: %s\n"
 msgstr "Nemohu spustit %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "failed to open dir %s of %s: %s\n"
+msgid "Failed to wait for exit status of %s: %s\n"
+msgstr "nepodařilo se otevřít adresář %s z %s: %s\n"
 
 #, c-format
 msgid "%s failed: %x\n"
@@ -1672,7 +1676,8 @@ msgstr "argumenty pro --dbpath musí začínat znakem '/'\n"
 #, c-format
 msgid ""
 "%s: error: more than one --pipe specified (incompatible popt aliases?)\n"
-msgstr "%s: chyba: zadáno více než jedno --pipe (nekompatibilní popt aliasy?)\n"
+msgstr ""
+"%s: chyba: zadáno více než jedno --pipe (nekompatibilní popt aliasy?)\n"
 
 msgid "predefine MACRO with value EXPR"
 msgstr "předefinuj <makro> s hodnotou <výraz>"
@@ -1902,6 +1907,16 @@ msgstr "nespouštět skriptlet %%pretrans (pokud existuje)"
 msgid "do not execute %%posttrans scriptlet (if any)"
 msgstr "nespouštět skriptlet %%posttrans (pokud existuje)"
 
+#, fuzzy, c-format
+#| msgid "do not execute %%pretrans scriptlet (if any)"
+msgid "do not execute %%preuntrans scriptlet (if any)"
+msgstr "nespouštět skriptlet %%pretrans (pokud existuje)"
+
+#, fuzzy, c-format
+#| msgid "do not execute %%posttrans scriptlet (if any)"
+msgid "do not execute %%postuntrans scriptlet (if any)"
+msgstr "nespouštět skriptlet %%posttrans (pokud existuje)"
+
 msgid "do not execute any scriptlet(s) triggered by this package"
 msgstr "nespouštět žádné skripty aktivované tímto balíčkem"
 
@@ -1920,6 +1935,10 @@ msgstr "nespouštět žádné instalační skripty"
 #, c-format
 msgid "do not execute any %%triggerpostun scriptlet(s)"
 msgstr "nespouštět žádné instalační skripty"
+
+#, c-format
+msgid "do not create %%sysusers users and groups"
+msgstr ""
 
 msgid ""
 "upgrade to an old version of the package (--force on upgrades does this "
@@ -2466,8 +2485,8 @@ msgstr "skupina %s neexistuje - používá se %s\n"
 #, c-format
 msgid "Wrong number of entries for tag %s: %u found but %u expected.\n"
 msgstr ""
-"Nesprávný počet záznamů pro značku %s: %u bylo nalezeno, ale očekáváno je %u."
-"\n"
+"Nesprávný počet záznamů pro značku %s: %u bylo nalezeno, ale očekáváno je "
+"%u.\n"
 
 #, c-format
 msgid "Malformed data for tag %s: %u bytes found but %lu expected.\n"
@@ -2564,6 +2583,10 @@ msgstr "%s: není rpm balíčkem (nebo seznamem balíčků): %s\n"
 #, c-format
 msgid "%s cannot be installed\n"
 msgstr "%s nemůže být nainstalován\n"
+
+#, c-format
+msgid "File not found by glob: %s\n"
+msgstr "Soubor nenalezen globem: %s\n"
 
 #, c-format
 msgid "Retrieving %s\n"
@@ -2766,9 +2789,6 @@ msgstr "Prosím kontaktujte %s\n"
 #, c-format
 msgid "Unable to open %s for reading: %m.\n"
 msgstr "Nemohu otevřít %s pro čtení: %m.\n"
-
-msgid "No exec() called after fork() in lua scriptlet\n"
-msgstr ""
 
 #, c-format
 msgid "Unable to restore current directory: %m"
@@ -3061,6 +3081,16 @@ msgstr "Makro %%%s je definováno, ale není použito v rámci rozsahu\n"
 msgid "no such macro: '%s'\n"
 msgstr "žádné takové makro: '%s'\n"
 
+#, fuzzy, c-format
+#| msgid "invalid package number: %s\n"
+msgid "invalid argument: %s\n"
+msgstr "neplatné číslo balíčku: %s\n"
+
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to get available memory for %s\n"
+msgstr "selhání při vytváření adresáře %s: %s\n"
+
 msgid "argument expected"
 msgstr "argument je očekáván"
 
@@ -3113,6 +3143,9 @@ msgstr "Chyba při zápisu do logu"
 msgid "invalid syntax in lua scriptlet: %s\n"
 msgstr "neplatná syntax v lua skriptletu: %s\n"
 
+msgid "runaway fork() in Lua script\n"
+msgstr ""
+
 #, c-format
 msgid "invalid syntax in lua script: %s\n"
 msgstr "neplatná syntax v lua skriptu: %s\n"
@@ -3138,23 +3171,11 @@ msgid "memory alloc (%u bytes) returned NULL.\n"
 msgstr "alokace paměti (%u bajtů) vrátila NULL.\n"
 
 #, c-format
-msgid "Unsupported version of signature: V%d\n"
-msgstr ""
-
-#, c-format
-msgid "Unsupported version of key: V%d\n"
-msgstr ""
-
-#, c-format
 msgid "V%d %s/%s %s, key ID %s"
 msgstr "V%d %s/%s %s, ID klíče %s"
 
 msgid "(none)"
 msgstr "(žádné)"
-
-#, c-format
-msgid "exiting on signal %d from pid %d\n"
-msgstr ""
 
 #, c-format
 msgid "%s: Fwrite failed: %s\n"
@@ -3168,15 +3189,23 @@ msgstr "%s: Fread selhalo: %s\n"
 msgid "%s: Fflush failed: %s\n"
 msgstr "%s: Fflush selhal: %s\n"
 
-msgid "Unsupported PGP signature\n"
-msgstr ""
+#, fuzzy
+#| msgid "(not an OpenPGP signature)"
+msgid "Unsupported OpenPGP signature\n"
+msgstr "(není OpenPGP podpis)"
+
+#, fuzzy, c-format
+#| msgid "Unsupported fsverity algorithm %s\n"
+msgid "Unsupported OpenPGP hash algorithm %u\n"
+msgstr "Nepodporovaný algoritmus fsverity %s\n"
+
+#, fuzzy, c-format
+#| msgid "Unsupported fsverity algorithm %s\n"
+msgid "Unsupported OpenPGP pubkey algorithm %u\n"
+msgstr "Nepodporovaný algoritmus fsverity %s\n"
 
 #, c-format
-msgid "Unsupported PGP hash algorithm %u\n"
-msgstr ""
-
-#, c-format
-msgid "Unsupported PGP pubkey algorithm %u\n"
+msgid "Deprecated OpenPGP signature version %d\n"
 msgstr ""
 
 #, c-format
@@ -3201,6 +3230,11 @@ msgstr "Nelze zapisovat do roury\n"
 #, c-format
 msgid "Could not read from file %s: %s\n"
 msgstr "Nelze číst ze souboru %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "gpg exec failed (%d)\n"
+msgid "gpg waitpid failed (%s)\n"
+msgstr "spuštění gpg selhalo (%d)\n"
 
 #, c-format
 msgid "gpg exec failed (%d)\n"
@@ -3251,9 +3285,10 @@ msgstr "%s: Fwrite selhalo: %s\n"
 msgid "rpmMkTemp failed\n"
 msgstr "rpmMkTemp selhal\n"
 
-#, c-format
-msgid "%s: writeLead failed: %s\n"
-msgstr "%s: writeLead selhalo: %s\n"
+#, fuzzy, c-format
+#| msgid "%s: failed to encode\n"
+msgid "%s: failed to copy rpm lead: %s\n"
+msgstr "%s: kódování se nezdařilo\n"
 
 #, c-format
 msgid "replacing %s failed: %s\n"
@@ -3292,6 +3327,10 @@ msgstr "extrahovat archiv"
 
 msgid "only print what would be done"
 msgstr "vytisknout pouze to, co by se udělalo"
+
+#, c-format
+#~ msgid "%s: writeLead failed: %s\n"
+#~ msgstr "%s: writeLead selhalo: %s\n"
 
 #~ msgid "build through %build (%prep, then compile) from <specfile>"
 #~ msgstr "sestavení podle %build (%prep, pak kompilace) podle <spec_soubor>"

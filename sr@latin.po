@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: RPM\n"
-"Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
-"POT-Creation-Date: 2022-04-07 13:03+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-04 09:25+0300\n"
 "PO-Revision-Date: 2017-08-10 07:39+0000\n"
 "Last-Translator: pmatilai <pmatilai@laiskiainen.org>\n"
 "Language-Team: Serbian (Latin) (http://www.transifex.com/rpm-team/rpm/"
@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #, c-format
 msgid "%s: %s\n"
@@ -635,6 +635,15 @@ msgstr "Neispravna mogućnost: %s\n"
 msgid "File capability support not built in\n"
 msgstr "Nije ugrađena podrška za mogućnost datoteke\n"
 
+#, fuzzy, c-format
+#| msgid "Missing '(' in %s %s\n"
+msgid "Missing quote: %s\n"
+msgstr "Nedostaje „(“ u %s %s\n"
+
+#, c-format
+msgid "Trailing backslash: %s\n"
+msgstr ""
+
 #, c-format
 msgid "File must begin with \"/\": %s\n"
 msgstr "Datoteka mora početi sa „/“: %s\n"
@@ -740,24 +749,12 @@ msgstr ""
 msgid "failed to create directory"
 msgstr "neuspelo kreiranje direktorijuma"
 
-msgid "Mixing main ELF and debug files in package"
+msgid "Mixing main ELF and debug files in package\n"
 msgstr ""
 
 #, c-format
 msgid "File needs leading \"/\": %s\n"
 msgstr "Ispred datoteke je potrebno da stoji „/“: %s\n"
-
-#, c-format
-msgid "%%dev glob not permitted: %s\n"
-msgstr ""
-
-#, c-format
-msgid "Directory not found by glob: %s. Trying without globbing.\n"
-msgstr ""
-
-#, c-format
-msgid "File not found by glob: %s. Trying without globbing.\n"
-msgstr ""
 
 #, fuzzy, c-format
 msgid "Could not open %s file %s: %m\n"
@@ -770,10 +767,6 @@ msgstr "otvaranje %s nije uspelo: %s\n"
 #, c-format
 msgid "illegal _docdir_fmt %s: %s\n"
 msgstr ""
-
-#, c-format
-msgid "File not found by glob: %s\n"
-msgstr "Datoteka nije pronađena poklapanjem: %s\n"
 
 #, c-format
 msgid "Special file in generated file list: %s\n"
@@ -1129,6 +1122,11 @@ msgstr "Neispravan broj zakrpe %s: %s\n"
 msgid "line %d: second %%prep\n"
 msgstr "red %d: drugi %%prep\n"
 
+#, c-format
+msgid ""
+"%%patchN is deprecated (%i usages found), use %%patch N (or %%patch -P N)\n"
+msgstr ""
+
 msgid "Dependency tokens must begin with alpha-numeric, '_' or '/'"
 msgstr ""
 
@@ -1342,6 +1340,11 @@ msgstr "Ne mogu da odvojim %s: %s\n"
 #, c-format
 msgid "Couldn't exec %s: %s\n"
 msgstr "Ne mogu da izvršim %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "Bad exit status from %s (%s)\n"
+msgid "Failed to wait for exit status of %s: %s\n"
+msgstr "Loš status izlaza iz %s (%s)\n"
 
 #, c-format
 msgid "%s failed: %x\n"
@@ -1887,6 +1890,16 @@ msgstr ""
 msgid "do not execute %%posttrans scriptlet (if any)"
 msgstr ""
 
+#, fuzzy, c-format
+#| msgid "do not execute %%preun scriptlet (if any)"
+msgid "do not execute %%preuntrans scriptlet (if any)"
+msgstr "nemoj izvršiti %%preun skripticu (ako postoji)"
+
+#, fuzzy, c-format
+#| msgid "do not execute %%postun scriptlet (if any)"
+msgid "do not execute %%postuntrans scriptlet (if any)"
+msgstr "nemoj izvršiti %%postun skripticu (ako postoji)"
+
 msgid "do not execute any scriptlet(s) triggered by this package"
 msgstr "nemoj izvršiti nijednu skripticu(e) koju aktivira ovaj paket"
 
@@ -1905,6 +1918,10 @@ msgstr "nemoj izvršiti nijednu %%triggerun skripticu(e)"
 #, c-format
 msgid "do not execute any %%triggerpostun scriptlet(s)"
 msgstr "nemoj izvršiti nijednu %%triggerpostun skripticu(e)"
+
+#, c-format
+msgid "do not create %%sysusers users and groups"
+msgstr ""
 
 msgid ""
 "upgrade to an old version of the package (--force on upgrades does this "
@@ -2556,6 +2573,10 @@ msgid "%s cannot be installed\n"
 msgstr "%s se ne može instalirati\n"
 
 #, c-format
+msgid "File not found by glob: %s\n"
+msgstr "Datoteka nije pronađena poklapanjem: %s\n"
+
+#, c-format
 msgid "Retrieving %s\n"
 msgstr "Pribavljam %s\n"
 
@@ -2753,9 +2774,6 @@ msgstr "Molim vas kontaktirajte %s\n"
 #, c-format
 msgid "Unable to open %s for reading: %m.\n"
 msgstr "Ne mogu da otvorim %s za čitanje: %m.\n"
-
-msgid "No exec() called after fork() in lua scriptlet\n"
-msgstr ""
 
 #, c-format
 msgid "Unable to restore current directory: %m"
@@ -3060,6 +3078,16 @@ msgstr ""
 msgid "no such macro: '%s'\n"
 msgstr ""
 
+#, fuzzy, c-format
+#| msgid "invalid package number: %s\n"
+msgid "invalid argument: %s\n"
+msgstr "neispravan broj paketa: %s\n"
+
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to get available memory for %s\n"
+msgstr "neuspelo kreiranje direktorijuma %s: %s\n"
+
 #, fuzzy
 msgid "argument expected"
 msgstr "neočekivan ]"
@@ -3114,6 +3142,9 @@ msgstr ""
 msgid "invalid syntax in lua scriptlet: %s\n"
 msgstr "nepravilna sintaksa u lua skriptici: %s\n"
 
+msgid "runaway fork() in Lua script\n"
+msgstr ""
+
 #, c-format
 msgid "invalid syntax in lua script: %s\n"
 msgstr "nepravilna sintaksa u lua skripti: %s\n"
@@ -3139,22 +3170,10 @@ msgid "memory alloc (%u bytes) returned NULL.\n"
 msgstr "alokacija memorije (%u bajta) je vratila NAL.\n"
 
 #, c-format
-msgid "Unsupported version of signature: V%d\n"
-msgstr ""
-
-#, c-format
-msgid "Unsupported version of key: V%d\n"
-msgstr ""
-
-#, c-format
 msgid "V%d %s/%s %s, key ID %s"
 msgstr ""
 
 msgid "(none)"
-msgstr ""
-
-#, c-format
-msgid "exiting on signal %d from pid %d\n"
 msgstr ""
 
 #, c-format
@@ -3169,15 +3188,21 @@ msgstr "%s: Fread nije uspelo: %s\n"
 msgid "%s: Fflush failed: %s\n"
 msgstr "%s: Fflush nije uspelo: %s\n"
 
-msgid "Unsupported PGP signature\n"
+#, fuzzy
+#| msgid "(not an OpenPGP signature)"
+msgid "Unsupported OpenPGP signature\n"
+msgstr "(nije OpenPGP potpis)"
+
+#, c-format
+msgid "Unsupported OpenPGP hash algorithm %u\n"
 msgstr ""
 
 #, c-format
-msgid "Unsupported PGP hash algorithm %u\n"
+msgid "Unsupported OpenPGP pubkey algorithm %u\n"
 msgstr ""
 
 #, c-format
-msgid "Unsupported PGP pubkey algorithm %u\n"
+msgid "Deprecated OpenPGP signature version %d\n"
 msgstr ""
 
 #, fuzzy, c-format
@@ -3202,6 +3227,11 @@ msgstr ""
 #, c-format
 msgid "Could not read from file %s: %s\n"
 msgstr ""
+
+#, fuzzy, c-format
+#| msgid "gpg exec failed (%d)\n"
+msgid "gpg waitpid failed (%s)\n"
+msgstr "neuspelo gpg izvršavanje (%d)\n"
 
 #, c-format
 msgid "gpg exec failed (%d)\n"
@@ -3252,9 +3282,9 @@ msgstr "%s: rpmWriteSignature nije uspelo: %s\n"
 msgid "rpmMkTemp failed\n"
 msgstr "rpmMkTemp nije uspelo\n"
 
-#, c-format
-msgid "%s: writeLead failed: %s\n"
-msgstr "%s: writeLead nije uspelo: %s\n"
+#, fuzzy, c-format
+msgid "%s: failed to copy rpm lead: %s\n"
+msgstr "Neuspelo čitanje datoteke specifikacije iz %s\n"
 
 #, c-format
 msgid "replacing %s failed: %s\n"
@@ -3293,6 +3323,10 @@ msgstr ""
 
 msgid "only print what would be done"
 msgstr ""
+
+#, c-format
+#~ msgid "%s: writeLead failed: %s\n"
+#~ msgstr "%s: writeLead nije uspelo: %s\n"
 
 #~ msgid "build through %build (%prep, then compile) from <specfile>"
 #~ msgstr "napravi kroz %build (%prep, onda kompiliraj) iz <specfile>"

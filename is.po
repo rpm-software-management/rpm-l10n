@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
-"POT-Creation-Date: 2022-04-07 13:03+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-04 09:25+0300\n"
 "PO-Revision-Date: 2020-03-23 08:38-0400\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: Icelandic (http://www.transifex.com/rpm-team/rpm/language/"
@@ -618,6 +618,15 @@ msgstr ""
 msgid "File capability support not built in\n"
 msgstr ""
 
+#, fuzzy, c-format
+#| msgid "Missing '(' in %s %s\n"
+msgid "Missing quote: %s\n"
+msgstr "vantar '(' í  %s %s\n"
+
+#, c-format
+msgid "Trailing backslash: %s\n"
+msgstr ""
+
 #, c-format
 msgid "File must begin with \"/\": %s\n"
 msgstr ""
@@ -723,23 +732,11 @@ msgstr ""
 msgid "failed to create directory"
 msgstr ""
 
-msgid "Mixing main ELF and debug files in package"
+msgid "Mixing main ELF and debug files in package\n"
 msgstr ""
 
 #, c-format
 msgid "File needs leading \"/\": %s\n"
-msgstr ""
-
-#, c-format
-msgid "%%dev glob not permitted: %s\n"
-msgstr ""
-
-#, c-format
-msgid "Directory not found by glob: %s. Trying without globbing.\n"
-msgstr ""
-
-#, c-format
-msgid "File not found by glob: %s. Trying without globbing.\n"
 msgstr ""
 
 #, fuzzy, c-format
@@ -753,10 +750,6 @@ msgstr ""
 #, c-format
 msgid "illegal _docdir_fmt %s: %s\n"
 msgstr ""
-
-#, c-format
-msgid "File not found by glob: %s\n"
-msgstr "Skráin fannst ekki með 'glob': %s\n"
 
 #, c-format
 msgid "Special file in generated file list: %s\n"
@@ -1110,6 +1103,11 @@ msgstr ""
 msgid "line %d: second %%prep\n"
 msgstr ""
 
+#, c-format
+msgid ""
+"%%patchN is deprecated (%i usages found), use %%patch N (or %%patch -P N)\n"
+msgstr ""
+
 msgid "Dependency tokens must begin with alpha-numeric, '_' or '/'"
 msgstr ""
 
@@ -1323,6 +1321,11 @@ msgstr "Gat ekki búið til undirferli (fork) %s: %s\n"
 #, c-format
 msgid "Couldn't exec %s: %s\n"
 msgstr "Gat ekki keyrt %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "Failed to rename %s to %s: %m\n"
+msgid "Failed to wait for exit status of %s: %s\n"
+msgstr "Gat ekki endurnefnt %s sem %s: %m\n"
 
 #, c-format
 msgid "%s failed: %x\n"
@@ -1860,6 +1863,14 @@ msgstr ""
 msgid "do not execute %%posttrans scriptlet (if any)"
 msgstr ""
 
+#, c-format
+msgid "do not execute %%preuntrans scriptlet (if any)"
+msgstr ""
+
+#, c-format
+msgid "do not execute %%postuntrans scriptlet (if any)"
+msgstr ""
+
 msgid "do not execute any scriptlet(s) triggered by this package"
 msgstr ""
 
@@ -1877,6 +1888,10 @@ msgstr ""
 
 #, c-format
 msgid "do not execute any %%triggerpostun scriptlet(s)"
+msgstr ""
+
+#, c-format
+msgid "do not create %%sysusers users and groups"
 msgstr ""
 
 msgid ""
@@ -2519,6 +2534,10 @@ msgid "%s cannot be installed\n"
 msgstr ""
 
 #, c-format
+msgid "File not found by glob: %s\n"
+msgstr "Skráin fannst ekki með 'glob': %s\n"
+
+#, c-format
 msgid "Retrieving %s\n"
 msgstr ""
 
@@ -2714,9 +2733,6 @@ msgstr ""
 
 #, c-format
 msgid "Unable to open %s for reading: %m.\n"
-msgstr ""
-
-msgid "No exec() called after fork() in lua scriptlet\n"
 msgstr ""
 
 #, c-format
@@ -3008,6 +3024,15 @@ msgstr ""
 msgid "no such macro: '%s'\n"
 msgstr ""
 
+#, fuzzy, c-format
+#| msgid "Invalid %s token: %s\n"
+msgid "invalid argument: %s\n"
+msgstr "Ógilt %s tákn: %s\n"
+
+#, c-format
+msgid "failed to get available memory for %s\n"
+msgstr ""
+
 msgid "argument expected"
 msgstr ""
 
@@ -3060,6 +3085,9 @@ msgstr ""
 msgid "invalid syntax in lua scriptlet: %s\n"
 msgstr ""
 
+msgid "runaway fork() in Lua script\n"
+msgstr ""
+
 #, c-format
 msgid "invalid syntax in lua script: %s\n"
 msgstr ""
@@ -3085,22 +3113,10 @@ msgid "memory alloc (%u bytes) returned NULL.\n"
 msgstr "minnisfrátekt (%u bæta) skilaði NULL.\n"
 
 #, c-format
-msgid "Unsupported version of signature: V%d\n"
-msgstr ""
-
-#, c-format
-msgid "Unsupported version of key: V%d\n"
-msgstr ""
-
-#, c-format
 msgid "V%d %s/%s %s, key ID %s"
 msgstr ""
 
 msgid "(none)"
-msgstr ""
-
-#, c-format
-msgid "exiting on signal %d from pid %d\n"
 msgstr ""
 
 #, c-format
@@ -3115,15 +3131,21 @@ msgstr ""
 msgid "%s: Fflush failed: %s\n"
 msgstr ""
 
-msgid "Unsupported PGP signature\n"
+#, fuzzy
+#| msgid "unable to read the signature\n"
+msgid "Unsupported OpenPGP signature\n"
+msgstr "get ekki lesið undirskriftina\n"
+
+#, c-format
+msgid "Unsupported OpenPGP hash algorithm %u\n"
 msgstr ""
 
 #, c-format
-msgid "Unsupported PGP hash algorithm %u\n"
+msgid "Unsupported OpenPGP pubkey algorithm %u\n"
 msgstr ""
 
 #, c-format
-msgid "Unsupported PGP pubkey algorithm %u\n"
+msgid "Deprecated OpenPGP signature version %d\n"
 msgstr ""
 
 #, fuzzy, c-format
@@ -3147,6 +3169,10 @@ msgstr ""
 
 #, c-format
 msgid "Could not read from file %s: %s\n"
+msgstr ""
+
+#, c-format
+msgid "gpg waitpid failed (%s)\n"
 msgstr ""
 
 #, c-format
@@ -3198,9 +3224,10 @@ msgstr ""
 msgid "rpmMkTemp failed\n"
 msgstr ""
 
-#, c-format
-msgid "%s: writeLead failed: %s\n"
-msgstr ""
+#, fuzzy, c-format
+#| msgid "Failed to open tar pipe: %m\n"
+msgid "%s: failed to copy rpm lead: %s\n"
+msgstr "Gat ekki opnað pípu í tar: %m\n"
 
 #, c-format
 msgid "replacing %s failed: %s\n"

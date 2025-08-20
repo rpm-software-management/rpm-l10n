@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
-"POT-Creation-Date: 2022-04-07 13:03+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-04 09:25+0300\n"
 "PO-Revision-Date: 2022-04-13 13:17+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/rpm/"
@@ -17,8 +17,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.11.2\n"
 
 #, c-format
@@ -82,7 +82,8 @@ msgstr "<файл специфікації>"
 
 #, c-format
 msgid "build through %conf (%prep, then %conf) from <specfile>"
-msgstr "виконати аж до команди %conf (%prep, потім %conf) з <файл специфікації>"
+msgstr ""
+"виконати аж до команди %conf (%prep, потім %conf) з <файл специфікації>"
 
 msgid "build through %build (%prep, %conf, then compile) from <specfile>"
 msgstr ""
@@ -675,6 +676,15 @@ msgstr "Некоректний мандат: %s\n"
 msgid "File capability support not built in\n"
 msgstr "Підтримку мандатів на файли не було зібрано\n"
 
+#, fuzzy, c-format
+#| msgid "Missing module path in line: %s\n"
+msgid "Missing quote: %s\n"
+msgstr "Не вказано шлях до модуля у рядку: %s\n"
+
+#, c-format
+msgid "Trailing backslash: %s\n"
+msgstr ""
+
 #, c-format
 msgid "File must begin with \"/\": %s\n"
 msgstr "Назва файла має починатися з «/»: %s\n"
@@ -782,28 +792,14 @@ msgstr "Виявлений у %s ідентифікатор збирання є 
 msgid "failed to create directory"
 msgstr "не вдалося створити каталог"
 
-msgid "Mixing main ELF and debug files in package"
+#, fuzzy
+#| msgid "Mixing main ELF and debug files in package"
+msgid "Mixing main ELF and debug files in package\n"
 msgstr "Суміш основного файла ELF і діагностичних файлів у пакунку"
 
 #, c-format
 msgid "File needs leading \"/\": %s\n"
 msgstr "Назва файла має починатися з «/»: %s\n"
-
-#, c-format
-msgid "%%dev glob not permitted: %s\n"
-msgstr "Не можна використовувати glob %%dev: %s\n"
-
-#, c-format
-msgid "Directory not found by glob: %s. Trying without globbing.\n"
-msgstr ""
-"За формальним виразом каталогу не виявлено: %s. Намагаємося знайти його без "
-"формального виразу.\n"
-
-#, c-format
-msgid "File not found by glob: %s. Trying without globbing.\n"
-msgstr ""
-"За формальним виразом файла не виявлено: %s. Намагаємося знайти його без "
-"формального виразу.\n"
 
 #, c-format
 msgid "Could not open %s file %s: %m\n"
@@ -816,10 +812,6 @@ msgstr "Порожній файл %s %s\n"
 #, c-format
 msgid "illegal _docdir_fmt %s: %s\n"
 msgstr "некоректний формат каталогу документації %s: %s\n"
-
-#, c-format
-msgid "File not found by glob: %s\n"
-msgstr "У glob файла не виявлено: %s\n"
 
 #, c-format
 msgid "Special file in generated file list: %s\n"
@@ -1180,6 +1172,11 @@ msgstr "Некоректний номер латки %s: %s\n"
 msgid "line %d: second %%prep\n"
 msgstr "рядок %d: друге %%prep\n"
 
+#, c-format
+msgid ""
+"%%patchN is deprecated (%i usages found), use %%patch N (or %%patch -P N)\n"
+msgstr ""
+
 msgid "Dependency tokens must begin with alpha-numeric, '_' or '/'"
 msgstr "записи залежностей мають починатися з букви, числа, «_» або «/»"
 
@@ -1402,6 +1399,11 @@ msgstr "Не вдалося розгалуження %s: %s\n"
 #, c-format
 msgid "Couldn't exec %s: %s\n"
 msgstr "Не вдалося виконати %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "failed to open dir %s of %s: %s\n"
+msgid "Failed to wait for exit status of %s: %s\n"
+msgstr "не вдалося відкрити каталог %s %s: %s\n"
 
 #, c-format
 msgid "%s failed: %x\n"
@@ -1960,6 +1962,16 @@ msgstr "не виконувати допоміжного скрипту %%pretra
 msgid "do not execute %%posttrans scriptlet (if any)"
 msgstr "не виконувати допоміжного скрипту %%posttrans (якщо такий вказано)"
 
+#, fuzzy, c-format
+#| msgid "do not execute %%pretrans scriptlet (if any)"
+msgid "do not execute %%preuntrans scriptlet (if any)"
+msgstr "не виконувати допоміжного скрипту %%pretrans (якщо такий вказано)"
+
+#, fuzzy, c-format
+#| msgid "do not execute %%posttrans scriptlet (if any)"
+msgid "do not execute %%postuntrans scriptlet (if any)"
+msgstr "не виконувати допоміжного скрипту %%posttrans (якщо такий вказано)"
+
 msgid "do not execute any scriptlet(s) triggered by this package"
 msgstr "не виконувати жодних допоміжних скриптів, які стосуються цього пакунка"
 
@@ -1978,6 +1990,10 @@ msgstr "не виконувати жодних допоміжних скрипт
 #, c-format
 msgid "do not execute any %%triggerpostun scriptlet(s)"
 msgstr "не виконувати жодних допоміжних скриптів %%triggerpostun"
+
+#, c-format
+msgid "do not create %%sysusers users and groups"
+msgstr ""
 
 msgid ""
 "upgrade to an old version of the package (--force on upgrades does this "
@@ -2637,6 +2653,10 @@ msgid "%s cannot be installed\n"
 msgstr "%s не можна встановити\n"
 
 #, c-format
+msgid "File not found by glob: %s\n"
+msgstr "У glob файла не виявлено: %s\n"
+
+#, c-format
 msgid "Retrieving %s\n"
 msgstr "Отримання %s\n"
 
@@ -2834,9 +2854,6 @@ msgstr "Будь ласка, зв’яжіться з %s\n"
 #, c-format
 msgid "Unable to open %s for reading: %m.\n"
 msgstr "Не вдалося відкрити %s для читання: %m.\n"
-
-msgid "No exec() called after fork() in lua scriptlet\n"
-msgstr "У скрипті Lua не викликано exec() після fork()\n"
 
 #, c-format
 msgid "Unable to restore current directory: %m"
@@ -3132,6 +3149,16 @@ msgstr "Макрос %%%s визначено, але не використано
 msgid "no such macro: '%s'\n"
 msgstr "такого макросу не існує: «%s»\n"
 
+#, fuzzy, c-format
+#| msgid "invalid package number: %s\n"
+msgid "invalid argument: %s\n"
+msgstr "некоректний номер пакунка: %s\n"
+
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to get available memory for %s\n"
+msgstr "не вдалося створити каталог %s: %s\n"
+
 msgid "argument expected"
 msgstr "мало бути вказано аргумент"
 
@@ -3184,6 +3211,11 @@ msgstr "Помилка під час запису до журналу"
 msgid "invalid syntax in lua scriptlet: %s\n"
 msgstr "некоректний синтаксис у допоміжному скрипті lua: %s\n"
 
+#, fuzzy
+#| msgid "No exec() called after fork() in lua scriptlet\n"
+msgid "runaway fork() in Lua script\n"
+msgstr "У скрипті Lua не викликано exec() після fork()\n"
+
 #, c-format
 msgid "invalid syntax in lua script: %s\n"
 msgstr "некоректний синтаксис у скрипті lua: %s\n"
@@ -3210,23 +3242,11 @@ msgstr ""
 "у відповідь на спробу отримання області пам’яті (%u байтів) повернуто NULL.\n"
 
 #, c-format
-msgid "Unsupported version of signature: V%d\n"
-msgstr "Непідтримувана версія підпису: %d\n"
-
-#, c-format
-msgid "Unsupported version of key: V%d\n"
-msgstr "Непідтримувана версія ключа: V%d\n"
-
-#, c-format
 msgid "V%d %s/%s %s, key ID %s"
 msgstr "V%d %s/%s %s, ід. ключа %s"
 
 msgid "(none)"
 msgstr "(нічого)"
-
-#, c-format
-msgid "exiting on signal %d from pid %d\n"
-msgstr "завершуємо роботу унаслідок сигналу %d від pid %d\n"
 
 #, c-format
 msgid "%s: Fwrite failed: %s\n"
@@ -3240,16 +3260,25 @@ msgstr "%s: помилка fread: %s\n"
 msgid "%s: Fflush failed: %s\n"
 msgstr "%s: помилка Fflush: %s\n"
 
-msgid "Unsupported PGP signature\n"
+#, fuzzy
+#| msgid "Unsupported PGP signature\n"
+msgid "Unsupported OpenPGP signature\n"
 msgstr "Непідтримуваний підпис PGP\n"
 
-#, c-format
-msgid "Unsupported PGP hash algorithm %u\n"
+#, fuzzy, c-format
+#| msgid "Unsupported PGP hash algorithm %u\n"
+msgid "Unsupported OpenPGP hash algorithm %u\n"
 msgstr "Непідтримуваний алгоритм хешування PGP, %u\n"
 
-#, c-format
-msgid "Unsupported PGP pubkey algorithm %u\n"
+#, fuzzy, c-format
+#| msgid "Unsupported PGP pubkey algorithm %u\n"
+msgid "Unsupported OpenPGP pubkey algorithm %u\n"
 msgstr "Непідтримуваний алгоритм обчислення відкритого ключа PGP, %u\n"
+
+#, fuzzy, c-format
+#| msgid "Unsupported PGP signature\n"
+msgid "Deprecated OpenPGP signature version %d\n"
+msgstr "Непідтримуваний підпис PGP\n"
 
 #, c-format
 msgid "Could not create pipe for signing: %m\n"
@@ -3273,6 +3302,11 @@ msgstr "Не вдалося виконати запис до каналу\n"
 #, c-format
 msgid "Could not read from file %s: %s\n"
 msgstr "Не вдалося виконати читання з файла %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "gpg exec failed (%d)\n"
+msgid "gpg waitpid failed (%s)\n"
+msgstr "помилка виконання gpg (%d)\n"
 
 #, c-format
 msgid "gpg exec failed (%d)\n"
@@ -3323,9 +3357,10 @@ msgstr "%s: помилка rpmWriteSignature: %s\n"
 msgid "rpmMkTemp failed\n"
 msgstr "помилка rpmMkTemp\n"
 
-#, c-format
-msgid "%s: writeLead failed: %s\n"
-msgstr "%s: помилка writeLead: %s\n"
+#, fuzzy, c-format
+#| msgid "%s: failed to encode\n"
+msgid "%s: failed to copy rpm lead: %s\n"
+msgstr "%s: не вдалося закодувати\n"
 
 #, c-format
 msgid "replacing %s failed: %s\n"
@@ -3365,6 +3400,38 @@ msgstr "видобути дані з архіву"
 
 msgid "only print what would be done"
 msgstr "лише вивести перелік дій"
+
+#, c-format
+#~ msgid "%%dev glob not permitted: %s\n"
+#~ msgstr "Не можна використовувати glob %%dev: %s\n"
+
+#, c-format
+#~ msgid "Directory not found by glob: %s. Trying without globbing.\n"
+#~ msgstr ""
+#~ "За формальним виразом каталогу не виявлено: %s. Намагаємося знайти його "
+#~ "без формального виразу.\n"
+
+#, c-format
+#~ msgid "File not found by glob: %s. Trying without globbing.\n"
+#~ msgstr ""
+#~ "За формальним виразом файла не виявлено: %s. Намагаємося знайти його без "
+#~ "формального виразу.\n"
+
+#, c-format
+#~ msgid "Unsupported version of signature: V%d\n"
+#~ msgstr "Непідтримувана версія підпису: %d\n"
+
+#, c-format
+#~ msgid "Unsupported version of key: V%d\n"
+#~ msgstr "Непідтримувана версія ключа: V%d\n"
+
+#, c-format
+#~ msgid "exiting on signal %d from pid %d\n"
+#~ msgstr "завершуємо роботу унаслідок сигналу %d від pid %d\n"
+
+#, c-format
+#~ msgid "%s: writeLead failed: %s\n"
+#~ msgstr "%s: помилка writeLead: %s\n"
 
 #~ msgid "build through %build (%prep, then compile) from <specfile>"
 #~ msgstr ""

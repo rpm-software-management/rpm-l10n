@@ -15,12 +15,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: rpm-maint@lists.rpm.org\n"
-"POT-Creation-Date: 2022-04-07 13:03+0300\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-04 09:25+0300\n"
 "PO-Revision-Date: 2025-04-12 16:53+0000\n"
 "Last-Translator: Javier Francisco <fserrador@gmail.com>\n"
-"Language-Team: Spanish <https://translate.fedoraproject.org/projects/rpm/"
-"rpm-l10n/es/>\n"
+"Language-Team: Spanish <https://translate.fedoraproject.org/projects/rpm/rpm-"
+"l10n/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -274,8 +274,8 @@ msgstr "sobrescribir plataforma de destino"
 
 msgid "Build options with [ <specfile> | <tarball> | <source package> ]:"
 msgstr ""
-"Opciones de construcción con "
-"[ <archivo spec> | <tarball> | <paquete fuente> ]:"
+"Opciones de construcción con [ <archivo spec> | <tarball> | <paquete "
+"fuente> ]:"
 
 msgid "Common options for all rpm modes and executables:"
 msgstr "Opciones comunes para todos los modos rpm y ejecutables:"
@@ -694,6 +694,15 @@ msgstr "Capacidad inválida %s\n"
 msgid "File capability support not built in\n"
 msgstr "Soporte para la capacidad del archivo no compilado\n"
 
+#, fuzzy, c-format
+#| msgid "Missing module path in line: %s\n"
+msgid "Missing quote: %s\n"
+msgstr "No se encuentra ruta de módulo en la línea: %s\n"
+
+#, c-format
+msgid "Trailing backslash: %s\n"
+msgstr ""
+
 #, c-format
 msgid "File must begin with \"/\": %s\n"
 msgstr "Los archivos deben iniciar con \"/\": %s\n"
@@ -799,24 +808,12 @@ msgstr "build-id encontrado en %s muy grande\n"
 msgid "failed to create directory"
 msgstr "no se pudo crear el directorio"
 
-msgid "Mixing main ELF and debug files in package"
+msgid "Mixing main ELF and debug files in package\n"
 msgstr ""
 
 #, c-format
 msgid "File needs leading \"/\": %s\n"
 msgstr "El archivo necesita comenzar por «/»: %s\n"
-
-#, c-format
-msgid "%%dev glob not permitted: %s\n"
-msgstr "%%dev glob no permitido: %s\n"
-
-#, c-format
-msgid "Directory not found by glob: %s. Trying without globbing.\n"
-msgstr ""
-
-#, c-format
-msgid "File not found by glob: %s. Trying without globbing.\n"
-msgstr ""
 
 #, c-format
 msgid "Could not open %s file %s: %m\n"
@@ -829,10 +826,6 @@ msgstr "Vacía %s archivo %s\n"
 #, c-format
 msgid "illegal _docdir_fmt %s: %s\n"
 msgstr "«_docdir_fmt» %s no válido: %s\n"
-
-#, c-format
-msgid "File not found by glob: %s\n"
-msgstr "Archivo no encontrado por glob: %s\n"
 
 #, c-format
 msgid "Special file in generated file list: %s\n"
@@ -1192,6 +1185,11 @@ msgstr "Número de parche %s no válido: %s\n"
 msgid "line %d: second %%prep\n"
 msgstr "línea %d: segundo %%prep\n"
 
+#, c-format
+msgid ""
+"%%patchN is deprecated (%i usages found), use %%patch N (or %%patch -P N)\n"
+msgstr ""
+
 msgid "Dependency tokens must begin with alpha-numeric, '_' or '/'"
 msgstr ""
 "Las fichas de dependencias deben comenzar con caracteres alfanuméricos, «_» "
@@ -1271,8 +1269,8 @@ msgstr "línea %d: condición de disparador de archivo debe comenzar con '/': %s
 #, c-format
 msgid "line %d: interpreter arguments not allowed in triggers: %s\n"
 msgstr ""
-"línea %d: los argumentos de intérprete no están permitidos en disparadores: %"
-"s\n"
+"línea %d: los argumentos de intérprete no están permitidos en disparadores: "
+"%s\n"
 
 #, c-format
 msgid "extra tokens at the end of %s directive in line %d:  %s\n"
@@ -1416,6 +1414,11 @@ msgstr "No pudo bifurcar %s: %s\n"
 msgid "Couldn't exec %s: %s\n"
 msgstr "No pudo ejecutar %s: %s\n"
 
+#, fuzzy, c-format
+#| msgid "failed to open dir %s of %s: %s\n"
+msgid "Failed to wait for exit status of %s: %s\n"
+msgstr "incorrecto al abrir dir %s de %s: %s\n"
+
 #, c-format
 msgid "%s failed: %x\n"
 msgstr "%s ha fallado: %x\n"
@@ -1492,14 +1495,14 @@ msgstr "Recompilación índice de base de datos caducada\n"
 #, c-format
 msgid "rpmidx: Version mismatch. Expected version: %u. Found version: %u\n"
 msgstr ""
-"rpmidx: no coincide la versión. Versión esperada: %u. Versión encontrada: %"
-"u\n"
+"rpmidx: no coincide la versión. Versión esperada: %u. Versión encontrada: "
+"%u\n"
 
 #, c-format
 msgid "rpmpkg: Version mismatch. Expected version: %u. Found version: %u\n"
 msgstr ""
-"rpmpkg: no coincide la versión. Versión esperada: %u. Versión encontrada: %"
-"u\n"
+"rpmpkg: no coincide la versión. Versión esperada: %u. Versión encontrada: "
+"%u\n"
 
 msgid "rpmpkg: detected non-zero blob, trying auto repair\n"
 msgstr ""
@@ -1967,6 +1970,16 @@ msgstr "no ejecutar guiones %%pretrans (si hay)"
 msgid "do not execute %%posttrans scriptlet (if any)"
 msgstr "no ejecutar guiones de %%posttrans (si hay)"
 
+#, fuzzy, c-format
+#| msgid "do not execute %%pretrans scriptlet (if any)"
+msgid "do not execute %%preuntrans scriptlet (if any)"
+msgstr "no ejecutar guiones %%pretrans (si hay)"
+
+#, fuzzy, c-format
+#| msgid "do not execute %%posttrans scriptlet (if any)"
+msgid "do not execute %%postuntrans scriptlet (if any)"
+msgstr "no ejecutar guiones de %%posttrans (si hay)"
+
 msgid "do not execute any scriptlet(s) triggered by this package"
 msgstr "no ejecutar ningún scriptlet(s) detonado por este paquete"
 
@@ -1985,6 +1998,10 @@ msgstr "no ejecutar ningún %%triggerun scriptlet(s)"
 #, c-format
 msgid "do not execute any %%triggerpostun scriptlet(s)"
 msgstr "no ejecutar ningún %%triggerpostun scriptlet(s)"
+
+#, c-format
+msgid "do not create %%sysusers users and groups"
+msgstr ""
 
 msgid ""
 "upgrade to an old version of the package (--force on upgrades does this "
@@ -2642,6 +2659,10 @@ msgid "%s cannot be installed\n"
 msgstr "%s no puede instalarse\n"
 
 #, c-format
+msgid "File not found by glob: %s\n"
+msgstr "Archivo no encontrado por glob: %s\n"
+
+#, c-format
 msgid "Retrieving %s\n"
 msgstr "Recuperando %s\n"
 
@@ -2845,9 +2866,6 @@ msgstr "Póngase en contacto con %s\n"
 #, c-format
 msgid "Unable to open %s for reading: %m.\n"
 msgstr "No se puede abrir %s para lectura: %m.\n"
-
-msgid "No exec() called after fork() in lua scriptlet\n"
-msgstr ""
 
 #, c-format
 msgid "Unable to restore current directory: %m"
@@ -3099,8 +3117,8 @@ msgstr ""
 #, c-format
 msgid "Failed to open shell expansion pipe for command: %s: %m \n"
 msgstr ""
-"Incorrecto al abrir conducto de expansión de intérprete para instrucción: %s:"
-" %m \n"
+"Incorrecto al abrir conducto de expansión de intérprete para instrucción: "
+"%s: %m \n"
 
 #, c-format
 msgid "Macro %%%s has illegal name (%s)\n"
@@ -3141,6 +3159,16 @@ msgstr "Macro %%%s definida pero no utilizada interna al ámbito\n"
 #, c-format
 msgid "no such macro: '%s'\n"
 msgstr "sin macro: '%s'\n"
+
+#, fuzzy, c-format
+#| msgid "invalid package number: %s\n"
+msgid "invalid argument: %s\n"
+msgstr "número de paquete inválido: %s\n"
+
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to get available memory for %s\n"
+msgstr "no se pudo crear el directorio %s: %s\n"
 
 msgid "argument expected"
 msgstr "argumento esperado"
@@ -3194,6 +3222,9 @@ msgstr "Error al escribir a la bitácora"
 msgid "invalid syntax in lua scriptlet: %s\n"
 msgstr "sintaxis no válida en scriptlet lua: %s\n"
 
+msgid "runaway fork() in Lua script\n"
+msgstr ""
+
 #, c-format
 msgid "invalid syntax in lua script: %s\n"
 msgstr "sintaxis no valida en el script lua: %s\n"
@@ -3219,23 +3250,11 @@ msgid "memory alloc (%u bytes) returned NULL.\n"
 msgstr "la asignación de memoria (%u bytes) devolvió NULO.\n"
 
 #, c-format
-msgid "Unsupported version of signature: V%d\n"
-msgstr ""
-
-#, c-format
-msgid "Unsupported version of key: V%d\n"
-msgstr ""
-
-#, c-format
 msgid "V%d %s/%s %s, key ID %s"
 msgstr "V%d %s/%s %s, ID de clave %s"
 
 msgid "(none)"
 msgstr "(ninguno)"
-
-#, c-format
-msgid "exiting on signal %d from pid %d\n"
-msgstr ""
 
 #, c-format
 msgid "%s: Fwrite failed: %s\n"
@@ -3249,16 +3268,25 @@ msgstr "%s: Fread incorrecto: %s\n"
 msgid "%s: Fflush failed: %s\n"
 msgstr "%s: Fflush incorrecto: %s\n"
 
-msgid "Unsupported PGP signature\n"
+#, fuzzy
+#| msgid "Unsupported PGP signature\n"
+msgid "Unsupported OpenPGP signature\n"
 msgstr "Firma PGP no soportada\n"
 
-#, c-format
-msgid "Unsupported PGP hash algorithm %u\n"
+#, fuzzy, c-format
+#| msgid "Unsupported PGP hash algorithm %u\n"
+msgid "Unsupported OpenPGP hash algorithm %u\n"
 msgstr "Algoritmo hash PGP no soportado %u\n"
 
-#, c-format
-msgid "Unsupported PGP pubkey algorithm %u\n"
+#, fuzzy, c-format
+#| msgid "Unsupported PGP pubkey algorithm %u\n"
+msgid "Unsupported OpenPGP pubkey algorithm %u\n"
 msgstr "Algoritmo de llave pública PGP no soportado %u\n"
+
+#, fuzzy, c-format
+#| msgid "Unsupported PGP signature\n"
+msgid "Deprecated OpenPGP signature version %d\n"
+msgstr "Firma PGP no soportada\n"
 
 #, c-format
 msgid "Could not create pipe for signing: %m\n"
@@ -3282,6 +3310,11 @@ msgstr "No se pudo escribir al conducto\n"
 #, c-format
 msgid "Could not read from file %s: %s\n"
 msgstr "No se pudo leer desde archivo %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "gpg exec failed (%d)\n"
+msgid "gpg waitpid failed (%s)\n"
+msgstr "ejecución incorrecta de gpg (%d)\n"
 
 #, c-format
 msgid "gpg exec failed (%d)\n"
@@ -3332,9 +3365,10 @@ msgstr "%s: rpmWriteSignature incorrecto: %s\n"
 msgid "rpmMkTemp failed\n"
 msgstr "rpmMkTemp incorrecto\n"
 
-#, c-format
-msgid "%s: writeLead failed: %s\n"
-msgstr "%s: writeLead falló: %s\n"
+#, fuzzy, c-format
+#| msgid "%s: failed to encode\n"
+msgid "%s: failed to copy rpm lead: %s\n"
+msgstr "%s: no se pudo codificar\n"
 
 #, c-format
 msgid "replacing %s failed: %s\n"
@@ -3373,6 +3407,14 @@ msgstr "extraer un archivador"
 
 msgid "only print what would be done"
 msgstr "solo declara lo que se haría"
+
+#, c-format
+#~ msgid "%%dev glob not permitted: %s\n"
+#~ msgstr "%%dev glob no permitido: %s\n"
+
+#, c-format
+#~ msgid "%s: writeLead failed: %s\n"
+#~ msgstr "%s: writeLead falló: %s\n"
 
 #~ msgid "build through %build (%prep, then compile) from <specfile>"
 #~ msgstr ""

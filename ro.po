@@ -395,8 +395,8 @@ msgstr "fișierele pot fi realocate numai în timpul instalării pachetului"
 
 msgid "cannot use --prefix with --relocate or --excludepath"
 msgstr ""
-"nu se poate utiliza opțiunea „--prefix” cu opțiunea „--relocate” sau "
-"„--excludepath”"
+"nu se poate utiliza opțiunea „--prefix” cu opțiunea „--relocate” sau „--"
+"excludepath”"
 
 msgid ""
 "--relocate and --excludepath may only be used when installing new packages"
@@ -692,7 +692,8 @@ msgstr ""
 
 #, c-format
 msgid "Duplicate locale %s in %%lang(%s)\n"
-msgstr "Valoare duplicată configurației regionale de limbă „%s” în %%lang(%s)\n"
+msgstr ""
+"Valoare duplicată configurației regionale de limbă „%s” în %%lang(%s)\n"
 
 #, c-format
 msgid "Invalid capability: %s\n"
@@ -1262,8 +1263,8 @@ msgstr "linia %d: programul de script trebuie să înceapă cu „/”: %s\n"
 #, c-format
 msgid "line %d: Priorities are allowed only for file triggers : %s\n"
 msgstr ""
-"linia %d: prioritățile sunt permise numai pentru declanșatoarele de fișiere :"
-" %s\n"
+"linia %d: prioritățile sunt permise numai pentru declanșatoarele de "
+"fișiere : %s\n"
 
 #, c-format
 msgid "line %d: Second %s\n"
@@ -1614,7 +1615,8 @@ msgstr "fișier"
 
 #, c-format
 msgid "tag[%d]: BAD, tag %d type %d offset %d count %d len %d"
-msgstr "eticheta[%d]: EROARE, eticheta %d tip %d decalaj %d număr %d lungime %d"
+msgstr ""
+"eticheta[%d]: EROARE, eticheta %d tip %d decalaj %d număr %d lungime %d"
 
 msgid "hdr load: BAD"
 msgstr "încărcare hdr: EROARE"
@@ -2069,7 +2071,8 @@ msgid "query/verify package(s) owning installed file"
 msgstr "interoghează/verifică pachetul(ele) care dețin fișierul instalat"
 
 msgid "query/verify package(s) owning path, installed or not"
-msgstr "interoghează/verifică pachetul(ele) care dețin ruta, instalat(e) sau nu"
+msgstr ""
+"interoghează/verifică pachetul(ele) care dețin ruta, instalat(e) sau nu"
 
 msgid "query/verify package(s) in group"
 msgstr "interoghează/verifică pachetul(ele) din grup"
@@ -2486,7 +2489,8 @@ msgid "the scriptlet interpreter can use arguments from header."
 msgstr "interpretul scriptului poate utiliza argumente din antet."
 
 msgid "a hardlink file set may be installed without being complete."
-msgstr "un set de fișiere de legătură dură poate fi instalat fără a fi complet."
+msgstr ""
+"un set de fișiere de legătură dură poate fi instalat fără a fi complet."
 
 msgid "package scriptlets may access the rpm database while installing."
 msgstr ""
@@ -2571,8 +2575,8 @@ msgstr "grupul %s nu există - se utilizează %s\n"
 #, c-format
 msgid "Wrong number of entries for tag %s: %u found but %u expected.\n"
 msgstr ""
-"Număr greșit de intrări pentru eticheta %s: s-a găsit %u, dar se aștepta %u."
-"\n"
+"Număr greșit de intrări pentru eticheta %s: s-a găsit %u, dar se aștepta "
+"%u.\n"
 
 #, c-format
 msgid "Malformed data for tag %s: %u bytes found but %lu expected.\n"
