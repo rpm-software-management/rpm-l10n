@@ -9,17 +9,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-04 09:25+0300\n"
-"PO-Revision-Date: 2022-04-13 13:17+0000\n"
+"PO-Revision-Date: 2025-08-21 12:53+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/rpm/"
-"master/uk/>\n"
+"rpm-l10n/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.11.2\n"
+"X-Generator: Weblate 5.13\n"
 
 #, c-format
 msgid "%s: %s\n"
@@ -140,8 +140,8 @@ msgid ""
 "build through %install (%prep, %conf, %build, then install) from <source "
 "package>"
 msgstr ""
-"виконати аж до команди %install (%prep, %build, потім встановити) з <пакунка "
-"з кодами>"
+"виконати аж до команди %install (%prep, %conf, %build, потім встановити) з "
+"<пакунка з кодами>"
 
 #, c-format
 msgid "verify %files section from <source package>"
@@ -176,7 +176,8 @@ msgid "<tarball>"
 msgstr "<архів tar>"
 
 msgid "build through %build (%prep, %conf, then compile) from <tarball>"
-msgstr "виконати аж до команди %build (%prep, потім збирання) з <архіву tar>"
+msgstr ""
+"виконати аж до команди %build (%prep, %conf, потім збирання) з <архіву tar>"
 
 msgid "check build dependencies <tarball>"
 msgstr "перевірити залежності збирання <архіву tar>"
@@ -184,8 +185,8 @@ msgstr "перевірити залежності збирання <архіву
 msgid ""
 "build through %install (%prep, %conf, %build, then install) from <tarball>"
 msgstr ""
-"виконати аж до команди %install (%prep, %build, потім встановити) з <архіву "
-"tar>"
+"виконати аж до команди %install (%prep, %conf, %build, потім встановити) з "
+"<архіву tar>"
 
 #, c-format
 msgid "verify %files section from <tarball>"
@@ -676,14 +677,13 @@ msgstr "Некоректний мандат: %s\n"
 msgid "File capability support not built in\n"
 msgstr "Підтримку мандатів на файли не було зібрано\n"
 
-#, fuzzy, c-format
-#| msgid "Missing module path in line: %s\n"
+#, c-format
 msgid "Missing quote: %s\n"
-msgstr "Не вказано шлях до модуля у рядку: %s\n"
+msgstr "Пропущено лапки: %s\n"
 
 #, c-format
 msgid "Trailing backslash: %s\n"
-msgstr ""
+msgstr "Кінцева зворотна похила риска: %s\n"
 
 #, c-format
 msgid "File must begin with \"/\": %s\n"
@@ -792,10 +792,8 @@ msgstr "Виявлений у %s ідентифікатор збирання є 
 msgid "failed to create directory"
 msgstr "не вдалося створити каталог"
 
-#, fuzzy
-#| msgid "Mixing main ELF and debug files in package"
 msgid "Mixing main ELF and debug files in package\n"
-msgstr "Суміш основного файла ELF і діагностичних файлів у пакунку"
+msgstr "Суміш основного файла ELF і діагностичних файлів у пакунку\n"
 
 #, c-format
 msgid "File needs leading \"/\": %s\n"
@@ -1176,6 +1174,8 @@ msgstr "рядок %d: друге %%prep\n"
 msgid ""
 "%%patchN is deprecated (%i usages found), use %%patch N (or %%patch -P N)\n"
 msgstr ""
+"%%patchN є застарілим (виявлено %i випадків використання), скористайтеся "
+"%%patch N (або %%patch -P N)\n"
 
 msgid "Dependency tokens must begin with alpha-numeric, '_' or '/'"
 msgstr "записи залежностей мають починатися з букви, числа, «_» або «/»"
@@ -1400,10 +1400,9 @@ msgstr "Не вдалося розгалуження %s: %s\n"
 msgid "Couldn't exec %s: %s\n"
 msgstr "Не вдалося виконати %s: %s\n"
 
-#, fuzzy, c-format
-#| msgid "failed to open dir %s of %s: %s\n"
+#, c-format
 msgid "Failed to wait for exit status of %s: %s\n"
-msgstr "не вдалося відкрити каталог %s %s: %s\n"
+msgstr "Не вдалося дочекатися стану виходу %s: %s\n"
 
 #, c-format
 msgid "%s failed: %x\n"
@@ -1962,15 +1961,13 @@ msgstr "не виконувати допоміжного скрипту %%pretra
 msgid "do not execute %%posttrans scriptlet (if any)"
 msgstr "не виконувати допоміжного скрипту %%posttrans (якщо такий вказано)"
 
-#, fuzzy, c-format
-#| msgid "do not execute %%pretrans scriptlet (if any)"
+#, c-format
 msgid "do not execute %%preuntrans scriptlet (if any)"
-msgstr "не виконувати допоміжного скрипту %%pretrans (якщо такий вказано)"
+msgstr "не виконувати допоміжного скрипту %%preuntrans (якщо такий вказано)"
 
-#, fuzzy, c-format
-#| msgid "do not execute %%posttrans scriptlet (if any)"
+#, c-format
 msgid "do not execute %%postuntrans scriptlet (if any)"
-msgstr "не виконувати допоміжного скрипту %%posttrans (якщо такий вказано)"
+msgstr "не виконувати допоміжного скрипту %%postuntrans (якщо такий вказано)"
 
 msgid "do not execute any scriptlet(s) triggered by this package"
 msgstr "не виконувати жодних допоміжних скриптів, які стосуються цього пакунка"
@@ -1993,7 +1990,7 @@ msgstr "не виконувати жодних допоміжних скрипт
 
 #, c-format
 msgid "do not create %%sysusers users and groups"
-msgstr ""
+msgstr "не створювати користувачів і групи %%sysusers"
 
 msgid ""
 "upgrade to an old version of the package (--force on upgrades does this "
@@ -2762,7 +2759,7 @@ msgstr "пакунок %s (який є новішим за %s) вже встан
 #, c-format
 msgid ""
 "installing package %s needs %<PRIu64>%cB more space on the %s filesystem"
-msgstr "встановлення пакунка %s потребує ще %<PRIu64>%cБ у файловій системі %s"
+msgstr "встановлення пакунка %s потребує ще %<PRIu64>%cB у файловій системі %s"
 
 #, c-format
 msgid "installing package %s needs %<PRIu64> more inodes on the %s filesystem"
@@ -3149,15 +3146,13 @@ msgstr "Макрос %%%s визначено, але не використано
 msgid "no such macro: '%s'\n"
 msgstr "такого макросу не існує: «%s»\n"
 
-#, fuzzy, c-format
-#| msgid "invalid package number: %s\n"
+#, c-format
 msgid "invalid argument: %s\n"
-msgstr "некоректний номер пакунка: %s\n"
+msgstr "некоректний аргумент: %s\n"
 
-#, fuzzy, c-format
-#| msgid "failed to create directory %s: %s\n"
+#, c-format
 msgid "failed to get available memory for %s\n"
-msgstr "не вдалося створити каталог %s: %s\n"
+msgstr "не вдалося отримати дані щодо доступної пам'яті для %s\n"
 
 msgid "argument expected"
 msgstr "мало бути вказано аргумент"
@@ -3211,10 +3206,8 @@ msgstr "Помилка під час запису до журналу"
 msgid "invalid syntax in lua scriptlet: %s\n"
 msgstr "некоректний синтаксис у допоміжному скрипті lua: %s\n"
 
-#, fuzzy
-#| msgid "No exec() called after fork() in lua scriptlet\n"
 msgid "runaway fork() in Lua script\n"
-msgstr "У скрипті Lua не викликано exec() після fork()\n"
+msgstr "неконтрольоване fork() у скрипті Lua\n"
 
 #, c-format
 msgid "invalid syntax in lua script: %s\n"
@@ -3260,25 +3253,20 @@ msgstr "%s: помилка fread: %s\n"
 msgid "%s: Fflush failed: %s\n"
 msgstr "%s: помилка Fflush: %s\n"
 
-#, fuzzy
-#| msgid "Unsupported PGP signature\n"
 msgid "Unsupported OpenPGP signature\n"
-msgstr "Непідтримуваний підпис PGP\n"
+msgstr "Непідтримуваний підпис OpenPGP\n"
 
-#, fuzzy, c-format
-#| msgid "Unsupported PGP hash algorithm %u\n"
+#, c-format
 msgid "Unsupported OpenPGP hash algorithm %u\n"
-msgstr "Непідтримуваний алгоритм хешування PGP, %u\n"
+msgstr "Непідтримуваний алгоритм хешування OpenPGP, %u\n"
 
-#, fuzzy, c-format
-#| msgid "Unsupported PGP pubkey algorithm %u\n"
+#, c-format
 msgid "Unsupported OpenPGP pubkey algorithm %u\n"
-msgstr "Непідтримуваний алгоритм обчислення відкритого ключа PGP, %u\n"
+msgstr "Непідтримуваний алгоритм обчислення відкритого ключа OpenPGP, %u\n"
 
-#, fuzzy, c-format
-#| msgid "Unsupported PGP signature\n"
+#, c-format
 msgid "Deprecated OpenPGP signature version %d\n"
-msgstr "Непідтримуваний підпис PGP\n"
+msgstr "Застаріла версія підпису OpenPGP %d\n"
 
 #, c-format
 msgid "Could not create pipe for signing: %m\n"
@@ -3303,10 +3291,9 @@ msgstr "Не вдалося виконати запис до каналу\n"
 msgid "Could not read from file %s: %s\n"
 msgstr "Не вдалося виконати читання з файла %s: %s\n"
 
-#, fuzzy, c-format
-#| msgid "gpg exec failed (%d)\n"
+#, c-format
 msgid "gpg waitpid failed (%s)\n"
-msgstr "помилка виконання gpg (%d)\n"
+msgstr "помилка waitpid gpg (%s)\n"
 
 #, c-format
 msgid "gpg exec failed (%d)\n"
@@ -3357,10 +3344,9 @@ msgstr "%s: помилка rpmWriteSignature: %s\n"
 msgid "rpmMkTemp failed\n"
 msgstr "помилка rpmMkTemp\n"
 
-#, fuzzy, c-format
-#| msgid "%s: failed to encode\n"
+#, c-format
 msgid "%s: failed to copy rpm lead: %s\n"
-msgstr "%s: не вдалося закодувати\n"
+msgstr "%s: не вдалося скопіювати вхід до rpm: %s\n"
 
 #, c-format
 msgid "replacing %s failed: %s\n"
