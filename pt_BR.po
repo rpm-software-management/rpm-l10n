@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-04 09:25+0300\n"
-"PO-Revision-Date: 2025-08-20 03:07+0000\n"
+"PO-Revision-Date: 2025-08-21 12:53+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/rpm/rpm-l10n/pt_BR/>\n"
@@ -142,8 +142,8 @@ msgid ""
 "build through %install (%prep, %conf, %build, then install) from <source "
 "package>"
 msgstr ""
-"constróis através de %install (%prep, %build, então instala) a partir do "
-"<pacote fonte>"
+"constrói através de %install (%prep, %conf, %build, então instala) a partir "
+"do <pacote fonte>"
 
 #, c-format
 msgid "verify %files section from <source package>"
@@ -156,19 +156,19 @@ msgid "build binary package only from <source package>"
 msgstr "constrói somente pacote binário a partir do <pacote fonte>"
 
 msgid "build source package only from <source package>"
-msgstr "compila o pacote fonte apenas de <source package>"
+msgstr "constrói o pacote fonte apenas de <pacote fonte>"
 
 msgid ""
 "build source package only from <source package> - calculate dynamic build "
 "requires"
 msgstr ""
-"compila o pacote fonte apenas de <source package> - calcular a compilação "
-"dinâmica requer"
+"constrói somente pacote fonte de <pacote fonte> - calcula os requisitos "
+"dinâmicos de construção"
 
 #, c-format
 msgid "build through %prep (unpack sources and apply patches) from <tarball>"
 msgstr ""
-"construir através de %prep (desempacote os fontes e aplique as correções) a "
+"constrói através de %prep (desempacota os fontes e aplica as correções) a "
 "partir do <tarball>"
 
 msgid "<tarball>"
@@ -176,53 +176,57 @@ msgstr "<tarball>"
 
 msgid "build through %build (%prep, %conf, then compile) from <tarball>"
 msgstr ""
+"constrói através de %build (%prep, %conf, então compila) a partir do "
+"<tarball>"
 
 msgid "check build dependencies <tarball>"
-msgstr ""
+msgstr "verifica as dependências de construção de <tarball>"
 
 msgid ""
 "build through %install (%prep, %conf, %build, then install) from <tarball>"
 msgstr ""
+"constrói através de %install (%prep, %conf, %build, então instala) a partir "
+"do <tarball>"
 
 #, c-format
 msgid "verify %files section from <tarball>"
-msgstr "verificar seção %files do <tarball>"
+msgstr "verifica a seção %files do <tarball>"
 
 msgid "build source and binary packages from <tarball>"
-msgstr "construir os pacotes fontes e binários a partir do <tarball>"
+msgstr "constrói os pacotes fontes e binários a partir do <tarball>"
 
 msgid "build binary package only from <tarball>"
-msgstr "construir pacote binário somente a partir do <tarball>"
+msgstr "constrói somente pacote binário a partir do <tarball>"
 
 msgid "build source package only from <tarball>"
-msgstr "construir pacote fonte somente a partir do <tarball>"
+msgstr "constrói somente pacote fonte a partir do <tarball>"
 
 msgid ""
 "build source package only from <tarball> - calculate dynamic build requires"
 msgstr ""
-"compila o pacote fonte apenas por <tarball> - calcular compilação dinâmica "
-"requer"
+"constrói o pacote fonte apenas por <tarball> - calcula os requisitos "
+"dinâmicos de construção"
 
 msgid "build binary package from <source package>"
-msgstr "construir pacote binário a partir do <pacote fonte>"
+msgstr "constrói pacote binário a partir do <pacote fonte>"
 
 msgid ""
 "build through %install (%prep, %build, then install) from <source package>"
 msgstr ""
-"construir através de %install (%prep, %build, então instale) a partir do "
+"constrói através de %install (%prep, %build, então instala) a partir do "
 "<pacote fonte>"
 
 msgid "override build root"
-msgstr "substituir raíz da construção"
+msgstr "substitui a raiz da construção"
 
 msgid "run build in current directory"
-msgstr "roda a compilação no diretório corrente"
+msgstr "executa a construção no diretório atual"
 
 msgid "remove build tree when done"
-msgstr "remover a árvore de construção quando terminar"
+msgstr "remove a árvore de construção quando terminar"
 
 msgid "ignore ExcludeArch: directives from spec file"
-msgstr "ignorar ExcludeArch: diretivas do arquivo spec"
+msgstr "ignora ExcludeArch: diretivas do arquivo spec"
 
 msgid "debug file state machine"
 msgstr "depurar máquina de estados do arquivo"
