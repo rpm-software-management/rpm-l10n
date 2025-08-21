@@ -8,8 +8,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-04 09:25+0300\n"
 "PO-Revision-Date: 2025-08-21 12:53+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/ka/>\n"
 "Language: ka\n"
@@ -622,10 +621,9 @@ msgstr "არასწორი შესაძლებლობა: %s\n"
 msgid "File capability support not built in\n"
 msgstr ""
 
-#, fuzzy, c-format
-#| msgid "Processing policies: %s\n"
+#, c-format
 msgid "Missing quote: %s\n"
-msgstr "წესების დამუშავება: %s\n"
+msgstr "აკლია ციტატა: %s\n"
 
 #, c-format
 msgid "Trailing backslash: %s\n"
