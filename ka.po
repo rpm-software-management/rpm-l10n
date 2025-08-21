@@ -7,8 +7,9 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-04 09:25+0300\n"
-"PO-Revision-Date: 2025-03-14 09:38+0000\n"
-"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
+"PO-Revision-Date: 2025-08-21 12:53+0000\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/ka/>\n"
 "Language: ka\n"
@@ -16,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.2\n"
+"X-Generator: Weblate 5.13\n"
 
 #, c-format
 msgid "%s: %s\n"
@@ -3027,10 +3028,9 @@ msgstr ""
 msgid "no such macro: '%s'\n"
 msgstr ""
 
-#, fuzzy, c-format
-#| msgid "invalid package number: %s\n"
+#, c-format
 msgid "invalid argument: %s\n"
-msgstr "პაკეტის არასწორი ნომერი: %s\n"
+msgstr "არასწორი არგუმენტი: %s\n"
 
 #, fuzzy, c-format
 #| msgid "failed to create directory %s: %s\n"
