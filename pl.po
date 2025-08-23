@@ -18,18 +18,18 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-04 09:25+0300\n"
-"PO-Revision-Date: 2022-04-15 12:48+0000\n"
+"PO-Revision-Date: 2025-08-23 10:45+0000\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <https://translate.fedoraproject.org/projects/rpm/"
-"master/pl/>\n"
+"rpm-l10n/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && "
-"(n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && ("
+"n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
 "n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
-"X-Generator: Weblate 4.11.2\n"
+"X-Generator: Weblate 5.13\n"
 
 #, c-format
 msgid "%s: %s\n"
@@ -678,14 +678,13 @@ msgstr "Nieprawidłowa możliwość: %s\n"
 msgid "File capability support not built in\n"
 msgstr "Obsługa możliwości plików nie jest wbudowana\n"
 
-#, fuzzy, c-format
-#| msgid "Missing module path in line: %s\n"
+#, c-format
 msgid "Missing quote: %s\n"
-msgstr "Brak ścieżki do modułu w wierszu: %s\n"
+msgstr "Brak cudzysłowu: %s\n"
 
 #, c-format
 msgid "Trailing backslash: %s\n"
-msgstr ""
+msgstr "Ukośnik wsteczny na końcu wiersza: %s\n"
 
 #, c-format
 msgid "File must begin with \"/\": %s\n"
@@ -792,10 +791,8 @@ msgstr "Identyfikator budowania odnaleziony w %s jest za duży\n"
 msgid "failed to create directory"
 msgstr "utworzenie katalogu się nie powiodło"
 
-#, fuzzy
-#| msgid "Mixing main ELF and debug files in package"
 msgid "Mixing main ELF and debug files in package\n"
-msgstr "Mieszanie głównych plików ELF i plików debugowania w pakiecie"
+msgstr "Mieszanie głównych plików ELF i plików debugowania w pakiecie\n"
 
 #, c-format
 msgid "File needs leading \"/\": %s\n"
@@ -1173,6 +1170,8 @@ msgstr "%d. wiersz: drugie %%prep\n"
 msgid ""
 "%%patchN is deprecated (%i usages found), use %%patch N (or %%patch -P N)\n"
 msgstr ""
+"%%patchN jest przestarzałe (odnaleziono wystąpień: %i), proszę użyć %%patch "
+"N (lub %%patch -P N)\n"
 
 msgid "Dependency tokens must begin with alpha-numeric, '_' or '/'"
 msgstr ""
@@ -1320,14 +1319,14 @@ msgstr "Pakiet nie ma %%description: %s\n"
 
 #, c-format
 msgid "Policy module '%s' duplicated with overlapping types\n"
-msgstr "Moduł polityki „%s” ma kopię z pokrywającymi się typami\n"
+msgstr "Moduł zasad „%s” ma kopię z pokrywającymi się typami\n"
 
 #, c-format
 msgid "Base modules '%s' and '%s' have overlapping types\n"
 msgstr "Podstawowe moduły „%s” i „%s” mają pokrywające się typy\n"
 
 msgid "Failed to get policies from header\n"
-msgstr "Uzyskanie polityk z nagłówka się nie powiodło\n"
+msgstr "Uzyskanie zasad z nagłówka się nie powiodło\n"
 
 #, c-format
 msgid "%%semodule requires a file path\n"
@@ -1335,15 +1334,15 @@ msgstr "%%semodule wymaga ścieżki do pliku\n"
 
 #, c-format
 msgid "Failed to read  policy file: %s\n"
-msgstr "Odczytanie pliku polityki się nie powiodło: %s\n"
+msgstr "Odczytanie pliku zasad się nie powiodło: %s\n"
 
 #, c-format
 msgid "Failed to encode policy file: %s\n"
-msgstr "Odkodowanie pliku polityki się nie powiodło: %s\n"
+msgstr "Odkodowanie pliku zasad się nie powiodło: %s\n"
 
 #, c-format
 msgid "Failed to determine a policy name: %s\n"
-msgstr "Ustalenie nazwy polityki się nie powiodło: %s\n"
+msgstr "Ustalenie nazwy zasad się nie powiodło: %s\n"
 
 #, c-format
 msgid ""
@@ -1371,7 +1370,7 @@ msgstr "Za dużo parametrów w wierszu: %s\n"
 
 #, c-format
 msgid "Processing policies: %s\n"
-msgstr "Przetwarzanie polityk: %s\n"
+msgstr "Przetwarzanie zasad: %s\n"
 
 #, c-format
 msgid "Ignoring invalid regex %s\n"
@@ -1393,10 +1392,9 @@ msgstr "Nie można rozdzielić %s: %s\n"
 msgid "Couldn't exec %s: %s\n"
 msgstr "Nie można wykonać %s: %s\n"
 
-#, fuzzy, c-format
-#| msgid "failed to open dir %s of %s: %s\n"
+#, c-format
 msgid "Failed to wait for exit status of %s: %s\n"
-msgstr "otwarcie %s. z %s katalogów się nie powiodło: %s\n"
+msgstr "Oczekiwanie na stan wyjścia %s się nie powiodło: %s\n"
 
 #, c-format
 msgid "%s failed: %x\n"
@@ -1946,15 +1944,13 @@ msgstr "bez wykonania skryptu %%pretrans (jeśli jest)"
 msgid "do not execute %%posttrans scriptlet (if any)"
 msgstr "bez wykonania skryptu %%posttrans (jeśli jest)"
 
-#, fuzzy, c-format
-#| msgid "do not execute %%pretrans scriptlet (if any)"
+#, c-format
 msgid "do not execute %%preuntrans scriptlet (if any)"
-msgstr "bez wykonania skryptu %%pretrans (jeśli jest)"
+msgstr "bez wykonania skryptu %%preuntrans (jeśli jest)"
 
-#, fuzzy, c-format
-#| msgid "do not execute %%posttrans scriptlet (if any)"
+#, c-format
 msgid "do not execute %%postuntrans scriptlet (if any)"
-msgstr "bez wykonania skryptu %%posttrans (jeśli jest)"
+msgstr "bez wykonania skryptu %%postuntrans (jeśli jest)"
 
 msgid "do not execute any scriptlet(s) triggered by this package"
 msgstr "bez wykonania żadnych skryptów wyzwalanych przez ten pakiet"
@@ -1977,7 +1973,7 @@ msgstr "bez wykonania żadnych skryptów %%triggerpostun"
 
 #, c-format
 msgid "do not create %%sysusers users and groups"
-msgstr ""
+msgstr "bez tworzenia użytkowników i grup %%sysusers"
 
 msgid ""
 "upgrade to an old version of the package (--force on upgrades does this "
@@ -3127,15 +3123,13 @@ msgstr "Określono makro %%%s, ale nie jest używane w ramach zakresu\n"
 msgid "no such macro: '%s'\n"
 msgstr "nie ma takiego makra: „%s”\n"
 
-#, fuzzy, c-format
-#| msgid "invalid package number: %s\n"
+#, c-format
 msgid "invalid argument: %s\n"
-msgstr "nieprawidłowy numer pakietu: %s\n"
+msgstr "nieprawidłowy parametr: %s\n"
 
-#, fuzzy, c-format
-#| msgid "failed to create directory %s: %s\n"
+#, c-format
 msgid "failed to get available memory for %s\n"
-msgstr "utworzenie katalogu %s się nie powiodło: %s\n"
+msgstr "uzyskanie dostępnej pamięci dla %s się nie powiodło\n"
 
 msgid "argument expected"
 msgstr "oczekiwano parametru"
@@ -3189,10 +3183,8 @@ msgstr "Błąd podczas zapisywania do dziennika"
 msgid "invalid syntax in lua scriptlet: %s\n"
 msgstr "nieprawidłowa składnia skryptu Lua: %s\n"
 
-#, fuzzy
-#| msgid "No exec() called after fork() in lua scriptlet\n"
 msgid "runaway fork() in Lua script\n"
-msgstr "Nie wywołano exec() po fork() w skrypcie Lua\n"
+msgstr "niekontrolowane fork() w skrypcie Lua\n"
 
 #, c-format
 msgid "invalid syntax in lua script: %s\n"
@@ -3237,25 +3229,20 @@ msgstr "%s: „Fread” się nie powiodło: %s\n"
 msgid "%s: Fflush failed: %s\n"
 msgstr "%s: „Fflush” się nie powiodło: %s\n"
 
-#, fuzzy
-#| msgid "Unsupported PGP signature\n"
 msgid "Unsupported OpenPGP signature\n"
-msgstr "Nieobsługiwany podpis PGP\n"
+msgstr "Nieobsługiwany podpis OpenPGP\n"
 
-#, fuzzy, c-format
-#| msgid "Unsupported PGP hash algorithm %u\n"
+#, c-format
 msgid "Unsupported OpenPGP hash algorithm %u\n"
-msgstr "Nieobsługiwany algorytm mieszania PGP %u\n"
+msgstr "Nieobsługiwany algorytm mieszania OpenPGP %u\n"
 
-#, fuzzy, c-format
-#| msgid "Unsupported PGP pubkey algorithm %u\n"
+#, c-format
 msgid "Unsupported OpenPGP pubkey algorithm %u\n"
-msgstr "Nieobsługiwany algorytm klucza publicznego PGP %u\n"
+msgstr "Nieobsługiwany algorytm klucza publicznego OpenPGP %u\n"
 
-#, fuzzy, c-format
-#| msgid "Unsupported PGP signature\n"
+#, c-format
 msgid "Deprecated OpenPGP signature version %d\n"
-msgstr "Nieobsługiwany podpis PGP\n"
+msgstr "Przestarzała wersja podpisu OpenPGP %d\n"
 
 #, c-format
 msgid "Could not create pipe for signing: %m\n"
@@ -3280,10 +3267,9 @@ msgstr "Nie można zapisać do potoku\n"
 msgid "Could not read from file %s: %s\n"
 msgstr "Nie można odczytać z pliku %s: %s\n"
 
-#, fuzzy, c-format
-#| msgid "gpg exec failed (%d)\n"
+#, c-format
 msgid "gpg waitpid failed (%s)\n"
-msgstr "wykonanie gpg się nie powiodło (%d)\n"
+msgstr "waitpid dla gpg się nie powiodło (%s)\n"
 
 #, c-format
 msgid "gpg exec failed (%d)\n"
@@ -3334,10 +3320,9 @@ msgstr "%s: rpmWriteSignature się nie powiodło: %s\n"
 msgid "rpmMkTemp failed\n"
 msgstr "rpmMkTemp się nie powiodło\n"
 
-#, fuzzy, c-format
-#| msgid "%s: failed to encode\n"
+#, c-format
 msgid "%s: failed to copy rpm lead: %s\n"
-msgstr "%s: odkodowanie się nie powiodło\n"
+msgstr "%s: skopiowanie początku RPM się nie powiodło: %s\n"
 
 #, c-format
 msgid "replacing %s failed: %s\n"
