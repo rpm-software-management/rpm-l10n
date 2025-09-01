@@ -13,8 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-04 09:25+0300\n"
 "PO-Revision-Date: 2025-09-01 16:28+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/sv/>\n"
 "Language: sv\n"
@@ -85,7 +84,7 @@ msgid "build through %conf (%prep, then %conf) from <specfile>"
 msgstr "bygg till och med %conf (%prep, sedan %conf) från <specfil>"
 
 msgid "build through %build (%prep, %conf, then compile) from <specfile>"
-msgstr "bygg till och med %build (%prep, kompilera sedan) från <specfil>"
+msgstr "bygg till och med %build (%prep, %conf, kompilera sedan) från <specfil>"
 
 msgid "check build dependencies <specfile>"
 msgstr "kontrollera byggberoenden <specfil>"
@@ -93,7 +92,8 @@ msgstr "kontrollera byggberoenden <specfil>"
 msgid ""
 "build through %install (%prep, %conf, %build, then install) from <specfile>"
 msgstr ""
-"bygg till och med %install (%prep, %build, installera sedan) från <specfil>"
+"bygg till och med %install (%prep, %conf, %build, installera sedan) från "
+"<specfil>"
 
 #, c-format
 msgid "verify %files section from <specfile>"
@@ -123,7 +123,8 @@ msgid "<source package>"
 msgstr "<källpaket>"
 
 msgid "build through %build (%prep, %conf, then compile) from <source package>"
-msgstr "bygg till och med %build (%prep, kompilera sedan) från <källpaket>"
+msgstr ""
+"bygg till och med %build (%prep, %conf kompilera sedan) från <källpaket>"
 
 msgid "check build dependencies <source package>"
 msgstr "kontrollera byggberoenden <källpaket>"
@@ -132,7 +133,8 @@ msgid ""
 "build through %install (%prep, %conf, %build, then install) from <source "
 "package>"
 msgstr ""
-"bygg till och med %install (%prep, %build, installera sedan) från <källpaket>"
+"bygg till och med %install (%prep, %conf, %build, installera sedan) från "
+"<källpaket>"
 
 #, c-format
 msgid "verify %files section from <source package>"
@@ -163,7 +165,8 @@ msgid "<tarball>"
 msgstr "<tar-arkiv>"
 
 msgid "build through %build (%prep, %conf, then compile) from <tarball>"
-msgstr "bygg till och med %build (%prep, kompilera sedan) från <tar-arkiv>"
+msgstr ""
+"bygg till och med %build (%prep, %conf, kompilera sedan) från <tar-arkiv>"
 
 msgid "check build dependencies <tarball>"
 msgstr "kontrollera byggberoenden <tar-arkiv>"
@@ -171,7 +174,8 @@ msgstr "kontrollera byggberoenden <tar-arkiv>"
 msgid ""
 "build through %install (%prep, %conf, %build, then install) from <tarball>"
 msgstr ""
-"bygg till och med %install (%prep, %build, installera sedan) från <tar-arkiv>"
+"bygg till och med %install (%prep, %conf, %build, installera sedan) från "
+"<tar-arkiv>"
 
 #, c-format
 msgid "verify %files section from <tarball>"
@@ -647,14 +651,13 @@ msgstr "Ogiltig förmåga (capability): %s\n"
 msgid "File capability support not built in\n"
 msgstr "Stöd för filförmågor (capability) är inte inbyggt\n"
 
-#, fuzzy, c-format
-#| msgid "Missing module path in line: %s\n"
+#, c-format
 msgid "Missing quote: %s\n"
-msgstr "Saknad modulväg på rad: %s\n"
+msgstr "Saknat citationstecken: %s\n"
 
 #, c-format
 msgid "Trailing backslash: %s\n"
-msgstr ""
+msgstr "Avslutande omvänt snedstreck: %s\n"
 
 #, c-format
 msgid "File must begin with \"/\": %s\n"
@@ -1138,6 +1141,8 @@ msgstr "rad %d: andra %%prep\n"
 msgid ""
 "%%patchN is deprecated (%i usages found), use %%patch N (or %%patch -P N)\n"
 msgstr ""
+"%%patchN är föråldrat (%i användningar hittade), använd %%patch N (eller "
+"%%patch -P N)\n"
 
 msgid "Dependency tokens must begin with alpha-numeric, '_' or '/'"
 msgstr "Beroenden måste börja alfanumeriskt, med ”_” eller med ”/”"
@@ -1354,10 +1359,9 @@ msgstr "Kunde inte grena (fork) %s: %s\n"
 msgid "Couldn't exec %s: %s\n"
 msgstr "Kunde inte köra %s: %s\n"
 
-#, fuzzy, c-format
-#| msgid "failed to open dir %s of %s: %s\n"
+#, c-format
 msgid "Failed to wait for exit status of %s: %s\n"
-msgstr "misslyckades med att öppna katalogen %s från %s: %s\n"
+msgstr "Misslyckades med att vänta på slutstatus från %s: %s\n"
 
 #, c-format
 msgid "%s failed: %x\n"
@@ -1902,15 +1906,13 @@ msgstr "utför inte (eventuellt) %%pretrans-skript"
 msgid "do not execute %%posttrans scriptlet (if any)"
 msgstr "utför inte (eventuellt) %%posttrans-skript"
 
-#, fuzzy, c-format
-#| msgid "do not execute %%pretrans scriptlet (if any)"
+#, c-format
 msgid "do not execute %%preuntrans scriptlet (if any)"
-msgstr "utför inte (eventuellt) %%pretrans-skript"
+msgstr "utför inte (eventuellt) %%preuntrans-skript"
 
-#, fuzzy, c-format
-#| msgid "do not execute %%posttrans scriptlet (if any)"
+#, c-format
 msgid "do not execute %%postuntrans scriptlet (if any)"
-msgstr "utför inte (eventuellt) %%posttrans-skript"
+msgstr "utför inte (eventuellt) %%postuntrans-skript"
 
 msgid "do not execute any scriptlet(s) triggered by this package"
 msgstr "kör inte skript utlösta av detta paket"
@@ -1933,7 +1935,7 @@ msgstr "kör inte %%triggerpostun-skript"
 
 #, c-format
 msgid "do not create %%sysusers users and groups"
-msgstr ""
+msgstr "skapa inte %%sysusers-användare och grupper"
 
 msgid ""
 "upgrade to an old version of the package (--force on upgrades does this "
@@ -2868,7 +2870,7 @@ msgstr "transaktion"
 
 #, c-format
 msgid "%s tag %u: invalid type %u"
-msgstr "%stagg %u: felaktig typ %u"
+msgstr "%s-tagg %u: felaktig typ %u"
 
 #, c-format
 msgid "%s: tag %u: invalid count %u"
@@ -2876,15 +2878,15 @@ msgstr "%s: tagg %u: felaktigt antal %u"
 
 #, c-format
 msgid "%s tag %u: invalid data %p (%u)"
-msgstr "%stagg %u: felaktig data %p (%u)"
+msgstr "%s-tagg %u: felaktig data %p (%u)"
 
 #, c-format
 msgid "%s tag %u: invalid size %u"
-msgstr "%stagg %u: felaktig storlek %u"
+msgstr "%s-tagg %u: felaktig storlek %u"
 
 #, c-format
 msgid "%s tag %u: invalid OpenPGP signature"
-msgstr "%stagg %u: felaktig OpenPGP-signatur"
+msgstr "%s-tagg %u: felaktig OpenPGP-signatur"
 
 #, c-format
 msgid "%s: tag %u: invalid hex"
@@ -3022,7 +3024,7 @@ msgstr "- stödjs inte för strängar"
 
 #, c-format
 msgid "%3d>%*s(empty)\n"
-msgstr "%3d>%*s(empty)\n"
+msgstr "%3d>%*s(tom)\n"
 
 msgid ""
 "Too many levels of recursion in macro expansion. It is likely caused by "
@@ -3077,12 +3079,11 @@ msgstr "finns inget sådant makro: ”%s”\n"
 
 #, c-format
 msgid "invalid argument: %s\n"
-msgstr "ogiltigt argument: %s\n"
+msgstr "felaktigt argument: %s\n"
 
-#, fuzzy, c-format
-#| msgid "failed to create directory %s: %s\n"
+#, c-format
 msgid "failed to get available memory for %s\n"
-msgstr "misslyckades att skapa katalogen %s: %s\n"
+msgstr "misslyckades att hämta tillgängligt minne för %s\n"
 
 msgid "argument expected"
 msgstr "argument förväntades"
@@ -3136,10 +3137,8 @@ msgstr "Fel när det skrevs till loggen"
 msgid "invalid syntax in lua scriptlet: %s\n"
 msgstr "felaktig syntax i lua-skript: %s\n"
 
-#, fuzzy
-#| msgid "No exec() called after fork() in lua scriptlet\n"
 msgid "runaway fork() in Lua script\n"
-msgstr "Ingen exec() anropad efter fork() i lua-skript\n"
+msgstr "skenande fork() i Lua-skript\n"
 
 #, c-format
 msgid "invalid syntax in lua script: %s\n"
@@ -3184,25 +3183,20 @@ msgstr "%s: Fread misslyckades: %s\n"
 msgid "%s: Fflush failed: %s\n"
 msgstr "%s: Fflush misslyckades: %s\n"
 
-#, fuzzy
-#| msgid "Unsupported PGP signature\n"
 msgid "Unsupported OpenPGP signature\n"
-msgstr "PGP-signaturen stödjs inte\n"
+msgstr "OpenPGP-signaturen stödjs inte\n"
 
-#, fuzzy, c-format
-#| msgid "Unsupported PGP hash algorithm %u\n"
+#, c-format
 msgid "Unsupported OpenPGP hash algorithm %u\n"
-msgstr "PGP-hash-algoritm %u stödjs inte\n"
+msgstr "OpenPGP-hash-algoritm %u stödjs inte\n"
 
-#, fuzzy, c-format
-#| msgid "Unsupported PGP pubkey algorithm %u\n"
+#, c-format
 msgid "Unsupported OpenPGP pubkey algorithm %u\n"
-msgstr "PGP-publik nyckelalgoritm %u stödjs inte\n"
+msgstr "OpenPGP-publik nyckelalgoritm %u stödjs inte\n"
 
-#, fuzzy, c-format
-#| msgid "Unsupported PGP signature\n"
+#, c-format
 msgid "Deprecated OpenPGP signature version %d\n"
-msgstr "PGP-signaturen stödjs inte\n"
+msgstr "Föråldrad OpenPGP-signaturen version %d\n"
 
 #, c-format
 msgid "Could not create pipe for signing: %m\n"
@@ -3227,10 +3221,9 @@ msgstr "Kunde inte skriva till ett rör\n"
 msgid "Could not read from file %s: %s\n"
 msgstr "Kunde inte läsa från filen %s: %s\n"
 
-#, fuzzy, c-format
-#| msgid "gpg exec failed (%d)\n"
+#, c-format
 msgid "gpg waitpid failed (%s)\n"
-msgstr "gpg exec misslyckades (%d)\n"
+msgstr "gpg waitpid misslyckades (%s)\n"
 
 #, c-format
 msgid "gpg exec failed (%d)\n"
@@ -3281,10 +3274,9 @@ msgstr "%s: rpmWriteSignature misslyckades: %s\n"
 msgid "rpmMkTemp failed\n"
 msgstr "rpmMkTemp misslyckades\n"
 
-#, fuzzy, c-format
-#| msgid "%s: failed to encode\n"
+#, c-format
 msgid "%s: failed to copy rpm lead: %s\n"
-msgstr "%s: misslyckades att koda\n"
+msgstr "%s: misslyckades att kopiera rpm-inledningen: %s\n"
 
 #, c-format
 msgid "replacing %s failed: %s\n"
