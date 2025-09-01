@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-04 09:25+0300\n"
+"POT-Creation-Date: 2025-09-01 14:14+0300\n"
 "PO-Revision-Date: 2025-06-17 13:19+0000\n"
 "Last-Translator: David Medina <dmedinacpnl@gmail.com>\n"
 "Language-Team: Catalan <https://translate.fedoraproject.org/projects/rpm/rpm-"
@@ -22,567 +22,10 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.12.1\n"
 
-#, c-format
-msgid "%s: %s\n"
-msgstr "%s: %s\n"
-
-#, c-format
-msgid "RPM version %s\n"
-msgstr "Versió %s de RPM\n"
-
-#, c-format
-msgid "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
-msgstr "Copyright (c) 1998 - 2002 Red Hat, Inc.\n"
-
-#, c-format
-msgid ""
-"This program may be freely redistributed under the terms of the GNU GPL\n"
-msgstr ""
-"Aquest programari es pot distribuir lliurement d'acord amb els termes de la "
-"Llicència Pública General GNU\n"
-
-#, c-format
-msgid "creating a pipe for --pipe failed: %m\n"
-msgstr "Ha fallat la creació d'una canonada per a --pipe: %m\n"
-
-#, c-format
-msgid "exec failed\n"
-msgstr "ha fallat l'exec\n"
-
-msgid "create uncompressed tar file"
-msgstr ""
-
-#, c-format
-msgid "argument is not an RPM package\n"
-msgstr "l'argument no és un paquet RPM\n"
-
-#, c-format
-msgid "error reading header from package\n"
-msgstr "s'ha produït un error en llegir la capçalera del paquet\n"
-
-#, c-format
-msgid "cannot re-open payload: %s\n"
-msgstr "no s'ha pogut tornar a obrir la càrrega: %s\n"
-
-#, c-format
-msgid "files over 4GB not supported by cpio, use rpm2archive instead\n"
-msgstr ""
-
-#, c-format
-msgid "buildroot already specified, ignoring %s\n"
-msgstr "ja s'ha especificat el buildroot i s'ignora %s\n"
-
-#, c-format
-msgid "build through %prep (unpack sources and apply patches) from <specfile>"
-msgstr ""
-"construeix mitjançant el %prep (desempaqueta les fonts i aplica els pedaços) "
-"des del <fitxer spec>"
-
-msgid "<specfile>"
-msgstr "<fitxer spec>"
-
-#, c-format
-msgid "build through %conf (%prep, then %conf) from <specfile>"
-msgstr ""
-
-msgid "build through %build (%prep, %conf, then compile) from <specfile>"
-msgstr ""
-
-msgid "check build dependencies <specfile>"
-msgstr ""
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <specfile>"
-msgstr ""
-
-#, c-format
-msgid "verify %files section from <specfile>"
-msgstr "verifica la secció %files des del <fitxer spec>"
-
-msgid "build source and binary packages from <specfile>"
-msgstr ""
-"construeix els paquets de les fonts i dels binaris des del <fitxer spec>"
-
-msgid "build binary package only from <specfile>"
-msgstr "construeix només el paquet dels binaris des del <fitxer spec>"
-
-msgid "build source package only from <specfile>"
-msgstr "construeix només el paquet de les fonts des del <fitxer spec>"
-
-msgid ""
-"build source package only from <specfile> - calculate dynamic build requires"
-msgstr ""
-
-#, c-format
-msgid ""
-"build through %prep (unpack sources and apply patches) from <source package>"
-msgstr ""
-"construeix mitjançant el %prep (desempaqueta de les fonts i aplica els "
-"pedaços) des del <paquet de les fonts>"
-
-msgid "<source package>"
-msgstr "<paquet de les fonts>"
-
-msgid "build through %build (%prep, %conf, then compile) from <source package>"
-msgstr ""
-
-msgid "check build dependencies <source package>"
-msgstr ""
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <source "
-"package>"
-msgstr ""
-
-#, c-format
-msgid "verify %files section from <source package>"
-msgstr "verifica la secció %files des del <paquet de les fonts>"
-
-msgid "build source and binary packages from <source package>"
-msgstr ""
-"construeix el paquet dels binaris i de les fonts des del <paquet de les "
-"fonts>"
-
-msgid "build binary package only from <source package>"
-msgstr "construeix només el paquet dels binaris des del <paquet de les fonts>"
-
-msgid "build source package only from <source package>"
-msgstr "construeix només el paquet de les fonts des del <paquet de les fonts>"
-
-msgid ""
-"build source package only from <source package> - calculate dynamic build "
-"requires"
-msgstr ""
-
-#, c-format
-msgid "build through %prep (unpack sources and apply patches) from <tarball>"
-msgstr ""
-"construeix mitjançant el %prep (desempaqueta les fonts i aplica els pedaços) "
-"des de l'<arxiu tar>"
-
-msgid "<tarball>"
-msgstr "<arxiu tar>"
-
-msgid "build through %build (%prep, %conf, then compile) from <tarball>"
-msgstr ""
-
-msgid "check build dependencies <tarball>"
-msgstr ""
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <tarball>"
-msgstr ""
-
-#, c-format
-msgid "verify %files section from <tarball>"
-msgstr "verifica la secció %files des de l'<arxiu tar>"
-
-msgid "build source and binary packages from <tarball>"
-msgstr ""
-"construeix els paquets de les fonts i dels binaris des de l'<arxiu tar>"
-
-msgid "build binary package only from <tarball>"
-msgstr "construeix el paquet dels binaris només des de l'<arxiu tar>"
-
-msgid "build source package only from <tarball>"
-msgstr "construeix el paquet de les fonts només des de l'<arxiu tar>"
-
-msgid ""
-"build source package only from <tarball> - calculate dynamic build requires"
-msgstr ""
-
-msgid "build binary package from <source package>"
-msgstr "construeix el paquet dels binaris des del <paquet de les fonts>"
-
-msgid ""
-"build through %install (%prep, %build, then install) from <source package>"
-msgstr ""
-"construeix mitjançant el %install (%prep, %build i instal·la) des del "
-"<paquet de les fonts>"
-
-msgid "override build root"
-msgstr "substitueix l'arrel de la construcció"
-
-msgid "run build in current directory"
-msgstr "executa la construcció al directori actual"
-
-msgid "remove build tree when done"
-msgstr "suprimeix l'arbre de la construcció en acabar"
-
-msgid "ignore ExcludeArch: directives from spec file"
-msgstr "ignora ExcludeArch: directives del fitxer d'especificació"
-
-msgid "debug file state machine"
-msgstr "depura la màquina d'estat de fitxers"
-
-msgid "do not execute any stages of the build"
-msgstr "no executis cap de les etapes de la construcció"
-
-msgid "do not verify build dependencies"
-msgstr "no verifiquis les dependències de la construcció"
-
-msgid "generate package header(s) compatible with (legacy) rpm v3 packaging"
-msgstr ""
-"genera capçaleres del paquet compatibles amb l'empaquetament rpm v3 (llegat)"
-
-#, c-format
-msgid "do not execute %clean stage of the build"
-msgstr "no executis l'etapa %clean de la construcció"
-
-#, c-format
-msgid "do not execute %prep stage of the build"
-msgstr "no executis l'etapa %prep de la construcció"
-
-#, c-format
-msgid "do not execute %check stage of the build"
-msgstr "no executis l'etapa %check de la construcció"
-
-msgid "do not accept i18N msgstr's from specfile"
-msgstr "no acceptis els msgstr d'i18N del fitxer spec"
-
-msgid "remove sources when done"
-msgstr "suprimeix les fonts en acabar"
-
-msgid "remove specfile when done"
-msgstr "suprimeix el fitxer spec en acabar"
-
-msgid "skip straight to specified stage (only for c,i)"
-msgstr "vés directament a l'etapa especificada (només per a c,i)"
-
-msgid "override target platform"
-msgstr "substitueix la plataforma"
-
-msgid "Build options with [ <specfile> | <tarball> | <source package> ]:"
-msgstr ""
-"Opcions de construcció amb [ <fitxer spec> | <arxiu tar> | <paquet de les "
-"fonts> ]:"
-
-msgid "Common options for all rpm modes and executables:"
-msgstr "Opcions comunes per a tots els modes rpm i executables:"
-
-#, c-format
-msgid "Unable to open spec file %s: %s\n"
-msgstr "No s'ha pogut obrir el fitxer d'especificacions %s: %s\n"
-
-#, c-format
-msgid "Failed to open tar pipe: %m\n"
-msgstr "Ha fallat l'obertura de la canonada per al tar: %m\n"
-
-#, c-format
-msgid "Found more than one spec file in %s\n"
-msgstr "S'ha trobat més d'un fitxer spec a %s\n"
-
-#, c-format
-msgid "Failed to read spec file from %s\n"
-msgstr "Ha fallat la lectura del fitxer spec de %s\n"
-
-#, c-format
-msgid "Failed to rename %s to %s: %m\n"
-msgstr "Ha fallat el canvi de nom de %s a %s: %m\n"
-
-#, c-format
-msgid "failed to stat %s: %m\n"
-msgstr "Ha fallat l'obtenció de l'estat de %s: %m\n"
-
-#, c-format
-msgid "File %s is not a regular file.\n"
-msgstr "El fitxer %s no és un fitxer regular.\n"
-
-#, c-format
-msgid "File %s does not appear to be a specfile.\n"
-msgstr "El fitxer %s no sembla un fitxer d'especificacions.\n"
-
-#, c-format
-msgid "Building target platforms: %s\n"
-msgstr "Construcció per a les plataformes objectiu: %s\n"
-
-#, c-format
-msgid "Building for target %s\n"
-msgstr "Construcció per a l'objectiu %s\n"
-
-msgid "arguments to --root (-r) must begin with a /"
-msgstr "els arguments a --root (-r) han de començar per /"
-
-msgid "initialize database"
-msgstr "inicialitza la base de dades"
-
-msgid "rebuild database inverted lists from installed package headers"
-msgstr ""
-"reconstrueix la base de dades de les llistes inverses des de les capçaleres "
-"dels paquets instal·lats"
-
-msgid "verify database files"
-msgstr "verifica els fitxers de la base de dades"
-
 #, fuzzy
-msgid "salvage database"
-msgstr "inicialitza la base de dades"
-
-msgid "export database to stdout header list"
-msgstr ""
-"exporta la base de dades al llistat de capçaleres de la sortida estàndard"
-
-msgid "import database from stdin header list"
-msgstr ""
-"importa la base de dades des de la llista de capçaleres de l'entrada "
-"estàndard"
-
-msgid "Database options:"
-msgstr "Opcions de la base de dades:"
-
-msgid "only one major mode may be specified"
-msgstr "només es pot especificar un mode principal"
-
-msgid "verify package signature(s)"
-msgstr "verifica la signatura dels paquets"
-
-msgid "import an armored public key"
-msgstr "importa una clau pública armada"
-
-msgid "don't import, but tell if it would work or not"
-msgstr "no importis, però diguis si podria funcionar o no"
-
-msgid "list keys from RPM keyring"
-msgstr "llista les claus des de l'anell de claus RPM"
-
-msgid "Keyring options:"
-msgstr "Opcions de l'anell de claus:"
-
-msgid "no arguments given"
-msgstr "no s'han donat arguments"
-
-msgid "Query/Verify package selection options:"
-msgstr "Opcions de selecció de paquets, de consulta o verificació:"
-
-msgid "Query/Verify file selection options:"
-msgstr ""
-
-msgid "Query options (with -q or --query):"
-msgstr "Opcions de consulta (amb -q o --query):"
-
-msgid "Verify options (with -V or --verify):"
-msgstr "Opcions de verificació (amb -V o --verify):"
-
-msgid "Install/Upgrade/Erase options:"
-msgstr "Opcions d'instal·lació, actualització o supressió:"
-
-msgid "one type of query/verify may be performed at a time"
-msgstr "només es pot realitzar un tipus consulta o verifica alhora"
-
-msgid "unexpected query flags"
-msgstr "indicadors inesperats de la consulta"
-
-msgid "unexpected query format"
-msgstr "format inesperat de la consulta"
-
-msgid "unexpected query source"
-msgstr "origen inesperat de la consulta"
-
-msgid "only installation and upgrading may be forced"
-msgstr "només es pot forçar la instal·lació i l'actualització"
-
-msgid "files may only be relocated during package installation"
-msgstr ""
-"només es poden traslladar els fitxers durant la instal·lació del paquet"
-
-msgid "cannot use --prefix with --relocate or --excludepath"
-msgstr "no es pot utilitzar l'opció --prefix amb --relocate o --excludepath"
-
-msgid ""
-"--relocate and --excludepath may only be used when installing new packages"
-msgstr ""
-"només es poden utilitzar les opcions --relocate i --excludepath quan "
-"s'instal·lin paquets nous"
-
-msgid "--prefix may only be used when installing new packages"
-msgstr "només es pot utilitzar l'opció --prefix quan s'instal·lin paquets nous"
-
-msgid "arguments to --prefix must begin with a /"
-msgstr "els arguments a --prefix han de començar amb una /"
-
-msgid ""
-"--hash (-h) may only be specified during package installation and erasure"
-msgstr ""
-"--hash (-h) només es pot especificar durant la instal·lació i la supressió "
-"del paquet"
-
-msgid "--percent may only be specified during package installation and erasure"
-msgstr ""
-"--percent només es pot especificar durant la instal·lació i la supressió del "
-"paquet"
-
-msgid "--replacepkgs may only be specified during package installation"
-msgstr ""
-"només es pot especificar l'opció --replacepkgs durant la instal·lació del "
-"paquet"
-
-msgid "--excludedocs may only be specified during package installation"
-msgstr ""
-"només es pot especificar l'opció --excludedocs durant la instal·lació del "
-"paquet"
-
-msgid "--includedocs may only be specified during package installation"
-msgstr ""
-"només es pot especificar l'opció --includedocs durant la instal·lació del "
-"paquet"
-
-msgid "only one of --excludedocs and --includedocs may be specified"
-msgstr "només es pot especificar una opció entre --excludedocs i --includedocs"
-
-msgid "--ignorearch may only be specified during package installation"
-msgstr ""
-"només es pot especificar l'opció --ignorearch durant la instal·lació del "
-"paquet"
-
-msgid "--ignoreos may only be specified during package installation"
-msgstr ""
-"només es pot especificar l'opció --ignoreos durant la instal·lació del paquet"
-
-msgid "--ignoresize may only be specified during package installation"
-msgstr ""
-"només es pot especificar l'opció --ignoresize durant la instal·lació del "
-"paquet"
-
-msgid "--allmatches may only be specified during package erasure"
-msgstr ""
-"només es pot especificar l'opció --allmatches durant la supressió del paquet"
-
-msgid "--allfiles may only be specified during package installation"
-msgstr ""
-"només es pot especificar l'opció --allfiles durant la instal·lació del paquet"
-
-msgid "--justdb may only be specified during package installation and erasure"
-msgstr ""
-"només es pot especificar l'opció --justdb durant la instal·lació i la "
-"supressió del paquet"
-
-msgid ""
-"script disabling options may only be specified during package installation "
-"and erasure"
-msgstr ""
-"només es poden especificar les opcions d'inhabilitació de scripts durant la "
-"instal·lació i la supressió del paquet"
-
-msgid ""
-"trigger disabling options may only be specified during package installation "
-"and erasure"
-msgstr ""
-"només es poden especificar les opcions d'inhabilitació de l'activador durant "
-"la instal·lació i la supressió del paquet"
-
-msgid ""
-"--nodeps may only be specified during package installation, erasure, and "
-"verification"
-msgstr ""
-"--nodeps només es pot especificar durant la instal·lació, la supressió i la "
-"versificació del paquet"
-
-msgid "--test may only be specified during package installation and erasure"
-msgstr ""
-"--test només es pot especificar durant la instal·lació i la supressió del "
-"paquet"
-
-msgid "no packages given for erase"
-msgstr "no s'han donat paquets per a suprimir"
-
-msgid "no packages given for install"
-msgstr "no s'han donat paquets per a instal·lar"
-
-msgid "no arguments given for query"
-msgstr "no s'han donat arguments per a consultar"
-
-msgid "no arguments given for verify"
-msgstr "no s'han proporcionat arguments per verificar"
-
-msgid "sign package(s)"
-msgstr "signa els paquets"
-
-msgid "sign package(s) (identical to --addsign)"
-msgstr "signa els paquets (idèntic a --addsign)"
-
-msgid "delete package signatures"
-msgstr "suprimeix les signatures dels paquets"
-
-msgid "delete IMA and fsverity file signatures"
-msgstr ""
-
-#, fuzzy
-msgid "create rpm v3 header+payload signatures"
-msgstr "no verifiquis la signatura de la capçalera i la càrrega"
-
-msgid "sign package(s) files"
-msgstr ""
-
-msgid "generate fsverity signatures for package(s) files"
-msgstr ""
-
-msgid "algorithm to use for verity signatures, default sha256"
-msgstr ""
-
-msgid "<algorithm>"
-msgstr ""
-
-msgid "use file signing cert <cert>"
-msgstr ""
-
-msgid "<cert>"
-msgstr ""
-
-msgid "use file signing key <key>"
-msgstr ""
-
-msgid "<key>"
-msgstr ""
-
-msgid "prompt for file signing key password"
-msgstr ""
-
-msgid "Signature options:"
-msgstr "Opcions de la signatura:"
-
-#, c-format
-msgid "You must set \"%%_gpg_name\" in your macro file\n"
-msgstr "Heu d'establir «%%_gpg_name» al vostre fitxer de macros\n"
-
-#, c-format
-msgid ""
-"You must set \"%%_file_signing_key\" in your macro file or on the command "
-"line with --fskpath\n"
-msgstr ""
-
-msgid "--fskpath may only be specified when signing files"
-msgstr ""
-
-msgid "parse spec file(s) to stdout"
-msgstr "analitza sintàcticament els fitxers spec per la sortida estàndard"
-
-msgid "query spec file(s)"
-msgstr "consulta els fitxers spec"
-
-msgid "interactive macro shell"
-msgstr ""
-
-msgid "operate on binary rpms generated by spec (default)"
-msgstr "opera sobre els binaris dels rpm generats amb el spec (per defecte)"
-
-msgid "operate on binary package header(s) that would be built from spec"
-msgstr ""
-
-msgid "operate on source package header generated by spec"
-msgstr ""
-
-msgid "use the following query format"
-msgstr "utilitza el següent format de consulta"
-
-msgid "Spec options:"
-msgstr "Opcions de spec:"
-
-#, c-format
-msgid "RPM version %s macro shell\n"
-msgstr ""
-
-msgid "no arguments given for parse"
-msgstr "no s'ha proporcionat arguments per analitzar sintàcticament"
+#| msgid "unable to read the signature\n"
+msgid "unable to parse _buildtime macro\n"
+msgstr "no es pot llegir la signatura\n"
 
 msgid "unable to parse SOURCE_DATE_EPOCH\n"
 msgstr ""
@@ -610,12 +53,19 @@ msgstr "Estat incorrecte de sortida de %s (%s)\n"
 msgid "Failed build dependencies:\n"
 msgstr "Han fallat les dependències de la construcció:\n"
 
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to create package build directory %s: %s\n"
+msgstr "ha fallat en crear el directori %s: %s\n"
+
 #, c-format
 msgid "setting %s=%s\n"
 msgstr ""
 
 #, c-format
-msgid "source_date_epoch_from_changelog set but %%changelog is missing\n"
+msgid ""
+"%%source_date_epoch_from_changelog is set, but %%changelog has no entries to "
+"take a date from\n"
 msgstr ""
 
 msgid ""
@@ -689,11 +139,23 @@ msgid "File must begin with \"/\": %s\n"
 msgstr "El fitxer ha de començar amb «/»: %s\n"
 
 #, c-format
-msgid "unable to parse %s=%s\n"
+msgid ""
+"%%clamp_mtime_to_source_date_epoch is deprecated, please use "
+"%%build_mtime_policy\n"
 msgstr ""
 
 #, c-format
-msgid "Unknown file digest algorithm %u, falling back to MD5\n"
+msgid "unable to parse %s=%s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "Unknown icon type: %s\n"
+msgid "Unknown mtime policy '%s'\n"
+msgstr "Tipus desconegut d'icona: %s\n"
+
+#, fuzzy, c-format
+#| msgid "Unknown file digest algorithm %u, falling back to MD5\n"
+msgid "Unknown file digest algorithm %u, falling back to %u\n"
 msgstr "Es desconeix l'algorisme de resum del fitxer %u, es torna al MD5\n"
 
 #, c-format
@@ -921,9 +383,24 @@ msgstr "No es pot generar el nom de fitxer de sortida per al paquet %s: %s\n"
 msgid "Finished binary package job, result %d, filename %s\n"
 msgstr ""
 
+#, fuzzy, c-format
+#| msgid "line %d: Error parsing %s: %s\n"
+msgid "line %d: Error parsing script: %s: %s\n"
+msgstr "línia %d: S'ha produït un error en analitzar sintàcticament %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "line %d: Bad option %s: %s\n"
+msgid "line %d: Bad %s option %s: %s\n"
+msgstr "línia %d: Opció %s incorrecta: %s\n"
+
 #, c-format
 msgid "line %d: second %s\n"
 msgstr "línia %d: segon %s\n"
+
+#, fuzzy, c-format
+#| msgid "line %d: unsupported internal script: %s\n"
+msgid "line %d: append and prepend specified: %s\n"
+msgstr "línia %d: el script intern no està disponible: %s\n"
 
 #, c-format
 msgid "bogus date in %%changelog: %s\n"
@@ -1034,6 +511,11 @@ msgstr "No s'ha inclòs el SO: %s\n"
 msgid "%s field must be present in package: %s\n"
 msgstr "El camp %s ha d'estar present al paquet: %s\n"
 
+#, fuzzy, c-format
+#| msgid "%s field must be present in package: %s\n"
+msgid "%s field must be present before build in package: %s\n"
+msgstr "El camp %s ha d'estar present al paquet: %s\n"
+
 #, c-format
 msgid "Duplicate %s entries in package: %s\n"
 msgstr "L'entrada %s està duplicada al paquet: %s\n"
@@ -1104,6 +586,11 @@ msgstr "línia %d: Format incorrecte del BuildArchitecture: %s\n"
 msgid "line %d: Duplicate BuildArch entry: %s\n"
 msgstr ""
 
+#, fuzzy, c-format
+#| msgid "line %d: Only noarch subpackages are supported: %s\n"
+msgid "line %d: Only noarch is allowed after the build: %s\n"
+msgstr "línia %d: Només els subpaquets noarch estan suportats: %s\n"
+
 #, c-format
 msgid "line %d: Only noarch subpackages are supported: %s\n"
 msgstr "línia %d: Només els subpaquets noarch estan suportats: %s\n"
@@ -1127,13 +614,15 @@ msgstr ""
 msgid "line %d: Unknown tag: %s\n"
 msgstr "línia %d: Etiqueta desconeguda: %s\n"
 
-#, c-format
-msgid "%%{buildroot} couldn't be empty\n"
-msgstr "%%{buildroot} no pot estar buit\n"
+#, fuzzy, c-format
+#| msgid "line %d: Tag takes single token only: %s\n"
+msgid "line %d: Tag not allowed after build is done: %s\n"
+msgstr "línia %d: L'etiqueta pren un únic testimoni: %s\n"
 
-#, c-format
-msgid "%%{buildroot} can not be \"/\"\n"
-msgstr "%%{buildroot} no pot ser \"/\"\n"
+#, fuzzy, c-format
+#| msgid "Invalid capability: %s\n"
+msgid "Invalid buildroot: '%s'\n"
+msgstr "Capacitat no vàlida: %s\n"
 
 #, c-format
 msgid "No patch number %u\n"
@@ -1163,15 +652,6 @@ msgstr ""
 msgid "Invalid patch number %s: %s\n"
 msgstr "El número de pedaç %s no és vàlid: %s\n"
 
-#, c-format
-msgid "line %d: second %%prep\n"
-msgstr "línia %d: segon %%prep\n"
-
-#, c-format
-msgid ""
-"%%patchN is deprecated (%i usages found), use %%patch N (or %%patch -P N)\n"
-msgstr ""
-
 msgid "Dependency tokens must begin with alpha-numeric, '_' or '/'"
 msgstr ""
 
@@ -1187,6 +667,11 @@ msgstr "dependència no vàlida"
 msgid "Version required"
 msgstr "Es requereix la versió"
 
+#, fuzzy
+#| msgid "relocations must begin with a /"
+msgid "file trigger conditions must begin with '/'"
+msgstr "els trasllats han de començar amb /"
+
 msgid "Only package names are allowed in Obsoletes"
 msgstr ""
 
@@ -1194,9 +679,6 @@ msgid "It's not recommended to have unversioned Obsoletes"
 msgstr ""
 
 msgid "It's not recommended to use '>' in Obsoletes"
-msgstr ""
-
-msgid "Only absolute paths are allowed in file triggers"
 msgstr ""
 
 msgid "Trigger fired by the same package is already defined in spec file"
@@ -1237,10 +719,6 @@ msgstr "línia %d: Segon %s\n"
 #, c-format
 msgid "line %d: unsupported internal script: %s\n"
 msgstr "línia %d: el script intern no està disponible: %s\n"
-
-#, c-format
-msgid "line %d: file trigger condition must begin with '/': %s"
-msgstr ""
 
 #, c-format
 msgid "line %d: interpreter arguments not allowed in triggers: %s\n"
@@ -1287,6 +765,10 @@ msgid "%s:%d: malformed %%include statement\n"
 msgstr ""
 
 #, c-format
+msgid "%%patchN is obsolete, use %%patch N (or %%patch -P N): %s\n"
+msgstr ""
+
+#, c-format
 msgid "encoding %s not supported by system\n"
 msgstr ""
 
@@ -1306,8 +788,36 @@ msgstr ""
 msgid "line %d doesn't belong to any section: %s\n"
 msgstr ""
 
+#, fuzzy, c-format
+#| msgid "line %d: Unknown tag: %s\n"
+msgid "line %d: Unknown buildsystem: %s\n"
+msgstr "línia %d: Etiqueta desconeguda: %s\n"
+
+#, c-format
+msgid ""
+"line %d: Required parametric macro %%%s not defined for buildsystem %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "failed to write all data to %s: %s\n"
+msgid "failed to write buildsystem %s %%%s: %s\n"
+msgstr "ha fallat l'escriptura de totes les dades a %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "Couldn't create temporary file for %s: %s\n"
+msgid "failed to create temp file for buildsystem: %s\n"
+msgstr "No s'ha pogut crear el fitxer temporal per a %s: %s\n"
+
+#, c-format
+msgid "Section %s is not allowed after build is done!\n"
+msgstr ""
+
 msgid "No compatible architectures found for build\n"
 msgstr "No s'ha trobat cap arquitectura compatible per a la construcció\n"
+
+#, c-format
+msgid "invalid rpm format %d requested, using %d\n"
+msgstr ""
 
 #, c-format
 msgid "Package has no %%description: %s\n"
@@ -1399,6 +909,10 @@ msgstr "ha fallat %s: %x\n"
 msgid "failed to write all data to %s: %s\n"
 msgstr "ha fallat l'escriptura de totes les dades a %s: %s\n"
 
+#, c-format
+msgid "invalid or out of order path from generator: %s\n"
+msgstr ""
+
 msgid "Empty file classifier\n"
 msgstr "Classificador buit de fitxer\n"
 
@@ -1430,6 +944,9 @@ msgid "Failed to find %s:\n"
 msgstr "Ha fallat la cerca de %s:\n"
 
 msgid "Deprecated external dependency generator is used!\n"
+msgstr ""
+
+msgid "External dependency generator is incompatible with v6 packages\n"
 msgstr ""
 
 #, c-format
@@ -1557,8 +1074,9 @@ msgstr ""
 msgid "%s%s created as %s%s\n"
 msgstr ""
 
-#, c-format
-msgid "%s %s: remove failed: %s\n"
+#, fuzzy, c-format
+#| msgid "%s %s: remove failed: %s\n"
+msgid "%s %s%s: remove failed: %s\n"
 msgstr "%s %s: ha fallat la supressió: %s\n"
 
 msgid "directory"
@@ -1684,9 +1202,40 @@ msgstr "s'esperava | al final de l'expressió"
 msgid "array iterator used with different sized arrays"
 msgstr "iterador de seqüència que s'utilitza amb seqüències de diferents mides"
 
+#, c-format
+msgid "%s: reading of public key failed.\n"
+msgstr "%s: ha fallat la lectura de la clau pública.\n"
+
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to create keyring directory %s: %s\n"
+msgstr "ha fallat en crear el directori %s: %s\n"
+
+#, c-format
+msgid "failed to import key: %s: %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "can't create %s lock on %s (%s)\n"
+msgid "Can't create writelock for keyring at %s: %s\n"
+msgstr "no es pot crear el bloqueig %s a %s (%s)\n"
+
+#, c-format
+msgid "Can't acquire writelock for keyring at %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "%s: not an armored public key.\n"
+msgid "%s is not a valid public key\n"
+msgstr "%s: no és una clau pública armada.\n"
+
 #, fuzzy, c-format
 msgid "RPM v3 packages are deprecated: %s\n"
 msgstr "línia %d: %s està en desús: %s\n"
+
+#, c-format
+msgid "RPM version %s\n"
+msgstr "Versió %s de RPM\n"
 
 msgid "Error writing to stdout"
 msgstr ""
@@ -1793,9 +1342,6 @@ msgstr "depura la màquina d'estats del fitxer de càrrega"
 
 msgid "debug rpmio I/O"
 msgstr "depura l'E/S de rpmio"
-
-msgid "disable user namespace support"
-msgstr ""
 
 #, c-format
 msgid "%s: option table misconfigured (%d)\n"
@@ -2026,12 +1572,6 @@ msgstr "consulta o verifica els paquets al grup"
 msgid "query/verify a package file"
 msgstr "consulta o verifica un fitxer del paquet"
 
-msgid "query/verify package(s) with package identifier"
-msgstr "consulta o verifica els paquets amb l'identificador de paquet"
-
-msgid "query/verify package(s) with header identifier"
-msgstr "consulta o verifica els paquets amb l'identificador de capçalera"
-
 msgid "rpm query mode"
 msgstr "mode rpm de consulta"
 
@@ -2046,6 +1586,11 @@ msgstr "consulta els paquets exigits pel paquet"
 
 msgid "rpm verify mode"
 msgstr "mode rpm de verificació"
+
+#, fuzzy
+#| msgid "query/verify the package(s) which provide a dependency"
+msgid "query/verify the package(s) which conflict with a dependency"
+msgstr "consulta o verifica els paquets que proporcionen una dependència"
 
 msgid "query/verify the package(s) which require a dependency"
 msgstr "consulta o verifica els paquets que requereixen una dependència"
@@ -2103,6 +1648,9 @@ msgstr "mostra la informació bàsica del fitxer"
 
 msgid "list files in package"
 msgstr "mostra tots els fitxers del paquet"
+
+msgid "use the following query format"
+msgstr "utilitza el següent format de consulta"
 
 msgid "display the states of the listed files"
 msgstr "mostra els estats dels fitxers llistats"
@@ -2526,15 +2074,16 @@ msgid "Wrong number of entries for tag %s: %u found but %u expected.\n"
 msgstr ""
 
 #, c-format
-msgid "Malformed data for tag %s: %u bytes found but %lu expected.\n"
+msgid "Malformed data for tag %s: %u bytes found but %<PRIu64> expected.\n"
 msgstr ""
 
-#, c-format
-msgid "%s: base64 decode failed, len %li\n"
-msgstr ""
+#, fuzzy, c-format
+#| msgid "%s %s: remove failed: %s\n"
+msgid "%s: base64 decode failed, len %zu\n"
+msgstr "%s %s: ha fallat la supressió: %s\n"
 
 #, c-format
-msgid "%s: base64 decode success, len %li\n"
+msgid "%s: base64 decode success, len %zu\n"
 msgstr ""
 
 msgid "Bad magic"
@@ -2564,7 +2113,7 @@ msgstr "Error intern"
 msgid "Archive file not in header"
 msgstr "El fitxer de l'arxiu no és a la capçalera"
 
-msgid "Invalid symlink"
+msgid "Unsafe symlink"
 msgstr ""
 
 msgid "File from package already exists as a directory in system"
@@ -2640,6 +2189,11 @@ msgstr "el paquet %s no es pot traslladar\n"
 msgid "error reading from file %s\n"
 msgstr "s'ha produït un error en llegir del fitxer %s\n"
 
+#, fuzzy, c-format
+#| msgid "no package matches %s: %s\n"
+msgid "package format not supported: %s\n"
+msgstr "cap paquet concorda amb %s: %s\n"
+
 #, c-format
 msgid "\"%s\" specifies multiple packages:\n"
 msgstr "«%s» especifica múltiples paquets:\n"
@@ -2654,12 +2208,6 @@ msgstr "S'instal·la %s\n"
 
 msgid "not an rpm package"
 msgstr "no és un paquet rpm"
-
-msgid "illegal signature type"
-msgstr "tipus de signatura no vàlida"
-
-msgid "unsupported RPM package version"
-msgstr "versió no suportada d'empaquetatge RPM"
 
 #, c-format
 msgid "read failed: %s (%d)\n"
@@ -2805,6 +2353,11 @@ msgstr "falta l'argument per %s a %s:%d\n"
 msgid "cannot open %s at %s:%d: %m\n"
 msgstr "no s'ha pogut obrir %s a %s:%d: %m\n"
 
+#, fuzzy, c-format
+#| msgid "bad option '%s' at %s:%d\n"
+msgid "Ignoring %s at %s:%d\n"
+msgstr "opció incorrecta «%s» a %s:%d\n"
+
 #, c-format
 msgid "missing architecture for %s at %s:%d\n"
 msgstr "falta l'arquitectura per a %s a %s:%d\n"
@@ -2863,6 +2416,15 @@ msgstr "Ha fallat el scriptlet %s, estat de sortida %d\n"
 msgid "Unknown format"
 msgstr "Format desconegut"
 
+#, c-format
+msgid "erasing gpg-pubkey packages is deprecated; use rpmkeys --delete %s\n"
+msgstr ""
+
+msgid ""
+"public keys can not be installed as gpg-pubkey packages; use rpmkeys --"
+"import <keyfile> for that\n"
+msgstr ""
+
 msgid "install"
 msgstr "instal·la"
 
@@ -2892,16 +2454,13 @@ msgid "missing ')' in package label: %s\n"
 msgstr "falta un «)» a l'etiqueta del paquet: %s\n"
 
 #, c-format
-msgid "%s: reading of public key failed.\n"
-msgstr "%s: ha fallat la lectura de la clau pública.\n"
-
-#, c-format
 msgid "unknown keyring type: %s, using rpmdb\n"
 msgstr ""
 
-#, c-format
-msgid "failed to import key: %s: %s\n"
-msgstr ""
+#, fuzzy, c-format
+#| msgid "Unknown icon type: %s\n"
+msgid "unknown keyring type: %s\n"
+msgstr "Tipus desconegut d'icona: %s\n"
 
 #, c-format
 msgid "invalid package verify level %s\n"
@@ -2927,6 +2486,10 @@ msgid "%s tag %u: invalid size %u"
 msgstr ""
 
 #, c-format
+msgid "%s tag %u: invalid base64"
+msgstr ""
+
+#, c-format
 msgid "%s tag %u: invalid OpenPGP signature"
 msgstr ""
 
@@ -2934,18 +2497,27 @@ msgstr ""
 msgid "%s: tag %u: invalid hex"
 msgstr ""
 
-#, c-format
-msgid "%s%s%s %s"
-msgstr ""
+#, fuzzy, c-format
+#| msgid "%s saved as %s\n"
+msgid "%s %s%s %s"
+msgstr "%s s'ha desat com a %s\n"
 
 msgid "digest"
 msgstr ""
 
 #, c-format
-msgid "%s%s"
+msgid "%s OpenPGP %s"
+msgstr ""
+
+#, c-format
+msgid "%s OpenPGP %s %s"
 msgstr ""
 
 msgid "signature"
+msgstr ""
+
+#, c-format
+msgid ", key fingerprint: %s"
 msgstr ""
 
 msgid "header"
@@ -2954,10 +2526,12 @@ msgstr ""
 msgid "package"
 msgstr ""
 
-msgid "Header "
+#, fuzzy
+#| msgid "Header "
+msgid "Header"
 msgstr "Capçalera "
 
-msgid "Payload "
+msgid "Payload"
 msgstr ""
 
 msgid "Unable to reload signature header.\n"
@@ -3041,8 +2615,9 @@ msgstr ""
 msgid "syntax error in expression"
 msgstr "error de sintaxi a l'expressió\n"
 
-msgid "unsupported funcion"
-msgstr ""
+#, fuzzy
+msgid "unsupported function"
+msgstr "- no és disponible per a les cadenes\n"
 
 #, fuzzy
 msgid "unmatched ("
@@ -3159,7 +2734,16 @@ msgid "A %% is followed by an unparseable macro\n"
 msgstr "Un %% precedeix una macro que no es pot analitzar\n"
 
 #, c-format
-msgid "======================== active %d empty %d\n"
+msgid "unexpected argument to non-parametric macro %%%s\n"
+msgstr ""
+
+#, c-format
+msgid "macro value out of range for int: %<PRIu64> using %i instead.\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "======================== active %d empty %d\n"
+msgid "======================== active %zu empty %d\n"
 msgstr "======================== actiu %d buit %d\n"
 
 #, c-format
@@ -3232,6 +2816,15 @@ msgstr "V%d %s/%s %s, id. de la clau %s"
 msgid "(none)"
 msgstr "(cap)"
 
+#, fuzzy, c-format
+#| msgid "Could not read from file %s: %s\n"
+msgid "Could not find url helper: \"%s\"\n"
+msgstr "No s'ha pogut llegir des del fitxer %s: %s\n"
+
+#, c-format
+msgid "Executing url helper \"%s\" failed with status %i\n"
+msgstr ""
+
 #, c-format
 msgid "%s: Fwrite failed: %s\n"
 msgstr "%s: ha fallat el fwrite: %s\n"
@@ -3244,25 +2837,15 @@ msgstr "%s: Ha fallat el fread: %s\n"
 msgid "%s: Fflush failed: %s\n"
 msgstr "%s: ha fallat el fflush: %s\n"
 
-#, fuzzy
-#| msgid "Unsupported PGP signature\n"
-msgid "Unsupported OpenPGP signature\n"
-msgstr "Signatura PGP no suportada\n"
+#, fuzzy, c-format
+#| msgid "reading symlink %s failed: %s\n"
+msgid "Expanding signing macro %s failed\n"
+msgstr "la lectura de l'enllaç simbòlic %s ha fallat: %s\n"
 
 #, fuzzy, c-format
-#| msgid "Unsupported PGP hash algorithm %u\n"
-msgid "Unsupported OpenPGP hash algorithm %u\n"
-msgstr "Algoritme de dispersió PGP no suportat %u\n"
-
-#, fuzzy, c-format
-#| msgid "Unsupported PGP pubkey algorithm %u\n"
-msgid "Unsupported OpenPGP pubkey algorithm %u\n"
-msgstr "Algoritme de clau pública PGP no suportat %u\n"
-
-#, fuzzy, c-format
-#| msgid "Unsupported PGP signature\n"
-msgid "Deprecated OpenPGP signature version %d\n"
-msgstr "Signatura PGP no suportada\n"
+#| msgid "Invalid %s token: %s\n"
+msgid "Invalid sign command: %s\n"
+msgstr "L'element %s no és vàlid: %s\n"
 
 #, fuzzy, c-format
 msgid "Could not create pipe for signing: %m\n"
@@ -3289,18 +2872,43 @@ msgstr "No s'ha pogut llegir des del fitxer %s: %s\n"
 
 #, fuzzy, c-format
 #| msgid "gpg exec failed (%d)\n"
-msgid "gpg waitpid failed (%s)\n"
+msgid "%s waitpid failed (%s)\n"
 msgstr "ha fallat l'execució del gpg (%d)\n"
 
-#, c-format
-msgid "gpg exec failed (%d)\n"
+#, fuzzy, c-format
+#| msgid "gpg exec failed (%d)\n"
+msgid "%s exec failed (%d)\n"
 msgstr "ha fallat l'execució del gpg (%d)\n"
 
-msgid "gpg failed to write signature\n"
+#, fuzzy, c-format
+#| msgid "gpg failed to write signature\n"
+msgid "failed to write signature: %s\n"
 msgstr "el gpg no ha escrit la signatura\n"
 
-msgid "unable to read the signature\n"
+#, fuzzy, c-format
+#| msgid "unable to read the signature\n"
+msgid "unable to read the signature: %s\n"
 msgstr "no es pot llegir la signatura\n"
+
+#, fuzzy
+#| msgid "Unsupported PGP signature\n"
+msgid "Unsupported OpenPGP signature\n"
+msgstr "Signatura PGP no suportada\n"
+
+#, fuzzy, c-format
+#| msgid "Unsupported PGP hash algorithm %u\n"
+msgid "Unsupported OpenPGP hash algorithm %u\n"
+msgstr "Algoritme de dispersió PGP no suportat %u\n"
+
+#, fuzzy, c-format
+#| msgid "Unsupported PGP signature\n"
+msgid "Deprecated OpenPGP signature version %d\n"
+msgstr "Signatura PGP no suportada\n"
+
+#, fuzzy, c-format
+#| msgid "Unsupported PGP pubkey algorithm %u\n"
+msgid "Unsupported OpenPGP pubkey algorithm %u for rpm v3/v4 signatures\n"
+msgstr "Algoritme de clau pública PGP no suportat %u\n"
 
 msgid "file signing support not built in\n"
 msgstr ""
@@ -3327,18 +2935,42 @@ msgstr "%s: El rpmReadSignature ha fallat: %s"
 msgid "%s: headerRead failed: %s\n"
 msgstr "%s: ha fallat el headerRead: %s\n"
 
-msgid "Cannot sign RPM v3 packages\n"
+#, fuzzy, c-format
+#| msgid "Cannot sign RPM v3 packages\n"
+msgid "Cannot sign RPM v3 packages: %s\n"
 msgstr "No es poden signar els paquets RPM v3\n"
 
+#, fuzzy, c-format
+#| msgid "Could not generate output filename for package %s: %s\n"
+msgid "not generating v3 signature for v6 package: %s\n"
+msgstr "No es pot generar el nom de fitxer de sortida per al paquet %s: %s\n"
+
 #, c-format
-msgid "%s already contains identical signature, skipping\n"
+msgid "File signatures not applicable to src.rpm: %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "Could not read from file %s: %s\n"
+msgid "Could not get a file size of %s\n"
+msgstr "No s'ha pogut llegir des del fitxer %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "%s already contains identical signature, skipping\n"
+msgid "%s already contains an identical signature, skipping\n"
+msgstr "%s ja conté una signatura idèntica i s'ignora\n"
+
+#, fuzzy, c-format
+#| msgid "%s already contains identical signature, skipping\n"
+msgid "%s already contains a legacy signature\n"
 msgstr "%s ja conté una signatura idèntica i s'ignora\n"
 
 #, c-format
 msgid "%s: rpmWriteSignature failed: %s\n"
 msgstr "%s: ha fallat el rpmWriteSignature: %s\n"
 
-msgid "rpmMkTemp failed\n"
+#, fuzzy, c-format
+#| msgid "rpmMkTemp failed\n"
+msgid "rpmMkTemp failed: %s\n"
 msgstr "Ha fallat el rpmMkTemp\n"
 
 #, fuzzy, c-format
@@ -3363,11 +2995,515 @@ msgid "headerPutString failed\n"
 msgstr ""
 
 #, c-format
+msgid "%s: %s\n"
+msgstr "%s: %s\n"
+
+#, c-format
+msgid "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
+msgstr "Copyright (c) 1998 - 2002 Red Hat, Inc.\n"
+
+#, c-format
+msgid ""
+"This program may be freely redistributed under the terms of the GNU GPL\n"
+msgstr ""
+"Aquest programari es pot distribuir lliurement d'acord amb els termes de la "
+"Llicència Pública General GNU\n"
+
+#, c-format
+msgid "creating a pipe for --pipe failed: %m\n"
+msgstr "Ha fallat la creació d'una canonada per a --pipe: %m\n"
+
+#, c-format
+msgid "exec failed\n"
+msgstr "ha fallat l'exec\n"
+
+msgid "Query/Verify package selection options:"
+msgstr "Opcions de selecció de paquets, de consulta o verificació:"
+
+msgid "Query/Verify file selection options:"
+msgstr ""
+
+msgid "Query options (with -q or --query):"
+msgstr "Opcions de consulta (amb -q o --query):"
+
+msgid "Verify options (with -V or --verify):"
+msgstr "Opcions de verificació (amb -V o --verify):"
+
+msgid "Install/Upgrade/Erase options:"
+msgstr "Opcions d'instal·lació, actualització o supressió:"
+
+msgid "Common options for all rpm modes and executables:"
+msgstr "Opcions comunes per a tots els modes rpm i executables:"
+
+msgid "one type of query/verify may be performed at a time"
+msgstr "només es pot realitzar un tipus consulta o verifica alhora"
+
+msgid "unexpected query flags"
+msgstr "indicadors inesperats de la consulta"
+
+msgid "unexpected query format"
+msgstr "format inesperat de la consulta"
+
+msgid "unexpected query source"
+msgstr "origen inesperat de la consulta"
+
+msgid "only one major mode may be specified"
+msgstr "només es pot especificar un mode principal"
+
+msgid "only installation and upgrading may be forced"
+msgstr "només es pot forçar la instal·lació i l'actualització"
+
+msgid "files may only be relocated during package installation"
+msgstr ""
+"només es poden traslladar els fitxers durant la instal·lació del paquet"
+
+msgid "cannot use --prefix with --relocate or --excludepath"
+msgstr "no es pot utilitzar l'opció --prefix amb --relocate o --excludepath"
+
+msgid ""
+"--relocate and --excludepath may only be used when installing new packages"
+msgstr ""
+"només es poden utilitzar les opcions --relocate i --excludepath quan "
+"s'instal·lin paquets nous"
+
+msgid "--prefix may only be used when installing new packages"
+msgstr "només es pot utilitzar l'opció --prefix quan s'instal·lin paquets nous"
+
+msgid "arguments to --prefix must begin with a /"
+msgstr "els arguments a --prefix han de començar amb una /"
+
+msgid ""
+"--hash (-h) may only be specified during package installation and erasure"
+msgstr ""
+"--hash (-h) només es pot especificar durant la instal·lació i la supressió "
+"del paquet"
+
+msgid "--percent may only be specified during package installation and erasure"
+msgstr ""
+"--percent només es pot especificar durant la instal·lació i la supressió del "
+"paquet"
+
+msgid "--replacepkgs may only be specified during package installation"
+msgstr ""
+"només es pot especificar l'opció --replacepkgs durant la instal·lació del "
+"paquet"
+
+msgid "--excludedocs may only be specified during package installation"
+msgstr ""
+"només es pot especificar l'opció --excludedocs durant la instal·lació del "
+"paquet"
+
+msgid "--includedocs may only be specified during package installation"
+msgstr ""
+"només es pot especificar l'opció --includedocs durant la instal·lació del "
+"paquet"
+
+msgid "only one of --excludedocs and --includedocs may be specified"
+msgstr "només es pot especificar una opció entre --excludedocs i --includedocs"
+
+msgid "--ignorearch may only be specified during package installation"
+msgstr ""
+"només es pot especificar l'opció --ignorearch durant la instal·lació del "
+"paquet"
+
+msgid "--ignoreos may only be specified during package installation"
+msgstr ""
+"només es pot especificar l'opció --ignoreos durant la instal·lació del paquet"
+
+msgid "--ignoresize may only be specified during package installation"
+msgstr ""
+"només es pot especificar l'opció --ignoresize durant la instal·lació del "
+"paquet"
+
+msgid "--allmatches may only be specified during package erasure"
+msgstr ""
+"només es pot especificar l'opció --allmatches durant la supressió del paquet"
+
+msgid "--allfiles may only be specified during package installation"
+msgstr ""
+"només es pot especificar l'opció --allfiles durant la instal·lació del paquet"
+
+msgid "--justdb may only be specified during package installation and erasure"
+msgstr ""
+"només es pot especificar l'opció --justdb durant la instal·lació i la "
+"supressió del paquet"
+
+msgid ""
+"script disabling options may only be specified during package installation "
+"and erasure"
+msgstr ""
+"només es poden especificar les opcions d'inhabilitació de scripts durant la "
+"instal·lació i la supressió del paquet"
+
+msgid ""
+"trigger disabling options may only be specified during package installation "
+"and erasure"
+msgstr ""
+"només es poden especificar les opcions d'inhabilitació de l'activador durant "
+"la instal·lació i la supressió del paquet"
+
+msgid ""
+"--nodeps may only be specified during package installation, erasure, and "
+"verification"
+msgstr ""
+"--nodeps només es pot especificar durant la instal·lació, la supressió i la "
+"versificació del paquet"
+
+msgid "--test may only be specified during package installation and erasure"
+msgstr ""
+"--test només es pot especificar durant la instal·lació i la supressió del "
+"paquet"
+
+msgid "arguments to --root (-r) must begin with a /"
+msgstr "els arguments a --root (-r) han de començar per /"
+
+msgid "no packages given for erase"
+msgstr "no s'han donat paquets per a suprimir"
+
+msgid "no packages given for install"
+msgstr "no s'han donat paquets per a instal·lar"
+
+msgid "no arguments given for query"
+msgstr "no s'han donat arguments per a consultar"
+
+msgid "no arguments given for verify"
+msgstr "no s'han proporcionat arguments per verificar"
+
+msgid "create uncompressed archive"
+msgstr ""
+
+msgid "archive format (pax|cpio)"
+msgstr ""
+
+#, c-format
+msgid "argument is not an RPM package\n"
+msgstr "l'argument no és un paquet RPM\n"
+
+#, c-format
+msgid "error reading header from package\n"
+msgstr "s'ha produït un error en llegir la capçalera del paquet\n"
+
+#, c-format
+msgid "cannot re-open payload: %s\n"
+msgstr "no s'ha pogut tornar a obrir la càrrega: %s\n"
+
+msgid "initialize database"
+msgstr "inicialitza la base de dades"
+
+msgid "rebuild database inverted lists from installed package headers"
+msgstr ""
+"reconstrueix la base de dades de les llistes inverses des de les capçaleres "
+"dels paquets instal·lats"
+
+#, fuzzy
+#| msgid "verify database files"
+msgid "verify database"
+msgstr "verifica els fitxers de la base de dades"
+
+#, fuzzy
+msgid "salvage database"
+msgstr "inicialitza la base de dades"
+
+msgid "export database to stdout header list"
+msgstr ""
+"exporta la base de dades al llistat de capçaleres de la sortida estàndard"
+
+msgid "import database from stdin header list"
+msgstr ""
+"importa la base de dades des de la llista de capçaleres de l'entrada "
+"estàndard"
+
+msgid "Database options:"
+msgstr "Opcions de la base de dades:"
+
+#, c-format
+msgid "buildroot already specified, ignoring %s\n"
+msgstr "ja s'ha especificat el buildroot i s'ignora %s\n"
+
+#, c-format
+msgid "build through %prep (unpack sources and apply patches) from <specfile>"
+msgstr ""
+"construeix mitjançant el %prep (desempaqueta les fonts i aplica els pedaços) "
+"des del <fitxer spec>"
+
+msgid "<specfile>"
+msgstr "<fitxer spec>"
+
+#, c-format
+msgid "build through %conf (%prep, then %conf) from <specfile>"
+msgstr ""
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <specfile>"
+msgstr ""
+
+msgid "check build dependencies <specfile>"
+msgstr ""
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <specfile>"
+msgstr ""
+
+#, c-format
+msgid "verify %files section from <specfile>"
+msgstr "verifica la secció %files des del <fitxer spec>"
+
+msgid "build source and binary packages from <specfile>"
+msgstr ""
+"construeix els paquets de les fonts i dels binaris des del <fitxer spec>"
+
+msgid "build binary package only from <specfile>"
+msgstr "construeix només el paquet dels binaris des del <fitxer spec>"
+
+msgid "build source package only from <specfile>"
+msgstr "construeix només el paquet de les fonts des del <fitxer spec>"
+
+msgid ""
+"build source package only from <specfile> - calculate dynamic build requires"
+msgstr ""
+
+#, c-format
+msgid ""
+"build through %prep (unpack sources and apply patches) from <source package>"
+msgstr ""
+"construeix mitjançant el %prep (desempaqueta de les fonts i aplica els "
+"pedaços) des del <paquet de les fonts>"
+
+msgid "<source package>"
+msgstr "<paquet de les fonts>"
+
+#, fuzzy, c-format
+#| msgid "build through %build (%prep, then compile) from <source package>"
+msgid "build through %conf (%prep, then %conf) from <source package>"
+msgstr ""
+"construeix mitjançant el %build (%prep, després compila) des del <paquet de "
+"les fonts>"
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <source package>"
+msgstr ""
+
+msgid "check build dependencies <source package>"
+msgstr ""
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <source "
+"package>"
+msgstr ""
+
+#, c-format
+msgid "verify %files section from <source package>"
+msgstr "verifica la secció %files des del <paquet de les fonts>"
+
+msgid "build source and binary packages from <source package>"
+msgstr ""
+"construeix el paquet dels binaris i de les fonts des del <paquet de les "
+"fonts>"
+
+msgid "build binary package only from <source package>"
+msgstr "construeix només el paquet dels binaris des del <paquet de les fonts>"
+
+msgid "build source package only from <source package>"
+msgstr "construeix només el paquet de les fonts des del <paquet de les fonts>"
+
+msgid ""
+"build source package only from <source package> - calculate dynamic build "
+"requires"
+msgstr ""
+
+#, c-format
+msgid "build through %prep (unpack sources and apply patches) from <tarball>"
+msgstr ""
+"construeix mitjançant el %prep (desempaqueta les fonts i aplica els pedaços) "
+"des de l'<arxiu tar>"
+
+msgid "<tarball>"
+msgstr "<arxiu tar>"
+
+#, fuzzy, c-format
+#| msgid "build through %build (%prep, then compile) from <tarball>"
+msgid "build through %conf (%prep, then %conf) from <tarball>"
+msgstr ""
+"construeix mitjançant el %build (%prep, després compila) des de l'<arxiu tar>"
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <tarball>"
+msgstr ""
+
+msgid "check build dependencies <tarball>"
+msgstr ""
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <tarball>"
+msgstr ""
+
+#, c-format
+msgid "verify %files section from <tarball>"
+msgstr "verifica la secció %files des de l'<arxiu tar>"
+
+msgid "build source and binary packages from <tarball>"
+msgstr ""
+"construeix els paquets de les fonts i dels binaris des de l'<arxiu tar>"
+
+msgid "build binary package only from <tarball>"
+msgstr "construeix el paquet dels binaris només des de l'<arxiu tar>"
+
+msgid "build source package only from <tarball>"
+msgstr "construeix el paquet de les fonts només des de l'<arxiu tar>"
+
+msgid ""
+"build source package only from <tarball> - calculate dynamic build requires"
+msgstr ""
+
+msgid "build binary package from <source package>"
+msgstr "construeix el paquet dels binaris des del <paquet de les fonts>"
+
+#, c-format
+msgid ""
+"build through %install (%prep, %build, then install) from <source package>"
+msgstr ""
+"construeix mitjançant el %install (%prep, %build i instal·la) des del "
+"<paquet de les fonts>"
+
+#, fuzzy
+#| msgid "override build root"
+msgid "override build root (DEPRECATED)"
+msgstr "substitueix l'arrel de la construcció"
+
+msgid "remove build tree when done"
+msgstr "suprimeix l'arbre de la construcció en acabar"
+
+msgid "ignore ExcludeArch: directives from spec file"
+msgstr "ignora ExcludeArch: directives del fitxer d'especificació"
+
+msgid "debug file state machine"
+msgstr "depura la màquina d'estat de fitxers"
+
+msgid "do not execute any stages of the build"
+msgstr "no executis cap de les etapes de la construcció"
+
+msgid "do not verify build dependencies"
+msgstr "no verifiquis les dependències de la construcció"
+
+msgid "generate package header(s) compatible with (legacy) rpm v3 packaging"
+msgstr ""
+"genera capçaleres del paquet compatibles amb l'empaquetament rpm v3 (llegat)"
+
+#, c-format
+msgid "do not execute %clean stage of the build"
+msgstr "no executis l'etapa %clean de la construcció"
+
+#, c-format
+msgid "do not execute %prep stage of the build"
+msgstr "no executis l'etapa %prep de la construcció"
+
+#, c-format
+msgid "do not execute %check stage of the build"
+msgstr "no executis l'etapa %check de la construcció"
+
+msgid "do not accept i18N msgstr's from specfile"
+msgstr "no acceptis els msgstr d'i18N del fitxer spec"
+
+msgid "remove sources when done"
+msgstr "suprimeix les fonts en acabar"
+
+msgid "remove specfile when done"
+msgstr "suprimeix el fitxer spec en acabar"
+
+msgid "skip straight to specified stage (only for c,i)"
+msgstr "vés directament a l'etapa especificada (només per a c,i)"
+
+msgid "override target platform"
+msgstr "substitueix la plataforma"
+
+msgid "Build options with [ <specfile> | <tarball> | <source package> ]:"
+msgstr ""
+"Opcions de construcció amb [ <fitxer spec> | <arxiu tar> | <paquet de les "
+"fonts> ]:"
+
+#, c-format
+msgid "Unable to open spec file %s: %s\n"
+msgstr "No s'ha pogut obrir el fitxer d'especificacions %s: %s\n"
+
+#, c-format
+msgid "Failed to open tar pipe: %m\n"
+msgstr "Ha fallat l'obertura de la canonada per al tar: %m\n"
+
+#, c-format
+msgid "Found more than one spec file in %s\n"
+msgstr "S'ha trobat més d'un fitxer spec a %s\n"
+
+#, c-format
+msgid "Failed to read spec file from %s\n"
+msgstr "Ha fallat la lectura del fitxer spec de %s\n"
+
+#, c-format
+msgid "Failed to rename %s to %s: %m\n"
+msgstr "Ha fallat el canvi de nom de %s a %s: %m\n"
+
+#, c-format
+msgid "failed to stat %s: %m\n"
+msgstr "Ha fallat l'obtenció de l'estat de %s: %m\n"
+
+#, c-format
+msgid "File %s is not a regular file.\n"
+msgstr "El fitxer %s no és un fitxer regular.\n"
+
+#, c-format
+msgid "File %s does not appear to be a specfile.\n"
+msgstr "El fitxer %s no sembla un fitxer d'especificacions.\n"
+
+#, c-format
+msgid "Building target platforms: %s\n"
+msgstr "Construcció per a les plataformes objectiu: %s\n"
+
+#, c-format
+msgid "Building for target %s\n"
+msgstr "Construcció per a l'objectiu %s\n"
+
+#, c-format
 msgid "%s: read manifest failed: %s\n"
 msgstr "%s: ha fallat la lectura del manifest: %s\n"
 
 msgid "don't verify header+payload signature"
 msgstr "no verifiquis la signatura de la capçalera i la càrrega"
+
+msgid "verify package signature(s)"
+msgstr "verifica la signatura dels paquets"
+
+msgid "import an armored public key"
+msgstr "importa una clau pública armada"
+
+#, fuzzy
+#| msgid "import an armored public key"
+msgid "export an public key"
+msgstr "importa una clau pública armada"
+
+msgid "don't import, but tell if it would work or not"
+msgstr "no importis, però diguis si podria funcionar o no"
+
+#, fuzzy
+#| msgid "list keys from RPM keyring"
+msgid "Erase keys from RPM keyring"
+msgstr "llista les claus des de l'anell de claus RPM"
+
+msgid "list keys from RPM keyring"
+msgstr "llista les claus des de l'anell de claus RPM"
+
+msgid "rebuild the keyring - convert to current backend"
+msgstr ""
+
+msgid "get keys from this backend when rebuilding current backend"
+msgstr ""
+
+msgid "Keyring options:"
+msgstr "Opcions de l'anell de claus:"
+
+msgid "no arguments given"
+msgstr "no s'han donat arguments"
 
 msgid "getopt string for scripts options"
 msgstr ""
@@ -3378,11 +3514,144 @@ msgstr ""
 msgid "interactive session"
 msgstr ""
 
+#, fuzzy
+#| msgid "sign package(s) (identical to --addsign)"
+msgid "sign package(s), adding a new signature"
+msgstr "signa els paquets (idèntic a --addsign)"
+
+#, fuzzy
+#| msgid "sign package(s) (identical to --addsign)"
+msgid "resign package(s), deleting any previous signatures"
+msgstr "signa els paquets (idèntic a --addsign)"
+
+msgid "delete package signatures"
+msgstr "suprimeix les signatures dels paquets"
+
+msgid "delete IMA and fsverity file signatures"
+msgstr ""
+
+#, fuzzy
+msgid "request legacy rpm v3 header+payload signatures on v4 packages"
+msgstr "no verifiquis la signatura de la capçalera i la càrrega"
+
+#, fuzzy
+msgid "request legacy rpm v4 header signatures on v6 packages"
+msgstr "no verifiquis la signatura de la capçalera i la càrrega"
+
+#, fuzzy
+msgid "request rpm v6 header signature on v4 packages"
+msgstr "no verifiquis la signatura de la capçalera i la càrrega"
+
+msgid "sign package(s) files"
+msgstr ""
+
+msgid "generate fsverity signatures for package(s) files"
+msgstr ""
+
+msgid "algorithm to use for verity signatures, default sha256"
+msgstr ""
+
+msgid "<algorithm>"
+msgstr ""
+
+msgid "use file signing cert <cert>"
+msgstr ""
+
+msgid "<cert>"
+msgstr ""
+
+msgid "use file signing key <key>"
+msgstr ""
+
+msgid "<key>"
+msgstr ""
+
+msgid "prompt for file signing key password"
+msgstr ""
+
+msgid "Signature options:"
+msgstr "Opcions de la signatura:"
+
+#, fuzzy, c-format
+#| msgid "You must set \"%%_gpg_name\" in your macro file\n"
+msgid "You must set \"%%_openpgp_sign_id\" in your macro file\n"
+msgstr "Heu d'establir «%%_gpg_name» al vostre fitxer de macros\n"
+
+#, c-format
+msgid ""
+"You must set \"%%_file_signing_key\" in your macro file or on the command "
+"line with --fskpath\n"
+msgstr ""
+
+msgid "--fskpath may only be specified when signing files"
+msgstr ""
+
+msgid "parse spec file(s) to stdout"
+msgstr "analitza sintàcticament els fitxers spec per la sortida estàndard"
+
+msgid "query spec file(s)"
+msgstr "consulta els fitxers spec"
+
+msgid "interactive macro shell"
+msgstr ""
+
+msgid "operate on binary rpms generated by spec (default)"
+msgstr "opera sobre els binaris dels rpm generats amb el spec (per defecte)"
+
+msgid "operate on binary package header(s) that would be built from spec"
+msgstr ""
+
+msgid "operate on source package header generated by spec"
+msgstr ""
+
+msgid "Spec options:"
+msgstr "Opcions de spec:"
+
+#, c-format
+msgid "RPM version %s macro shell\n"
+msgstr ""
+
+msgid "no arguments given for parse"
+msgstr "no s'ha proporcionat arguments per analitzar sintàcticament"
+
 msgid "extract an archive"
 msgstr ""
 
 msgid "only print what would be done"
 msgstr ""
+
+msgid "extract into a specific path"
+msgstr ""
+
+#~ msgid "run build in current directory"
+#~ msgstr "executa la construcció al directori actual"
+
+#~ msgid "sign package(s)"
+#~ msgstr "signa els paquets"
+
+#, c-format
+#~ msgid "%%{buildroot} couldn't be empty\n"
+#~ msgstr "%%{buildroot} no pot estar buit\n"
+
+#, c-format
+#~ msgid "%%{buildroot} can not be \"/\"\n"
+#~ msgstr "%%{buildroot} no pot ser \"/\"\n"
+
+#, c-format
+#~ msgid "line %d: second %%prep\n"
+#~ msgstr "línia %d: segon %%prep\n"
+
+#~ msgid "query/verify package(s) with package identifier"
+#~ msgstr "consulta o verifica els paquets amb l'identificador de paquet"
+
+#~ msgid "query/verify package(s) with header identifier"
+#~ msgstr "consulta o verifica els paquets amb l'identificador de capçalera"
+
+#~ msgid "illegal signature type"
+#~ msgstr "tipus de signatura no vàlida"
+
+#~ msgid "unsupported RPM package version"
+#~ msgstr "versió no suportada d'empaquetatge RPM"
 
 #, c-format
 #~ msgid "%s: writeLead failed: %s\n"
@@ -3397,16 +3666,6 @@ msgstr ""
 #~ msgstr ""
 #~ "construeix mitjançant el %install (%prep, %build i després instal·la) des "
 #~ "del <fitxer spec>"
-
-#~ msgid "build through %build (%prep, then compile) from <source package>"
-#~ msgstr ""
-#~ "construeix mitjançant el %build (%prep, després compila) des del <paquet "
-#~ "de les fonts>"
-
-#~ msgid "build through %build (%prep, then compile) from <tarball>"
-#~ msgstr ""
-#~ "construeix mitjançant el %build (%prep, després compila) des de l'<arxiu "
-#~ "tar>"
 
 #~ msgid "build through %install (%prep, %build, then install) from <tarball>"
 #~ msgstr ""
@@ -3486,9 +3745,6 @@ msgstr ""
 
 #~ msgid "%a %b %d %Y"
 #~ msgstr "%a %-d %b de %Y"
-
-#~ msgid "%s saved as %s\n"
-#~ msgstr "%s s'ha desat com a %s\n"
 
 #~ msgid "%s created as %s\n"
 #~ msgstr "%s s'ha creat com a %s\n"

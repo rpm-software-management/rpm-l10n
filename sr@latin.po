@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: RPM\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-04 09:25+0300\n"
+"POT-Creation-Date: 2025-09-01 14:14+0300\n"
 "PO-Revision-Date: 2017-08-10 07:39+0000\n"
 "Last-Translator: pmatilai <pmatilai@laiskiainen.org>\n"
 "Language-Team: Serbian (Latin) (http://www.transifex.com/rpm-team/rpm/"
@@ -19,530 +19,10 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#, c-format
-msgid "%s: %s\n"
-msgstr "%s: %s\n"
-
-#, c-format
-msgid "RPM version %s\n"
-msgstr "RPM verzija %s\n"
-
-#, c-format
-msgid "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
-msgstr "Autorska prava 1998-2002 - Red Hat, Inc.\n"
-
-#, c-format
-msgid ""
-"This program may be freely redistributed under the terms of the GNU GPL\n"
-msgstr "Ovaj program se sme slobodno distribuirati pod GNU OJL odredbama.\n"
-
-#, c-format
-msgid "creating a pipe for --pipe failed: %m\n"
-msgstr "neuspelo pravljenje cevi za --pipe: %m\n"
-
-#, c-format
-msgid "exec failed\n"
-msgstr "neuspelo izvršavanje\n"
-
-msgid "create uncompressed tar file"
-msgstr ""
-
-#, c-format
-msgid "argument is not an RPM package\n"
-msgstr "argument nije RPM paket\n"
-
-#, c-format
-msgid "error reading header from package\n"
-msgstr "greška pri čitanju zaglavlja iz paketa\n"
-
-#, c-format
-msgid "cannot re-open payload: %s\n"
-msgstr "ne mogu da ponovo otvorim tovar: %s\n"
-
-#, c-format
-msgid "files over 4GB not supported by cpio, use rpm2archive instead\n"
-msgstr ""
-
-#, c-format
-msgid "buildroot already specified, ignoring %s\n"
-msgstr "buildroot je već naveden, zanemarujem %s\n"
-
-#, c-format
-msgid "build through %prep (unpack sources and apply patches) from <specfile>"
-msgstr ""
-"napravi kroz %prep (raspakovani izvori i primenjene zakrpe) iz <specfile>"
-
-msgid "<specfile>"
-msgstr "<specfile>"
-
-#, c-format
-msgid "build through %conf (%prep, then %conf) from <specfile>"
-msgstr ""
-
-msgid "build through %build (%prep, %conf, then compile) from <specfile>"
-msgstr ""
-
-msgid "check build dependencies <specfile>"
-msgstr ""
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <specfile>"
-msgstr ""
-
-#, c-format
-msgid "verify %files section from <specfile>"
-msgstr "proveri %files odeljak iz <specfile>"
-
-msgid "build source and binary packages from <specfile>"
-msgstr "napravi izvorne i binarne pakete iz <specfile>"
-
-msgid "build binary package only from <specfile>"
-msgstr "napravi binarne pakete samo iz <specfile>"
-
-msgid "build source package only from <specfile>"
-msgstr "napravi izvorne pakete samo iz <specfile>"
-
 #, fuzzy
-msgid ""
-"build source package only from <specfile> - calculate dynamic build requires"
-msgstr "napravi izvorne pakete samo iz <specfile>"
-
-#, c-format
-msgid ""
-"build through %prep (unpack sources and apply patches) from <source package>"
-msgstr ""
-
-msgid "<source package>"
-msgstr "<source package>"
-
-msgid "build through %build (%prep, %conf, then compile) from <source package>"
-msgstr ""
-
-msgid "check build dependencies <source package>"
-msgstr ""
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <source "
-"package>"
-msgstr ""
-
-#, c-format
-msgid "verify %files section from <source package>"
-msgstr ""
-
-msgid "build source and binary packages from <source package>"
-msgstr ""
-
-msgid "build binary package only from <source package>"
-msgstr ""
-
-msgid "build source package only from <source package>"
-msgstr ""
-
-#, fuzzy
-msgid ""
-"build source package only from <source package> - calculate dynamic build "
-"requires"
-msgstr "napravi izvorne pakete samo iz <specfile>"
-
-#, c-format
-msgid "build through %prep (unpack sources and apply patches) from <tarball>"
-msgstr ""
-"napravi kroz %prep (raspakovani izvori i primenjene zakrpe) iz <tarball>"
-
-msgid "<tarball>"
-msgstr "<tarball>"
-
-msgid "build through %build (%prep, %conf, then compile) from <tarball>"
-msgstr ""
-
-msgid "check build dependencies <tarball>"
-msgstr ""
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <tarball>"
-msgstr ""
-
-#, c-format
-msgid "verify %files section from <tarball>"
-msgstr "proveri %files odeljak iz <tarball>"
-
-msgid "build source and binary packages from <tarball>"
-msgstr "napravi izvorne i binarne pakete iz <tarball>"
-
-msgid "build binary package only from <tarball>"
-msgstr "napravi binarne pakete samo iz <tarball>"
-
-msgid "build source package only from <tarball>"
-msgstr "napravi izvorne pakete samo iz <tarball>"
-
-#, fuzzy
-msgid ""
-"build source package only from <tarball> - calculate dynamic build requires"
-msgstr "napravi izvorne pakete samo iz <tarball>"
-
-msgid "build binary package from <source package>"
-msgstr "napravi binarni paket iz <source package>"
-
-msgid ""
-"build through %install (%prep, %build, then install) from <source package>"
-msgstr ""
-"napravi kroz %install (%prep, %build, zatim instaliraj) iz <source package>"
-
-msgid "override build root"
-msgstr "premosti koren pravljenja"
-
-msgid "run build in current directory"
-msgstr ""
-
-msgid "remove build tree when done"
-msgstr "ukloni stablo pravljenja po završetku"
-
-msgid "ignore ExcludeArch: directives from spec file"
-msgstr "zanemari ExcludeArch: uputstva iz datoteke specifikacije"
-
-msgid "debug file state machine"
-msgstr "otkloni greške u mašini stanja datoteka"
-
-msgid "do not execute any stages of the build"
-msgstr "nemoj izvršiti nijednu fazu pravljenja"
-
-msgid "do not verify build dependencies"
-msgstr "nemoj proveravati zavisnosti pravljenja"
-
-msgid "generate package header(s) compatible with (legacy) rpm v3 packaging"
-msgstr ""
-
-#, c-format
-msgid "do not execute %clean stage of the build"
-msgstr ""
-
-#, c-format
-msgid "do not execute %prep stage of the build"
-msgstr ""
-
-#, c-format
-msgid "do not execute %check stage of the build"
-msgstr ""
-
-msgid "do not accept i18N msgstr's from specfile"
-msgstr "ne prihvataj i18N msgstr niske iz datoteke specifikacije"
-
-msgid "remove sources when done"
-msgstr "ukloni izvore po završetku"
-
-msgid "remove specfile when done"
-msgstr "ukloni datoteku specifikacije po završetku"
-
-msgid "skip straight to specified stage (only for c,i)"
-msgstr "preskoči pravo do određene faze (samo za c,i)"
-
-msgid "override target platform"
-msgstr "premosti ciljnu platformu"
-
-msgid "Build options with [ <specfile> | <tarball> | <source package> ]:"
-msgstr "Opcije pravljenja uz [ <specfile> | <tarball> | <source package> ]:"
-
-msgid "Common options for all rpm modes and executables:"
-msgstr "Zajedničke opcije za sve rpm režime i izvršne programe:"
-
-#, c-format
-msgid "Unable to open spec file %s: %s\n"
-msgstr "Ne mogu da otvorim datoteku specifikacije %s: %s\n"
-
-#, c-format
-msgid "Failed to open tar pipe: %m\n"
-msgstr "Neuspelo otvaranje tar cevi: %m\n"
-
-#, c-format
-msgid "Found more than one spec file in %s\n"
-msgstr ""
-
-#, c-format
-msgid "Failed to read spec file from %s\n"
-msgstr "Neuspelo čitanje datoteke specifikacije iz %s\n"
-
-#, c-format
-msgid "Failed to rename %s to %s: %m\n"
-msgstr "Neuspela promena imena %s u %s: %m\n"
-
-#, c-format
-msgid "failed to stat %s: %m\n"
-msgstr "stat nije uspeo %s: %m\n"
-
-#, c-format
-msgid "File %s is not a regular file.\n"
-msgstr "Datoteka %s nije obična datoteka.\n"
-
-#, c-format
-msgid "File %s does not appear to be a specfile.\n"
-msgstr "Datoteka %s ne liči na datoteku specifikacije.\n"
-
-#, c-format
-msgid "Building target platforms: %s\n"
-msgstr "Pravim ciljne platforme: %s\n"
-
-#, c-format
-msgid "Building for target %s\n"
-msgstr "Pravim za cilj %s\n"
-
-msgid "arguments to --root (-r) must begin with a /"
-msgstr "argumenti za --root (-r) moraju početi znakom /"
-
-msgid "initialize database"
-msgstr "inicijalizuj bazu podataka"
-
-msgid "rebuild database inverted lists from installed package headers"
-msgstr ""
-"ponovo napravi obrnute spiskove baze podataka iz zaglavlja instaliranih "
-"paketa"
-
-msgid "verify database files"
-msgstr "provera datoteka baze podataka"
-
-#, fuzzy
-msgid "salvage database"
-msgstr "inicijalizuj bazu podataka"
-
-msgid "export database to stdout header list"
-msgstr ""
-
-msgid "import database from stdin header list"
-msgstr ""
-
-msgid "Database options:"
-msgstr "Opcije baze podataka:"
-
-msgid "only one major mode may be specified"
-msgstr "samo jedan glavni režim sme biti naveden"
-
-msgid "verify package signature(s)"
-msgstr "proveri potpise paketa"
-
-msgid "import an armored public key"
-msgstr "uvezi ojačani javni ključ"
-
-msgid "don't import, but tell if it would work or not"
-msgstr ""
-
-msgid "list keys from RPM keyring"
-msgstr ""
-
-msgid "Keyring options:"
-msgstr ""
-
-msgid "no arguments given"
-msgstr "nema zadatih argumenata"
-
-msgid "Query/Verify package selection options:"
-msgstr ""
-
-#, fuzzy
-msgid "Query/Verify file selection options:"
-msgstr "proveri %files odeljak iz <specfile>"
-
-msgid "Query options (with -q or --query):"
-msgstr "Opcije upita (sa -q ili --query):"
-
-msgid "Verify options (with -V or --verify):"
-msgstr "Opcije provere (sa -V ili --verify):"
-
-msgid "Install/Upgrade/Erase options:"
-msgstr "Opcije instalacije/nadgradnje/brisanja:"
-
-msgid "one type of query/verify may be performed at a time"
-msgstr "jedna vrsta upita/provere sme biti urađena odjednom"
-
-msgid "unexpected query flags"
-msgstr "neočekivane zastavice upita"
-
-msgid "unexpected query format"
-msgstr "neočekivan oblik upita"
-
-msgid "unexpected query source"
-msgstr "neočekivani izvor upita"
-
-msgid "only installation and upgrading may be forced"
-msgstr ""
-
-msgid "files may only be relocated during package installation"
-msgstr "datoteke smeju biti premeštane samo tokom instalacije paketa"
-
-msgid "cannot use --prefix with --relocate or --excludepath"
-msgstr "ne može se koristiti --prefix uz --relocate ili --excludepath"
-
-msgid ""
-"--relocate and --excludepath may only be used when installing new packages"
-msgstr ""
-"--relocate i --excludepath mogu biti upotrebljene samo pri instalaciji novih "
-"paketa"
-
-msgid "--prefix may only be used when installing new packages"
-msgstr "--prefix može biti upotrebljena samo pri instalaciji novih paketa"
-
-msgid "arguments to --prefix must begin with a /"
-msgstr "argumenti za --prefix moraju početi znakom /"
-
-msgid ""
-"--hash (-h) may only be specified during package installation and erasure"
-msgstr ""
-
-msgid "--percent may only be specified during package installation and erasure"
-msgstr ""
-
-msgid "--replacepkgs may only be specified during package installation"
-msgstr "--replacepkgs može biti navedena samo tokom instalacije paketa"
-
-msgid "--excludedocs may only be specified during package installation"
-msgstr "--excludecocs može biti navedena samo tokom instalacije paketa"
-
-msgid "--includedocs may only be specified during package installation"
-msgstr "--includecocs može biti navedena samo tokom instalacije paketa"
-
-msgid "only one of --excludedocs and --includedocs may be specified"
-msgstr "može se navesti samo jedna od --excludedocs ili --includedocs"
-
-msgid "--ignorearch may only be specified during package installation"
-msgstr "--ignorearch može biti navedena samo tokom instalacije paketa"
-
-msgid "--ignoreos may only be specified during package installation"
-msgstr "--ignoreos može biti navedena samo tokom instalacije paketa"
-
-msgid "--ignoresize may only be specified during package installation"
-msgstr "--ignoresize može biti navedena samo tokom instalacije paketa"
-
-msgid "--allmatches may only be specified during package erasure"
-msgstr "--allmatches može biti navedena samo tokom brisanja paketa"
-
-msgid "--allfiles may only be specified during package installation"
-msgstr "--allfiles može biti navedena samo tokom instalacije paketa"
-
-msgid "--justdb may only be specified during package installation and erasure"
-msgstr "--justdb može biti navedena samo tokom instalacije i brisanja paketa"
-
-msgid ""
-"script disabling options may only be specified during package installation "
-"and erasure"
-msgstr ""
-"opcije isključivanja skripte mogu biti navedene samo tokom instalacije i "
-"brisanja paketa"
-
-msgid ""
-"trigger disabling options may only be specified during package installation "
-"and erasure"
-msgstr ""
-"opcije isključivanja okidača mogu biti navedene samo tokom instalacije i "
-"brisanja paketa"
-
-msgid ""
-"--nodeps may only be specified during package installation, erasure, and "
-"verification"
-msgstr ""
-
-msgid "--test may only be specified during package installation and erasure"
-msgstr ""
-
-msgid "no packages given for erase"
-msgstr "nema zadatih paketa za brisanje"
-
-msgid "no packages given for install"
-msgstr "nema zadatih paketa za instalaciju"
-
-msgid "no arguments given for query"
-msgstr "nema zadatih argumenata za upit"
-
-msgid "no arguments given for verify"
-msgstr "nema zadatih argumenata za proveru"
-
-msgid "sign package(s)"
-msgstr ""
-
-msgid "sign package(s) (identical to --addsign)"
-msgstr "potpiši paket(e) (istovetno sa --addsign)"
-
-msgid "delete package signatures"
-msgstr "obriši potpise paketa"
-
-msgid "delete IMA and fsverity file signatures"
-msgstr ""
-
-#, fuzzy
-msgid "create rpm v3 header+payload signatures"
-msgstr "nemoj proveravati potpis zaglavlja+tovara"
-
-msgid "sign package(s) files"
-msgstr ""
-
-msgid "generate fsverity signatures for package(s) files"
-msgstr ""
-
-msgid "algorithm to use for verity signatures, default sha256"
-msgstr ""
-
-msgid "<algorithm>"
-msgstr ""
-
-msgid "use file signing cert <cert>"
-msgstr ""
-
-msgid "<cert>"
-msgstr ""
-
-msgid "use file signing key <key>"
-msgstr ""
-
-msgid "<key>"
-msgstr ""
-
-msgid "prompt for file signing key password"
-msgstr ""
-
-msgid "Signature options:"
-msgstr "Opcije potpisa:"
-
-#, c-format
-msgid "You must set \"%%_gpg_name\" in your macro file\n"
-msgstr "Morate postaviti „%%_gpg_name“ u makro datoteci\n"
-
-#, c-format
-msgid ""
-"You must set \"%%_file_signing_key\" in your macro file or on the command "
-"line with --fskpath\n"
-msgstr ""
-
-msgid "--fskpath may only be specified when signing files"
-msgstr ""
-
-msgid "parse spec file(s) to stdout"
-msgstr ""
-
-msgid "query spec file(s)"
-msgstr ""
-
-msgid "interactive macro shell"
-msgstr ""
-
-msgid "operate on binary rpms generated by spec (default)"
-msgstr ""
-
-msgid "operate on binary package header(s) that would be built from spec"
-msgstr ""
-
-msgid "operate on source package header generated by spec"
-msgstr ""
-
-msgid "use the following query format"
-msgstr "koristi sledeći oblik upita"
-
-msgid "Spec options:"
-msgstr ""
-
-#, c-format
-msgid "RPM version %s macro shell\n"
-msgstr ""
-
-msgid "no arguments given for parse"
-msgstr ""
+#| msgid "unable to read the signature\n"
+msgid "unable to parse _buildtime macro\n"
+msgstr "ne mogu da pročitam potpis\n"
 
 msgid "unable to parse SOURCE_DATE_EPOCH\n"
 msgstr ""
@@ -570,12 +50,19 @@ msgstr "Loš status izlaza iz %s (%s)\n"
 msgid "Failed build dependencies:\n"
 msgstr "Neuspelo pravljenje zavisnosti:\n"
 
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to create package build directory %s: %s\n"
+msgstr "neuspelo kreiranje direktorijuma %s: %s\n"
+
 #, c-format
 msgid "setting %s=%s\n"
 msgstr ""
 
 #, c-format
-msgid "source_date_epoch_from_changelog set but %%changelog is missing\n"
+msgid ""
+"%%source_date_epoch_from_changelog is set, but %%changelog has no entries to "
+"take a date from\n"
 msgstr ""
 
 msgid ""
@@ -649,11 +136,23 @@ msgid "File must begin with \"/\": %s\n"
 msgstr "Datoteka mora početi sa „/“: %s\n"
 
 #, c-format
-msgid "unable to parse %s=%s\n"
+msgid ""
+"%%clamp_mtime_to_source_date_epoch is deprecated, please use "
+"%%build_mtime_policy\n"
 msgstr ""
 
 #, c-format
-msgid "Unknown file digest algorithm %u, falling back to MD5\n"
+msgid "unable to parse %s=%s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "Unknown icon type: %s\n"
+msgid "Unknown mtime policy '%s'\n"
+msgstr "Nepoznata vrsta ikone: %s\n"
+
+#, fuzzy, c-format
+#| msgid "Unknown file digest algorithm %u, falling back to MD5\n"
+msgid "Unknown file digest algorithm %u, falling back to %u\n"
 msgstr "Nepoznat algoritam %u za sažimanje datoteka, vraćam se na MD5\n"
 
 #, c-format
@@ -881,9 +380,24 @@ msgstr "Ne mogu da napravim ime izlazne datoteke za paket %s: %s\n"
 msgid "Finished binary package job, result %d, filename %s\n"
 msgstr ""
 
+#, fuzzy, c-format
+#| msgid "line %d: Error parsing %s: %s\n"
+msgid "line %d: Error parsing script: %s: %s\n"
+msgstr "red %d: Greška pri tumačenju %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "line %d: Bad option %s: %s\n"
+msgid "line %d: Bad %s option %s: %s\n"
+msgstr "red %d: Loša opcija %s: %s\n"
+
 #, c-format
 msgid "line %d: second %s\n"
 msgstr "red %d: drugi %s\n"
+
+#, fuzzy, c-format
+#| msgid "line %d: unsupported internal script: %s\n"
+msgid "line %d: append and prepend specified: %s\n"
+msgstr "red %d: nepodržana interna skripta: %s\n"
 
 #, c-format
 msgid "bogus date in %%changelog: %s\n"
@@ -989,6 +503,11 @@ msgstr "OS nije uvršten: %s\n"
 msgid "%s field must be present in package: %s\n"
 msgstr "%s polje mora biti prisutno u paketu: %s\n"
 
+#, fuzzy, c-format
+#| msgid "%s field must be present in package: %s\n"
+msgid "%s field must be present before build in package: %s\n"
+msgstr "%s polje mora biti prisutno u paketu: %s\n"
+
 #, c-format
 msgid "Duplicate %s entries in package: %s\n"
 msgstr "Udvojene %s stavke u paketu: %s\n"
@@ -1059,6 +578,11 @@ msgstr "red %d: Loš oblik za BuildArchitecture: %s\n"
 msgid "line %d: Duplicate BuildArch entry: %s\n"
 msgstr ""
 
+#, fuzzy, c-format
+#| msgid "line %d: Only noarch subpackages are supported: %s\n"
+msgid "line %d: Only noarch is allowed after the build: %s\n"
+msgstr "red %d: Samo noarch podpaketi su podržani: %s\n"
+
 #, c-format
 msgid "line %d: Only noarch subpackages are supported: %s\n"
 msgstr "red %d: Samo noarch podpaketi su podržani: %s\n"
@@ -1082,13 +606,15 @@ msgstr ""
 msgid "line %d: Unknown tag: %s\n"
 msgstr "red %d: Nepoznata oznaka: %s\n"
 
-#, c-format
-msgid "%%{buildroot} couldn't be empty\n"
-msgstr "%%{buildroot} ne može biti prazno\n"
+#, fuzzy, c-format
+#| msgid "line %d: Tag takes single token only: %s\n"
+msgid "line %d: Tag not allowed after build is done: %s\n"
+msgstr "red %d: Oznaka prihvata samo jedan žeton: %s\n"
 
-#, c-format
-msgid "%%{buildroot} can not be \"/\"\n"
-msgstr "%%{buildroot} ne može biti „/“\n"
+#, fuzzy, c-format
+#| msgid "Invalid capability: %s\n"
+msgid "Invalid buildroot: '%s'\n"
+msgstr "Neispravna mogućnost: %s\n"
 
 #, c-format
 msgid "No patch number %u\n"
@@ -1118,15 +644,6 @@ msgstr ""
 msgid "Invalid patch number %s: %s\n"
 msgstr "Neispravan broj zakrpe %s: %s\n"
 
-#, c-format
-msgid "line %d: second %%prep\n"
-msgstr "red %d: drugi %%prep\n"
-
-#, c-format
-msgid ""
-"%%patchN is deprecated (%i usages found), use %%patch N (or %%patch -P N)\n"
-msgstr ""
-
 msgid "Dependency tokens must begin with alpha-numeric, '_' or '/'"
 msgstr ""
 
@@ -1142,6 +659,11 @@ msgstr ""
 msgid "Version required"
 msgstr ""
 
+#, fuzzy
+#| msgid "relocations must begin with a /"
+msgid "file trigger conditions must begin with '/'"
+msgstr "premeštanja moraju početi sa /"
+
 msgid "Only package names are allowed in Obsoletes"
 msgstr ""
 
@@ -1149,9 +671,6 @@ msgid "It's not recommended to have unversioned Obsoletes"
 msgstr ""
 
 msgid "It's not recommended to use '>' in Obsoletes"
-msgstr ""
-
-msgid "Only absolute paths are allowed in file triggers"
 msgstr ""
 
 msgid "Trigger fired by the same package is already defined in spec file"
@@ -1192,10 +711,6 @@ msgstr "red %d: Drugi %s\n"
 #, c-format
 msgid "line %d: unsupported internal script: %s\n"
 msgstr "red %d: nepodržana interna skripta: %s\n"
-
-#, c-format
-msgid "line %d: file trigger condition must begin with '/': %s"
-msgstr ""
 
 #, c-format
 msgid "line %d: interpreter arguments not allowed in triggers: %s\n"
@@ -1242,6 +757,10 @@ msgid "%s:%d: malformed %%include statement\n"
 msgstr ""
 
 #, c-format
+msgid "%%patchN is obsolete, use %%patch N (or %%patch -P N): %s\n"
+msgstr ""
+
+#, c-format
 msgid "encoding %s not supported by system\n"
 msgstr ""
 
@@ -1261,8 +780,36 @@ msgstr ""
 msgid "line %d doesn't belong to any section: %s\n"
 msgstr ""
 
+#, fuzzy, c-format
+#| msgid "line %d: Unknown tag: %s\n"
+msgid "line %d: Unknown buildsystem: %s\n"
+msgstr "red %d: Nepoznata oznaka: %s\n"
+
+#, c-format
+msgid ""
+"line %d: Required parametric macro %%%s not defined for buildsystem %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to write buildsystem %s %%%s: %s\n"
+msgstr "neuspelo kreiranje direktorijuma %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "Couldn't create temporary file for %s: %s\n"
+msgid "failed to create temp file for buildsystem: %s\n"
+msgstr "Ne mogu da napravim privremenu datoteku za %s: %s\n"
+
+#, c-format
+msgid "Section %s is not allowed after build is done!\n"
+msgstr ""
+
 msgid "No compatible architectures found for build\n"
 msgstr "Nisu pronađene usaglašene arhitekture za pravljenje\n"
+
+#, c-format
+msgid "invalid rpm format %d requested, using %d\n"
+msgstr ""
 
 #, c-format
 msgid "Package has no %%description: %s\n"
@@ -1354,6 +901,10 @@ msgstr ""
 msgid "failed to write all data to %s: %s\n"
 msgstr ""
 
+#, c-format
+msgid "invalid or out of order path from generator: %s\n"
+msgstr ""
+
 msgid "Empty file classifier\n"
 msgstr ""
 
@@ -1385,6 +936,9 @@ msgid "Failed to find %s:\n"
 msgstr "Neuspelo traženje %s:\n"
 
 msgid "Deprecated external dependency generator is used!\n"
+msgstr ""
+
+msgid "External dependency generator is incompatible with v6 packages\n"
 msgstr ""
 
 #, c-format
@@ -1510,9 +1064,10 @@ msgstr ""
 msgid "%s%s created as %s%s\n"
 msgstr ""
 
-#, c-format
-msgid "%s %s: remove failed: %s\n"
-msgstr ""
+#, fuzzy, c-format
+#| msgid "%s: open failed: %s\n"
+msgid "%s %s%s: remove failed: %s\n"
+msgstr "%s: otvaranje nije uspelo: %s\n"
 
 msgid "directory"
 msgstr ""
@@ -1638,8 +1193,39 @@ msgid "array iterator used with different sized arrays"
 msgstr "pokazivač niza korišćen sa nizovima različitih veličina"
 
 #, c-format
+msgid "%s: reading of public key failed.\n"
+msgstr "%s: neuspelo čitanje javnog ključa.\n"
+
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to create keyring directory %s: %s\n"
+msgstr "neuspelo kreiranje direktorijuma %s: %s\n"
+
+#, c-format
+msgid "failed to import key: %s: %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "Couldn't create pipe for %s: %m\n"
+msgid "Can't create writelock for keyring at %s: %s\n"
+msgstr "Ne mogu da napravim cev za %s: %m\n"
+
+#, c-format
+msgid "Can't acquire writelock for keyring at %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "%s: not an armored public key.\n"
+msgid "%s is not a valid public key\n"
+msgstr "%s: javni ključ nije ojačan.\n"
+
+#, c-format
 msgid "RPM v3 packages are deprecated: %s\n"
 msgstr ""
+
+#, c-format
+msgid "RPM version %s\n"
+msgstr "RPM verzija %s\n"
 
 msgid "Error writing to stdout"
 msgstr ""
@@ -1747,9 +1333,6 @@ msgstr "otkloni greške u mašini stanja datoteke tovara"
 
 msgid "debug rpmio I/O"
 msgstr "otkloni greške za rpmio U/I"
-
-msgid "disable user namespace support"
-msgstr ""
 
 #, c-format
 msgid "%s: option table misconfigured (%d)\n"
@@ -1980,12 +1563,6 @@ msgstr "ispitaj/proveri paket(e) u grupi"
 msgid "query/verify a package file"
 msgstr "ispitaj/proveri datoteku paketa"
 
-msgid "query/verify package(s) with package identifier"
-msgstr "ispitaj/proveri paket(e) sa identifikatorom paketa"
-
-msgid "query/verify package(s) with header identifier"
-msgstr "ispitaj/proveri paket(e) sa identifikatorom zaglavlja"
-
 msgid "rpm query mode"
 msgstr "režim rpm upita"
 
@@ -2000,6 +1577,10 @@ msgstr "ispitaj paket(e) koje je aktivirao ovaj paket"
 
 msgid "rpm verify mode"
 msgstr "režim rpm provere"
+
+#, fuzzy
+msgid "query/verify the package(s) which conflict with a dependency"
+msgstr "ispitaj/proveri paket(e) koji zahtevaju zavisnosti"
 
 msgid "query/verify the package(s) which require a dependency"
 msgstr "ispitaj/proveri paket(e) koji zahtevaju zavisnosti"
@@ -2060,6 +1641,9 @@ msgstr "izbaci osnovne podatke o datoteci"
 
 msgid "list files in package"
 msgstr "ispiši datoteke u paketu"
+
+msgid "use the following query format"
+msgstr "koristi sledeći oblik upita"
 
 msgid "display the states of the listed files"
 msgstr "prikaži stanja navedenih datoteka"
@@ -2476,15 +2060,15 @@ msgid "Wrong number of entries for tag %s: %u found but %u expected.\n"
 msgstr ""
 
 #, c-format
-msgid "Malformed data for tag %s: %u bytes found but %lu expected.\n"
+msgid "Malformed data for tag %s: %u bytes found but %<PRIu64> expected.\n"
 msgstr ""
 
 #, c-format
-msgid "%s: base64 decode failed, len %li\n"
+msgid "%s: base64 decode failed, len %zu\n"
 msgstr ""
 
 #, c-format
-msgid "%s: base64 decode success, len %li\n"
+msgid "%s: base64 decode success, len %zu\n"
 msgstr ""
 
 msgid "Bad magic"
@@ -2514,7 +2098,7 @@ msgstr "Interna greška"
 msgid "Archive file not in header"
 msgstr "Datoteka arhive nije u zaglavlju"
 
-msgid "Invalid symlink"
+msgid "Unsafe symlink"
 msgstr ""
 
 msgid "File from package already exists as a directory in system"
@@ -2592,6 +2176,11 @@ msgstr "paket %s se ne može premeštati\n"
 msgid "error reading from file %s\n"
 msgstr "greška pri čitanju iz datoteke %s\n"
 
+#, fuzzy, c-format
+#| msgid "no package matches %s: %s\n"
+msgid "package format not supported: %s\n"
+msgstr "nijedan paket ne odgovara %s: %s\n"
+
 #, c-format
 msgid "\"%s\" specifies multiple packages:\n"
 msgstr "„%s“ određuje više paketa:\n"
@@ -2606,12 +2195,6 @@ msgstr "Instaliram %s\n"
 
 msgid "not an rpm package"
 msgstr "nije rpm paket"
-
-msgid "illegal signature type"
-msgstr "nepravilan tip potpisa"
-
-msgid "unsupported RPM package version"
-msgstr "nepodržana verzija RPM paketa"
 
 #, c-format
 msgid "read failed: %s (%d)\n"
@@ -2752,6 +2335,11 @@ msgstr "nedostaje argument za %s na %s:%d\n"
 msgid "cannot open %s at %s:%d: %m\n"
 msgstr "ne mogu da otvorim %s na %s:%d: %m\n"
 
+#, fuzzy, c-format
+#| msgid "bad option '%s' at %s:%d\n"
+msgid "Ignoring %s at %s:%d\n"
+msgstr "loša opcija „%s“ kod %s:%d\n"
+
 #, c-format
 msgid "missing architecture for %s at %s:%d\n"
 msgstr "nedostaje arhitektura za %s na %s:%d\n"
@@ -2810,6 +2398,15 @@ msgstr "%s skriptica nije uspela, izlazni status %d\n"
 msgid "Unknown format"
 msgstr "Nepoznat oblik"
 
+#, c-format
+msgid "erasing gpg-pubkey packages is deprecated; use rpmkeys --delete %s\n"
+msgstr ""
+
+msgid ""
+"public keys can not be installed as gpg-pubkey packages; use rpmkeys --"
+"import <keyfile> for that\n"
+msgstr ""
+
 msgid "install"
 msgstr ""
 
@@ -2839,16 +2436,13 @@ msgid "missing ')' in package label: %s\n"
 msgstr "nedostaje „)“ u oznaci paketa: %s\n"
 
 #, c-format
-msgid "%s: reading of public key failed.\n"
-msgstr "%s: neuspelo čitanje javnog ključa.\n"
-
-#, c-format
 msgid "unknown keyring type: %s, using rpmdb\n"
 msgstr ""
 
-#, c-format
-msgid "failed to import key: %s: %s\n"
-msgstr ""
+#, fuzzy, c-format
+#| msgid "Unknown icon type: %s\n"
+msgid "unknown keyring type: %s\n"
+msgstr "Nepoznata vrsta ikone: %s\n"
 
 #, fuzzy, c-format
 msgid "invalid package verify level %s\n"
@@ -2874,6 +2468,10 @@ msgid "%s tag %u: invalid size %u"
 msgstr ""
 
 #, c-format
+msgid "%s tag %u: invalid base64"
+msgstr ""
+
+#, c-format
 msgid "%s tag %u: invalid OpenPGP signature"
 msgstr ""
 
@@ -2881,18 +2479,27 @@ msgstr ""
 msgid "%s: tag %u: invalid hex"
 msgstr ""
 
-#, c-format
-msgid "%s%s%s %s"
-msgstr ""
+#, fuzzy, c-format
+#| msgid "%s saved as %s\n"
+msgid "%s %s%s %s"
+msgstr "%s sačuvano kao %s\n"
 
 msgid "digest"
 msgstr ""
 
 #, c-format
-msgid "%s%s"
+msgid "%s OpenPGP %s"
+msgstr ""
+
+#, c-format
+msgid "%s OpenPGP %s %s"
 msgstr ""
 
 msgid "signature"
+msgstr ""
+
+#, c-format
+msgid ", key fingerprint: %s"
 msgstr ""
 
 msgid "header"
@@ -2901,10 +2508,12 @@ msgstr ""
 msgid "package"
 msgstr ""
 
-msgid "Header "
+#, fuzzy
+#| msgid "Header "
+msgid "Header"
 msgstr "Zaglavlje "
 
-msgid "Payload "
+msgid "Payload"
 msgstr ""
 
 msgid "Unable to reload signature header.\n"
@@ -2989,8 +2598,9 @@ msgstr ""
 msgid "syntax error in expression"
 msgstr "sintaksna greška u izrazu\n"
 
-msgid "unsupported funcion"
-msgstr ""
+#, fuzzy
+msgid "unsupported function"
+msgstr "- nije podržano za stringove\n"
 
 #, fuzzy
 msgid "unmatched ("
@@ -3105,7 +2715,16 @@ msgid "A %% is followed by an unparseable macro\n"
 msgstr "%% je praćena sa makroom koga nije moguće raščlaniti\n"
 
 #, c-format
-msgid "======================== active %d empty %d\n"
+msgid "unexpected argument to non-parametric macro %%%s\n"
+msgstr ""
+
+#, c-format
+msgid "macro value out of range for int: %<PRIu64> using %i instead.\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "======================== active %d empty %d\n"
+msgid "======================== active %zu empty %d\n"
 msgstr "======================== aktivno %d prazno %d\n"
 
 #, c-format
@@ -3176,6 +2795,15 @@ msgstr ""
 msgid "(none)"
 msgstr ""
 
+#, fuzzy, c-format
+#| msgid "Could not open %s: %s\n"
+msgid "Could not find url helper: \"%s\"\n"
+msgstr "Ne mogu da otvorim %s: %s\n"
+
+#, c-format
+msgid "Executing url helper \"%s\" failed with status %i\n"
+msgstr ""
+
 #, c-format
 msgid "%s: Fwrite failed: %s\n"
 msgstr "%s: Fwrite nije uspelo: %s\n"
@@ -3188,22 +2816,14 @@ msgstr "%s: Fread nije uspelo: %s\n"
 msgid "%s: Fflush failed: %s\n"
 msgstr "%s: Fflush nije uspelo: %s\n"
 
-#, fuzzy
-#| msgid "(not an OpenPGP signature)"
-msgid "Unsupported OpenPGP signature\n"
-msgstr "(nije OpenPGP potpis)"
-
 #, c-format
-msgid "Unsupported OpenPGP hash algorithm %u\n"
+msgid "Expanding signing macro %s failed\n"
 msgstr ""
 
-#, c-format
-msgid "Unsupported OpenPGP pubkey algorithm %u\n"
-msgstr ""
-
-#, c-format
-msgid "Deprecated OpenPGP signature version %d\n"
-msgstr ""
+#, fuzzy, c-format
+#| msgid "Invalid %s token: %s\n"
+msgid "Invalid sign command: %s\n"
+msgstr "Neispravan %s znak: %s\n"
 
 #, fuzzy, c-format
 msgid "Could not create pipe for signing: %m\n"
@@ -3230,18 +2850,41 @@ msgstr ""
 
 #, fuzzy, c-format
 #| msgid "gpg exec failed (%d)\n"
-msgid "gpg waitpid failed (%s)\n"
+msgid "%s waitpid failed (%s)\n"
 msgstr "neuspelo gpg izvršavanje (%d)\n"
 
-#, c-format
-msgid "gpg exec failed (%d)\n"
+#, fuzzy, c-format
+#| msgid "gpg exec failed (%d)\n"
+msgid "%s exec failed (%d)\n"
 msgstr "neuspelo gpg izvršavanje (%d)\n"
 
-msgid "gpg failed to write signature\n"
+#, fuzzy, c-format
+#| msgid "gpg failed to write signature\n"
+msgid "failed to write signature: %s\n"
 msgstr "gpg nije uspeo da zapiše potpis\n"
 
-msgid "unable to read the signature\n"
+#, fuzzy, c-format
+#| msgid "unable to read the signature\n"
+msgid "unable to read the signature: %s\n"
 msgstr "ne mogu da pročitam potpis\n"
+
+#, fuzzy
+#| msgid "(not an OpenPGP signature)"
+msgid "Unsupported OpenPGP signature\n"
+msgstr "(nije OpenPGP potpis)"
+
+#, c-format
+msgid "Unsupported OpenPGP hash algorithm %u\n"
+msgstr ""
+
+#, c-format
+msgid "Deprecated OpenPGP signature version %d\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "(not an OpenPGP signature)"
+msgid "Unsupported OpenPGP pubkey algorithm %u for rpm v3/v4 signatures\n"
+msgstr "(nije OpenPGP potpis)"
 
 msgid "file signing support not built in\n"
 msgstr ""
@@ -3268,18 +2911,39 @@ msgstr "%s: rpmReadSignature nije uspelo: %s"
 msgid "%s: headerRead failed: %s\n"
 msgstr ""
 
-msgid "Cannot sign RPM v3 packages\n"
+#, fuzzy, c-format
+#| msgid "argument is not an RPM package\n"
+msgid "Cannot sign RPM v3 packages: %s\n"
+msgstr "argument nije RPM paket\n"
+
+#, fuzzy, c-format
+#| msgid "Could not generate output filename for package %s: %s\n"
+msgid "not generating v3 signature for v6 package: %s\n"
+msgstr "Ne mogu da napravim ime izlazne datoteke za paket %s: %s\n"
+
+#, c-format
+msgid "File signatures not applicable to src.rpm: %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+msgid "Could not get a file size of %s\n"
+msgstr "Ne mogu da otvorim %%files datoteku %s: %m\n"
+
+#, c-format
+msgid "%s already contains an identical signature, skipping\n"
 msgstr ""
 
 #, c-format
-msgid "%s already contains identical signature, skipping\n"
+msgid "%s already contains a legacy signature\n"
 msgstr ""
 
 #, c-format
 msgid "%s: rpmWriteSignature failed: %s\n"
 msgstr "%s: rpmWriteSignature nije uspelo: %s\n"
 
-msgid "rpmMkTemp failed\n"
+#, fuzzy, c-format
+#| msgid "rpmMkTemp failed\n"
+msgid "rpmMkTemp failed: %s\n"
 msgstr "rpmMkTemp nije uspelo\n"
 
 #, fuzzy, c-format
@@ -3303,11 +2967,475 @@ msgid "headerPutString failed\n"
 msgstr ""
 
 #, c-format
+msgid "%s: %s\n"
+msgstr "%s: %s\n"
+
+#, c-format
+msgid "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
+msgstr "Autorska prava 1998-2002 - Red Hat, Inc.\n"
+
+#, c-format
+msgid ""
+"This program may be freely redistributed under the terms of the GNU GPL\n"
+msgstr "Ovaj program se sme slobodno distribuirati pod GNU OJL odredbama.\n"
+
+#, c-format
+msgid "creating a pipe for --pipe failed: %m\n"
+msgstr "neuspelo pravljenje cevi za --pipe: %m\n"
+
+#, c-format
+msgid "exec failed\n"
+msgstr "neuspelo izvršavanje\n"
+
+msgid "Query/Verify package selection options:"
+msgstr ""
+
+#, fuzzy
+msgid "Query/Verify file selection options:"
+msgstr "proveri %files odeljak iz <specfile>"
+
+msgid "Query options (with -q or --query):"
+msgstr "Opcije upita (sa -q ili --query):"
+
+msgid "Verify options (with -V or --verify):"
+msgstr "Opcije provere (sa -V ili --verify):"
+
+msgid "Install/Upgrade/Erase options:"
+msgstr "Opcije instalacije/nadgradnje/brisanja:"
+
+msgid "Common options for all rpm modes and executables:"
+msgstr "Zajedničke opcije za sve rpm režime i izvršne programe:"
+
+msgid "one type of query/verify may be performed at a time"
+msgstr "jedna vrsta upita/provere sme biti urađena odjednom"
+
+msgid "unexpected query flags"
+msgstr "neočekivane zastavice upita"
+
+msgid "unexpected query format"
+msgstr "neočekivan oblik upita"
+
+msgid "unexpected query source"
+msgstr "neočekivani izvor upita"
+
+msgid "only one major mode may be specified"
+msgstr "samo jedan glavni režim sme biti naveden"
+
+msgid "only installation and upgrading may be forced"
+msgstr ""
+
+msgid "files may only be relocated during package installation"
+msgstr "datoteke smeju biti premeštane samo tokom instalacije paketa"
+
+msgid "cannot use --prefix with --relocate or --excludepath"
+msgstr "ne može se koristiti --prefix uz --relocate ili --excludepath"
+
+msgid ""
+"--relocate and --excludepath may only be used when installing new packages"
+msgstr ""
+"--relocate i --excludepath mogu biti upotrebljene samo pri instalaciji novih "
+"paketa"
+
+msgid "--prefix may only be used when installing new packages"
+msgstr "--prefix može biti upotrebljena samo pri instalaciji novih paketa"
+
+msgid "arguments to --prefix must begin with a /"
+msgstr "argumenti za --prefix moraju početi znakom /"
+
+msgid ""
+"--hash (-h) may only be specified during package installation and erasure"
+msgstr ""
+
+msgid "--percent may only be specified during package installation and erasure"
+msgstr ""
+
+msgid "--replacepkgs may only be specified during package installation"
+msgstr "--replacepkgs može biti navedena samo tokom instalacije paketa"
+
+msgid "--excludedocs may only be specified during package installation"
+msgstr "--excludecocs može biti navedena samo tokom instalacije paketa"
+
+msgid "--includedocs may only be specified during package installation"
+msgstr "--includecocs može biti navedena samo tokom instalacije paketa"
+
+msgid "only one of --excludedocs and --includedocs may be specified"
+msgstr "može se navesti samo jedna od --excludedocs ili --includedocs"
+
+msgid "--ignorearch may only be specified during package installation"
+msgstr "--ignorearch može biti navedena samo tokom instalacije paketa"
+
+msgid "--ignoreos may only be specified during package installation"
+msgstr "--ignoreos može biti navedena samo tokom instalacije paketa"
+
+msgid "--ignoresize may only be specified during package installation"
+msgstr "--ignoresize može biti navedena samo tokom instalacije paketa"
+
+msgid "--allmatches may only be specified during package erasure"
+msgstr "--allmatches može biti navedena samo tokom brisanja paketa"
+
+msgid "--allfiles may only be specified during package installation"
+msgstr "--allfiles može biti navedena samo tokom instalacije paketa"
+
+msgid "--justdb may only be specified during package installation and erasure"
+msgstr "--justdb može biti navedena samo tokom instalacije i brisanja paketa"
+
+msgid ""
+"script disabling options may only be specified during package installation "
+"and erasure"
+msgstr ""
+"opcije isključivanja skripte mogu biti navedene samo tokom instalacije i "
+"brisanja paketa"
+
+msgid ""
+"trigger disabling options may only be specified during package installation "
+"and erasure"
+msgstr ""
+"opcije isključivanja okidača mogu biti navedene samo tokom instalacije i "
+"brisanja paketa"
+
+msgid ""
+"--nodeps may only be specified during package installation, erasure, and "
+"verification"
+msgstr ""
+
+msgid "--test may only be specified during package installation and erasure"
+msgstr ""
+
+msgid "arguments to --root (-r) must begin with a /"
+msgstr "argumenti za --root (-r) moraju početi znakom /"
+
+msgid "no packages given for erase"
+msgstr "nema zadatih paketa za brisanje"
+
+msgid "no packages given for install"
+msgstr "nema zadatih paketa za instalaciju"
+
+msgid "no arguments given for query"
+msgstr "nema zadatih argumenata za upit"
+
+msgid "no arguments given for verify"
+msgstr "nema zadatih argumenata za proveru"
+
+msgid "create uncompressed archive"
+msgstr ""
+
+msgid "archive format (pax|cpio)"
+msgstr ""
+
+#, c-format
+msgid "argument is not an RPM package\n"
+msgstr "argument nije RPM paket\n"
+
+#, c-format
+msgid "error reading header from package\n"
+msgstr "greška pri čitanju zaglavlja iz paketa\n"
+
+#, c-format
+msgid "cannot re-open payload: %s\n"
+msgstr "ne mogu da ponovo otvorim tovar: %s\n"
+
+msgid "initialize database"
+msgstr "inicijalizuj bazu podataka"
+
+msgid "rebuild database inverted lists from installed package headers"
+msgstr ""
+"ponovo napravi obrnute spiskove baze podataka iz zaglavlja instaliranih "
+"paketa"
+
+#, fuzzy
+#| msgid "verify database files"
+msgid "verify database"
+msgstr "provera datoteka baze podataka"
+
+#, fuzzy
+msgid "salvage database"
+msgstr "inicijalizuj bazu podataka"
+
+msgid "export database to stdout header list"
+msgstr ""
+
+msgid "import database from stdin header list"
+msgstr ""
+
+msgid "Database options:"
+msgstr "Opcije baze podataka:"
+
+#, c-format
+msgid "buildroot already specified, ignoring %s\n"
+msgstr "buildroot je već naveden, zanemarujem %s\n"
+
+#, c-format
+msgid "build through %prep (unpack sources and apply patches) from <specfile>"
+msgstr ""
+"napravi kroz %prep (raspakovani izvori i primenjene zakrpe) iz <specfile>"
+
+msgid "<specfile>"
+msgstr "<specfile>"
+
+#, c-format
+msgid "build through %conf (%prep, then %conf) from <specfile>"
+msgstr ""
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <specfile>"
+msgstr ""
+
+msgid "check build dependencies <specfile>"
+msgstr ""
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <specfile>"
+msgstr ""
+
+#, c-format
+msgid "verify %files section from <specfile>"
+msgstr "proveri %files odeljak iz <specfile>"
+
+msgid "build source and binary packages from <specfile>"
+msgstr "napravi izvorne i binarne pakete iz <specfile>"
+
+msgid "build binary package only from <specfile>"
+msgstr "napravi binarne pakete samo iz <specfile>"
+
+msgid "build source package only from <specfile>"
+msgstr "napravi izvorne pakete samo iz <specfile>"
+
+#, fuzzy
+msgid ""
+"build source package only from <specfile> - calculate dynamic build requires"
+msgstr "napravi izvorne pakete samo iz <specfile>"
+
+#, c-format
+msgid ""
+"build through %prep (unpack sources and apply patches) from <source package>"
+msgstr ""
+
+msgid "<source package>"
+msgstr "<source package>"
+
+#, fuzzy, c-format
+#| msgid ""
+#| "build through %install (%prep, %build, then install) from <source package>"
+msgid "build through %conf (%prep, then %conf) from <source package>"
+msgstr ""
+"napravi kroz %install (%prep, %build, zatim instaliraj) iz <source package>"
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <source package>"
+msgstr ""
+
+msgid "check build dependencies <source package>"
+msgstr ""
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <source "
+"package>"
+msgstr ""
+
+#, c-format
+msgid "verify %files section from <source package>"
+msgstr ""
+
+msgid "build source and binary packages from <source package>"
+msgstr ""
+
+msgid "build binary package only from <source package>"
+msgstr ""
+
+msgid "build source package only from <source package>"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"build source package only from <source package> - calculate dynamic build "
+"requires"
+msgstr "napravi izvorne pakete samo iz <specfile>"
+
+#, c-format
+msgid "build through %prep (unpack sources and apply patches) from <tarball>"
+msgstr ""
+"napravi kroz %prep (raspakovani izvori i primenjene zakrpe) iz <tarball>"
+
+msgid "<tarball>"
+msgstr "<tarball>"
+
+#, fuzzy, c-format
+#| msgid "build through %build (%prep, then compile) from <tarball>"
+msgid "build through %conf (%prep, then %conf) from <tarball>"
+msgstr "napravi kroz %build (%prep, onda kompiliraj) iz <tarball>"
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <tarball>"
+msgstr ""
+
+msgid "check build dependencies <tarball>"
+msgstr ""
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <tarball>"
+msgstr ""
+
+#, c-format
+msgid "verify %files section from <tarball>"
+msgstr "proveri %files odeljak iz <tarball>"
+
+msgid "build source and binary packages from <tarball>"
+msgstr "napravi izvorne i binarne pakete iz <tarball>"
+
+msgid "build binary package only from <tarball>"
+msgstr "napravi binarne pakete samo iz <tarball>"
+
+msgid "build source package only from <tarball>"
+msgstr "napravi izvorne pakete samo iz <tarball>"
+
+#, fuzzy
+msgid ""
+"build source package only from <tarball> - calculate dynamic build requires"
+msgstr "napravi izvorne pakete samo iz <tarball>"
+
+msgid "build binary package from <source package>"
+msgstr "napravi binarni paket iz <source package>"
+
+#, c-format
+msgid ""
+"build through %install (%prep, %build, then install) from <source package>"
+msgstr ""
+"napravi kroz %install (%prep, %build, zatim instaliraj) iz <source package>"
+
+#, fuzzy
+#| msgid "override build root"
+msgid "override build root (DEPRECATED)"
+msgstr "premosti koren pravljenja"
+
+msgid "remove build tree when done"
+msgstr "ukloni stablo pravljenja po završetku"
+
+msgid "ignore ExcludeArch: directives from spec file"
+msgstr "zanemari ExcludeArch: uputstva iz datoteke specifikacije"
+
+msgid "debug file state machine"
+msgstr "otkloni greške u mašini stanja datoteka"
+
+msgid "do not execute any stages of the build"
+msgstr "nemoj izvršiti nijednu fazu pravljenja"
+
+msgid "do not verify build dependencies"
+msgstr "nemoj proveravati zavisnosti pravljenja"
+
+msgid "generate package header(s) compatible with (legacy) rpm v3 packaging"
+msgstr ""
+
+#, c-format
+msgid "do not execute %clean stage of the build"
+msgstr ""
+
+#, c-format
+msgid "do not execute %prep stage of the build"
+msgstr ""
+
+#, c-format
+msgid "do not execute %check stage of the build"
+msgstr ""
+
+msgid "do not accept i18N msgstr's from specfile"
+msgstr "ne prihvataj i18N msgstr niske iz datoteke specifikacije"
+
+msgid "remove sources when done"
+msgstr "ukloni izvore po završetku"
+
+msgid "remove specfile when done"
+msgstr "ukloni datoteku specifikacije po završetku"
+
+msgid "skip straight to specified stage (only for c,i)"
+msgstr "preskoči pravo do određene faze (samo za c,i)"
+
+msgid "override target platform"
+msgstr "premosti ciljnu platformu"
+
+msgid "Build options with [ <specfile> | <tarball> | <source package> ]:"
+msgstr "Opcije pravljenja uz [ <specfile> | <tarball> | <source package> ]:"
+
+#, c-format
+msgid "Unable to open spec file %s: %s\n"
+msgstr "Ne mogu da otvorim datoteku specifikacije %s: %s\n"
+
+#, c-format
+msgid "Failed to open tar pipe: %m\n"
+msgstr "Neuspelo otvaranje tar cevi: %m\n"
+
+#, c-format
+msgid "Found more than one spec file in %s\n"
+msgstr ""
+
+#, c-format
+msgid "Failed to read spec file from %s\n"
+msgstr "Neuspelo čitanje datoteke specifikacije iz %s\n"
+
+#, c-format
+msgid "Failed to rename %s to %s: %m\n"
+msgstr "Neuspela promena imena %s u %s: %m\n"
+
+#, c-format
+msgid "failed to stat %s: %m\n"
+msgstr "stat nije uspeo %s: %m\n"
+
+#, c-format
+msgid "File %s is not a regular file.\n"
+msgstr "Datoteka %s nije obična datoteka.\n"
+
+#, c-format
+msgid "File %s does not appear to be a specfile.\n"
+msgstr "Datoteka %s ne liči na datoteku specifikacije.\n"
+
+#, c-format
+msgid "Building target platforms: %s\n"
+msgstr "Pravim ciljne platforme: %s\n"
+
+#, c-format
+msgid "Building for target %s\n"
+msgstr "Pravim za cilj %s\n"
+
+#, c-format
 msgid "%s: read manifest failed: %s\n"
 msgstr "%s: neuspelo čitanje manifesta: %s\n"
 
 msgid "don't verify header+payload signature"
 msgstr "nemoj proveravati potpis zaglavlja+tovara"
+
+msgid "verify package signature(s)"
+msgstr "proveri potpise paketa"
+
+msgid "import an armored public key"
+msgstr "uvezi ojačani javni ključ"
+
+#, fuzzy
+#| msgid "import an armored public key"
+msgid "export an public key"
+msgstr "uvezi ojačani javni ključ"
+
+msgid "don't import, but tell if it would work or not"
+msgstr ""
+
+msgid "Erase keys from RPM keyring"
+msgstr ""
+
+msgid "list keys from RPM keyring"
+msgstr ""
+
+msgid "rebuild the keyring - convert to current backend"
+msgstr ""
+
+msgid "get keys from this backend when rebuilding current backend"
+msgstr ""
+
+msgid "Keyring options:"
+msgstr ""
+
+msgid "no arguments given"
+msgstr "nema zadatih argumenata"
 
 msgid "getopt string for scripts options"
 msgstr ""
@@ -3318,11 +3446,138 @@ msgstr ""
 msgid "interactive session"
 msgstr ""
 
+#, fuzzy
+#| msgid "sign package(s) (identical to --addsign)"
+msgid "sign package(s), adding a new signature"
+msgstr "potpiši paket(e) (istovetno sa --addsign)"
+
+#, fuzzy
+#| msgid "sign package(s) (identical to --addsign)"
+msgid "resign package(s), deleting any previous signatures"
+msgstr "potpiši paket(e) (istovetno sa --addsign)"
+
+msgid "delete package signatures"
+msgstr "obriši potpise paketa"
+
+msgid "delete IMA and fsverity file signatures"
+msgstr ""
+
+#, fuzzy
+msgid "request legacy rpm v3 header+payload signatures on v4 packages"
+msgstr "nemoj proveravati potpis zaglavlja+tovara"
+
+#, fuzzy
+msgid "request legacy rpm v4 header signatures on v6 packages"
+msgstr "nemoj proveravati potpis zaglavlja+tovara"
+
+#, fuzzy
+msgid "request rpm v6 header signature on v4 packages"
+msgstr "nemoj proveravati potpis zaglavlja+tovara"
+
+msgid "sign package(s) files"
+msgstr ""
+
+msgid "generate fsverity signatures for package(s) files"
+msgstr ""
+
+msgid "algorithm to use for verity signatures, default sha256"
+msgstr ""
+
+msgid "<algorithm>"
+msgstr ""
+
+msgid "use file signing cert <cert>"
+msgstr ""
+
+msgid "<cert>"
+msgstr ""
+
+msgid "use file signing key <key>"
+msgstr ""
+
+msgid "<key>"
+msgstr ""
+
+msgid "prompt for file signing key password"
+msgstr ""
+
+msgid "Signature options:"
+msgstr "Opcije potpisa:"
+
+#, fuzzy, c-format
+#| msgid "You must set \"%%_gpg_name\" in your macro file\n"
+msgid "You must set \"%%_openpgp_sign_id\" in your macro file\n"
+msgstr "Morate postaviti „%%_gpg_name“ u makro datoteci\n"
+
+#, c-format
+msgid ""
+"You must set \"%%_file_signing_key\" in your macro file or on the command "
+"line with --fskpath\n"
+msgstr ""
+
+msgid "--fskpath may only be specified when signing files"
+msgstr ""
+
+msgid "parse spec file(s) to stdout"
+msgstr ""
+
+msgid "query spec file(s)"
+msgstr ""
+
+msgid "interactive macro shell"
+msgstr ""
+
+msgid "operate on binary rpms generated by spec (default)"
+msgstr ""
+
+msgid "operate on binary package header(s) that would be built from spec"
+msgstr ""
+
+msgid "operate on source package header generated by spec"
+msgstr ""
+
+msgid "Spec options:"
+msgstr ""
+
+#, c-format
+msgid "RPM version %s macro shell\n"
+msgstr ""
+
+msgid "no arguments given for parse"
+msgstr ""
+
 msgid "extract an archive"
 msgstr ""
 
 msgid "only print what would be done"
 msgstr ""
+
+msgid "extract into a specific path"
+msgstr ""
+
+#, c-format
+#~ msgid "%%{buildroot} couldn't be empty\n"
+#~ msgstr "%%{buildroot} ne može biti prazno\n"
+
+#, c-format
+#~ msgid "%%{buildroot} can not be \"/\"\n"
+#~ msgstr "%%{buildroot} ne može biti „/“\n"
+
+#, c-format
+#~ msgid "line %d: second %%prep\n"
+#~ msgstr "red %d: drugi %%prep\n"
+
+#~ msgid "query/verify package(s) with package identifier"
+#~ msgstr "ispitaj/proveri paket(e) sa identifikatorom paketa"
+
+#~ msgid "query/verify package(s) with header identifier"
+#~ msgstr "ispitaj/proveri paket(e) sa identifikatorom zaglavlja"
+
+#~ msgid "illegal signature type"
+#~ msgstr "nepravilan tip potpisa"
+
+#~ msgid "unsupported RPM package version"
+#~ msgstr "nepodržana verzija RPM paketa"
 
 #, c-format
 #~ msgid "%s: writeLead failed: %s\n"
@@ -3334,9 +3589,6 @@ msgstr ""
 #~ msgid "build through %install (%prep, %build, then install) from <specfile>"
 #~ msgstr ""
 #~ "napravi kroz %install (%prep, %build, zatim instaliraj) iz <specfile>"
-
-#~ msgid "build through %build (%prep, then compile) from <tarball>"
-#~ msgstr "napravi kroz %build (%prep, onda kompiliraj) iz <tarball>"
 
 #~ msgid "build through %install (%prep, %build, then install) from <tarball>"
 #~ msgstr "napravi kroz %install (%prep, %build, onda instaliraj) iz <tarball>"
@@ -3391,9 +3643,6 @@ msgstr ""
 
 #~ msgid "%a %b %d %Y"
 #~ msgstr "%a %b %d %Y"
-
-#~ msgid "%s saved as %s\n"
-#~ msgstr "%s sačuvano kao %s\n"
 
 #~ msgid "%s created as %s\n"
 #~ msgstr "%s napravljeno kao %s\n"

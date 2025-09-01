@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: RPM\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-04 09:25+0300\n"
+"POT-Creation-Date: 2025-09-01 14:14+0300\n"
 "PO-Revision-Date: 2024-02-21 10:35+0000\n"
 "Last-Translator: eirik song <eirik.song@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -22,519 +22,10 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 5.4\n"
 
-#, c-format
-msgid "%s: %s\n"
-msgstr "%s：%s\n"
-
-#, c-format
-msgid "RPM version %s\n"
-msgstr "RPM 版本 %s\n"
-
-#, c-format
-msgid "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
-msgstr "著作权所有 (C) 1998-2002 - Red Hat, Inc.\n"
-
-#, c-format
-msgid ""
-"This program may be freely redistributed under the terms of the GNU GPL\n"
-msgstr "此程序允许在遵守 GNU GPL 条款的前提下自由散布\n"
-
-#, c-format
-msgid "creating a pipe for --pipe failed: %m\n"
-msgstr "以 --pipe 建立管线时失败：%m\n"
-
-#, c-format
-msgid "exec failed\n"
-msgstr "执行失败\n"
-
-msgid "create uncompressed tar file"
-msgstr ""
-
-#, c-format
-msgid "argument is not an RPM package\n"
-msgstr "自变量不是 RPM 套件\n"
-
-#, c-format
-msgid "error reading header from package\n"
-msgstr "读取套件的标头信息时发生错误\n"
-
-#, c-format
-msgid "cannot re-open payload: %s\n"
-msgstr "无法重新开启酬载：%s\n"
-
-#, c-format
-msgid "files over 4GB not supported by cpio, use rpm2archive instead\n"
-msgstr "超过 4GB 的文件不收 cpio 支持，请改为使用 rpm2archive\n"
-
-#, c-format
-msgid "buildroot already specified, ignoring %s\n"
-msgstr "buildroot 已被指定，忽略 %s\n"
-
-#, c-format
-msgid "build through %prep (unpack sources and apply patches) from <specfile>"
-msgstr "从 <specfile> 透过 %prep (解包原始码并套用修补程序) 来建置"
-
-msgid "<specfile>"
-msgstr "<specfile>"
-
-#, c-format
-msgid "build through %conf (%prep, then %conf) from <specfile>"
-msgstr ""
-
-msgid "build through %build (%prep, %conf, then compile) from <specfile>"
-msgstr ""
-
-msgid "check build dependencies <specfile>"
-msgstr ""
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <specfile>"
-msgstr ""
-
-#, c-format
-msgid "verify %files section from <specfile>"
-msgstr "从 <specfile> 验证 %files 区段"
-
-msgid "build source and binary packages from <specfile>"
-msgstr "根据 <specfile> 建置原始码套件与二进制套件"
-
-msgid "build binary package only from <specfile>"
-msgstr "根据 <specfile> 只建置二进制套件"
-
-msgid "build source package only from <specfile>"
-msgstr "根据 <specfile> 只建置原始码套件"
-
 #, fuzzy
-msgid ""
-"build source package only from <specfile> - calculate dynamic build requires"
-msgstr "根據 <specfile> 只建置原始碼套件"
-
-#, c-format
-msgid ""
-"build through %prep (unpack sources and apply patches) from <source package>"
-msgstr ""
-
-msgid "<source package>"
-msgstr "<source package>"
-
-msgid "build through %build (%prep, %conf, then compile) from <source package>"
-msgstr ""
-
-msgid "check build dependencies <source package>"
-msgstr ""
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <source "
-"package>"
-msgstr ""
-
-#, c-format
-msgid "verify %files section from <source package>"
-msgstr ""
-
-msgid "build source and binary packages from <source package>"
-msgstr ""
-
-msgid "build binary package only from <source package>"
-msgstr ""
-
-msgid "build source package only from <source package>"
-msgstr ""
-
-#, fuzzy
-msgid ""
-"build source package only from <source package> - calculate dynamic build "
-"requires"
-msgstr "根據 <specfile> 只建置原始碼套件"
-
-#, c-format
-msgid "build through %prep (unpack sources and apply patches) from <tarball>"
-msgstr "从 <tarball> 透过 %prep (解包原始码和套用修补档) 来建置"
-
-msgid "<tarball>"
-msgstr "<tarball>"
-
-msgid "build through %build (%prep, %conf, then compile) from <tarball>"
-msgstr ""
-
-msgid "check build dependencies <tarball>"
-msgstr ""
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <tarball>"
-msgstr ""
-
-#, c-format
-msgid "verify %files section from <tarball>"
-msgstr "从 <tarball> 验证 %files 区段"
-
-msgid "build source and binary packages from <tarball>"
-msgstr "从 <tarball> 中建置原始码套件与二进制套件"
-
-msgid "build binary package only from <tarball>"
-msgstr "从 <tarball> 中只建置二进制套件"
-
-msgid "build source package only from <tarball>"
-msgstr "从 <tarball> 中只建置原始码套件"
-
-#, fuzzy
-msgid ""
-"build source package only from <tarball> - calculate dynamic build requires"
-msgstr "從 <tarball> 中只建置原始碼套件"
-
-msgid "build binary package from <source package>"
-msgstr "从 <source package> 中建置二进制套件"
-
-msgid ""
-"build through %install (%prep, %build, then install) from <source package>"
-msgstr "从 <source package> 透过 %install (%prep，%build，然后安装) 来建置"
-
-msgid "override build root"
-msgstr "强制覆写建置根目录"
-
-msgid "run build in current directory"
-msgstr ""
-
-msgid "remove build tree when done"
-msgstr "完成后移除建置树"
-
-msgid "ignore ExcludeArch: directives from spec file"
-msgstr "忽略 ExcludeArch：根据规格文件的指示"
-
-msgid "debug file state machine"
-msgstr "除错档案状态机器"
-
-msgid "do not execute any stages of the build"
-msgstr "不执行建置程序里的任何步骤"
-
-msgid "do not verify build dependencies"
-msgstr "不验证建置相依关系"
-
-msgid "generate package header(s) compatible with (legacy) rpm v3 packaging"
-msgstr "产生与(旧)rpm v3 封装兼容的套件标头"
-
-#, c-format
-msgid "do not execute %clean stage of the build"
-msgstr "不执行组建的 %clean 阶段"
-
-#, c-format
-msgid "do not execute %prep stage of the build"
-msgstr ""
-
-#, c-format
-msgid "do not execute %check stage of the build"
-msgstr "不执行组建的 %check 阶段"
-
-msgid "do not accept i18N msgstr's from specfile"
-msgstr "不接受来自规格文件的 i18N msgstr"
-
-msgid "remove sources when done"
-msgstr "完成后移除原始码档案"
-
-msgid "remove specfile when done"
-msgstr "完成后移除规格文件"
-
-msgid "skip straight to specified stage (only for c,i)"
-msgstr "直接跳到指定的阶段 (只有用于 c,i)"
-
-msgid "override target platform"
-msgstr "无视目标平台"
-
-msgid "Build options with [ <specfile> | <tarball> | <source package> ]:"
-msgstr "组建选项中使用 [ <specfile> | <tarball> | <source package> ]："
-
-msgid "Common options for all rpm modes and executables:"
-msgstr "用于所有 rpm 模式和可执行文件案的共同选项："
-
-#, c-format
-msgid "Unable to open spec file %s: %s\n"
-msgstr "无法开启 %s 规格文件：%s\n"
-
-#, c-format
-msgid "Failed to open tar pipe: %m\n"
-msgstr "无法开启 tar 管线：%m\n"
-
-#, c-format
-msgid "Found more than one spec file in %s\n"
-msgstr ""
-
-#, c-format
-msgid "Failed to read spec file from %s\n"
-msgstr "无法从 %s 读取规格文件\n"
-
-#, c-format
-msgid "Failed to rename %s to %s: %m\n"
-msgstr "无法将 %s 重新命名为 %s：%m\n"
-
-#, c-format
-msgid "failed to stat %s: %m\n"
-msgstr "无法检视 %s 的状态：%m\n"
-
-#, c-format
-msgid "File %s is not a regular file.\n"
-msgstr "%s 不是通常的档案。\n"
-
-#, c-format
-msgid "File %s does not appear to be a specfile.\n"
-msgstr "%s 似乎不是规格文件。\n"
-
-#, c-format
-msgid "Building target platforms: %s\n"
-msgstr "建置目标平台：%s\n"
-
-#, c-format
-msgid "Building for target %s\n"
-msgstr "建置目标 %s\n"
-
-msgid "arguments to --root (-r) must begin with a /"
-msgstr "--root (-r) 的自变量必须以「/」开头"
-
-msgid "initialize database"
-msgstr "初始化数据库"
-
-msgid "rebuild database inverted lists from installed package headers"
-msgstr "从安装的套件标头重建数据库的反向列表"
-
-msgid "verify database files"
-msgstr "验证数据库档案"
-
-#, fuzzy
-msgid "salvage database"
-msgstr "初始化資料庫"
-
-msgid "export database to stdout header list"
-msgstr ""
-
-msgid "import database from stdin header list"
-msgstr ""
-
-msgid "Database options:"
-msgstr "数据库选项："
-
-msgid "only one major mode may be specified"
-msgstr "只能指定一个主要工作模式"
-
-msgid "verify package signature(s)"
-msgstr "验证套件签名"
-
-msgid "import an armored public key"
-msgstr "汇入一个受保护的公钥"
-
-msgid "don't import, but tell if it would work or not"
-msgstr "不汇入，但会分辨是否它有作用"
-
-msgid "list keys from RPM keyring"
-msgstr "列出 RPM 钥匙圈的密钥"
-
-msgid "Keyring options:"
-msgstr "钥匙圈选项："
-
-msgid "no arguments given"
-msgstr "没有给定自变量"
-
-msgid "Query/Verify package selection options:"
-msgstr "查询/验证所选套件的选项："
-
-#, fuzzy
-msgid "Query/Verify file selection options:"
-msgstr "查詢/驗證所選套件的選項："
-
-msgid "Query options (with -q or --query):"
-msgstr "查询选项 (使用 -q 或 --query)："
-
-msgid "Verify options (with -V or --verify):"
-msgstr "验证选项 (使用 -V 或 --verify)："
-
-msgid "Install/Upgrade/Erase options:"
-msgstr "安装/升级/抹除选项："
-
-msgid "one type of query/verify may be performed at a time"
-msgstr "只有查询/验证两种工作模式能被同时实行"
-
-msgid "unexpected query flags"
-msgstr "未预期的查询旗标"
-
-msgid "unexpected query format"
-msgstr "不可预料的查询格式"
-
-msgid "unexpected query source"
-msgstr "不可预料的查询来源"
-
-msgid "only installation and upgrading may be forced"
-msgstr "只有安装与升级可以强迫执行"
-
-msgid "files may only be relocated during package installation"
-msgstr "档案只能在套件安装时重新分配位置"
-
-msgid "cannot use --prefix with --relocate or --excludepath"
-msgstr "--prefix 不能和 --relocate 或 --excludepath 同时使用"
-
-msgid ""
-"--relocate and --excludepath may only be used when installing new packages"
-msgstr "--relocate 和 --excludepath 只能在安装新套件时使用"
-
-msgid "--prefix may only be used when installing new packages"
-msgstr "--prefix 只能在安装新套件时使用"
-
-msgid "arguments to --prefix must begin with a /"
-msgstr "--prefix 的自变量必须以「/」开头"
-
-msgid ""
-"--hash (-h) may only be specified during package installation and erasure"
-msgstr "--hash (-h) 只能在套件安装与抹除时指定"
-
-msgid "--percent may only be specified during package installation and erasure"
-msgstr "--percent 只能在套件安装与抹除时指定"
-
-msgid "--replacepkgs may only be specified during package installation"
-msgstr "--replacepkgs 只能在套件安装时指定"
-
-msgid "--excludedocs may only be specified during package installation"
-msgstr "--excludedocs 只能在套件安装时指定"
-
-msgid "--includedocs may only be specified during package installation"
-msgstr "--includedocs 只能在套件安装时指定"
-
-msgid "only one of --excludedocs and --includedocs may be specified"
-msgstr "--excludedocs 和 --includedocs 两个选项中只能指定一个"
-
-msgid "--ignorearch may only be specified during package installation"
-msgstr "--ignorearch 只能在套件安装时指定"
-
-msgid "--ignoreos may only be specified during package installation"
-msgstr "--ignoreos 只能在套件安装时指定"
-
-msgid "--ignoresize may only be specified during package installation"
-msgstr "--ignoresize 只能在套件安装时指定"
-
-msgid "--allmatches may only be specified during package erasure"
-msgstr "--allmatches 只能在套件抹除时指定"
-
-msgid "--allfiles may only be specified during package installation"
-msgstr "--allfiles 只能在套件安装时指定"
-
-msgid "--justdb may only be specified during package installation and erasure"
-msgstr "--justdb 只能在套件安装和抹除时指定"
-
-msgid ""
-"script disabling options may only be specified during package installation "
-"and erasure"
-msgstr "与指令稿停用有关的选项只能在套件安装和抹除时指定"
-
-msgid ""
-"trigger disabling options may only be specified during package installation "
-"and erasure"
-msgstr "与触发停用有关的选项只能在套件安装和抹除时指定"
-
-msgid ""
-"--nodeps may only be specified during package installation, erasure, and "
-"verification"
-msgstr "--nodeps 只能在套件安装、抹除与验证时指定"
-
-msgid "--test may only be specified during package installation and erasure"
-msgstr "--test 只能在套件安装与抹除时指定"
-
-msgid "no packages given for erase"
-msgstr "没有指定要抹除的套件名称"
-
-msgid "no packages given for install"
-msgstr "没有指定要安装的套件名称"
-
-msgid "no arguments given for query"
-msgstr "没有给定查询自变量"
-
-msgid "no arguments given for verify"
-msgstr "没有给定验证自变量"
-
-msgid "sign package(s)"
-msgstr "签署套件"
-
-msgid "sign package(s) (identical to --addsign)"
-msgstr "签署套件 (与 --addsign 含义相同)"
-
-msgid "delete package signatures"
-msgstr "删除套件签名"
-
-msgid "delete IMA and fsverity file signatures"
-msgstr ""
-
-#, fuzzy
-msgid "create rpm v3 header+payload signatures"
-msgstr "不驗證標頭+酬載簽名"
-
-msgid "sign package(s) files"
-msgstr ""
-
-msgid "generate fsverity signatures for package(s) files"
-msgstr ""
-
-msgid "algorithm to use for verity signatures, default sha256"
-msgstr ""
-
-msgid "<algorithm>"
-msgstr ""
-
-msgid "use file signing cert <cert>"
-msgstr ""
-
-msgid "<cert>"
-msgstr ""
-
-msgid "use file signing key <key>"
-msgstr ""
-
-msgid "<key>"
-msgstr ""
-
-msgid "prompt for file signing key password"
-msgstr ""
-
-msgid "Signature options:"
-msgstr "签名选项："
-
-#, c-format
-msgid "You must set \"%%_gpg_name\" in your macro file\n"
-msgstr "您必须在您的宏文件中设定「%%_gpg_name」\n"
-
-#, c-format
-msgid ""
-"You must set \"%%_file_signing_key\" in your macro file or on the command "
-"line with --fskpath\n"
-msgstr ""
-
-msgid "--fskpath may only be specified when signing files"
-msgstr ""
-
-msgid "parse spec file(s) to stdout"
-msgstr "将规格档案剖析到标准输出"
-
-msgid "query spec file(s)"
-msgstr "查询规格档案"
-
-msgid "interactive macro shell"
-msgstr ""
-
-msgid "operate on binary rpms generated by spec (default)"
-msgstr "操作透过规格所建立的二进制 rpm (默认)"
-
-msgid "operate on binary package header(s) that would be built from spec"
-msgstr ""
-
-msgid "operate on source package header generated by spec"
-msgstr ""
-
-msgid "use the following query format"
-msgstr "使用以下的查询格式"
-
-msgid "Spec options:"
-msgstr "规格选项："
-
-#, c-format
-msgid "RPM version %s macro shell\n"
-msgstr ""
-
-msgid "no arguments given for parse"
-msgstr "没有任何自变量用于剖析"
+#| msgid "unable to read the signature\n"
+msgid "unable to parse _buildtime macro\n"
+msgstr "无法读取签名\n"
 
 msgid "unable to parse SOURCE_DATE_EPOCH\n"
 msgstr ""
@@ -562,12 +53,19 @@ msgstr "来自 %s 的不当离开状态 (%s)\n"
 msgid "Failed build dependencies:\n"
 msgstr "相依性建置失败：\n"
 
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to create package build directory %s: %s\n"
+msgstr "建立目录 %s 时失败：%s\n"
+
 #, c-format
 msgid "setting %s=%s\n"
 msgstr ""
 
 #, c-format
-msgid "source_date_epoch_from_changelog set but %%changelog is missing\n"
+msgid ""
+"%%source_date_epoch_from_changelog is set, but %%changelog has no entries to "
+"take a date from\n"
 msgstr ""
 
 msgid ""
@@ -641,11 +139,23 @@ msgid "File must begin with \"/\": %s\n"
 msgstr "档案必须以「/」开头：%s\n"
 
 #, c-format
-msgid "unable to parse %s=%s\n"
+msgid ""
+"%%clamp_mtime_to_source_date_epoch is deprecated, please use "
+"%%build_mtime_policy\n"
 msgstr ""
 
 #, c-format
-msgid "Unknown file digest algorithm %u, falling back to MD5\n"
+msgid "unable to parse %s=%s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "Unknown icon type: %s\n"
+msgid "Unknown mtime policy '%s'\n"
+msgstr "不明的图示类型：%s\n"
+
+#, fuzzy, c-format
+#| msgid "Unknown file digest algorithm %u, falling back to MD5\n"
+msgid "Unknown file digest algorithm %u, falling back to %u\n"
 msgstr "不明档案摘要算法 %u，权宜落回 MD5\n"
 
 #, c-format
@@ -873,9 +383,24 @@ msgstr "无法产生套件 %s 的文件名输出：%s\n"
 msgid "Finished binary package job, result %d, filename %s\n"
 msgstr ""
 
+#, fuzzy, c-format
+#| msgid "line %d: Error parsing %s: %s\n"
+msgid "line %d: Error parsing script: %s: %s\n"
+msgstr "第 %d 列：剖析 %s 时发生错误：%s\n"
+
+#, fuzzy, c-format
+#| msgid "line %d: Bad option %s: %s\n"
+msgid "line %d: Bad %s option %s: %s\n"
+msgstr "第 %d 列：不当选项 %s：%s\n"
+
 #, c-format
 msgid "line %d: second %s\n"
 msgstr "第 %d 列：第二个 %s\n"
+
+#, fuzzy, c-format
+#| msgid "line %d: unsupported internal script: %s\n"
+msgid "line %d: append and prepend specified: %s\n"
+msgstr "第 %d 列：不支持的内部指令稿：%s\n"
 
 #, c-format
 msgid "bogus date in %%changelog: %s\n"
@@ -981,6 +506,11 @@ msgstr "未包含的操作系统：%s\n"
 msgid "%s field must be present in package: %s\n"
 msgstr "%s 字段必须出现于套件中：%s\n"
 
+#, fuzzy, c-format
+#| msgid "%s field must be present in package: %s\n"
+msgid "%s field must be present before build in package: %s\n"
+msgstr "%s 字段必须出现于套件中：%s\n"
+
 #, c-format
 msgid "Duplicate %s entries in package: %s\n"
 msgstr "套件中有重复的 %s 条目：%s\n"
@@ -1051,6 +581,11 @@ msgstr "第 %d 列：不当 BuildArchitecture 格式：%s\n"
 msgid "line %d: Duplicate BuildArch entry: %s\n"
 msgstr ""
 
+#, fuzzy, c-format
+#| msgid "line %d: Only noarch subpackages are supported: %s\n"
+msgid "line %d: Only noarch is allowed after the build: %s\n"
+msgstr "第 %d 列：只有支持 noarch 子套装模块：%s\n"
+
 #, c-format
 msgid "line %d: Only noarch subpackages are supported: %s\n"
 msgstr "第 %d 列：只有支持 noarch 子套装模块：%s\n"
@@ -1074,13 +609,15 @@ msgstr ""
 msgid "line %d: Unknown tag: %s\n"
 msgstr "第 %d 列：不明标签：%s\n"
 
-#, c-format
-msgid "%%{buildroot} couldn't be empty\n"
-msgstr "%%{buildroot} 不可是空的\n"
+#, fuzzy, c-format
+#| msgid "line %d: Tag takes single token only: %s\n"
+msgid "line %d: Tag not allowed after build is done: %s\n"
+msgstr "第 %d 列：标签只需单一符记：%s\n"
 
-#, c-format
-msgid "%%{buildroot} can not be \"/\"\n"
-msgstr "%%{buildroot} 不可为「/」\n"
+#, fuzzy, c-format
+#| msgid "Invalid capability: %s\n"
+msgid "Invalid buildroot: '%s'\n"
+msgstr "无效的功能：%s\n"
 
 #, c-format
 msgid "No patch number %u\n"
@@ -1110,15 +647,6 @@ msgstr ""
 msgid "Invalid patch number %s: %s\n"
 msgstr "无效的修补编号 %s：%s\n"
 
-#, c-format
-msgid "line %d: second %%prep\n"
-msgstr "第 %d 列：第二个 %%prep\n"
-
-#, c-format
-msgid ""
-"%%patchN is deprecated (%i usages found), use %%patch N (or %%patch -P N)\n"
-msgstr ""
-
 msgid "Dependency tokens must begin with alpha-numeric, '_' or '/'"
 msgstr "依存字组必须以英数字、_ 或 / 开头"
 
@@ -1134,6 +662,11 @@ msgstr "无效的相关性"
 msgid "Version required"
 msgstr "所需版本"
 
+#, fuzzy
+#| msgid "relocations must begin with a /"
+msgid "file trigger conditions must begin with '/'"
+msgstr "重新分配位置必须以 / 开头"
+
 msgid "Only package names are allowed in Obsoletes"
 msgstr ""
 
@@ -1141,9 +674,6 @@ msgid "It's not recommended to have unversioned Obsoletes"
 msgstr ""
 
 msgid "It's not recommended to use '>' in Obsoletes"
-msgstr ""
-
-msgid "Only absolute paths are allowed in file triggers"
 msgstr ""
 
 msgid "Trigger fired by the same package is already defined in spec file"
@@ -1184,10 +714,6 @@ msgstr "第 %d 列：第二个 %s\n"
 #, c-format
 msgid "line %d: unsupported internal script: %s\n"
 msgstr "第 %d 列：不支持的内部指令稿：%s\n"
-
-#, c-format
-msgid "line %d: file trigger condition must begin with '/': %s"
-msgstr ""
 
 #, c-format
 msgid "line %d: interpreter arguments not allowed in triggers: %s\n"
@@ -1234,6 +760,10 @@ msgid "%s:%d: malformed %%include statement\n"
 msgstr "%s:%d：异常的 %%include 叙述\n"
 
 #, c-format
+msgid "%%patchN is obsolete, use %%patch N (or %%patch -P N): %s\n"
+msgstr ""
+
+#, c-format
 msgid "encoding %s not supported by system\n"
 msgstr ""
 
@@ -1253,8 +783,36 @@ msgstr ""
 msgid "line %d doesn't belong to any section: %s\n"
 msgstr ""
 
+#, fuzzy, c-format
+#| msgid "line %d: Unknown tag: %s\n"
+msgid "line %d: Unknown buildsystem: %s\n"
+msgstr "第 %d 列：不明标签：%s\n"
+
+#, c-format
+msgid ""
+"line %d: Required parametric macro %%%s not defined for buildsystem %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "failed to write all data to %s: %s\n"
+msgid "failed to write buildsystem %s %%%s: %s\n"
+msgstr "无法写入所有数据至 %s：%s\n"
+
+#, fuzzy, c-format
+#| msgid "Couldn't create temporary file for %s: %s\n"
+msgid "failed to create temp file for buildsystem: %s\n"
+msgstr "无法建立暂存档用于 %s：%s\n"
+
+#, c-format
+msgid "Section %s is not allowed after build is done!\n"
+msgstr ""
+
 msgid "No compatible architectures found for build\n"
 msgstr "找不到可供建置的兼容架构\n"
+
+#, c-format
+msgid "invalid rpm format %d requested, using %d\n"
+msgstr ""
 
 #, c-format
 msgid "Package has no %%description: %s\n"
@@ -1346,6 +904,10 @@ msgstr "%s 失败：%x\n"
 msgid "failed to write all data to %s: %s\n"
 msgstr "无法写入所有数据至 %s：%s\n"
 
+#, c-format
+msgid "invalid or out of order path from generator: %s\n"
+msgstr ""
+
 msgid "Empty file classifier\n"
 msgstr "空的档案分类器\n"
 
@@ -1377,6 +939,9 @@ msgid "Failed to find %s:\n"
 msgstr "找不到 %s：\n"
 
 msgid "Deprecated external dependency generator is used!\n"
+msgstr ""
+
+msgid "External dependency generator is incompatible with v6 packages\n"
 msgstr ""
 
 #, c-format
@@ -1502,8 +1067,9 @@ msgstr ""
 msgid "%s%s created as %s%s\n"
 msgstr ""
 
-#, c-format
-msgid "%s %s: remove failed: %s\n"
+#, fuzzy, c-format
+#| msgid "%s %s: remove failed: %s\n"
+msgid "%s %s%s: remove failed: %s\n"
 msgstr "%s %s：移除失败：%s\n"
 
 msgid "directory"
@@ -1629,9 +1195,40 @@ msgstr "| 预期于表述式的结尾"
 msgid "array iterator used with different sized arrays"
 msgstr "用于不同大小数组的数组迭代器"
 
+#, c-format
+msgid "%s: reading of public key failed.\n"
+msgstr "%s：读取公钥时失败。\n"
+
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to create keyring directory %s: %s\n"
+msgstr "建立目录 %s 时失败：%s\n"
+
+#, c-format
+msgid "failed to import key: %s: %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "can't create %s lock on %s (%s)\n"
+msgid "Can't create writelock for keyring at %s: %s\n"
+msgstr "无法建立 %s 锁定于 %s (%s)\n"
+
+#, c-format
+msgid "Can't acquire writelock for keyring at %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "%s: not an armored public key.\n"
+msgid "%s is not a valid public key\n"
+msgstr "%s：不是一个受保护的公钥。\n"
+
 #, fuzzy, c-format
 msgid "RPM v3 packages are deprecated: %s\n"
 msgstr "第 %d 列：%s 已過時：%s\n"
+
+#, c-format
+msgid "RPM version %s\n"
+msgstr "RPM 版本 %s\n"
 
 msgid "Error writing to stdout"
 msgstr ""
@@ -1739,9 +1336,6 @@ msgstr "对酬载档案状态机器除错"
 
 msgid "debug rpmio I/O"
 msgstr "除错 rpmio I/O"
-
-msgid "disable user namespace support"
-msgstr ""
 
 #, c-format
 msgid "%s: option table misconfigured (%d)\n"
@@ -1968,12 +1562,6 @@ msgstr "查询/验证套件所属的群组"
 msgid "query/verify a package file"
 msgstr "查询/验证一个套件档案"
 
-msgid "query/verify package(s) with package identifier"
-msgstr "以套件的识别符查询/验证套件"
-
-msgid "query/verify package(s) with header identifier"
-msgstr "以标头识别符查询/验证套件"
-
 msgid "rpm query mode"
 msgstr "rpm 查询模式"
 
@@ -1988,6 +1576,10 @@ msgstr "查询套件所触发的套件"
 
 msgid "rpm verify mode"
 msgstr "rpm 验证模式"
+
+#, fuzzy
+msgid "query/verify the package(s) which conflict with a dependency"
+msgstr "查詢/驗證需要某些相依套件的套件"
 
 msgid "query/verify the package(s) which require a dependency"
 msgstr "查询/验证需要某些相依套件的套件"
@@ -2048,6 +1640,9 @@ msgstr "倾印基本档案信息"
 
 msgid "list files in package"
 msgstr "列出套件内的档案"
+
+msgid "use the following query format"
+msgstr "使用以下的查询格式"
 
 msgid "display the states of the listed files"
 msgstr "显示列出的档案的状态"
@@ -2461,15 +2056,16 @@ msgid "Wrong number of entries for tag %s: %u found but %u expected.\n"
 msgstr ""
 
 #, c-format
-msgid "Malformed data for tag %s: %u bytes found but %lu expected.\n"
+msgid "Malformed data for tag %s: %u bytes found but %<PRIu64> expected.\n"
 msgstr ""
 
-#, c-format
-msgid "%s: base64 decode failed, len %li\n"
-msgstr ""
+#, fuzzy, c-format
+#| msgid "%s %s: remove failed: %s\n"
+msgid "%s: base64 decode failed, len %zu\n"
+msgstr "%s %s：移除失败：%s\n"
 
 #, c-format
-msgid "%s: base64 decode success, len %li\n"
+msgid "%s: base64 decode success, len %zu\n"
 msgstr ""
 
 msgid "Bad magic"
@@ -2499,7 +2095,7 @@ msgstr "内部错误"
 msgid "Archive file not in header"
 msgstr "在标头中没有封存档"
 
-msgid "Invalid symlink"
+msgid "Unsafe symlink"
 msgstr ""
 
 msgid "File from package already exists as a directory in system"
@@ -2577,6 +2173,11 @@ msgstr "套件 %s 不能重新分配位置\n"
 msgid "error reading from file %s\n"
 msgstr "读取档案 %s 时发生错误\n"
 
+#, fuzzy, c-format
+#| msgid "no package matches %s: %s\n"
+msgid "package format not supported: %s\n"
+msgstr "没有套件符合 %s：%s\n"
+
 #, c-format
 msgid "\"%s\" specifies multiple packages:\n"
 msgstr "「%s」指定多个套件：\n"
@@ -2591,12 +2192,6 @@ msgstr "正在安装 %s\n"
 
 msgid "not an rpm package"
 msgstr "并非 rpm 套件"
-
-msgid "illegal signature type"
-msgstr "无效的签名类型"
-
-msgid "unsupported RPM package version"
-msgstr "未支持的 RPM 套件版本"
 
 #, c-format
 msgid "read failed: %s (%d)\n"
@@ -2736,6 +2331,11 @@ msgstr "%s 遗漏自变量位于 %s:%d\n"
 msgid "cannot open %s at %s:%d: %m\n"
 msgstr "无法开启 %s 于 %s:%d：%m\n"
 
+#, fuzzy, c-format
+#| msgid "bad option '%s' at %s:%d\n"
+msgid "Ignoring %s at %s:%d\n"
+msgstr "不当选项「%s」位于 %s:%d\n"
+
 #, c-format
 msgid "missing architecture for %s at %s:%d\n"
 msgstr "%s 遗漏架构位于 %s:%d\n"
@@ -2794,6 +2394,15 @@ msgstr "%s 指令稿片段失败，离开状态 %d\n"
 msgid "Unknown format"
 msgstr "不明格式"
 
+#, c-format
+msgid "erasing gpg-pubkey packages is deprecated; use rpmkeys --delete %s\n"
+msgstr ""
+
+msgid ""
+"public keys can not be installed as gpg-pubkey packages; use rpmkeys --"
+"import <keyfile> for that\n"
+msgstr ""
+
 msgid "install"
 msgstr "安装"
 
@@ -2823,16 +2432,13 @@ msgid "missing ')' in package label: %s\n"
 msgstr "套件标贴遗漏「)」：%s\n"
 
 #, c-format
-msgid "%s: reading of public key failed.\n"
-msgstr "%s：读取公钥时失败。\n"
-
-#, c-format
 msgid "unknown keyring type: %s, using rpmdb\n"
 msgstr ""
 
-#, c-format
-msgid "failed to import key: %s: %s\n"
-msgstr ""
+#, fuzzy, c-format
+#| msgid "Unknown icon type: %s\n"
+msgid "unknown keyring type: %s\n"
+msgstr "不明的图示类型：%s\n"
 
 #, fuzzy, c-format
 msgid "invalid package verify level %s\n"
@@ -2858,6 +2464,10 @@ msgid "%s tag %u: invalid size %u"
 msgstr ""
 
 #, c-format
+msgid "%s tag %u: invalid base64"
+msgstr ""
+
+#, c-format
 msgid "%s tag %u: invalid OpenPGP signature"
 msgstr ""
 
@@ -2865,18 +2475,27 @@ msgstr ""
 msgid "%s: tag %u: invalid hex"
 msgstr ""
 
-#, c-format
-msgid "%s%s%s %s"
-msgstr ""
+#, fuzzy, c-format
+#| msgid "%s saved as %s\n"
+msgid "%s %s%s %s"
+msgstr "%s 已被另存為 %s\n"
 
 msgid "digest"
 msgstr ""
 
 #, c-format
-msgid "%s%s"
+msgid "%s OpenPGP %s"
+msgstr ""
+
+#, c-format
+msgid "%s OpenPGP %s %s"
 msgstr ""
 
 msgid "signature"
+msgstr ""
+
+#, c-format
+msgid ", key fingerprint: %s"
 msgstr ""
 
 msgid "header"
@@ -2885,10 +2504,12 @@ msgstr ""
 msgid "package"
 msgstr ""
 
-msgid "Header "
+#, fuzzy
+#| msgid "Header "
+msgid "Header"
 msgstr "标头 "
 
-msgid "Payload "
+msgid "Payload"
 msgstr ""
 
 msgid "Unable to reload signature header.\n"
@@ -2973,8 +2594,9 @@ msgstr ""
 msgid "syntax error in expression"
 msgstr "表述式中有語法錯誤\n"
 
-msgid "unsupported funcion"
-msgstr ""
+#, fuzzy
+msgid "unsupported function"
+msgstr "字串不支援 -\n"
 
 #, fuzzy
 msgid "unmatched ("
@@ -3089,7 +2711,16 @@ msgid "A %% is followed by an unparseable macro\n"
 msgstr "在无法剖析的宏之后跟着一个 %%\n"
 
 #, c-format
-msgid "======================== active %d empty %d\n"
+msgid "unexpected argument to non-parametric macro %%%s\n"
+msgstr ""
+
+#, c-format
+msgid "macro value out of range for int: %<PRIu64> using %i instead.\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "======================== active %d empty %d\n"
+msgid "======================== active %zu empty %d\n"
 msgstr "======================== 作用中 %d 清空 %d\n"
 
 #, c-format
@@ -3160,6 +2791,15 @@ msgstr "V%d %s/%s %s，密钥识别号 %s"
 msgid "(none)"
 msgstr "(无)"
 
+#, fuzzy, c-format
+#| msgid "Could not open %s file: %s\n"
+msgid "Could not find url helper: \"%s\"\n"
+msgstr "無法開啟 %s 檔案：%s\n"
+
+#, c-format
+msgid "Executing url helper \"%s\" failed with status %i\n"
+msgstr ""
+
 #, c-format
 msgid "%s: Fwrite failed: %s\n"
 msgstr "%s: Fwrite 失败：%s\n"
@@ -3172,25 +2812,15 @@ msgstr "%s：Fread 失败：%s\n"
 msgid "%s: Fflush failed: %s\n"
 msgstr "%s：Fflush 失败：%s\n"
 
-#, fuzzy
-#| msgid "Unsupported PGP signature\n"
-msgid "Unsupported OpenPGP signature\n"
-msgstr "未支援的 PGP 簽名\n"
+#, fuzzy, c-format
+#| msgid "reading symlink %s failed: %s\n"
+msgid "Expanding signing macro %s failed\n"
+msgstr "读取符号链结 %s 失败：%s\n"
 
 #, fuzzy, c-format
-#| msgid "Unsupported PGP hash algorithm %u\n"
-msgid "Unsupported OpenPGP hash algorithm %u\n"
-msgstr "未支援的 PGP 雜湊演算法 %u\n"
-
-#, fuzzy, c-format
-#| msgid "Unsupported PGP pubkey algorithm %u\n"
-msgid "Unsupported OpenPGP pubkey algorithm %u\n"
-msgstr "未支援的 PGP 公鑰演算法 %u\n"
-
-#, fuzzy, c-format
-#| msgid "Unsupported PGP signature\n"
-msgid "Deprecated OpenPGP signature version %d\n"
-msgstr "未支援的 PGP 簽名\n"
+#| msgid "Invalid %s token: %s\n"
+msgid "Invalid sign command: %s\n"
+msgstr "无效的 %s 符记：%s\n"
 
 #, fuzzy, c-format
 msgid "Could not create pipe for signing: %m\n"
@@ -3217,18 +2847,43 @@ msgstr ""
 
 #, fuzzy, c-format
 #| msgid "gpg exec failed (%d)\n"
-msgid "gpg waitpid failed (%s)\n"
+msgid "%s waitpid failed (%s)\n"
 msgstr "gpg 执行失败 (%d)\n"
 
-#, c-format
-msgid "gpg exec failed (%d)\n"
+#, fuzzy, c-format
+#| msgid "gpg exec failed (%d)\n"
+msgid "%s exec failed (%d)\n"
 msgstr "gpg 执行失败 (%d)\n"
 
-msgid "gpg failed to write signature\n"
+#, fuzzy, c-format
+#| msgid "gpg failed to write signature\n"
+msgid "failed to write signature: %s\n"
 msgstr "写入签名时 gpg 失败\n"
 
-msgid "unable to read the signature\n"
+#, fuzzy, c-format
+#| msgid "unable to read the signature\n"
+msgid "unable to read the signature: %s\n"
 msgstr "无法读取签名\n"
+
+#, fuzzy
+#| msgid "Unsupported PGP signature\n"
+msgid "Unsupported OpenPGP signature\n"
+msgstr "未支援的 PGP 簽名\n"
+
+#, fuzzy, c-format
+#| msgid "Unsupported PGP hash algorithm %u\n"
+msgid "Unsupported OpenPGP hash algorithm %u\n"
+msgstr "未支援的 PGP 雜湊演算法 %u\n"
+
+#, fuzzy, c-format
+#| msgid "Unsupported PGP signature\n"
+msgid "Deprecated OpenPGP signature version %d\n"
+msgstr "未支援的 PGP 簽名\n"
+
+#, fuzzy, c-format
+#| msgid "Unsupported PGP pubkey algorithm %u\n"
+msgid "Unsupported OpenPGP pubkey algorithm %u for rpm v3/v4 signatures\n"
+msgstr "未支援的 PGP 公鑰演算法 %u\n"
 
 msgid "file signing support not built in\n"
 msgstr ""
@@ -3255,18 +2910,42 @@ msgstr "%s：rpmReadSignature 失败：%s"
 msgid "%s: headerRead failed: %s\n"
 msgstr "%s：headerRead 失败：%s\n"
 
-msgid "Cannot sign RPM v3 packages\n"
+#, fuzzy, c-format
+#| msgid "Cannot sign RPM v3 packages\n"
+msgid "Cannot sign RPM v3 packages: %s\n"
 msgstr "无法签署 RPM v3 套件\n"
 
+#, fuzzy, c-format
+#| msgid "Could not generate output filename for package %s: %s\n"
+msgid "not generating v3 signature for v6 package: %s\n"
+msgstr "无法产生套件 %s 的文件名输出：%s\n"
+
 #, c-format
-msgid "%s already contains identical signature, skipping\n"
+msgid "File signatures not applicable to src.rpm: %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "Could not open %s file: %s\n"
+msgid "Could not get a file size of %s\n"
+msgstr "無法開啟 %s 檔案：%s\n"
+
+#, fuzzy, c-format
+#| msgid "%s already contains identical signature, skipping\n"
+msgid "%s already contains an identical signature, skipping\n"
+msgstr "%s 已经含有相同的签名，跳过\n"
+
+#, fuzzy, c-format
+#| msgid "%s already contains identical signature, skipping\n"
+msgid "%s already contains a legacy signature\n"
 msgstr "%s 已经含有相同的签名，跳过\n"
 
 #, c-format
 msgid "%s: rpmWriteSignature failed: %s\n"
 msgstr "%s：rpmWriteSignature 失败：%s\n"
 
-msgid "rpmMkTemp failed\n"
+#, fuzzy, c-format
+#| msgid "rpmMkTemp failed\n"
+msgid "rpmMkTemp failed: %s\n"
 msgstr "rpmMkTemp 失败\n"
 
 #, fuzzy, c-format
@@ -3291,11 +2970,465 @@ msgid "headerPutString failed\n"
 msgstr ""
 
 #, c-format
+msgid "%s: %s\n"
+msgstr "%s：%s\n"
+
+#, c-format
+msgid "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
+msgstr "著作权所有 (C) 1998-2002 - Red Hat, Inc.\n"
+
+#, c-format
+msgid ""
+"This program may be freely redistributed under the terms of the GNU GPL\n"
+msgstr "此程序允许在遵守 GNU GPL 条款的前提下自由散布\n"
+
+#, c-format
+msgid "creating a pipe for --pipe failed: %m\n"
+msgstr "以 --pipe 建立管线时失败：%m\n"
+
+#, c-format
+msgid "exec failed\n"
+msgstr "执行失败\n"
+
+msgid "Query/Verify package selection options:"
+msgstr "查询/验证所选套件的选项："
+
+#, fuzzy
+msgid "Query/Verify file selection options:"
+msgstr "查詢/驗證所選套件的選項："
+
+msgid "Query options (with -q or --query):"
+msgstr "查询选项 (使用 -q 或 --query)："
+
+msgid "Verify options (with -V or --verify):"
+msgstr "验证选项 (使用 -V 或 --verify)："
+
+msgid "Install/Upgrade/Erase options:"
+msgstr "安装/升级/抹除选项："
+
+msgid "Common options for all rpm modes and executables:"
+msgstr "用于所有 rpm 模式和可执行文件案的共同选项："
+
+msgid "one type of query/verify may be performed at a time"
+msgstr "只有查询/验证两种工作模式能被同时实行"
+
+msgid "unexpected query flags"
+msgstr "未预期的查询旗标"
+
+msgid "unexpected query format"
+msgstr "不可预料的查询格式"
+
+msgid "unexpected query source"
+msgstr "不可预料的查询来源"
+
+msgid "only one major mode may be specified"
+msgstr "只能指定一个主要工作模式"
+
+msgid "only installation and upgrading may be forced"
+msgstr "只有安装与升级可以强迫执行"
+
+msgid "files may only be relocated during package installation"
+msgstr "档案只能在套件安装时重新分配位置"
+
+msgid "cannot use --prefix with --relocate or --excludepath"
+msgstr "--prefix 不能和 --relocate 或 --excludepath 同时使用"
+
+msgid ""
+"--relocate and --excludepath may only be used when installing new packages"
+msgstr "--relocate 和 --excludepath 只能在安装新套件时使用"
+
+msgid "--prefix may only be used when installing new packages"
+msgstr "--prefix 只能在安装新套件时使用"
+
+msgid "arguments to --prefix must begin with a /"
+msgstr "--prefix 的自变量必须以「/」开头"
+
+msgid ""
+"--hash (-h) may only be specified during package installation and erasure"
+msgstr "--hash (-h) 只能在套件安装与抹除时指定"
+
+msgid "--percent may only be specified during package installation and erasure"
+msgstr "--percent 只能在套件安装与抹除时指定"
+
+msgid "--replacepkgs may only be specified during package installation"
+msgstr "--replacepkgs 只能在套件安装时指定"
+
+msgid "--excludedocs may only be specified during package installation"
+msgstr "--excludedocs 只能在套件安装时指定"
+
+msgid "--includedocs may only be specified during package installation"
+msgstr "--includedocs 只能在套件安装时指定"
+
+msgid "only one of --excludedocs and --includedocs may be specified"
+msgstr "--excludedocs 和 --includedocs 两个选项中只能指定一个"
+
+msgid "--ignorearch may only be specified during package installation"
+msgstr "--ignorearch 只能在套件安装时指定"
+
+msgid "--ignoreos may only be specified during package installation"
+msgstr "--ignoreos 只能在套件安装时指定"
+
+msgid "--ignoresize may only be specified during package installation"
+msgstr "--ignoresize 只能在套件安装时指定"
+
+msgid "--allmatches may only be specified during package erasure"
+msgstr "--allmatches 只能在套件抹除时指定"
+
+msgid "--allfiles may only be specified during package installation"
+msgstr "--allfiles 只能在套件安装时指定"
+
+msgid "--justdb may only be specified during package installation and erasure"
+msgstr "--justdb 只能在套件安装和抹除时指定"
+
+msgid ""
+"script disabling options may only be specified during package installation "
+"and erasure"
+msgstr "与指令稿停用有关的选项只能在套件安装和抹除时指定"
+
+msgid ""
+"trigger disabling options may only be specified during package installation "
+"and erasure"
+msgstr "与触发停用有关的选项只能在套件安装和抹除时指定"
+
+msgid ""
+"--nodeps may only be specified during package installation, erasure, and "
+"verification"
+msgstr "--nodeps 只能在套件安装、抹除与验证时指定"
+
+msgid "--test may only be specified during package installation and erasure"
+msgstr "--test 只能在套件安装与抹除时指定"
+
+msgid "arguments to --root (-r) must begin with a /"
+msgstr "--root (-r) 的自变量必须以「/」开头"
+
+msgid "no packages given for erase"
+msgstr "没有指定要抹除的套件名称"
+
+msgid "no packages given for install"
+msgstr "没有指定要安装的套件名称"
+
+msgid "no arguments given for query"
+msgstr "没有给定查询自变量"
+
+msgid "no arguments given for verify"
+msgstr "没有给定验证自变量"
+
+msgid "create uncompressed archive"
+msgstr ""
+
+msgid "archive format (pax|cpio)"
+msgstr ""
+
+#, c-format
+msgid "argument is not an RPM package\n"
+msgstr "自变量不是 RPM 套件\n"
+
+#, c-format
+msgid "error reading header from package\n"
+msgstr "读取套件的标头信息时发生错误\n"
+
+#, c-format
+msgid "cannot re-open payload: %s\n"
+msgstr "无法重新开启酬载：%s\n"
+
+msgid "initialize database"
+msgstr "初始化数据库"
+
+msgid "rebuild database inverted lists from installed package headers"
+msgstr "从安装的套件标头重建数据库的反向列表"
+
+#, fuzzy
+#| msgid "verify database files"
+msgid "verify database"
+msgstr "验证数据库档案"
+
+#, fuzzy
+msgid "salvage database"
+msgstr "初始化資料庫"
+
+msgid "export database to stdout header list"
+msgstr ""
+
+msgid "import database from stdin header list"
+msgstr ""
+
+msgid "Database options:"
+msgstr "数据库选项："
+
+#, c-format
+msgid "buildroot already specified, ignoring %s\n"
+msgstr "buildroot 已被指定，忽略 %s\n"
+
+#, c-format
+msgid "build through %prep (unpack sources and apply patches) from <specfile>"
+msgstr "从 <specfile> 透过 %prep (解包原始码并套用修补程序) 来建置"
+
+msgid "<specfile>"
+msgstr "<specfile>"
+
+#, c-format
+msgid "build through %conf (%prep, then %conf) from <specfile>"
+msgstr ""
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <specfile>"
+msgstr ""
+
+msgid "check build dependencies <specfile>"
+msgstr ""
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <specfile>"
+msgstr ""
+
+#, c-format
+msgid "verify %files section from <specfile>"
+msgstr "从 <specfile> 验证 %files 区段"
+
+msgid "build source and binary packages from <specfile>"
+msgstr "根据 <specfile> 建置原始码套件与二进制套件"
+
+msgid "build binary package only from <specfile>"
+msgstr "根据 <specfile> 只建置二进制套件"
+
+msgid "build source package only from <specfile>"
+msgstr "根据 <specfile> 只建置原始码套件"
+
+#, fuzzy
+msgid ""
+"build source package only from <specfile> - calculate dynamic build requires"
+msgstr "根據 <specfile> 只建置原始碼套件"
+
+#, c-format
+msgid ""
+"build through %prep (unpack sources and apply patches) from <source package>"
+msgstr ""
+
+msgid "<source package>"
+msgstr "<source package>"
+
+#, fuzzy, c-format
+#| msgid ""
+#| "build through %install (%prep, %build, then install) from <source package>"
+msgid "build through %conf (%prep, then %conf) from <source package>"
+msgstr "从 <source package> 透过 %install (%prep，%build，然后安装) 来建置"
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <source package>"
+msgstr ""
+
+msgid "check build dependencies <source package>"
+msgstr ""
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <source "
+"package>"
+msgstr ""
+
+#, c-format
+msgid "verify %files section from <source package>"
+msgstr ""
+
+msgid "build source and binary packages from <source package>"
+msgstr ""
+
+msgid "build binary package only from <source package>"
+msgstr ""
+
+msgid "build source package only from <source package>"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"build source package only from <source package> - calculate dynamic build "
+"requires"
+msgstr "根據 <specfile> 只建置原始碼套件"
+
+#, c-format
+msgid "build through %prep (unpack sources and apply patches) from <tarball>"
+msgstr "从 <tarball> 透过 %prep (解包原始码和套用修补档) 来建置"
+
+msgid "<tarball>"
+msgstr "<tarball>"
+
+#, fuzzy, c-format
+#| msgid "build through %build (%prep, then compile) from <tarball>"
+msgid "build through %conf (%prep, then %conf) from <tarball>"
+msgstr "從 <tarball> 透過 %build (%prep，然後編譯) 來建置"
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <tarball>"
+msgstr ""
+
+msgid "check build dependencies <tarball>"
+msgstr ""
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <tarball>"
+msgstr ""
+
+#, c-format
+msgid "verify %files section from <tarball>"
+msgstr "从 <tarball> 验证 %files 区段"
+
+msgid "build source and binary packages from <tarball>"
+msgstr "从 <tarball> 中建置原始码套件与二进制套件"
+
+msgid "build binary package only from <tarball>"
+msgstr "从 <tarball> 中只建置二进制套件"
+
+msgid "build source package only from <tarball>"
+msgstr "从 <tarball> 中只建置原始码套件"
+
+#, fuzzy
+msgid ""
+"build source package only from <tarball> - calculate dynamic build requires"
+msgstr "從 <tarball> 中只建置原始碼套件"
+
+msgid "build binary package from <source package>"
+msgstr "从 <source package> 中建置二进制套件"
+
+#, c-format
+msgid ""
+"build through %install (%prep, %build, then install) from <source package>"
+msgstr "从 <source package> 透过 %install (%prep，%build，然后安装) 来建置"
+
+#, fuzzy
+#| msgid "override build root"
+msgid "override build root (DEPRECATED)"
+msgstr "强制覆写建置根目录"
+
+msgid "remove build tree when done"
+msgstr "完成后移除建置树"
+
+msgid "ignore ExcludeArch: directives from spec file"
+msgstr "忽略 ExcludeArch：根据规格文件的指示"
+
+msgid "debug file state machine"
+msgstr "除错档案状态机器"
+
+msgid "do not execute any stages of the build"
+msgstr "不执行建置程序里的任何步骤"
+
+msgid "do not verify build dependencies"
+msgstr "不验证建置相依关系"
+
+msgid "generate package header(s) compatible with (legacy) rpm v3 packaging"
+msgstr "产生与(旧)rpm v3 封装兼容的套件标头"
+
+#, c-format
+msgid "do not execute %clean stage of the build"
+msgstr "不执行组建的 %clean 阶段"
+
+#, c-format
+msgid "do not execute %prep stage of the build"
+msgstr ""
+
+#, c-format
+msgid "do not execute %check stage of the build"
+msgstr "不执行组建的 %check 阶段"
+
+msgid "do not accept i18N msgstr's from specfile"
+msgstr "不接受来自规格文件的 i18N msgstr"
+
+msgid "remove sources when done"
+msgstr "完成后移除原始码档案"
+
+msgid "remove specfile when done"
+msgstr "完成后移除规格文件"
+
+msgid "skip straight to specified stage (only for c,i)"
+msgstr "直接跳到指定的阶段 (只有用于 c,i)"
+
+msgid "override target platform"
+msgstr "无视目标平台"
+
+msgid "Build options with [ <specfile> | <tarball> | <source package> ]:"
+msgstr "组建选项中使用 [ <specfile> | <tarball> | <source package> ]："
+
+#, c-format
+msgid "Unable to open spec file %s: %s\n"
+msgstr "无法开启 %s 规格文件：%s\n"
+
+#, c-format
+msgid "Failed to open tar pipe: %m\n"
+msgstr "无法开启 tar 管线：%m\n"
+
+#, c-format
+msgid "Found more than one spec file in %s\n"
+msgstr ""
+
+#, c-format
+msgid "Failed to read spec file from %s\n"
+msgstr "无法从 %s 读取规格文件\n"
+
+#, c-format
+msgid "Failed to rename %s to %s: %m\n"
+msgstr "无法将 %s 重新命名为 %s：%m\n"
+
+#, c-format
+msgid "failed to stat %s: %m\n"
+msgstr "无法检视 %s 的状态：%m\n"
+
+#, c-format
+msgid "File %s is not a regular file.\n"
+msgstr "%s 不是通常的档案。\n"
+
+#, c-format
+msgid "File %s does not appear to be a specfile.\n"
+msgstr "%s 似乎不是规格文件。\n"
+
+#, c-format
+msgid "Building target platforms: %s\n"
+msgstr "建置目标平台：%s\n"
+
+#, c-format
+msgid "Building for target %s\n"
+msgstr "建置目标 %s\n"
+
+#, c-format
 msgid "%s: read manifest failed: %s\n"
 msgstr "%s：读取清单失败：%s\n"
 
 msgid "don't verify header+payload signature"
 msgstr "不验证标头+酬载签名"
+
+msgid "verify package signature(s)"
+msgstr "验证套件签名"
+
+msgid "import an armored public key"
+msgstr "汇入一个受保护的公钥"
+
+#, fuzzy
+#| msgid "import an armored public key"
+msgid "export an public key"
+msgstr "汇入一个受保护的公钥"
+
+msgid "don't import, but tell if it would work or not"
+msgstr "不汇入，但会分辨是否它有作用"
+
+#, fuzzy
+#| msgid "list keys from RPM keyring"
+msgid "Erase keys from RPM keyring"
+msgstr "列出 RPM 钥匙圈的密钥"
+
+msgid "list keys from RPM keyring"
+msgstr "列出 RPM 钥匙圈的密钥"
+
+msgid "rebuild the keyring - convert to current backend"
+msgstr ""
+
+msgid "get keys from this backend when rebuilding current backend"
+msgstr ""
+
+msgid "Keyring options:"
+msgstr "钥匙圈选项："
+
+msgid "no arguments given"
+msgstr "没有给定自变量"
 
 msgid "getopt string for scripts options"
 msgstr ""
@@ -3306,11 +3439,145 @@ msgstr ""
 msgid "interactive session"
 msgstr ""
 
+#, fuzzy
+#| msgid "sign package(s) (identical to --addsign)"
+msgid "sign package(s), adding a new signature"
+msgstr "签署套件 (与 --addsign 含义相同)"
+
+#, fuzzy
+#| msgid "sign package(s) (identical to --addsign)"
+msgid "resign package(s), deleting any previous signatures"
+msgstr "签署套件 (与 --addsign 含义相同)"
+
+msgid "delete package signatures"
+msgstr "删除套件签名"
+
+msgid "delete IMA and fsverity file signatures"
+msgstr ""
+
+#, fuzzy
+msgid "request legacy rpm v3 header+payload signatures on v4 packages"
+msgstr "不驗證標頭+酬載簽名"
+
+#, fuzzy
+msgid "request legacy rpm v4 header signatures on v6 packages"
+msgstr "不驗證標頭+酬載簽名"
+
+#, fuzzy
+msgid "request rpm v6 header signature on v4 packages"
+msgstr "不驗證標頭+酬載簽名"
+
+msgid "sign package(s) files"
+msgstr ""
+
+msgid "generate fsverity signatures for package(s) files"
+msgstr ""
+
+msgid "algorithm to use for verity signatures, default sha256"
+msgstr ""
+
+msgid "<algorithm>"
+msgstr ""
+
+msgid "use file signing cert <cert>"
+msgstr ""
+
+msgid "<cert>"
+msgstr ""
+
+msgid "use file signing key <key>"
+msgstr ""
+
+msgid "<key>"
+msgstr ""
+
+msgid "prompt for file signing key password"
+msgstr ""
+
+msgid "Signature options:"
+msgstr "签名选项："
+
+#, fuzzy, c-format
+#| msgid "You must set \"%%_gpg_name\" in your macro file\n"
+msgid "You must set \"%%_openpgp_sign_id\" in your macro file\n"
+msgstr "您必须在您的宏文件中设定「%%_gpg_name」\n"
+
+#, c-format
+msgid ""
+"You must set \"%%_file_signing_key\" in your macro file or on the command "
+"line with --fskpath\n"
+msgstr ""
+
+msgid "--fskpath may only be specified when signing files"
+msgstr ""
+
+msgid "parse spec file(s) to stdout"
+msgstr "将规格档案剖析到标准输出"
+
+msgid "query spec file(s)"
+msgstr "查询规格档案"
+
+msgid "interactive macro shell"
+msgstr ""
+
+msgid "operate on binary rpms generated by spec (default)"
+msgstr "操作透过规格所建立的二进制 rpm (默认)"
+
+msgid "operate on binary package header(s) that would be built from spec"
+msgstr ""
+
+msgid "operate on source package header generated by spec"
+msgstr ""
+
+msgid "Spec options:"
+msgstr "规格选项："
+
+#, c-format
+msgid "RPM version %s macro shell\n"
+msgstr ""
+
+msgid "no arguments given for parse"
+msgstr "没有任何自变量用于剖析"
+
 msgid "extract an archive"
 msgstr ""
 
 msgid "only print what would be done"
 msgstr ""
+
+msgid "extract into a specific path"
+msgstr ""
+
+#, c-format
+#~ msgid "files over 4GB not supported by cpio, use rpm2archive instead\n"
+#~ msgstr "超过 4GB 的文件不收 cpio 支持，请改为使用 rpm2archive\n"
+
+#~ msgid "sign package(s)"
+#~ msgstr "签署套件"
+
+#, c-format
+#~ msgid "%%{buildroot} couldn't be empty\n"
+#~ msgstr "%%{buildroot} 不可是空的\n"
+
+#, c-format
+#~ msgid "%%{buildroot} can not be \"/\"\n"
+#~ msgstr "%%{buildroot} 不可为「/」\n"
+
+#, c-format
+#~ msgid "line %d: second %%prep\n"
+#~ msgstr "第 %d 列：第二个 %%prep\n"
+
+#~ msgid "query/verify package(s) with package identifier"
+#~ msgstr "以套件的识别符查询/验证套件"
+
+#~ msgid "query/verify package(s) with header identifier"
+#~ msgstr "以标头识别符查询/验证套件"
+
+#~ msgid "illegal signature type"
+#~ msgstr "无效的签名类型"
+
+#~ msgid "unsupported RPM package version"
+#~ msgstr "未支持的 RPM 套件版本"
 
 #, c-format
 #~ msgid "%%dev glob not permitted: %s\n"
@@ -3325,9 +3592,6 @@ msgstr ""
 
 #~ msgid "build through %install (%prep, %build, then install) from <specfile>"
 #~ msgstr "從 <specfile> 透過 %install (%prep，%build，然後安裝) 來建置"
-
-#~ msgid "build through %build (%prep, then compile) from <tarball>"
-#~ msgstr "從 <tarball> 透過 %build (%prep，然後編譯) 來建置"
 
 #~ msgid "build through %install (%prep, %build, then install) from <tarball>"
 #~ msgstr "從 <tarball> 透過 %install (%prep，%build，然後安裝) 來建置"
@@ -3398,9 +3662,6 @@ msgstr ""
 #~ msgid "%a %b %d %Y"
 #~ msgstr "%Y %b %d %a"
 
-#~ msgid "%s saved as %s\n"
-#~ msgstr "%s 已被另存為 %s\n"
-
 #~ msgid "%s created as %s\n"
 #~ msgstr "%s 已建立為 %s \n"
 
@@ -3421,9 +3682,6 @@ msgstr ""
 
 #~ msgid "Error reading %%files file %s: %m\n"
 #~ msgstr "讀取 %%files 檔案 %s 時發生錯誤：%m\n"
-
-#~ msgid "Could not open %s file: %s\n"
-#~ msgstr "無法開啟 %s 檔案：%s\n"
 
 #~ msgid "Exec of %s failed (%s): %s\n"
 #~ msgstr "執行 %s 失敗 (%s)：%s\n"

@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-04 09:25+0300\n"
+"POT-Creation-Date: 2025-09-01 14:14+0300\n"
 "PO-Revision-Date: 2025-04-12 16:53+0000\n"
 "Last-Translator: Javier Francisco <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/rpm/rpm-"
@@ -28,575 +28,10 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.10.4\n"
 
-#, c-format
-msgid "%s: %s\n"
-msgstr "%s: %s\n"
-
-#, c-format
-msgid "RPM version %s\n"
-msgstr "Versión de RPM %s\n"
-
-#, c-format
-msgid "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
-msgstr "© 1998-2002 de Red Hat, Inc.\n"
-
-#, c-format
-msgid ""
-"This program may be freely redistributed under the terms of the GNU GPL\n"
-msgstr "Este programa puede redistribuirse libremente según la GPL de GNU\n"
-
-#, c-format
-msgid "creating a pipe for --pipe failed: %m\n"
-msgstr "no se pudo crear una canalización para --pipe: %m\n"
-
-#, c-format
-msgid "exec failed\n"
-msgstr "falló exec\n"
-
-msgid "create uncompressed tar file"
-msgstr "crear un archivo tar descomprimido"
-
-#, c-format
-msgid "argument is not an RPM package\n"
-msgstr "el argumento no es un paquete RPM\n"
-
-#, c-format
-msgid "error reading header from package\n"
-msgstr "error al leer encabezado del paquete\n"
-
-#, c-format
-msgid "cannot re-open payload: %s\n"
-msgstr "no se puede volver a abrir la carga útil: %s\n"
-
-#, c-format
-msgid "files over 4GB not supported by cpio, use rpm2archive instead\n"
-msgstr ""
-"archivos de más de 4GB no están soportados por cpio, use rpm2archive en su "
-"lugar\n"
-
-#, c-format
-msgid "buildroot already specified, ignoring %s\n"
-msgstr "buildroot ya especificado, se descarta %s\n"
-
-#, c-format
-msgid "build through %prep (unpack sources and apply patches) from <specfile>"
-msgstr ""
-"construir a través de %prep (desempaquetar fuentes y aplicar parches) desde "
-"<specfile>"
-
-msgid "<specfile>"
-msgstr "<specfile>"
-
-#, c-format
-msgid "build through %conf (%prep, then %conf) from <specfile>"
-msgstr "compilar a través de %conf (%prep, luego %conf) desde <specfile>"
-
-msgid "build through %build (%prep, %conf, then compile) from <specfile>"
-msgstr ""
-"compilar por medio de %build (%prepm %conf, después compilar) desde "
-"<specfile>"
-
-msgid "check build dependencies <specfile>"
-msgstr "comprobar dependencias de compilación <specfile>"
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <specfile>"
-msgstr ""
-"compilar a través de %install (%prep, %conf, %build, luego instalar) desde "
-"<specfile>"
-
-#, c-format
-msgid "verify %files section from <specfile>"
-msgstr "verificar la sección %files de <specfile>"
-
-msgid "build source and binary packages from <specfile>"
-msgstr "construir paquetes binarios y fuente desde <specfile>"
-
-msgid "build binary package only from <specfile>"
-msgstr "construir paquete binario únicamente desde <specfile>"
-
-msgid "build source package only from <specfile>"
-msgstr "construir paquete fuente únicamente desde <specfile>"
-
-msgid ""
-"build source package only from <specfile> - calculate dynamic build requires"
-msgstr ""
-"construye el paquete fuente solo desde <specfile>; calcula requisitos de "
-"construcción dinámica"
-
-#, c-format
-msgid ""
-"build through %prep (unpack sources and apply patches) from <source package>"
-msgstr ""
-"construye a través de %prep (desempaquetar fuentes y aplicar parches) desde "
-"<paquete fuente>"
-
-msgid "<source package>"
-msgstr "<paquete fuente>"
-
-msgid "build through %build (%prep, %conf, then compile) from <source package>"
-msgstr ""
-"compila a través de %build (%prep, %conf, después compila) desde <paquete "
-"fuente>"
-
-msgid "check build dependencies <source package>"
-msgstr "comprueba dependencias de compilación de <paquete fuente>"
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <source "
-"package>"
-msgstr ""
-"construye por medio de %install (%prep, %conf, %build, entonces instalar) "
-"desde <paquete fuente>"
-
-#, c-format
-msgid "verify %files section from <source package>"
-msgstr "verificar la sección %files del <paquete fuente>"
-
-msgid "build source and binary packages from <source package>"
-msgstr "construir los paquetes fuente y binario desde <paquete fuente>"
-
-msgid "build binary package only from <source package>"
-msgstr "construir paquete binario desde <paquete fuente>"
-
-msgid "build source package only from <source package>"
-msgstr "construir paquete fuente sólo desde <paquete fuente>"
-
-msgid ""
-"build source package only from <source package> - calculate dynamic build "
-"requires"
-msgstr ""
-"construir paquete fuente solo desde <paquete fuente>; calcular lo que "
-"requiere la compilación dinámica"
-
-#, c-format
-msgid "build through %prep (unpack sources and apply patches) from <tarball>"
-msgstr ""
-"construir a través de %prep (desempaquetar fuentes y aplicar parches) desde "
-"<tarball>"
-
-msgid "<tarball>"
-msgstr "<tarball>"
-
-msgid "build through %build (%prep, %conf, then compile) from <tarball>"
-msgstr ""
-"construir a través de %build (%prep, %conf, luego compilar) desde <tarball>"
-
-msgid "check build dependencies <tarball>"
-msgstr "comprueba dependencias de compilación en <tarball>"
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <tarball>"
-msgstr ""
-"construir a través de %install (%prep, %conf, %build, luego instalar) desde "
-"<tarball>"
-
-#, c-format
-msgid "verify %files section from <tarball>"
-msgstr "verificar sección %files desde <tarball>"
-
-msgid "build source and binary packages from <tarball>"
-msgstr "construir paquetes binario y fuente desde <tarball>"
-
-msgid "build binary package only from <tarball>"
-msgstr "construir paquete binario únicamente desde <tarball>"
-
-msgid "build source package only from <tarball>"
-msgstr "construir paquete fuente solo desde <tarball>"
-
-msgid ""
-"build source package only from <tarball> - calculate dynamic build requires"
-msgstr ""
-"construir paquete fuente solo desde <tarball>; calcular los requerimientos "
-"de compilación dinámica"
-
-msgid "build binary package from <source package>"
-msgstr "construir paquete binario desde <paquete fuente>"
-
-msgid ""
-"build through %install (%prep, %build, then install) from <source package>"
-msgstr ""
-"construir por medio de %install (%prep, %build, luego instalar) desde "
-"<paquete fuente>"
-
-msgid "override build root"
-msgstr "sobrescribir raíz de construcción"
-
-msgid "run build in current directory"
-msgstr "ejecutar la construcción en el directorio actual"
-
-msgid "remove build tree when done"
-msgstr "quitar árbol de construcción cuando finalice"
-
-msgid "ignore ExcludeArch: directives from spec file"
-msgstr "descarta directivas ExcludeArch: desde el archivo spec"
-
-msgid "debug file state machine"
-msgstr "depurar archivo de la máquina de estado"
-
-msgid "do not execute any stages of the build"
-msgstr "no ejecutar ningún nivel de la construcción"
-
-msgid "do not verify build dependencies"
-msgstr "no verificar dependencias de la construcción"
-
-msgid "generate package header(s) compatible with (legacy) rpm v3 packaging"
-msgstr ""
-"genera cabecera(s) del paquete compatible con el empaquetado rpm v3 "
-"(heredado)"
-
-#, c-format
-msgid "do not execute %clean stage of the build"
-msgstr "no ejecutar la fase %clean de la construcción"
-
-#, c-format
-msgid "do not execute %prep stage of the build"
-msgstr "no ejecutar el estado %prep de la construcción"
-
-#, c-format
-msgid "do not execute %check stage of the build"
-msgstr "no ejecutar la fase %check de la construcción"
-
-msgid "do not accept i18N msgstr's from specfile"
-msgstr "no aceptar msgstr i18N desde el archivo spec"
-
-msgid "remove sources when done"
-msgstr "quitar fuentes al finalizar"
-
-msgid "remove specfile when done"
-msgstr "quitar el archivo spec al finalizar"
-
-msgid "skip straight to specified stage (only for c,i)"
-msgstr "descartar etapa a estado especificada (solo para c,i)"
-
-msgid "override target platform"
-msgstr "sobrescribir plataforma de destino"
-
-msgid "Build options with [ <specfile> | <tarball> | <source package> ]:"
-msgstr ""
-"Opciones de construcción con [ <archivo spec> | <tarball> | <paquete "
-"fuente> ]:"
-
-msgid "Common options for all rpm modes and executables:"
-msgstr "Opciones comunes para todos los modos rpm y ejecutables:"
-
-#, c-format
-msgid "Unable to open spec file %s: %s\n"
-msgstr "No es capaz de abrir archivo spec %s: %s\n"
-
-#, c-format
-msgid "Failed to open tar pipe: %m\n"
-msgstr "Incorrecto al abrir la canalización tar: %m\n"
-
-#, c-format
-msgid "Found more than one spec file in %s\n"
-msgstr "Encuentra más de un archivo spec en %s\n"
-
-#, c-format
-msgid "Failed to read spec file from %s\n"
-msgstr "Incorrecto al leer archivo spec desde %s\n"
-
-#, c-format
-msgid "Failed to rename %s to %s: %m\n"
-msgstr "Incorrecto al renombrar %s a %s: %m\n"
-
-#, c-format
-msgid "failed to stat %s: %m\n"
-msgstr "incorrecto al invocar stat sobre %s: %m\n"
-
-#, c-format
-msgid "File %s is not a regular file.\n"
-msgstr "El archivo %s no es un archivo regular.\n"
-
-#, c-format
-msgid "File %s does not appear to be a specfile.\n"
-msgstr "El archivo %s no parece ser un archivo spec.\n"
-
-#, c-format
-msgid "Building target platforms: %s\n"
-msgstr "Construyendo las plataformas de destino: %s\n"
-
-#, c-format
-msgid "Building for target %s\n"
-msgstr "Construyendo para el destino %s\n"
-
-msgid "arguments to --root (-r) must begin with a /"
-msgstr "los argumentos de --root (-r) deben comenzar con una /"
-
-msgid "initialize database"
-msgstr "inicializar base de datos"
-
-msgid "rebuild database inverted lists from installed package headers"
-msgstr ""
-"recompilar listas invertidas de base de datos desde encabezados del paquete "
-"instalado"
-
-msgid "verify database files"
-msgstr "verificar archivos de base de datos"
-
-msgid "salvage database"
-msgstr "base de datos sin formato"
-
-msgid "export database to stdout header list"
-msgstr "exporta la base de datos a listado de cabecera de salida estándar"
-
-msgid "import database from stdin header list"
-msgstr "importa base de datos desde listado de cabecera de entrada estándar"
-
-msgid "Database options:"
-msgstr "Opciones de la base de datos:"
-
-msgid "only one major mode may be specified"
-msgstr "solo puede especificarse un modo principal"
-
-msgid "verify package signature(s)"
-msgstr "verificar firmas del paquete"
-
-msgid "import an armored public key"
-msgstr "importar una clave pública blindada"
-
-msgid "don't import, but tell if it would work or not"
-msgstr "no importar, pero indicar si funcionará o no"
-
-msgid "list keys from RPM keyring"
-msgstr "lista las llaves del administrador de llaves RPM"
-
-msgid "Keyring options:"
-msgstr "Opciones del llavero:"
-
-msgid "no arguments given"
-msgstr "no se proporcionó ningún argumento"
-
-msgid "Query/Verify package selection options:"
-msgstr "Opciones de la selección de paquetes a consultar/verificar:"
-
-msgid "Query/Verify file selection options:"
-msgstr "Opciones de la selección de archivo a consultar/verificar:"
-
-msgid "Query options (with -q or --query):"
-msgstr "Opciones de consulta (con -q o --query):"
-
-msgid "Verify options (with -V or --verify):"
-msgstr "Opciones de verificación (con -V o --verify):"
-
-msgid "Install/Upgrade/Erase options:"
-msgstr "Opciones de instalación/actualización/borrado:"
-
-msgid "one type of query/verify may be performed at a time"
-msgstr "solo un tipo de consulta/verificación puede ser ejecutado a la vez"
-
-msgid "unexpected query flags"
-msgstr "indicadores de consulta inesperadas"
-
-msgid "unexpected query format"
-msgstr "formato de consulta inesperado"
-
-msgid "unexpected query source"
-msgstr "fuente de consulta inesperado"
-
-msgid "only installation and upgrading may be forced"
-msgstr "solo puede forzarse la instalación y la modernización"
-
-msgid "files may only be relocated during package installation"
-msgstr ""
-"los archivos solo pueden ser recolocados durante la instalación del paquete"
-
-msgid "cannot use --prefix with --relocate or --excludepath"
-msgstr "no se puede utilizar --prefix con --relocate o --excludepath"
-
-msgid ""
-"--relocate and --excludepath may only be used when installing new packages"
-msgstr ""
-"solo pueden ser utilizados --relocate y --excludepath cuando se instalan "
-"nuevos paquetes"
-
-msgid "--prefix may only be used when installing new packages"
-msgstr "solo puede ser utilizado --prefix al instalar paquetes nuevos"
-
-msgid "arguments to --prefix must begin with a /"
-msgstr "los argumentos de --prefix deben comenzar con una /"
-
-msgid ""
-"--hash (-h) may only be specified during package installation and erasure"
-msgstr ""
-"--hash (-h) sólo puede ser especificado durante la instalación y la "
-"desinstalación del paquete"
-
-msgid "--percent may only be specified during package installation and erasure"
-msgstr ""
-"--percent sólo puede ser especificado durante la instalación y la "
-"desinstalación del paquete"
-
-msgid "--replacepkgs may only be specified during package installation"
-msgstr ""
-"--replacepkgs solo puede ser especificado durante la instalación del paquete"
-
-msgid "--excludedocs may only be specified during package installation"
-msgstr ""
-"--excludedocs solo puede ser especificado durante la instalación del paquete"
-
-msgid "--includedocs may only be specified during package installation"
-msgstr ""
-"--includedocs solo puede ser especificado durante la instalación del paquete"
-
-msgid "only one of --excludedocs and --includedocs may be specified"
-msgstr ""
-"solo se puede especificar una opción de --excludedocs o de --includedocs"
-
-msgid "--ignorearch may only be specified during package installation"
-msgstr ""
-"--ignorearch solo puede ser especificado durante la instalación del paquete"
-
-msgid "--ignoreos may only be specified during package installation"
-msgstr ""
-"--ignoreos solo puede ser especificado durante la instalación del paquete"
-
-msgid "--ignoresize may only be specified during package installation"
-msgstr ""
-"--ignoresize solo puede ser especificado durante la instalación del paquete"
-
-msgid "--allmatches may only be specified during package erasure"
-msgstr ""
-"--allmatches solo puede ser especificado durante la desinstalación del "
-"paquete"
-
-msgid "--allfiles may only be specified during package installation"
-msgstr ""
-"--allfiles solo puede ser especificado durante la instalación del paquete"
-
-msgid "--justdb may only be specified during package installation and erasure"
-msgstr ""
-"--justdb solo puede ser especificado durante la instalación y desinstalación "
-"del paquete"
-
-msgid ""
-"script disabling options may only be specified during package installation "
-"and erasure"
-msgstr ""
-"las opciones para desactivar los script sólo pueden ser especificadas "
-"durante la instalación y desinstalación del paquete"
-
-msgid ""
-"trigger disabling options may only be specified during package installation "
-"and erasure"
-msgstr ""
-"las opciones de desactivación de detonante sólo pueden ser especificadas "
-"durante la instalación y desinstalación del paquete"
-
-msgid ""
-"--nodeps may only be specified during package installation, erasure, and "
-"verification"
-msgstr ""
-"solo puede especificarse --nodeps durante la instalación, desinstalación y "
-"verificación del paquete"
-
-msgid "--test may only be specified during package installation and erasure"
-msgstr ""
-"--test solo puede especificarse durante la instalación y eliminación del "
-"paquete"
-
-msgid "no packages given for erase"
-msgstr "no ha sido indicado ningún paquete para ser eliminado"
-
-msgid "no packages given for install"
-msgstr "no ha sido indicado ningún paquete para la instalación"
-
-msgid "no arguments given for query"
-msgstr "no ha sido indicado ningún argumento para la consulta"
-
-msgid "no arguments given for verify"
-msgstr "no ha sido indicado ningún argumento para la verificación"
-
-msgid "sign package(s)"
-msgstr "firma paquete(s)"
-
-msgid "sign package(s) (identical to --addsign)"
-msgstr "firmar paquete(s) (idéntico a --addsign)"
-
-msgid "delete package signatures"
-msgstr "eliminar las firmas del paquete"
-
-msgid "delete IMA and fsverity file signatures"
-msgstr "elimina IMA y firma de archivo fsverity"
-
-msgid "create rpm v3 header+payload signatures"
-msgstr "crea cabecera rpm v3+firma de carga"
-
-msgid "sign package(s) files"
-msgstr "firma archivos de paquete(s)"
-
-msgid "generate fsverity signatures for package(s) files"
-msgstr "genera firmas fsverity para archivos de paquete(s)"
-
-msgid "algorithm to use for verity signatures, default sha256"
-msgstr "algoritmo para utilizar para verificar firmas, por defecto sha256"
-
-msgid "<algorithm>"
-msgstr "<algorithm>"
-
-msgid "use file signing cert <cert>"
-msgstr "utilice certificado de firma de archivo <cert>"
-
-msgid "<cert>"
-msgstr "<cert>"
-
-msgid "use file signing key <key>"
-msgstr "utiliza llave de firma de archivo <key>"
-
-msgid "<key>"
-msgstr "<key>"
-
-msgid "prompt for file signing key password"
-msgstr "solicitud para archivo de firma clave contraseña"
-
-msgid "Signature options:"
-msgstr "Opciones de firma:"
-
-#, c-format
-msgid "You must set \"%%_gpg_name\" in your macro file\n"
-msgstr "Debe establecer \"%%_gpg_name\" en su archivo de macro\n"
-
-#, c-format
-msgid ""
-"You must set \"%%_file_signing_key\" in your macro file or on the command "
-"line with --fskpath\n"
-msgstr ""
-"Debe establecer \"%%_file_signing_key\" en su archivo de macro o en la línea "
-"de instrucción con --fskpath\n"
-
-msgid "--fskpath may only be specified when signing files"
-msgstr "--fskpath solo puede ser especificado cuando firme archivos"
-
-msgid "parse spec file(s) to stdout"
-msgstr "interpreta archivo(s) spec a salida estándar"
-
-msgid "query spec file(s)"
-msgstr "consultar archivo(s) de spec"
-
-msgid "interactive macro shell"
-msgstr "intérprete macro interactivo"
-
-msgid "operate on binary rpms generated by spec (default)"
-msgstr "opera sobre rpms binarios generados por spec (predeterminado)"
-
-msgid "operate on binary package header(s) that would be built from spec"
-msgstr "opera en cabecera(s) de paquete binario que sería compilado desde spec"
-
-msgid "operate on source package header generated by spec"
-msgstr "opera en cabecera de paquete fuente generado por spec"
-
-msgid "use the following query format"
-msgstr "utilizar el siguiente formato de consulta"
-
-msgid "Spec options:"
-msgstr "Opciones de spec:"
-
-#, c-format
-msgid "RPM version %s macro shell\n"
-msgstr "Macro de intérprete para RPM versión %s\n"
-
-msgid "no arguments given for parse"
-msgstr "no hay argumentos para interpretar"
+#, fuzzy
+#| msgid "unable to parse %s=%s\n"
+msgid "unable to parse _buildtime macro\n"
+msgstr "no es capaz de interpretar %s=%s\n"
 
 msgid "unable to parse SOURCE_DATE_EPOCH\n"
 msgstr "no es capaz de interpretar SOURCE_DATE_EPOCH\n"
@@ -624,12 +59,20 @@ msgstr "Estado de salida erróneo de %s (%s)\n"
 msgid "Failed build dependencies:\n"
 msgstr "Fallo al construir las dependencias:\n"
 
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to create package build directory %s: %s\n"
+msgstr "no se pudo crear el directorio %s: %s\n"
+
 #, c-format
 msgid "setting %s=%s\n"
 msgstr "establece %s=%s\n"
 
-#, c-format
-msgid "source_date_epoch_from_changelog set but %%changelog is missing\n"
+#, fuzzy, c-format
+#| msgid "source_date_epoch_from_changelog set but %%changelog is missing\n"
+msgid ""
+"%%source_date_epoch_from_changelog is set, but %%changelog has no entries to "
+"take a date from\n"
 msgstr ""
 "source_date_epoch_from_changelog puesto pero %%changelog no se encuentra\n"
 
@@ -708,11 +151,23 @@ msgid "File must begin with \"/\": %s\n"
 msgstr "Los archivos deben iniciar con \"/\": %s\n"
 
 #, c-format
+msgid ""
+"%%clamp_mtime_to_source_date_epoch is deprecated, please use "
+"%%build_mtime_policy\n"
+msgstr ""
+
+#, c-format
 msgid "unable to parse %s=%s\n"
 msgstr "no es capaz de interpretar %s=%s\n"
 
-#, c-format
-msgid "Unknown file digest algorithm %u, falling back to MD5\n"
+#, fuzzy, c-format
+#| msgid "Unknown icon type: %s\n"
+msgid "Unknown mtime policy '%s'\n"
+msgstr "Tipo de icono desconocido: %s\n"
+
+#, fuzzy, c-format
+#| msgid "Unknown file digest algorithm %u, falling back to MD5\n"
+msgid "Unknown file digest algorithm %u, falling back to %u\n"
 msgstr "Algoritmo de resumen de archivo %u desconocido, regresando a MD5\n"
 
 #, c-format
@@ -944,9 +399,24 @@ msgid "Finished binary package job, result %d, filename %s\n"
 msgstr ""
 "Tarea de paquete binario finalizada, resultado %d, nombre de archivo %s\n"
 
+#, fuzzy, c-format
+#| msgid "line %d: Error parsing %s: %s\n"
+msgid "line %d: Error parsing script: %s: %s\n"
+msgstr "línea %d: error al interpretar %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "line %d: Bad option %s: %s\n"
+msgid "line %d: Bad %s option %s: %s\n"
+msgstr "línea %d: Opción incorrecta %s: %s\n"
+
 #, c-format
 msgid "line %d: second %s\n"
 msgstr "línea %d: segundo %s\n"
+
+#, fuzzy, c-format
+#| msgid "line %d: unsupported internal script: %s\n"
+msgid "line %d: append and prepend specified: %s\n"
+msgstr "línea %d: script interno no soportado: %s\n"
 
 #, c-format
 msgid "bogus date in %%changelog: %s\n"
@@ -1052,6 +522,11 @@ msgstr "SO no es incluido: %s\n"
 msgid "%s field must be present in package: %s\n"
 msgstr "el campo %s debe estar presente en el paquete: %s\n"
 
+#, fuzzy, c-format
+#| msgid "%s field must be present in package: %s\n"
+msgid "%s field must be present before build in package: %s\n"
+msgstr "el campo %s debe estar presente en el paquete: %s\n"
+
 #, c-format
 msgid "Duplicate %s entries in package: %s\n"
 msgstr "Duplicar entradas %s en el paquete: %s\n"
@@ -1122,6 +597,11 @@ msgstr "línea %d: formato BuildArchitecture incorrecto: %s\n"
 msgid "line %d: Duplicate BuildArch entry: %s\n"
 msgstr "línea %d: apunte duplica BuildArch: %s\n"
 
+#, fuzzy, c-format
+#| msgid "line %d: Only noarch subpackages are supported: %s\n"
+msgid "line %d: Only noarch is allowed after the build: %s\n"
+msgstr "línea %d: solo están mantenidos los subpaquetes sin arquitectura: %s\n"
+
 #, c-format
 msgid "line %d: Only noarch subpackages are supported: %s\n"
 msgstr "línea %d: solo están mantenidos los subpaquetes sin arquitectura: %s\n"
@@ -1145,13 +625,16 @@ msgstr "Encontrado paquete rpm binario. Se esperaba archivo spec.\n"
 msgid "line %d: Unknown tag: %s\n"
 msgstr "línea %d: etiqueta desconocida: %s\n"
 
-#, c-format
-msgid "%%{buildroot} couldn't be empty\n"
-msgstr "%%{buildroot} no pudo estar vacío\n"
+#, fuzzy, c-format
+#| msgid "line %d: Priorities are allowed only for file triggers : %s\n"
+msgid "line %d: Tag not allowed after build is done: %s\n"
+msgstr ""
+"línea %d: prioridades solo están permitidas por disparadores de archivo: %s\n"
 
-#, c-format
-msgid "%%{buildroot} can not be \"/\"\n"
-msgstr "%%{BuildRoot} no puede ser \"/\"\n"
+#, fuzzy, c-format
+#| msgid "Invalid capability: %s\n"
+msgid "Invalid buildroot: '%s'\n"
+msgstr "Capacidad inválida %s\n"
 
 #, c-format
 msgid "No patch number %u\n"
@@ -1181,15 +664,6 @@ msgstr "Número de parche no especificado. %s\n"
 msgid "Invalid patch number %s: %s\n"
 msgstr "Número de parche %s no válido: %s\n"
 
-#, c-format
-msgid "line %d: second %%prep\n"
-msgstr "línea %d: segundo %%prep\n"
-
-#, c-format
-msgid ""
-"%%patchN is deprecated (%i usages found), use %%patch N (or %%patch -P N)\n"
-msgstr ""
-
 msgid "Dependency tokens must begin with alpha-numeric, '_' or '/'"
 msgstr ""
 "Las fichas de dependencias deben comenzar con caracteres alfanuméricos, «_» "
@@ -1207,6 +681,11 @@ msgstr "dependencia no válida"
 msgid "Version required"
 msgstr "se necesita una versión"
 
+#, fuzzy
+#| msgid "line %d: file trigger condition must begin with '/': %s"
+msgid "file trigger conditions must begin with '/'"
+msgstr "línea %d: condición de disparador de archivo debe comenzar con '/': %s"
+
 msgid "Only package names are allowed in Obsoletes"
 msgstr "Solo están permitidos los nombres de paquete en Obsoletos"
 
@@ -1215,10 +694,6 @@ msgstr "No está recomendado tener Obsoletos sin versión"
 
 msgid "It's not recommended to use '>' in Obsoletes"
 msgstr "No es recomendado utilizar '>' en Obsoletos"
-
-msgid "Only absolute paths are allowed in file triggers"
-msgstr ""
-"Solo están permitidas las rutas absolutas dentro de disparadores de archivo"
 
 msgid "Trigger fired by the same package is already defined in spec file"
 msgstr ""
@@ -1261,10 +736,6 @@ msgstr "línea %d: Segundo %s\n"
 #, c-format
 msgid "line %d: unsupported internal script: %s\n"
 msgstr "línea %d: script interno no soportado: %s\n"
-
-#, c-format
-msgid "line %d: file trigger condition must begin with '/': %s"
-msgstr "línea %d: condición de disparador de archivo debe comenzar con '/': %s"
 
 #, c-format
 msgid "line %d: interpreter arguments not allowed in triggers: %s\n"
@@ -1313,6 +784,10 @@ msgid "%s:%d: malformed %%include statement\n"
 msgstr "%s:%d: declaración %%include con formato incorrecto\n"
 
 #, c-format
+msgid "%%patchN is obsolete, use %%patch N (or %%patch -P N): %s\n"
+msgstr ""
+
+#, c-format
 msgid "encoding %s not supported by system\n"
 msgstr "codificando %s no admitido por el sistema\n"
 
@@ -1332,8 +807,36 @@ msgstr "línea %d: %%end no esperado aquí, ninguna sección para cerrar: %s\n"
 msgid "line %d doesn't belong to any section: %s\n"
 msgstr "línea %d no pertenece a cualquier sección: %s\n"
 
+#, fuzzy, c-format
+#| msgid "line %d: Unknown tag: %s\n"
+msgid "line %d: Unknown buildsystem: %s\n"
+msgstr "línea %d: etiqueta desconocida: %s\n"
+
+#, c-format
+msgid ""
+"line %d: Required parametric macro %%%s not defined for buildsystem %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "failed to write all data to %s: %s\n"
+msgid "failed to write buildsystem %s %%%s: %s\n"
+msgstr "ha fallado al escribir todos los datos a %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "Couldn't create temporary file for %s: %s\n"
+msgid "failed to create temp file for buildsystem: %s\n"
+msgstr "No pudo crear archivo temporal para %s: %s\n"
+
+#, c-format
+msgid "Section %s is not allowed after build is done!\n"
+msgstr ""
+
 msgid "No compatible architectures found for build\n"
 msgstr "No se encontraron arquitecturas compatibles para la compilación\n"
+
+#, c-format
+msgid "invalid rpm format %d requested, using %d\n"
+msgstr ""
 
 #, c-format
 msgid "Package has no %%description: %s\n"
@@ -1427,6 +930,10 @@ msgstr "%s ha fallado: %x\n"
 msgid "failed to write all data to %s: %s\n"
 msgstr "ha fallado al escribir todos los datos a %s: %s\n"
 
+#, c-format
+msgid "invalid or out of order path from generator: %s\n"
+msgstr ""
+
 msgid "Empty file classifier\n"
 msgstr "Clasificador de archivo vacío\n"
 
@@ -1458,6 +965,11 @@ msgid "Failed to find %s:\n"
 msgstr "No se pudo encontrar %s:\n"
 
 msgid "Deprecated external dependency generator is used!\n"
+msgstr "Se está utilizando generador de dependencia externa obsoleto.\n"
+
+#, fuzzy
+#| msgid "Deprecated external dependency generator is used!\n"
+msgid "External dependency generator is incompatible with v6 packages\n"
 msgstr "Se está utilizando generador de dependencia externa obsoleto.\n"
 
 #, c-format
@@ -1592,8 +1104,9 @@ msgstr "%s%s guardado como %s%s\n"
 msgid "%s%s created as %s%s\n"
 msgstr "%s%s creado como %s%s\n"
 
-#, c-format
-msgid "%s %s: remove failed: %s\n"
+#, fuzzy, c-format
+#| msgid "%s %s: remove failed: %s\n"
+msgid "%s %s%s: remove failed: %s\n"
 msgstr "%s %s: incorrecto al retirar: %s\n"
 
 msgid "directory"
@@ -1720,8 +1233,39 @@ msgid "array iterator used with different sized arrays"
 msgstr "iterador de repertorio usado con repertorios de diferente tamaño"
 
 #, c-format
+msgid "%s: reading of public key failed.\n"
+msgstr "%s: lectura de clave pública incorrecta.\n"
+
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to create keyring directory %s: %s\n"
+msgstr "no se pudo crear el directorio %s: %s\n"
+
+#, c-format
+msgid "failed to import key: %s: %s\n"
+msgstr "ha fallado para importar llave: %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "can't create %s lock on %s (%s)\n"
+msgid "Can't create writelock for keyring at %s: %s\n"
+msgstr "no puede crear el bloqueo %s sobre %s (%s)\n"
+
+#, c-format
+msgid "Can't acquire writelock for keyring at %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "%s: not an armored public key.\n"
+msgid "%s is not a valid public key\n"
+msgstr "%s: no es una clave pública blindada.\n"
+
+#, c-format
 msgid "RPM v3 packages are deprecated: %s\n"
 msgstr "los paquetes RPM v3 son obsoletos: %s\n"
+
+#, c-format
+msgid "RPM version %s\n"
+msgstr "Versión de RPM %s\n"
 
 msgid "Error writing to stdout"
 msgstr "Error al escribir a salida estándar"
@@ -1830,9 +1374,6 @@ msgstr "depurar archivo de carga de la máquina de estado"
 
 msgid "debug rpmio I/O"
 msgstr "depurar E/S rpmio"
-
-msgid "disable user namespace support"
-msgstr "desactiva asistencia de espacio de nombre de usuario"
 
 #, c-format
 msgid "%s: option table misconfigured (%d)\n"
@@ -2061,12 +1602,6 @@ msgstr "consultar/verificar paquete(s) en grupo"
 msgid "query/verify a package file"
 msgstr "consultar/verificar un archivo de paquete"
 
-msgid "query/verify package(s) with package identifier"
-msgstr "consultar/verificar paquete(s) con identificador de paquete"
-
-msgid "query/verify package(s) with header identifier"
-msgstr "consultar/verificar paquete(s)con identificador de cabecera"
-
 msgid "rpm query mode"
 msgstr "modo de consulta rpm"
 
@@ -2081,6 +1616,11 @@ msgstr "consultar los paquetes lanzados por el paquete"
 
 msgid "rpm verify mode"
 msgstr "modo de verificación de rpm"
+
+#, fuzzy
+#| msgid "query/verify the package(s) which obsolete a dependency"
+msgid "query/verify the package(s) which conflict with a dependency"
+msgstr "consultar/verificar el/los paquete(s) el cual obsoleta una dependencia"
 
 msgid "query/verify the package(s) which require a dependency"
 msgstr "consultar/verificar los paquetes que requieren una dependencia"
@@ -2139,6 +1679,9 @@ msgstr "volcar información básica de archivo"
 
 msgid "list files in package"
 msgstr "listar archivos del paquete"
+
+msgid "use the following query format"
+msgstr "utilizar el siguiente formato de consulta"
 
 msgid "display the states of the listed files"
 msgstr "exhibe el estado de los archivos listados"
@@ -2561,18 +2104,21 @@ msgstr ""
 "Número incorrecto de apuntes para etiqueta %s: %u encontrado pero %u "
 "esperado.\n"
 
-#, c-format
-msgid "Malformed data for tag %s: %u bytes found but %lu expected.\n"
+#, fuzzy, c-format
+#| msgid "Malformed data for tag %s: %u bytes found but %lu expected.\n"
+msgid "Malformed data for tag %s: %u bytes found but %<PRIu64> expected.\n"
 msgstr ""
 "Datos defectuosos para etiqueta %s: se encontraron %u bytes pero esperaban "
 "%lu.\n"
 
-#, c-format
-msgid "%s: base64 decode failed, len %li\n"
+#, fuzzy, c-format
+#| msgid "%s: base64 decode failed, len %li\n"
+msgid "%s: base64 decode failed, len %zu\n"
 msgstr "%s: decodificación en base64 incorrecta, longitud %li\n"
 
-#, c-format
-msgid "%s: base64 decode success, len %li\n"
+#, fuzzy, c-format
+#| msgid "%s: base64 decode success, len %li\n"
+msgid "%s: base64 decode success, len %zu\n"
 msgstr "%s: base64 decodifica correcta, lon %li\n"
 
 msgid "Bad magic"
@@ -2602,8 +2148,10 @@ msgstr "Error interno"
 msgid "Archive file not in header"
 msgstr "El archivador no está en la cabecera"
 
-msgid "Invalid symlink"
-msgstr "Enlace simbólico no válido"
+#, fuzzy
+#| msgid "failed symlink"
+msgid "Unsafe symlink"
+msgstr "enlace simbólico incorrecto"
 
 msgid "File from package already exists as a directory in system"
 msgstr "El archivo del paquete ya existe como directorio en el sistema"
@@ -2678,6 +2226,11 @@ msgstr "paquete %s no es reubicable\n"
 msgid "error reading from file %s\n"
 msgstr "error al leer del archivo %s\n"
 
+#, fuzzy, c-format
+#| msgid "no package matches %s: %s\n"
+msgid "package format not supported: %s\n"
+msgstr "ningún paquete coincide con %s: %s\n"
+
 #, c-format
 msgid "\"%s\" specifies multiple packages:\n"
 msgstr "«%s» especifica varios paquetes:\n"
@@ -2692,12 +2245,6 @@ msgstr "Instalando %s\n"
 
 msgid "not an rpm package"
 msgstr "no es un paquete rpm"
-
-msgid "illegal signature type"
-msgstr "tipo de firma ilegal"
-
-msgid "unsupported RPM package version"
-msgstr "versión del paquete RPM no soportada"
 
 #, c-format
 msgid "read failed: %s (%d)\n"
@@ -2844,6 +2391,11 @@ msgstr "argumento ausente para %s en %s:%d\n"
 msgid "cannot open %s at %s:%d: %m\n"
 msgstr "no se puede abrir %s en %s:%d: %m\n"
 
+#, fuzzy, c-format
+#| msgid "bad option '%s' at %s:%d\n"
+msgid "Ignoring %s at %s:%d\n"
+msgstr "opción '%s' incorrecta en %s:%d\n"
+
 #, c-format
 msgid "missing architecture for %s at %s:%d\n"
 msgstr "falta la arquitectura para %s en %s:%d\n"
@@ -2902,6 +2454,15 @@ msgstr "%s: scriptlet incorrecto, estado de terminación %d\n"
 msgid "Unknown format"
 msgstr "Formato desconocido"
 
+#, c-format
+msgid "erasing gpg-pubkey packages is deprecated; use rpmkeys --delete %s\n"
+msgstr ""
+
+msgid ""
+"public keys can not be installed as gpg-pubkey packages; use rpmkeys --"
+"import <keyfile> for that\n"
+msgstr ""
+
 msgid "install"
 msgstr "instalar"
 
@@ -2931,16 +2492,13 @@ msgid "missing ')' in package label: %s\n"
 msgstr "«)» ausente en la etiqueta del paquete: %s\n"
 
 #, c-format
-msgid "%s: reading of public key failed.\n"
-msgstr "%s: lectura de clave pública incorrecta.\n"
-
-#, c-format
 msgid "unknown keyring type: %s, using rpmdb\n"
 msgstr "tipo de anillo desconocido: %s, utilizando rpmdb\n"
 
-#, c-format
-msgid "failed to import key: %s: %s\n"
-msgstr "ha fallado para importar llave: %s: %s\n"
+#, fuzzy, c-format
+#| msgid "Unknown icon type: %s\n"
+msgid "unknown keyring type: %s\n"
+msgstr "Tipo de icono desconocido: %s\n"
 
 #, c-format
 msgid "invalid package verify level %s\n"
@@ -2965,6 +2523,11 @@ msgstr "%s etiqueta %u: datos %p no válidos (%u)"
 msgid "%s tag %u: invalid size %u"
 msgstr "%s etiqueta %u: tam %u no válido"
 
+#, fuzzy, c-format
+#| msgid "%s: tag %u: invalid hex"
+msgid "%s tag %u: invalid base64"
+msgstr "%s: etiqueta %u: hex no válida"
+
 #, c-format
 msgid "%s tag %u: invalid OpenPGP signature"
 msgstr "%s etiqueta %u: firma OpenPGP no válida"
@@ -2973,19 +2536,28 @@ msgstr "%s etiqueta %u: firma OpenPGP no válida"
 msgid "%s: tag %u: invalid hex"
 msgstr "%s: etiqueta %u: hex no válida"
 
-#, c-format
-msgid "%s%s%s %s"
+#, fuzzy, c-format
+#| msgid "%s%s%s %s"
+msgid "%s %s%s %s"
 msgstr "%s%s%s %s"
 
 msgid "digest"
 msgstr "resumen"
 
 #, c-format
-msgid "%s%s"
-msgstr "%s%s"
+msgid "%s OpenPGP %s"
+msgstr ""
+
+#, c-format
+msgid "%s OpenPGP %s %s"
+msgstr ""
 
 msgid "signature"
 msgstr "firma"
+
+#, c-format
+msgid ", key fingerprint: %s"
+msgstr ""
 
 msgid "header"
 msgstr "cabecera"
@@ -2993,10 +2565,14 @@ msgstr "cabecera"
 msgid "package"
 msgstr "paquete"
 
-msgid "Header "
+#, fuzzy
+#| msgid "Header "
+msgid "Header"
 msgstr "Cabecera "
 
-msgid "Payload "
+#, fuzzy
+#| msgid "Payload "
+msgid "Payload"
 msgstr "Carga "
 
 msgid "Unable to reload signature header.\n"
@@ -3073,7 +2649,9 @@ msgstr "tipo de argumento de función no mantenida"
 msgid "syntax error in expression"
 msgstr "error sintáctico en expresión"
 
-msgid "unsupported funcion"
+#, fuzzy
+#| msgid "unsupported funcion"
+msgid "unsupported function"
 msgstr "función no admitida"
 
 msgid "unmatched ("
@@ -3185,7 +2763,16 @@ msgid "A %% is followed by an unparseable macro\n"
 msgstr "Un %% está seguido por un macro no interpretable\n"
 
 #, c-format
-msgid "======================== active %d empty %d\n"
+msgid "unexpected argument to non-parametric macro %%%s\n"
+msgstr ""
+
+#, c-format
+msgid "macro value out of range for int: %<PRIu64> using %i instead.\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "======================== active %d empty %d\n"
+msgid "======================== active %zu empty %d\n"
 msgstr "======================== activo %d vacío %d\n"
 
 #, c-format
@@ -3256,6 +2843,15 @@ msgstr "V%d %s/%s %s, ID de clave %s"
 msgid "(none)"
 msgstr "(ninguno)"
 
+#, fuzzy, c-format
+#| msgid "Could not read from file %s: %s\n"
+msgid "Could not find url helper: \"%s\"\n"
+msgstr "No se pudo leer desde archivo %s: %s\n"
+
+#, c-format
+msgid "Executing url helper \"%s\" failed with status %i\n"
+msgstr ""
+
 #, c-format
 msgid "%s: Fwrite failed: %s\n"
 msgstr "%s: Fwrite incorrecto: %s\n"
@@ -3268,25 +2864,15 @@ msgstr "%s: Fread incorrecto: %s\n"
 msgid "%s: Fflush failed: %s\n"
 msgstr "%s: Fflush incorrecto: %s\n"
 
-#, fuzzy
-#| msgid "Unsupported PGP signature\n"
-msgid "Unsupported OpenPGP signature\n"
-msgstr "Firma PGP no soportada\n"
+#, fuzzy, c-format
+#| msgid "reading symlink %s failed: %s\n"
+msgid "Expanding signing macro %s failed\n"
+msgstr "falló la lectura %s de symlink: %s\n"
 
 #, fuzzy, c-format
-#| msgid "Unsupported PGP hash algorithm %u\n"
-msgid "Unsupported OpenPGP hash algorithm %u\n"
-msgstr "Algoritmo hash PGP no soportado %u\n"
-
-#, fuzzy, c-format
-#| msgid "Unsupported PGP pubkey algorithm %u\n"
-msgid "Unsupported OpenPGP pubkey algorithm %u\n"
-msgstr "Algoritmo de llave pública PGP no soportado %u\n"
-
-#, fuzzy, c-format
-#| msgid "Unsupported PGP signature\n"
-msgid "Deprecated OpenPGP signature version %d\n"
-msgstr "Firma PGP no soportada\n"
+#| msgid "Invalid %s token: %s\n"
+msgid "Invalid sign command: %s\n"
+msgstr "Ficha %s no válida: %s\n"
 
 #, c-format
 msgid "Could not create pipe for signing: %m\n"
@@ -3313,18 +2899,43 @@ msgstr "No se pudo leer desde archivo %s: %s\n"
 
 #, fuzzy, c-format
 #| msgid "gpg exec failed (%d)\n"
-msgid "gpg waitpid failed (%s)\n"
+msgid "%s waitpid failed (%s)\n"
 msgstr "ejecución incorrecta de gpg (%d)\n"
 
-#, c-format
-msgid "gpg exec failed (%d)\n"
+#, fuzzy, c-format
+#| msgid "gpg exec failed (%d)\n"
+msgid "%s exec failed (%d)\n"
 msgstr "ejecución incorrecta de gpg (%d)\n"
 
-msgid "gpg failed to write signature\n"
+#, fuzzy, c-format
+#| msgid "gpg failed to write signature\n"
+msgid "failed to write signature: %s\n"
 msgstr "gpg incorrecta para escritura de firma\n"
 
-msgid "unable to read the signature\n"
+#, fuzzy, c-format
+#| msgid "unable to read the signature\n"
+msgid "unable to read the signature: %s\n"
 msgstr "incapaz de leer la firma\n"
+
+#, fuzzy
+#| msgid "Unsupported PGP signature\n"
+msgid "Unsupported OpenPGP signature\n"
+msgstr "Firma PGP no soportada\n"
+
+#, fuzzy, c-format
+#| msgid "Unsupported PGP hash algorithm %u\n"
+msgid "Unsupported OpenPGP hash algorithm %u\n"
+msgstr "Algoritmo hash PGP no soportado %u\n"
+
+#, fuzzy, c-format
+#| msgid "Unsupported PGP signature\n"
+msgid "Deprecated OpenPGP signature version %d\n"
+msgstr "Firma PGP no soportada\n"
+
+#, fuzzy, c-format
+#| msgid "Unsupported PGP pubkey algorithm %u\n"
+msgid "Unsupported OpenPGP pubkey algorithm %u for rpm v3/v4 signatures\n"
+msgstr "Algoritmo de llave pública PGP no soportado %u\n"
 
 msgid "file signing support not built in\n"
 msgstr "firma de archivo admite no empotrado\n"
@@ -3351,18 +2962,42 @@ msgstr "%s: rpmReadSignature incorrecto: %s"
 msgid "%s: headerRead failed: %s\n"
 msgstr "%s: headerRead incorrecto: %s\n"
 
-msgid "Cannot sign RPM v3 packages\n"
+#, fuzzy, c-format
+#| msgid "Cannot sign RPM v3 packages\n"
+msgid "Cannot sign RPM v3 packages: %s\n"
 msgstr "No es posible firmar paquetes RPM v3\n"
 
+#, fuzzy, c-format
+#| msgid "generate fsverity signatures for package(s) files"
+msgid "not generating v3 signature for v6 package: %s\n"
+msgstr "genera firmas fsverity para archivos de paquete(s)"
+
 #, c-format
-msgid "%s already contains identical signature, skipping\n"
+msgid "File signatures not applicable to src.rpm: %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "Could not seek in file %s: %s\n"
+msgid "Could not get a file size of %s\n"
+msgstr "No se pudo continuar en archivo %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "%s already contains identical signature, skipping\n"
+msgid "%s already contains an identical signature, skipping\n"
+msgstr "%s ya contiene una firma idéntica, se descarta\n"
+
+#, fuzzy, c-format
+#| msgid "%s already contains identical signature, skipping\n"
+msgid "%s already contains a legacy signature\n"
 msgstr "%s ya contiene una firma idéntica, se descarta\n"
 
 #, c-format
 msgid "%s: rpmWriteSignature failed: %s\n"
 msgstr "%s: rpmWriteSignature incorrecto: %s\n"
 
-msgid "rpmMkTemp failed\n"
+#, fuzzy, c-format
+#| msgid "rpmMkTemp failed\n"
+msgid "rpmMkTemp failed: %s\n"
 msgstr "rpmMkTemp incorrecto\n"
 
 #, fuzzy, c-format
@@ -3387,11 +3022,519 @@ msgid "headerPutString failed\n"
 msgstr "headerPutString incorrecto\n"
 
 #, c-format
+msgid "%s: %s\n"
+msgstr "%s: %s\n"
+
+#, c-format
+msgid "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
+msgstr "© 1998-2002 de Red Hat, Inc.\n"
+
+#, c-format
+msgid ""
+"This program may be freely redistributed under the terms of the GNU GPL\n"
+msgstr "Este programa puede redistribuirse libremente según la GPL de GNU\n"
+
+#, c-format
+msgid "creating a pipe for --pipe failed: %m\n"
+msgstr "no se pudo crear una canalización para --pipe: %m\n"
+
+#, c-format
+msgid "exec failed\n"
+msgstr "falló exec\n"
+
+msgid "Query/Verify package selection options:"
+msgstr "Opciones de la selección de paquetes a consultar/verificar:"
+
+msgid "Query/Verify file selection options:"
+msgstr "Opciones de la selección de archivo a consultar/verificar:"
+
+msgid "Query options (with -q or --query):"
+msgstr "Opciones de consulta (con -q o --query):"
+
+msgid "Verify options (with -V or --verify):"
+msgstr "Opciones de verificación (con -V o --verify):"
+
+msgid "Install/Upgrade/Erase options:"
+msgstr "Opciones de instalación/actualización/borrado:"
+
+msgid "Common options for all rpm modes and executables:"
+msgstr "Opciones comunes para todos los modos rpm y ejecutables:"
+
+msgid "one type of query/verify may be performed at a time"
+msgstr "solo un tipo de consulta/verificación puede ser ejecutado a la vez"
+
+msgid "unexpected query flags"
+msgstr "indicadores de consulta inesperadas"
+
+msgid "unexpected query format"
+msgstr "formato de consulta inesperado"
+
+msgid "unexpected query source"
+msgstr "fuente de consulta inesperado"
+
+msgid "only one major mode may be specified"
+msgstr "solo puede especificarse un modo principal"
+
+msgid "only installation and upgrading may be forced"
+msgstr "solo puede forzarse la instalación y la modernización"
+
+msgid "files may only be relocated during package installation"
+msgstr ""
+"los archivos solo pueden ser recolocados durante la instalación del paquete"
+
+msgid "cannot use --prefix with --relocate or --excludepath"
+msgstr "no se puede utilizar --prefix con --relocate o --excludepath"
+
+msgid ""
+"--relocate and --excludepath may only be used when installing new packages"
+msgstr ""
+"solo pueden ser utilizados --relocate y --excludepath cuando se instalan "
+"nuevos paquetes"
+
+msgid "--prefix may only be used when installing new packages"
+msgstr "solo puede ser utilizado --prefix al instalar paquetes nuevos"
+
+msgid "arguments to --prefix must begin with a /"
+msgstr "los argumentos de --prefix deben comenzar con una /"
+
+msgid ""
+"--hash (-h) may only be specified during package installation and erasure"
+msgstr ""
+"--hash (-h) sólo puede ser especificado durante la instalación y la "
+"desinstalación del paquete"
+
+msgid "--percent may only be specified during package installation and erasure"
+msgstr ""
+"--percent sólo puede ser especificado durante la instalación y la "
+"desinstalación del paquete"
+
+msgid "--replacepkgs may only be specified during package installation"
+msgstr ""
+"--replacepkgs solo puede ser especificado durante la instalación del paquete"
+
+msgid "--excludedocs may only be specified during package installation"
+msgstr ""
+"--excludedocs solo puede ser especificado durante la instalación del paquete"
+
+msgid "--includedocs may only be specified during package installation"
+msgstr ""
+"--includedocs solo puede ser especificado durante la instalación del paquete"
+
+msgid "only one of --excludedocs and --includedocs may be specified"
+msgstr ""
+"solo se puede especificar una opción de --excludedocs o de --includedocs"
+
+msgid "--ignorearch may only be specified during package installation"
+msgstr ""
+"--ignorearch solo puede ser especificado durante la instalación del paquete"
+
+msgid "--ignoreos may only be specified during package installation"
+msgstr ""
+"--ignoreos solo puede ser especificado durante la instalación del paquete"
+
+msgid "--ignoresize may only be specified during package installation"
+msgstr ""
+"--ignoresize solo puede ser especificado durante la instalación del paquete"
+
+msgid "--allmatches may only be specified during package erasure"
+msgstr ""
+"--allmatches solo puede ser especificado durante la desinstalación del "
+"paquete"
+
+msgid "--allfiles may only be specified during package installation"
+msgstr ""
+"--allfiles solo puede ser especificado durante la instalación del paquete"
+
+msgid "--justdb may only be specified during package installation and erasure"
+msgstr ""
+"--justdb solo puede ser especificado durante la instalación y desinstalación "
+"del paquete"
+
+msgid ""
+"script disabling options may only be specified during package installation "
+"and erasure"
+msgstr ""
+"las opciones para desactivar los script sólo pueden ser especificadas "
+"durante la instalación y desinstalación del paquete"
+
+msgid ""
+"trigger disabling options may only be specified during package installation "
+"and erasure"
+msgstr ""
+"las opciones de desactivación de detonante sólo pueden ser especificadas "
+"durante la instalación y desinstalación del paquete"
+
+msgid ""
+"--nodeps may only be specified during package installation, erasure, and "
+"verification"
+msgstr ""
+"solo puede especificarse --nodeps durante la instalación, desinstalación y "
+"verificación del paquete"
+
+msgid "--test may only be specified during package installation and erasure"
+msgstr ""
+"--test solo puede especificarse durante la instalación y eliminación del "
+"paquete"
+
+msgid "arguments to --root (-r) must begin with a /"
+msgstr "los argumentos de --root (-r) deben comenzar con una /"
+
+msgid "no packages given for erase"
+msgstr "no ha sido indicado ningún paquete para ser eliminado"
+
+msgid "no packages given for install"
+msgstr "no ha sido indicado ningún paquete para la instalación"
+
+msgid "no arguments given for query"
+msgstr "no ha sido indicado ningún argumento para la consulta"
+
+msgid "no arguments given for verify"
+msgstr "no ha sido indicado ningún argumento para la verificación"
+
+#, fuzzy
+#| msgid "create uncompressed tar file"
+msgid "create uncompressed archive"
+msgstr "crear un archivo tar descomprimido"
+
+msgid "archive format (pax|cpio)"
+msgstr ""
+
+#, c-format
+msgid "argument is not an RPM package\n"
+msgstr "el argumento no es un paquete RPM\n"
+
+#, c-format
+msgid "error reading header from package\n"
+msgstr "error al leer encabezado del paquete\n"
+
+#, c-format
+msgid "cannot re-open payload: %s\n"
+msgstr "no se puede volver a abrir la carga útil: %s\n"
+
+msgid "initialize database"
+msgstr "inicializar base de datos"
+
+msgid "rebuild database inverted lists from installed package headers"
+msgstr ""
+"recompilar listas invertidas de base de datos desde encabezados del paquete "
+"instalado"
+
+#, fuzzy
+#| msgid "verify database files"
+msgid "verify database"
+msgstr "verificar archivos de base de datos"
+
+msgid "salvage database"
+msgstr "base de datos sin formato"
+
+msgid "export database to stdout header list"
+msgstr "exporta la base de datos a listado de cabecera de salida estándar"
+
+msgid "import database from stdin header list"
+msgstr "importa base de datos desde listado de cabecera de entrada estándar"
+
+msgid "Database options:"
+msgstr "Opciones de la base de datos:"
+
+#, c-format
+msgid "buildroot already specified, ignoring %s\n"
+msgstr "buildroot ya especificado, se descarta %s\n"
+
+#, c-format
+msgid "build through %prep (unpack sources and apply patches) from <specfile>"
+msgstr ""
+"construir a través de %prep (desempaquetar fuentes y aplicar parches) desde "
+"<specfile>"
+
+msgid "<specfile>"
+msgstr "<specfile>"
+
+#, c-format
+msgid "build through %conf (%prep, then %conf) from <specfile>"
+msgstr "compilar a través de %conf (%prep, luego %conf) desde <specfile>"
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <specfile>"
+msgstr ""
+"compilar por medio de %build (%prepm %conf, después compilar) desde "
+"<specfile>"
+
+msgid "check build dependencies <specfile>"
+msgstr "comprobar dependencias de compilación <specfile>"
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <specfile>"
+msgstr ""
+"compilar a través de %install (%prep, %conf, %build, luego instalar) desde "
+"<specfile>"
+
+#, c-format
+msgid "verify %files section from <specfile>"
+msgstr "verificar la sección %files de <specfile>"
+
+msgid "build source and binary packages from <specfile>"
+msgstr "construir paquetes binarios y fuente desde <specfile>"
+
+msgid "build binary package only from <specfile>"
+msgstr "construir paquete binario únicamente desde <specfile>"
+
+msgid "build source package only from <specfile>"
+msgstr "construir paquete fuente únicamente desde <specfile>"
+
+msgid ""
+"build source package only from <specfile> - calculate dynamic build requires"
+msgstr ""
+"construye el paquete fuente solo desde <specfile>; calcula requisitos de "
+"construcción dinámica"
+
+#, c-format
+msgid ""
+"build through %prep (unpack sources and apply patches) from <source package>"
+msgstr ""
+"construye a través de %prep (desempaquetar fuentes y aplicar parches) desde "
+"<paquete fuente>"
+
+msgid "<source package>"
+msgstr "<paquete fuente>"
+
+#, fuzzy, c-format
+#| msgid "build through %conf (%prep, then %conf) from <specfile>"
+msgid "build through %conf (%prep, then %conf) from <source package>"
+msgstr "compilar a través de %conf (%prep, luego %conf) desde <specfile>"
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <source package>"
+msgstr ""
+"compila a través de %build (%prep, %conf, después compila) desde <paquete "
+"fuente>"
+
+msgid "check build dependencies <source package>"
+msgstr "comprueba dependencias de compilación de <paquete fuente>"
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <source "
+"package>"
+msgstr ""
+"construye por medio de %install (%prep, %conf, %build, entonces instalar) "
+"desde <paquete fuente>"
+
+#, c-format
+msgid "verify %files section from <source package>"
+msgstr "verificar la sección %files del <paquete fuente>"
+
+msgid "build source and binary packages from <source package>"
+msgstr "construir los paquetes fuente y binario desde <paquete fuente>"
+
+msgid "build binary package only from <source package>"
+msgstr "construir paquete binario desde <paquete fuente>"
+
+msgid "build source package only from <source package>"
+msgstr "construir paquete fuente sólo desde <paquete fuente>"
+
+msgid ""
+"build source package only from <source package> - calculate dynamic build "
+"requires"
+msgstr ""
+"construir paquete fuente solo desde <paquete fuente>; calcular lo que "
+"requiere la compilación dinámica"
+
+#, c-format
+msgid "build through %prep (unpack sources and apply patches) from <tarball>"
+msgstr ""
+"construir a través de %prep (desempaquetar fuentes y aplicar parches) desde "
+"<tarball>"
+
+msgid "<tarball>"
+msgstr "<tarball>"
+
+#, fuzzy, c-format
+#| msgid "build through %conf (%prep, then %conf) from <specfile>"
+msgid "build through %conf (%prep, then %conf) from <tarball>"
+msgstr "compilar a través de %conf (%prep, luego %conf) desde <specfile>"
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <tarball>"
+msgstr ""
+"construir a través de %build (%prep, %conf, luego compilar) desde <tarball>"
+
+msgid "check build dependencies <tarball>"
+msgstr "comprueba dependencias de compilación en <tarball>"
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <tarball>"
+msgstr ""
+"construir a través de %install (%prep, %conf, %build, luego instalar) desde "
+"<tarball>"
+
+#, c-format
+msgid "verify %files section from <tarball>"
+msgstr "verificar sección %files desde <tarball>"
+
+msgid "build source and binary packages from <tarball>"
+msgstr "construir paquetes binario y fuente desde <tarball>"
+
+msgid "build binary package only from <tarball>"
+msgstr "construir paquete binario únicamente desde <tarball>"
+
+msgid "build source package only from <tarball>"
+msgstr "construir paquete fuente solo desde <tarball>"
+
+msgid ""
+"build source package only from <tarball> - calculate dynamic build requires"
+msgstr ""
+"construir paquete fuente solo desde <tarball>; calcular los requerimientos "
+"de compilación dinámica"
+
+msgid "build binary package from <source package>"
+msgstr "construir paquete binario desde <paquete fuente>"
+
+#, c-format
+msgid ""
+"build through %install (%prep, %build, then install) from <source package>"
+msgstr ""
+"construir por medio de %install (%prep, %build, luego instalar) desde "
+"<paquete fuente>"
+
+#, fuzzy
+#| msgid "override build root"
+msgid "override build root (DEPRECATED)"
+msgstr "sobrescribir raíz de construcción"
+
+msgid "remove build tree when done"
+msgstr "quitar árbol de construcción cuando finalice"
+
+msgid "ignore ExcludeArch: directives from spec file"
+msgstr "descarta directivas ExcludeArch: desde el archivo spec"
+
+msgid "debug file state machine"
+msgstr "depurar archivo de la máquina de estado"
+
+msgid "do not execute any stages of the build"
+msgstr "no ejecutar ningún nivel de la construcción"
+
+msgid "do not verify build dependencies"
+msgstr "no verificar dependencias de la construcción"
+
+msgid "generate package header(s) compatible with (legacy) rpm v3 packaging"
+msgstr ""
+"genera cabecera(s) del paquete compatible con el empaquetado rpm v3 "
+"(heredado)"
+
+#, c-format
+msgid "do not execute %clean stage of the build"
+msgstr "no ejecutar la fase %clean de la construcción"
+
+#, c-format
+msgid "do not execute %prep stage of the build"
+msgstr "no ejecutar el estado %prep de la construcción"
+
+#, c-format
+msgid "do not execute %check stage of the build"
+msgstr "no ejecutar la fase %check de la construcción"
+
+msgid "do not accept i18N msgstr's from specfile"
+msgstr "no aceptar msgstr i18N desde el archivo spec"
+
+msgid "remove sources when done"
+msgstr "quitar fuentes al finalizar"
+
+msgid "remove specfile when done"
+msgstr "quitar el archivo spec al finalizar"
+
+msgid "skip straight to specified stage (only for c,i)"
+msgstr "descartar etapa a estado especificada (solo para c,i)"
+
+msgid "override target platform"
+msgstr "sobrescribir plataforma de destino"
+
+msgid "Build options with [ <specfile> | <tarball> | <source package> ]:"
+msgstr ""
+"Opciones de construcción con [ <archivo spec> | <tarball> | <paquete "
+"fuente> ]:"
+
+#, c-format
+msgid "Unable to open spec file %s: %s\n"
+msgstr "No es capaz de abrir archivo spec %s: %s\n"
+
+#, c-format
+msgid "Failed to open tar pipe: %m\n"
+msgstr "Incorrecto al abrir la canalización tar: %m\n"
+
+#, c-format
+msgid "Found more than one spec file in %s\n"
+msgstr "Encuentra más de un archivo spec en %s\n"
+
+#, c-format
+msgid "Failed to read spec file from %s\n"
+msgstr "Incorrecto al leer archivo spec desde %s\n"
+
+#, c-format
+msgid "Failed to rename %s to %s: %m\n"
+msgstr "Incorrecto al renombrar %s a %s: %m\n"
+
+#, c-format
+msgid "failed to stat %s: %m\n"
+msgstr "incorrecto al invocar stat sobre %s: %m\n"
+
+#, c-format
+msgid "File %s is not a regular file.\n"
+msgstr "El archivo %s no es un archivo regular.\n"
+
+#, c-format
+msgid "File %s does not appear to be a specfile.\n"
+msgstr "El archivo %s no parece ser un archivo spec.\n"
+
+#, c-format
+msgid "Building target platforms: %s\n"
+msgstr "Construyendo las plataformas de destino: %s\n"
+
+#, c-format
+msgid "Building for target %s\n"
+msgstr "Construyendo para el destino %s\n"
+
+#, c-format
 msgid "%s: read manifest failed: %s\n"
 msgstr "%s: lectura del manifiesto incorrecta: %s\n"
 
 msgid "don't verify header+payload signature"
 msgstr "no verificar firma de cabecera+carga"
+
+msgid "verify package signature(s)"
+msgstr "verificar firmas del paquete"
+
+msgid "import an armored public key"
+msgstr "importar una clave pública blindada"
+
+#, fuzzy
+#| msgid "import an armored public key"
+msgid "export an public key"
+msgstr "importar una clave pública blindada"
+
+msgid "don't import, but tell if it would work or not"
+msgstr "no importar, pero indicar si funcionará o no"
+
+#, fuzzy
+#| msgid "list keys from RPM keyring"
+msgid "Erase keys from RPM keyring"
+msgstr "lista las llaves del administrador de llaves RPM"
+
+msgid "list keys from RPM keyring"
+msgstr "lista las llaves del administrador de llaves RPM"
+
+msgid "rebuild the keyring - convert to current backend"
+msgstr ""
+
+msgid "get keys from this backend when rebuilding current backend"
+msgstr ""
+
+msgid "Keyring options:"
+msgstr "Opciones del llavero:"
+
+msgid "no arguments given"
+msgstr "no se proporcionó ningún argumento"
 
 msgid "getopt string for scripts options"
 msgstr "cadena getopt para opciones scripts"
@@ -3402,11 +3545,170 @@ msgstr "ejecutar instrucción"
 msgid "interactive session"
 msgstr "sesión interactiva"
 
+#, fuzzy
+#| msgid "sign package(s) files"
+msgid "sign package(s), adding a new signature"
+msgstr "firma archivos de paquete(s)"
+
+#, fuzzy
+#| msgid "sign package(s) (identical to --addsign)"
+msgid "resign package(s), deleting any previous signatures"
+msgstr "firmar paquete(s) (idéntico a --addsign)"
+
+msgid "delete package signatures"
+msgstr "eliminar las firmas del paquete"
+
+msgid "delete IMA and fsverity file signatures"
+msgstr "elimina IMA y firma de archivo fsverity"
+
+#, fuzzy
+#| msgid "create rpm v3 header+payload signatures"
+msgid "request legacy rpm v3 header+payload signatures on v4 packages"
+msgstr "crea cabecera rpm v3+firma de carga"
+
+#, fuzzy
+#| msgid "create rpm v3 header+payload signatures"
+msgid "request legacy rpm v4 header signatures on v6 packages"
+msgstr "crea cabecera rpm v3+firma de carga"
+
+#, fuzzy
+#| msgid "create rpm v3 header+payload signatures"
+msgid "request rpm v6 header signature on v4 packages"
+msgstr "crea cabecera rpm v3+firma de carga"
+
+msgid "sign package(s) files"
+msgstr "firma archivos de paquete(s)"
+
+msgid "generate fsverity signatures for package(s) files"
+msgstr "genera firmas fsverity para archivos de paquete(s)"
+
+msgid "algorithm to use for verity signatures, default sha256"
+msgstr "algoritmo para utilizar para verificar firmas, por defecto sha256"
+
+msgid "<algorithm>"
+msgstr "<algorithm>"
+
+msgid "use file signing cert <cert>"
+msgstr "utilice certificado de firma de archivo <cert>"
+
+msgid "<cert>"
+msgstr "<cert>"
+
+msgid "use file signing key <key>"
+msgstr "utiliza llave de firma de archivo <key>"
+
+msgid "<key>"
+msgstr "<key>"
+
+msgid "prompt for file signing key password"
+msgstr "solicitud para archivo de firma clave contraseña"
+
+msgid "Signature options:"
+msgstr "Opciones de firma:"
+
+#, fuzzy, c-format
+#| msgid "You must set \"%%_gpg_name\" in your macro file\n"
+msgid "You must set \"%%_openpgp_sign_id\" in your macro file\n"
+msgstr "Debe establecer \"%%_gpg_name\" en su archivo de macro\n"
+
+#, c-format
+msgid ""
+"You must set \"%%_file_signing_key\" in your macro file or on the command "
+"line with --fskpath\n"
+msgstr ""
+"Debe establecer \"%%_file_signing_key\" en su archivo de macro o en la línea "
+"de instrucción con --fskpath\n"
+
+msgid "--fskpath may only be specified when signing files"
+msgstr "--fskpath solo puede ser especificado cuando firme archivos"
+
+msgid "parse spec file(s) to stdout"
+msgstr "interpreta archivo(s) spec a salida estándar"
+
+msgid "query spec file(s)"
+msgstr "consultar archivo(s) de spec"
+
+msgid "interactive macro shell"
+msgstr "intérprete macro interactivo"
+
+msgid "operate on binary rpms generated by spec (default)"
+msgstr "opera sobre rpms binarios generados por spec (predeterminado)"
+
+msgid "operate on binary package header(s) that would be built from spec"
+msgstr "opera en cabecera(s) de paquete binario que sería compilado desde spec"
+
+msgid "operate on source package header generated by spec"
+msgstr "opera en cabecera de paquete fuente generado por spec"
+
+msgid "Spec options:"
+msgstr "Opciones de spec:"
+
+#, c-format
+msgid "RPM version %s macro shell\n"
+msgstr "Macro de intérprete para RPM versión %s\n"
+
+msgid "no arguments given for parse"
+msgstr "no hay argumentos para interpretar"
+
 msgid "extract an archive"
 msgstr "extraer un archivador"
 
 msgid "only print what would be done"
 msgstr "solo declara lo que se haría"
+
+msgid "extract into a specific path"
+msgstr ""
+
+#, c-format
+#~ msgid "files over 4GB not supported by cpio, use rpm2archive instead\n"
+#~ msgstr ""
+#~ "archivos de más de 4GB no están soportados por cpio, use rpm2archive en "
+#~ "su lugar\n"
+
+#~ msgid "run build in current directory"
+#~ msgstr "ejecutar la construcción en el directorio actual"
+
+#~ msgid "sign package(s)"
+#~ msgstr "firma paquete(s)"
+
+#, c-format
+#~ msgid "%%{buildroot} couldn't be empty\n"
+#~ msgstr "%%{buildroot} no pudo estar vacío\n"
+
+#, c-format
+#~ msgid "%%{buildroot} can not be \"/\"\n"
+#~ msgstr "%%{BuildRoot} no puede ser \"/\"\n"
+
+#, c-format
+#~ msgid "line %d: second %%prep\n"
+#~ msgstr "línea %d: segundo %%prep\n"
+
+#~ msgid "Only absolute paths are allowed in file triggers"
+#~ msgstr ""
+#~ "Solo están permitidas las rutas absolutas dentro de disparadores de "
+#~ "archivo"
+
+#~ msgid "disable user namespace support"
+#~ msgstr "desactiva asistencia de espacio de nombre de usuario"
+
+#~ msgid "query/verify package(s) with package identifier"
+#~ msgstr "consultar/verificar paquete(s) con identificador de paquete"
+
+#~ msgid "query/verify package(s) with header identifier"
+#~ msgstr "consultar/verificar paquete(s)con identificador de cabecera"
+
+#~ msgid "Invalid symlink"
+#~ msgstr "Enlace simbólico no válido"
+
+#~ msgid "illegal signature type"
+#~ msgstr "tipo de firma ilegal"
+
+#~ msgid "unsupported RPM package version"
+#~ msgstr "versión del paquete RPM no soportada"
+
+#, c-format
+#~ msgid "%s%s"
+#~ msgstr "%s%s"
 
 #, c-format
 #~ msgid "%%dev glob not permitted: %s\n"

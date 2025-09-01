@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-04 09:25+0300\n"
+"POT-Creation-Date: 2025-09-01 14:14+0300\n"
 "PO-Revision-Date: 2024-04-06 15:36+0000\n"
 "Last-Translator: Takuya Wakazono <pastalian46@gmail.com>\n"
 "Language-Team: Japanese <https://translate.fedoraproject.org/projects/rpm/"
@@ -25,529 +25,10 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 5.4\n"
 
-#, c-format
-msgid "%s: %s\n"
-msgstr "%s: %s\n"
-
-#, c-format
-msgid "RPM version %s\n"
-msgstr "RPM バージョン %s\n"
-
-#, c-format
-msgid "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
-msgstr "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
-
-#, c-format
-msgid ""
-"This program may be freely redistributed under the terms of the GNU GPL\n"
-msgstr "このプログラムは GNU GPL の下で自由に配布できます\n"
-
-#, c-format
-msgid "creating a pipe for --pipe failed: %m\n"
-msgstr "--pipe でのパイプ作成に失敗: %m\n"
-
-#, c-format
-msgid "exec failed\n"
-msgstr "実行失敗\n"
-
-msgid "create uncompressed tar file"
-msgstr "無圧縮の tar ファイルを作成します"
-
-#, c-format
-msgid "argument is not an RPM package\n"
-msgstr "引数は RPM パッケージではありません\n"
-
-#, c-format
-msgid "error reading header from package\n"
-msgstr "パッケージのヘッダー読み込み中にエラーが発生しました\n"
-
-#, c-format
-msgid "cannot re-open payload: %s\n"
-msgstr "ペイロードを再度開けません: %s\n"
-
-#, c-format
-msgid "files over 4GB not supported by cpio, use rpm2archive instead\n"
-msgstr ""
-"4GB超のファイルは cpio ではサポートしていません, 代わりに rpm2archive を使っ"
-"てください\n"
-
-#, c-format
-msgid "buildroot already specified, ignoring %s\n"
-msgstr "BuildRoot は既に指定されています、%s を無視します\n"
-
-#, c-format
-msgid "build through %prep (unpack sources and apply patches) from <specfile>"
-msgstr "<specfile> の %prep (ソース展開と patch の適用) まで実行します"
-
-msgid "<specfile>"
-msgstr "<specfile>"
-
-#, c-format
-msgid "build through %conf (%prep, then %conf) from <specfile>"
-msgstr ""
-
-msgid "build through %build (%prep, %conf, then compile) from <specfile>"
-msgstr ""
-
-msgid "check build dependencies <specfile>"
-msgstr ""
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <specfile>"
-msgstr ""
-
-#, c-format
-msgid "verify %files section from <specfile>"
-msgstr "<specfile> の %files セクションを検証します"
-
-msgid "build source and binary packages from <specfile>"
-msgstr "<specfile> を元に、 ソースとバイナリパッケージを作成します"
-
-msgid "build binary package only from <specfile>"
-msgstr "<specfile> を元に、 バイナリパッケージのみを作成します"
-
-msgid "build source package only from <specfile>"
-msgstr "<specfile> を元に、 ソースパッケージのみを作成します"
-
-msgid ""
-"build source package only from <specfile> - calculate dynamic build requires"
-msgstr ""
-
-#, c-format
-msgid ""
-"build through %prep (unpack sources and apply patches) from <source package>"
-msgstr "<source package> から %prep (ソース展開と patch の適用) まで実行します"
-
-msgid "<source package>"
-msgstr "<source package>"
-
-msgid "build through %build (%prep, %conf, then compile) from <source package>"
-msgstr ""
-
-msgid "check build dependencies <source package>"
-msgstr ""
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <source "
-"package>"
-msgstr ""
-
-#, c-format
-msgid "verify %files section from <source package>"
-msgstr "<source package> の %files セクションを検証します"
-
-msgid "build source and binary packages from <source package>"
-msgstr "<source package> から ソースとバイナリパッケージを作成します"
-
-msgid "build binary package only from <source package>"
-msgstr "<source package> から バイナリパッケージのみを作成します"
-
-msgid "build source package only from <source package>"
-msgstr "<source package> から ソースパッケージのみを作成します"
-
-msgid ""
-"build source package only from <source package> - calculate dynamic build "
-"requires"
-msgstr ""
-
-#, c-format
-msgid "build through %prep (unpack sources and apply patches) from <tarball>"
-msgstr "<tarball> から %prep (ソース展開とパッチ適用) まで実行します"
-
-msgid "<tarball>"
-msgstr "<tarball>"
-
-msgid "build through %build (%prep, %conf, then compile) from <tarball>"
-msgstr ""
-
-msgid "check build dependencies <tarball>"
-msgstr ""
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <tarball>"
-msgstr ""
-
-#, c-format
-msgid "verify %files section from <tarball>"
-msgstr "<tarball> から %files セクションを検証します"
-
-msgid "build source and binary packages from <tarball>"
-msgstr "<tarball> を元に、 ソースとバイナリパッケージを作成します"
-
-msgid "build binary package only from <tarball>"
-msgstr "<tarball> を元に、 バイナリパッケージのみを作成します"
-
-msgid "build source package only from <tarball>"
-msgstr "<tarball> を元に、 ソースパッケージのみを作成します"
-
-msgid ""
-"build source package only from <tarball> - calculate dynamic build requires"
-msgstr ""
-
-msgid "build binary package from <source package>"
-msgstr "<source package> を元に、 バイナリパッケージを作成します"
-
-msgid ""
-"build through %install (%prep, %build, then install) from <source package>"
-msgstr ""
-"<source package> から %install (%prep, %build, インストール) まで実行します"
-
-msgid "override build root"
-msgstr "build root を強制的に指定します"
-
-msgid "run build in current directory"
-msgstr "現在のディレクトリーでビルドを実行します"
-
-msgid "remove build tree when done"
-msgstr "パッケージ作成後ツリーを削除します"
-
-msgid "ignore ExcludeArch: directives from spec file"
-msgstr "spec ファイルの ExcludeArch: を無視します"
-
-msgid "debug file state machine"
-msgstr "ファイル状態マシンのデバッグ"
-
-msgid "do not execute any stages of the build"
-msgstr "ビルドのどの段階も実行しません"
-
-msgid "do not verify build dependencies"
-msgstr "ビルド依存性を検証しません"
-
-msgid "generate package header(s) compatible with (legacy) rpm v3 packaging"
-msgstr ""
-"レガシーな RPM v3 のパッケージングと互換性のあるパッケージのヘッダーを生成し"
-"ます"
-
-#, c-format
-msgid "do not execute %clean stage of the build"
-msgstr "ビルドの %clean 段階を実行しません"
-
-#, c-format
-msgid "do not execute %prep stage of the build"
-msgstr "ビルドの %prep 段階を実行しません"
-
-#, c-format
-msgid "do not execute %check stage of the build"
-msgstr "ビルドの %check 段階を実行しません"
-
-msgid "do not accept i18N msgstr's from specfile"
-msgstr "specfile からの i18N msgstr を受け付けません"
-
-msgid "remove sources when done"
-msgstr "終了後ソースを削除します"
-
-msgid "remove specfile when done"
-msgstr "終了時に spec ファイルを削除します"
-
-msgid "skip straight to specified stage (only for c,i)"
-msgstr "指定した過程までスキップします (c, i でのみ有効)"
-
-msgid "override target platform"
-msgstr "ターゲットプラットフォームを強制的に指定します"
-
-msgid "Build options with [ <specfile> | <tarball> | <source package> ]:"
-msgstr "[ <specfile> | <tarball> | <source package> ] とのビルドオプション:"
-
-msgid "Common options for all rpm modes and executables:"
-msgstr "すべてのモード・コマンドで共通のオプション:"
-
-#, c-format
-msgid "Unable to open spec file %s: %s\n"
-msgstr "spec ファイル %s を開けません: %s\n"
-
-#, c-format
-msgid "Failed to open tar pipe: %m\n"
-msgstr "tar パイプのオープンに失敗しました: %m\n"
-
-#, c-format
-msgid "Found more than one spec file in %s\n"
-msgstr "%s 中に複数の spec ファイルを発見しました\n"
-
-#, c-format
-msgid "Failed to read spec file from %s\n"
-msgstr "%s から spec ファイルの読み込みに失敗しました\n"
-
-#, c-format
-msgid "Failed to rename %s to %s: %m\n"
-msgstr "%s を %s に名前を変更できませんでした: %m\n"
-
-#, c-format
-msgid "failed to stat %s: %m\n"
-msgstr "stat %s に失敗しました: %m\n"
-
-#, c-format
-msgid "File %s is not a regular file.\n"
-msgstr "%s は通常ファイルではありません。\n"
-
-#, c-format
-msgid "File %s does not appear to be a specfile.\n"
-msgstr "ファイル %s は spec ファイルではないようです。\n"
-
-#, c-format
-msgid "Building target platforms: %s\n"
-msgstr "ビルド対象プラットフォーム: %s\n"
-
-#, c-format
-msgid "Building for target %s\n"
-msgstr "ターゲット %s 用にビルド中\n"
-
-msgid "arguments to --root (-r) must begin with a /"
-msgstr "--root (-r) の引数は / から始まらなければなりません"
-
-msgid "initialize database"
-msgstr "データベースを初期化します"
-
-msgid "rebuild database inverted lists from installed package headers"
-msgstr ""
-"インストール済のパッケージヘッダーから、 データベースのインデックスを再構築し"
-"ます"
-
-msgid "verify database files"
-msgstr "データベースの検証を行います"
-
-msgid "salvage database"
-msgstr "データベースを回復します"
-
-msgid "export database to stdout header list"
-msgstr "データベースのヘッダー一覧を標準出力にエクスポートします"
-
-msgid "import database from stdin header list"
-msgstr "データベースのヘッダー一覧を標準入力からインポートします"
-
-msgid "Database options:"
-msgstr "データベース オプション:"
-
-msgid "only one major mode may be specified"
-msgstr "一つのメジャーモードのみを指定して下さい"
-
-msgid "verify package signature(s)"
-msgstr "署名の検証を行います"
-
-msgid "import an armored public key"
-msgstr "ASCII 化された公開鍵を取り込みます"
-
-msgid "don't import, but tell if it would work or not"
-msgstr "インポートしませんが、 動作するかしないかを通知します"
-
-msgid "list keys from RPM keyring"
-msgstr "RPM キーリングから鍵を一覧表示します"
-
-msgid "Keyring options:"
-msgstr "キーリングのオプション:"
-
-msgid "no arguments given"
-msgstr "引数が指定されていません"
-
-msgid "Query/Verify package selection options:"
-msgstr "パッケージセレクションの問い合わせ/検証オプション:"
-
-msgid "Query/Verify file selection options:"
-msgstr "ファイルセレクションの問い合わせ/検証オプション:"
-
-msgid "Query options (with -q or --query):"
-msgstr "問い合わせオプション (-q または --query):"
-
-msgid "Verify options (with -V or --verify):"
-msgstr "検証オプション (-V または --verify):"
-
-msgid "Install/Upgrade/Erase options:"
-msgstr "インストール/アップグレード/アンインストールオプション:"
-
-msgid "one type of query/verify may be performed at a time"
-msgstr "問い合わせ/検証は一度に一つしか実行できません"
-
-msgid "unexpected query flags"
-msgstr "予期せぬ問い合わせのフラグです"
-
-msgid "unexpected query format"
-msgstr "予期せぬ問い合わせのフォーマットです"
-
-msgid "unexpected query source"
-msgstr "予期せぬ問い合わせのソースです"
-
-msgid "only installation and upgrading may be forced"
-msgstr "インストールとアップグレードのみを余儀なくされる可能性があります"
-
-msgid "files may only be relocated during package installation"
-msgstr "ファイルはパッケージのインストール時にのみ再配置できます"
-
-msgid "cannot use --prefix with --relocate or --excludepath"
-msgstr "--prefix は --relocate や --excludepath とは同時には使用できません"
-
-msgid ""
-"--relocate and --excludepath may only be used when installing new packages"
-msgstr ""
-"--relocate と --excludepath は新しいパッケージをインストールする時のみ使用で"
-"きます"
-
-msgid "--prefix may only be used when installing new packages"
-msgstr "--prefix は新規パッケージのインストール時のみ使用できます"
-
-msgid "arguments to --prefix must begin with a /"
-msgstr "--prefix の引数は / から始まらなければなりません"
-
-msgid ""
-"--hash (-h) may only be specified during package installation and erasure"
-msgstr "--hash (-h) はパッケージのインストール時または削除時のみ指定できます"
-
-msgid "--percent may only be specified during package installation and erasure"
-msgstr "--percent はパッケージのインストール時または削除時のみ指定できます"
-
-msgid "--replacepkgs may only be specified during package installation"
-msgstr "--replacepkgs はパッケージのインストール時のみ指定できます"
-
-msgid "--excludedocs may only be specified during package installation"
-msgstr "--excludedocs はパッケージのインストール時のみ指定できます"
-
-msgid "--includedocs may only be specified during package installation"
-msgstr "--includedocs はパッケージのインストール時のみ指定できます"
-
-msgid "only one of --excludedocs and --includedocs may be specified"
-msgstr "--excludedocs と --includedocs は同時には指定できません"
-
-msgid "--ignorearch may only be specified during package installation"
-msgstr "--ignorearch はパッケージのインストール時のみ指定できます"
-
-msgid "--ignoreos may only be specified during package installation"
-msgstr "--ignoreos はパッケージのインストール時のみ指定できます"
-
-msgid "--ignoresize may only be specified during package installation"
-msgstr "--ignoresize はパッケージのインストール時のみ指定できます"
-
-msgid "--allmatches may only be specified during package erasure"
-msgstr "--allmatches はパッケージ削除時のみ指定できます"
-
-msgid "--allfiles may only be specified during package installation"
-msgstr "--allfiles はパッケージのインストール時のみ指定できます"
-
-msgid "--justdb may only be specified during package installation and erasure"
-msgstr "--justdb はパッケージ インストール・削除時のみ指定できます"
-
-msgid ""
-"script disabling options may only be specified during package installation "
-"and erasure"
-msgstr ""
-"スクリプトを無効にするようなオプションは、パッケージのインストール、削除時の"
-"み指定できます"
-
-msgid ""
-"trigger disabling options may only be specified during package installation "
-"and erasure"
-msgstr ""
-"トリガーを無効にするようなオプションはパッケージのインストール、削除時のみ指"
-"定できます"
-
-msgid ""
-"--nodeps may only be specified during package installation, erasure, and "
-"verification"
-msgstr ""
-"--nodeps はパッケージのインストール時、削除時および検証時のみ指定できます"
-
-msgid "--test may only be specified during package installation and erasure"
-msgstr "--test はパッケージのインストール時および削除時のみ指定できます"
-
-msgid "no packages given for erase"
-msgstr "アンインストールするパッケージが指定されていません"
-
-msgid "no packages given for install"
-msgstr "インストールするパッケージが指定されていません"
-
-msgid "no arguments given for query"
-msgstr "問い合わせのための引数が指定されていません"
-
-msgid "no arguments given for verify"
-msgstr "検証のための引数が指定されていません"
-
-msgid "sign package(s)"
-msgstr "パッケージに署名します"
-
-msgid "sign package(s) (identical to --addsign)"
-msgstr "パッケージに署名します (--addsign と同一です)"
-
-msgid "delete package signatures"
-msgstr "パッケージの署名を削除します"
-
-msgid "delete IMA and fsverity file signatures"
-msgstr ""
-
-msgid "create rpm v3 header+payload signatures"
-msgstr "v3ヘッダーとペイロード署名を作成します"
-
-msgid "sign package(s) files"
-msgstr "パッケージファイルに署名します"
-
-msgid "generate fsverity signatures for package(s) files"
-msgstr ""
-
-msgid "algorithm to use for verity signatures, default sha256"
-msgstr ""
-
-msgid "<algorithm>"
-msgstr ""
-
-msgid "use file signing cert <cert>"
-msgstr ""
-
-msgid "<cert>"
-msgstr ""
-
-msgid "use file signing key <key>"
-msgstr "ファイル署名鍵 <key> を使用します"
-
-msgid "<key>"
-msgstr "<key>"
-
-msgid "prompt for file signing key password"
-msgstr "ファイル署名鍵のパスワードプロンプトを表示します"
-
-msgid "Signature options:"
-msgstr "署名オプション:"
-
-#, c-format
-msgid "You must set \"%%_gpg_name\" in your macro file\n"
-msgstr "マクロファイル内に \"%%_gpg_name\" を記述しなければなりません\n"
-
-#, c-format
-msgid ""
-"You must set \"%%_file_signing_key\" in your macro file or on the command "
-"line with --fskpath\n"
-msgstr ""
-"マクロファイル内に \"%%_file_signing_key\" を記述するか、コマンドラインにて "
-"--fskpath オプションを指定する必要があります\n"
-
-msgid "--fskpath may only be specified when signing files"
-msgstr "--fskpath はファイルへの署名時にのみ指示されます"
-
-msgid "parse spec file(s) to stdout"
-msgstr "SPEC ファイルを構文解析し 標準出力に出力します"
-
-msgid "query spec file(s)"
-msgstr "spec ファイルの問い合わせを行います"
-
-msgid "interactive macro shell"
-msgstr ""
-
-msgid "operate on binary rpms generated by spec (default)"
-msgstr "spec ファイルによって生成されたバイナリ RPM を操作します（デフォルト）"
-
-msgid "operate on binary package header(s) that would be built from spec"
-msgstr ""
-
-msgid "operate on source package header generated by spec"
-msgstr ""
-
-msgid "use the following query format"
-msgstr "以下の問い合わせ書式を使用します"
-
-msgid "Spec options:"
-msgstr "spec のオプション:"
-
-#, c-format
-msgid "RPM version %s macro shell\n"
-msgstr ""
-
-msgid "no arguments given for parse"
-msgstr "構文解析する引数がありません"
+#, fuzzy
+#| msgid "unable to parse %s=%s\n"
+msgid "unable to parse _buildtime macro\n"
+msgstr "%s=%s を解析できません\n"
 
 msgid "unable to parse SOURCE_DATE_EPOCH\n"
 msgstr "SOURCE_DATE_EPOCH を解析できません\n"
@@ -575,12 +56,19 @@ msgstr "%s の不正な終了ステータス (%s)\n"
 msgid "Failed build dependencies:\n"
 msgstr "ビルド依存性の失敗:\n"
 
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to create package build directory %s: %s\n"
+msgstr "ディレクトリー %s の作成に失敗しました: %s\n"
+
 #, c-format
 msgid "setting %s=%s\n"
 msgstr ""
 
 #, c-format
-msgid "source_date_epoch_from_changelog set but %%changelog is missing\n"
+msgid ""
+"%%source_date_epoch_from_changelog is set, but %%changelog has no entries to "
+"take a date from\n"
 msgstr ""
 
 msgid ""
@@ -654,11 +142,23 @@ msgid "File must begin with \"/\": %s\n"
 msgstr "ファイルは \"/\" から始まらなければなりません: %s\n"
 
 #, c-format
+msgid ""
+"%%clamp_mtime_to_source_date_epoch is deprecated, please use "
+"%%build_mtime_policy\n"
+msgstr ""
+
+#, c-format
 msgid "unable to parse %s=%s\n"
 msgstr "%s=%s を解析できません\n"
 
-#, c-format
-msgid "Unknown file digest algorithm %u, falling back to MD5\n"
+#, fuzzy, c-format
+#| msgid "Unknown icon type: %s\n"
+msgid "Unknown mtime policy '%s'\n"
+msgstr "不明なアイコンタイプ: %s\n"
+
+#, fuzzy, c-format
+#| msgid "Unknown file digest algorithm %u, falling back to MD5\n"
+msgid "Unknown file digest algorithm %u, falling back to %u\n"
 msgstr ""
 "不明なファイルのダイジェスト アルゴリズム %u です、MD5 にフォールバックしま"
 "す\n"
@@ -891,9 +391,24 @@ msgstr "パッケージ %s の出力ファイル名を生成できませんで�
 msgid "Finished binary package job, result %d, filename %s\n"
 msgstr "バイナリパッケージのジョブが終了しました、結果 %d、ファイル名 %s\n"
 
+#, fuzzy, c-format
+#| msgid "line %d: Error parsing %s: %s\n"
+msgid "line %d: Error parsing script: %s: %s\n"
+msgstr "%d 行目: %s の構文解析エラー: %s\n"
+
+#, fuzzy, c-format
+#| msgid "line %d: Bad option %s: %s\n"
+msgid "line %d: Bad %s option %s: %s\n"
+msgstr "%d 行目: 不正なオプション %s: %s\n"
+
 #, c-format
 msgid "line %d: second %s\n"
 msgstr "%d 行目: 2番目の %s\n"
+
+#, fuzzy, c-format
+#| msgid "line %d: unsupported internal script: %s\n"
+msgid "line %d: append and prepend specified: %s\n"
+msgstr "%d 行目: 未サポートの内部スクリプト: %s\n"
 
 #, c-format
 msgid "bogus date in %%changelog: %s\n"
@@ -999,6 +514,11 @@ msgstr "OS は含まれていません: %s\n"
 msgid "%s field must be present in package: %s\n"
 msgstr "%s フィールドがパッケージ中に必要です: %s\n"
 
+#, fuzzy, c-format
+#| msgid "%s field must be present in package: %s\n"
+msgid "%s field must be present before build in package: %s\n"
+msgstr "%s フィールドがパッケージ中に必要です: %s\n"
+
 #, c-format
 msgid "Duplicate %s entries in package: %s\n"
 msgstr "パッケージ中に %s エントリーが重複しています: %s\n"
@@ -1069,6 +589,11 @@ msgstr "%d 行目: 不正な BuildArchtecture フォーマット: %s\n"
 msgid "line %d: Duplicate BuildArch entry: %s\n"
 msgstr "%d 行目: BuildArch エントリーが重複しています: %s\n"
 
+#, fuzzy, c-format
+#| msgid "line %d: Only noarch subpackages are supported: %s\n"
+msgid "line %d: Only noarch is allowed after the build: %s\n"
+msgstr "%d 行目: noarch サブ パッケージでのみサポート: %s\n"
+
 #, c-format
 msgid "line %d: Only noarch subpackages are supported: %s\n"
 msgstr "%d 行目: noarch サブ パッケージでのみサポート: %s\n"
@@ -1092,13 +617,15 @@ msgstr ""
 msgid "line %d: Unknown tag: %s\n"
 msgstr "%d 行目: 不明なタグ: %s\n"
 
-#, c-format
-msgid "%%{buildroot} couldn't be empty\n"
-msgstr "%%{buildroot} を空にすることができません\n"
+#, fuzzy, c-format
+#| msgid "line %d: Priorities are allowed only for file triggers : %s\n"
+msgid "line %d: Tag not allowed after build is done: %s\n"
+msgstr "%d 行目: 優先度はファイルトリガーにだけ許されています : %s\n"
 
-#, c-format
-msgid "%%{buildroot} can not be \"/\"\n"
-msgstr "%%{buildroot} を \"\" にすることができません\n"
+#, fuzzy, c-format
+#| msgid "Invalid capability: %s\n"
+msgid "Invalid buildroot: '%s'\n"
+msgstr "無効なケーパビリティです: %s\n"
 
 #, c-format
 msgid "No patch number %u\n"
@@ -1128,15 +655,6 @@ msgstr ""
 msgid "Invalid patch number %s: %s\n"
 msgstr "無効なパッケージ番号 %s: %s\n"
 
-#, c-format
-msgid "line %d: second %%prep\n"
-msgstr "%d 行目: ふたつ目の %%prep\n"
-
-#, c-format
-msgid ""
-"%%patchN is deprecated (%i usages found), use %%patch N (or %%patch -P N)\n"
-msgstr ""
-
 msgid "Dependency tokens must begin with alpha-numeric, '_' or '/'"
 msgstr "依存関係トークンは、英数字、'_' または '/' で始まらなければいけません"
 
@@ -1152,6 +670,11 @@ msgstr "無効な依存性"
 msgid "Version required"
 msgstr "バージョン要件"
 
+#, fuzzy
+#| msgid "line %d: file trigger condition must begin with '/': %s"
+msgid "file trigger conditions must begin with '/'"
+msgstr "%d 行目: ファイルトリガーは '/' で始まらなければなりません: %s"
+
 msgid "Only package names are allowed in Obsoletes"
 msgstr "Obsoletes にはパッケージ名だけが許可されています"
 
@@ -1160,9 +683,6 @@ msgstr "バージョン指定のない Obsoletes は推奨されていません"
 
 msgid "It's not recommended to use '>' in Obsoletes"
 msgstr "'>' を使用した Obsoletes は推奨されていません"
-
-msgid "Only absolute paths are allowed in file triggers"
-msgstr "ファイルトリガーには絶対パスだけが許可されています"
 
 msgid "Trigger fired by the same package is already defined in spec file"
 msgstr "同一パッケージによるトリガーが spec ファイル中で既に定義されています"
@@ -1202,10 +722,6 @@ msgstr "%d 行目: 2番目の %s\n"
 #, c-format
 msgid "line %d: unsupported internal script: %s\n"
 msgstr "%d 行目: 未サポートの内部スクリプト: %s\n"
-
-#, c-format
-msgid "line %d: file trigger condition must begin with '/': %s"
-msgstr "%d 行目: ファイルトリガーは '/' で始まらなければなりません: %s"
 
 #, c-format
 msgid "line %d: interpreter arguments not allowed in triggers: %s\n"
@@ -1252,6 +768,10 @@ msgid "%s:%d: malformed %%include statement\n"
 msgstr "%s:%d: 不正な形式の %%include 文\n"
 
 #, c-format
+msgid "%%patchN is obsolete, use %%patch N (or %%patch -P N): %s\n"
+msgstr ""
+
+#, c-format
 msgid "encoding %s not supported by system\n"
 msgstr "エンコーディング %s はシステムでサポートされていません\n"
 
@@ -1272,8 +792,36 @@ msgstr ""
 msgid "line %d doesn't belong to any section: %s\n"
 msgstr "%d 行目: どのセクションにも属していません: %s\n"
 
+#, fuzzy, c-format
+#| msgid "line %d: Unknown tag: %s\n"
+msgid "line %d: Unknown buildsystem: %s\n"
+msgstr "%d 行目: 不明なタグ: %s\n"
+
+#, c-format
+msgid ""
+"line %d: Required parametric macro %%%s not defined for buildsystem %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "failed to write all data to %s: %s\n"
+msgid "failed to write buildsystem %s %%%s: %s\n"
+msgstr "%s へ全データの書き込みに失敗しました: %s\n"
+
+#, fuzzy, c-format
+#| msgid "Couldn't create temporary file for %s: %s\n"
+msgid "failed to create temp file for buildsystem: %s\n"
+msgstr "%s の一時ファイルを作成できませんでした: %s\n"
+
+#, c-format
+msgid "Section %s is not allowed after build is done!\n"
+msgstr ""
+
 msgid "No compatible architectures found for build\n"
 msgstr "作成(build)可能な互換アーキテクチャはありません\n"
+
+#, c-format
+msgid "invalid rpm format %d requested, using %d\n"
+msgstr ""
 
 #, c-format
 msgid "Package has no %%description: %s\n"
@@ -1368,6 +916,10 @@ msgstr "%s が失敗しました %x\n"
 msgid "failed to write all data to %s: %s\n"
 msgstr "%s へ全データの書き込みに失敗しました: %s\n"
 
+#, c-format
+msgid "invalid or out of order path from generator: %s\n"
+msgstr ""
+
 msgid "Empty file classifier\n"
 msgstr "空のファイル分類子\n"
 
@@ -1399,6 +951,11 @@ msgid "Failed to find %s:\n"
 msgstr "%s の検索に失敗しました:\n"
 
 msgid "Deprecated external dependency generator is used!\n"
+msgstr "非推奨の外部依存関係検出器が使用されています!\n"
+
+#, fuzzy
+#| msgid "Deprecated external dependency generator is used!\n"
+msgid "External dependency generator is incompatible with v6 packages\n"
 msgstr "非推奨の外部依存関係検出器が使用されています!\n"
 
 #, c-format
@@ -1532,8 +1089,9 @@ msgstr ""
 msgid "%s%s created as %s%s\n"
 msgstr ""
 
-#, c-format
-msgid "%s %s: remove failed: %s\n"
+#, fuzzy, c-format
+#| msgid "%s %s: remove failed: %s\n"
+msgid "%s %s%s: remove failed: %s\n"
 msgstr "%s %s: 削除に失敗しました: %s\n"
 
 msgid "directory"
@@ -1660,8 +1218,39 @@ msgid "array iterator used with different sized arrays"
 msgstr "配列の繰り返し指定が、サイズが異なる配列の間で使用されています"
 
 #, c-format
+msgid "%s: reading of public key failed.\n"
+msgstr "%s: 公開鍵の読み込みに失敗しました。\n"
+
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to create keyring directory %s: %s\n"
+msgstr "ディレクトリー %s の作成に失敗しました: %s\n"
+
+#, c-format
+msgid "failed to import key: %s: %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "can't create %s lock on %s (%s)\n"
+msgid "Can't create writelock for keyring at %s: %s\n"
+msgstr "%s ロックを（%s 上に）作成できません (%s)\n"
+
+#, c-format
+msgid "Can't acquire writelock for keyring at %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "%s: not an armored public key.\n"
+msgid "%s is not a valid public key\n"
+msgstr "%s: ASCII 形式の公開鍵ではありません。\n"
+
+#, c-format
 msgid "RPM v3 packages are deprecated: %s\n"
 msgstr "RPM v3 パッケージは非推奨です: %s\n"
+
+#, c-format
+msgid "RPM version %s\n"
+msgstr "RPM バージョン %s\n"
 
 msgid "Error writing to stdout"
 msgstr ""
@@ -1769,9 +1358,6 @@ msgstr "ペイロードのファイル状態マシンのデバッグ"
 
 msgid "debug rpmio I/O"
 msgstr "rpmio 入出力のデバッグ"
-
-msgid "disable user namespace support"
-msgstr ""
 
 #, c-format
 msgid "%s: option table misconfigured (%d)\n"
@@ -1999,12 +1585,6 @@ msgstr "グループに所属するパッケージの問い合わせ/検証を�
 msgid "query/verify a package file"
 msgstr "パッケージファイルの問い合わせ/検証を行います"
 
-msgid "query/verify package(s) with package identifier"
-msgstr "パッケージ ID で問い合わせ/検証を行います"
-
-msgid "query/verify package(s) with header identifier"
-msgstr "ヘッダー ID でパッケージの問い合わせ/検証を行います"
-
 msgid "rpm query mode"
 msgstr "rpm 問い合わせモード"
 
@@ -2020,6 +1600,11 @@ msgstr "パッケージによってトリガーされるパッケージを問い
 
 msgid "rpm verify mode"
 msgstr "RPM 検証モード"
+
+#, fuzzy
+#| msgid "query/verify the package(s) which obsolete a dependency"
+msgid "query/verify the package(s) which conflict with a dependency"
+msgstr "置換を要求するパッケージの問い合わせ/検証を行います"
 
 msgid "query/verify the package(s) which require a dependency"
 msgstr "依存性を要求するパッケージの問い合わせ/検証を行います"
@@ -2077,6 +1662,9 @@ msgstr "基本的なファイル情報をダンプします"
 
 msgid "list files in package"
 msgstr "パッケージ中のファイルを列挙します"
+
+msgid "use the following query format"
+msgstr "以下の問い合わせ書式を使用します"
 
 msgid "display the states of the listed files"
 msgstr "列挙したファイルの状態を表示します"
@@ -2495,18 +2083,20 @@ msgstr ""
 "タグ %s の正しくない数のエントリー: %u 個発見されましたが %u 個が期待されてい"
 "ます。\n"
 
-#, c-format
-msgid "Malformed data for tag %s: %u bytes found but %lu expected.\n"
+#, fuzzy, c-format
+#| msgid "Malformed data for tag %s: %u bytes found but %lu expected.\n"
+msgid "Malformed data for tag %s: %u bytes found but %<PRIu64> expected.\n"
 msgstr ""
 "タグ %s の間違ったデータ: %u バイト発見されましたが %lu バイトが期待されてい"
 "ます。\n"
 
-#, c-format
-msgid "%s: base64 decode failed, len %li\n"
-msgstr ""
+#, fuzzy, c-format
+#| msgid "%s %s: remove failed: %s\n"
+msgid "%s: base64 decode failed, len %zu\n"
+msgstr "%s %s: 削除に失敗しました: %s\n"
 
 #, c-format
-msgid "%s: base64 decode success, len %li\n"
+msgid "%s: base64 decode success, len %zu\n"
 msgstr ""
 
 msgid "Bad magic"
@@ -2536,8 +2126,10 @@ msgstr "内部エラーが発生しました"
 msgid "Archive file not in header"
 msgstr "アーカイブファイルがヘッダーにありません"
 
-msgid "Invalid symlink"
-msgstr ""
+#, fuzzy
+#| msgid "failed symlink"
+msgid "Unsafe symlink"
+msgstr "シンボリックリンク作成に失敗しました"
 
 msgid "File from package already exists as a directory in system"
 msgstr ""
@@ -2613,6 +2205,11 @@ msgstr "パッケージ %s は再配置できません\n"
 msgid "error reading from file %s\n"
 msgstr "ファイル %s の読み込みエラー\n"
 
+#, fuzzy, c-format
+#| msgid "no package matches %s: %s\n"
+msgid "package format not supported: %s\n"
+msgstr "%s に一致するパッケージは存在しません: %s\n"
+
 #, c-format
 msgid "\"%s\" specifies multiple packages:\n"
 msgstr "\"%s\" は複数のパッケージを指定しています:\n"
@@ -2627,12 +2224,6 @@ msgstr "%s をインストール中です\n"
 
 msgid "not an rpm package"
 msgstr "rpm パッケージではありません"
-
-msgid "illegal signature type"
-msgstr "署名の種類が正しくありません"
-
-msgid "unsupported RPM package version"
-msgstr "サポートしていない RPM パッケージのバージョンです"
 
 #, c-format
 msgid "read failed: %s (%d)\n"
@@ -2778,6 +2369,11 @@ msgstr "%s の引数がありません (%s:%d)\n"
 msgid "cannot open %s at %s:%d: %m\n"
 msgstr "%s が開けません (%s:%d): %m\n"
 
+#, fuzzy, c-format
+#| msgid "bad option '%s' at %s:%d\n"
+msgid "Ignoring %s at %s:%d\n"
+msgstr "不正なオプションです: '%s' (%s:%d)\n"
+
 #, c-format
 msgid "missing architecture for %s at %s:%d\n"
 msgstr "%s 用のアーキテクチャが見つかりません (%s:%d)\n"
@@ -2836,6 +2432,15 @@ msgstr "%s スクリプトの実行に失敗しました、終了ステータス
 msgid "Unknown format"
 msgstr "不明な書式"
 
+#, c-format
+msgid "erasing gpg-pubkey packages is deprecated; use rpmkeys --delete %s\n"
+msgstr ""
+
+msgid ""
+"public keys can not be installed as gpg-pubkey packages; use rpmkeys --"
+"import <keyfile> for that\n"
+msgstr ""
+
 msgid "install"
 msgstr "インストール"
 
@@ -2865,16 +2470,13 @@ msgid "missing ')' in package label: %s\n"
 msgstr "パッケージラベル中に「)」がありません: %s\n"
 
 #, c-format
-msgid "%s: reading of public key failed.\n"
-msgstr "%s: 公開鍵の読み込みに失敗しました。\n"
-
-#, c-format
 msgid "unknown keyring type: %s, using rpmdb\n"
 msgstr ""
 
-#, c-format
-msgid "failed to import key: %s: %s\n"
-msgstr ""
+#, fuzzy, c-format
+#| msgid "Unknown icon type: %s\n"
+msgid "unknown keyring type: %s\n"
+msgstr "不明なアイコンタイプ: %s\n"
 
 #, c-format
 msgid "invalid package verify level %s\n"
@@ -2899,6 +2501,11 @@ msgstr "%s: タグ %u: 無効なデータ %p (%u)"
 msgid "%s tag %u: invalid size %u"
 msgstr "%s: タグ %u: 無効なサイズ %u"
 
+#, fuzzy, c-format
+#| msgid "%s: tag %u: invalid hex"
+msgid "%s tag %u: invalid base64"
+msgstr "%s: タグ %u: 無効な16進値"
+
 #, c-format
 msgid "%s tag %u: invalid OpenPGP signature"
 msgstr "%s: タグ %u: 無効な OpenPGP 署名"
@@ -2907,19 +2514,28 @@ msgstr "%s: タグ %u: 無効な OpenPGP 署名"
 msgid "%s: tag %u: invalid hex"
 msgstr "%s: タグ %u: 無効な16進値"
 
-#, c-format
-msgid "%s%s%s %s"
+#, fuzzy, c-format
+#| msgid "%s%s%s %s"
+msgid "%s %s%s %s"
 msgstr "%s%s%s %s"
 
 msgid "digest"
 msgstr "ダイジェスト"
 
 #, c-format
-msgid "%s%s"
-msgstr "%s%s"
+msgid "%s OpenPGP %s"
+msgstr ""
+
+#, c-format
+msgid "%s OpenPGP %s %s"
+msgstr ""
 
 msgid "signature"
 msgstr "署名"
+
+#, c-format
+msgid ", key fingerprint: %s"
+msgstr ""
 
 msgid "header"
 msgstr "ヘッダー"
@@ -2927,10 +2543,14 @@ msgstr "ヘッダー"
 msgid "package"
 msgstr "パッケージ"
 
-msgid "Header "
+#, fuzzy
+#| msgid "Header "
+msgid "Header"
 msgstr "ヘッダー "
 
-msgid "Payload "
+#, fuzzy
+#| msgid "Payload "
+msgid "Payload"
 msgstr "ペイロード "
 
 msgid "Unable to reload signature header.\n"
@@ -3007,8 +2627,10 @@ msgstr ""
 msgid "syntax error in expression"
 msgstr "式中で文法エラー"
 
-msgid "unsupported funcion"
-msgstr ""
+#, fuzzy
+#| msgid "- not supported for strings"
+msgid "unsupported function"
+msgstr "- は文字列には使えません"
 
 msgid "unmatched ("
 msgstr "( が一致しません"
@@ -3117,7 +2739,16 @@ msgid "A %% is followed by an unparseable macro\n"
 msgstr "%% の後に構文解析できないマクロが続いています\n"
 
 #, c-format
-msgid "======================== active %d empty %d\n"
+msgid "unexpected argument to non-parametric macro %%%s\n"
+msgstr ""
+
+#, c-format
+msgid "macro value out of range for int: %<PRIu64> using %i instead.\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "======================== active %d empty %d\n"
+msgid "======================== active %zu empty %d\n"
 msgstr "======================== 有効 %d 空 %d\n"
 
 #, c-format
@@ -3190,6 +2821,15 @@ msgstr "V%d %s/%s %s、鍵 ID %s"
 msgid "(none)"
 msgstr "(なし)"
 
+#, fuzzy, c-format
+#| msgid "Could not read from file %s: %s\n"
+msgid "Could not find url helper: \"%s\"\n"
+msgstr "ファイル %s から読み込めません: %s\n"
+
+#, c-format
+msgid "Executing url helper \"%s\" failed with status %i\n"
+msgstr ""
+
 #, c-format
 msgid "%s: Fwrite failed: %s\n"
 msgstr "%s: Fwrite に失敗しました: %s\n"
@@ -3202,25 +2842,15 @@ msgstr "%s: Fread に失敗しました: %s\n"
 msgid "%s: Fflush failed: %s\n"
 msgstr "%s: Fflush に失敗しました: %s\n"
 
-#, fuzzy
-#| msgid "Unsupported PGP signature\n"
-msgid "Unsupported OpenPGP signature\n"
-msgstr "サポートされない PGP 署名\n"
+#, fuzzy, c-format
+#| msgid "reading symlink %s failed: %s\n"
+msgid "Expanding signing macro %s failed\n"
+msgstr "シンボリックリンク %s の読み込みに失敗しました: %s\n"
 
 #, fuzzy, c-format
-#| msgid "Unsupported PGP hash algorithm %u\n"
-msgid "Unsupported OpenPGP hash algorithm %u\n"
-msgstr "サポートされない PGP ハッシュアルゴリズム %u\n"
-
-#, fuzzy, c-format
-#| msgid "Unsupported PGP pubkey algorithm %u\n"
-msgid "Unsupported OpenPGP pubkey algorithm %u\n"
-msgstr "サポートされない PGP 公開鍵アルゴリズム %u\n"
-
-#, fuzzy, c-format
-#| msgid "Unsupported PGP signature\n"
-msgid "Deprecated OpenPGP signature version %d\n"
-msgstr "サポートされない PGP 署名\n"
+#| msgid "Invalid %s token: %s\n"
+msgid "Invalid sign command: %s\n"
+msgstr "無効なトークン %s: %s\n"
 
 #, c-format
 msgid "Could not create pipe for signing: %m\n"
@@ -3247,18 +2877,43 @@ msgstr "ファイル %s から読み込めません: %s\n"
 
 #, fuzzy, c-format
 #| msgid "gpg exec failed (%d)\n"
-msgid "gpg waitpid failed (%s)\n"
+msgid "%s waitpid failed (%s)\n"
 msgstr "gpg の実行に失敗しました (%d)\n"
 
-#, c-format
-msgid "gpg exec failed (%d)\n"
+#, fuzzy, c-format
+#| msgid "gpg exec failed (%d)\n"
+msgid "%s exec failed (%d)\n"
 msgstr "gpg の実行に失敗しました (%d)\n"
 
-msgid "gpg failed to write signature\n"
+#, fuzzy, c-format
+#| msgid "gpg failed to write signature\n"
+msgid "failed to write signature: %s\n"
 msgstr "gpg が署名を書き込むのに失敗しました\n"
 
-msgid "unable to read the signature\n"
+#, fuzzy, c-format
+#| msgid "unable to read the signature\n"
+msgid "unable to read the signature: %s\n"
 msgstr "署名を読み込めませんでした\n"
+
+#, fuzzy
+#| msgid "Unsupported PGP signature\n"
+msgid "Unsupported OpenPGP signature\n"
+msgstr "サポートされない PGP 署名\n"
+
+#, fuzzy, c-format
+#| msgid "Unsupported PGP hash algorithm %u\n"
+msgid "Unsupported OpenPGP hash algorithm %u\n"
+msgstr "サポートされない PGP ハッシュアルゴリズム %u\n"
+
+#, fuzzy, c-format
+#| msgid "Unsupported PGP signature\n"
+msgid "Deprecated OpenPGP signature version %d\n"
+msgstr "サポートされない PGP 署名\n"
+
+#, fuzzy, c-format
+#| msgid "Unsupported PGP pubkey algorithm %u\n"
+msgid "Unsupported OpenPGP pubkey algorithm %u for rpm v3/v4 signatures\n"
+msgstr "サポートされない PGP 公開鍵アルゴリズム %u\n"
 
 msgid "file signing support not built in\n"
 msgstr "ファイル署名機能は組み込まれていません\n"
@@ -3285,18 +2940,42 @@ msgstr "%s: rpmReadSignature に失敗しました: %s"
 msgid "%s: headerRead failed: %s\n"
 msgstr "%s: headerRead に失敗しました: %s\n"
 
-msgid "Cannot sign RPM v3 packages\n"
+#, fuzzy, c-format
+#| msgid "Cannot sign RPM v3 packages\n"
+msgid "Cannot sign RPM v3 packages: %s\n"
 msgstr "RPM v3 パッケージを署名できません\n"
 
+#, fuzzy, c-format
+#| msgid "Could not generate output filename for package %s: %s\n"
+msgid "not generating v3 signature for v6 package: %s\n"
+msgstr "パッケージ %s の出力ファイル名を生成できませんでした: %s\n"
+
 #, c-format
-msgid "%s already contains identical signature, skipping\n"
+msgid "File signatures not applicable to src.rpm: %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "Could not seek in file %s: %s\n"
+msgid "Could not get a file size of %s\n"
+msgstr "ファイル %s をシークできません: %s\n"
+
+#, fuzzy, c-format
+#| msgid "%s already contains identical signature, skipping\n"
+msgid "%s already contains an identical signature, skipping\n"
+msgstr "%s はすでに同一の署名を含みます、スキップしています\n"
+
+#, fuzzy, c-format
+#| msgid "%s already contains identical signature, skipping\n"
+msgid "%s already contains a legacy signature\n"
 msgstr "%s はすでに同一の署名を含みます、スキップしています\n"
 
 #, c-format
 msgid "%s: rpmWriteSignature failed: %s\n"
 msgstr "%s: rpmWriteSignature に失敗しました: %s\n"
 
-msgid "rpmMkTemp failed\n"
+#, fuzzy, c-format
+#| msgid "rpmMkTemp failed\n"
+msgid "rpmMkTemp failed: %s\n"
 msgstr "rpmMkTemp に失敗しました\n"
 
 #, fuzzy, c-format
@@ -3321,11 +3000,473 @@ msgid "headerPutString failed\n"
 msgstr "headerPutString に失敗しました\n"
 
 #, c-format
+msgid "%s: %s\n"
+msgstr "%s: %s\n"
+
+#, c-format
+msgid "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
+msgstr "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
+
+#, c-format
+msgid ""
+"This program may be freely redistributed under the terms of the GNU GPL\n"
+msgstr "このプログラムは GNU GPL の下で自由に配布できます\n"
+
+#, c-format
+msgid "creating a pipe for --pipe failed: %m\n"
+msgstr "--pipe でのパイプ作成に失敗: %m\n"
+
+#, c-format
+msgid "exec failed\n"
+msgstr "実行失敗\n"
+
+msgid "Query/Verify package selection options:"
+msgstr "パッケージセレクションの問い合わせ/検証オプション:"
+
+msgid "Query/Verify file selection options:"
+msgstr "ファイルセレクションの問い合わせ/検証オプション:"
+
+msgid "Query options (with -q or --query):"
+msgstr "問い合わせオプション (-q または --query):"
+
+msgid "Verify options (with -V or --verify):"
+msgstr "検証オプション (-V または --verify):"
+
+msgid "Install/Upgrade/Erase options:"
+msgstr "インストール/アップグレード/アンインストールオプション:"
+
+msgid "Common options for all rpm modes and executables:"
+msgstr "すべてのモード・コマンドで共通のオプション:"
+
+msgid "one type of query/verify may be performed at a time"
+msgstr "問い合わせ/検証は一度に一つしか実行できません"
+
+msgid "unexpected query flags"
+msgstr "予期せぬ問い合わせのフラグです"
+
+msgid "unexpected query format"
+msgstr "予期せぬ問い合わせのフォーマットです"
+
+msgid "unexpected query source"
+msgstr "予期せぬ問い合わせのソースです"
+
+msgid "only one major mode may be specified"
+msgstr "一つのメジャーモードのみを指定して下さい"
+
+msgid "only installation and upgrading may be forced"
+msgstr "インストールとアップグレードのみを余儀なくされる可能性があります"
+
+msgid "files may only be relocated during package installation"
+msgstr "ファイルはパッケージのインストール時にのみ再配置できます"
+
+msgid "cannot use --prefix with --relocate or --excludepath"
+msgstr "--prefix は --relocate や --excludepath とは同時には使用できません"
+
+msgid ""
+"--relocate and --excludepath may only be used when installing new packages"
+msgstr ""
+"--relocate と --excludepath は新しいパッケージをインストールする時のみ使用で"
+"きます"
+
+msgid "--prefix may only be used when installing new packages"
+msgstr "--prefix は新規パッケージのインストール時のみ使用できます"
+
+msgid "arguments to --prefix must begin with a /"
+msgstr "--prefix の引数は / から始まらなければなりません"
+
+msgid ""
+"--hash (-h) may only be specified during package installation and erasure"
+msgstr "--hash (-h) はパッケージのインストール時または削除時のみ指定できます"
+
+msgid "--percent may only be specified during package installation and erasure"
+msgstr "--percent はパッケージのインストール時または削除時のみ指定できます"
+
+msgid "--replacepkgs may only be specified during package installation"
+msgstr "--replacepkgs はパッケージのインストール時のみ指定できます"
+
+msgid "--excludedocs may only be specified during package installation"
+msgstr "--excludedocs はパッケージのインストール時のみ指定できます"
+
+msgid "--includedocs may only be specified during package installation"
+msgstr "--includedocs はパッケージのインストール時のみ指定できます"
+
+msgid "only one of --excludedocs and --includedocs may be specified"
+msgstr "--excludedocs と --includedocs は同時には指定できません"
+
+msgid "--ignorearch may only be specified during package installation"
+msgstr "--ignorearch はパッケージのインストール時のみ指定できます"
+
+msgid "--ignoreos may only be specified during package installation"
+msgstr "--ignoreos はパッケージのインストール時のみ指定できます"
+
+msgid "--ignoresize may only be specified during package installation"
+msgstr "--ignoresize はパッケージのインストール時のみ指定できます"
+
+msgid "--allmatches may only be specified during package erasure"
+msgstr "--allmatches はパッケージ削除時のみ指定できます"
+
+msgid "--allfiles may only be specified during package installation"
+msgstr "--allfiles はパッケージのインストール時のみ指定できます"
+
+msgid "--justdb may only be specified during package installation and erasure"
+msgstr "--justdb はパッケージ インストール・削除時のみ指定できます"
+
+msgid ""
+"script disabling options may only be specified during package installation "
+"and erasure"
+msgstr ""
+"スクリプトを無効にするようなオプションは、パッケージのインストール、削除時の"
+"み指定できます"
+
+msgid ""
+"trigger disabling options may only be specified during package installation "
+"and erasure"
+msgstr ""
+"トリガーを無効にするようなオプションはパッケージのインストール、削除時のみ指"
+"定できます"
+
+msgid ""
+"--nodeps may only be specified during package installation, erasure, and "
+"verification"
+msgstr ""
+"--nodeps はパッケージのインストール時、削除時および検証時のみ指定できます"
+
+msgid "--test may only be specified during package installation and erasure"
+msgstr "--test はパッケージのインストール時および削除時のみ指定できます"
+
+msgid "arguments to --root (-r) must begin with a /"
+msgstr "--root (-r) の引数は / から始まらなければなりません"
+
+msgid "no packages given for erase"
+msgstr "アンインストールするパッケージが指定されていません"
+
+msgid "no packages given for install"
+msgstr "インストールするパッケージが指定されていません"
+
+msgid "no arguments given for query"
+msgstr "問い合わせのための引数が指定されていません"
+
+msgid "no arguments given for verify"
+msgstr "検証のための引数が指定されていません"
+
+#, fuzzy
+#| msgid "create uncompressed tar file"
+msgid "create uncompressed archive"
+msgstr "無圧縮の tar ファイルを作成します"
+
+msgid "archive format (pax|cpio)"
+msgstr ""
+
+#, c-format
+msgid "argument is not an RPM package\n"
+msgstr "引数は RPM パッケージではありません\n"
+
+#, c-format
+msgid "error reading header from package\n"
+msgstr "パッケージのヘッダー読み込み中にエラーが発生しました\n"
+
+#, c-format
+msgid "cannot re-open payload: %s\n"
+msgstr "ペイロードを再度開けません: %s\n"
+
+msgid "initialize database"
+msgstr "データベースを初期化します"
+
+msgid "rebuild database inverted lists from installed package headers"
+msgstr ""
+"インストール済のパッケージヘッダーから、 データベースのインデックスを再構築し"
+"ます"
+
+#, fuzzy
+#| msgid "verify database files"
+msgid "verify database"
+msgstr "データベースの検証を行います"
+
+msgid "salvage database"
+msgstr "データベースを回復します"
+
+msgid "export database to stdout header list"
+msgstr "データベースのヘッダー一覧を標準出力にエクスポートします"
+
+msgid "import database from stdin header list"
+msgstr "データベースのヘッダー一覧を標準入力からインポートします"
+
+msgid "Database options:"
+msgstr "データベース オプション:"
+
+#, c-format
+msgid "buildroot already specified, ignoring %s\n"
+msgstr "BuildRoot は既に指定されています、%s を無視します\n"
+
+#, c-format
+msgid "build through %prep (unpack sources and apply patches) from <specfile>"
+msgstr "<specfile> の %prep (ソース展開と patch の適用) まで実行します"
+
+msgid "<specfile>"
+msgstr "<specfile>"
+
+#, c-format
+msgid "build through %conf (%prep, then %conf) from <specfile>"
+msgstr ""
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <specfile>"
+msgstr ""
+
+msgid "check build dependencies <specfile>"
+msgstr ""
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <specfile>"
+msgstr ""
+
+#, c-format
+msgid "verify %files section from <specfile>"
+msgstr "<specfile> の %files セクションを検証します"
+
+msgid "build source and binary packages from <specfile>"
+msgstr "<specfile> を元に、 ソースとバイナリパッケージを作成します"
+
+msgid "build binary package only from <specfile>"
+msgstr "<specfile> を元に、 バイナリパッケージのみを作成します"
+
+msgid "build source package only from <specfile>"
+msgstr "<specfile> を元に、 ソースパッケージのみを作成します"
+
+msgid ""
+"build source package only from <specfile> - calculate dynamic build requires"
+msgstr ""
+
+#, c-format
+msgid ""
+"build through %prep (unpack sources and apply patches) from <source package>"
+msgstr "<source package> から %prep (ソース展開と patch の適用) まで実行します"
+
+msgid "<source package>"
+msgstr "<source package>"
+
+#, fuzzy, c-format
+#| msgid "build through %build (%prep, then compile) from <source package>"
+msgid "build through %conf (%prep, then %conf) from <source package>"
+msgstr "<source package> から %build (%prep, コンパイル) まで実行します"
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <source package>"
+msgstr ""
+
+msgid "check build dependencies <source package>"
+msgstr ""
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <source "
+"package>"
+msgstr ""
+
+#, c-format
+msgid "verify %files section from <source package>"
+msgstr "<source package> の %files セクションを検証します"
+
+msgid "build source and binary packages from <source package>"
+msgstr "<source package> から ソースとバイナリパッケージを作成します"
+
+msgid "build binary package only from <source package>"
+msgstr "<source package> から バイナリパッケージのみを作成します"
+
+msgid "build source package only from <source package>"
+msgstr "<source package> から ソースパッケージのみを作成します"
+
+msgid ""
+"build source package only from <source package> - calculate dynamic build "
+"requires"
+msgstr ""
+
+#, c-format
+msgid "build through %prep (unpack sources and apply patches) from <tarball>"
+msgstr "<tarball> から %prep (ソース展開とパッチ適用) まで実行します"
+
+msgid "<tarball>"
+msgstr "<tarball>"
+
+#, fuzzy, c-format
+#| msgid "build through %build (%prep, then compile) from <tarball>"
+msgid "build through %conf (%prep, then %conf) from <tarball>"
+msgstr "<tarball> から %build (%prep とコンパイル) まで実行します"
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <tarball>"
+msgstr ""
+
+msgid "check build dependencies <tarball>"
+msgstr ""
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <tarball>"
+msgstr ""
+
+#, c-format
+msgid "verify %files section from <tarball>"
+msgstr "<tarball> から %files セクションを検証します"
+
+msgid "build source and binary packages from <tarball>"
+msgstr "<tarball> を元に、 ソースとバイナリパッケージを作成します"
+
+msgid "build binary package only from <tarball>"
+msgstr "<tarball> を元に、 バイナリパッケージのみを作成します"
+
+msgid "build source package only from <tarball>"
+msgstr "<tarball> を元に、 ソースパッケージのみを作成します"
+
+msgid ""
+"build source package only from <tarball> - calculate dynamic build requires"
+msgstr ""
+
+msgid "build binary package from <source package>"
+msgstr "<source package> を元に、 バイナリパッケージを作成します"
+
+#, c-format
+msgid ""
+"build through %install (%prep, %build, then install) from <source package>"
+msgstr ""
+"<source package> から %install (%prep, %build, インストール) まで実行します"
+
+#, fuzzy
+#| msgid "override build root"
+msgid "override build root (DEPRECATED)"
+msgstr "build root を強制的に指定します"
+
+msgid "remove build tree when done"
+msgstr "パッケージ作成後ツリーを削除します"
+
+msgid "ignore ExcludeArch: directives from spec file"
+msgstr "spec ファイルの ExcludeArch: を無視します"
+
+msgid "debug file state machine"
+msgstr "ファイル状態マシンのデバッグ"
+
+msgid "do not execute any stages of the build"
+msgstr "ビルドのどの段階も実行しません"
+
+msgid "do not verify build dependencies"
+msgstr "ビルド依存性を検証しません"
+
+msgid "generate package header(s) compatible with (legacy) rpm v3 packaging"
+msgstr ""
+"レガシーな RPM v3 のパッケージングと互換性のあるパッケージのヘッダーを生成し"
+"ます"
+
+#, c-format
+msgid "do not execute %clean stage of the build"
+msgstr "ビルドの %clean 段階を実行しません"
+
+#, c-format
+msgid "do not execute %prep stage of the build"
+msgstr "ビルドの %prep 段階を実行しません"
+
+#, c-format
+msgid "do not execute %check stage of the build"
+msgstr "ビルドの %check 段階を実行しません"
+
+msgid "do not accept i18N msgstr's from specfile"
+msgstr "specfile からの i18N msgstr を受け付けません"
+
+msgid "remove sources when done"
+msgstr "終了後ソースを削除します"
+
+msgid "remove specfile when done"
+msgstr "終了時に spec ファイルを削除します"
+
+msgid "skip straight to specified stage (only for c,i)"
+msgstr "指定した過程までスキップします (c, i でのみ有効)"
+
+msgid "override target platform"
+msgstr "ターゲットプラットフォームを強制的に指定します"
+
+msgid "Build options with [ <specfile> | <tarball> | <source package> ]:"
+msgstr "[ <specfile> | <tarball> | <source package> ] とのビルドオプション:"
+
+#, c-format
+msgid "Unable to open spec file %s: %s\n"
+msgstr "spec ファイル %s を開けません: %s\n"
+
+#, c-format
+msgid "Failed to open tar pipe: %m\n"
+msgstr "tar パイプのオープンに失敗しました: %m\n"
+
+#, c-format
+msgid "Found more than one spec file in %s\n"
+msgstr "%s 中に複数の spec ファイルを発見しました\n"
+
+#, c-format
+msgid "Failed to read spec file from %s\n"
+msgstr "%s から spec ファイルの読み込みに失敗しました\n"
+
+#, c-format
+msgid "Failed to rename %s to %s: %m\n"
+msgstr "%s を %s に名前を変更できませんでした: %m\n"
+
+#, c-format
+msgid "failed to stat %s: %m\n"
+msgstr "stat %s に失敗しました: %m\n"
+
+#, c-format
+msgid "File %s is not a regular file.\n"
+msgstr "%s は通常ファイルではありません。\n"
+
+#, c-format
+msgid "File %s does not appear to be a specfile.\n"
+msgstr "ファイル %s は spec ファイルではないようです。\n"
+
+#, c-format
+msgid "Building target platforms: %s\n"
+msgstr "ビルド対象プラットフォーム: %s\n"
+
+#, c-format
+msgid "Building for target %s\n"
+msgstr "ターゲット %s 用にビルド中\n"
+
+#, c-format
 msgid "%s: read manifest failed: %s\n"
 msgstr "%s: manifest の読み込みに失敗: %s\n"
 
 msgid "don't verify header+payload signature"
 msgstr "ヘッダーとペイロード署名を検証しません"
+
+msgid "verify package signature(s)"
+msgstr "署名の検証を行います"
+
+msgid "import an armored public key"
+msgstr "ASCII 化された公開鍵を取り込みます"
+
+#, fuzzy
+#| msgid "import an armored public key"
+msgid "export an public key"
+msgstr "ASCII 化された公開鍵を取り込みます"
+
+msgid "don't import, but tell if it would work or not"
+msgstr "インポートしませんが、 動作するかしないかを通知します"
+
+#, fuzzy
+#| msgid "list keys from RPM keyring"
+msgid "Erase keys from RPM keyring"
+msgstr "RPM キーリングから鍵を一覧表示します"
+
+msgid "list keys from RPM keyring"
+msgstr "RPM キーリングから鍵を一覧表示します"
+
+msgid "rebuild the keyring - convert to current backend"
+msgstr ""
+
+msgid "get keys from this backend when rebuilding current backend"
+msgstr ""
+
+msgid "Keyring options:"
+msgstr "キーリングのオプション:"
+
+msgid "no arguments given"
+msgstr "引数が指定されていません"
 
 msgid "getopt string for scripts options"
 msgstr ""
@@ -3336,11 +3477,162 @@ msgstr ""
 msgid "interactive session"
 msgstr ""
 
+#, fuzzy
+#| msgid "sign package(s) files"
+msgid "sign package(s), adding a new signature"
+msgstr "パッケージファイルに署名します"
+
+#, fuzzy
+#| msgid "sign package(s) (identical to --addsign)"
+msgid "resign package(s), deleting any previous signatures"
+msgstr "パッケージに署名します (--addsign と同一です)"
+
+msgid "delete package signatures"
+msgstr "パッケージの署名を削除します"
+
+msgid "delete IMA and fsverity file signatures"
+msgstr ""
+
+#, fuzzy
+#| msgid "create rpm v3 header+payload signatures"
+msgid "request legacy rpm v3 header+payload signatures on v4 packages"
+msgstr "v3ヘッダーとペイロード署名を作成します"
+
+#, fuzzy
+#| msgid "create rpm v3 header+payload signatures"
+msgid "request legacy rpm v4 header signatures on v6 packages"
+msgstr "v3ヘッダーとペイロード署名を作成します"
+
+#, fuzzy
+#| msgid "create rpm v3 header+payload signatures"
+msgid "request rpm v6 header signature on v4 packages"
+msgstr "v3ヘッダーとペイロード署名を作成します"
+
+msgid "sign package(s) files"
+msgstr "パッケージファイルに署名します"
+
+msgid "generate fsverity signatures for package(s) files"
+msgstr ""
+
+msgid "algorithm to use for verity signatures, default sha256"
+msgstr ""
+
+msgid "<algorithm>"
+msgstr ""
+
+msgid "use file signing cert <cert>"
+msgstr ""
+
+msgid "<cert>"
+msgstr ""
+
+msgid "use file signing key <key>"
+msgstr "ファイル署名鍵 <key> を使用します"
+
+msgid "<key>"
+msgstr "<key>"
+
+msgid "prompt for file signing key password"
+msgstr "ファイル署名鍵のパスワードプロンプトを表示します"
+
+msgid "Signature options:"
+msgstr "署名オプション:"
+
+#, fuzzy, c-format
+#| msgid "You must set \"%%_gpg_name\" in your macro file\n"
+msgid "You must set \"%%_openpgp_sign_id\" in your macro file\n"
+msgstr "マクロファイル内に \"%%_gpg_name\" を記述しなければなりません\n"
+
+#, c-format
+msgid ""
+"You must set \"%%_file_signing_key\" in your macro file or on the command "
+"line with --fskpath\n"
+msgstr ""
+"マクロファイル内に \"%%_file_signing_key\" を記述するか、コマンドラインにて "
+"--fskpath オプションを指定する必要があります\n"
+
+msgid "--fskpath may only be specified when signing files"
+msgstr "--fskpath はファイルへの署名時にのみ指示されます"
+
+msgid "parse spec file(s) to stdout"
+msgstr "SPEC ファイルを構文解析し 標準出力に出力します"
+
+msgid "query spec file(s)"
+msgstr "spec ファイルの問い合わせを行います"
+
+msgid "interactive macro shell"
+msgstr ""
+
+msgid "operate on binary rpms generated by spec (default)"
+msgstr "spec ファイルによって生成されたバイナリ RPM を操作します（デフォルト）"
+
+msgid "operate on binary package header(s) that would be built from spec"
+msgstr ""
+
+msgid "operate on source package header generated by spec"
+msgstr ""
+
+msgid "Spec options:"
+msgstr "spec のオプション:"
+
+#, c-format
+msgid "RPM version %s macro shell\n"
+msgstr ""
+
+msgid "no arguments given for parse"
+msgstr "構文解析する引数がありません"
+
 msgid "extract an archive"
 msgstr ""
 
 msgid "only print what would be done"
 msgstr ""
+
+msgid "extract into a specific path"
+msgstr ""
+
+#, c-format
+#~ msgid "files over 4GB not supported by cpio, use rpm2archive instead\n"
+#~ msgstr ""
+#~ "4GB超のファイルは cpio ではサポートしていません, 代わりに rpm2archive を"
+#~ "使ってください\n"
+
+#~ msgid "run build in current directory"
+#~ msgstr "現在のディレクトリーでビルドを実行します"
+
+#~ msgid "sign package(s)"
+#~ msgstr "パッケージに署名します"
+
+#, c-format
+#~ msgid "%%{buildroot} couldn't be empty\n"
+#~ msgstr "%%{buildroot} を空にすることができません\n"
+
+#, c-format
+#~ msgid "%%{buildroot} can not be \"/\"\n"
+#~ msgstr "%%{buildroot} を \"\" にすることができません\n"
+
+#, c-format
+#~ msgid "line %d: second %%prep\n"
+#~ msgstr "%d 行目: ふたつ目の %%prep\n"
+
+#~ msgid "Only absolute paths are allowed in file triggers"
+#~ msgstr "ファイルトリガーには絶対パスだけが許可されています"
+
+#~ msgid "query/verify package(s) with package identifier"
+#~ msgstr "パッケージ ID で問い合わせ/検証を行います"
+
+#~ msgid "query/verify package(s) with header identifier"
+#~ msgstr "ヘッダー ID でパッケージの問い合わせ/検証を行います"
+
+#~ msgid "illegal signature type"
+#~ msgstr "署名の種類が正しくありません"
+
+#~ msgid "unsupported RPM package version"
+#~ msgstr "サポートしていない RPM パッケージのバージョンです"
+
+#, c-format
+#~ msgid "%s%s"
+#~ msgstr "%s%s"
 
 #, c-format
 #~ msgid "%%dev glob not permitted: %s\n"
@@ -3363,12 +3655,6 @@ msgstr ""
 
 #~ msgid "build through %install (%prep, %build, then install) from <specfile>"
 #~ msgstr "<specfile> の %install (%prep, %build, インストール) まで実行します"
-
-#~ msgid "build through %build (%prep, then compile) from <source package>"
-#~ msgstr "<source package> から %build (%prep, コンパイル) まで実行します"
-
-#~ msgid "build through %build (%prep, then compile) from <tarball>"
-#~ msgstr "<tarball> から %build (%prep とコンパイル) まで実行します"
 
 #~ msgid "build through %install (%prep, %build, then install) from <tarball>"
 #~ msgstr ""

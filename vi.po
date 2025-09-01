@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-04 09:25+0300\n"
+"POT-Creation-Date: 2025-09-01 14:14+0300\n"
 "PO-Revision-Date: 2020-10-01 10:30+0000\n"
 "Last-Translator: Phu Hung Nguyen <phuhnguyen@disroot.org>\n"
 "Language-Team: Vietnamese <https://translate.fedoraproject.org/projects/rpm/"
@@ -22,556 +22,10 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.2.2\n"
 
-#, c-format
-msgid "%s: %s\n"
-msgstr "%s: %s\n"
-
-#, c-format
-msgid "RPM version %s\n"
-msgstr "RPM phiên bản %s\n"
-
-#, c-format
-msgid "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
-msgstr "Bản quyền (C) 1998-2002 - Red Hat, Inc.\n"
-
-#, c-format
-msgid ""
-"This program may be freely redistributed under the terms of the GNU GPL\n"
-msgstr ""
-"Chương trình này có thể được tự do phân phối lại theo các điều khoản của GNU "
-"GPL\n"
-
-#, c-format
-msgid "creating a pipe for --pipe failed: %m\n"
-msgstr "tạo một ống cho --pipe thất bại: %m\n"
-
-#, c-format
-msgid "exec failed\n"
-msgstr "exec thất bại\n"
-
-msgid "create uncompressed tar file"
-msgstr ""
-
-#, c-format
-msgid "argument is not an RPM package\n"
-msgstr "đối số không phải là một gói RPM\n"
-
-#, c-format
-msgid "error reading header from package\n"
-msgstr "gặp lỗi khi đọc phần đầu từ gói\n"
-
-#, c-format
-msgid "cannot re-open payload: %s\n"
-msgstr "không thể mở lại phần trọng tải: %s\n"
-
-#, c-format
-msgid "files over 4GB not supported by cpio, use rpm2archive instead\n"
-msgstr ""
-"các tệp lớn hơn 4GB không được cpio hỗ trợ, hãy dùng rpm2archive để thay "
-"thế\n"
-
-#, c-format
-msgid "buildroot already specified, ignoring %s\n"
-msgstr "buildroot đã được chỉ ra rồi, bỏ qua %s\n"
-
-#, c-format
-msgid "build through %prep (unpack sources and apply patches) from <specfile>"
-msgstr "xây qua %prep (mở gói các nguồn và áp dụng các miếng vá) từ <tệp spec>"
-
-msgid "<specfile>"
-msgstr "<tệp spec>"
-
-#, c-format
-msgid "build through %conf (%prep, then %conf) from <specfile>"
-msgstr ""
-
-msgid "build through %build (%prep, %conf, then compile) from <specfile>"
-msgstr ""
-
-msgid "check build dependencies <specfile>"
-msgstr ""
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <specfile>"
-msgstr ""
-
-#, c-format
-msgid "verify %files section from <specfile>"
-msgstr "thẩm tra phần %files ở <tệp spec>"
-
-msgid "build source and binary packages from <specfile>"
-msgstr "xây các gói nguồn và nhị phân từ <tệp spec>"
-
-msgid "build binary package only from <specfile>"
-msgstr "chỉ xây mỗi gói nhị phân từ <tệp spec>"
-
-msgid "build source package only from <specfile>"
-msgstr "chỉ xây mỗi gói nguồn từ <tệp spec>"
-
-msgid ""
-"build source package only from <specfile> - calculate dynamic build requires"
-msgstr ""
-"chỉ xây mỗi gói nguồn từ <tệp spec> - tính toán các gói yêu cầu để xây động"
-
-#, c-format
-msgid ""
-"build through %prep (unpack sources and apply patches) from <source package>"
-msgstr ""
-"xây qua %prep (mở gói các nguồn và áp dụng các miếng vá) từ <gói nguồn>"
-
-msgid "<source package>"
-msgstr "<gói nguồn>"
-
-msgid "build through %build (%prep, %conf, then compile) from <source package>"
-msgstr ""
-
-msgid "check build dependencies <source package>"
-msgstr ""
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <source "
-"package>"
-msgstr ""
-
-#, c-format
-msgid "verify %files section from <source package>"
-msgstr "thẩm tra phần %files ở <gói nguồn>"
-
-msgid "build source and binary packages from <source package>"
-msgstr "xây các gói nguồn và nhị phân từ <gói nguồn>"
-
-msgid "build binary package only from <source package>"
-msgstr "chỉ xây mỗi gói nhị phân từ <gói nguồn>"
-
-msgid "build source package only from <source package>"
-msgstr "chỉ xây mỗi gói nguồn từ <gói nguồn>"
-
-msgid ""
-"build source package only from <source package> - calculate dynamic build "
-"requires"
-msgstr ""
-"chỉ xây mỗi gói nguồn từ <gói nguồn> - tính toán các gói yêu cầu để xây động"
-
-#, c-format
-msgid "build through %prep (unpack sources and apply patches) from <tarball>"
-msgstr "xây qua %prep (mở gói các nguồn và áp dụng các miếng vá) từ <kho tar>"
-
-msgid "<tarball>"
-msgstr "<kho tar>"
-
-msgid "build through %build (%prep, %conf, then compile) from <tarball>"
-msgstr ""
-
-msgid "check build dependencies <tarball>"
-msgstr ""
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <tarball>"
-msgstr ""
-
-#, c-format
-msgid "verify %files section from <tarball>"
-msgstr "thẩm tra phần %files ở <kho tar>"
-
-msgid "build source and binary packages from <tarball>"
-msgstr "xây các gói nguồn và nhị phân từ <kho tar>"
-
-msgid "build binary package only from <tarball>"
-msgstr "chỉ xây mỗi gói nhị phân từ <kho tar>"
-
-msgid "build source package only from <tarball>"
-msgstr "chỉ xây mỗi gói nguồn từ <kho tar>"
-
-msgid ""
-"build source package only from <tarball> - calculate dynamic build requires"
-msgstr ""
-"chỉ xây mỗi gói nguồn từ <kho tar> - tính toán các gói yêu cầu để xây động"
-
-msgid "build binary package from <source package>"
-msgstr "xây gói nhị phân từ <gói nguồn>"
-
-msgid ""
-"build through %install (%prep, %build, then install) from <source package>"
-msgstr "xây qua %install (%prep, %build, rồi cài đặt) từ <gói nguồn>"
-
-msgid "override build root"
-msgstr "đè lên gốc biên dịch"
-
-msgid "run build in current directory"
-msgstr "chạy biên dịch trong thư mục hiện tại"
-
-msgid "remove build tree when done"
-msgstr "làm xong thì gỡ bỏ cây xây dựng"
-
-msgid "ignore ExcludeArch: directives from spec file"
-msgstr "bỏ qua ExcludeArch: các chỉ thị từ tập tin spec"
-
-msgid "debug file state machine"
-msgstr "gõ lỗi tập tin máy trạng thái"
-
-msgid "do not execute any stages of the build"
-msgstr "không thực thi bất kỳ giai đoạn nào của việc xây dựng"
-
-msgid "do not verify build dependencies"
-msgstr "không xác nhận quan hệ phụ thuộc khi xây dựng"
-
-msgid "generate package header(s) compatible with (legacy) rpm v3 packaging"
-msgstr "tạo phần đầu gói tương thích với gói rmp phiên bản 3 kiểu cũ"
-
-#, c-format
-msgid "do not execute %clean stage of the build"
-msgstr "không thể thực thi bước %clean để biên dịch"
-
-#, c-format
-msgid "do not execute %prep stage of the build"
-msgstr "không thực thi bước %prep khi biên dịch"
-
-#, c-format
-msgid "do not execute %check stage of the build"
-msgstr "không thể thực thi bước %check để biên dịch"
-
-msgid "do not accept i18N msgstr's from specfile"
-msgstr "không chấp nhận chuỗi đã dịch i18n từ tập tin đặc tả"
-
-msgid "remove sources when done"
-msgstr "làm xong thì cũng gỡ bỏ các nguồn"
-
-msgid "remove specfile when done"
-msgstr "làm xong thì cũng gỡ bỏ tập tin đặc tả"
-
-msgid "skip straight to specified stage (only for c,i)"
-msgstr "bỏ qua thẳng tới giai đoạn định rõ (chỉ cho c,i)"
-
-msgid "override target platform"
-msgstr "có quyền cao hơn nền tảng đích"
-
-msgid "Build options with [ <specfile> | <tarball> | <source package> ]:"
-msgstr "Tùy chọn xây dựng với [ <tệp spec> | <kho_tar> | <gói nguồn> ]:"
-
-msgid "Common options for all rpm modes and executables:"
-msgstr "Các tùy chọn chung với mọi chế độ và tập tin thực hiện được kiểu rpm:"
-
-#, c-format
-msgid "Unable to open spec file %s: %s\n"
-msgstr "Không thể mở tập tin đặc tả %s: %s\n"
-
-#, c-format
-msgid "Failed to open tar pipe: %m\n"
-msgstr "Gặp lỗi khi mở đường ống tar: %m\n"
-
-#, c-format
-msgid "Found more than one spec file in %s\n"
-msgstr "Thấy nhiều hơn một tập tin đặc tả %s\n"
-
-#, c-format
-msgid "Failed to read spec file from %s\n"
-msgstr "Gặp lỗi đọc tập tin đặc tả từ %s\n"
-
-#, c-format
-msgid "Failed to rename %s to %s: %m\n"
-msgstr "Lỗi thay đổi tên %s thành %s: %m\n"
-
-#, c-format
-msgid "failed to stat %s: %m\n"
-msgstr "lỗi lấy trạng thái về %s: %m\n"
-
-#, c-format
-msgid "File %s is not a regular file.\n"
-msgstr "Tập tin %s không phải là một tập tin thường.\n"
-
-#, c-format
-msgid "File %s does not appear to be a specfile.\n"
-msgstr "Tập tin %s hình như không phải là tập tin đặc tả.\n"
-
-#, c-format
-msgid "Building target platforms: %s\n"
-msgstr "Đang xây dựng các nền tảng đích: %s\n"
-
-#, c-format
-msgid "Building for target %s\n"
-msgstr "Đang xây dựng cho nền tảng đích %s\n"
-
-msgid "arguments to --root (-r) must begin with a /"
-msgstr "đối số của “--root” (-r) phải bắt đầu với dấu sổ chéo “/”"
-
-msgid "initialize database"
-msgstr "khởi tạo cơ sở dữ liệu"
-
-msgid "rebuild database inverted lists from installed package headers"
-msgstr ""
-"xây dựng lại các danh sách nghịch chuyển cơ sở dữ liệu từ các phần đầu gói "
-"được cài đặt"
-
-msgid "verify database files"
-msgstr "thẩm tra các tập tin cơ sở dữ liệu"
-
 #, fuzzy
-msgid "salvage database"
-msgstr "khởi tạo cơ sở dữ liệu"
-
-msgid "export database to stdout header list"
-msgstr "xuất cơ sở dữ liệu ra danh sách phần đầu đầu ra tiêu chuẩn"
-
-msgid "import database from stdin header list"
-msgstr "nhập cơ sở dữ liệu từ danh sách phần đầu đầu vào tiêu chuẩn"
-
-msgid "Database options:"
-msgstr "Tùy chọn cơ sở dữ liệu:"
-
-msgid "only one major mode may be specified"
-msgstr "chỉ có thể đưa ra một chế độ chính"
-
-msgid "verify package signature(s)"
-msgstr "thẩm tra (các) chữ ký của gói"
-
-msgid "import an armored public key"
-msgstr "nhập một khóa công dạng văn bản"
-
-msgid "don't import, but tell if it would work or not"
-msgstr "không thể nhập, nhưng hãy thông báo nó có chạy hay không"
-
-msgid "list keys from RPM keyring"
-msgstr "liệt kê các khóa từ chùm chìa khóa RPM"
-
-msgid "Keyring options:"
-msgstr "Tùy chọn chùm chìa khóa:"
-
-msgid "no arguments given"
-msgstr "chưa đưa ra đối số"
-
-msgid "Query/Verify package selection options:"
-msgstr "Các tùy chọn Truy vấn hay Thẩm định gói chọn:"
-
-msgid "Query/Verify file selection options:"
-msgstr ""
-
-msgid "Query options (with -q or --query):"
-msgstr "Tùy chọn truy vấn (với -q hoặc --query):"
-
-msgid "Verify options (with -V or --verify):"
-msgstr "Tùy chọn kiểm tra (với -V hoặc --verify):"
-
-msgid "Install/Upgrade/Erase options:"
-msgstr "Tùy chọn cho Cài-đặt/Nâng-cấp/Xóa:"
-
-msgid "one type of query/verify may be performed at a time"
-msgstr "mỗi lần chỉ có thể làm một kiểu hành vi truy vấn/xác nhận"
-
-msgid "unexpected query flags"
-msgstr "gặp cờ truy vấn bất thường"
-
-msgid "unexpected query format"
-msgstr "gặp định dạng truy vấn bất thường"
-
-msgid "unexpected query source"
-msgstr "gặp nguồn truy vấn bất thường"
-
-msgid "only installation and upgrading may be forced"
-msgstr "chỉ có cài đặt và nâng cấp là có thể ép buộc"
-
-msgid "files may only be relocated during package installation"
-msgstr "chỉ có thể tái định vị tập tin trong khi cài đặt gói"
-
-msgid "cannot use --prefix with --relocate or --excludepath"
-msgstr ""
-"không cho phép dùng tùy chọn “--prefix” (tiền tố) cùng với “--relocate” (tái "
-"định vị) hoặc “--excludepath” (loại trừ đường dẫn)"
-
-msgid ""
-"--relocate and --excludepath may only be used when installing new packages"
-msgstr ""
-"tùy chọn “--relocate” (tái định vị) và --excludepath (loại trừ đường dẫn) "
-"chỉ có thể được dùng khi cài đặt gói mới"
-
-msgid "--prefix may only be used when installing new packages"
-msgstr "tùy chọn “--prefix” (tiền tố) chỉ có thể được dùng khi cài đặt gói mới"
-
-msgid "arguments to --prefix must begin with a /"
-msgstr "đối số cho “--prefix” (tiền tố) phải bắt đầu với dấu sổ chéo “/”"
-
-msgid ""
-"--hash (-h) may only be specified during package installation and erasure"
-msgstr ""
-"tùy chọn --hash (-h) chỉ có thể được chỉ ra trong khi cài đặt và xóa gói"
-
-msgid "--percent may only be specified during package installation and erasure"
-msgstr ""
-"tùy chọn “--percent” (phần trăm) chỉ có thể được chỉ ra trong khi cài đặt và "
-"xóa gói"
-
-msgid "--replacepkgs may only be specified during package installation"
-msgstr ""
-"tùy chọn “--replacepkgs” (thay thế các gói) chỉ có thể được chỉ ra trong khi "
-"cài đặt gói"
-
-msgid "--excludedocs may only be specified during package installation"
-msgstr ""
-"tùy chọn “--excludedocs” (loại bỏ các tài liệu) chỉ có thể được chỉ ra trong "
-"khi cài đặt gói"
-
-msgid "--includedocs may only be specified during package installation"
-msgstr ""
-"tùy chọn “--includedocs” (bao gồm các tài liệu) chỉ có thể được chỉ ra trong "
-"khi cài đặt gói"
-
-msgid "only one of --excludedocs and --includedocs may be specified"
-msgstr ""
-"có thể chỉ ra chỉ một trong hai tùy chọn “-excludedocs” (loại bỏ các tài "
-"liệu)  và “-includedocs” (bao gồm các tài liệu)"
-
-msgid "--ignorearch may only be specified during package installation"
-msgstr ""
-"tùy chọn “--ignorearch” (bỏ qua kiến trúc) chỉ có thể được chỉ ra trong khi "
-"cài đặt gói"
-
-msgid "--ignoreos may only be specified during package installation"
-msgstr ""
-"tùy chọn “--ignoreos” (bỏ qua hệ điều hành) chỉ có thể được chỉ ra trong khi "
-"cài đặt gói"
-
-msgid "--ignoresize may only be specified during package installation"
-msgstr "--ignoresize chỉ được chỉ ra trong quá trình cài đặt"
-
-msgid "--allmatches may only be specified during package erasure"
-msgstr ""
-"tùy chọn “--allmatches” (mọi sự tương ứng) chỉ có thể được chỉ ra trong khi "
-"xóa gói"
-
-msgid "--allfiles may only be specified during package installation"
-msgstr ""
-"tùy chọn “--allfiles” (mọi tập tin) chỉ có thể được chỉ ra trong khi cài đặt "
-"gói"
-
-msgid "--justdb may only be specified during package installation and erasure"
-msgstr ""
-"tùy chọn “--justdb” (chỉ cơ sở dữ liệu) chỉ có thể được chỉ ra trong khi cài "
-"đặt và xóa gói"
-
-msgid ""
-"script disabling options may only be specified during package installation "
-"and erasure"
-msgstr ""
-"các tùy chọn vô hiệu hóa văn lệnh chỉ có thể được chỉ ra trong khi cài đặt "
-"và xóa gói"
-
-msgid ""
-"trigger disabling options may only be specified during package installation "
-"and erasure"
-msgstr ""
-"các tùy chọn vô hiệu hóa bộ gây nên chỉ có thể được chỉ ra trong khi cài đặt "
-"và xóa gói"
-
-msgid ""
-"--nodeps may only be specified during package installation, erasure, and "
-"verification"
-msgstr "--nodeps chỉ được chỉ ra trong quá trình cài đặt, tẩy hay thẩm tra"
-
-msgid "--test may only be specified during package installation and erasure"
-msgstr ""
-"tùy chọn “--test” (kiểm tra) chỉ có thể được chỉ ra trong khi cài đặt và xóa "
-"gói"
-
-msgid "no packages given for erase"
-msgstr "chưa đưa ra gói cần xóa"
-
-msgid "no packages given for install"
-msgstr "chưa đưa ra gói cần cài đặt"
-
-msgid "no arguments given for query"
-msgstr "chưa đưa ra đối số để truy vấn"
-
-msgid "no arguments given for verify"
-msgstr "chưa đưa ra đối số để xác nhận"
-
-msgid "sign package(s)"
-msgstr "ký (các) gói"
-
-msgid "sign package(s) (identical to --addsign)"
-msgstr "ký tên gói (đồng nhất tới --addsign)"
-
-msgid "delete package signatures"
-msgstr "xóa chữ ký của gói"
-
-msgid "delete IMA and fsverity file signatures"
-msgstr ""
-
-#, fuzzy
-msgid "create rpm v3 header+payload signatures"
-msgstr "không nên thẩm tra chữ ký phần_đầu+trọng_tải"
-
-msgid "sign package(s) files"
-msgstr ""
-
-msgid "generate fsverity signatures for package(s) files"
-msgstr ""
-
-msgid "algorithm to use for verity signatures, default sha256"
-msgstr ""
-
-msgid "<algorithm>"
-msgstr ""
-
-msgid "use file signing cert <cert>"
-msgstr ""
-
-msgid "<cert>"
-msgstr ""
-
-msgid "use file signing key <key>"
-msgstr ""
-
-msgid "<key>"
-msgstr ""
-
-msgid "prompt for file signing key password"
-msgstr ""
-
-msgid "Signature options:"
-msgstr "Tùy chọn chữ ký:"
-
-#, c-format
-msgid "You must set \"%%_gpg_name\" in your macro file\n"
-msgstr "Bạn phải đặt \"%%_gpg_name\" trong tập tin vĩ lệnh\n"
-
-#, c-format
-msgid ""
-"You must set \"%%_file_signing_key\" in your macro file or on the command "
-"line with --fskpath\n"
-msgstr ""
-
-msgid "--fskpath may only be specified when signing files"
-msgstr ""
-
-msgid "parse spec file(s) to stdout"
-msgstr "phân tích các tập tin đặc tả ra đầu ra tiêu chuẩn"
-
-msgid "query spec file(s)"
-msgstr "truy vấn (các) tập tin đặc tả"
-
-msgid "interactive macro shell"
-msgstr ""
-
-msgid "operate on binary rpms generated by spec (default)"
-msgstr "thao tác trên gói nhị phân rpm được tạo bởi spec (mặc định)"
-
-msgid "operate on binary package header(s) that would be built from spec"
-msgstr ""
-
-msgid "operate on source package header generated by spec"
-msgstr ""
-
-msgid "use the following query format"
-msgstr "dùng định dạng truy vấn theo đây"
-
-msgid "Spec options:"
-msgstr "Tùy chọn đặc tả:"
-
-#, c-format
-msgid "RPM version %s macro shell\n"
-msgstr ""
-
-msgid "no arguments given for parse"
-msgstr "chưa đưa ra đối số để phân tích"
+#| msgid "unable to read the signature\n"
+msgid "unable to parse _buildtime macro\n"
+msgstr "không thể đọc chữ ký\n"
 
 msgid "unable to parse SOURCE_DATE_EPOCH\n"
 msgstr ""
@@ -599,12 +53,19 @@ msgstr "Trạng thái thoát sai từ %s (%s)\n"
 msgid "Failed build dependencies:\n"
 msgstr "Gặp lỗi khi xây dựng các thành phần phụ thuộc:\n"
 
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to create package build directory %s: %s\n"
+msgstr "gặp lỗi khi tạo thư mục %s: %s\n"
+
 #, c-format
 msgid "setting %s=%s\n"
 msgstr ""
 
 #, c-format
-msgid "source_date_epoch_from_changelog set but %%changelog is missing\n"
+msgid ""
+"%%source_date_epoch_from_changelog is set, but %%changelog has no entries to "
+"take a date from\n"
 msgstr ""
 
 msgid ""
@@ -678,11 +139,23 @@ msgid "File must begin with \"/\": %s\n"
 msgstr "Tập tin phải bắt đầu bằng dấu sổ chéo “/”: %s\n"
 
 #, c-format
-msgid "unable to parse %s=%s\n"
+msgid ""
+"%%clamp_mtime_to_source_date_epoch is deprecated, please use "
+"%%build_mtime_policy\n"
 msgstr ""
 
 #, c-format
-msgid "Unknown file digest algorithm %u, falling back to MD5\n"
+msgid "unable to parse %s=%s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "Unknown icon type: %s\n"
+msgid "Unknown mtime policy '%s'\n"
+msgstr "Không hỗ trợ kiểu biểu tượng: %s\n"
+
+#, fuzzy, c-format
+#| msgid "Unknown file digest algorithm %u, falling back to MD5\n"
+msgid "Unknown file digest algorithm %u, falling back to %u\n"
 msgstr "Không hiểu thuật toán băm tập tin %u, quay lại dùng MD5\n"
 
 #, c-format
@@ -910,9 +383,24 @@ msgstr "Không thể tạo tên tập tin kết xuất cho gói %s: %s\n"
 msgid "Finished binary package job, result %d, filename %s\n"
 msgstr ""
 
+#, fuzzy, c-format
+#| msgid "line %d: Error parsing %s: %s\n"
+msgid "line %d: Error parsing script: %s: %s\n"
+msgstr "dòng %d: Lỗi phân tích %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "line %d: Bad option %s: %s\n"
+msgid "line %d: Bad %s option %s: %s\n"
+msgstr "dòng %d: Tùy chọn sai %s: %s\n"
+
 #, c-format
 msgid "line %d: second %s\n"
 msgstr "dòng %d: %s thứ hai\n"
+
+#, fuzzy, c-format
+#| msgid "line %d: unsupported internal script: %s\n"
+msgid "line %d: append and prepend specified: %s\n"
+msgstr "dòng %d: văn lệnh nội bộ không được hỗ trợ: %s\n"
 
 #, c-format
 msgid "bogus date in %%changelog: %s\n"
@@ -1018,6 +506,11 @@ msgstr "Hệ điều hành không được bao gồm: %s\n"
 msgid "%s field must be present in package: %s\n"
 msgstr "Trường %s phải nằm trong gói: %s\n"
 
+#, fuzzy, c-format
+#| msgid "%s field must be present in package: %s\n"
+msgid "%s field must be present before build in package: %s\n"
+msgstr "Trường %s phải nằm trong gói: %s\n"
+
 #, c-format
 msgid "Duplicate %s entries in package: %s\n"
 msgstr "Mục nhập %s trùng trong gói: %s\n"
@@ -1089,6 +582,11 @@ msgstr "dòng %d: định dạng BuildArchitecture (kiến trúc xây dựng) sa
 msgid "line %d: Duplicate BuildArch entry: %s\n"
 msgstr ""
 
+#, fuzzy, c-format
+#| msgid "line %d: Only noarch subpackages are supported: %s\n"
+msgid "line %d: Only noarch is allowed after the build: %s\n"
+msgstr "dòng %d: Chỉ hỗ trợ gói phụ kiểu “noarch” (không có kiến trúc): %s\n"
+
 #, c-format
 msgid "line %d: Only noarch subpackages are supported: %s\n"
 msgstr "dòng %d: Chỉ hỗ trợ gói phụ kiểu “noarch” (không có kiến trúc): %s\n"
@@ -1112,13 +610,15 @@ msgstr ""
 msgid "line %d: Unknown tag: %s\n"
 msgstr "dòng %d: Không rõ thẻ: %s\n"
 
-#, c-format
-msgid "%%{buildroot} couldn't be empty\n"
-msgstr "%%{buildroot} không thể là rỗng\n"
+#, fuzzy, c-format
+#| msgid "line %d: Priorities are allowed only for file triggers : %s\n"
+msgid "line %d: Tag not allowed after build is done: %s\n"
+msgstr "dòng %d: Ưu tiên chỉ cho phép với các bẫy tập tin: %s\n"
 
-#, c-format
-msgid "%%{buildroot} can not be \"/\"\n"
-msgstr "%%{buildroot} không thể là \"/\"\n"
+#, fuzzy, c-format
+#| msgid "Invalid capability: %s\n"
+msgid "Invalid buildroot: '%s'\n"
+msgstr "Dung lượng không hợp lệ: %s\n"
 
 #, c-format
 msgid "No patch number %u\n"
@@ -1148,15 +648,6 @@ msgstr ""
 msgid "Invalid patch number %s: %s\n"
 msgstr "Miếng và sô %s không hợp lệ: %s\n"
 
-#, c-format
-msgid "line %d: second %%prep\n"
-msgstr "dòng %d: chuẩn bị (%%prep) thứ hai\n"
-
-#, c-format
-msgid ""
-"%%patchN is deprecated (%i usages found), use %%patch N (or %%patch -P N)\n"
-msgstr ""
-
 msgid "Dependency tokens must begin with alpha-numeric, '_' or '/'"
 msgstr ""
 "Các thẻ bài về quan hệ phụ thuộc phải bắt đầu với chữ cái, chữ số, dấu gạch "
@@ -1174,6 +665,11 @@ msgstr "phần phụ thuộc không hợp lệ"
 msgid "Version required"
 msgstr "Yêu cầu phiên bản"
 
+#, fuzzy
+#| msgid "relocations must begin with a /"
+msgid "file trigger conditions must begin with '/'"
+msgstr "sự tái định vị phải bắt đầu với dấu sổ chéo “/”"
+
 msgid "Only package names are allowed in Obsoletes"
 msgstr ""
 
@@ -1182,9 +678,6 @@ msgstr ""
 
 msgid "It's not recommended to use '>' in Obsoletes"
 msgstr ""
-
-msgid "Only absolute paths are allowed in file triggers"
-msgstr "Chỉ có đường dẫn tuyệt đối là cho phép trong bẫy tập tin"
 
 msgid "Trigger fired by the same package is already defined in spec file"
 msgstr "Bẫy bị kích sập bởi cùng một gói đã sẵn được định nghĩa trong tập tin "
@@ -1225,10 +718,6 @@ msgstr "dòng %d: %s thứ hai\n"
 #, c-format
 msgid "line %d: unsupported internal script: %s\n"
 msgstr "dòng %d: văn lệnh nội bộ không được hỗ trợ: %s\n"
-
-#, c-format
-msgid "line %d: file trigger condition must begin with '/': %s"
-msgstr ""
 
 #, c-format
 msgid "line %d: interpreter arguments not allowed in triggers: %s\n"
@@ -1275,6 +764,10 @@ msgid "%s:%d: malformed %%include statement\n"
 msgstr "%s:%d: câu lệnh bao gồm (%%include) sai dạng\n"
 
 #, c-format
+msgid "%%patchN is obsolete, use %%patch N (or %%patch -P N): %s\n"
+msgstr ""
+
+#, c-format
 msgid "encoding %s not supported by system\n"
 msgstr "bảng mã %s không được hệ thống hỗ trợ\n"
 
@@ -1294,8 +787,36 @@ msgstr ""
 msgid "line %d doesn't belong to any section: %s\n"
 msgstr ""
 
+#, fuzzy, c-format
+#| msgid "line %d: Unknown tag: %s\n"
+msgid "line %d: Unknown buildsystem: %s\n"
+msgstr "dòng %d: Không rõ thẻ: %s\n"
+
+#, c-format
+msgid ""
+"line %d: Required parametric macro %%%s not defined for buildsystem %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "failed to write all data to %s: %s\n"
+msgid "failed to write buildsystem %s %%%s: %s\n"
+msgstr "gặp lỗi khi toàn bộ dữ liệu vào %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "Couldn't create temporary file for %s: %s\n"
+msgid "failed to create temp file for buildsystem: %s\n"
+msgstr "Không thể tạo tập tin tạm cho %s: %s\n"
+
+#, c-format
+msgid "Section %s is not allowed after build is done!\n"
+msgstr ""
+
 msgid "No compatible architectures found for build\n"
 msgstr "Không tìm thấy kiến trúc tương thích để xây dựng\n"
+
+#, c-format
+msgid "invalid rpm format %d requested, using %d\n"
+msgstr ""
 
 #, c-format
 msgid "Package has no %%description: %s\n"
@@ -1389,6 +910,10 @@ msgstr "%s bị lỗi: %x\n"
 msgid "failed to write all data to %s: %s\n"
 msgstr "gặp lỗi khi toàn bộ dữ liệu vào %s: %s\n"
 
+#, c-format
+msgid "invalid or out of order path from generator: %s\n"
+msgstr ""
+
 msgid "Empty file classifier\n"
 msgstr "Phân loại tập tin trống rỗng\n"
 
@@ -1420,6 +945,9 @@ msgid "Failed to find %s:\n"
 msgstr "Gặp lỗi khi tìm %s:\n"
 
 msgid "Deprecated external dependency generator is used!\n"
+msgstr ""
+
+msgid "External dependency generator is incompatible with v6 packages\n"
 msgstr ""
 
 #, c-format
@@ -1545,8 +1073,9 @@ msgstr ""
 msgid "%s%s created as %s%s\n"
 msgstr ""
 
-#, c-format
-msgid "%s %s: remove failed: %s\n"
+#, fuzzy, c-format
+#| msgid "%s %s: remove failed: %s\n"
+msgid "%s %s%s: remove failed: %s\n"
 msgstr "%s %s: gặp lỗi khi gỡ bỏ: %s\n"
 
 msgid "directory"
@@ -1672,9 +1201,40 @@ msgstr "cần ký hiệu ống dẫn “|” ở kết thúc của biểu thức
 msgid "array iterator used with different sized arrays"
 msgstr "đồ lặp lại mảng được sử dụng với các mảng có kích cỡ khác nhau"
 
+#, c-format
+msgid "%s: reading of public key failed.\n"
+msgstr "%s: gặp lỗi khi đọc khóa công khai.\n"
+
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to create keyring directory %s: %s\n"
+msgstr "gặp lỗi khi tạo thư mục %s: %s\n"
+
+#, c-format
+msgid "failed to import key: %s: %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "can't create %s lock on %s (%s)\n"
+msgid "Can't create writelock for keyring at %s: %s\n"
+msgstr "không thể tạo khóa %s trên %s (%s)\n"
+
+#, c-format
+msgid "Can't acquire writelock for keyring at %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "%s: not an armored public key.\n"
+msgid "%s is not a valid public key\n"
+msgstr "%s: không phải là khóa công dạng văn bản.\n"
+
 #, fuzzy, c-format
 msgid "RPM v3 packages are deprecated: %s\n"
 msgstr "dòng %d: không tán thành %s: %s\n"
+
+#, c-format
+msgid "RPM version %s\n"
+msgstr "RPM phiên bản %s\n"
 
 msgid "Error writing to stdout"
 msgstr ""
@@ -1782,9 +1342,6 @@ msgstr "cỡ lỗi Cơ chế Tình trạng Tập tin trọng tải"
 
 msgid "debug rpmio I/O"
 msgstr "gỡ lỗi V/R rpmio"
-
-msgid "disable user namespace support"
-msgstr ""
 
 #, c-format
 msgid "%s: option table misconfigured (%d)\n"
@@ -2015,12 +1572,6 @@ msgstr "truy vấn/thẩm tra (các) gói trong nhóm"
 msgid "query/verify a package file"
 msgstr "truy vấn/thẩm tra một tập tin gói"
 
-msgid "query/verify package(s) with package identifier"
-msgstr "truy vấn/thẩm tra (các) gói với định danh gói"
-
-msgid "query/verify package(s) with header identifier"
-msgstr "truy vấn/thẩm tra (các) gói với định danh phần đầu"
-
 msgid "rpm query mode"
 msgstr "chế độ truy vấn RPM"
 
@@ -2035,6 +1586,11 @@ msgstr "truy vấn (các) gói được gói kích hoạt"
 
 msgid "rpm verify mode"
 msgstr "chế độ thẩm tra RPM"
+
+#, fuzzy
+#| msgid "query/verify the package(s) which provide a dependency"
+msgid "query/verify the package(s) which conflict with a dependency"
+msgstr "truy vấn/thẩm tra (các) gói mà thỏa một quan hệ phụ thuộc"
 
 msgid "query/verify the package(s) which require a dependency"
 msgstr "truy vấn/thẩm tra (các) gói mà cần thiết quan hệ phụ thuộc"
@@ -2092,6 +1648,9 @@ msgstr "đổ thông tin tập tin cơ bản"
 
 msgid "list files in package"
 msgstr "liệt kê các tập tin trong gói"
+
+msgid "use the following query format"
+msgstr "dùng định dạng truy vấn theo đây"
 
 msgid "display the states of the listed files"
 msgstr "hiển thị các tình trạng của những tập tin đã liệt kê"
@@ -2512,15 +2071,16 @@ msgid "Wrong number of entries for tag %s: %u found but %u expected.\n"
 msgstr ""
 
 #, c-format
-msgid "Malformed data for tag %s: %u bytes found but %lu expected.\n"
+msgid "Malformed data for tag %s: %u bytes found but %<PRIu64> expected.\n"
 msgstr ""
 
-#, c-format
-msgid "%s: base64 decode failed, len %li\n"
-msgstr ""
+#, fuzzy, c-format
+#| msgid "%s %s: remove failed: %s\n"
+msgid "%s: base64 decode failed, len %zu\n"
+msgstr "%s %s: gặp lỗi khi gỡ bỏ: %s\n"
 
 #, c-format
-msgid "%s: base64 decode success, len %li\n"
+msgid "%s: base64 decode success, len %zu\n"
 msgstr ""
 
 msgid "Bad magic"
@@ -2550,7 +2110,7 @@ msgstr "Lỗi nội bộ"
 msgid "Archive file not in header"
 msgstr "Tập tin kho lưu không phải trong phần đầu"
 
-msgid "Invalid symlink"
+msgid "Unsafe symlink"
 msgstr ""
 
 msgid "File from package already exists as a directory in system"
@@ -2626,6 +2186,11 @@ msgstr "không thể tái định vị gói %s\n"
 msgid "error reading from file %s\n"
 msgstr "gặp lỗi khi đọc từ tập tin %s\n"
 
+#, fuzzy, c-format
+#| msgid "no package matches %s: %s\n"
+msgid "package format not supported: %s\n"
+msgstr "không có gói tương ứng với %s: %s\n"
+
 #, c-format
 msgid "\"%s\" specifies multiple packages:\n"
 msgstr "“%s” chỉ định nhiều gói:\n"
@@ -2640,12 +2205,6 @@ msgstr "Đang cài đặt %s\n"
 
 msgid "not an rpm package"
 msgstr "không phải là một gói rpm"
-
-msgid "illegal signature type"
-msgstr "kiểu chữ kí không hợp lệ"
-
-msgid "unsupported RPM package version"
-msgstr "phiên bản gói RPM không được hỗ trợ"
 
 #, c-format
 msgid "read failed: %s (%d)\n"
@@ -2785,6 +2344,11 @@ msgstr "thiếu đối số cho %s tại %s:%d\n"
 msgid "cannot open %s at %s:%d: %m\n"
 msgstr "không thể mở %s tại %s:%d: %m\n"
 
+#, fuzzy, c-format
+#| msgid "bad option '%s' at %s:%d\n"
+msgid "Ignoring %s at %s:%d\n"
+msgstr "tùy chọn sai “%s” tại %s:%d\n"
+
 #, c-format
 msgid "missing architecture for %s at %s:%d\n"
 msgstr "thiếu kiến trúc cho %s tại %s:%d\n"
@@ -2843,6 +2407,15 @@ msgstr "%s scriptlet gặp lỗi, trạng thái thoát %d\n"
 msgid "Unknown format"
 msgstr "Không hiểu định dạng"
 
+#, c-format
+msgid "erasing gpg-pubkey packages is deprecated; use rpmkeys --delete %s\n"
+msgstr ""
+
+msgid ""
+"public keys can not be installed as gpg-pubkey packages; use rpmkeys --"
+"import <keyfile> for that\n"
+msgstr ""
+
 msgid "install"
 msgstr "cài đặt"
 
@@ -2872,16 +2445,13 @@ msgid "missing ')' in package label: %s\n"
 msgstr "thiếu “)” trong nhãn gói: %s\n"
 
 #, c-format
-msgid "%s: reading of public key failed.\n"
-msgstr "%s: gặp lỗi khi đọc khóa công khai.\n"
-
-#, c-format
 msgid "unknown keyring type: %s, using rpmdb\n"
 msgstr ""
 
-#, c-format
-msgid "failed to import key: %s: %s\n"
-msgstr ""
+#, fuzzy, c-format
+#| msgid "Unknown icon type: %s\n"
+msgid "unknown keyring type: %s\n"
+msgstr "Không hỗ trợ kiểu biểu tượng: %s\n"
 
 #, c-format
 msgid "invalid package verify level %s\n"
@@ -2907,6 +2477,10 @@ msgid "%s tag %u: invalid size %u"
 msgstr ""
 
 #, c-format
+msgid "%s tag %u: invalid base64"
+msgstr ""
+
+#, c-format
 msgid "%s tag %u: invalid OpenPGP signature"
 msgstr ""
 
@@ -2914,18 +2488,27 @@ msgstr ""
 msgid "%s: tag %u: invalid hex"
 msgstr ""
 
-#, c-format
-msgid "%s%s%s %s"
-msgstr ""
+#, fuzzy, c-format
+#| msgid "%s saved as %s\n"
+msgid "%s %s%s %s"
+msgstr "%s được lưu dạng %s\n"
 
 msgid "digest"
 msgstr ""
 
 #, c-format
-msgid "%s%s"
+msgid "%s OpenPGP %s"
+msgstr ""
+
+#, c-format
+msgid "%s OpenPGP %s %s"
 msgstr ""
 
 msgid "signature"
+msgstr ""
+
+#, c-format
+msgid ", key fingerprint: %s"
 msgstr ""
 
 msgid "header"
@@ -2934,10 +2517,12 @@ msgstr ""
 msgid "package"
 msgstr ""
 
-msgid "Header "
+#, fuzzy
+#| msgid "Header "
+msgid "Header"
 msgstr "Phần đầu"
 
-msgid "Payload "
+msgid "Payload"
 msgstr ""
 
 msgid "Unable to reload signature header.\n"
@@ -3021,8 +2606,9 @@ msgstr ""
 msgid "syntax error in expression"
 msgstr "gặp lỗi cú pháp trong biểu thức\n"
 
-msgid "unsupported funcion"
-msgstr ""
+#, fuzzy
+msgid "unsupported function"
+msgstr "- không được hỗ trợ cho chuỗi\n"
 
 #, fuzzy
 msgid "unmatched ("
@@ -3140,7 +2726,16 @@ msgid "A %% is followed by an unparseable macro\n"
 msgstr "Một dấu %% đi trước một vĩ lệnh không thể phân tích được\n"
 
 #, c-format
-msgid "======================== active %d empty %d\n"
+msgid "unexpected argument to non-parametric macro %%%s\n"
+msgstr ""
+
+#, c-format
+msgid "macro value out of range for int: %<PRIu64> using %i instead.\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "======================== active %d empty %d\n"
+msgid "======================== active %zu empty %d\n"
 msgstr "======================== hoạt động %d trống %d\n"
 
 #, c-format
@@ -3213,6 +2808,15 @@ msgstr "V%d %s/%s %s, Mã số khóa %s"
 msgid "(none)"
 msgstr "(không có)"
 
+#, fuzzy, c-format
+#| msgid "Could not read from file %s: %s\n"
+msgid "Could not find url helper: \"%s\"\n"
+msgstr "Không thể đọc từ tập tin %s: %s\n"
+
+#, c-format
+msgid "Executing url helper \"%s\" failed with status %i\n"
+msgstr ""
+
 #, c-format
 msgid "%s: Fwrite failed: %s\n"
 msgstr "%s: Fwrite bị lỗi: %s\n"
@@ -3225,25 +2829,15 @@ msgstr "%s: Fread bị lỗi: %s\n"
 msgid "%s: Fflush failed: %s\n"
 msgstr "%s: Fflush bị lỗi: %s\n"
 
-#, fuzzy
-#| msgid "Unsupported PGP signature\n"
-msgid "Unsupported OpenPGP signature\n"
-msgstr "Không hỗ trợ ký bằng GPG\n"
+#, fuzzy, c-format
+#| msgid "reading symlink %s failed: %s\n"
+msgid "Expanding signing macro %s failed\n"
+msgstr "gặp lỗi khi đọc liên kết mềm “%s”: %s\n"
 
 #, fuzzy, c-format
-#| msgid "Unsupported PGP hash algorithm %u\n"
-msgid "Unsupported OpenPGP hash algorithm %u\n"
-msgstr "Không hỗ trợ thuật toán băm PGP %u\n"
-
-#, fuzzy, c-format
-#| msgid "Unsupported PGP pubkey algorithm %u\n"
-msgid "Unsupported OpenPGP pubkey algorithm %u\n"
-msgstr "Không hỗ trợ thuật toán khóa công PGP %u\n"
-
-#, fuzzy, c-format
-#| msgid "Unsupported PGP signature\n"
-msgid "Deprecated OpenPGP signature version %d\n"
-msgstr "Không hỗ trợ ký bằng GPG\n"
+#| msgid "Invalid %s token: %s\n"
+msgid "Invalid sign command: %s\n"
+msgstr "Hiệu bài %s không hợp lệ: %s\n"
 
 #, fuzzy, c-format
 msgid "Could not create pipe for signing: %m\n"
@@ -3270,18 +2864,43 @@ msgstr "Không thể đọc từ tập tin %s: %s\n"
 
 #, fuzzy, c-format
 #| msgid "gpg exec failed (%d)\n"
-msgid "gpg waitpid failed (%s)\n"
+msgid "%s waitpid failed (%s)\n"
 msgstr "lỗi thực hiện gpg (%d)\n"
 
-#, c-format
-msgid "gpg exec failed (%d)\n"
+#, fuzzy, c-format
+#| msgid "gpg exec failed (%d)\n"
+msgid "%s exec failed (%d)\n"
 msgstr "lỗi thực hiện gpg (%d)\n"
 
-msgid "gpg failed to write signature\n"
+#, fuzzy, c-format
+#| msgid "gpg failed to write signature\n"
+msgid "failed to write signature: %s\n"
 msgstr "gpg không ghi được chữ ký\n"
 
-msgid "unable to read the signature\n"
+#, fuzzy, c-format
+#| msgid "unable to read the signature\n"
+msgid "unable to read the signature: %s\n"
 msgstr "không thể đọc chữ ký\n"
+
+#, fuzzy
+#| msgid "Unsupported PGP signature\n"
+msgid "Unsupported OpenPGP signature\n"
+msgstr "Không hỗ trợ ký bằng GPG\n"
+
+#, fuzzy, c-format
+#| msgid "Unsupported PGP hash algorithm %u\n"
+msgid "Unsupported OpenPGP hash algorithm %u\n"
+msgstr "Không hỗ trợ thuật toán băm PGP %u\n"
+
+#, fuzzy, c-format
+#| msgid "Unsupported PGP signature\n"
+msgid "Deprecated OpenPGP signature version %d\n"
+msgstr "Không hỗ trợ ký bằng GPG\n"
+
+#, fuzzy, c-format
+#| msgid "Unsupported PGP pubkey algorithm %u\n"
+msgid "Unsupported OpenPGP pubkey algorithm %u for rpm v3/v4 signatures\n"
+msgstr "Không hỗ trợ thuật toán khóa công PGP %u\n"
 
 msgid "file signing support not built in\n"
 msgstr ""
@@ -3308,18 +2927,42 @@ msgstr "%s: rpmReadSignature gặp lỗi: %s"
 msgid "%s: headerRead failed: %s\n"
 msgstr "%s: gặp lỗi khi headerRead: %s\n"
 
-msgid "Cannot sign RPM v3 packages\n"
+#, fuzzy, c-format
+#| msgid "Cannot sign RPM v3 packages\n"
+msgid "Cannot sign RPM v3 packages: %s\n"
 msgstr "Không thể ký gói RPM v3\n"
 
+#, fuzzy, c-format
+#| msgid "Could not generate output filename for package %s: %s\n"
+msgid "not generating v3 signature for v6 package: %s\n"
+msgstr "Không thể tạo tên tập tin kết xuất cho gói %s: %s\n"
+
 #, c-format
-msgid "%s already contains identical signature, skipping\n"
+msgid "File signatures not applicable to src.rpm: %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "Could not seek in file %s: %s\n"
+msgid "Could not get a file size of %s\n"
+msgstr "Không thể di chuyển vị trí đọc trong tập tin %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "%s already contains identical signature, skipping\n"
+msgid "%s already contains an identical signature, skipping\n"
+msgstr "%s đã sẵn chứa chữ ký định danh nên bỏ qua\n"
+
+#, fuzzy, c-format
+#| msgid "%s already contains identical signature, skipping\n"
+msgid "%s already contains a legacy signature\n"
 msgstr "%s đã sẵn chứa chữ ký định danh nên bỏ qua\n"
 
 #, c-format
 msgid "%s: rpmWriteSignature failed: %s\n"
 msgstr "%s: gặp lỗi khi rpmWriteSignature: %s\n"
 
-msgid "rpmMkTemp failed\n"
+#, fuzzy, c-format
+#| msgid "rpmMkTemp failed\n"
+msgid "rpmMkTemp failed: %s\n"
 msgstr "gặp lỗi khi rpmMkTemp\n"
 
 #, fuzzy, c-format
@@ -3344,11 +2987,499 @@ msgid "headerPutString failed\n"
 msgstr ""
 
 #, c-format
+msgid "%s: %s\n"
+msgstr "%s: %s\n"
+
+#, c-format
+msgid "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
+msgstr "Bản quyền (C) 1998-2002 - Red Hat, Inc.\n"
+
+#, c-format
+msgid ""
+"This program may be freely redistributed under the terms of the GNU GPL\n"
+msgstr ""
+"Chương trình này có thể được tự do phân phối lại theo các điều khoản của GNU "
+"GPL\n"
+
+#, c-format
+msgid "creating a pipe for --pipe failed: %m\n"
+msgstr "tạo một ống cho --pipe thất bại: %m\n"
+
+#, c-format
+msgid "exec failed\n"
+msgstr "exec thất bại\n"
+
+msgid "Query/Verify package selection options:"
+msgstr "Các tùy chọn Truy vấn hay Thẩm định gói chọn:"
+
+msgid "Query/Verify file selection options:"
+msgstr ""
+
+msgid "Query options (with -q or --query):"
+msgstr "Tùy chọn truy vấn (với -q hoặc --query):"
+
+msgid "Verify options (with -V or --verify):"
+msgstr "Tùy chọn kiểm tra (với -V hoặc --verify):"
+
+msgid "Install/Upgrade/Erase options:"
+msgstr "Tùy chọn cho Cài-đặt/Nâng-cấp/Xóa:"
+
+msgid "Common options for all rpm modes and executables:"
+msgstr "Các tùy chọn chung với mọi chế độ và tập tin thực hiện được kiểu rpm:"
+
+msgid "one type of query/verify may be performed at a time"
+msgstr "mỗi lần chỉ có thể làm một kiểu hành vi truy vấn/xác nhận"
+
+msgid "unexpected query flags"
+msgstr "gặp cờ truy vấn bất thường"
+
+msgid "unexpected query format"
+msgstr "gặp định dạng truy vấn bất thường"
+
+msgid "unexpected query source"
+msgstr "gặp nguồn truy vấn bất thường"
+
+msgid "only one major mode may be specified"
+msgstr "chỉ có thể đưa ra một chế độ chính"
+
+msgid "only installation and upgrading may be forced"
+msgstr "chỉ có cài đặt và nâng cấp là có thể ép buộc"
+
+msgid "files may only be relocated during package installation"
+msgstr "chỉ có thể tái định vị tập tin trong khi cài đặt gói"
+
+msgid "cannot use --prefix with --relocate or --excludepath"
+msgstr ""
+"không cho phép dùng tùy chọn “--prefix” (tiền tố) cùng với “--relocate” (tái "
+"định vị) hoặc “--excludepath” (loại trừ đường dẫn)"
+
+msgid ""
+"--relocate and --excludepath may only be used when installing new packages"
+msgstr ""
+"tùy chọn “--relocate” (tái định vị) và --excludepath (loại trừ đường dẫn) "
+"chỉ có thể được dùng khi cài đặt gói mới"
+
+msgid "--prefix may only be used when installing new packages"
+msgstr "tùy chọn “--prefix” (tiền tố) chỉ có thể được dùng khi cài đặt gói mới"
+
+msgid "arguments to --prefix must begin with a /"
+msgstr "đối số cho “--prefix” (tiền tố) phải bắt đầu với dấu sổ chéo “/”"
+
+msgid ""
+"--hash (-h) may only be specified during package installation and erasure"
+msgstr ""
+"tùy chọn --hash (-h) chỉ có thể được chỉ ra trong khi cài đặt và xóa gói"
+
+msgid "--percent may only be specified during package installation and erasure"
+msgstr ""
+"tùy chọn “--percent” (phần trăm) chỉ có thể được chỉ ra trong khi cài đặt và "
+"xóa gói"
+
+msgid "--replacepkgs may only be specified during package installation"
+msgstr ""
+"tùy chọn “--replacepkgs” (thay thế các gói) chỉ có thể được chỉ ra trong khi "
+"cài đặt gói"
+
+msgid "--excludedocs may only be specified during package installation"
+msgstr ""
+"tùy chọn “--excludedocs” (loại bỏ các tài liệu) chỉ có thể được chỉ ra trong "
+"khi cài đặt gói"
+
+msgid "--includedocs may only be specified during package installation"
+msgstr ""
+"tùy chọn “--includedocs” (bao gồm các tài liệu) chỉ có thể được chỉ ra trong "
+"khi cài đặt gói"
+
+msgid "only one of --excludedocs and --includedocs may be specified"
+msgstr ""
+"có thể chỉ ra chỉ một trong hai tùy chọn “-excludedocs” (loại bỏ các tài "
+"liệu)  và “-includedocs” (bao gồm các tài liệu)"
+
+msgid "--ignorearch may only be specified during package installation"
+msgstr ""
+"tùy chọn “--ignorearch” (bỏ qua kiến trúc) chỉ có thể được chỉ ra trong khi "
+"cài đặt gói"
+
+msgid "--ignoreos may only be specified during package installation"
+msgstr ""
+"tùy chọn “--ignoreos” (bỏ qua hệ điều hành) chỉ có thể được chỉ ra trong khi "
+"cài đặt gói"
+
+msgid "--ignoresize may only be specified during package installation"
+msgstr "--ignoresize chỉ được chỉ ra trong quá trình cài đặt"
+
+msgid "--allmatches may only be specified during package erasure"
+msgstr ""
+"tùy chọn “--allmatches” (mọi sự tương ứng) chỉ có thể được chỉ ra trong khi "
+"xóa gói"
+
+msgid "--allfiles may only be specified during package installation"
+msgstr ""
+"tùy chọn “--allfiles” (mọi tập tin) chỉ có thể được chỉ ra trong khi cài đặt "
+"gói"
+
+msgid "--justdb may only be specified during package installation and erasure"
+msgstr ""
+"tùy chọn “--justdb” (chỉ cơ sở dữ liệu) chỉ có thể được chỉ ra trong khi cài "
+"đặt và xóa gói"
+
+msgid ""
+"script disabling options may only be specified during package installation "
+"and erasure"
+msgstr ""
+"các tùy chọn vô hiệu hóa văn lệnh chỉ có thể được chỉ ra trong khi cài đặt "
+"và xóa gói"
+
+msgid ""
+"trigger disabling options may only be specified during package installation "
+"and erasure"
+msgstr ""
+"các tùy chọn vô hiệu hóa bộ gây nên chỉ có thể được chỉ ra trong khi cài đặt "
+"và xóa gói"
+
+msgid ""
+"--nodeps may only be specified during package installation, erasure, and "
+"verification"
+msgstr "--nodeps chỉ được chỉ ra trong quá trình cài đặt, tẩy hay thẩm tra"
+
+msgid "--test may only be specified during package installation and erasure"
+msgstr ""
+"tùy chọn “--test” (kiểm tra) chỉ có thể được chỉ ra trong khi cài đặt và xóa "
+"gói"
+
+msgid "arguments to --root (-r) must begin with a /"
+msgstr "đối số của “--root” (-r) phải bắt đầu với dấu sổ chéo “/”"
+
+msgid "no packages given for erase"
+msgstr "chưa đưa ra gói cần xóa"
+
+msgid "no packages given for install"
+msgstr "chưa đưa ra gói cần cài đặt"
+
+msgid "no arguments given for query"
+msgstr "chưa đưa ra đối số để truy vấn"
+
+msgid "no arguments given for verify"
+msgstr "chưa đưa ra đối số để xác nhận"
+
+msgid "create uncompressed archive"
+msgstr ""
+
+msgid "archive format (pax|cpio)"
+msgstr ""
+
+#, c-format
+msgid "argument is not an RPM package\n"
+msgstr "đối số không phải là một gói RPM\n"
+
+#, c-format
+msgid "error reading header from package\n"
+msgstr "gặp lỗi khi đọc phần đầu từ gói\n"
+
+#, c-format
+msgid "cannot re-open payload: %s\n"
+msgstr "không thể mở lại phần trọng tải: %s\n"
+
+msgid "initialize database"
+msgstr "khởi tạo cơ sở dữ liệu"
+
+msgid "rebuild database inverted lists from installed package headers"
+msgstr ""
+"xây dựng lại các danh sách nghịch chuyển cơ sở dữ liệu từ các phần đầu gói "
+"được cài đặt"
+
+#, fuzzy
+#| msgid "verify database files"
+msgid "verify database"
+msgstr "thẩm tra các tập tin cơ sở dữ liệu"
+
+#, fuzzy
+msgid "salvage database"
+msgstr "khởi tạo cơ sở dữ liệu"
+
+msgid "export database to stdout header list"
+msgstr "xuất cơ sở dữ liệu ra danh sách phần đầu đầu ra tiêu chuẩn"
+
+msgid "import database from stdin header list"
+msgstr "nhập cơ sở dữ liệu từ danh sách phần đầu đầu vào tiêu chuẩn"
+
+msgid "Database options:"
+msgstr "Tùy chọn cơ sở dữ liệu:"
+
+#, c-format
+msgid "buildroot already specified, ignoring %s\n"
+msgstr "buildroot đã được chỉ ra rồi, bỏ qua %s\n"
+
+#, c-format
+msgid "build through %prep (unpack sources and apply patches) from <specfile>"
+msgstr "xây qua %prep (mở gói các nguồn và áp dụng các miếng vá) từ <tệp spec>"
+
+msgid "<specfile>"
+msgstr "<tệp spec>"
+
+#, c-format
+msgid "build through %conf (%prep, then %conf) from <specfile>"
+msgstr ""
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <specfile>"
+msgstr ""
+
+msgid "check build dependencies <specfile>"
+msgstr ""
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <specfile>"
+msgstr ""
+
+#, c-format
+msgid "verify %files section from <specfile>"
+msgstr "thẩm tra phần %files ở <tệp spec>"
+
+msgid "build source and binary packages from <specfile>"
+msgstr "xây các gói nguồn và nhị phân từ <tệp spec>"
+
+msgid "build binary package only from <specfile>"
+msgstr "chỉ xây mỗi gói nhị phân từ <tệp spec>"
+
+msgid "build source package only from <specfile>"
+msgstr "chỉ xây mỗi gói nguồn từ <tệp spec>"
+
+msgid ""
+"build source package only from <specfile> - calculate dynamic build requires"
+msgstr ""
+"chỉ xây mỗi gói nguồn từ <tệp spec> - tính toán các gói yêu cầu để xây động"
+
+#, c-format
+msgid ""
+"build through %prep (unpack sources and apply patches) from <source package>"
+msgstr ""
+"xây qua %prep (mở gói các nguồn và áp dụng các miếng vá) từ <gói nguồn>"
+
+msgid "<source package>"
+msgstr "<gói nguồn>"
+
+#, fuzzy, c-format
+#| msgid "build through %build (%prep, then compile) from <source package>"
+msgid "build through %conf (%prep, then %conf) from <source package>"
+msgstr "xây qua %build (%prep, rồi biên dịch) từ <gói nguồn>"
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <source package>"
+msgstr ""
+
+msgid "check build dependencies <source package>"
+msgstr ""
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <source "
+"package>"
+msgstr ""
+
+#, c-format
+msgid "verify %files section from <source package>"
+msgstr "thẩm tra phần %files ở <gói nguồn>"
+
+msgid "build source and binary packages from <source package>"
+msgstr "xây các gói nguồn và nhị phân từ <gói nguồn>"
+
+msgid "build binary package only from <source package>"
+msgstr "chỉ xây mỗi gói nhị phân từ <gói nguồn>"
+
+msgid "build source package only from <source package>"
+msgstr "chỉ xây mỗi gói nguồn từ <gói nguồn>"
+
+msgid ""
+"build source package only from <source package> - calculate dynamic build "
+"requires"
+msgstr ""
+"chỉ xây mỗi gói nguồn từ <gói nguồn> - tính toán các gói yêu cầu để xây động"
+
+#, c-format
+msgid "build through %prep (unpack sources and apply patches) from <tarball>"
+msgstr "xây qua %prep (mở gói các nguồn và áp dụng các miếng vá) từ <kho tar>"
+
+msgid "<tarball>"
+msgstr "<kho tar>"
+
+#, fuzzy, c-format
+#| msgid "build through %build (%prep, then compile) from <tarball>"
+msgid "build through %conf (%prep, then %conf) from <tarball>"
+msgstr "xây qua %build (%prep, rồi biên dịch) từ <kho tar>"
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <tarball>"
+msgstr ""
+
+msgid "check build dependencies <tarball>"
+msgstr ""
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <tarball>"
+msgstr ""
+
+#, c-format
+msgid "verify %files section from <tarball>"
+msgstr "thẩm tra phần %files ở <kho tar>"
+
+msgid "build source and binary packages from <tarball>"
+msgstr "xây các gói nguồn và nhị phân từ <kho tar>"
+
+msgid "build binary package only from <tarball>"
+msgstr "chỉ xây mỗi gói nhị phân từ <kho tar>"
+
+msgid "build source package only from <tarball>"
+msgstr "chỉ xây mỗi gói nguồn từ <kho tar>"
+
+msgid ""
+"build source package only from <tarball> - calculate dynamic build requires"
+msgstr ""
+"chỉ xây mỗi gói nguồn từ <kho tar> - tính toán các gói yêu cầu để xây động"
+
+msgid "build binary package from <source package>"
+msgstr "xây gói nhị phân từ <gói nguồn>"
+
+#, c-format
+msgid ""
+"build through %install (%prep, %build, then install) from <source package>"
+msgstr "xây qua %install (%prep, %build, rồi cài đặt) từ <gói nguồn>"
+
+#, fuzzy
+#| msgid "override build root"
+msgid "override build root (DEPRECATED)"
+msgstr "đè lên gốc biên dịch"
+
+msgid "remove build tree when done"
+msgstr "làm xong thì gỡ bỏ cây xây dựng"
+
+msgid "ignore ExcludeArch: directives from spec file"
+msgstr "bỏ qua ExcludeArch: các chỉ thị từ tập tin spec"
+
+msgid "debug file state machine"
+msgstr "gõ lỗi tập tin máy trạng thái"
+
+msgid "do not execute any stages of the build"
+msgstr "không thực thi bất kỳ giai đoạn nào của việc xây dựng"
+
+msgid "do not verify build dependencies"
+msgstr "không xác nhận quan hệ phụ thuộc khi xây dựng"
+
+msgid "generate package header(s) compatible with (legacy) rpm v3 packaging"
+msgstr "tạo phần đầu gói tương thích với gói rmp phiên bản 3 kiểu cũ"
+
+#, c-format
+msgid "do not execute %clean stage of the build"
+msgstr "không thể thực thi bước %clean để biên dịch"
+
+#, c-format
+msgid "do not execute %prep stage of the build"
+msgstr "không thực thi bước %prep khi biên dịch"
+
+#, c-format
+msgid "do not execute %check stage of the build"
+msgstr "không thể thực thi bước %check để biên dịch"
+
+msgid "do not accept i18N msgstr's from specfile"
+msgstr "không chấp nhận chuỗi đã dịch i18n từ tập tin đặc tả"
+
+msgid "remove sources when done"
+msgstr "làm xong thì cũng gỡ bỏ các nguồn"
+
+msgid "remove specfile when done"
+msgstr "làm xong thì cũng gỡ bỏ tập tin đặc tả"
+
+msgid "skip straight to specified stage (only for c,i)"
+msgstr "bỏ qua thẳng tới giai đoạn định rõ (chỉ cho c,i)"
+
+msgid "override target platform"
+msgstr "có quyền cao hơn nền tảng đích"
+
+msgid "Build options with [ <specfile> | <tarball> | <source package> ]:"
+msgstr "Tùy chọn xây dựng với [ <tệp spec> | <kho_tar> | <gói nguồn> ]:"
+
+#, c-format
+msgid "Unable to open spec file %s: %s\n"
+msgstr "Không thể mở tập tin đặc tả %s: %s\n"
+
+#, c-format
+msgid "Failed to open tar pipe: %m\n"
+msgstr "Gặp lỗi khi mở đường ống tar: %m\n"
+
+#, c-format
+msgid "Found more than one spec file in %s\n"
+msgstr "Thấy nhiều hơn một tập tin đặc tả %s\n"
+
+#, c-format
+msgid "Failed to read spec file from %s\n"
+msgstr "Gặp lỗi đọc tập tin đặc tả từ %s\n"
+
+#, c-format
+msgid "Failed to rename %s to %s: %m\n"
+msgstr "Lỗi thay đổi tên %s thành %s: %m\n"
+
+#, c-format
+msgid "failed to stat %s: %m\n"
+msgstr "lỗi lấy trạng thái về %s: %m\n"
+
+#, c-format
+msgid "File %s is not a regular file.\n"
+msgstr "Tập tin %s không phải là một tập tin thường.\n"
+
+#, c-format
+msgid "File %s does not appear to be a specfile.\n"
+msgstr "Tập tin %s hình như không phải là tập tin đặc tả.\n"
+
+#, c-format
+msgid "Building target platforms: %s\n"
+msgstr "Đang xây dựng các nền tảng đích: %s\n"
+
+#, c-format
+msgid "Building for target %s\n"
+msgstr "Đang xây dựng cho nền tảng đích %s\n"
+
+#, c-format
 msgid "%s: read manifest failed: %s\n"
 msgstr "%s: gặp lỗi khi đọc manifest: %s\n"
 
 msgid "don't verify header+payload signature"
 msgstr "không nên thẩm tra chữ ký phần_đầu+trọng_tải"
+
+msgid "verify package signature(s)"
+msgstr "thẩm tra (các) chữ ký của gói"
+
+msgid "import an armored public key"
+msgstr "nhập một khóa công dạng văn bản"
+
+#, fuzzy
+#| msgid "import an armored public key"
+msgid "export an public key"
+msgstr "nhập một khóa công dạng văn bản"
+
+msgid "don't import, but tell if it would work or not"
+msgstr "không thể nhập, nhưng hãy thông báo nó có chạy hay không"
+
+#, fuzzy
+#| msgid "list keys from RPM keyring"
+msgid "Erase keys from RPM keyring"
+msgstr "liệt kê các khóa từ chùm chìa khóa RPM"
+
+msgid "list keys from RPM keyring"
+msgstr "liệt kê các khóa từ chùm chìa khóa RPM"
+
+msgid "rebuild the keyring - convert to current backend"
+msgstr ""
+
+msgid "get keys from this backend when rebuilding current backend"
+msgstr ""
+
+msgid "Keyring options:"
+msgstr "Tùy chọn chùm chìa khóa:"
+
+msgid "no arguments given"
+msgstr "chưa đưa ra đối số"
 
 msgid "getopt string for scripts options"
 msgstr ""
@@ -3359,11 +3490,153 @@ msgstr ""
 msgid "interactive session"
 msgstr ""
 
+#, fuzzy
+#| msgid "sign package(s) (identical to --addsign)"
+msgid "sign package(s), adding a new signature"
+msgstr "ký tên gói (đồng nhất tới --addsign)"
+
+#, fuzzy
+#| msgid "sign package(s) (identical to --addsign)"
+msgid "resign package(s), deleting any previous signatures"
+msgstr "ký tên gói (đồng nhất tới --addsign)"
+
+msgid "delete package signatures"
+msgstr "xóa chữ ký của gói"
+
+msgid "delete IMA and fsverity file signatures"
+msgstr ""
+
+#, fuzzy
+msgid "request legacy rpm v3 header+payload signatures on v4 packages"
+msgstr "không nên thẩm tra chữ ký phần_đầu+trọng_tải"
+
+#, fuzzy
+msgid "request legacy rpm v4 header signatures on v6 packages"
+msgstr "không nên thẩm tra chữ ký phần_đầu+trọng_tải"
+
+#, fuzzy
+msgid "request rpm v6 header signature on v4 packages"
+msgstr "không nên thẩm tra chữ ký phần_đầu+trọng_tải"
+
+msgid "sign package(s) files"
+msgstr ""
+
+msgid "generate fsverity signatures for package(s) files"
+msgstr ""
+
+msgid "algorithm to use for verity signatures, default sha256"
+msgstr ""
+
+msgid "<algorithm>"
+msgstr ""
+
+msgid "use file signing cert <cert>"
+msgstr ""
+
+msgid "<cert>"
+msgstr ""
+
+msgid "use file signing key <key>"
+msgstr ""
+
+msgid "<key>"
+msgstr ""
+
+msgid "prompt for file signing key password"
+msgstr ""
+
+msgid "Signature options:"
+msgstr "Tùy chọn chữ ký:"
+
+#, fuzzy, c-format
+#| msgid "You must set \"%%_gpg_name\" in your macro file\n"
+msgid "You must set \"%%_openpgp_sign_id\" in your macro file\n"
+msgstr "Bạn phải đặt \"%%_gpg_name\" trong tập tin vĩ lệnh\n"
+
+#, c-format
+msgid ""
+"You must set \"%%_file_signing_key\" in your macro file or on the command "
+"line with --fskpath\n"
+msgstr ""
+
+msgid "--fskpath may only be specified when signing files"
+msgstr ""
+
+msgid "parse spec file(s) to stdout"
+msgstr "phân tích các tập tin đặc tả ra đầu ra tiêu chuẩn"
+
+msgid "query spec file(s)"
+msgstr "truy vấn (các) tập tin đặc tả"
+
+msgid "interactive macro shell"
+msgstr ""
+
+msgid "operate on binary rpms generated by spec (default)"
+msgstr "thao tác trên gói nhị phân rpm được tạo bởi spec (mặc định)"
+
+msgid "operate on binary package header(s) that would be built from spec"
+msgstr ""
+
+msgid "operate on source package header generated by spec"
+msgstr ""
+
+msgid "Spec options:"
+msgstr "Tùy chọn đặc tả:"
+
+#, c-format
+msgid "RPM version %s macro shell\n"
+msgstr ""
+
+msgid "no arguments given for parse"
+msgstr "chưa đưa ra đối số để phân tích"
+
 msgid "extract an archive"
 msgstr ""
 
 msgid "only print what would be done"
 msgstr ""
+
+msgid "extract into a specific path"
+msgstr ""
+
+#, c-format
+#~ msgid "files over 4GB not supported by cpio, use rpm2archive instead\n"
+#~ msgstr ""
+#~ "các tệp lớn hơn 4GB không được cpio hỗ trợ, hãy dùng rpm2archive để thay "
+#~ "thế\n"
+
+#~ msgid "run build in current directory"
+#~ msgstr "chạy biên dịch trong thư mục hiện tại"
+
+#~ msgid "sign package(s)"
+#~ msgstr "ký (các) gói"
+
+#, c-format
+#~ msgid "%%{buildroot} couldn't be empty\n"
+#~ msgstr "%%{buildroot} không thể là rỗng\n"
+
+#, c-format
+#~ msgid "%%{buildroot} can not be \"/\"\n"
+#~ msgstr "%%{buildroot} không thể là \"/\"\n"
+
+#, c-format
+#~ msgid "line %d: second %%prep\n"
+#~ msgstr "dòng %d: chuẩn bị (%%prep) thứ hai\n"
+
+#~ msgid "Only absolute paths are allowed in file triggers"
+#~ msgstr "Chỉ có đường dẫn tuyệt đối là cho phép trong bẫy tập tin"
+
+#~ msgid "query/verify package(s) with package identifier"
+#~ msgstr "truy vấn/thẩm tra (các) gói với định danh gói"
+
+#~ msgid "query/verify package(s) with header identifier"
+#~ msgstr "truy vấn/thẩm tra (các) gói với định danh phần đầu"
+
+#~ msgid "illegal signature type"
+#~ msgstr "kiểu chữ kí không hợp lệ"
+
+#~ msgid "unsupported RPM package version"
+#~ msgstr "phiên bản gói RPM không được hỗ trợ"
 
 #, c-format
 #~ msgid "%%dev glob not permitted: %s\n"
@@ -3378,12 +3651,6 @@ msgstr ""
 
 #~ msgid "build through %install (%prep, %build, then install) from <specfile>"
 #~ msgstr "xây qua %install (%prep, %build, rồi cài đặt) từ <tệp spec>"
-
-#~ msgid "build through %build (%prep, then compile) from <source package>"
-#~ msgstr "xây qua %build (%prep, rồi biên dịch) từ <gói nguồn>"
-
-#~ msgid "build through %build (%prep, then compile) from <tarball>"
-#~ msgstr "xây qua %build (%prep, rồi biên dịch) từ <kho tar>"
 
 #~ msgid "build through %install (%prep, %build, then install) from <tarball>"
 #~ msgstr "xây qua %install (%prep, %build, rồi cài đặt) từ <kho tar>"
@@ -3459,9 +3726,6 @@ msgstr ""
 
 #~ msgid "%a %b %d %Y"
 #~ msgstr "%a %d %b %Y"
-
-#~ msgid "%s saved as %s\n"
-#~ msgstr "%s được lưu dạng %s\n"
 
 #~ msgid "%s created as %s\n"
 #~ msgstr "%s được tạo dạng %s\n"

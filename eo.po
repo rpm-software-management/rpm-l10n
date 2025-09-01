@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-04 09:25+0300\n"
+"POT-Creation-Date: 2025-09-01 14:14+0300\n"
 "PO-Revision-Date: 2020-03-23 08:40-0400\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: Esperanto (http://www.transifex.com/rpm-team/rpm/language/"
@@ -21,533 +21,10 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Zanata 4.6.2\n"
 
-#, c-format
-msgid "%s: %s\n"
-msgstr "%s: %s\n"
-
-#, c-format
-msgid "RPM version %s\n"
-msgstr "RPM eldono %s\n"
-
-#, c-format
-msgid "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
-msgstr "Kopirajto (C) 1998-2002 - Red Hat, Inc.\n"
-
-#, c-format
-msgid ""
-"This program may be freely redistributed under the terms of the GNU GPL\n"
-msgstr ""
-"Oni rajtas libere redistribui ĉi tiun programon laŭ la kondiĉoj de la GPL de "
-"GNU\n"
-
-#, c-format
-msgid "creating a pipe for --pipe failed: %m\n"
-msgstr "krei pipon por --pipe malsukcesis: %m\n"
-
-#, c-format
-msgid "exec failed\n"
-msgstr "plenumo malsukcesis\n"
-
-msgid "create uncompressed tar file"
-msgstr ""
-
-#, c-format
-msgid "argument is not an RPM package\n"
-msgstr "parametro ne estas RPM-pakaĵo\n"
-
-#, c-format
-msgid "error reading header from package\n"
-msgstr "eraro dum legi kapon de pakaĵo\n"
-
-#, c-format
-msgid "cannot re-open payload: %s\n"
-msgstr "ne eblas remalfermi ŝarĝon: %s\n"
-
-#, c-format
-msgid "files over 4GB not supported by cpio, use rpm2archive instead\n"
-msgstr ""
-
-#, c-format
-msgid "buildroot already specified, ignoring %s\n"
-msgstr "buildroot jam specifita, %s ignorata\n"
-
-#, c-format
-msgid "build through %prep (unpack sources and apply patches) from <specfile>"
-msgstr "munti per %prep (elpaki fontotekstojn kaj fliki) laŭ <spec-dosiero>"
-
-msgid "<specfile>"
-msgstr "<spec-dosiero>"
-
-#, c-format
-msgid "build through %conf (%prep, then %conf) from <specfile>"
-msgstr ""
-
-msgid "build through %build (%prep, %conf, then compile) from <specfile>"
-msgstr ""
-
-msgid "check build dependencies <specfile>"
-msgstr ""
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <specfile>"
-msgstr ""
-
-#, c-format
-msgid "verify %files section from <specfile>"
-msgstr "konstati la sekcion %file laŭ <spec-dosiero>"
-
-msgid "build source and binary packages from <specfile>"
-msgstr "munti fontotekstan kaj plenumeblan pakaĵojn laŭ <spec-dosiero>"
-
-msgid "build binary package only from <specfile>"
-msgstr "munti nur plenumeblan pakaĵon laŭ <spec-dosiero>"
-
-msgid "build source package only from <specfile>"
-msgstr "munti nur fontotekstan pakaĵon laŭ <spec-dosiero>"
-
-msgid ""
-"build source package only from <specfile> - calculate dynamic build requires"
-msgstr ""
-
-#, c-format
-msgid ""
-"build through %prep (unpack sources and apply patches) from <source package>"
-msgstr ""
-"muntado per %prep (malpaki fontotekstojn kaj apliki flikaĵojn) laŭ "
-"<fontoteksta pakaĵo>"
-
-msgid "<source package>"
-msgstr "<fontoteksta pakaĵo>"
-
-msgid "build through %build (%prep, %conf, then compile) from <source package>"
-msgstr ""
-
-msgid "check build dependencies <source package>"
-msgstr ""
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <source "
-"package>"
-msgstr ""
-
-#, c-format
-msgid "verify %files section from <source package>"
-msgstr "konstati sekcion %files laŭ <fontoteksta pakaĵo>"
-
-msgid "build source and binary packages from <source package>"
-msgstr "munti fontotekstajn kaj plenumeblajn pakaĵojn laŭ <fontoteksta pakaĵo>"
-
-msgid "build binary package only from <source package>"
-msgstr "munti nur plenumeblan pakaĵon laŭ <fontoteksta pakaĵo>"
-
-msgid "build source package only from <source package>"
-msgstr "munti nur fontotekstan pakaĵon laŭ <fontoteksta pakaĵo>"
-
-msgid ""
-"build source package only from <source package> - calculate dynamic build "
-"requires"
-msgstr ""
-
-#, c-format
-msgid "build through %prep (unpack sources and apply patches) from <tarball>"
-msgstr "munti per %prep (elpaki fontotekstojn kaj fliki) laŭ <tar-dosiero>"
-
-msgid "<tarball>"
-msgstr "<tar-dosiero>"
-
-msgid "build through %build (%prep, %conf, then compile) from <tarball>"
-msgstr ""
-
-msgid "check build dependencies <tarball>"
-msgstr ""
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <tarball>"
-msgstr ""
-
-#, c-format
-msgid "verify %files section from <tarball>"
-msgstr "konstati sekcion %files laŭ <tar-dosiero>"
-
-msgid "build source and binary packages from <tarball>"
-msgstr "munti fontotekstan kaj plenumeblan pakaĵojn laŭ <tar-dosiero>"
-
-msgid "build binary package only from <tarball>"
-msgstr "munti nur plenumeblan pakaĵon laŭ <tar-dosiero>"
-
-msgid "build source package only from <tarball>"
-msgstr "munti nur fontotekstan pakaĵon laŭ <tar-dosiero>"
-
-msgid ""
-"build source package only from <tarball> - calculate dynamic build requires"
-msgstr ""
-
-msgid "build binary package from <source package>"
-msgstr "munti plenumeblan pakaĵon laŭ <fontoteksta pakaĵo>"
-
-msgid ""
-"build through %install (%prep, %build, then install) from <source package>"
-msgstr ""
-"munti per %install (%prep, %build, tiam instali) laŭ <fontoteksta pakaĵo>"
-
-msgid "override build root"
-msgstr "superregi muntan radikon"
-
-msgid "run build in current directory"
-msgstr "plenumi muntaĵon en la nuna dosierujo"
-
-msgid "remove build tree when done"
-msgstr "forigi muntan arbon post finita"
-
-msgid "ignore ExcludeArch: directives from spec file"
-msgstr "ignori la direktivojn ExcludeArch: el spec-dosiero"
-
-msgid "debug file state machine"
-msgstr "senerarigi dosierstatan maŝinon"
-
-msgid "do not execute any stages of the build"
-msgstr "ne plenumigi iun ajn etapon de la muntado"
-
-msgid "do not verify build dependencies"
-msgstr "ne konstati muntaĵo-dependaĵojn"
-
-msgid "generate package header(s) compatible with (legacy) rpm v3 packaging"
-msgstr "generi pakaĵo-kapo(j)n kongrua(j)n kun (malmoderna) pakado de rpm 3"
-
-#, c-format
-msgid "do not execute %clean stage of the build"
-msgstr "ne plenumigi la etapon %clean por la muntado"
-
-#, c-format
-msgid "do not execute %prep stage of the build"
-msgstr "Ne plenumigu stadion %prep de la munto"
-
-#, c-format
-msgid "do not execute %check stage of the build"
-msgstr "ne plenumigi la etapon %check por la muntado"
-
-msgid "do not accept i18N msgstr's from specfile"
-msgstr "ne akcepti tradukojn el spec-dosiero"
-
-msgid "remove sources when done"
-msgstr "forigi fontotekstojn post kiam finita"
-
-msgid "remove specfile when done"
-msgstr "forigi spec-dosieron post kiam finita"
-
-msgid "skip straight to specified stage (only for c,i)"
-msgstr "preterlasi rekte al specifita etapo (nur por c,i)"
-
-msgid "override target platform"
-msgstr "superregi celan platformon"
-
-msgid "Build options with [ <specfile> | <tarball> | <source package> ]:"
-msgstr ""
-"Multaj elektoj je [ <spec-dosiero> |  <tar-dosiero> | <fontoteksta pakaĵo> ]:"
-
-msgid "Common options for all rpm modes and executables:"
-msgstr "Kutimaj elektoj por ĉiuj rpm-aj reĝimoj kaj programoj:"
-
-#, c-format
-msgid "Unable to open spec file %s: %s\n"
-msgstr "Ne eblas malfermi spec-dosieron %s: %s\n"
-
-#, c-format
-msgid "Failed to open tar pipe: %m\n"
-msgstr "Malsukcesis malfermi tar-tubon: %m\n"
-
-#, c-format
-msgid "Found more than one spec file in %s\n"
-msgstr "Trovis pli ol unu spec-dosieron en %s\n"
-
-#, c-format
-msgid "Failed to read spec file from %s\n"
-msgstr "Malsukcesis legi spec-dosieron je %s\n"
-
-#, c-format
-msgid "Failed to rename %s to %s: %m\n"
-msgstr "Malsukcesis alinomi %s al %s: %m\n"
-
-#, c-format
-msgid "failed to stat %s: %m\n"
-msgstr "malsukcesis stat-i: %s: %m\n"
-
-#, c-format
-msgid "File %s is not a regular file.\n"
-msgstr "Dosiero %s ne estas regula dosiero.\n"
-
-#, c-format
-msgid "File %s does not appear to be a specfile.\n"
-msgstr "Dosiero %s ne aspektas kiel spec-dosiero.\n"
-
-#, c-format
-msgid "Building target platforms: %s\n"
-msgstr "Platformoj por kiu munti: %s\n"
-
-#, c-format
-msgid "Building for target %s\n"
-msgstr "Muntanta por celon %s\n"
-
-msgid "arguments to --root (-r) must begin with a /"
-msgstr "argumentoj de --root (-r) devas komenciĝi per /"
-
-msgid "initialize database"
-msgstr "iniciati datumbazon"
-
-msgid "rebuild database inverted lists from installed package headers"
-msgstr ""
-"remunti listojn inversigitajn de la datumbazo el instalitaj pakaĵo-kapoj"
-
-msgid "verify database files"
-msgstr "konstati datumbazajn dosierojn"
-
 #, fuzzy
-msgid "salvage database"
-msgstr "iniciati datumbazon"
-
-msgid "export database to stdout header list"
-msgstr "eksporta datumbazo al ĉefeliga ĉapolisto"
-
-msgid "import database from stdin header list"
-msgstr "importa datumbazo el ĉefeniga ĉapolisto"
-
-msgid "Database options:"
-msgstr "Datumbazo-elektoj:"
-
-msgid "only one major mode may be specified"
-msgstr "nur unu ĉefa reĝimo povas esti specifita"
-
-msgid "verify package signature(s)"
-msgstr "konstati pakaĵo-pretendo(j)n"
-
-msgid "import an armored public key"
-msgstr "importi ŝirmitan publikan ŝlosilon"
-
-msgid "don't import, but tell if it would work or not"
-msgstr "ne importi, sed diri al ĝi se ĝi funkcius aŭ ne"
-
-msgid "list keys from RPM keyring"
-msgstr "listigi ŝlosilojn el RPM-ŝlosilaro"
-
-msgid "Keyring options:"
-msgstr "Ŝlosilaro-elektoj:"
-
-msgid "no arguments given"
-msgstr "neniuj parametroj donitaj"
-
-msgid "Query/Verify package selection options:"
-msgstr "Elektoj por mendi/konstati elektitan pakaĵon:"
-
-msgid "Query/Verify file selection options:"
-msgstr ""
-
-msgid "Query options (with -q or --query):"
-msgstr "Mendantaj elektoj (kun -q aŭ --query):"
-
-msgid "Verify options (with -V or --verify):"
-msgstr "Konstatantaj elektoj (kun -V aŭ --verify):"
-
-msgid "Install/Upgrade/Erase options:"
-msgstr "Elektoj por instali/promocii/forigi:"
-
-msgid "one type of query/verify may be performed at a time"
-msgstr "unu tipon de mendo/konstato oni rajtas fari je fojo"
-
-msgid "unexpected query flags"
-msgstr "neatenditaj mendo-flagoj"
-
-msgid "unexpected query format"
-msgstr "neatendita mendo-aranĝo"
-
-msgid "unexpected query source"
-msgstr "neatendita mendo-fonto"
-
-msgid "only installation and upgrading may be forced"
-msgstr "nur instalado kaj promociado povas esti devigita"
-
-msgid "files may only be relocated during package installation"
-msgstr "dosieroj nur povas esti relokitaj dum pakaĵo-instalado"
-
-msgid "cannot use --prefix with --relocate or --excludepath"
-msgstr "--prefix malkongruas kun --relocate kaj - -excludepath"
-
-msgid ""
-"--relocate and --excludepath may only be used when installing new packages"
-msgstr ""
-"--relocate kaj --excludepath povas esti uzata nur dum instali novajn pakaĵojn"
-
-msgid "--prefix may only be used when installing new packages"
-msgstr "--prefix povas esti uzata nur dum instali novajn pakaĵojn"
-
-msgid "arguments to --prefix must begin with a /"
-msgstr "parametroj de --prefix devas komenciĝi per /"
-
-msgid ""
-"--hash (-h) may only be specified during package installation and erasure"
-msgstr "--hash (-h) nur eblas dum pakaĵa instalado aŭ forigado"
-
-msgid "--percent may only be specified during package installation and erasure"
-msgstr "--percent nur eblas dum pakaĵa instalado aŭ forigado"
-
-msgid "--replacepkgs may only be specified during package installation"
-msgstr "oni povas specifi la parametron --replacepkgs nur dum pakaĵo-instalado"
-
-msgid "--excludedocs may only be specified during package installation"
-msgstr "oni povas specifi la parametron --excludedocs nur dum pakaĵo-instalado"
-
-msgid "--includedocs may only be specified during package installation"
-msgstr "oni povas specifi la parametron --includedocs nur dum pakaĵo-instalado"
-
-msgid "only one of --excludedocs and --includedocs may be specified"
-msgstr "oni ne rajtas kune uzi la parametrojn --excludedocs kaj --includedocs"
-
-msgid "--ignorearch may only be specified during package installation"
-msgstr "oni povas specifi la parametron --ignorearch nur dum pakaĵo-instalado"
-
-msgid "--ignoreos may only be specified during package installation"
-msgstr "oni povas specifi la parametron --ignoreos nur dum pakaĵo-instalado"
-
-msgid "--ignoresize may only be specified during package installation"
-msgstr "oni povas specifi la parametron --ignoresize nur dum pakaĵo-instalado"
-
-msgid "--allmatches may only be specified during package erasure"
-msgstr "oni povas specifi la parametron --hash (-h) nur dum pakaĵo-forviŝado"
-
-msgid "--allfiles may only be specified during package installation"
-msgstr "oni povas specifi la parametron --allfiles nur dum pakaĵo-instalado"
-
-msgid "--justdb may only be specified during package installation and erasure"
-msgstr ""
-"oni povas specifi la parametron --justdb nur dum instalado kaj forviŝado de "
-"pakaĵo"
-
-msgid ""
-"script disabling options may only be specified during package installation "
-"and erasure"
-msgstr ""
-"oni povas uzi parametrojn por malaktivigi skriptojn nur dum instalado kaj "
-"forviŝado de pakaĵo"
-
-msgid ""
-"trigger disabling options may only be specified during package installation "
-"and erasure"
-msgstr ""
-"oni povas uzi parametrojn por malaktivigi instigilojn nur dum instalado kaj "
-"forviŝado de pakaĵo"
-
-msgid ""
-"--nodeps may only be specified during package installation, erasure, and "
-"verification"
-msgstr ""
-"oni povas specifi la parametron --nodeps nur dum instalado, konstatado kaj "
-"forviŝado de pakaĵo"
-
-msgid "--test may only be specified during package installation and erasure"
-msgstr ""
-"oni povas specifi la parametron --hash (-h) nur dum instalado kaj forviŝado "
-"de pakaĵo"
-
-msgid "no packages given for erase"
-msgstr "neniuj pakaĵoj donitaj por forigi"
-
-msgid "no packages given for install"
-msgstr "neniuj pakaĵoj donitaj por instali"
-
-msgid "no arguments given for query"
-msgstr "neniuj parametroj donitaj por mendi"
-
-msgid "no arguments given for verify"
-msgstr "neniuj argumentoj donitaj por konstati"
-
-msgid "sign package(s)"
-msgstr "pretendi pakaĵo(j)n"
-
-msgid "sign package(s) (identical to --addsign)"
-msgstr "pretendi pakaĵo(j)n (identa je --addsign)"
-
-msgid "delete package signatures"
-msgstr "forigi pakaĵo-pretendojn"
-
-msgid "delete IMA and fsverity file signatures"
-msgstr ""
-
-#, fuzzy
-msgid "create rpm v3 header+payload signatures"
-msgstr "ne konstati pretendojn de kapo+ŝarĝo"
-
-msgid "sign package(s) files"
-msgstr ""
-
-msgid "generate fsverity signatures for package(s) files"
-msgstr ""
-
-msgid "algorithm to use for verity signatures, default sha256"
-msgstr ""
-
-msgid "<algorithm>"
-msgstr ""
-
-msgid "use file signing cert <cert>"
-msgstr ""
-
-msgid "<cert>"
-msgstr ""
-
-msgid "use file signing key <key>"
-msgstr ""
-
-msgid "<key>"
-msgstr ""
-
-msgid "prompt for file signing key password"
-msgstr ""
-
-msgid "Signature options:"
-msgstr "Pretendo-elektojn:"
-
-#, c-format
-msgid "You must set \"%%_gpg_name\" in your macro file\n"
-msgstr "Vi devas valorizi \"%%_gpg_name\" en via makro-dosiero\n"
-
-#, c-format
-msgid ""
-"You must set \"%%_file_signing_key\" in your macro file or on the command "
-"line with --fskpath\n"
-msgstr ""
-
-msgid "--fskpath may only be specified when signing files"
-msgstr ""
-
-msgid "parse spec file(s) to stdout"
-msgstr "montri ĉe ordinara eligo spec-dosiero(j)n"
-
-msgid "query spec file(s)"
-msgstr "konstati spec-dosiero(j)n"
-
-msgid "interactive macro shell"
-msgstr ""
-
-msgid "operate on binary rpms generated by spec (default)"
-msgstr "operacii je dekumaj rpm-oj generitaj de spec (apriora)"
-
-msgid "operate on binary package header(s) that would be built from spec"
-msgstr ""
-
-msgid "operate on source package header generated by spec"
-msgstr ""
-
-msgid "use the following query format"
-msgstr "uzu la jenan mendo-formaton"
-
-msgid "Spec options:"
-msgstr "Spec-elektoj:"
-
-#, c-format
-msgid "RPM version %s macro shell\n"
-msgstr ""
-
-msgid "no arguments given for parse"
-msgstr "neniuj parametroj donitaj por analizi"
+#| msgid "unable to read the signature\n"
+msgid "unable to parse _buildtime macro\n"
+msgstr "ne eblas legi la pretendon\n"
 
 msgid "unable to parse SOURCE_DATE_EPOCH\n"
 msgstr ""
@@ -575,12 +52,19 @@ msgstr "Misa elirstato el %s (%s)\n"
 msgid "Failed build dependencies:\n"
 msgstr "Malsukcesintaj muntaj dependaĵoj:\n"
 
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to create package build directory %s: %s\n"
+msgstr "malsukcesis krei dosierujon %s: %s\n"
+
 #, c-format
 msgid "setting %s=%s\n"
 msgstr ""
 
 #, c-format
-msgid "source_date_epoch_from_changelog set but %%changelog is missing\n"
+msgid ""
+"%%source_date_epoch_from_changelog is set, but %%changelog has no entries to "
+"take a date from\n"
 msgstr ""
 
 msgid ""
@@ -654,11 +138,23 @@ msgid "File must begin with \"/\": %s\n"
 msgstr "Dosiero devas komenciĝi per \"/\": %s\n"
 
 #, c-format
-msgid "unable to parse %s=%s\n"
+msgid ""
+"%%clamp_mtime_to_source_date_epoch is deprecated, please use "
+"%%build_mtime_policy\n"
 msgstr ""
 
 #, c-format
-msgid "Unknown file digest algorithm %u, falling back to MD5\n"
+msgid "unable to parse %s=%s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "Unknown icon type: %s\n"
+msgid "Unknown mtime policy '%s'\n"
+msgstr "Nekonata piktogramo-tipo: %s\n"
+
+#, fuzzy, c-format
+#| msgid "Unknown file digest algorithm %u, falling back to MD5\n"
+msgid "Unknown file digest algorithm %u, falling back to %u\n"
 msgstr "Nekonata algoritmo %u por dosieraj resumoj, uzanta je MD5\n"
 
 #, c-format
@@ -888,9 +384,24 @@ msgstr "Ne eblas generi eligan dosiernomon por pakaĵo %s: %s\n"
 msgid "Finished binary package job, result %d, filename %s\n"
 msgstr ""
 
+#, fuzzy, c-format
+#| msgid "line %d: Error parsing %s: %s\n"
+msgid "line %d: Error parsing script: %s: %s\n"
+msgstr "linio %d: Eraro dum analizo de %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "line %d: Bad option %s: %s\n"
+msgid "line %d: Bad %s option %s: %s\n"
+msgstr "linio %d: Fuŝa elekto %s: %s\n"
+
 #, c-format
 msgid "line %d: second %s\n"
 msgstr "line %d: dua %s\n"
+
+#, fuzzy, c-format
+#| msgid "line %d: unsupported internal script: %s\n"
+msgid "line %d: append and prepend specified: %s\n"
+msgstr "linio %d: ne rekonas internan skripton: %s\n"
 
 #, c-format
 msgid "bogus date in %%changelog: %s\n"
@@ -996,6 +507,11 @@ msgstr "Operaciumo estas ne inkluzivita: %s\n"
 msgid "%s field must be present in package: %s\n"
 msgstr "kampo %s devas ĉeesti en pakaĵo: %s\n"
 
+#, fuzzy, c-format
+#| msgid "%s field must be present in package: %s\n"
+msgid "%s field must be present before build in package: %s\n"
+msgstr "kampo %s devas ĉeesti en pakaĵo: %s\n"
+
 #, c-format
 msgid "Duplicate %s entries in package: %s\n"
 msgstr "Duplikaj eroj %s en pakaĵo: %s\n"
@@ -1066,6 +582,11 @@ msgstr "linio %d: Fuŝa aranĝo de BuildArchitecture: %s\n"
 msgid "line %d: Duplicate BuildArch entry: %s\n"
 msgstr ""
 
+#, fuzzy, c-format
+#| msgid "line %d: Only noarch subpackages are supported: %s\n"
+msgid "line %d: Only noarch is allowed after the build: %s\n"
+msgstr "linio %d: Nur subpakaĵoj noarch estas permesataj: %s\n"
+
 #, c-format
 msgid "line %d: Only noarch subpackages are supported: %s\n"
 msgstr "linio %d: Nur subpakaĵoj noarch estas permesataj: %s\n"
@@ -1089,13 +610,16 @@ msgstr ""
 msgid "line %d: Unknown tag: %s\n"
 msgstr "linio %d: Nekonata etikedo: %s\n"
 
-#, c-format
-msgid "%%{buildroot} couldn't be empty\n"
-msgstr "%%{buildroot} devas ne vaki\n"
+#, fuzzy, c-format
+#| msgid "line %d: Priorities are allowed only for file triggers : %s\n"
+msgid "line %d: Tag not allowed after build is done: %s\n"
+msgstr ""
+"linio %d: Prioritatoj estas permesataj nur por dosieraj instigiloj: %s\n"
 
-#, c-format
-msgid "%%{buildroot} can not be \"/\"\n"
-msgstr "ne eblas, ke %%{buildroot} estu \"/\"\n"
+#, fuzzy, c-format
+#| msgid "Invalid capability: %s\n"
+msgid "Invalid buildroot: '%s'\n"
+msgstr "Nevalida kapablo: %s\n"
 
 #, c-format
 msgid "No patch number %u\n"
@@ -1125,15 +649,6 @@ msgstr ""
 msgid "Invalid patch number %s: %s\n"
 msgstr "Nevalida flikaĵo-numero %s: %s\n"
 
-#, c-format
-msgid "line %d: second %%prep\n"
-msgstr "linio %d: dua %%prep\n"
-
-#, c-format
-msgid ""
-"%%patchN is deprecated (%i usages found), use %%patch N (or %%patch -P N)\n"
-msgstr ""
-
 msgid "Dependency tokens must begin with alpha-numeric, '_' or '/'"
 msgstr "Dependaĵo-eroj devas komenciĝi per nombro, litero, '_' aŭ '/'"
 
@@ -1149,6 +664,11 @@ msgstr "nevalida dependaĵo"
 msgid "Version required"
 msgstr "Eldono necesas"
 
+#, fuzzy
+#| msgid "relocations must begin with a /"
+msgid "file trigger conditions must begin with '/'"
+msgstr "relokiĝoj devas komenciĝi per /"
+
 msgid "Only package names are allowed in Obsoletes"
 msgstr ""
 
@@ -1157,9 +677,6 @@ msgstr ""
 
 msgid "It's not recommended to use '>' in Obsoletes"
 msgstr ""
-
-msgid "Only absolute paths are allowed in file triggers"
-msgstr "Nur absolutaj vojoj estas permesataj en dosieraj instigiloj"
 
 msgid "Trigger fired by the same package is already defined in spec file"
 msgstr ""
@@ -1201,10 +718,6 @@ msgstr "linio %d: Dua %s\n"
 #, c-format
 msgid "line %d: unsupported internal script: %s\n"
 msgstr "linio %d: ne rekonas internan skripton: %s\n"
-
-#, c-format
-msgid "line %d: file trigger condition must begin with '/': %s"
-msgstr ""
 
 #, c-format
 msgid "line %d: interpreter arguments not allowed in triggers: %s\n"
@@ -1252,6 +765,10 @@ msgid "%s:%d: malformed %%include statement\n"
 msgstr "%s:%d: misformita frazo %%include\n"
 
 #, c-format
+msgid "%%patchN is obsolete, use %%patch N (or %%patch -P N): %s\n"
+msgstr ""
+
+#, c-format
 msgid "encoding %s not supported by system\n"
 msgstr "kodoprezento %s ne regata de sistemo\n"
 
@@ -1271,8 +788,36 @@ msgstr ""
 msgid "line %d doesn't belong to any section: %s\n"
 msgstr ""
 
+#, fuzzy, c-format
+#| msgid "line %d: Unknown tag: %s\n"
+msgid "line %d: Unknown buildsystem: %s\n"
+msgstr "linio %d: Nekonata etikedo: %s\n"
+
+#, c-format
+msgid ""
+"line %d: Required parametric macro %%%s not defined for buildsystem %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "failed to write all data to %s: %s\n"
+msgid "failed to write buildsystem %s %%%s: %s\n"
+msgstr "malsukcesis skribi ĉiujn datumojn al %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "Couldn't create temporary file for %s: %s\n"
+msgid "failed to create temp file for buildsystem: %s\n"
+msgstr "Ne eblis krei provizoran dosieron por %s: %s\n"
+
+#, c-format
+msgid "Section %s is not allowed after build is done!\n"
+msgstr ""
+
 msgid "No compatible architectures found for build\n"
 msgstr "Neniuj kongruaj platformoj trovitaj por muntaĵo\n"
+
+#, c-format
+msgid "invalid rpm format %d requested, using %d\n"
+msgstr ""
 
 #, c-format
 msgid "Package has no %%description: %s\n"
@@ -1366,6 +911,10 @@ msgstr "%s malsukcesis: %x\n"
 msgid "failed to write all data to %s: %s\n"
 msgstr "malsukcesis skribi ĉiujn datumojn al %s: %s\n"
 
+#, c-format
+msgid "invalid or out of order path from generator: %s\n"
+msgstr ""
+
 msgid "Empty file classifier\n"
 msgstr "Vaka dosiero-klasifikilo\n"
 
@@ -1397,6 +946,9 @@ msgid "Failed to find %s:\n"
 msgstr "Malsukcesis trovi: %s:\n"
 
 msgid "Deprecated external dependency generator is used!\n"
+msgstr ""
+
+msgid "External dependency generator is incompatible with v6 packages\n"
 msgstr ""
 
 #, c-format
@@ -1522,8 +1074,9 @@ msgstr ""
 msgid "%s%s created as %s%s\n"
 msgstr ""
 
-#, c-format
-msgid "%s %s: remove failed: %s\n"
+#, fuzzy, c-format
+#| msgid "%s %s: remove failed: %s\n"
+msgid "%s %s%s: remove failed: %s\n"
 msgstr "%s %s: forigo malsukcesis: %s\n"
 
 msgid "directory"
@@ -1649,9 +1202,40 @@ msgstr "| atendita je la fino de la esprimo"
 msgid "array iterator used with different sized arrays"
 msgstr "tabela iteraciilo uzata kun tabeloj kun diversaj grandoj"
 
+#, c-format
+msgid "%s: reading of public key failed.\n"
+msgstr "%s: legi la publikan ŝlosilon malsukcesis.\n"
+
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to create keyring directory %s: %s\n"
+msgstr "malsukcesis krei dosierujon %s: %s\n"
+
+#, c-format
+msgid "failed to import key: %s: %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "can't create %s lock on %s (%s)\n"
+msgid "Can't create writelock for keyring at %s: %s\n"
+msgstr "ne eblas krei ŝloson %s ĉe %s (%s)\n"
+
+#, c-format
+msgid "Can't acquire writelock for keyring at %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "%s: not an armored public key.\n"
+msgid "%s is not a valid public key\n"
+msgstr "%s: ne ŝirmita publika ŝlosilo.\n"
+
 #, fuzzy, c-format
 msgid "RPM v3 packages are deprecated: %s\n"
 msgstr "linio %d: %s estas malfavorita: %s\n"
+
+#, c-format
+msgid "RPM version %s\n"
+msgstr "RPM eldono %s\n"
 
 msgid "Error writing to stdout"
 msgstr ""
@@ -1759,9 +1343,6 @@ msgstr "senerarigi la statmaŝinan dosieron de la ŝarĝo"
 
 msgid "debug rpmio I/O"
 msgstr "senarigi rpmio-eneligon"
-
-msgid "disable user namespace support"
-msgstr ""
 
 #, c-format
 msgid "%s: option table misconfigured (%d)\n"
@@ -1989,12 +1570,6 @@ msgstr "mendi/konstati pakaĵo(j)n en grupo"
 msgid "query/verify a package file"
 msgstr "mendi/konstati pakaĵo-dosieron"
 
-msgid "query/verify package(s) with package identifier"
-msgstr "mendi/konstati pakaĵo(j)n per pakaĵo-identigilo"
-
-msgid "query/verify package(s) with header identifier"
-msgstr "mendi/konstati pakaĵo(j)n per kapo-identigilo"
-
 msgid "rpm query mode"
 msgstr "rpm-mendanta reĝimo"
 
@@ -2009,6 +1584,11 @@ msgstr "mendi la pakaĵo(j)n okazigitaj de la pakaĵo"
 
 msgid "rpm verify mode"
 msgstr "rpm-konstata reĝimo"
+
+#, fuzzy
+#| msgid "query/verify the package(s) which provide a dependency"
+msgid "query/verify the package(s) which conflict with a dependency"
+msgstr "mendi/konstati la pakaĵo(j)n, kiujn havigas dependaĵon"
 
 msgid "query/verify the package(s) which require a dependency"
 msgstr "mendi/konstati la pakaĵo(j)n, kiuj postulas dependaĵon"
@@ -2066,6 +1646,9 @@ msgstr "ŝuti bazajn informojn pri dosieroj"
 
 msgid "list files in package"
 msgstr "listigi dosierojn en pakaĵo"
+
+msgid "use the following query format"
+msgstr "uzu la jenan mendo-formaton"
 
 msgid "display the states of the listed files"
 msgstr "elmontri la statojn de la listigitaj dosieroj"
@@ -2480,15 +2063,16 @@ msgid "Wrong number of entries for tag %s: %u found but %u expected.\n"
 msgstr ""
 
 #, c-format
-msgid "Malformed data for tag %s: %u bytes found but %lu expected.\n"
+msgid "Malformed data for tag %s: %u bytes found but %<PRIu64> expected.\n"
 msgstr ""
 
-#, c-format
-msgid "%s: base64 decode failed, len %li\n"
-msgstr ""
+#, fuzzy, c-format
+#| msgid "%s %s: remove failed: %s\n"
+msgid "%s: base64 decode failed, len %zu\n"
+msgstr "%s %s: forigo malsukcesis: %s\n"
 
 #, c-format
-msgid "%s: base64 decode success, len %li\n"
+msgid "%s: base64 decode success, len %zu\n"
 msgstr ""
 
 msgid "Bad magic"
@@ -2518,7 +2102,7 @@ msgstr "Interna eraro"
 msgid "Archive file not in header"
 msgstr "Arkivo-dosiero ne en kapo"
 
-msgid "Invalid symlink"
+msgid "Unsafe symlink"
 msgstr ""
 
 msgid "File from package already exists as a directory in system"
@@ -2594,6 +2178,11 @@ msgstr "pakaĵo %s ne estas relokebla\n"
 msgid "error reading from file %s\n"
 msgstr "eraro dum legi dosieron %s\n"
 
+#, fuzzy, c-format
+#| msgid "no package matches %s: %s\n"
+msgid "package format not supported: %s\n"
+msgstr "neniu pakaĵo kongruas kun %s: %s\n"
+
 #, c-format
 msgid "\"%s\" specifies multiple packages:\n"
 msgstr "\"%s\" specifas plurajn pakaĵojn:\n"
@@ -2608,12 +2197,6 @@ msgstr "Instaliĝas %s\n"
 
 msgid "not an rpm package"
 msgstr "ne rpm-pakaĵo"
-
-msgid "illegal signature type"
-msgstr "nevalida pretenda tipo"
-
-msgid "unsupported RPM package version"
-msgstr "nekomprenata RPM-pakaĵa eldono"
 
 #, c-format
 msgid "read failed: %s (%d)\n"
@@ -2753,6 +2336,11 @@ msgstr "manka parametro por %s ĉe %s:%d\n"
 msgid "cannot open %s at %s:%d: %m\n"
 msgstr "%s ne malfermeblas ĉe %s:%d: %m\n"
 
+#, fuzzy, c-format
+#| msgid "bad option '%s' at %s:%d\n"
+msgid "Ignoring %s at %s:%d\n"
+msgstr "Fuŝa elekto '%s' ĉe %s:%d\n"
+
 #, c-format
 msgid "missing architecture for %s at %s:%d\n"
 msgstr "manka platformo por %s ĉe %s:%d\n"
@@ -2811,6 +2399,15 @@ msgstr "skripteto %s malsukcesis, elira stato %d\n"
 msgid "Unknown format"
 msgstr "nekonata formato"
 
+#, c-format
+msgid "erasing gpg-pubkey packages is deprecated; use rpmkeys --delete %s\n"
+msgstr ""
+
+msgid ""
+"public keys can not be installed as gpg-pubkey packages; use rpmkeys --"
+"import <keyfile> for that\n"
+msgstr ""
+
 msgid "install"
 msgstr "instali"
 
@@ -2840,16 +2437,13 @@ msgid "missing ')' in package label: %s\n"
 msgstr "manka ')' en pakaĵo-etikedo: %s\n"
 
 #, c-format
-msgid "%s: reading of public key failed.\n"
-msgstr "%s: legi la publikan ŝlosilon malsukcesis.\n"
-
-#, c-format
 msgid "unknown keyring type: %s, using rpmdb\n"
 msgstr ""
 
-#, c-format
-msgid "failed to import key: %s: %s\n"
-msgstr ""
+#, fuzzy, c-format
+#| msgid "Unknown icon type: %s\n"
+msgid "unknown keyring type: %s\n"
+msgstr "Nekonata piktogramo-tipo: %s\n"
 
 #, c-format
 msgid "invalid package verify level %s\n"
@@ -2875,6 +2469,10 @@ msgid "%s tag %u: invalid size %u"
 msgstr ""
 
 #, c-format
+msgid "%s tag %u: invalid base64"
+msgstr ""
+
+#, c-format
 msgid "%s tag %u: invalid OpenPGP signature"
 msgstr ""
 
@@ -2882,18 +2480,27 @@ msgstr ""
 msgid "%s: tag %u: invalid hex"
 msgstr ""
 
-#, c-format
-msgid "%s%s%s %s"
-msgstr ""
+#, fuzzy, c-format
+#| msgid "%s saved as %s\n"
+msgid "%s %s%s %s"
+msgstr "%s konservita kiel %s\n"
 
 msgid "digest"
 msgstr ""
 
 #, c-format
-msgid "%s%s"
+msgid "%s OpenPGP %s"
+msgstr ""
+
+#, c-format
+msgid "%s OpenPGP %s %s"
 msgstr ""
 
 msgid "signature"
+msgstr ""
+
+#, c-format
+msgid ", key fingerprint: %s"
 msgstr ""
 
 msgid "header"
@@ -2902,10 +2509,12 @@ msgstr ""
 msgid "package"
 msgstr ""
 
-msgid "Header "
+#, fuzzy
+#| msgid "Header "
+msgid "Header"
 msgstr "Ĉapo"
 
-msgid "Payload "
+msgid "Payload"
 msgstr ""
 
 msgid "Unable to reload signature header.\n"
@@ -2989,8 +2598,9 @@ msgstr ""
 msgid "syntax error in expression"
 msgstr "sintaksa eraro en esprimo\n"
 
-msgid "unsupported funcion"
-msgstr ""
+#, fuzzy
+msgid "unsupported function"
+msgstr "- no por ĉenoj\n"
 
 #, fuzzy
 msgid "unmatched ("
@@ -3107,7 +2717,16 @@ msgid "A %% is followed by an unparseable macro\n"
 msgstr "%% estas sekvata de sensenca makroo\n"
 
 #, c-format
-msgid "======================== active %d empty %d\n"
+msgid "unexpected argument to non-parametric macro %%%s\n"
+msgstr ""
+
+#, c-format
+msgid "macro value out of range for int: %<PRIu64> using %i instead.\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "======================== active %d empty %d\n"
+msgid "======================== active %zu empty %d\n"
 msgstr "======================== aktiva %d vaka %d\n"
 
 #, c-format
@@ -3180,6 +2799,15 @@ msgstr "V%d %s/%s %s, ŝlosila identigilo %s"
 msgid "(none)"
 msgstr "(neniu)"
 
+#, fuzzy, c-format
+#| msgid "Could not read from file %s: %s\n"
+msgid "Could not find url helper: \"%s\"\n"
+msgstr "Ne eblis legi el dosiero %s: %s\n"
+
+#, c-format
+msgid "Executing url helper \"%s\" failed with status %i\n"
+msgstr ""
+
 #, c-format
 msgid "%s: Fwrite failed: %s\n"
 msgstr "%s: Fwrite malsukcesis: %s\n"
@@ -3192,25 +2820,15 @@ msgstr "%s: Fread malsukcesis: %s\n"
 msgid "%s: Fflush failed: %s\n"
 msgstr "%s: Fflush malsukcesis: %s\n"
 
-#, fuzzy
-#| msgid "Unsupported PGP signature\n"
-msgid "Unsupported OpenPGP signature\n"
-msgstr "Nekomprenita PGP-pretendo\n"
+#, fuzzy, c-format
+#| msgid "reading symlink %s failed: %s\n"
+msgid "Expanding signing macro %s failed\n"
+msgstr "legado de mola ligilo %s malsukcesis: %s\n"
 
 #, fuzzy, c-format
-#| msgid "Unsupported PGP hash algorithm %u\n"
-msgid "Unsupported OpenPGP hash algorithm %u\n"
-msgstr "Nekomprenita krampita algoritmo %u de PGP\n"
-
-#, fuzzy, c-format
-#| msgid "Unsupported PGP pubkey algorithm %u\n"
-msgid "Unsupported OpenPGP pubkey algorithm %u\n"
-msgstr "Nekomprenita algoritmo publika-ŝlosila %u de PGP\n"
-
-#, fuzzy, c-format
-#| msgid "Unsupported PGP signature\n"
-msgid "Deprecated OpenPGP signature version %d\n"
-msgstr "Nekomprenita PGP-pretendo\n"
+#| msgid "Invalid %s token: %s\n"
+msgid "Invalid sign command: %s\n"
+msgstr "Nevalida ero %s: %s\n"
 
 #, fuzzy, c-format
 msgid "Could not create pipe for signing: %m\n"
@@ -3237,18 +2855,43 @@ msgstr "Ne eblis legi el dosiero %s: %s\n"
 
 #, fuzzy, c-format
 #| msgid "gpg exec failed (%d)\n"
-msgid "gpg waitpid failed (%s)\n"
+msgid "%s waitpid failed (%s)\n"
 msgstr "gpg-plenumo malsukcesis (%d)\n"
 
-#, c-format
-msgid "gpg exec failed (%d)\n"
+#, fuzzy, c-format
+#| msgid "gpg exec failed (%d)\n"
+msgid "%s exec failed (%d)\n"
 msgstr "gpg-plenumo malsukcesis (%d)\n"
 
-msgid "gpg failed to write signature\n"
+#, fuzzy, c-format
+#| msgid "gpg failed to write signature\n"
+msgid "failed to write signature: %s\n"
 msgstr "gpg malsukcesis skribi pretendon\n"
 
-msgid "unable to read the signature\n"
+#, fuzzy, c-format
+#| msgid "unable to read the signature\n"
+msgid "unable to read the signature: %s\n"
 msgstr "ne eblas legi la pretendon\n"
+
+#, fuzzy
+#| msgid "Unsupported PGP signature\n"
+msgid "Unsupported OpenPGP signature\n"
+msgstr "Nekomprenita PGP-pretendo\n"
+
+#, fuzzy, c-format
+#| msgid "Unsupported PGP hash algorithm %u\n"
+msgid "Unsupported OpenPGP hash algorithm %u\n"
+msgstr "Nekomprenita krampita algoritmo %u de PGP\n"
+
+#, fuzzy, c-format
+#| msgid "Unsupported PGP signature\n"
+msgid "Deprecated OpenPGP signature version %d\n"
+msgstr "Nekomprenita PGP-pretendo\n"
+
+#, fuzzy, c-format
+#| msgid "Unsupported PGP pubkey algorithm %u\n"
+msgid "Unsupported OpenPGP pubkey algorithm %u for rpm v3/v4 signatures\n"
+msgstr "Nekomprenita algoritmo publika-ŝlosila %u de PGP\n"
 
 msgid "file signing support not built in\n"
 msgstr ""
@@ -3275,18 +2918,42 @@ msgstr "%s: rpmReadSignure malsucksis: %s"
 msgid "%s: headerRead failed: %s\n"
 msgstr "%s: headerRead malsukcesis: %s\n"
 
-msgid "Cannot sign RPM v3 packages\n"
+#, fuzzy, c-format
+#| msgid "Cannot sign RPM v3 packages\n"
+msgid "Cannot sign RPM v3 packages: %s\n"
 msgstr "Ne povas pretendi pakaĵojn el RPM-v3\n"
 
+#, fuzzy, c-format
+#| msgid "Could not generate output filename for package %s: %s\n"
+msgid "not generating v3 signature for v6 package: %s\n"
+msgstr "Ne eblas generi eligan dosiernomon por pakaĵo %s: %s\n"
+
 #, c-format
-msgid "%s already contains identical signature, skipping\n"
+msgid "File signatures not applicable to src.rpm: %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "Could not seek in file %s: %s\n"
+msgid "Could not get a file size of %s\n"
+msgstr "Ne eblis serĉi en dosiero %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "%s already contains identical signature, skipping\n"
+msgid "%s already contains an identical signature, skipping\n"
+msgstr "%s jam enhavas identan pretendon, preterlasanta\n"
+
+#, fuzzy, c-format
+#| msgid "%s already contains identical signature, skipping\n"
+msgid "%s already contains a legacy signature\n"
 msgstr "%s jam enhavas identan pretendon, preterlasanta\n"
 
 #, c-format
 msgid "%s: rpmWriteSignature failed: %s\n"
 msgstr "%s: rpmWriteSignature malsukcesis: %s\n"
 
-msgid "rpmMkTemp failed\n"
+#, fuzzy, c-format
+#| msgid "rpmMkTemp failed\n"
+msgid "rpmMkTemp failed: %s\n"
 msgstr "rpmMkTemp malsukcesis\n"
 
 #, fuzzy, c-format
@@ -3311,11 +2978,478 @@ msgid "headerPutString failed\n"
 msgstr ""
 
 #, c-format
+msgid "%s: %s\n"
+msgstr "%s: %s\n"
+
+#, c-format
+msgid "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
+msgstr "Kopirajto (C) 1998-2002 - Red Hat, Inc.\n"
+
+#, c-format
+msgid ""
+"This program may be freely redistributed under the terms of the GNU GPL\n"
+msgstr ""
+"Oni rajtas libere redistribui ĉi tiun programon laŭ la kondiĉoj de la GPL de "
+"GNU\n"
+
+#, c-format
+msgid "creating a pipe for --pipe failed: %m\n"
+msgstr "krei pipon por --pipe malsukcesis: %m\n"
+
+#, c-format
+msgid "exec failed\n"
+msgstr "plenumo malsukcesis\n"
+
+msgid "Query/Verify package selection options:"
+msgstr "Elektoj por mendi/konstati elektitan pakaĵon:"
+
+msgid "Query/Verify file selection options:"
+msgstr ""
+
+msgid "Query options (with -q or --query):"
+msgstr "Mendantaj elektoj (kun -q aŭ --query):"
+
+msgid "Verify options (with -V or --verify):"
+msgstr "Konstatantaj elektoj (kun -V aŭ --verify):"
+
+msgid "Install/Upgrade/Erase options:"
+msgstr "Elektoj por instali/promocii/forigi:"
+
+msgid "Common options for all rpm modes and executables:"
+msgstr "Kutimaj elektoj por ĉiuj rpm-aj reĝimoj kaj programoj:"
+
+msgid "one type of query/verify may be performed at a time"
+msgstr "unu tipon de mendo/konstato oni rajtas fari je fojo"
+
+msgid "unexpected query flags"
+msgstr "neatenditaj mendo-flagoj"
+
+msgid "unexpected query format"
+msgstr "neatendita mendo-aranĝo"
+
+msgid "unexpected query source"
+msgstr "neatendita mendo-fonto"
+
+msgid "only one major mode may be specified"
+msgstr "nur unu ĉefa reĝimo povas esti specifita"
+
+msgid "only installation and upgrading may be forced"
+msgstr "nur instalado kaj promociado povas esti devigita"
+
+msgid "files may only be relocated during package installation"
+msgstr "dosieroj nur povas esti relokitaj dum pakaĵo-instalado"
+
+msgid "cannot use --prefix with --relocate or --excludepath"
+msgstr "--prefix malkongruas kun --relocate kaj - -excludepath"
+
+msgid ""
+"--relocate and --excludepath may only be used when installing new packages"
+msgstr ""
+"--relocate kaj --excludepath povas esti uzata nur dum instali novajn pakaĵojn"
+
+msgid "--prefix may only be used when installing new packages"
+msgstr "--prefix povas esti uzata nur dum instali novajn pakaĵojn"
+
+msgid "arguments to --prefix must begin with a /"
+msgstr "parametroj de --prefix devas komenciĝi per /"
+
+msgid ""
+"--hash (-h) may only be specified during package installation and erasure"
+msgstr "--hash (-h) nur eblas dum pakaĵa instalado aŭ forigado"
+
+msgid "--percent may only be specified during package installation and erasure"
+msgstr "--percent nur eblas dum pakaĵa instalado aŭ forigado"
+
+msgid "--replacepkgs may only be specified during package installation"
+msgstr "oni povas specifi la parametron --replacepkgs nur dum pakaĵo-instalado"
+
+msgid "--excludedocs may only be specified during package installation"
+msgstr "oni povas specifi la parametron --excludedocs nur dum pakaĵo-instalado"
+
+msgid "--includedocs may only be specified during package installation"
+msgstr "oni povas specifi la parametron --includedocs nur dum pakaĵo-instalado"
+
+msgid "only one of --excludedocs and --includedocs may be specified"
+msgstr "oni ne rajtas kune uzi la parametrojn --excludedocs kaj --includedocs"
+
+msgid "--ignorearch may only be specified during package installation"
+msgstr "oni povas specifi la parametron --ignorearch nur dum pakaĵo-instalado"
+
+msgid "--ignoreos may only be specified during package installation"
+msgstr "oni povas specifi la parametron --ignoreos nur dum pakaĵo-instalado"
+
+msgid "--ignoresize may only be specified during package installation"
+msgstr "oni povas specifi la parametron --ignoresize nur dum pakaĵo-instalado"
+
+msgid "--allmatches may only be specified during package erasure"
+msgstr "oni povas specifi la parametron --hash (-h) nur dum pakaĵo-forviŝado"
+
+msgid "--allfiles may only be specified during package installation"
+msgstr "oni povas specifi la parametron --allfiles nur dum pakaĵo-instalado"
+
+msgid "--justdb may only be specified during package installation and erasure"
+msgstr ""
+"oni povas specifi la parametron --justdb nur dum instalado kaj forviŝado de "
+"pakaĵo"
+
+msgid ""
+"script disabling options may only be specified during package installation "
+"and erasure"
+msgstr ""
+"oni povas uzi parametrojn por malaktivigi skriptojn nur dum instalado kaj "
+"forviŝado de pakaĵo"
+
+msgid ""
+"trigger disabling options may only be specified during package installation "
+"and erasure"
+msgstr ""
+"oni povas uzi parametrojn por malaktivigi instigilojn nur dum instalado kaj "
+"forviŝado de pakaĵo"
+
+msgid ""
+"--nodeps may only be specified during package installation, erasure, and "
+"verification"
+msgstr ""
+"oni povas specifi la parametron --nodeps nur dum instalado, konstatado kaj "
+"forviŝado de pakaĵo"
+
+msgid "--test may only be specified during package installation and erasure"
+msgstr ""
+"oni povas specifi la parametron --hash (-h) nur dum instalado kaj forviŝado "
+"de pakaĵo"
+
+msgid "arguments to --root (-r) must begin with a /"
+msgstr "argumentoj de --root (-r) devas komenciĝi per /"
+
+msgid "no packages given for erase"
+msgstr "neniuj pakaĵoj donitaj por forigi"
+
+msgid "no packages given for install"
+msgstr "neniuj pakaĵoj donitaj por instali"
+
+msgid "no arguments given for query"
+msgstr "neniuj parametroj donitaj por mendi"
+
+msgid "no arguments given for verify"
+msgstr "neniuj argumentoj donitaj por konstati"
+
+msgid "create uncompressed archive"
+msgstr ""
+
+msgid "archive format (pax|cpio)"
+msgstr ""
+
+#, c-format
+msgid "argument is not an RPM package\n"
+msgstr "parametro ne estas RPM-pakaĵo\n"
+
+#, c-format
+msgid "error reading header from package\n"
+msgstr "eraro dum legi kapon de pakaĵo\n"
+
+#, c-format
+msgid "cannot re-open payload: %s\n"
+msgstr "ne eblas remalfermi ŝarĝon: %s\n"
+
+msgid "initialize database"
+msgstr "iniciati datumbazon"
+
+msgid "rebuild database inverted lists from installed package headers"
+msgstr ""
+"remunti listojn inversigitajn de la datumbazo el instalitaj pakaĵo-kapoj"
+
+#, fuzzy
+#| msgid "verify database files"
+msgid "verify database"
+msgstr "konstati datumbazajn dosierojn"
+
+#, fuzzy
+msgid "salvage database"
+msgstr "iniciati datumbazon"
+
+msgid "export database to stdout header list"
+msgstr "eksporta datumbazo al ĉefeliga ĉapolisto"
+
+msgid "import database from stdin header list"
+msgstr "importa datumbazo el ĉefeniga ĉapolisto"
+
+msgid "Database options:"
+msgstr "Datumbazo-elektoj:"
+
+#, c-format
+msgid "buildroot already specified, ignoring %s\n"
+msgstr "buildroot jam specifita, %s ignorata\n"
+
+#, c-format
+msgid "build through %prep (unpack sources and apply patches) from <specfile>"
+msgstr "munti per %prep (elpaki fontotekstojn kaj fliki) laŭ <spec-dosiero>"
+
+msgid "<specfile>"
+msgstr "<spec-dosiero>"
+
+#, c-format
+msgid "build through %conf (%prep, then %conf) from <specfile>"
+msgstr ""
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <specfile>"
+msgstr ""
+
+msgid "check build dependencies <specfile>"
+msgstr ""
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <specfile>"
+msgstr ""
+
+#, c-format
+msgid "verify %files section from <specfile>"
+msgstr "konstati la sekcion %file laŭ <spec-dosiero>"
+
+msgid "build source and binary packages from <specfile>"
+msgstr "munti fontotekstan kaj plenumeblan pakaĵojn laŭ <spec-dosiero>"
+
+msgid "build binary package only from <specfile>"
+msgstr "munti nur plenumeblan pakaĵon laŭ <spec-dosiero>"
+
+msgid "build source package only from <specfile>"
+msgstr "munti nur fontotekstan pakaĵon laŭ <spec-dosiero>"
+
+msgid ""
+"build source package only from <specfile> - calculate dynamic build requires"
+msgstr ""
+
+#, c-format
+msgid ""
+"build through %prep (unpack sources and apply patches) from <source package>"
+msgstr ""
+"muntado per %prep (malpaki fontotekstojn kaj apliki flikaĵojn) laŭ "
+"<fontoteksta pakaĵo>"
+
+msgid "<source package>"
+msgstr "<fontoteksta pakaĵo>"
+
+#, fuzzy, c-format
+#| msgid "build through %build (%prep, then compile) from <source package>"
+msgid "build through %conf (%prep, then %conf) from <source package>"
+msgstr "munti per %build (%prep, poste traduki) laŭ <fontoteskta pakaĵo>"
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <source package>"
+msgstr ""
+
+msgid "check build dependencies <source package>"
+msgstr ""
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <source "
+"package>"
+msgstr ""
+
+#, c-format
+msgid "verify %files section from <source package>"
+msgstr "konstati sekcion %files laŭ <fontoteksta pakaĵo>"
+
+msgid "build source and binary packages from <source package>"
+msgstr "munti fontotekstajn kaj plenumeblajn pakaĵojn laŭ <fontoteksta pakaĵo>"
+
+msgid "build binary package only from <source package>"
+msgstr "munti nur plenumeblan pakaĵon laŭ <fontoteksta pakaĵo>"
+
+msgid "build source package only from <source package>"
+msgstr "munti nur fontotekstan pakaĵon laŭ <fontoteksta pakaĵo>"
+
+msgid ""
+"build source package only from <source package> - calculate dynamic build "
+"requires"
+msgstr ""
+
+#, c-format
+msgid "build through %prep (unpack sources and apply patches) from <tarball>"
+msgstr "munti per %prep (elpaki fontotekstojn kaj fliki) laŭ <tar-dosiero>"
+
+msgid "<tarball>"
+msgstr "<tar-dosiero>"
+
+#, fuzzy, c-format
+#| msgid "build through %build (%prep, then compile) from <tarball>"
+msgid "build through %conf (%prep, then %conf) from <tarball>"
+msgstr "munti per %build (%prep, tiam traduki) laŭ <tar-dosiero>"
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <tarball>"
+msgstr ""
+
+msgid "check build dependencies <tarball>"
+msgstr ""
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <tarball>"
+msgstr ""
+
+#, c-format
+msgid "verify %files section from <tarball>"
+msgstr "konstati sekcion %files laŭ <tar-dosiero>"
+
+msgid "build source and binary packages from <tarball>"
+msgstr "munti fontotekstan kaj plenumeblan pakaĵojn laŭ <tar-dosiero>"
+
+msgid "build binary package only from <tarball>"
+msgstr "munti nur plenumeblan pakaĵon laŭ <tar-dosiero>"
+
+msgid "build source package only from <tarball>"
+msgstr "munti nur fontotekstan pakaĵon laŭ <tar-dosiero>"
+
+msgid ""
+"build source package only from <tarball> - calculate dynamic build requires"
+msgstr ""
+
+msgid "build binary package from <source package>"
+msgstr "munti plenumeblan pakaĵon laŭ <fontoteksta pakaĵo>"
+
+#, c-format
+msgid ""
+"build through %install (%prep, %build, then install) from <source package>"
+msgstr ""
+"munti per %install (%prep, %build, tiam instali) laŭ <fontoteksta pakaĵo>"
+
+#, fuzzy
+#| msgid "override build root"
+msgid "override build root (DEPRECATED)"
+msgstr "superregi muntan radikon"
+
+msgid "remove build tree when done"
+msgstr "forigi muntan arbon post finita"
+
+msgid "ignore ExcludeArch: directives from spec file"
+msgstr "ignori la direktivojn ExcludeArch: el spec-dosiero"
+
+msgid "debug file state machine"
+msgstr "senerarigi dosierstatan maŝinon"
+
+msgid "do not execute any stages of the build"
+msgstr "ne plenumigi iun ajn etapon de la muntado"
+
+msgid "do not verify build dependencies"
+msgstr "ne konstati muntaĵo-dependaĵojn"
+
+msgid "generate package header(s) compatible with (legacy) rpm v3 packaging"
+msgstr "generi pakaĵo-kapo(j)n kongrua(j)n kun (malmoderna) pakado de rpm 3"
+
+#, c-format
+msgid "do not execute %clean stage of the build"
+msgstr "ne plenumigi la etapon %clean por la muntado"
+
+#, c-format
+msgid "do not execute %prep stage of the build"
+msgstr "Ne plenumigu stadion %prep de la munto"
+
+#, c-format
+msgid "do not execute %check stage of the build"
+msgstr "ne plenumigi la etapon %check por la muntado"
+
+msgid "do not accept i18N msgstr's from specfile"
+msgstr "ne akcepti tradukojn el spec-dosiero"
+
+msgid "remove sources when done"
+msgstr "forigi fontotekstojn post kiam finita"
+
+msgid "remove specfile when done"
+msgstr "forigi spec-dosieron post kiam finita"
+
+msgid "skip straight to specified stage (only for c,i)"
+msgstr "preterlasi rekte al specifita etapo (nur por c,i)"
+
+msgid "override target platform"
+msgstr "superregi celan platformon"
+
+msgid "Build options with [ <specfile> | <tarball> | <source package> ]:"
+msgstr ""
+"Multaj elektoj je [ <spec-dosiero> |  <tar-dosiero> | <fontoteksta pakaĵo> ]:"
+
+#, c-format
+msgid "Unable to open spec file %s: %s\n"
+msgstr "Ne eblas malfermi spec-dosieron %s: %s\n"
+
+#, c-format
+msgid "Failed to open tar pipe: %m\n"
+msgstr "Malsukcesis malfermi tar-tubon: %m\n"
+
+#, c-format
+msgid "Found more than one spec file in %s\n"
+msgstr "Trovis pli ol unu spec-dosieron en %s\n"
+
+#, c-format
+msgid "Failed to read spec file from %s\n"
+msgstr "Malsukcesis legi spec-dosieron je %s\n"
+
+#, c-format
+msgid "Failed to rename %s to %s: %m\n"
+msgstr "Malsukcesis alinomi %s al %s: %m\n"
+
+#, c-format
+msgid "failed to stat %s: %m\n"
+msgstr "malsukcesis stat-i: %s: %m\n"
+
+#, c-format
+msgid "File %s is not a regular file.\n"
+msgstr "Dosiero %s ne estas regula dosiero.\n"
+
+#, c-format
+msgid "File %s does not appear to be a specfile.\n"
+msgstr "Dosiero %s ne aspektas kiel spec-dosiero.\n"
+
+#, c-format
+msgid "Building target platforms: %s\n"
+msgstr "Platformoj por kiu munti: %s\n"
+
+#, c-format
+msgid "Building for target %s\n"
+msgstr "Muntanta por celon %s\n"
+
+#, c-format
 msgid "%s: read manifest failed: %s\n"
 msgstr "%s: legi manifeston malsukcesis: %s\n"
 
 msgid "don't verify header+payload signature"
 msgstr "ne konstati pretendojn de kapo+ŝarĝo"
+
+msgid "verify package signature(s)"
+msgstr "konstati pakaĵo-pretendo(j)n"
+
+msgid "import an armored public key"
+msgstr "importi ŝirmitan publikan ŝlosilon"
+
+#, fuzzy
+#| msgid "import an armored public key"
+msgid "export an public key"
+msgstr "importi ŝirmitan publikan ŝlosilon"
+
+msgid "don't import, but tell if it would work or not"
+msgstr "ne importi, sed diri al ĝi se ĝi funkcius aŭ ne"
+
+#, fuzzy
+#| msgid "list keys from RPM keyring"
+msgid "Erase keys from RPM keyring"
+msgstr "listigi ŝlosilojn el RPM-ŝlosilaro"
+
+msgid "list keys from RPM keyring"
+msgstr "listigi ŝlosilojn el RPM-ŝlosilaro"
+
+msgid "rebuild the keyring - convert to current backend"
+msgstr ""
+
+msgid "get keys from this backend when rebuilding current backend"
+msgstr ""
+
+msgid "Keyring options:"
+msgstr "Ŝlosilaro-elektoj:"
+
+msgid "no arguments given"
+msgstr "neniuj parametroj donitaj"
 
 msgid "getopt string for scripts options"
 msgstr ""
@@ -3326,11 +3460,147 @@ msgstr ""
 msgid "interactive session"
 msgstr ""
 
+#, fuzzy
+#| msgid "sign package(s) (identical to --addsign)"
+msgid "sign package(s), adding a new signature"
+msgstr "pretendi pakaĵo(j)n (identa je --addsign)"
+
+#, fuzzy
+#| msgid "sign package(s) (identical to --addsign)"
+msgid "resign package(s), deleting any previous signatures"
+msgstr "pretendi pakaĵo(j)n (identa je --addsign)"
+
+msgid "delete package signatures"
+msgstr "forigi pakaĵo-pretendojn"
+
+msgid "delete IMA and fsverity file signatures"
+msgstr ""
+
+#, fuzzy
+msgid "request legacy rpm v3 header+payload signatures on v4 packages"
+msgstr "ne konstati pretendojn de kapo+ŝarĝo"
+
+#, fuzzy
+msgid "request legacy rpm v4 header signatures on v6 packages"
+msgstr "ne konstati pretendojn de kapo+ŝarĝo"
+
+#, fuzzy
+msgid "request rpm v6 header signature on v4 packages"
+msgstr "ne konstati pretendojn de kapo+ŝarĝo"
+
+msgid "sign package(s) files"
+msgstr ""
+
+msgid "generate fsverity signatures for package(s) files"
+msgstr ""
+
+msgid "algorithm to use for verity signatures, default sha256"
+msgstr ""
+
+msgid "<algorithm>"
+msgstr ""
+
+msgid "use file signing cert <cert>"
+msgstr ""
+
+msgid "<cert>"
+msgstr ""
+
+msgid "use file signing key <key>"
+msgstr ""
+
+msgid "<key>"
+msgstr ""
+
+msgid "prompt for file signing key password"
+msgstr ""
+
+msgid "Signature options:"
+msgstr "Pretendo-elektojn:"
+
+#, fuzzy, c-format
+#| msgid "You must set \"%%_gpg_name\" in your macro file\n"
+msgid "You must set \"%%_openpgp_sign_id\" in your macro file\n"
+msgstr "Vi devas valorizi \"%%_gpg_name\" en via makro-dosiero\n"
+
+#, c-format
+msgid ""
+"You must set \"%%_file_signing_key\" in your macro file or on the command "
+"line with --fskpath\n"
+msgstr ""
+
+msgid "--fskpath may only be specified when signing files"
+msgstr ""
+
+msgid "parse spec file(s) to stdout"
+msgstr "montri ĉe ordinara eligo spec-dosiero(j)n"
+
+msgid "query spec file(s)"
+msgstr "konstati spec-dosiero(j)n"
+
+msgid "interactive macro shell"
+msgstr ""
+
+msgid "operate on binary rpms generated by spec (default)"
+msgstr "operacii je dekumaj rpm-oj generitaj de spec (apriora)"
+
+msgid "operate on binary package header(s) that would be built from spec"
+msgstr ""
+
+msgid "operate on source package header generated by spec"
+msgstr ""
+
+msgid "Spec options:"
+msgstr "Spec-elektoj:"
+
+#, c-format
+msgid "RPM version %s macro shell\n"
+msgstr ""
+
+msgid "no arguments given for parse"
+msgstr "neniuj parametroj donitaj por analizi"
+
 msgid "extract an archive"
 msgstr ""
 
 msgid "only print what would be done"
 msgstr ""
+
+msgid "extract into a specific path"
+msgstr ""
+
+#~ msgid "run build in current directory"
+#~ msgstr "plenumi muntaĵon en la nuna dosierujo"
+
+#~ msgid "sign package(s)"
+#~ msgstr "pretendi pakaĵo(j)n"
+
+#, c-format
+#~ msgid "%%{buildroot} couldn't be empty\n"
+#~ msgstr "%%{buildroot} devas ne vaki\n"
+
+#, c-format
+#~ msgid "%%{buildroot} can not be \"/\"\n"
+#~ msgstr "ne eblas, ke %%{buildroot} estu \"/\"\n"
+
+#, c-format
+#~ msgid "line %d: second %%prep\n"
+#~ msgstr "linio %d: dua %%prep\n"
+
+#~ msgid "Only absolute paths are allowed in file triggers"
+#~ msgstr "Nur absolutaj vojoj estas permesataj en dosieraj instigiloj"
+
+#~ msgid "query/verify package(s) with package identifier"
+#~ msgstr "mendi/konstati pakaĵo(j)n per pakaĵo-identigilo"
+
+#~ msgid "query/verify package(s) with header identifier"
+#~ msgstr "mendi/konstati pakaĵo(j)n per kapo-identigilo"
+
+#~ msgid "illegal signature type"
+#~ msgstr "nevalida pretenda tipo"
+
+#~ msgid "unsupported RPM package version"
+#~ msgstr "nekomprenata RPM-pakaĵa eldono"
 
 #, c-format
 #~ msgid "%%dev glob not permitted: %s\n"
@@ -3345,12 +3615,6 @@ msgstr ""
 
 #~ msgid "build through %install (%prep, %build, then install) from <specfile>"
 #~ msgstr "munti per %install (%prep, %build, tiam instali) laŭ <spec-dosiero>"
-
-#~ msgid "build through %build (%prep, then compile) from <source package>"
-#~ msgstr "munti per %build (%prep, poste traduki) laŭ <fontoteskta pakaĵo>"
-
-#~ msgid "build through %build (%prep, then compile) from <tarball>"
-#~ msgstr "munti per %build (%prep, tiam traduki) laŭ <tar-dosiero>"
 
 #~ msgid "build through %install (%prep, %build, then install) from <tarball>"
 #~ msgstr "munti per %install (%prep, %build, tiam instali) laŭ <tar-dosiero>"
@@ -3428,9 +3692,6 @@ msgstr ""
 
 #~ msgid "%a %b %d %Y"
 #~ msgstr "%Y-%d-%b (%a)"
-
-#~ msgid "%s saved as %s\n"
-#~ msgstr "%s konservita kiel %s\n"
 
 #~ msgid "%s created as %s\n"
 #~ msgstr "%s kreita kiel %s\n"

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-04 09:25+0300\n"
+"POT-Creation-Date: 2025-09-01 14:14+0300\n"
 "PO-Revision-Date: 2023-03-08 16:20+0000\n"
 "Last-Translator: Коренберг Марк <socketpair@gmail.com>\n"
 "Language-Team: Russian <https://translate.fedoraproject.org/projects/rpm/rpm-"
@@ -25,543 +25,10 @@ msgstr ""
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
 "X-Generator: Weblate 4.15.2\n"
 
-#, c-format
-msgid "%s: %s\n"
-msgstr "%s: %s\n"
-
-#, c-format
-msgid "RPM version %s\n"
-msgstr "Версия RPM %s\n"
-
-#, c-format
-msgid "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
-msgstr "Авторские права © 1998-2002 - Red Hat, Inc.\n"
-
-#, c-format
-msgid ""
-"This program may be freely redistributed under the terms of the GNU GPL\n"
-msgstr "Эту программу можно свободно распространять на условиях GNU GPL\n"
-
-#, c-format
-msgid "creating a pipe for --pipe failed: %m\n"
-msgstr "не удалось создать канал для --pipe: %m\n"
-
-#, c-format
-msgid "exec failed\n"
-msgstr "запуск не удался\n"
-
-msgid "create uncompressed tar file"
-msgstr "создать несжатый файл tar"
-
-#, c-format
-msgid "argument is not an RPM package\n"
-msgstr "заданный аргумент не является пакетом RPM\n"
-
-#, c-format
-msgid "error reading header from package\n"
-msgstr "ошибка чтения заголовка из пакета\n"
-
-#, c-format
-msgid "cannot re-open payload: %s\n"
-msgstr "невозможно повторно открыть payload: %s\n"
-
-#, c-format
-msgid "files over 4GB not supported by cpio, use rpm2archive instead\n"
-msgstr ""
-"файлы размером более 4 ГБ не поддерживаются cpio, вместо этого используйте "
-"rpm2archive\n"
-
-#, c-format
-msgid "buildroot already specified, ignoring %s\n"
-msgstr "buildroot уже указан, %s игнорируется\n"
-
-#, c-format
-msgid "build through %prep (unpack sources and apply patches) from <specfile>"
-msgstr ""
-"выполнить по стадию %prep (развернуть исходники и наложить заплаты) из <файл "
-"спецификации>"
-
-msgid "<specfile>"
-msgstr "<файл спецификации>"
-
-#, c-format
-msgid "build through %conf (%prep, then %conf) from <specfile>"
-msgstr "собрать до %conf (%prep, затем %conf) из <файла спецификации>"
-
-msgid "build through %build (%prep, %conf, then compile) from <specfile>"
-msgstr "собрать до %build (%prep, %conf и компиляция) из <файла спецификации>"
-
-msgid "check build dependencies <specfile>"
-msgstr "проверить зависимости сборки <файла спецификации>"
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <specfile>"
-msgstr ""
-"сборка до %install (%prep, %conf, %build, установка) из <файла спецификации>"
-
-#, c-format
-msgid "verify %files section from <specfile>"
-msgstr "проверить раздел %files из <файл спецификации>"
-
-msgid "build source and binary packages from <specfile>"
-msgstr "собрать исходный и двоичный пакеты по <файл спецификации>"
-
-msgid "build binary package only from <specfile>"
-msgstr "собрать двоичный пакет по <файл спецификации>"
-
-msgid "build source package only from <specfile>"
-msgstr "собрать исходный пакет по <файлу спецификации>"
-
-msgid ""
-"build source package only from <specfile> - calculate dynamic build requires"
-msgstr ""
-"сборка только исходного пакета по <файлу спецификации> - вычислить "
-"динамические зависимости сборки"
-
-#, c-format
-msgid ""
-"build through %prep (unpack sources and apply patches) from <source package>"
-msgstr ""
-"сборка до %prep (распаковать исходники и наложить патчи) из <файла "
-"спецификации>"
-
-msgid "<source package>"
-msgstr "<исходный пакет>"
-
-msgid "build through %build (%prep, %conf, then compile) from <source package>"
-msgstr "сборка до %build (%prep, %conf и компиляция) из <исходного пакета>"
-
-msgid "check build dependencies <source package>"
-msgstr "проверить зависимости сборки <исходного пакета>"
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <source "
-"package>"
-msgstr ""
-"собрать через %install (%prep, %conf, %build, затем установить) из "
-"<исходного пакета>"
-
-#, c-format
-msgid "verify %files section from <source package>"
-msgstr "проверить секцию %files <исходного пакета>"
-
-msgid "build source and binary packages from <source package>"
-msgstr "собрать исходный и двоичный пакеты по <файл спецификации>"
-
-msgid "build binary package only from <source package>"
-msgstr "собрать двоичный пакет только из <исходный пакет>"
-
-msgid "build source package only from <source package>"
-msgstr "собрать исходный пакет только из <исходный пакет>"
-
-msgid ""
-"build source package only from <source package> - calculate dynamic build "
-"requires"
-msgstr ""
-
-#, c-format
-msgid "build through %prep (unpack sources and apply patches) from <tarball>"
-msgstr ""
-"выполнить по стадию %prep (развернуть исходники и наложить заплаты) из "
-"<архив tar>"
-
-msgid "<tarball>"
-msgstr "<архив tar>"
-
-msgid "build through %build (%prep, %conf, then compile) from <tarball>"
-msgstr ""
-
-msgid "check build dependencies <tarball>"
-msgstr ""
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <tarball>"
-msgstr ""
-
-#, c-format
-msgid "verify %files section from <tarball>"
-msgstr "проверить секцию %files из <архив tar>"
-
-msgid "build source and binary packages from <tarball>"
-msgstr "собрать исходный и двоичный пакеты из <архив tar>"
-
-msgid "build binary package only from <tarball>"
-msgstr "собрать двоичный пакет из <архив tar>"
-
-msgid "build source package only from <tarball>"
-msgstr "собрать исходный пакет из <архив tar>"
-
-msgid ""
-"build source package only from <tarball> - calculate dynamic build requires"
-msgstr ""
-"собрать исходный пакет только из <архив tar> - вычислить, что требуется для "
-"динамической сборки"
-
-msgid "build binary package from <source package>"
-msgstr "собрать двоичный пакет из <исходный пакет>"
-
-msgid ""
-"build through %install (%prep, %build, then install) from <source package>"
-msgstr ""
-"выполнить по стадию %install (%prep, %build, затем установка) <исходного "
-"пакета>"
-
-msgid "override build root"
-msgstr "переопределить build root"
-
-msgid "run build in current directory"
-msgstr "запустить сборку в текущем каталоге"
-
-msgid "remove build tree when done"
-msgstr "после завершения удалить дерево исходников"
-
-msgid "ignore ExcludeArch: directives from spec file"
-msgstr "игнорировать ExcludeArch: в файле конфигурации"
-
-msgid "debug file state machine"
-msgstr "отладка машины состояния файлов"
-
-msgid "do not execute any stages of the build"
-msgstr "не выполнять никаких этапов сборки"
-
-msgid "do not verify build dependencies"
-msgstr "не проверять зависимости пакета перед сборкой"
-
-msgid "generate package header(s) compatible with (legacy) rpm v3 packaging"
-msgstr "генерация заголовков пакетов, совместимых с устаревшим форматом rpm v3"
-
-#, c-format
-msgid "do not execute %clean stage of the build"
-msgstr "не выполнять этап сборки %clean"
-
-#, c-format
-msgid "do not execute %prep stage of the build"
-msgstr "не выполнять этап сборки %prep"
-
-#, c-format
-msgid "do not execute %check stage of the build"
-msgstr "не выполнять этап сборки %check"
-
-msgid "do not accept i18N msgstr's from specfile"
-msgstr "игнорировать строки i18N из файла спецификации"
-
-msgid "remove sources when done"
-msgstr "после завершения удалить исходники"
-
-msgid "remove specfile when done"
-msgstr "после завершения удалить файл спецификации"
-
-msgid "skip straight to specified stage (only for c,i)"
-msgstr "перейти непосредственно к указанному этапу (только для c,i)"
-
-msgid "override target platform"
-msgstr "переопределить целевую платформу"
-
-msgid "Build options with [ <specfile> | <tarball> | <source package> ]:"
-msgstr ""
-"Параметры сборки с [ <файл спецификации> | <тар архив> | <исходный пакет> ]:"
-
-msgid "Common options for all rpm modes and executables:"
-msgstr "Общие параметры для всех режимов и компонентов rpm:"
-
-#, c-format
-msgid "Unable to open spec file %s: %s\n"
-msgstr "Ошибка открытия файла спецификации %s: %s\n"
-
-#, c-format
-msgid "Failed to open tar pipe: %m\n"
-msgstr "Ошибка открытия канала tar: %m\n"
-
-#, c-format
-msgid "Found more than one spec file in %s\n"
-msgstr "В %s найдено несколько файлов спецификации\n"
-
-#, c-format
-msgid "Failed to read spec file from %s\n"
-msgstr "Ошибка чтения файла спецификации из %s\n"
-
-#, c-format
-msgid "Failed to rename %s to %s: %m\n"
-msgstr "Невозможно переименовать %s в %s: %m\n"
-
-#, c-format
-msgid "failed to stat %s: %m\n"
-msgstr "невозможно получить информацию о %s: %m\n"
-
-#, c-format
-msgid "File %s is not a regular file.\n"
-msgstr "Не обычный файл: %s.\n"
-
-#, c-format
-msgid "File %s does not appear to be a specfile.\n"
-msgstr "Файл %s не похож на файл спецификации.\n"
-
-#, c-format
-msgid "Building target platforms: %s\n"
-msgstr "Платформы для сборки: %s\n"
-
-#, c-format
-msgid "Building for target %s\n"
-msgstr "Сборка для платформы %s\n"
-
-msgid "arguments to --root (-r) must begin with a /"
-msgstr "аргументы для --root (-r) должны начинаться с /"
-
-msgid "initialize database"
-msgstr "инициализировать базу данных"
-
-msgid "rebuild database inverted lists from installed package headers"
-msgstr ""
-"переиндексировать базу инвертированных списков из установленных заголовков "
-"пакетов"
-
-msgid "verify database files"
-msgstr "проверить файлы базы данных"
-
 #, fuzzy
-msgid "salvage database"
-msgstr "инициализировать базу данных"
-
-msgid "export database to stdout header list"
-msgstr ""
-
-msgid "import database from stdin header list"
-msgstr ""
-
-msgid "Database options:"
-msgstr "Параметры базы данных:"
-
-msgid "only one major mode may be specified"
-msgstr "может быть указан только один из основных режимов"
-
-msgid "verify package signature(s)"
-msgstr "проверить подпись(и) пакета"
-
-msgid "import an armored public key"
-msgstr "импортировать защищённый открытый ключ"
-
-msgid "don't import, but tell if it would work or not"
-msgstr "не импортировать, но сообщить будет оно работать или нет"
-
-msgid "list keys from RPM keyring"
-msgstr "перечислить ключи из связки ключей RPM"
-
-msgid "Keyring options:"
-msgstr ""
-
-msgid "no arguments given"
-msgstr "не заданы аргументы"
-
-msgid "Query/Verify package selection options:"
-msgstr ""
-
-msgid "Query/Verify file selection options:"
-msgstr ""
-
-msgid "Query options (with -q or --query):"
-msgstr "Параметры запроса (с -q или --query):"
-
-msgid "Verify options (with -V or --verify):"
-msgstr "Параметры проверки (с -V или --verify):"
-
-msgid "Install/Upgrade/Erase options:"
-msgstr "Параметры Установки/Обновления/Удаления:"
-
-msgid "one type of query/verify may be performed at a time"
-msgstr "за один раз может быть исполнен только один тип проверки или запроса"
-
-msgid "unexpected query flags"
-msgstr "неожиданные флаги запроса"
-
-msgid "unexpected query format"
-msgstr "неожиданный формат запроса"
-
-msgid "unexpected query source"
-msgstr "неожиданный источник запроса"
-
-msgid "only installation and upgrading may be forced"
-msgstr "--force можно использовать только при установке или обновлении"
-
-msgid "files may only be relocated during package installation"
-msgstr "файлы могут быть перемещены только при установке пакета"
-
-msgid "cannot use --prefix with --relocate or --excludepath"
-msgstr "--prefix нельзя использовать с --relocate или --excludepath"
-
-msgid ""
-"--relocate and --excludepath may only be used when installing new packages"
-msgstr ""
-"варианты --relocate и --excludepath можно использовать только при установке "
-"новых пакетов"
-
-msgid "--prefix may only be used when installing new packages"
-msgstr "вариант --prefix можно использовать только при установке новых пакетов"
-
-msgid "arguments to --prefix must begin with a /"
-msgstr "аргументы для --prefix должны начинаться с /"
-
-msgid ""
-"--hash (-h) may only be specified during package installation and erasure"
-msgstr "--hash (-h) может быть указан только при установке или удалении пакета"
-
-msgid "--percent may only be specified during package installation and erasure"
-msgstr "--percent может быть указан только при установке или удалении пакета"
-
-msgid "--replacepkgs may only be specified during package installation"
-msgstr "--replacepkgs может быть указан только при установке пакета"
-
-msgid "--excludedocs may only be specified during package installation"
-msgstr "--excludedocs может быть указан только при установке пакета"
-
-msgid "--includedocs may only be specified during package installation"
-msgstr "--includedocs может быть указан только при установке пакета"
-
-msgid "only one of --excludedocs and --includedocs may be specified"
-msgstr ""
-"может быть использован только один из параметров --excludedocs или --"
-"includedocs"
-
-msgid "--ignorearch may only be specified during package installation"
-msgstr "--ignorearch может быть указан только при установке пакета"
-
-msgid "--ignoreos may only be specified during package installation"
-msgstr "--ignoreos может быть указан только при установке пакета"
-
-msgid "--ignoresize may only be specified during package installation"
-msgstr "--ignoresize может быть указан только при установке пакета"
-
-msgid "--allmatches may only be specified during package erasure"
-msgstr "--allmatches может быть указан только при удалении пакета"
-
-msgid "--allfiles may only be specified during package installation"
-msgstr "--allfiles может быть указан только при установке пакета"
-
-msgid "--justdb may only be specified during package installation and erasure"
-msgstr "--justdb может быть указан только при установке или удалении пакета"
-
-msgid ""
-"script disabling options may only be specified during package installation "
-"and erasure"
-msgstr ""
-"параметры запрета сценариев могут быть указаны только при установке или "
-"удалении пакета"
-
-msgid ""
-"trigger disabling options may only be specified during package installation "
-"and erasure"
-msgstr ""
-"параметры запрета триггеров могут быть указаны только при установке или "
-"удалении пакета"
-
-msgid ""
-"--nodeps may only be specified during package installation, erasure, and "
-"verification"
-msgstr ""
-"--nodeps может быть указан только при установке, удалении или проверке пакета"
-
-msgid "--test may only be specified during package installation and erasure"
-msgstr "--test может быть указан только при установке или удалении пакета"
-
-msgid "no packages given for erase"
-msgstr "не заданы пакеты для удаления"
-
-msgid "no packages given for install"
-msgstr "не заданы пакеты для установки"
-
-msgid "no arguments given for query"
-msgstr "не заданы аргументы запроса"
-
-msgid "no arguments given for verify"
-msgstr "не заданы аргументы для проверки"
-
-msgid "sign package(s)"
-msgstr "подписать пакет(ы)"
-
-msgid "sign package(s) (identical to --addsign)"
-msgstr "подписать пакет (то же самое что --addsign)"
-
-msgid "delete package signatures"
-msgstr "удалить подписи пакета"
-
-msgid "delete IMA and fsverity file signatures"
-msgstr ""
-
-msgid "create rpm v3 header+payload signatures"
-msgstr "создать заголовок и подписи содержимого в формате rpm v3"
-
-msgid "sign package(s) files"
-msgstr "подписать файлы пакетов"
-
-msgid "generate fsverity signatures for package(s) files"
-msgstr ""
-
-msgid "algorithm to use for verity signatures, default sha256"
-msgstr "алгоритм для проверки подписей, по умолчанию sha256"
-
-msgid "<algorithm>"
-msgstr "<алгоритм>"
-
-msgid "use file signing cert <cert>"
-msgstr ""
-
-msgid "<cert>"
-msgstr "<серт>"
-
-msgid "use file signing key <key>"
-msgstr "использовать <ключ> для подписи файлов"
-
-msgid "<key>"
-msgstr "<ключ>"
-
-msgid "prompt for file signing key password"
-msgstr ""
-
-msgid "Signature options:"
-msgstr "Параметры подписи:"
-
-#, c-format
-msgid "You must set \"%%_gpg_name\" in your macro file\n"
-msgstr "Вы должны установить \"%%_gpg_name\" в вашем макрофайле\n"
-
-#, c-format
-msgid ""
-"You must set \"%%_file_signing_key\" in your macro file or on the command "
-"line with --fskpath\n"
-msgstr ""
-
-msgid "--fskpath may only be specified when signing files"
-msgstr ""
-
-msgid "parse spec file(s) to stdout"
-msgstr ""
-
-msgid "query spec file(s)"
-msgstr ""
-
-msgid "interactive macro shell"
-msgstr ""
-
-msgid "operate on binary rpms generated by spec (default)"
-msgstr ""
-
-msgid "operate on binary package header(s) that would be built from spec"
-msgstr ""
-
-msgid "operate on source package header generated by spec"
-msgstr ""
-
-msgid "use the following query format"
-msgstr "используйте следующий формат запроса"
-
-msgid "Spec options:"
-msgstr ""
-
-#, c-format
-msgid "RPM version %s macro shell\n"
-msgstr ""
-
-msgid "no arguments given for parse"
-msgstr ""
+#| msgid "unable to read the signature\n"
+msgid "unable to parse _buildtime macro\n"
+msgstr "невозможно прочесть подпись\n"
 
 msgid "unable to parse SOURCE_DATE_EPOCH\n"
 msgstr "невозможно проанализировать SOURCE_DATE_EPOCH\n"
@@ -589,12 +56,19 @@ msgstr "Неверный код возврата из %s (%s)\n"
 msgid "Failed build dependencies:\n"
 msgstr "Неудовлетворенные зависимости сборки:\n"
 
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to create package build directory %s: %s\n"
+msgstr "не удалось создать каталог %s: %s\n"
+
 #, c-format
 msgid "setting %s=%s\n"
 msgstr ""
 
 #, c-format
-msgid "source_date_epoch_from_changelog set but %%changelog is missing\n"
+msgid ""
+"%%source_date_epoch_from_changelog is set, but %%changelog has no entries to "
+"take a date from\n"
 msgstr ""
 
 msgid ""
@@ -668,11 +142,23 @@ msgid "File must begin with \"/\": %s\n"
 msgstr "Файл должен начинаться с \"/\": %s\n"
 
 #, c-format
-msgid "unable to parse %s=%s\n"
+msgid ""
+"%%clamp_mtime_to_source_date_epoch is deprecated, please use "
+"%%build_mtime_policy\n"
 msgstr ""
 
 #, c-format
-msgid "Unknown file digest algorithm %u, falling back to MD5\n"
+msgid "unable to parse %s=%s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "Unknown icon type: %s\n"
+msgid "Unknown mtime policy '%s'\n"
+msgstr "Неизвестный тип пиктограммы: %s\n"
+
+#, fuzzy, c-format
+#| msgid "Unknown file digest algorithm %u, falling back to MD5\n"
+msgid "Unknown file digest algorithm %u, falling back to %u\n"
 msgstr "Не удается проверить файл %u, возврат к MD5\n"
 
 #, c-format
@@ -900,9 +386,24 @@ msgstr "Невозможно создать имя файла для пакет�
 msgid "Finished binary package job, result %d, filename %s\n"
 msgstr ""
 
+#, fuzzy, c-format
+#| msgid "line %d: Error parsing %s: %s\n"
+msgid "line %d: Error parsing script: %s: %s\n"
+msgstr "строка %d: Ошибка анализа %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "line %d: Bad option %s: %s\n"
+msgid "line %d: Bad %s option %s: %s\n"
+msgstr "строка %d: Неверный параметр %s: %s\n"
+
 #, c-format
 msgid "line %d: second %s\n"
 msgstr "строка %d: %s повторно\n"
+
+#, fuzzy, c-format
+#| msgid "line %d: Bad option %s: %s\n"
+msgid "line %d: append and prepend specified: %s\n"
+msgstr "строка %d: Неверный параметр %s: %s\n"
 
 #, c-format
 msgid "bogus date in %%changelog: %s\n"
@@ -1008,6 +509,11 @@ msgstr "ОС не включена: %s\n"
 msgid "%s field must be present in package: %s\n"
 msgstr "Поле %s обязано присутствовать в пакете: %s\n"
 
+#, fuzzy, c-format
+#| msgid "%s field must be present in package: %s\n"
+msgid "%s field must be present before build in package: %s\n"
+msgstr "Поле %s обязано присутствовать в пакете: %s\n"
+
 #, c-format
 msgid "Duplicate %s entries in package: %s\n"
 msgstr "Повторяющиеся записи %s в пакете: %s\n"
@@ -1079,6 +585,10 @@ msgid "line %d: Duplicate BuildArch entry: %s\n"
 msgstr ""
 
 #, c-format
+msgid "line %d: Only noarch is allowed after the build: %s\n"
+msgstr ""
+
+#, c-format
 msgid "line %d: Only noarch subpackages are supported: %s\n"
 msgstr ""
 
@@ -1101,13 +611,15 @@ msgstr ""
 msgid "line %d: Unknown tag: %s\n"
 msgstr "строка %d: Неизвестный тэг: %s\n"
 
-#, c-format
-msgid "%%{buildroot} couldn't be empty\n"
-msgstr "%%{buildroot} не может быть пустой\n"
+#, fuzzy, c-format
+#| msgid "line %d: Priorities are allowed only for file triggers : %s\n"
+msgid "line %d: Tag not allowed after build is done: %s\n"
+msgstr "строка %d: Приоритеты разрешены только для триггеров файлов: %s\n"
 
-#, c-format
-msgid "%%{buildroot} can not be \"/\"\n"
-msgstr "%%{buildroot} не может быть \"/\"\n"
+#, fuzzy, c-format
+#| msgid "Invalid %s token: %s\n"
+msgid "Invalid buildroot: '%s'\n"
+msgstr "Неверный токен %s: %s\n"
 
 #, c-format
 msgid "No patch number %u\n"
@@ -1137,15 +649,6 @@ msgstr ""
 msgid "Invalid patch number %s: %s\n"
 msgstr ""
 
-#, c-format
-msgid "line %d: second %%prep\n"
-msgstr "строка %d: второй %%prep\n"
-
-#, c-format
-msgid ""
-"%%patchN is deprecated (%i usages found), use %%patch N (or %%patch -P N)\n"
-msgstr ""
-
 msgid "Dependency tokens must begin with alpha-numeric, '_' or '/'"
 msgstr ""
 
@@ -1161,6 +664,11 @@ msgstr ""
 msgid "Version required"
 msgstr ""
 
+#, fuzzy
+#| msgid "relocations must begin with a /"
+msgid "file trigger conditions must begin with '/'"
+msgstr "перемещения должны начинаться с /"
+
 msgid "Only package names are allowed in Obsoletes"
 msgstr ""
 
@@ -1169,9 +677,6 @@ msgstr ""
 
 msgid "It's not recommended to use '>' in Obsoletes"
 msgstr ""
-
-msgid "Only absolute paths are allowed in file triggers"
-msgstr "В триггерах файлов допустимы только абсолютные пути"
 
 msgid "Trigger fired by the same package is already defined in spec file"
 msgstr ""
@@ -1210,10 +715,6 @@ msgstr "строка %d: Второе %s\n"
 
 #, c-format
 msgid "line %d: unsupported internal script: %s\n"
-msgstr ""
-
-#, c-format
-msgid "line %d: file trigger condition must begin with '/': %s"
 msgstr ""
 
 #, c-format
@@ -1261,6 +762,10 @@ msgid "%s:%d: malformed %%include statement\n"
 msgstr ""
 
 #, c-format
+msgid "%%patchN is obsolete, use %%patch N (or %%patch -P N): %s\n"
+msgstr ""
+
+#, c-format
 msgid "encoding %s not supported by system\n"
 msgstr "кодировка %s не поддерживается системой\n"
 
@@ -1280,8 +785,36 @@ msgstr ""
 msgid "line %d doesn't belong to any section: %s\n"
 msgstr ""
 
+#, fuzzy, c-format
+#| msgid "line %d: Unknown tag: %s\n"
+msgid "line %d: Unknown buildsystem: %s\n"
+msgstr "строка %d: Неизвестный тэг: %s\n"
+
+#, c-format
+msgid ""
+"line %d: Required parametric macro %%%s not defined for buildsystem %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "failed to write all data to %s: %s\n"
+msgid "failed to write buildsystem %s %%%s: %s\n"
+msgstr "не удалось записать все данные в %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to create temp file for buildsystem: %s\n"
+msgstr "не удалось создать каталог %s: %s\n"
+
+#, c-format
+msgid "Section %s is not allowed after build is done!\n"
+msgstr ""
+
 msgid "No compatible architectures found for build\n"
 msgstr "Не найдены совместимые архитектуры для сборки.\n"
+
+#, c-format
+msgid "invalid rpm format %d requested, using %d\n"
+msgstr ""
 
 #, c-format
 msgid "Package has no %%description: %s\n"
@@ -1373,6 +906,10 @@ msgstr "%s не удалось: %x\n"
 msgid "failed to write all data to %s: %s\n"
 msgstr "не удалось записать все данные в %s: %s\n"
 
+#, c-format
+msgid "invalid or out of order path from generator: %s\n"
+msgstr ""
+
 msgid "Empty file classifier\n"
 msgstr ""
 
@@ -1404,6 +941,9 @@ msgid "Failed to find %s:\n"
 msgstr "Невозможно найти %s:\n"
 
 msgid "Deprecated external dependency generator is used!\n"
+msgstr ""
+
+msgid "External dependency generator is incompatible with v6 packages\n"
 msgstr ""
 
 #, c-format
@@ -1529,9 +1069,10 @@ msgstr ""
 msgid "%s%s created as %s%s\n"
 msgstr ""
 
-#, c-format
-msgid "%s %s: remove failed: %s\n"
-msgstr ""
+#, fuzzy, c-format
+#| msgid "%s: open failed: %s\n"
+msgid "%s %s%s: remove failed: %s\n"
+msgstr "%s: ошибка открытия: %s\n"
 
 msgid "directory"
 msgstr ""
@@ -1657,8 +1198,39 @@ msgid "array iterator used with different sized arrays"
 msgstr "итератор массива использован с массивами различного размера"
 
 #, c-format
+msgid "%s: reading of public key failed.\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to create keyring directory %s: %s\n"
+msgstr "не удалось создать каталог %s: %s\n"
+
+#, c-format
+msgid "failed to import key: %s: %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "Can't create writelock for keyring at %s: %s\n"
+msgstr "не удалось создать каталог %s: %s\n"
+
+#, c-format
+msgid "Can't acquire writelock for keyring at %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "%s: not an armored public key.\n"
+msgid "%s is not a valid public key\n"
+msgstr "%s: это не открытый ключ.\n"
+
+#, c-format
 msgid "RPM v3 packages are deprecated: %s\n"
 msgstr ""
+
+#, c-format
+msgid "RPM version %s\n"
+msgstr "Версия RPM %s\n"
 
 msgid "Error writing to stdout"
 msgstr "Ошибка записи в stdout"
@@ -1765,9 +1337,6 @@ msgstr "отладка машины состояния присоединенн�
 
 msgid "debug rpmio I/O"
 msgstr "отладка процесса ввода/вывода rpmio"
-
-msgid "disable user namespace support"
-msgstr ""
 
 #, c-format
 msgid "%s: option table misconfigured (%d)\n"
@@ -1997,12 +1566,6 @@ msgstr "запросить/проверить пакеты в группе"
 msgid "query/verify a package file"
 msgstr "запросить/проверить файл пакета"
 
-msgid "query/verify package(s) with package identifier"
-msgstr "запросить/проверить пакет(ы) по идентификатору пакета"
-
-msgid "query/verify package(s) with header identifier"
-msgstr "запросить/проверить пакет(ы), по идентификатору заголовка"
-
 msgid "rpm query mode"
 msgstr "режим запроса rpm"
 
@@ -2017,6 +1580,11 @@ msgstr "запросить пакеты с триггер-сценариями �
 
 msgid "rpm verify mode"
 msgstr "режим проверки rpm"
+
+#, fuzzy
+#| msgid "query/verify the package(s) which provide a dependency"
+msgid "query/verify the package(s) which conflict with a dependency"
+msgstr "найти/проверить пакеты, предоставляющие сервис"
 
 msgid "query/verify the package(s) which require a dependency"
 msgstr "найти/проверить пакеты, требующие сервис"
@@ -2074,6 +1642,9 @@ msgstr "показать основную информацию о файле"
 
 msgid "list files in package"
 msgstr "показать список файлов пакета"
+
+msgid "use the following query format"
+msgstr "используйте следующий формат запроса"
 
 msgid "display the states of the listed files"
 msgstr "показать состояние перечисленных файлов"
@@ -2487,15 +2058,15 @@ msgid "Wrong number of entries for tag %s: %u found but %u expected.\n"
 msgstr ""
 
 #, c-format
-msgid "Malformed data for tag %s: %u bytes found but %lu expected.\n"
+msgid "Malformed data for tag %s: %u bytes found but %<PRIu64> expected.\n"
 msgstr ""
 
 #, c-format
-msgid "%s: base64 decode failed, len %li\n"
+msgid "%s: base64 decode failed, len %zu\n"
 msgstr ""
 
 #, c-format
-msgid "%s: base64 decode success, len %li\n"
+msgid "%s: base64 decode success, len %zu\n"
 msgstr ""
 
 msgid "Bad magic"
@@ -2525,7 +2096,7 @@ msgstr "Внутренняя ошибка"
 msgid "Archive file not in header"
 msgstr "Файл архива не найден в заголовке пакета"
 
-msgid "Invalid symlink"
+msgid "Unsafe symlink"
 msgstr ""
 
 msgid "File from package already exists as a directory in system"
@@ -2601,6 +2172,11 @@ msgstr ""
 msgid "error reading from file %s\n"
 msgstr "ошибка чтения из файла %s\n"
 
+#, fuzzy, c-format
+#| msgid "no package matches %s: %s\n"
+msgid "package format not supported: %s\n"
+msgstr "ни один пакет не подходит к %s: %s\n"
+
 #, c-format
 msgid "\"%s\" specifies multiple packages:\n"
 msgstr ""
@@ -2615,12 +2191,6 @@ msgstr "Устанавливается %s\n"
 
 msgid "not an rpm package"
 msgstr "не rpm-пакет"
-
-msgid "illegal signature type"
-msgstr "неверный тип подписи"
-
-msgid "unsupported RPM package version"
-msgstr "неподдерживаемая версия пакета RPM"
 
 #, c-format
 msgid "read failed: %s (%d)\n"
@@ -2761,6 +2331,11 @@ msgstr "отсутствует аргумент для %s в %s:%d\n"
 msgid "cannot open %s at %s:%d: %m\n"
 msgstr ""
 
+#, fuzzy, c-format
+#| msgid "bad option '%s' at %s:%d\n"
+msgid "Ignoring %s at %s:%d\n"
+msgstr "неверный параметр '%s' в %s:%d\n"
+
 #, c-format
 msgid "missing architecture for %s at %s:%d\n"
 msgstr "отсутствует архитектура для %s в %s:%d\n"
@@ -2819,6 +2394,15 @@ msgstr ""
 msgid "Unknown format"
 msgstr "Неизвестный формат"
 
+#, c-format
+msgid "erasing gpg-pubkey packages is deprecated; use rpmkeys --delete %s\n"
+msgstr ""
+
+msgid ""
+"public keys can not be installed as gpg-pubkey packages; use rpmkeys --"
+"import <keyfile> for that\n"
+msgstr ""
+
 msgid "install"
 msgstr "установить"
 
@@ -2848,16 +2432,13 @@ msgid "missing ')' in package label: %s\n"
 msgstr ""
 
 #, c-format
-msgid "%s: reading of public key failed.\n"
-msgstr ""
-
-#, c-format
 msgid "unknown keyring type: %s, using rpmdb\n"
 msgstr ""
 
-#, c-format
-msgid "failed to import key: %s: %s\n"
-msgstr ""
+#, fuzzy, c-format
+#| msgid "Unknown icon type: %s\n"
+msgid "unknown keyring type: %s\n"
+msgstr "Неизвестный тип пиктограммы: %s\n"
 
 #, c-format
 msgid "invalid package verify level %s\n"
@@ -2883,6 +2464,10 @@ msgid "%s tag %u: invalid size %u"
 msgstr ""
 
 #, c-format
+msgid "%s tag %u: invalid base64"
+msgstr ""
+
+#, c-format
 msgid "%s tag %u: invalid OpenPGP signature"
 msgstr ""
 
@@ -2890,19 +2475,28 @@ msgstr ""
 msgid "%s: tag %u: invalid hex"
 msgstr ""
 
-#, c-format
-msgid "%s%s%s %s"
-msgstr ""
+#, fuzzy, c-format
+#| msgid "%s saved as %s\n"
+msgid "%s %s%s %s"
+msgstr "%s сохранен как %s\n"
 
 msgid "digest"
 msgstr ""
 
 #, c-format
-msgid "%s%s"
-msgstr "%s%s"
+msgid "%s OpenPGP %s"
+msgstr ""
+
+#, c-format
+msgid "%s OpenPGP %s %s"
+msgstr ""
 
 msgid "signature"
 msgstr "подпись"
+
+#, c-format
+msgid ", key fingerprint: %s"
+msgstr ""
 
 msgid "header"
 msgstr "заголовок"
@@ -2910,10 +2504,14 @@ msgstr "заголовок"
 msgid "package"
 msgstr "пакет"
 
-msgid "Header "
+#, fuzzy
+#| msgid "Header "
+msgid "Header"
 msgstr "Заголовок "
 
-msgid "Payload "
+#, fuzzy
+#| msgid "Payload "
+msgid "Payload"
 msgstr "Нагрузка "
 
 msgid "Unable to reload signature header.\n"
@@ -2990,7 +2588,9 @@ msgstr "неподдерживаемый тип аргумента функци�
 msgid "syntax error in expression"
 msgstr "синтаксическая ошибка в выражении"
 
-msgid "unsupported funcion"
+#, fuzzy
+#| msgid "unsupported funcion"
+msgid "unsupported function"
 msgstr "неподдерживаемая функция"
 
 msgid "unmatched ("
@@ -3098,7 +2698,16 @@ msgid "A %% is followed by an unparseable macro\n"
 msgstr "непонятный макрос после %%\n"
 
 #, c-format
-msgid "======================== active %d empty %d\n"
+msgid "unexpected argument to non-parametric macro %%%s\n"
+msgstr ""
+
+#, c-format
+msgid "macro value out of range for int: %<PRIu64> using %i instead.\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "======================== active %d empty %d\n"
+msgid "======================== active %zu empty %d\n"
 msgstr "====================== активных %d пустых %d\n"
 
 #, c-format
@@ -3169,6 +2778,15 @@ msgstr ""
 msgid "(none)"
 msgstr ""
 
+#, fuzzy, c-format
+#| msgid "Could not read from file %s: %s\n"
+msgid "Could not find url helper: \"%s\"\n"
+msgstr "Не удалось прочитать из файла %s: %s\n"
+
+#, c-format
+msgid "Executing url helper \"%s\" failed with status %i\n"
+msgstr ""
+
 #, c-format
 msgid "%s: Fwrite failed: %s\n"
 msgstr "%s: ошибка Fwrite: %s\n"
@@ -3181,25 +2799,14 @@ msgstr "%s: ошибка Fread: %s\n"
 msgid "%s: Fflush failed: %s\n"
 msgstr "%s: ошибка Fflush: %s\n"
 
-#, fuzzy
-#| msgid "Unsupported PGP signature\n"
-msgid "Unsupported OpenPGP signature\n"
-msgstr "Неподдерживаемая подпись PGP\n"
+#, c-format
+msgid "Expanding signing macro %s failed\n"
+msgstr ""
 
 #, fuzzy, c-format
-#| msgid "Unsupported PGP hash algorithm %u\n"
-msgid "Unsupported OpenPGP hash algorithm %u\n"
-msgstr "Неподдерживаемый хеш-алгоритм PGP %u\n"
-
-#, fuzzy, c-format
-#| msgid "Unsupported PGP pubkey algorithm %u\n"
-msgid "Unsupported OpenPGP pubkey algorithm %u\n"
-msgstr "Неподдерживаемый алгоритм публичного ключа PGP %u\n"
-
-#, fuzzy, c-format
-#| msgid "Unsupported PGP signature\n"
-msgid "Deprecated OpenPGP signature version %d\n"
-msgstr "Неподдерживаемая подпись PGP\n"
+#| msgid "Invalid %s token: %s\n"
+msgid "Invalid sign command: %s\n"
+msgstr "Неверный токен %s: %s\n"
 
 #, c-format
 msgid "Could not create pipe for signing: %m\n"
@@ -3226,18 +2833,43 @@ msgstr "Не удалось прочитать из файла %s: %s\n"
 
 #, fuzzy, c-format
 #| msgid "gpg exec failed (%d)\n"
-msgid "gpg waitpid failed (%s)\n"
+msgid "%s waitpid failed (%s)\n"
 msgstr "запуск gpg не удался (%d)\n"
 
-#, c-format
-msgid "gpg exec failed (%d)\n"
+#, fuzzy, c-format
+#| msgid "gpg exec failed (%d)\n"
+msgid "%s exec failed (%d)\n"
 msgstr "запуск gpg не удался (%d)\n"
 
-msgid "gpg failed to write signature\n"
+#, fuzzy, c-format
+#| msgid "gpg failed to write signature\n"
+msgid "failed to write signature: %s\n"
 msgstr "ошибка gpg при записи подписи\n"
 
-msgid "unable to read the signature\n"
+#, fuzzy, c-format
+#| msgid "unable to read the signature\n"
+msgid "unable to read the signature: %s\n"
 msgstr "невозможно прочесть подпись\n"
+
+#, fuzzy
+#| msgid "Unsupported PGP signature\n"
+msgid "Unsupported OpenPGP signature\n"
+msgstr "Неподдерживаемая подпись PGP\n"
+
+#, fuzzy, c-format
+#| msgid "Unsupported PGP hash algorithm %u\n"
+msgid "Unsupported OpenPGP hash algorithm %u\n"
+msgstr "Неподдерживаемый хеш-алгоритм PGP %u\n"
+
+#, fuzzy, c-format
+#| msgid "Unsupported PGP signature\n"
+msgid "Deprecated OpenPGP signature version %d\n"
+msgstr "Неподдерживаемая подпись PGP\n"
+
+#, fuzzy, c-format
+#| msgid "Unsupported PGP pubkey algorithm %u\n"
+msgid "Unsupported OpenPGP pubkey algorithm %u for rpm v3/v4 signatures\n"
+msgstr "Неподдерживаемый алгоритм публичного ключа PGP %u\n"
 
 msgid "file signing support not built in\n"
 msgstr ""
@@ -3264,18 +2896,40 @@ msgstr ""
 msgid "%s: headerRead failed: %s\n"
 msgstr ""
 
-msgid "Cannot sign RPM v3 packages\n"
+#, fuzzy, c-format
+#| msgid "argument is not an RPM package\n"
+msgid "Cannot sign RPM v3 packages: %s\n"
+msgstr "заданный аргумент не является пакетом RPM\n"
+
+#, fuzzy, c-format
+#| msgid "Could not generate output filename for package %s: %s\n"
+msgid "not generating v3 signature for v6 package: %s\n"
+msgstr "Невозможно создать имя файла для пакета %s: %s\n"
+
+#, c-format
+msgid "File signatures not applicable to src.rpm: %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "Could not read from file %s: %s\n"
+msgid "Could not get a file size of %s\n"
+msgstr "Не удалось прочитать из файла %s: %s\n"
+
+#, c-format
+msgid "%s already contains an identical signature, skipping\n"
 msgstr ""
 
 #, c-format
-msgid "%s already contains identical signature, skipping\n"
+msgid "%s already contains a legacy signature\n"
 msgstr ""
 
 #, c-format
 msgid "%s: rpmWriteSignature failed: %s\n"
 msgstr "%s: ошибка rpmWriteSignature: %s\n"
 
-msgid "rpmMkTemp failed\n"
+#, fuzzy, c-format
+#| msgid "rpmMkTemp failed\n"
+msgid "rpmMkTemp failed: %s\n"
 msgstr "Ошибка rpmMkTemp\n"
 
 #, fuzzy, c-format
@@ -3300,11 +2954,489 @@ msgid "headerPutString failed\n"
 msgstr "ошибка headerPutString\n"
 
 #, c-format
+msgid "%s: %s\n"
+msgstr "%s: %s\n"
+
+#, c-format
+msgid "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
+msgstr "Авторские права © 1998-2002 - Red Hat, Inc.\n"
+
+#, c-format
+msgid ""
+"This program may be freely redistributed under the terms of the GNU GPL\n"
+msgstr "Эту программу можно свободно распространять на условиях GNU GPL\n"
+
+#, c-format
+msgid "creating a pipe for --pipe failed: %m\n"
+msgstr "не удалось создать канал для --pipe: %m\n"
+
+#, c-format
+msgid "exec failed\n"
+msgstr "запуск не удался\n"
+
+msgid "Query/Verify package selection options:"
+msgstr ""
+
+msgid "Query/Verify file selection options:"
+msgstr ""
+
+msgid "Query options (with -q or --query):"
+msgstr "Параметры запроса (с -q или --query):"
+
+msgid "Verify options (with -V or --verify):"
+msgstr "Параметры проверки (с -V или --verify):"
+
+msgid "Install/Upgrade/Erase options:"
+msgstr "Параметры Установки/Обновления/Удаления:"
+
+msgid "Common options for all rpm modes and executables:"
+msgstr "Общие параметры для всех режимов и компонентов rpm:"
+
+msgid "one type of query/verify may be performed at a time"
+msgstr "за один раз может быть исполнен только один тип проверки или запроса"
+
+msgid "unexpected query flags"
+msgstr "неожиданные флаги запроса"
+
+msgid "unexpected query format"
+msgstr "неожиданный формат запроса"
+
+msgid "unexpected query source"
+msgstr "неожиданный источник запроса"
+
+msgid "only one major mode may be specified"
+msgstr "может быть указан только один из основных режимов"
+
+msgid "only installation and upgrading may be forced"
+msgstr "--force можно использовать только при установке или обновлении"
+
+msgid "files may only be relocated during package installation"
+msgstr "файлы могут быть перемещены только при установке пакета"
+
+msgid "cannot use --prefix with --relocate or --excludepath"
+msgstr "--prefix нельзя использовать с --relocate или --excludepath"
+
+msgid ""
+"--relocate and --excludepath may only be used when installing new packages"
+msgstr ""
+"варианты --relocate и --excludepath можно использовать только при установке "
+"новых пакетов"
+
+msgid "--prefix may only be used when installing new packages"
+msgstr "вариант --prefix можно использовать только при установке новых пакетов"
+
+msgid "arguments to --prefix must begin with a /"
+msgstr "аргументы для --prefix должны начинаться с /"
+
+msgid ""
+"--hash (-h) may only be specified during package installation and erasure"
+msgstr "--hash (-h) может быть указан только при установке или удалении пакета"
+
+msgid "--percent may only be specified during package installation and erasure"
+msgstr "--percent может быть указан только при установке или удалении пакета"
+
+msgid "--replacepkgs may only be specified during package installation"
+msgstr "--replacepkgs может быть указан только при установке пакета"
+
+msgid "--excludedocs may only be specified during package installation"
+msgstr "--excludedocs может быть указан только при установке пакета"
+
+msgid "--includedocs may only be specified during package installation"
+msgstr "--includedocs может быть указан только при установке пакета"
+
+msgid "only one of --excludedocs and --includedocs may be specified"
+msgstr ""
+"может быть использован только один из параметров --excludedocs или --"
+"includedocs"
+
+msgid "--ignorearch may only be specified during package installation"
+msgstr "--ignorearch может быть указан только при установке пакета"
+
+msgid "--ignoreos may only be specified during package installation"
+msgstr "--ignoreos может быть указан только при установке пакета"
+
+msgid "--ignoresize may only be specified during package installation"
+msgstr "--ignoresize может быть указан только при установке пакета"
+
+msgid "--allmatches may only be specified during package erasure"
+msgstr "--allmatches может быть указан только при удалении пакета"
+
+msgid "--allfiles may only be specified during package installation"
+msgstr "--allfiles может быть указан только при установке пакета"
+
+msgid "--justdb may only be specified during package installation and erasure"
+msgstr "--justdb может быть указан только при установке или удалении пакета"
+
+msgid ""
+"script disabling options may only be specified during package installation "
+"and erasure"
+msgstr ""
+"параметры запрета сценариев могут быть указаны только при установке или "
+"удалении пакета"
+
+msgid ""
+"trigger disabling options may only be specified during package installation "
+"and erasure"
+msgstr ""
+"параметры запрета триггеров могут быть указаны только при установке или "
+"удалении пакета"
+
+msgid ""
+"--nodeps may only be specified during package installation, erasure, and "
+"verification"
+msgstr ""
+"--nodeps может быть указан только при установке, удалении или проверке пакета"
+
+msgid "--test may only be specified during package installation and erasure"
+msgstr "--test может быть указан только при установке или удалении пакета"
+
+msgid "arguments to --root (-r) must begin with a /"
+msgstr "аргументы для --root (-r) должны начинаться с /"
+
+msgid "no packages given for erase"
+msgstr "не заданы пакеты для удаления"
+
+msgid "no packages given for install"
+msgstr "не заданы пакеты для установки"
+
+msgid "no arguments given for query"
+msgstr "не заданы аргументы запроса"
+
+msgid "no arguments given for verify"
+msgstr "не заданы аргументы для проверки"
+
+#, fuzzy
+#| msgid "create uncompressed tar file"
+msgid "create uncompressed archive"
+msgstr "создать несжатый файл tar"
+
+msgid "archive format (pax|cpio)"
+msgstr ""
+
+#, c-format
+msgid "argument is not an RPM package\n"
+msgstr "заданный аргумент не является пакетом RPM\n"
+
+#, c-format
+msgid "error reading header from package\n"
+msgstr "ошибка чтения заголовка из пакета\n"
+
+#, c-format
+msgid "cannot re-open payload: %s\n"
+msgstr "невозможно повторно открыть payload: %s\n"
+
+msgid "initialize database"
+msgstr "инициализировать базу данных"
+
+msgid "rebuild database inverted lists from installed package headers"
+msgstr ""
+"переиндексировать базу инвертированных списков из установленных заголовков "
+"пакетов"
+
+#, fuzzy
+#| msgid "verify database files"
+msgid "verify database"
+msgstr "проверить файлы базы данных"
+
+#, fuzzy
+msgid "salvage database"
+msgstr "инициализировать базу данных"
+
+msgid "export database to stdout header list"
+msgstr ""
+
+msgid "import database from stdin header list"
+msgstr ""
+
+msgid "Database options:"
+msgstr "Параметры базы данных:"
+
+#, c-format
+msgid "buildroot already specified, ignoring %s\n"
+msgstr "buildroot уже указан, %s игнорируется\n"
+
+#, c-format
+msgid "build through %prep (unpack sources and apply patches) from <specfile>"
+msgstr ""
+"выполнить по стадию %prep (развернуть исходники и наложить заплаты) из <файл "
+"спецификации>"
+
+msgid "<specfile>"
+msgstr "<файл спецификации>"
+
+#, c-format
+msgid "build through %conf (%prep, then %conf) from <specfile>"
+msgstr "собрать до %conf (%prep, затем %conf) из <файла спецификации>"
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <specfile>"
+msgstr "собрать до %build (%prep, %conf и компиляция) из <файла спецификации>"
+
+msgid "check build dependencies <specfile>"
+msgstr "проверить зависимости сборки <файла спецификации>"
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <specfile>"
+msgstr ""
+"сборка до %install (%prep, %conf, %build, установка) из <файла спецификации>"
+
+#, c-format
+msgid "verify %files section from <specfile>"
+msgstr "проверить раздел %files из <файл спецификации>"
+
+msgid "build source and binary packages from <specfile>"
+msgstr "собрать исходный и двоичный пакеты по <файл спецификации>"
+
+msgid "build binary package only from <specfile>"
+msgstr "собрать двоичный пакет по <файл спецификации>"
+
+msgid "build source package only from <specfile>"
+msgstr "собрать исходный пакет по <файлу спецификации>"
+
+msgid ""
+"build source package only from <specfile> - calculate dynamic build requires"
+msgstr ""
+"сборка только исходного пакета по <файлу спецификации> - вычислить "
+"динамические зависимости сборки"
+
+#, c-format
+msgid ""
+"build through %prep (unpack sources and apply patches) from <source package>"
+msgstr ""
+"сборка до %prep (распаковать исходники и наложить патчи) из <файла "
+"спецификации>"
+
+msgid "<source package>"
+msgstr "<исходный пакет>"
+
+#, fuzzy, c-format
+#| msgid "build through %conf (%prep, then %conf) from <specfile>"
+msgid "build through %conf (%prep, then %conf) from <source package>"
+msgstr "собрать до %conf (%prep, затем %conf) из <файла спецификации>"
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <source package>"
+msgstr "сборка до %build (%prep, %conf и компиляция) из <исходного пакета>"
+
+msgid "check build dependencies <source package>"
+msgstr "проверить зависимости сборки <исходного пакета>"
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <source "
+"package>"
+msgstr ""
+"собрать через %install (%prep, %conf, %build, затем установить) из "
+"<исходного пакета>"
+
+#, c-format
+msgid "verify %files section from <source package>"
+msgstr "проверить секцию %files <исходного пакета>"
+
+msgid "build source and binary packages from <source package>"
+msgstr "собрать исходный и двоичный пакеты по <файл спецификации>"
+
+msgid "build binary package only from <source package>"
+msgstr "собрать двоичный пакет только из <исходный пакет>"
+
+msgid "build source package only from <source package>"
+msgstr "собрать исходный пакет только из <исходный пакет>"
+
+msgid ""
+"build source package only from <source package> - calculate dynamic build "
+"requires"
+msgstr ""
+
+#, c-format
+msgid "build through %prep (unpack sources and apply patches) from <tarball>"
+msgstr ""
+"выполнить по стадию %prep (развернуть исходники и наложить заплаты) из "
+"<архив tar>"
+
+msgid "<tarball>"
+msgstr "<архив tar>"
+
+#, fuzzy, c-format
+#| msgid "build through %conf (%prep, then %conf) from <specfile>"
+msgid "build through %conf (%prep, then %conf) from <tarball>"
+msgstr "собрать до %conf (%prep, затем %conf) из <файла спецификации>"
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <tarball>"
+msgstr ""
+
+msgid "check build dependencies <tarball>"
+msgstr ""
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <tarball>"
+msgstr ""
+
+#, c-format
+msgid "verify %files section from <tarball>"
+msgstr "проверить секцию %files из <архив tar>"
+
+msgid "build source and binary packages from <tarball>"
+msgstr "собрать исходный и двоичный пакеты из <архив tar>"
+
+msgid "build binary package only from <tarball>"
+msgstr "собрать двоичный пакет из <архив tar>"
+
+msgid "build source package only from <tarball>"
+msgstr "собрать исходный пакет из <архив tar>"
+
+msgid ""
+"build source package only from <tarball> - calculate dynamic build requires"
+msgstr ""
+"собрать исходный пакет только из <архив tar> - вычислить, что требуется для "
+"динамической сборки"
+
+msgid "build binary package from <source package>"
+msgstr "собрать двоичный пакет из <исходный пакет>"
+
+#, c-format
+msgid ""
+"build through %install (%prep, %build, then install) from <source package>"
+msgstr ""
+"выполнить по стадию %install (%prep, %build, затем установка) <исходного "
+"пакета>"
+
+#, fuzzy
+#| msgid "override build root"
+msgid "override build root (DEPRECATED)"
+msgstr "переопределить build root"
+
+msgid "remove build tree when done"
+msgstr "после завершения удалить дерево исходников"
+
+msgid "ignore ExcludeArch: directives from spec file"
+msgstr "игнорировать ExcludeArch: в файле конфигурации"
+
+msgid "debug file state machine"
+msgstr "отладка машины состояния файлов"
+
+msgid "do not execute any stages of the build"
+msgstr "не выполнять никаких этапов сборки"
+
+msgid "do not verify build dependencies"
+msgstr "не проверять зависимости пакета перед сборкой"
+
+msgid "generate package header(s) compatible with (legacy) rpm v3 packaging"
+msgstr "генерация заголовков пакетов, совместимых с устаревшим форматом rpm v3"
+
+#, c-format
+msgid "do not execute %clean stage of the build"
+msgstr "не выполнять этап сборки %clean"
+
+#, c-format
+msgid "do not execute %prep stage of the build"
+msgstr "не выполнять этап сборки %prep"
+
+#, c-format
+msgid "do not execute %check stage of the build"
+msgstr "не выполнять этап сборки %check"
+
+msgid "do not accept i18N msgstr's from specfile"
+msgstr "игнорировать строки i18N из файла спецификации"
+
+msgid "remove sources when done"
+msgstr "после завершения удалить исходники"
+
+msgid "remove specfile when done"
+msgstr "после завершения удалить файл спецификации"
+
+msgid "skip straight to specified stage (only for c,i)"
+msgstr "перейти непосредственно к указанному этапу (только для c,i)"
+
+msgid "override target platform"
+msgstr "переопределить целевую платформу"
+
+msgid "Build options with [ <specfile> | <tarball> | <source package> ]:"
+msgstr ""
+"Параметры сборки с [ <файл спецификации> | <тар архив> | <исходный пакет> ]:"
+
+#, c-format
+msgid "Unable to open spec file %s: %s\n"
+msgstr "Ошибка открытия файла спецификации %s: %s\n"
+
+#, c-format
+msgid "Failed to open tar pipe: %m\n"
+msgstr "Ошибка открытия канала tar: %m\n"
+
+#, c-format
+msgid "Found more than one spec file in %s\n"
+msgstr "В %s найдено несколько файлов спецификации\n"
+
+#, c-format
+msgid "Failed to read spec file from %s\n"
+msgstr "Ошибка чтения файла спецификации из %s\n"
+
+#, c-format
+msgid "Failed to rename %s to %s: %m\n"
+msgstr "Невозможно переименовать %s в %s: %m\n"
+
+#, c-format
+msgid "failed to stat %s: %m\n"
+msgstr "невозможно получить информацию о %s: %m\n"
+
+#, c-format
+msgid "File %s is not a regular file.\n"
+msgstr "Не обычный файл: %s.\n"
+
+#, c-format
+msgid "File %s does not appear to be a specfile.\n"
+msgstr "Файл %s не похож на файл спецификации.\n"
+
+#, c-format
+msgid "Building target platforms: %s\n"
+msgstr "Платформы для сборки: %s\n"
+
+#, c-format
+msgid "Building for target %s\n"
+msgstr "Сборка для платформы %s\n"
+
+#, c-format
 msgid "%s: read manifest failed: %s\n"
 msgstr "%s: ошибка чтения списка файлов: %s\n"
 
 msgid "don't verify header+payload signature"
 msgstr "не проверять подпись заголовока и содержимого"
+
+msgid "verify package signature(s)"
+msgstr "проверить подпись(и) пакета"
+
+msgid "import an armored public key"
+msgstr "импортировать защищённый открытый ключ"
+
+#, fuzzy
+#| msgid "import an armored public key"
+msgid "export an public key"
+msgstr "импортировать защищённый открытый ключ"
+
+msgid "don't import, but tell if it would work or not"
+msgstr "не импортировать, но сообщить будет оно работать или нет"
+
+#, fuzzy
+#| msgid "list keys from RPM keyring"
+msgid "Erase keys from RPM keyring"
+msgstr "перечислить ключи из связки ключей RPM"
+
+msgid "list keys from RPM keyring"
+msgstr "перечислить ключи из связки ключей RPM"
+
+msgid "rebuild the keyring - convert to current backend"
+msgstr ""
+
+msgid "get keys from this backend when rebuilding current backend"
+msgstr ""
+
+msgid "Keyring options:"
+msgstr ""
+
+msgid "no arguments given"
+msgstr "не заданы аргументы"
 
 msgid "getopt string for scripts options"
 msgstr ""
@@ -3315,11 +3447,160 @@ msgstr ""
 msgid "interactive session"
 msgstr ""
 
+#, fuzzy
+#| msgid "sign package(s) files"
+msgid "sign package(s), adding a new signature"
+msgstr "подписать файлы пакетов"
+
+#, fuzzy
+#| msgid "sign package(s) (identical to --addsign)"
+msgid "resign package(s), deleting any previous signatures"
+msgstr "подписать пакет (то же самое что --addsign)"
+
+msgid "delete package signatures"
+msgstr "удалить подписи пакета"
+
+msgid "delete IMA and fsverity file signatures"
+msgstr ""
+
+#, fuzzy
+#| msgid "create rpm v3 header+payload signatures"
+msgid "request legacy rpm v3 header+payload signatures on v4 packages"
+msgstr "создать заголовок и подписи содержимого в формате rpm v3"
+
+#, fuzzy
+#| msgid "create rpm v3 header+payload signatures"
+msgid "request legacy rpm v4 header signatures on v6 packages"
+msgstr "создать заголовок и подписи содержимого в формате rpm v3"
+
+#, fuzzy
+#| msgid "create rpm v3 header+payload signatures"
+msgid "request rpm v6 header signature on v4 packages"
+msgstr "создать заголовок и подписи содержимого в формате rpm v3"
+
+msgid "sign package(s) files"
+msgstr "подписать файлы пакетов"
+
+msgid "generate fsverity signatures for package(s) files"
+msgstr ""
+
+msgid "algorithm to use for verity signatures, default sha256"
+msgstr "алгоритм для проверки подписей, по умолчанию sha256"
+
+msgid "<algorithm>"
+msgstr "<алгоритм>"
+
+msgid "use file signing cert <cert>"
+msgstr ""
+
+msgid "<cert>"
+msgstr "<серт>"
+
+msgid "use file signing key <key>"
+msgstr "использовать <ключ> для подписи файлов"
+
+msgid "<key>"
+msgstr "<ключ>"
+
+msgid "prompt for file signing key password"
+msgstr ""
+
+msgid "Signature options:"
+msgstr "Параметры подписи:"
+
+#, fuzzy, c-format
+#| msgid "You must set \"%%_gpg_name\" in your macro file\n"
+msgid "You must set \"%%_openpgp_sign_id\" in your macro file\n"
+msgstr "Вы должны установить \"%%_gpg_name\" в вашем макрофайле\n"
+
+#, c-format
+msgid ""
+"You must set \"%%_file_signing_key\" in your macro file or on the command "
+"line with --fskpath\n"
+msgstr ""
+
+msgid "--fskpath may only be specified when signing files"
+msgstr ""
+
+msgid "parse spec file(s) to stdout"
+msgstr ""
+
+msgid "query spec file(s)"
+msgstr ""
+
+msgid "interactive macro shell"
+msgstr ""
+
+msgid "operate on binary rpms generated by spec (default)"
+msgstr ""
+
+msgid "operate on binary package header(s) that would be built from spec"
+msgstr ""
+
+msgid "operate on source package header generated by spec"
+msgstr ""
+
+msgid "Spec options:"
+msgstr ""
+
+#, c-format
+msgid "RPM version %s macro shell\n"
+msgstr ""
+
+msgid "no arguments given for parse"
+msgstr ""
+
 msgid "extract an archive"
 msgstr "извлечь архив"
 
 msgid "only print what would be done"
 msgstr ""
+
+msgid "extract into a specific path"
+msgstr ""
+
+#, c-format
+#~ msgid "files over 4GB not supported by cpio, use rpm2archive instead\n"
+#~ msgstr ""
+#~ "файлы размером более 4 ГБ не поддерживаются cpio, вместо этого "
+#~ "используйте rpm2archive\n"
+
+#~ msgid "run build in current directory"
+#~ msgstr "запустить сборку в текущем каталоге"
+
+#~ msgid "sign package(s)"
+#~ msgstr "подписать пакет(ы)"
+
+#, c-format
+#~ msgid "%%{buildroot} couldn't be empty\n"
+#~ msgstr "%%{buildroot} не может быть пустой\n"
+
+#, c-format
+#~ msgid "%%{buildroot} can not be \"/\"\n"
+#~ msgstr "%%{buildroot} не может быть \"/\"\n"
+
+#, c-format
+#~ msgid "line %d: second %%prep\n"
+#~ msgstr "строка %d: второй %%prep\n"
+
+#~ msgid "Only absolute paths are allowed in file triggers"
+#~ msgstr "В триггерах файлов допустимы только абсолютные пути"
+
+#~ msgid "query/verify package(s) with package identifier"
+#~ msgstr "запросить/проверить пакет(ы) по идентификатору пакета"
+
+#~ msgid "query/verify package(s) with header identifier"
+#~ msgstr "запросить/проверить пакет(ы), по идентификатору заголовка"
+
+#~ msgid "illegal signature type"
+#~ msgstr "неверный тип подписи"
+
+#~ msgid "unsupported RPM package version"
+#~ msgstr "неподдерживаемая версия пакета RPM"
+
+#, c-format
+#~ msgid "%s%s"
+#~ msgstr "%s%s"
 
 #, c-format
 #~ msgid "Unsupported version of signature: V%d\n"
@@ -3406,9 +3687,6 @@ msgstr ""
 
 #~ msgid "%a %b %d %Y"
 #~ msgstr "%a %b %d %Y"
-
-#~ msgid "%s saved as %s\n"
-#~ msgstr "%s сохранен как %s\n"
 
 #~ msgid "%s created as %s\n"
 #~ msgstr "%s создан как %s\n"

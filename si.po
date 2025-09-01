@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-04 09:25+0300\n"
+"POT-Creation-Date: 2025-09-01 14:14+0300\n"
 "PO-Revision-Date: 2021-08-19 07:04+0000\n"
 "Last-Translator: Hela Basa <r45xveza@pm.me>\n"
 "Language-Team: Sinhala <https://translate.fedoraproject.org/projects/rpm/"
@@ -18,512 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 4.7.2\n"
 
-#, c-format
-msgid "%s: %s\n"
-msgstr "%s: %s\n"
-
-#, c-format
-msgid "RPM version %s\n"
-msgstr ""
-
-#, c-format
-msgid "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
-msgstr ""
-
-#, c-format
-msgid ""
-"This program may be freely redistributed under the terms of the GNU GPL\n"
-msgstr ""
-
-#, c-format
-msgid "creating a pipe for --pipe failed: %m\n"
-msgstr ""
-
-#, c-format
-msgid "exec failed\n"
-msgstr ""
-
-msgid "create uncompressed tar file"
-msgstr ""
-
-#, c-format
-msgid "argument is not an RPM package\n"
-msgstr ""
-
-#, c-format
-msgid "error reading header from package\n"
-msgstr ""
-
-#, c-format
-msgid "cannot re-open payload: %s\n"
-msgstr ""
-
-#, c-format
-msgid "files over 4GB not supported by cpio, use rpm2archive instead\n"
-msgstr ""
-
-#, c-format
-msgid "buildroot already specified, ignoring %s\n"
-msgstr ""
-
-#, c-format
-msgid "build through %prep (unpack sources and apply patches) from <specfile>"
-msgstr ""
-
-msgid "<specfile>"
-msgstr ""
-
-#, c-format
-msgid "build through %conf (%prep, then %conf) from <specfile>"
-msgstr ""
-
-msgid "build through %build (%prep, %conf, then compile) from <specfile>"
-msgstr ""
-
-msgid "check build dependencies <specfile>"
-msgstr ""
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <specfile>"
-msgstr ""
-
-#, c-format
-msgid "verify %files section from <specfile>"
-msgstr ""
-
-msgid "build source and binary packages from <specfile>"
-msgstr ""
-
-msgid "build binary package only from <specfile>"
-msgstr ""
-
-msgid "build source package only from <specfile>"
-msgstr ""
-
-msgid ""
-"build source package only from <specfile> - calculate dynamic build requires"
-msgstr ""
-
-#, c-format
-msgid ""
-"build through %prep (unpack sources and apply patches) from <source package>"
-msgstr ""
-
-msgid "<source package>"
-msgstr ""
-
-msgid "build through %build (%prep, %conf, then compile) from <source package>"
-msgstr ""
-
-msgid "check build dependencies <source package>"
-msgstr ""
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <source "
-"package>"
-msgstr ""
-
-#, c-format
-msgid "verify %files section from <source package>"
-msgstr ""
-
-msgid "build source and binary packages from <source package>"
-msgstr ""
-
-msgid "build binary package only from <source package>"
-msgstr ""
-
-msgid "build source package only from <source package>"
-msgstr ""
-
-msgid ""
-"build source package only from <source package> - calculate dynamic build "
-"requires"
-msgstr ""
-
-#, c-format
-msgid "build through %prep (unpack sources and apply patches) from <tarball>"
-msgstr ""
-
-msgid "<tarball>"
-msgstr ""
-
-msgid "build through %build (%prep, %conf, then compile) from <tarball>"
-msgstr ""
-
-msgid "check build dependencies <tarball>"
-msgstr ""
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <tarball>"
-msgstr ""
-
-#, c-format
-msgid "verify %files section from <tarball>"
-msgstr ""
-
-msgid "build source and binary packages from <tarball>"
-msgstr ""
-
-msgid "build binary package only from <tarball>"
-msgstr ""
-
-msgid "build source package only from <tarball>"
-msgstr ""
-
-msgid ""
-"build source package only from <tarball> - calculate dynamic build requires"
-msgstr ""
-
-msgid "build binary package from <source package>"
-msgstr ""
-
-msgid ""
-"build through %install (%prep, %build, then install) from <source package>"
-msgstr ""
-
-msgid "override build root"
-msgstr ""
-
-msgid "run build in current directory"
-msgstr ""
-
-msgid "remove build tree when done"
-msgstr ""
-
-msgid "ignore ExcludeArch: directives from spec file"
-msgstr ""
-
-msgid "debug file state machine"
-msgstr ""
-
-msgid "do not execute any stages of the build"
-msgstr ""
-
-msgid "do not verify build dependencies"
-msgstr ""
-
-msgid "generate package header(s) compatible with (legacy) rpm v3 packaging"
-msgstr ""
-
-#, c-format
-msgid "do not execute %clean stage of the build"
-msgstr ""
-
-#, c-format
-msgid "do not execute %prep stage of the build"
-msgstr ""
-
-#, c-format
-msgid "do not execute %check stage of the build"
-msgstr ""
-
-msgid "do not accept i18N msgstr's from specfile"
-msgstr ""
-
-msgid "remove sources when done"
-msgstr ""
-
-msgid "remove specfile when done"
-msgstr ""
-
-msgid "skip straight to specified stage (only for c,i)"
-msgstr ""
-
-msgid "override target platform"
-msgstr ""
-
-msgid "Build options with [ <specfile> | <tarball> | <source package> ]:"
-msgstr ""
-
-msgid "Common options for all rpm modes and executables:"
-msgstr ""
-
-#, c-format
-msgid "Unable to open spec file %s: %s\n"
-msgstr ""
-
-#, c-format
-msgid "Failed to open tar pipe: %m\n"
-msgstr ""
-
-#, c-format
-msgid "Found more than one spec file in %s\n"
-msgstr ""
-
-#, c-format
-msgid "Failed to read spec file from %s\n"
-msgstr ""
-
-#, c-format
-msgid "Failed to rename %s to %s: %m\n"
-msgstr ""
-
-#, c-format
-msgid "failed to stat %s: %m\n"
-msgstr ""
-
-#, c-format
-msgid "File %s is not a regular file.\n"
-msgstr ""
-
-#, c-format
-msgid "File %s does not appear to be a specfile.\n"
-msgstr ""
-
-#, c-format
-msgid "Building target platforms: %s\n"
-msgstr ""
-
-#, c-format
-msgid "Building for target %s\n"
-msgstr ""
-
-msgid "arguments to --root (-r) must begin with a /"
-msgstr ""
-
-msgid "initialize database"
-msgstr ""
-
-msgid "rebuild database inverted lists from installed package headers"
-msgstr ""
-
-msgid "verify database files"
-msgstr ""
-
-msgid "salvage database"
-msgstr ""
-
-msgid "export database to stdout header list"
-msgstr ""
-
-msgid "import database from stdin header list"
-msgstr ""
-
-msgid "Database options:"
-msgstr ""
-
-msgid "only one major mode may be specified"
-msgstr ""
-
-msgid "verify package signature(s)"
-msgstr ""
-
-msgid "import an armored public key"
-msgstr ""
-
-msgid "don't import, but tell if it would work or not"
-msgstr ""
-
-msgid "list keys from RPM keyring"
-msgstr ""
-
-msgid "Keyring options:"
-msgstr ""
-
-msgid "no arguments given"
-msgstr ""
-
-msgid "Query/Verify package selection options:"
-msgstr ""
-
-msgid "Query/Verify file selection options:"
-msgstr ""
-
-msgid "Query options (with -q or --query):"
-msgstr ""
-
-msgid "Verify options (with -V or --verify):"
-msgstr ""
-
-msgid "Install/Upgrade/Erase options:"
-msgstr ""
-
-msgid "one type of query/verify may be performed at a time"
-msgstr ""
-
-msgid "unexpected query flags"
-msgstr ""
-
-msgid "unexpected query format"
-msgstr ""
-
-msgid "unexpected query source"
-msgstr ""
-
-msgid "only installation and upgrading may be forced"
-msgstr ""
-
-msgid "files may only be relocated during package installation"
-msgstr ""
-
-msgid "cannot use --prefix with --relocate or --excludepath"
-msgstr ""
-
-msgid ""
-"--relocate and --excludepath may only be used when installing new packages"
-msgstr ""
-
-msgid "--prefix may only be used when installing new packages"
-msgstr ""
-
-msgid "arguments to --prefix must begin with a /"
-msgstr ""
-
-msgid ""
-"--hash (-h) may only be specified during package installation and erasure"
-msgstr ""
-
-msgid "--percent may only be specified during package installation and erasure"
-msgstr ""
-
-msgid "--replacepkgs may only be specified during package installation"
-msgstr ""
-
-msgid "--excludedocs may only be specified during package installation"
-msgstr ""
-
-msgid "--includedocs may only be specified during package installation"
-msgstr ""
-
-msgid "only one of --excludedocs and --includedocs may be specified"
-msgstr ""
-
-msgid "--ignorearch may only be specified during package installation"
-msgstr ""
-
-msgid "--ignoreos may only be specified during package installation"
-msgstr ""
-
-msgid "--ignoresize may only be specified during package installation"
-msgstr ""
-
-msgid "--allmatches may only be specified during package erasure"
-msgstr ""
-
-msgid "--allfiles may only be specified during package installation"
-msgstr ""
-
-msgid "--justdb may only be specified during package installation and erasure"
-msgstr ""
-
-msgid ""
-"script disabling options may only be specified during package installation "
-"and erasure"
-msgstr ""
-
-msgid ""
-"trigger disabling options may only be specified during package installation "
-"and erasure"
-msgstr ""
-
-msgid ""
-"--nodeps may only be specified during package installation, erasure, and "
-"verification"
-msgstr ""
-
-msgid "--test may only be specified during package installation and erasure"
-msgstr ""
-
-msgid "no packages given for erase"
-msgstr ""
-
-msgid "no packages given for install"
-msgstr ""
-
-msgid "no arguments given for query"
-msgstr ""
-
-msgid "no arguments given for verify"
-msgstr ""
-
-msgid "sign package(s)"
-msgstr ""
-
-msgid "sign package(s) (identical to --addsign)"
-msgstr ""
-
-msgid "delete package signatures"
-msgstr ""
-
-msgid "delete IMA and fsverity file signatures"
-msgstr ""
-
-msgid "create rpm v3 header+payload signatures"
-msgstr ""
-
-msgid "sign package(s) files"
-msgstr ""
-
-msgid "generate fsverity signatures for package(s) files"
-msgstr ""
-
-msgid "algorithm to use for verity signatures, default sha256"
-msgstr ""
-
-msgid "<algorithm>"
-msgstr ""
-
-msgid "use file signing cert <cert>"
-msgstr ""
-
-msgid "<cert>"
-msgstr ""
-
-msgid "use file signing key <key>"
-msgstr ""
-
-msgid "<key>"
-msgstr ""
-
-msgid "prompt for file signing key password"
-msgstr ""
-
-msgid "Signature options:"
-msgstr ""
-
-#, c-format
-msgid "You must set \"%%_gpg_name\" in your macro file\n"
-msgstr ""
-
-#, c-format
-msgid ""
-"You must set \"%%_file_signing_key\" in your macro file or on the command "
-"line with --fskpath\n"
-msgstr ""
-
-msgid "--fskpath may only be specified when signing files"
-msgstr ""
-
-msgid "parse spec file(s) to stdout"
-msgstr ""
-
-msgid "query spec file(s)"
-msgstr ""
-
-msgid "interactive macro shell"
-msgstr ""
-
-msgid "operate on binary rpms generated by spec (default)"
-msgstr ""
-
-msgid "operate on binary package header(s) that would be built from spec"
-msgstr ""
-
-msgid "operate on source package header generated by spec"
-msgstr ""
-
-msgid "use the following query format"
-msgstr ""
-
-msgid "Spec options:"
-msgstr ""
-
-#, c-format
-msgid "RPM version %s macro shell\n"
-msgstr ""
-
-msgid "no arguments given for parse"
+msgid "unable to parse _buildtime macro\n"
 msgstr ""
 
 msgid "unable to parse SOURCE_DATE_EPOCH\n"
@@ -553,11 +48,17 @@ msgid "Failed build dependencies:\n"
 msgstr ""
 
 #, c-format
+msgid "failed to create package build directory %s: %s\n"
+msgstr ""
+
+#, c-format
 msgid "setting %s=%s\n"
 msgstr ""
 
 #, c-format
-msgid "source_date_epoch_from_changelog set but %%changelog is missing\n"
+msgid ""
+"%%source_date_epoch_from_changelog is set, but %%changelog has no entries to "
+"take a date from\n"
 msgstr ""
 
 msgid ""
@@ -630,11 +131,21 @@ msgid "File must begin with \"/\": %s\n"
 msgstr ""
 
 #, c-format
+msgid ""
+"%%clamp_mtime_to_source_date_epoch is deprecated, please use "
+"%%build_mtime_policy\n"
+msgstr ""
+
+#, c-format
 msgid "unable to parse %s=%s\n"
 msgstr ""
 
 #, c-format
-msgid "Unknown file digest algorithm %u, falling back to MD5\n"
+msgid "Unknown mtime policy '%s'\n"
+msgstr ""
+
+#, c-format
+msgid "Unknown file digest algorithm %u, falling back to %u\n"
 msgstr ""
 
 #, c-format
@@ -861,7 +372,19 @@ msgid "Finished binary package job, result %d, filename %s\n"
 msgstr ""
 
 #, c-format
+msgid "line %d: Error parsing script: %s: %s\n"
+msgstr ""
+
+#, c-format
+msgid "line %d: Bad %s option %s: %s\n"
+msgstr ""
+
+#, c-format
 msgid "line %d: second %s\n"
+msgstr ""
+
+#, c-format
+msgid "line %d: append and prepend specified: %s\n"
 msgstr ""
 
 #, c-format
@@ -969,6 +492,10 @@ msgid "%s field must be present in package: %s\n"
 msgstr ""
 
 #, c-format
+msgid "%s field must be present before build in package: %s\n"
+msgstr ""
+
+#, c-format
 msgid "Duplicate %s entries in package: %s\n"
 msgstr ""
 
@@ -1039,6 +566,10 @@ msgid "line %d: Duplicate BuildArch entry: %s\n"
 msgstr ""
 
 #, c-format
+msgid "line %d: Only noarch is allowed after the build: %s\n"
+msgstr ""
+
+#, c-format
 msgid "line %d: Only noarch subpackages are supported: %s\n"
 msgstr ""
 
@@ -1062,11 +593,11 @@ msgid "line %d: Unknown tag: %s\n"
 msgstr ""
 
 #, c-format
-msgid "%%{buildroot} couldn't be empty\n"
+msgid "line %d: Tag not allowed after build is done: %s\n"
 msgstr ""
 
 #, c-format
-msgid "%%{buildroot} can not be \"/\"\n"
+msgid "Invalid buildroot: '%s'\n"
 msgstr ""
 
 #, c-format
@@ -1097,15 +628,6 @@ msgstr ""
 msgid "Invalid patch number %s: %s\n"
 msgstr ""
 
-#, c-format
-msgid "line %d: second %%prep\n"
-msgstr ""
-
-#, c-format
-msgid ""
-"%%patchN is deprecated (%i usages found), use %%patch N (or %%patch -P N)\n"
-msgstr ""
-
 msgid "Dependency tokens must begin with alpha-numeric, '_' or '/'"
 msgstr ""
 
@@ -1121,6 +643,9 @@ msgstr ""
 msgid "Version required"
 msgstr ""
 
+msgid "file trigger conditions must begin with '/'"
+msgstr ""
+
 msgid "Only package names are allowed in Obsoletes"
 msgstr ""
 
@@ -1128,9 +653,6 @@ msgid "It's not recommended to have unversioned Obsoletes"
 msgstr ""
 
 msgid "It's not recommended to use '>' in Obsoletes"
-msgstr ""
-
-msgid "Only absolute paths are allowed in file triggers"
 msgstr ""
 
 msgid "Trigger fired by the same package is already defined in spec file"
@@ -1170,10 +692,6 @@ msgstr ""
 
 #, c-format
 msgid "line %d: unsupported internal script: %s\n"
-msgstr ""
-
-#, c-format
-msgid "line %d: file trigger condition must begin with '/': %s"
 msgstr ""
 
 #, c-format
@@ -1221,6 +739,10 @@ msgid "%s:%d: malformed %%include statement\n"
 msgstr ""
 
 #, c-format
+msgid "%%patchN is obsolete, use %%patch N (or %%patch -P N): %s\n"
+msgstr ""
+
+#, c-format
 msgid "encoding %s not supported by system\n"
 msgstr ""
 
@@ -1240,7 +762,32 @@ msgstr ""
 msgid "line %d doesn't belong to any section: %s\n"
 msgstr ""
 
+#, c-format
+msgid "line %d: Unknown buildsystem: %s\n"
+msgstr ""
+
+#, c-format
+msgid ""
+"line %d: Required parametric macro %%%s not defined for buildsystem %s\n"
+msgstr ""
+
+#, c-format
+msgid "failed to write buildsystem %s %%%s: %s\n"
+msgstr ""
+
+#, c-format
+msgid "failed to create temp file for buildsystem: %s\n"
+msgstr ""
+
+#, c-format
+msgid "Section %s is not allowed after build is done!\n"
+msgstr ""
+
 msgid "No compatible architectures found for build\n"
+msgstr ""
+
+#, c-format
+msgid "invalid rpm format %d requested, using %d\n"
 msgstr ""
 
 #, c-format
@@ -1332,6 +879,10 @@ msgstr ""
 msgid "failed to write all data to %s: %s\n"
 msgstr ""
 
+#, c-format
+msgid "invalid or out of order path from generator: %s\n"
+msgstr ""
+
 msgid "Empty file classifier\n"
 msgstr ""
 
@@ -1363,6 +914,9 @@ msgid "Failed to find %s:\n"
 msgstr ""
 
 msgid "Deprecated external dependency generator is used!\n"
+msgstr ""
+
+msgid "External dependency generator is incompatible with v6 packages\n"
 msgstr ""
 
 #, c-format
@@ -1489,7 +1043,7 @@ msgid "%s%s created as %s%s\n"
 msgstr ""
 
 #, c-format
-msgid "%s %s: remove failed: %s\n"
+msgid "%s %s%s: remove failed: %s\n"
 msgstr ""
 
 msgid "directory"
@@ -1616,7 +1170,35 @@ msgid "array iterator used with different sized arrays"
 msgstr ""
 
 #, c-format
+msgid "%s: reading of public key failed.\n"
+msgstr ""
+
+#, c-format
+msgid "failed to create keyring directory %s: %s\n"
+msgstr ""
+
+#, c-format
+msgid "failed to import key: %s: %s\n"
+msgstr ""
+
+#, c-format
+msgid "Can't create writelock for keyring at %s: %s\n"
+msgstr ""
+
+#, c-format
+msgid "Can't acquire writelock for keyring at %s\n"
+msgstr ""
+
+#, c-format
+msgid "%s is not a valid public key\n"
+msgstr ""
+
+#, c-format
 msgid "RPM v3 packages are deprecated: %s\n"
+msgstr ""
+
+#, c-format
+msgid "RPM version %s\n"
 msgstr ""
 
 msgid "Error writing to stdout"
@@ -1723,9 +1305,6 @@ msgid "debug payload file state machine"
 msgstr ""
 
 msgid "debug rpmio I/O"
-msgstr ""
-
-msgid "disable user namespace support"
 msgstr ""
 
 #, c-format
@@ -1947,12 +1526,6 @@ msgstr ""
 msgid "query/verify a package file"
 msgstr ""
 
-msgid "query/verify package(s) with package identifier"
-msgstr ""
-
-msgid "query/verify package(s) with header identifier"
-msgstr ""
-
 msgid "rpm query mode"
 msgstr ""
 
@@ -1966,6 +1539,9 @@ msgid "query the package(s) triggered by the package"
 msgstr ""
 
 msgid "rpm verify mode"
+msgstr ""
+
+msgid "query/verify the package(s) which conflict with a dependency"
 msgstr ""
 
 msgid "query/verify the package(s) which require a dependency"
@@ -2023,6 +1599,9 @@ msgid "dump basic file information"
 msgstr ""
 
 msgid "list files in package"
+msgstr ""
+
+msgid "use the following query format"
 msgstr ""
 
 msgid "display the states of the listed files"
@@ -2436,15 +2015,15 @@ msgid "Wrong number of entries for tag %s: %u found but %u expected.\n"
 msgstr ""
 
 #, c-format
-msgid "Malformed data for tag %s: %u bytes found but %lu expected.\n"
+msgid "Malformed data for tag %s: %u bytes found but %<PRIu64> expected.\n"
 msgstr ""
 
 #, c-format
-msgid "%s: base64 decode failed, len %li\n"
+msgid "%s: base64 decode failed, len %zu\n"
 msgstr ""
 
 #, c-format
-msgid "%s: base64 decode success, len %li\n"
+msgid "%s: base64 decode success, len %zu\n"
 msgstr ""
 
 msgid "Bad magic"
@@ -2474,7 +2053,7 @@ msgstr ""
 msgid "Archive file not in header"
 msgstr ""
 
-msgid "Invalid symlink"
+msgid "Unsafe symlink"
 msgstr ""
 
 msgid "File from package already exists as a directory in system"
@@ -2551,6 +2130,10 @@ msgid "error reading from file %s\n"
 msgstr ""
 
 #, c-format
+msgid "package format not supported: %s\n"
+msgstr ""
+
+#, c-format
 msgid "\"%s\" specifies multiple packages:\n"
 msgstr ""
 
@@ -2563,12 +2146,6 @@ msgid "Installing %s\n"
 msgstr ""
 
 msgid "not an rpm package"
-msgstr ""
-
-msgid "illegal signature type"
-msgstr ""
-
-msgid "unsupported RPM package version"
 msgstr ""
 
 #, c-format
@@ -2710,6 +2287,10 @@ msgid "cannot open %s at %s:%d: %m\n"
 msgstr ""
 
 #, c-format
+msgid "Ignoring %s at %s:%d\n"
+msgstr ""
+
+#, c-format
 msgid "missing architecture for %s at %s:%d\n"
 msgstr ""
 
@@ -2767,6 +2348,15 @@ msgstr ""
 msgid "Unknown format"
 msgstr ""
 
+#, c-format
+msgid "erasing gpg-pubkey packages is deprecated; use rpmkeys --delete %s\n"
+msgstr ""
+
+msgid ""
+"public keys can not be installed as gpg-pubkey packages; use rpmkeys --"
+"import <keyfile> for that\n"
+msgstr ""
+
 msgid "install"
 msgstr ""
 
@@ -2796,15 +2386,11 @@ msgid "missing ')' in package label: %s\n"
 msgstr ""
 
 #, c-format
-msgid "%s: reading of public key failed.\n"
-msgstr ""
-
-#, c-format
 msgid "unknown keyring type: %s, using rpmdb\n"
 msgstr ""
 
 #, c-format
-msgid "failed to import key: %s: %s\n"
+msgid "unknown keyring type: %s\n"
 msgstr ""
 
 #, c-format
@@ -2831,6 +2417,10 @@ msgid "%s tag %u: invalid size %u"
 msgstr ""
 
 #, c-format
+msgid "%s tag %u: invalid base64"
+msgstr ""
+
+#, c-format
 msgid "%s tag %u: invalid OpenPGP signature"
 msgstr ""
 
@@ -2839,17 +2429,25 @@ msgid "%s: tag %u: invalid hex"
 msgstr ""
 
 #, c-format
-msgid "%s%s%s %s"
+msgid "%s %s%s %s"
 msgstr ""
 
 msgid "digest"
 msgstr ""
 
 #, c-format
-msgid "%s%s"
+msgid "%s OpenPGP %s"
+msgstr ""
+
+#, c-format
+msgid "%s OpenPGP %s %s"
 msgstr ""
 
 msgid "signature"
+msgstr ""
+
+#, c-format
+msgid ", key fingerprint: %s"
 msgstr ""
 
 msgid "header"
@@ -2858,10 +2456,10 @@ msgstr ""
 msgid "package"
 msgstr ""
 
-msgid "Header "
+msgid "Header"
 msgstr ""
 
-msgid "Payload "
+msgid "Payload"
 msgstr ""
 
 msgid "Unable to reload signature header.\n"
@@ -2938,7 +2536,7 @@ msgstr ""
 msgid "syntax error in expression"
 msgstr ""
 
-msgid "unsupported funcion"
+msgid "unsupported function"
 msgstr ""
 
 msgid "unmatched ("
@@ -3044,7 +2642,15 @@ msgid "A %% is followed by an unparseable macro\n"
 msgstr ""
 
 #, c-format
-msgid "======================== active %d empty %d\n"
+msgid "unexpected argument to non-parametric macro %%%s\n"
+msgstr ""
+
+#, c-format
+msgid "macro value out of range for int: %<PRIu64> using %i instead.\n"
+msgstr ""
+
+#, c-format
+msgid "======================== active %zu empty %d\n"
 msgstr ""
 
 #, c-format
@@ -3116,6 +2722,14 @@ msgid "(none)"
 msgstr ""
 
 #, c-format
+msgid "Could not find url helper: \"%s\"\n"
+msgstr ""
+
+#, c-format
+msgid "Executing url helper \"%s\" failed with status %i\n"
+msgstr ""
+
+#, c-format
 msgid "%s: Fwrite failed: %s\n"
 msgstr ""
 
@@ -3127,19 +2741,12 @@ msgstr ""
 msgid "%s: Fflush failed: %s\n"
 msgstr ""
 
-msgid "Unsupported OpenPGP signature\n"
+#, c-format
+msgid "Expanding signing macro %s failed\n"
 msgstr ""
 
 #, c-format
-msgid "Unsupported OpenPGP hash algorithm %u\n"
-msgstr ""
-
-#, c-format
-msgid "Unsupported OpenPGP pubkey algorithm %u\n"
-msgstr ""
-
-#, c-format
-msgid "Deprecated OpenPGP signature version %d\n"
+msgid "Invalid sign command: %s\n"
 msgstr ""
 
 #, c-format
@@ -3166,17 +2773,34 @@ msgid "Could not read from file %s: %s\n"
 msgstr ""
 
 #, c-format
-msgid "gpg waitpid failed (%s)\n"
+msgid "%s waitpid failed (%s)\n"
 msgstr ""
 
 #, c-format
-msgid "gpg exec failed (%d)\n"
+msgid "%s exec failed (%d)\n"
 msgstr ""
 
-msgid "gpg failed to write signature\n"
+#, c-format
+msgid "failed to write signature: %s\n"
 msgstr ""
 
-msgid "unable to read the signature\n"
+#, c-format
+msgid "unable to read the signature: %s\n"
+msgstr ""
+
+msgid "Unsupported OpenPGP signature\n"
+msgstr ""
+
+#, c-format
+msgid "Unsupported OpenPGP hash algorithm %u\n"
+msgstr ""
+
+#, c-format
+msgid "Deprecated OpenPGP signature version %d\n"
+msgstr ""
+
+#, c-format
+msgid "Unsupported OpenPGP pubkey algorithm %u for rpm v3/v4 signatures\n"
 msgstr ""
 
 msgid "file signing support not built in\n"
@@ -3204,18 +2828,36 @@ msgstr ""
 msgid "%s: headerRead failed: %s\n"
 msgstr ""
 
-msgid "Cannot sign RPM v3 packages\n"
+#, c-format
+msgid "Cannot sign RPM v3 packages: %s\n"
 msgstr ""
 
 #, c-format
-msgid "%s already contains identical signature, skipping\n"
+msgid "not generating v3 signature for v6 package: %s\n"
+msgstr ""
+
+#, c-format
+msgid "File signatures not applicable to src.rpm: %s\n"
+msgstr ""
+
+#, c-format
+msgid "Could not get a file size of %s\n"
+msgstr ""
+
+#, c-format
+msgid "%s already contains an identical signature, skipping\n"
+msgstr ""
+
+#, c-format
+msgid "%s already contains a legacy signature\n"
 msgstr ""
 
 #, c-format
 msgid "%s: rpmWriteSignature failed: %s\n"
 msgstr ""
 
-msgid "rpmMkTemp failed\n"
+#, c-format
+msgid "rpmMkTemp failed: %s\n"
 msgstr ""
 
 #, c-format
@@ -3239,10 +2881,448 @@ msgid "headerPutString failed\n"
 msgstr ""
 
 #, c-format
+msgid "%s: %s\n"
+msgstr "%s: %s\n"
+
+#, c-format
+msgid "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
+msgstr ""
+
+#, c-format
+msgid ""
+"This program may be freely redistributed under the terms of the GNU GPL\n"
+msgstr ""
+
+#, c-format
+msgid "creating a pipe for --pipe failed: %m\n"
+msgstr ""
+
+#, c-format
+msgid "exec failed\n"
+msgstr ""
+
+msgid "Query/Verify package selection options:"
+msgstr ""
+
+msgid "Query/Verify file selection options:"
+msgstr ""
+
+msgid "Query options (with -q or --query):"
+msgstr ""
+
+msgid "Verify options (with -V or --verify):"
+msgstr ""
+
+msgid "Install/Upgrade/Erase options:"
+msgstr ""
+
+msgid "Common options for all rpm modes and executables:"
+msgstr ""
+
+msgid "one type of query/verify may be performed at a time"
+msgstr ""
+
+msgid "unexpected query flags"
+msgstr ""
+
+msgid "unexpected query format"
+msgstr ""
+
+msgid "unexpected query source"
+msgstr ""
+
+msgid "only one major mode may be specified"
+msgstr ""
+
+msgid "only installation and upgrading may be forced"
+msgstr ""
+
+msgid "files may only be relocated during package installation"
+msgstr ""
+
+msgid "cannot use --prefix with --relocate or --excludepath"
+msgstr ""
+
+msgid ""
+"--relocate and --excludepath may only be used when installing new packages"
+msgstr ""
+
+msgid "--prefix may only be used when installing new packages"
+msgstr ""
+
+msgid "arguments to --prefix must begin with a /"
+msgstr ""
+
+msgid ""
+"--hash (-h) may only be specified during package installation and erasure"
+msgstr ""
+
+msgid "--percent may only be specified during package installation and erasure"
+msgstr ""
+
+msgid "--replacepkgs may only be specified during package installation"
+msgstr ""
+
+msgid "--excludedocs may only be specified during package installation"
+msgstr ""
+
+msgid "--includedocs may only be specified during package installation"
+msgstr ""
+
+msgid "only one of --excludedocs and --includedocs may be specified"
+msgstr ""
+
+msgid "--ignorearch may only be specified during package installation"
+msgstr ""
+
+msgid "--ignoreos may only be specified during package installation"
+msgstr ""
+
+msgid "--ignoresize may only be specified during package installation"
+msgstr ""
+
+msgid "--allmatches may only be specified during package erasure"
+msgstr ""
+
+msgid "--allfiles may only be specified during package installation"
+msgstr ""
+
+msgid "--justdb may only be specified during package installation and erasure"
+msgstr ""
+
+msgid ""
+"script disabling options may only be specified during package installation "
+"and erasure"
+msgstr ""
+
+msgid ""
+"trigger disabling options may only be specified during package installation "
+"and erasure"
+msgstr ""
+
+msgid ""
+"--nodeps may only be specified during package installation, erasure, and "
+"verification"
+msgstr ""
+
+msgid "--test may only be specified during package installation and erasure"
+msgstr ""
+
+msgid "arguments to --root (-r) must begin with a /"
+msgstr ""
+
+msgid "no packages given for erase"
+msgstr ""
+
+msgid "no packages given for install"
+msgstr ""
+
+msgid "no arguments given for query"
+msgstr ""
+
+msgid "no arguments given for verify"
+msgstr ""
+
+msgid "create uncompressed archive"
+msgstr ""
+
+msgid "archive format (pax|cpio)"
+msgstr ""
+
+#, c-format
+msgid "argument is not an RPM package\n"
+msgstr ""
+
+#, c-format
+msgid "error reading header from package\n"
+msgstr ""
+
+#, c-format
+msgid "cannot re-open payload: %s\n"
+msgstr ""
+
+msgid "initialize database"
+msgstr ""
+
+msgid "rebuild database inverted lists from installed package headers"
+msgstr ""
+
+msgid "verify database"
+msgstr ""
+
+msgid "salvage database"
+msgstr ""
+
+msgid "export database to stdout header list"
+msgstr ""
+
+msgid "import database from stdin header list"
+msgstr ""
+
+msgid "Database options:"
+msgstr ""
+
+#, c-format
+msgid "buildroot already specified, ignoring %s\n"
+msgstr ""
+
+#, c-format
+msgid "build through %prep (unpack sources and apply patches) from <specfile>"
+msgstr ""
+
+msgid "<specfile>"
+msgstr ""
+
+#, c-format
+msgid "build through %conf (%prep, then %conf) from <specfile>"
+msgstr ""
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <specfile>"
+msgstr ""
+
+msgid "check build dependencies <specfile>"
+msgstr ""
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <specfile>"
+msgstr ""
+
+#, c-format
+msgid "verify %files section from <specfile>"
+msgstr ""
+
+msgid "build source and binary packages from <specfile>"
+msgstr ""
+
+msgid "build binary package only from <specfile>"
+msgstr ""
+
+msgid "build source package only from <specfile>"
+msgstr ""
+
+msgid ""
+"build source package only from <specfile> - calculate dynamic build requires"
+msgstr ""
+
+#, c-format
+msgid ""
+"build through %prep (unpack sources and apply patches) from <source package>"
+msgstr ""
+
+msgid "<source package>"
+msgstr ""
+
+#, c-format
+msgid "build through %conf (%prep, then %conf) from <source package>"
+msgstr ""
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <source package>"
+msgstr ""
+
+msgid "check build dependencies <source package>"
+msgstr ""
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <source "
+"package>"
+msgstr ""
+
+#, c-format
+msgid "verify %files section from <source package>"
+msgstr ""
+
+msgid "build source and binary packages from <source package>"
+msgstr ""
+
+msgid "build binary package only from <source package>"
+msgstr ""
+
+msgid "build source package only from <source package>"
+msgstr ""
+
+msgid ""
+"build source package only from <source package> - calculate dynamic build "
+"requires"
+msgstr ""
+
+#, c-format
+msgid "build through %prep (unpack sources and apply patches) from <tarball>"
+msgstr ""
+
+msgid "<tarball>"
+msgstr ""
+
+#, c-format
+msgid "build through %conf (%prep, then %conf) from <tarball>"
+msgstr ""
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <tarball>"
+msgstr ""
+
+msgid "check build dependencies <tarball>"
+msgstr ""
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <tarball>"
+msgstr ""
+
+#, c-format
+msgid "verify %files section from <tarball>"
+msgstr ""
+
+msgid "build source and binary packages from <tarball>"
+msgstr ""
+
+msgid "build binary package only from <tarball>"
+msgstr ""
+
+msgid "build source package only from <tarball>"
+msgstr ""
+
+msgid ""
+"build source package only from <tarball> - calculate dynamic build requires"
+msgstr ""
+
+msgid "build binary package from <source package>"
+msgstr ""
+
+#, c-format
+msgid ""
+"build through %install (%prep, %build, then install) from <source package>"
+msgstr ""
+
+msgid "override build root (DEPRECATED)"
+msgstr ""
+
+msgid "remove build tree when done"
+msgstr ""
+
+msgid "ignore ExcludeArch: directives from spec file"
+msgstr ""
+
+msgid "debug file state machine"
+msgstr ""
+
+msgid "do not execute any stages of the build"
+msgstr ""
+
+msgid "do not verify build dependencies"
+msgstr ""
+
+msgid "generate package header(s) compatible with (legacy) rpm v3 packaging"
+msgstr ""
+
+#, c-format
+msgid "do not execute %clean stage of the build"
+msgstr ""
+
+#, c-format
+msgid "do not execute %prep stage of the build"
+msgstr ""
+
+#, c-format
+msgid "do not execute %check stage of the build"
+msgstr ""
+
+msgid "do not accept i18N msgstr's from specfile"
+msgstr ""
+
+msgid "remove sources when done"
+msgstr ""
+
+msgid "remove specfile when done"
+msgstr ""
+
+msgid "skip straight to specified stage (only for c,i)"
+msgstr ""
+
+msgid "override target platform"
+msgstr ""
+
+msgid "Build options with [ <specfile> | <tarball> | <source package> ]:"
+msgstr ""
+
+#, c-format
+msgid "Unable to open spec file %s: %s\n"
+msgstr ""
+
+#, c-format
+msgid "Failed to open tar pipe: %m\n"
+msgstr ""
+
+#, c-format
+msgid "Found more than one spec file in %s\n"
+msgstr ""
+
+#, c-format
+msgid "Failed to read spec file from %s\n"
+msgstr ""
+
+#, c-format
+msgid "Failed to rename %s to %s: %m\n"
+msgstr ""
+
+#, c-format
+msgid "failed to stat %s: %m\n"
+msgstr ""
+
+#, c-format
+msgid "File %s is not a regular file.\n"
+msgstr ""
+
+#, c-format
+msgid "File %s does not appear to be a specfile.\n"
+msgstr ""
+
+#, c-format
+msgid "Building target platforms: %s\n"
+msgstr ""
+
+#, c-format
+msgid "Building for target %s\n"
+msgstr ""
+
+#, c-format
 msgid "%s: read manifest failed: %s\n"
 msgstr ""
 
 msgid "don't verify header+payload signature"
+msgstr ""
+
+msgid "verify package signature(s)"
+msgstr ""
+
+msgid "import an armored public key"
+msgstr ""
+
+msgid "export an public key"
+msgstr ""
+
+msgid "don't import, but tell if it would work or not"
+msgstr ""
+
+msgid "Erase keys from RPM keyring"
+msgstr ""
+
+msgid "list keys from RPM keyring"
+msgstr ""
+
+msgid "rebuild the keyring - convert to current backend"
+msgstr ""
+
+msgid "get keys from this backend when rebuilding current backend"
+msgstr ""
+
+msgid "Keyring options:"
+msgstr ""
+
+msgid "no arguments given"
 msgstr ""
 
 msgid "getopt string for scripts options"
@@ -3254,8 +3334,103 @@ msgstr ""
 msgid "interactive session"
 msgstr ""
 
+msgid "sign package(s), adding a new signature"
+msgstr ""
+
+msgid "resign package(s), deleting any previous signatures"
+msgstr ""
+
+msgid "delete package signatures"
+msgstr ""
+
+msgid "delete IMA and fsverity file signatures"
+msgstr ""
+
+msgid "request legacy rpm v3 header+payload signatures on v4 packages"
+msgstr ""
+
+msgid "request legacy rpm v4 header signatures on v6 packages"
+msgstr ""
+
+msgid "request rpm v6 header signature on v4 packages"
+msgstr ""
+
+msgid "sign package(s) files"
+msgstr ""
+
+msgid "generate fsverity signatures for package(s) files"
+msgstr ""
+
+msgid "algorithm to use for verity signatures, default sha256"
+msgstr ""
+
+msgid "<algorithm>"
+msgstr ""
+
+msgid "use file signing cert <cert>"
+msgstr ""
+
+msgid "<cert>"
+msgstr ""
+
+msgid "use file signing key <key>"
+msgstr ""
+
+msgid "<key>"
+msgstr ""
+
+msgid "prompt for file signing key password"
+msgstr ""
+
+msgid "Signature options:"
+msgstr ""
+
+#, c-format
+msgid "You must set \"%%_openpgp_sign_id\" in your macro file\n"
+msgstr ""
+
+#, c-format
+msgid ""
+"You must set \"%%_file_signing_key\" in your macro file or on the command "
+"line with --fskpath\n"
+msgstr ""
+
+msgid "--fskpath may only be specified when signing files"
+msgstr ""
+
+msgid "parse spec file(s) to stdout"
+msgstr ""
+
+msgid "query spec file(s)"
+msgstr ""
+
+msgid "interactive macro shell"
+msgstr ""
+
+msgid "operate on binary rpms generated by spec (default)"
+msgstr ""
+
+msgid "operate on binary package header(s) that would be built from spec"
+msgstr ""
+
+msgid "operate on source package header generated by spec"
+msgstr ""
+
+msgid "Spec options:"
+msgstr ""
+
+#, c-format
+msgid "RPM version %s macro shell\n"
+msgstr ""
+
+msgid "no arguments given for parse"
+msgstr ""
+
 msgid "extract an archive"
 msgstr ""
 
 msgid "only print what would be done"
+msgstr ""
+
+msgid "extract into a specific path"
 msgstr ""

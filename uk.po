@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-04 09:25+0300\n"
+"POT-Creation-Date: 2025-09-01 14:14+0300\n"
 "PO-Revision-Date: 2025-08-21 12:53+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/rpm/"
@@ -21,566 +21,10 @@ msgstr ""
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 5.13\n"
 
-#, c-format
-msgid "%s: %s\n"
-msgstr "%s: %s\n"
-
-#, c-format
-msgid "RPM version %s\n"
-msgstr "Версія RPM %s\n"
-
-#, c-format
-msgid "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
-msgstr "© Red Hat, Inc., 1998–2002\n"
-
-#, c-format
-msgid ""
-"This program may be freely redistributed under the terms of the GNU GPL\n"
-msgstr "Цю програму можна вільно поширювати за умови дотримання GNU GPL\n"
-
-#, c-format
-msgid "creating a pipe for --pipe failed: %m\n"
-msgstr "спроба створення каналу для параметра --pipe зазнала невдачі: %m\n"
-
-#, c-format
-msgid "exec failed\n"
-msgstr "помилка виконання exec\n"
-
-msgid "create uncompressed tar file"
-msgstr "створити нестиснений файл tar"
-
-#, c-format
-msgid "argument is not an RPM package\n"
-msgstr "аргумент не є пакунком RPM\n"
-
-#, c-format
-msgid "error reading header from package\n"
-msgstr "помилка під час спроби читання заголовка з пакунка\n"
-
-#, c-format
-msgid "cannot re-open payload: %s\n"
-msgstr "не вдалося повторно відкрити вміст: %s\n"
-
-#, c-format
-msgid "files over 4GB not supported by cpio, use rpm2archive instead\n"
-msgstr ""
-"підтримки файлів, розмір яких перевищує 4 ГБ, у cpio не передбачено, "
-"скористайтеся rpm2archive\n"
-
-#, c-format
-msgid "buildroot already specified, ignoring %s\n"
-msgstr "buildroot вже вказано, ігноруємо %s\n"
-
-#, c-format
-msgid "build through %prep (unpack sources and apply patches) from <specfile>"
-msgstr ""
-"виконати команди аж до %prep (розпакувати коди і накласти латки) з <файла "
-"специфікації>"
-
-msgid "<specfile>"
-msgstr "<файл специфікації>"
-
-#, c-format
-msgid "build through %conf (%prep, then %conf) from <specfile>"
-msgstr ""
-"виконати аж до команди %conf (%prep, потім %conf) з <файл специфікації>"
-
-msgid "build through %build (%prep, %conf, then compile) from <specfile>"
-msgstr ""
-"виконати аж до команди %build (%prep, %conf, потім збирання) з <файла "
-"специфікації>"
-
-msgid "check build dependencies <specfile>"
-msgstr "перевірити залежності збирання <файла специфікації>"
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <specfile>"
-msgstr ""
-"виконати аж до команди %install (%prep, %conf, %build, потім встановити) з "
-"<файла специфікації>"
-
-#, c-format
-msgid "verify %files section from <specfile>"
-msgstr "перевірити розділ %files з <файла специфікації>"
-
-msgid "build source and binary packages from <specfile>"
-msgstr "зібрати пакунки з кодами та бінарними файлами за <файлом специфікації>"
-
-msgid "build binary package only from <specfile>"
-msgstr "зібрати за <файлом специфікації> лише пакунок з бінарними файлами"
-
-msgid "build source package only from <specfile>"
-msgstr "зібрати за <файлом специфікації> лише пакунок з кодами"
-
-msgid ""
-"build source package only from <specfile> - calculate dynamic build requires"
-msgstr ""
-"зібрати пакунок початкових кодів лише з <файл специфікації> — обчислити "
-"залежності збирання динамічних залежностей"
-
-#, c-format
-msgid ""
-"build through %prep (unpack sources and apply patches) from <source package>"
-msgstr ""
-"виконати команди аж до %prep (розпакувати коди і накласти латки) з <пакунка "
-"з початковим кодом>"
-
-msgid "<source package>"
-msgstr "<пакунок з кодами>"
-
-msgid "build through %build (%prep, %conf, then compile) from <source package>"
-msgstr ""
-"виконати аж до команди %build (%prep, %conf, потім збирання) з <пакунок з "
-"кодами>"
-
-msgid "check build dependencies <source package>"
-msgstr "перевірити залежності збирання <пакунка з кодами>"
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <source "
-"package>"
-msgstr ""
-"виконати аж до команди %install (%prep, %conf, %build, потім встановити) з "
-"<пакунка з кодами>"
-
-#, c-format
-msgid "verify %files section from <source package>"
-msgstr "перевірити розділ %files з <пакунка з початковим кодом>"
-
-msgid "build source and binary packages from <source package>"
-msgstr ""
-"зібрати за <пакунком з кодами> пакунок з бінарними файлами та пакунок з "
-"початковим кодом"
-
-msgid "build binary package only from <source package>"
-msgstr "зібрати за <пакунком з кодами> лише пакунок з бінарними файлами"
-
-msgid "build source package only from <source package>"
-msgstr ""
-"зібрати за <пакунком з початковими кодами> лише пакунок з початковими кодами"
-
-msgid ""
-"build source package only from <source package> - calculate dynamic build "
-"requires"
-msgstr ""
-"зібрати пакунок початкових кодів лише з <пакунок з початковими кодами> — "
-"обчислити залежності збирання динамічних залежностей"
-
-#, c-format
-msgid "build through %prep (unpack sources and apply patches) from <tarball>"
-msgstr ""
-"виконати команди аж до %prep (розпакувати коди і накласти латки) з <архіву "
-"tar>"
-
-msgid "<tarball>"
-msgstr "<архів tar>"
-
-msgid "build through %build (%prep, %conf, then compile) from <tarball>"
-msgstr ""
-"виконати аж до команди %build (%prep, %conf, потім збирання) з <архіву tar>"
-
-msgid "check build dependencies <tarball>"
-msgstr "перевірити залежності збирання <архіву tar>"
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <tarball>"
-msgstr ""
-"виконати аж до команди %install (%prep, %conf, %build, потім встановити) з "
-"<архіву tar>"
-
-#, c-format
-msgid "verify %files section from <tarball>"
-msgstr "перевірити розділ %files з <архіву tar>"
-
-msgid "build source and binary packages from <tarball>"
-msgstr "зібрати пакунки з кодами та бінарними файлами за <архівом tar>"
-
-msgid "build binary package only from <tarball>"
-msgstr "зібрати за <архівом tar> лише пакунок з бінарними файлами"
-
-msgid "build source package only from <tarball>"
-msgstr "зібрати за <архівом tar> лише пакунок з кодами"
-
-msgid ""
-"build source package only from <tarball> - calculate dynamic build requires"
-msgstr ""
-"зібрати пакунок початкових кодів лише з <архів tar> — обчислити залежності "
-"збирання динамічних залежностей"
-
-msgid "build binary package from <source package>"
-msgstr "зібрати за <пакунком з кодами> пакунок з бінарними файлами"
-
-msgid ""
-"build through %install (%prep, %build, then install) from <source package>"
-msgstr ""
-"виконати аж до команди %install (%prep, %build, потім встановити) з <пакунка "
-"з кодами>"
-
-msgid "override build root"
-msgstr "перевизначити кореневий каталог збирання"
-
-msgid "run build in current directory"
-msgstr "запустити збирання у поточному каталозі"
-
-msgid "remove build tree when done"
-msgstr "вилучити ієрархію каталогу збирання після завершення збирання"
-
-msgid "ignore ExcludeArch: directives from spec file"
-msgstr "ігнорування ExcludeArch: настанови з файла специфікації"
-
-msgid "debug file state machine"
-msgstr "зневаджування кінцевого автомата файлів"
-
-msgid "do not execute any stages of the build"
-msgstr "не виконувати жодного з кроків збирання"
-
-msgid "do not verify build dependencies"
-msgstr "не перевіряти залежності збирання"
-
-msgid "generate package header(s) compatible with (legacy) rpm v3 packaging"
-msgstr ""
-"створити заголовки пакунків, сумісні з (застарілим) пакуванням версій rpm 3"
-
-#, c-format
-msgid "do not execute %clean stage of the build"
-msgstr "не виконувати етапу %clean збирання"
-
-#, c-format
-msgid "do not execute %prep stage of the build"
-msgstr "не виконувати етапу %prep збирання"
-
-#, c-format
-msgid "do not execute %check stage of the build"
-msgstr "не виконувати етапу %check збирання"
-
-msgid "do not accept i18N msgstr's from specfile"
-msgstr "не приймати рядки перекладів з файла специфікації"
-
-msgid "remove sources when done"
-msgstr "вилучити коди після збирання"
-
-msgid "remove specfile when done"
-msgstr "вилучити файл специфікації після збирання"
-
-msgid "skip straight to specified stage (only for c,i)"
-msgstr "перейти одразу до вказаного кроку (лише для c,i)"
-
-msgid "override target platform"
-msgstr "перевизначити платформу призначення"
-
-msgid "Build options with [ <specfile> | <tarball> | <source package> ]:"
-msgstr ""
-"Параметри збирання з [ <файл spec> | <архів tar> | <пакунок з кодами> ]:"
-
-msgid "Common options for all rpm modes and executables:"
-msgstr "Загальні параметри для всіх режимів та виконуваних файлів rpm:"
-
-#, c-format
-msgid "Unable to open spec file %s: %s\n"
-msgstr "Не вдалося відкрити файл spec %s: %s\n"
-
-#, c-format
-msgid "Failed to open tar pipe: %m\n"
-msgstr "Не вдалося відкрити канал tar: %m\n"
-
-#, c-format
-msgid "Found more than one spec file in %s\n"
-msgstr "У %s виявлено декілька файлів специфікації\n"
-
-#, c-format
-msgid "Failed to read spec file from %s\n"
-msgstr "Не вдалося прочитати файл spec з %s\n"
-
-#, c-format
-msgid "Failed to rename %s to %s: %m\n"
-msgstr "Не вдалося перейменувати %s на %s: %m\n"
-
-#, c-format
-msgid "failed to stat %s: %m\n"
-msgstr "не вдалося отримати дані за допомогою stat з %s: %m\n"
-
-#, c-format
-msgid "File %s is not a regular file.\n"
-msgstr "Файл %s не є звичайним файлом.\n"
-
-#, c-format
-msgid "File %s does not appear to be a specfile.\n"
-msgstr "Здається, файл %s не є файлом spec.\n"
-
-#, c-format
-msgid "Building target platforms: %s\n"
-msgstr "Збирання для таких платформ: %s\n"
-
-#, c-format
-msgid "Building for target %s\n"
-msgstr "Збирання для %s\n"
-
-msgid "arguments to --root (-r) must begin with a /"
-msgstr "аргументи параметра --root (-r) мають починатися символом /"
-
-msgid "initialize database"
-msgstr "ініціалізувати базу даних"
-
-msgid "rebuild database inverted lists from installed package headers"
-msgstr ""
-"перебудувати зворотні списки бази даних на основі заголовків встановлених "
-"пакунків"
-
-msgid "verify database files"
-msgstr "перевірити файли бази даних"
-
-msgid "salvage database"
-msgstr "врятувати базу даних"
-
-msgid "export database to stdout header list"
-msgstr "експортувати базу даних до списку заголовків stdout"
-
-msgid "import database from stdin header list"
-msgstr "імпортувати базу даних зі списку заголовків stdin"
-
-msgid "Database options:"
-msgstr "Параметри бази даних:"
-
-msgid "only one major mode may be specified"
-msgstr "можна визначати лише один основний режим"
-
-msgid "verify package signature(s)"
-msgstr "перевірити підписи пакунка"
-
-msgid "import an armored public key"
-msgstr "імпортувати захищених відкритий ключ"
-
-msgid "don't import, but tell if it would work or not"
-msgstr "не імпортувати, але повідомити, працюватиме чи ні"
-
-msgid "list keys from RPM keyring"
-msgstr "показати список ключів зі сховища ключів RPM"
-
-msgid "Keyring options:"
-msgstr "Параметри сховища ключів:"
-
-msgid "no arguments given"
-msgstr "не вказано жодних параметрів"
-
-msgid "Query/Verify package selection options:"
-msgstr "Опитування/Перевірка параметрів вибору пакунка:"
-
-msgid "Query/Verify file selection options:"
-msgstr "Опитування/Перевірка параметрів вибору файла:"
-
-msgid "Query options (with -q or --query):"
-msgstr "Опитати параметри (за допомогою -q або --query):"
-
-msgid "Verify options (with -V or --verify):"
-msgstr "Перевірити параметри (за допомогою -V або --verify):"
-
-msgid "Install/Upgrade/Erase options:"
-msgstr "Параметри встановлення/оновлення/вилучення:"
-
-msgid "one type of query/verify may be performed at a time"
-msgstr "за один раз можна виконувати лише один тип запиту або перевірки"
-
-msgid "unexpected query flags"
-msgstr "неочікувані прапорці запитів"
-
-msgid "unexpected query format"
-msgstr "неочікуваний формат запитів"
-
-msgid "unexpected query source"
-msgstr "неочікуване джерело запиту"
-
-msgid "only installation and upgrading may be forced"
-msgstr "примусово можна виконувати лише встановлення і оновлення"
-
-msgid "files may only be relocated during package installation"
-msgstr "змінювати розташування файлів можна лише під час встановлення пакунка"
-
-msgid "cannot use --prefix with --relocate or --excludepath"
-msgstr "не можна використовувати --prefix разом з --relocate або --excludepath"
-
-msgid ""
-"--relocate and --excludepath may only be used when installing new packages"
-msgstr ""
-"--relocate і --excludepath можна використовувати лише під час встановлення "
-"нових пакунків"
-
-msgid "--prefix may only be used when installing new packages"
-msgstr ""
-"--prefix можна використовувати, лише під час встановлення нових пакунків"
-
-msgid "arguments to --prefix must begin with a /"
-msgstr "аргументи параметра --prefix мають починатися символом /"
-
-msgid ""
-"--hash (-h) may only be specified during package installation and erasure"
-msgstr ""
-"--hash (-h) можна вказувати лише під час встановлення або вилучення пакунків"
-
-msgid "--percent may only be specified during package installation and erasure"
-msgstr ""
-"--percent можна вказувати лише під час встановлення або вилучення пакунків"
-
-msgid "--replacepkgs may only be specified during package installation"
-msgstr "--replacepkgs можна вказувати лише під час встановлення пакунків"
-
-msgid "--excludedocs may only be specified during package installation"
-msgstr "--excludedocs можна вказувати лише під час встановлення пакунків"
-
-msgid "--includedocs may only be specified during package installation"
-msgstr "--includedocs можна вказувати лише під час встановлення пакунків"
-
-msgid "only one of --excludedocs and --includedocs may be specified"
-msgstr ""
-"можна вказувати лише один з параметрів, --excludedocs або --includedocs"
-
-msgid "--ignorearch may only be specified during package installation"
-msgstr "--ignorearch можна вказувати лише під час встановлення пакунків"
-
-msgid "--ignoreos may only be specified during package installation"
-msgstr "--ignoreos можна вказувати лише під час встановлення пакунків"
-
-msgid "--ignoresize may only be specified during package installation"
-msgstr "--ignoresize можна вказувати лише під час встановлення пакунків"
-
-msgid "--allmatches may only be specified during package erasure"
-msgstr "--allmatches можна вказувати лише під час встановлення пакунків"
-
-msgid "--allfiles may only be specified during package installation"
-msgstr "--allfiles можна вказувати лише під час встановлення пакунків"
-
-msgid "--justdb may only be specified during package installation and erasure"
-msgstr ""
-"--justdb можна вказувати лише під час встановлення або вилучення пакунків"
-
-msgid ""
-"script disabling options may only be specified during package installation "
-"and erasure"
-msgstr ""
-"параметри вимикання скриптів можна вказувати лише під час встановлення або "
-"вилучення пакунків"
-
-msgid ""
-"trigger disabling options may only be specified during package installation "
-"and erasure"
-msgstr ""
-"параметри вимикання перемикачів можна вказувати лише під час встановлення "
-"або вилучення пакунків"
-
-msgid ""
-"--nodeps may only be specified during package installation, erasure, and "
-"verification"
-msgstr ""
-"--nodeps можна вказувати лише під час встановлення, вилучення або перевірки "
-"пакунків"
-
-msgid "--test may only be specified during package installation and erasure"
-msgstr ""
-"--test можна вказувати лише під час встановлення або вилучення пакунків"
-
-msgid "no packages given for erase"
-msgstr "не вказано пакунків для вилучення"
-
-msgid "no packages given for install"
-msgstr "не вказано пакунків для встановлення"
-
-msgid "no arguments given for query"
-msgstr "не вказано аргументів запиту"
-
-msgid "no arguments given for verify"
-msgstr "не вказано аргументів перевірки"
-
-msgid "sign package(s)"
-msgstr "підписати пакунки"
-
-msgid "sign package(s) (identical to --addsign)"
-msgstr "підписати пакунки (тотожне до --addsign)"
-
-msgid "delete package signatures"
-msgstr "вилучити підписи пакунка"
-
-msgid "delete IMA and fsverity file signatures"
-msgstr "вилучити підписи файлів IMA і fsverity"
-
-msgid "create rpm v3 header+payload signatures"
-msgstr "створити підписи заголовка і вмісту rpm версії 3"
-
-msgid "sign package(s) files"
-msgstr "підписати файли пакунків"
-
-msgid "generate fsverity signatures for package(s) files"
-msgstr "створити підписи fsverity для файлів пакунків"
-
-msgid "algorithm to use for verity signatures, default sha256"
-msgstr "алгоритм, яким слід скористатися для підписів verity, типовим є sha256"
-
-msgid "<algorithm>"
-msgstr "<алгоритм>"
-
-msgid "use file signing cert <cert>"
-msgstr "скористатися сертифікатом для підписування файлів <сертифікат>"
-
-msgid "<cert>"
-msgstr "<сертифікат>"
-
-msgid "use file signing key <key>"
-msgstr "скористатися для підписування файлів ключем <ключ>"
-
-msgid "<key>"
-msgstr "<ключ>"
-
-msgid "prompt for file signing key password"
-msgstr "запит щодо пароля до ключа для підписування"
-
-msgid "Signature options:"
-msgstr "Параметри підписування:"
-
-#, c-format
-msgid "You must set \"%%_gpg_name\" in your macro file\n"
-msgstr "Вам слід встановити значення \"%%_gpg_name\" у вашому файлі макросу\n"
-
-#, c-format
-msgid ""
-"You must set \"%%_file_signing_key\" in your macro file or on the command "
-"line with --fskpath\n"
-msgstr ""
-"Вам слід встановити у вашому файлі макросу значення «%%_file_signing_key» "
-"або скористатися у рядку команди параметром --fskpath\n"
-
-msgid "--fskpath may only be specified when signing files"
-msgstr "--fskpath можна вказувати лише при підписуванні файлів"
-
-msgid "parse spec file(s) to stdout"
-msgstr "вивести оброблені дані файлів spec до stdout"
-
-msgid "query spec file(s)"
-msgstr "опитати файли spec"
-
-msgid "interactive macro shell"
-msgstr "інтерактивна макрооболонка"
-
-msgid "operate on binary rpms generated by spec (default)"
-msgstr "обробити бінарні rpm, створені на основі spec (типово)"
-
-msgid "operate on binary package header(s) that would be built from spec"
-msgstr "працювати із заголовками бінарних пакунків, які буде зібрано з spec"
-
-msgid "operate on source package header generated by spec"
-msgstr ""
-"працювати із заголовком пакунка з початковими кодами, який створено на "
-"основі spec"
-
-msgid "use the following query format"
-msgstr "використовувати вказаний нижче формат запиту"
-
-msgid "Spec options:"
-msgstr "Параметри spec:"
-
-#, c-format
-msgid "RPM version %s macro shell\n"
-msgstr "Макрооболонка RPM версії %s\n"
-
-msgid "no arguments given for parse"
-msgstr "не вказано аргументів обробки"
+#, fuzzy
+#| msgid "unable to parse %s=%s\n"
+msgid "unable to parse _buildtime macro\n"
+msgstr "не вдалося обробити %s=%s\n"
 
 msgid "unable to parse SOURCE_DATE_EPOCH\n"
 msgstr "не вдалося обробити SOURCE_DATE_EPOCH\n"
@@ -608,12 +52,20 @@ msgstr "Отримано стан виходу з помилкою від %s (%s
 msgid "Failed build dependencies:\n"
 msgstr "Не вдалося зібрати залежності:\n"
 
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to create package build directory %s: %s\n"
+msgstr "не вдалося створити каталог %s: %s\n"
+
 #, c-format
 msgid "setting %s=%s\n"
 msgstr "встановлюємо значення %s=%s\n"
 
-#, c-format
-msgid "source_date_epoch_from_changelog set but %%changelog is missing\n"
+#, fuzzy, c-format
+#| msgid "source_date_epoch_from_changelog set but %%changelog is missing\n"
+msgid ""
+"%%source_date_epoch_from_changelog is set, but %%changelog has no entries to "
+"take a date from\n"
 msgstr "Встановлено source_date_epoch_from_changelog, але немає %%changelog\n"
 
 msgid ""
@@ -690,11 +142,23 @@ msgid "File must begin with \"/\": %s\n"
 msgstr "Назва файла має починатися з «/»: %s\n"
 
 #, c-format
+msgid ""
+"%%clamp_mtime_to_source_date_epoch is deprecated, please use "
+"%%build_mtime_policy\n"
+msgstr ""
+
+#, c-format
 msgid "unable to parse %s=%s\n"
 msgstr "не вдалося обробити %s=%s\n"
 
-#, c-format
-msgid "Unknown file digest algorithm %u, falling back to MD5\n"
+#, fuzzy, c-format
+#| msgid "Unknown icon type: %s\n"
+msgid "Unknown mtime policy '%s'\n"
+msgstr "Невідомий тип піктограми: %s\n"
+
+#, fuzzy, c-format
+#| msgid "Unknown file digest algorithm %u, falling back to MD5\n"
+msgid "Unknown file digest algorithm %u, falling back to %u\n"
 msgstr ""
 "Невідомий алгоритм обчислення контрольної суми файла %u, буде використано "
 "MD5\n"
@@ -929,9 +393,24 @@ msgstr ""
 "Завершено завдання з обробки бінарних пакунків. Результат — %d, назва файла "
 "— %s\n"
 
+#, fuzzy, c-format
+#| msgid "line %d: Error parsing %s: %s\n"
+msgid "line %d: Error parsing script: %s: %s\n"
+msgstr "рядок %d: помилка під час обробки %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "line %d: Bad option %s: %s\n"
+msgid "line %d: Bad %s option %s: %s\n"
+msgstr "рядок %d: помилковий параметр %s: %s\n"
+
 #, c-format
 msgid "line %d: second %s\n"
 msgstr "рядок %d: друге %s\n"
+
+#, fuzzy, c-format
+#| msgid "line %d: unsupported internal script: %s\n"
+msgid "line %d: append and prepend specified: %s\n"
+msgstr "рядок %d: непідтримуваний вбудований скрипт: %s\n"
 
 #, c-format
 msgid "bogus date in %%changelog: %s\n"
@@ -1037,6 +516,11 @@ msgstr "Не включено ОС: %s\n"
 msgid "%s field must be present in package: %s\n"
 msgstr "У пакунку має бути поле %s: %s\n"
 
+#, fuzzy, c-format
+#| msgid "%s field must be present in package: %s\n"
+msgid "%s field must be present before build in package: %s\n"
+msgstr "У пакунку має бути поле %s: %s\n"
+
 #, c-format
 msgid "Duplicate %s entries in package: %s\n"
 msgstr "Дублювання записів %s у пакунку: %s\n"
@@ -1107,6 +591,11 @@ msgstr "рядок %d: помилковий формат BuildArchitecture: %s\n
 msgid "line %d: Duplicate BuildArch entry: %s\n"
 msgstr "рядок %d: дублювання запису BuildArch: %s\n"
 
+#, fuzzy, c-format
+#| msgid "line %d: Only noarch subpackages are supported: %s\n"
+msgid "line %d: Only noarch is allowed after the build: %s\n"
+msgstr "рядок %d: передбачено підтримку лише підпакунків типу noarch: %s\n"
+
 #, c-format
 msgid "line %d: Only noarch subpackages are supported: %s\n"
 msgstr "рядок %d: передбачено підтримку лише підпакунків типу noarch: %s\n"
@@ -1130,13 +619,17 @@ msgstr "Виявлено бінарний пакунок rpm. Мало бути 
 msgid "line %d: Unknown tag: %s\n"
 msgstr "рядок %d: невідомий теґ: %s\n"
 
-#, c-format
-msgid "%%{buildroot} couldn't be empty\n"
-msgstr "%%{buildroot} не може бути порожнім\n"
+#, fuzzy, c-format
+#| msgid "line %d: Priorities are allowed only for file triggers : %s\n"
+msgid "line %d: Tag not allowed after build is done: %s\n"
+msgstr ""
+"рядок %d: пріоритетність можна встановлювати лише для файлових перемикачів: "
+"%s\n"
 
-#, c-format
-msgid "%%{buildroot} can not be \"/\"\n"
-msgstr "%%{buildroot} не може приймати значення «/»\n"
+#, fuzzy, c-format
+#| msgid "Invalid capability: %s\n"
+msgid "Invalid buildroot: '%s'\n"
+msgstr "Некоректний мандат: %s\n"
 
 #, c-format
 msgid "No patch number %u\n"
@@ -1166,17 +659,6 @@ msgstr "Не вказано номер латки: %s\n"
 msgid "Invalid patch number %s: %s\n"
 msgstr "Некоректний номер латки %s: %s\n"
 
-#, c-format
-msgid "line %d: second %%prep\n"
-msgstr "рядок %d: друге %%prep\n"
-
-#, c-format
-msgid ""
-"%%patchN is deprecated (%i usages found), use %%patch N (or %%patch -P N)\n"
-msgstr ""
-"%%patchN є застарілим (виявлено %i випадків використання), скористайтеся "
-"%%patch N (або %%patch -P N)\n"
-
 msgid "Dependency tokens must begin with alpha-numeric, '_' or '/'"
 msgstr "записи залежностей мають починатися з букви, числа, «_» або «/»"
 
@@ -1192,6 +674,11 @@ msgstr "некоректна залежність"
 msgid "Version required"
 msgstr "Слід вказати версію"
 
+#, fuzzy
+#| msgid "line %d: file trigger condition must begin with '/': %s"
+msgid "file trigger conditions must begin with '/'"
+msgstr "рядок %d: запис файла в умові має починатися з «/»: %s"
+
 msgid "Only package names are allowed in Obsoletes"
 msgstr "У Obsoletes можна вказувати лише назви пакунків"
 
@@ -1200,9 +687,6 @@ msgstr "Не рекомендуємо використовувати Obsoletes �
 
 msgid "It's not recommended to use '>' in Obsoletes"
 msgstr "Не рекомендуємо використовувати «>» у Obsoletes"
-
-msgid "Only absolute paths are allowed in file triggers"
-msgstr "У файлових перемикачах можна використовувати лише абсолютні шляхи"
 
 msgid "Trigger fired by the same package is already defined in spec file"
 msgstr "Перемикач для того самого пакунка вже визначено у файлі специфікації"
@@ -1245,10 +729,6 @@ msgstr "рядок %d: друге %s\n"
 #, c-format
 msgid "line %d: unsupported internal script: %s\n"
 msgstr "рядок %d: непідтримуваний вбудований скрипт: %s\n"
-
-#, c-format
-msgid "line %d: file trigger condition must begin with '/': %s"
-msgstr "рядок %d: запис файла в умові має починатися з «/»: %s"
 
 #, c-format
 msgid "line %d: interpreter arguments not allowed in triggers: %s\n"
@@ -1296,6 +776,15 @@ msgstr "%s:%d: помилкова умова %s: %s\n"
 msgid "%s:%d: malformed %%include statement\n"
 msgstr "%s:%d: помилкове форматування інструкції %%include\n"
 
+#, fuzzy, c-format
+#| msgid ""
+#| "%%patchN is deprecated (%i usages found), use %%patch N (or %%patch -P "
+#| "N)\n"
+msgid "%%patchN is obsolete, use %%patch N (or %%patch -P N): %s\n"
+msgstr ""
+"%%patchN є застарілим (виявлено %i випадків використання), скористайтеся "
+"%%patch N (або %%patch -P N)\n"
+
 #, c-format
 msgid "encoding %s not supported by system\n"
 msgstr "у системі не передбачено підтримки кодування %s\n"
@@ -1317,8 +806,36 @@ msgstr ""
 msgid "line %d doesn't belong to any section: %s\n"
 msgstr "рядок %d не належить до жодного з розділів: %s\n"
 
+#, fuzzy, c-format
+#| msgid "line %d: Unknown tag: %s\n"
+msgid "line %d: Unknown buildsystem: %s\n"
+msgstr "рядок %d: невідомий теґ: %s\n"
+
+#, c-format
+msgid ""
+"line %d: Required parametric macro %%%s not defined for buildsystem %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "failed to write all data to %s: %s\n"
+msgid "failed to write buildsystem %s %%%s: %s\n"
+msgstr "Не вдалося записати всі дані до %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "Couldn't create temporary file for %s: %s\n"
+msgid "failed to create temp file for buildsystem: %s\n"
+msgstr "Не вдалося створити тимчасовий файл для %s: %s\n"
+
+#, c-format
+msgid "Section %s is not allowed after build is done!\n"
+msgstr ""
+
 msgid "No compatible architectures found for build\n"
 msgstr "Не знайдено сумісних архітектур для збирання\n"
+
+#, c-format
+msgid "invalid rpm format %d requested, using %d\n"
+msgstr ""
 
 #, c-format
 msgid "Package has no %%description: %s\n"
@@ -1412,6 +929,10 @@ msgstr "Помилка %s: %x\n"
 msgid "failed to write all data to %s: %s\n"
 msgstr "Не вдалося записати всі дані до %s: %s\n"
 
+#, c-format
+msgid "invalid or out of order path from generator: %s\n"
+msgstr ""
+
 msgid "Empty file classifier\n"
 msgstr "Порожній класифікатор файла\n"
 
@@ -1443,6 +964,11 @@ msgid "Failed to find %s:\n"
 msgstr "Не вдалося знайти %s:\n"
 
 msgid "Deprecated external dependency generator is used!\n"
+msgstr "Використано застарілий зовнішній породжувач залежностей!\n"
+
+#, fuzzy
+#| msgid "Deprecated external dependency generator is used!\n"
+msgid "External dependency generator is incompatible with v6 packages\n"
 msgstr "Використано застарілий зовнішній породжувач залежностей!\n"
 
 #, c-format
@@ -1578,8 +1104,9 @@ msgstr "%s%s збережено як %s%s\n"
 msgid "%s%s created as %s%s\n"
 msgstr "%s%s створено як %s%s\n"
 
-#, c-format
-msgid "%s %s: remove failed: %s\n"
+#, fuzzy, c-format
+#| msgid "%s %s: remove failed: %s\n"
+msgid "%s %s%s: remove failed: %s\n"
 msgstr "%s %s: спроба вилучення зазнала невдачі: %s\n"
 
 msgid "directory"
@@ -1709,8 +1236,39 @@ msgid "array iterator used with different sized arrays"
 msgstr "ітератор масиву використано з двома масивами різної розмірності"
 
 #, c-format
+msgid "%s: reading of public key failed.\n"
+msgstr "%s: спроба читання відкритого ключа завершилася невдало.\n"
+
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to create keyring directory %s: %s\n"
+msgstr "не вдалося створити каталог %s: %s\n"
+
+#, c-format
+msgid "failed to import key: %s: %s\n"
+msgstr "не вдалося імпортувати ключ: %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "can't create %s lock on %s (%s)\n"
+msgid "Can't create writelock for keyring at %s: %s\n"
+msgstr "не вдалося створити блокування %s для %s (%s)\n"
+
+#, c-format
+msgid "Can't acquire writelock for keyring at %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "%s: not an armored public key.\n"
+msgid "%s is not a valid public key\n"
+msgstr "%s: не є захищеним відкритим ключем.\n"
+
+#, c-format
 msgid "RPM v3 packages are deprecated: %s\n"
 msgstr "Пакунки RPM версії 3 вважаються застарілими: %s\n"
+
+#, c-format
+msgid "RPM version %s\n"
+msgstr "Версія RPM %s\n"
 
 msgid "Error writing to stdout"
 msgstr "Помилка під час спроби запису до стандартного виведення"
@@ -1819,9 +1377,6 @@ msgstr "зневаджування кінцевого автомата файл�
 
 msgid "debug rpmio I/O"
 msgstr "зневаджування вводу-виводу rpmio"
-
-msgid "disable user namespace support"
-msgstr "вимкнути підтримку простору назв користувача"
 
 #, c-format
 msgid "%s: option table misconfigured (%d)\n"
@@ -2051,12 +1606,6 @@ msgstr "опитати/перевірити пакунки з групи"
 msgid "query/verify a package file"
 msgstr "опитати/перевірити файл пакунка"
 
-msgid "query/verify package(s) with package identifier"
-msgstr "опитати/перевірити пакунки за ідентифікатором пакунка"
-
-msgid "query/verify package(s) with header identifier"
-msgstr "опитати/перевірити пакунки за ідентифікатором заголовка"
-
 msgid "rpm query mode"
 msgstr "режим опитування rpm"
 
@@ -2071,6 +1620,11 @@ msgstr "опитати пакунки, які пов’язано з пакун�
 
 msgid "rpm verify mode"
 msgstr "режим перевірки rpm"
+
+#, fuzzy
+#| msgid "query/verify the package(s) which obsolete a dependency"
+msgid "query/verify the package(s) which conflict with a dependency"
+msgstr "опитати/перевірити пакунки, які роблять застарілим залежний пакунок"
 
 msgid "query/verify the package(s) which require a dependency"
 msgstr "опитати/перевірити пакунки, яким потрібні залежні пакунки"
@@ -2128,6 +1682,9 @@ msgstr "створити дамп основних даних щодо файл�
 
 msgid "list files in package"
 msgstr "показати список файлів у пакунку"
+
+msgid "use the following query format"
+msgstr "використовувати вказаний нижче формат запиту"
 
 msgid "display the states of the listed files"
 msgstr "показати стан файлів зі списку"
@@ -2552,18 +2109,21 @@ msgid "Wrong number of entries for tag %s: %u found but %u expected.\n"
 msgstr ""
 "Помилкова кількість записів для мітки %s: виявлено %u, мало бути — %u.\n"
 
-#, c-format
-msgid "Malformed data for tag %s: %u bytes found but %lu expected.\n"
+#, fuzzy, c-format
+#| msgid "Malformed data for tag %s: %u bytes found but %lu expected.\n"
+msgid "Malformed data for tag %s: %u bytes found but %<PRIu64> expected.\n"
 msgstr ""
 "Помилкове форматування даних для мітки %s: виявлено %u байтів, мало бути — "
 "%lu.\n"
 
-#, c-format
-msgid "%s: base64 decode failed, len %li\n"
+#, fuzzy, c-format
+#| msgid "%s: base64 decode failed, len %li\n"
+msgid "%s: base64 decode failed, len %zu\n"
 msgstr "%s: не вдалося виконати декодування base64, довжина %li\n"
 
-#, c-format
-msgid "%s: base64 decode success, len %li\n"
+#, fuzzy, c-format
+#| msgid "%s: base64 decode success, len %li\n"
+msgid "%s: base64 decode success, len %zu\n"
 msgstr "%s: успішне декодування base64, довжина %li\n"
 
 msgid "Bad magic"
@@ -2593,8 +2153,10 @@ msgstr "Внутрішня помилка"
 msgid "Archive file not in header"
 msgstr "Файла архіву не вказано у заголовку"
 
-msgid "Invalid symlink"
-msgstr "Некоректне символічне посилання"
+#, fuzzy
+#| msgid "failed symlink"
+msgid "Unsafe symlink"
+msgstr "помилкове символічне посилання"
 
 msgid "File from package already exists as a directory in system"
 msgstr "Файл з пакунка вже існує як каталог у системі"
@@ -2669,6 +2231,11 @@ msgstr "пакунок %s не придатний до переміщення\n"
 msgid "error reading from file %s\n"
 msgstr "помилка читання з файла %s\n"
 
+#, fuzzy, c-format
+#| msgid "no package matches %s: %s\n"
+msgid "package format not supported: %s\n"
+msgstr "жодне з пакунків не відповідає ключу %s: %s\n"
+
 #, c-format
 msgid "\"%s\" specifies multiple packages:\n"
 msgstr "«%s» задає декілька пакунків:\n"
@@ -2683,12 +2250,6 @@ msgstr "Встановлення %s\n"
 
 msgid "not an rpm package"
 msgstr "не є пакунком rpm"
-
-msgid "illegal signature type"
-msgstr "некоректний тип підпису"
-
-msgid "unsupported RPM package version"
-msgstr "непідтримувана версія пакунка RPM"
 
 #, c-format
 msgid "read failed: %s (%d)\n"
@@ -2829,6 +2390,11 @@ msgstr "не вистачає аргументу для %s у %s:%d\n"
 msgid "cannot open %s at %s:%d: %m\n"
 msgstr "Не вдалося відкрити %s у %s:%d: %m\n"
 
+#, fuzzy, c-format
+#| msgid "bad option '%s' at %s:%d\n"
+msgid "Ignoring %s at %s:%d\n"
+msgstr "помилковий параметр «%s» у %s:%d\n"
+
 #, c-format
 msgid "missing architecture for %s at %s:%d\n"
 msgstr "не вистачає архітектури для %s у %s:%d\n"
@@ -2887,6 +2453,15 @@ msgstr "помилка допоміжного скрипту %s, стан вих
 msgid "Unknown format"
 msgstr "Невідомий формат"
 
+#, c-format
+msgid "erasing gpg-pubkey packages is deprecated; use rpmkeys --delete %s\n"
+msgstr ""
+
+msgid ""
+"public keys can not be installed as gpg-pubkey packages; use rpmkeys --"
+"import <keyfile> for that\n"
+msgstr ""
+
 msgid "install"
 msgstr "встановити"
 
@@ -2916,16 +2491,13 @@ msgid "missing ')' in package label: %s\n"
 msgstr "не вистачає «)» у мітці пакунка: %s\n"
 
 #, c-format
-msgid "%s: reading of public key failed.\n"
-msgstr "%s: спроба читання відкритого ключа завершилася невдало.\n"
-
-#, c-format
 msgid "unknown keyring type: %s, using rpmdb\n"
 msgstr "невідомий тип сховища ключів: %s, використовуємо rpmdb\n"
 
-#, c-format
-msgid "failed to import key: %s: %s\n"
-msgstr "не вдалося імпортувати ключ: %s: %s\n"
+#, fuzzy, c-format
+#| msgid "Unknown icon type: %s\n"
+msgid "unknown keyring type: %s\n"
+msgstr "Невідомий тип піктограми: %s\n"
 
 #, c-format
 msgid "invalid package verify level %s\n"
@@ -2950,6 +2522,11 @@ msgstr "%s, мітка %u: некоректні дані %p (%u)"
 msgid "%s tag %u: invalid size %u"
 msgstr "%s, мітка %u: некоректний розмір %u"
 
+#, fuzzy, c-format
+#| msgid "%s: tag %u: invalid hex"
+msgid "%s tag %u: invalid base64"
+msgstr "%s: мітка %u: некоректне шістнадцяткове значення"
+
 #, c-format
 msgid "%s tag %u: invalid OpenPGP signature"
 msgstr "%s, мітка %u: некоректний підпис OpenPGP"
@@ -2958,19 +2535,28 @@ msgstr "%s, мітка %u: некоректний підпис OpenPGP"
 msgid "%s: tag %u: invalid hex"
 msgstr "%s: мітка %u: некоректне шістнадцяткове значення"
 
-#, c-format
-msgid "%s%s%s %s"
+#, fuzzy, c-format
+#| msgid "%s%s%s %s"
+msgid "%s %s%s %s"
 msgstr "%s%s%s %s"
 
 msgid "digest"
 msgstr "контрольна сума"
 
 #, c-format
-msgid "%s%s"
-msgstr "%s%s"
+msgid "%s OpenPGP %s"
+msgstr ""
+
+#, c-format
+msgid "%s OpenPGP %s %s"
+msgstr ""
 
 msgid "signature"
 msgstr "підпис"
+
+#, c-format
+msgid ", key fingerprint: %s"
+msgstr ""
 
 msgid "header"
 msgstr "заголовок"
@@ -2978,10 +2564,14 @@ msgstr "заголовок"
 msgid "package"
 msgstr "пакунок"
 
-msgid "Header "
+#, fuzzy
+#| msgid "Header "
+msgid "Header"
 msgstr "Заголовок "
 
-msgid "Payload "
+#, fuzzy
+#| msgid "Payload "
+msgid "Payload"
 msgstr "Вміст "
 
 msgid "Unable to reload signature header.\n"
@@ -3060,7 +2650,9 @@ msgstr "непідтримуваний тип аргументу функції"
 msgid "syntax error in expression"
 msgstr "синтаксична помилка у виразі"
 
-msgid "unsupported funcion"
+#, fuzzy
+#| msgid "unsupported funcion"
+msgid "unsupported function"
 msgstr "непідтримувана функція"
 
 msgid "unmatched ("
@@ -3169,7 +2761,16 @@ msgid "A %% is followed by an unparseable macro\n"
 msgstr "За %% вказано непридатний до обробки макрос\n"
 
 #, c-format
-msgid "======================== active %d empty %d\n"
+msgid "unexpected argument to non-parametric macro %%%s\n"
+msgstr ""
+
+#, c-format
+msgid "macro value out of range for int: %<PRIu64> using %i instead.\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "======================== active %d empty %d\n"
+msgid "======================== active %zu empty %d\n"
 msgstr "=================== активних %d порожніх %d\n"
 
 #, c-format
@@ -3241,6 +2842,15 @@ msgstr "V%d %s/%s %s, ід. ключа %s"
 msgid "(none)"
 msgstr "(нічого)"
 
+#, fuzzy, c-format
+#| msgid "Could not read from file %s: %s\n"
+msgid "Could not find url helper: \"%s\"\n"
+msgstr "Не вдалося виконати читання з файла %s: %s\n"
+
+#, c-format
+msgid "Executing url helper \"%s\" failed with status %i\n"
+msgstr ""
+
 #, c-format
 msgid "%s: Fwrite failed: %s\n"
 msgstr "%s: помилка Fwrite: %s\n"
@@ -3253,20 +2863,15 @@ msgstr "%s: помилка fread: %s\n"
 msgid "%s: Fflush failed: %s\n"
 msgstr "%s: помилка Fflush: %s\n"
 
-msgid "Unsupported OpenPGP signature\n"
-msgstr "Непідтримуваний підпис OpenPGP\n"
+#, fuzzy, c-format
+#| msgid "reading symlink %s failed: %s\n"
+msgid "Expanding signing macro %s failed\n"
+msgstr "під час спроби читання символічного посилання %s сталася помилка: %s\n"
 
-#, c-format
-msgid "Unsupported OpenPGP hash algorithm %u\n"
-msgstr "Непідтримуваний алгоритм хешування OpenPGP, %u\n"
-
-#, c-format
-msgid "Unsupported OpenPGP pubkey algorithm %u\n"
-msgstr "Непідтримуваний алгоритм обчислення відкритого ключа OpenPGP, %u\n"
-
-#, c-format
-msgid "Deprecated OpenPGP signature version %d\n"
-msgstr "Застаріла версія підпису OpenPGP %d\n"
+#, fuzzy, c-format
+#| msgid "Invalid %s token: %s\n"
+msgid "Invalid sign command: %s\n"
+msgstr "Некоректний елемент %s: %s\n"
 
 #, c-format
 msgid "Could not create pipe for signing: %m\n"
@@ -3291,19 +2896,41 @@ msgstr "Не вдалося виконати запис до каналу\n"
 msgid "Could not read from file %s: %s\n"
 msgstr "Не вдалося виконати читання з файла %s: %s\n"
 
-#, c-format
-msgid "gpg waitpid failed (%s)\n"
+#, fuzzy, c-format
+#| msgid "gpg waitpid failed (%s)\n"
+msgid "%s waitpid failed (%s)\n"
 msgstr "помилка waitpid gpg (%s)\n"
 
-#, c-format
-msgid "gpg exec failed (%d)\n"
+#, fuzzy, c-format
+#| msgid "gpg exec failed (%d)\n"
+msgid "%s exec failed (%d)\n"
 msgstr "помилка виконання gpg (%d)\n"
 
-msgid "gpg failed to write signature\n"
+#, fuzzy, c-format
+#| msgid "gpg failed to write signature\n"
+msgid "failed to write signature: %s\n"
 msgstr "gpg не вдалося записати підпис\n"
 
-msgid "unable to read the signature\n"
+#, fuzzy, c-format
+#| msgid "unable to read the signature\n"
+msgid "unable to read the signature: %s\n"
 msgstr "не вдалося прочитати підпис\n"
+
+msgid "Unsupported OpenPGP signature\n"
+msgstr "Непідтримуваний підпис OpenPGP\n"
+
+#, c-format
+msgid "Unsupported OpenPGP hash algorithm %u\n"
+msgstr "Непідтримуваний алгоритм хешування OpenPGP, %u\n"
+
+#, c-format
+msgid "Deprecated OpenPGP signature version %d\n"
+msgstr "Застаріла версія підпису OpenPGP %d\n"
+
+#, fuzzy, c-format
+#| msgid "Unsupported OpenPGP pubkey algorithm %u\n"
+msgid "Unsupported OpenPGP pubkey algorithm %u for rpm v3/v4 signatures\n"
+msgstr "Непідтримуваний алгоритм обчислення відкритого ключа OpenPGP, %u\n"
 
 msgid "file signing support not built in\n"
 msgstr "підтримку підписування файлів не зібрано\n"
@@ -3330,18 +2957,42 @@ msgstr "%s: помилка rpmReadSignature: %s"
 msgid "%s: headerRead failed: %s\n"
 msgstr "%s: помилка headerRead: %s\n"
 
-msgid "Cannot sign RPM v3 packages\n"
+#, fuzzy, c-format
+#| msgid "Cannot sign RPM v3 packages\n"
+msgid "Cannot sign RPM v3 packages: %s\n"
 msgstr "Підписування пакунків RPM версії 3 неможливе\n"
 
+#, fuzzy, c-format
+#| msgid "generate fsverity signatures for package(s) files"
+msgid "not generating v3 signature for v6 package: %s\n"
+msgstr "створити підписи fsverity для файлів пакунків"
+
 #, c-format
-msgid "%s already contains identical signature, skipping\n"
+msgid "File signatures not applicable to src.rpm: %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "Could not seek in file %s: %s\n"
+msgid "Could not get a file size of %s\n"
+msgstr "Не вдалося виконати позиціювання у файлі %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "%s already contains identical signature, skipping\n"
+msgid "%s already contains an identical signature, skipping\n"
+msgstr "%s вже містить ідентичний підпис, пропускаємо\n"
+
+#, fuzzy, c-format
+#| msgid "%s already contains identical signature, skipping\n"
+msgid "%s already contains a legacy signature\n"
 msgstr "%s вже містить ідентичний підпис, пропускаємо\n"
 
 #, c-format
 msgid "%s: rpmWriteSignature failed: %s\n"
 msgstr "%s: помилка rpmWriteSignature: %s\n"
 
-msgid "rpmMkTemp failed\n"
+#, fuzzy, c-format
+#| msgid "rpmMkTemp failed\n"
+msgid "rpmMkTemp failed: %s\n"
 msgstr "помилка rpmMkTemp\n"
 
 #, c-format
@@ -3366,11 +3017,510 @@ msgid "headerPutString failed\n"
 msgstr "Помилка у headerPutString\n"
 
 #, c-format
+msgid "%s: %s\n"
+msgstr "%s: %s\n"
+
+#, c-format
+msgid "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
+msgstr "© Red Hat, Inc., 1998–2002\n"
+
+#, c-format
+msgid ""
+"This program may be freely redistributed under the terms of the GNU GPL\n"
+msgstr "Цю програму можна вільно поширювати за умови дотримання GNU GPL\n"
+
+#, c-format
+msgid "creating a pipe for --pipe failed: %m\n"
+msgstr "спроба створення каналу для параметра --pipe зазнала невдачі: %m\n"
+
+#, c-format
+msgid "exec failed\n"
+msgstr "помилка виконання exec\n"
+
+msgid "Query/Verify package selection options:"
+msgstr "Опитування/Перевірка параметрів вибору пакунка:"
+
+msgid "Query/Verify file selection options:"
+msgstr "Опитування/Перевірка параметрів вибору файла:"
+
+msgid "Query options (with -q or --query):"
+msgstr "Опитати параметри (за допомогою -q або --query):"
+
+msgid "Verify options (with -V or --verify):"
+msgstr "Перевірити параметри (за допомогою -V або --verify):"
+
+msgid "Install/Upgrade/Erase options:"
+msgstr "Параметри встановлення/оновлення/вилучення:"
+
+msgid "Common options for all rpm modes and executables:"
+msgstr "Загальні параметри для всіх режимів та виконуваних файлів rpm:"
+
+msgid "one type of query/verify may be performed at a time"
+msgstr "за один раз можна виконувати лише один тип запиту або перевірки"
+
+msgid "unexpected query flags"
+msgstr "неочікувані прапорці запитів"
+
+msgid "unexpected query format"
+msgstr "неочікуваний формат запитів"
+
+msgid "unexpected query source"
+msgstr "неочікуване джерело запиту"
+
+msgid "only one major mode may be specified"
+msgstr "можна визначати лише один основний режим"
+
+msgid "only installation and upgrading may be forced"
+msgstr "примусово можна виконувати лише встановлення і оновлення"
+
+msgid "files may only be relocated during package installation"
+msgstr "змінювати розташування файлів можна лише під час встановлення пакунка"
+
+msgid "cannot use --prefix with --relocate or --excludepath"
+msgstr "не можна використовувати --prefix разом з --relocate або --excludepath"
+
+msgid ""
+"--relocate and --excludepath may only be used when installing new packages"
+msgstr ""
+"--relocate і --excludepath можна використовувати лише під час встановлення "
+"нових пакунків"
+
+msgid "--prefix may only be used when installing new packages"
+msgstr ""
+"--prefix можна використовувати, лише під час встановлення нових пакунків"
+
+msgid "arguments to --prefix must begin with a /"
+msgstr "аргументи параметра --prefix мають починатися символом /"
+
+msgid ""
+"--hash (-h) may only be specified during package installation and erasure"
+msgstr ""
+"--hash (-h) можна вказувати лише під час встановлення або вилучення пакунків"
+
+msgid "--percent may only be specified during package installation and erasure"
+msgstr ""
+"--percent можна вказувати лише під час встановлення або вилучення пакунків"
+
+msgid "--replacepkgs may only be specified during package installation"
+msgstr "--replacepkgs можна вказувати лише під час встановлення пакунків"
+
+msgid "--excludedocs may only be specified during package installation"
+msgstr "--excludedocs можна вказувати лише під час встановлення пакунків"
+
+msgid "--includedocs may only be specified during package installation"
+msgstr "--includedocs можна вказувати лише під час встановлення пакунків"
+
+msgid "only one of --excludedocs and --includedocs may be specified"
+msgstr ""
+"можна вказувати лише один з параметрів, --excludedocs або --includedocs"
+
+msgid "--ignorearch may only be specified during package installation"
+msgstr "--ignorearch можна вказувати лише під час встановлення пакунків"
+
+msgid "--ignoreos may only be specified during package installation"
+msgstr "--ignoreos можна вказувати лише під час встановлення пакунків"
+
+msgid "--ignoresize may only be specified during package installation"
+msgstr "--ignoresize можна вказувати лише під час встановлення пакунків"
+
+msgid "--allmatches may only be specified during package erasure"
+msgstr "--allmatches можна вказувати лише під час встановлення пакунків"
+
+msgid "--allfiles may only be specified during package installation"
+msgstr "--allfiles можна вказувати лише під час встановлення пакунків"
+
+msgid "--justdb may only be specified during package installation and erasure"
+msgstr ""
+"--justdb можна вказувати лише під час встановлення або вилучення пакунків"
+
+msgid ""
+"script disabling options may only be specified during package installation "
+"and erasure"
+msgstr ""
+"параметри вимикання скриптів можна вказувати лише під час встановлення або "
+"вилучення пакунків"
+
+msgid ""
+"trigger disabling options may only be specified during package installation "
+"and erasure"
+msgstr ""
+"параметри вимикання перемикачів можна вказувати лише під час встановлення "
+"або вилучення пакунків"
+
+msgid ""
+"--nodeps may only be specified during package installation, erasure, and "
+"verification"
+msgstr ""
+"--nodeps можна вказувати лише під час встановлення, вилучення або перевірки "
+"пакунків"
+
+msgid "--test may only be specified during package installation and erasure"
+msgstr ""
+"--test можна вказувати лише під час встановлення або вилучення пакунків"
+
+msgid "arguments to --root (-r) must begin with a /"
+msgstr "аргументи параметра --root (-r) мають починатися символом /"
+
+msgid "no packages given for erase"
+msgstr "не вказано пакунків для вилучення"
+
+msgid "no packages given for install"
+msgstr "не вказано пакунків для встановлення"
+
+msgid "no arguments given for query"
+msgstr "не вказано аргументів запиту"
+
+msgid "no arguments given for verify"
+msgstr "не вказано аргументів перевірки"
+
+#, fuzzy
+#| msgid "create uncompressed tar file"
+msgid "create uncompressed archive"
+msgstr "створити нестиснений файл tar"
+
+msgid "archive format (pax|cpio)"
+msgstr ""
+
+#, c-format
+msgid "argument is not an RPM package\n"
+msgstr "аргумент не є пакунком RPM\n"
+
+#, c-format
+msgid "error reading header from package\n"
+msgstr "помилка під час спроби читання заголовка з пакунка\n"
+
+#, c-format
+msgid "cannot re-open payload: %s\n"
+msgstr "не вдалося повторно відкрити вміст: %s\n"
+
+msgid "initialize database"
+msgstr "ініціалізувати базу даних"
+
+msgid "rebuild database inverted lists from installed package headers"
+msgstr ""
+"перебудувати зворотні списки бази даних на основі заголовків встановлених "
+"пакунків"
+
+#, fuzzy
+#| msgid "verify database files"
+msgid "verify database"
+msgstr "перевірити файли бази даних"
+
+msgid "salvage database"
+msgstr "врятувати базу даних"
+
+msgid "export database to stdout header list"
+msgstr "експортувати базу даних до списку заголовків stdout"
+
+msgid "import database from stdin header list"
+msgstr "імпортувати базу даних зі списку заголовків stdin"
+
+msgid "Database options:"
+msgstr "Параметри бази даних:"
+
+#, c-format
+msgid "buildroot already specified, ignoring %s\n"
+msgstr "buildroot вже вказано, ігноруємо %s\n"
+
+#, c-format
+msgid "build through %prep (unpack sources and apply patches) from <specfile>"
+msgstr ""
+"виконати команди аж до %prep (розпакувати коди і накласти латки) з <файла "
+"специфікації>"
+
+msgid "<specfile>"
+msgstr "<файл специфікації>"
+
+#, c-format
+msgid "build through %conf (%prep, then %conf) from <specfile>"
+msgstr ""
+"виконати аж до команди %conf (%prep, потім %conf) з <файл специфікації>"
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <specfile>"
+msgstr ""
+"виконати аж до команди %build (%prep, %conf, потім збирання) з <файла "
+"специфікації>"
+
+msgid "check build dependencies <specfile>"
+msgstr "перевірити залежності збирання <файла специфікації>"
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <specfile>"
+msgstr ""
+"виконати аж до команди %install (%prep, %conf, %build, потім встановити) з "
+"<файла специфікації>"
+
+#, c-format
+msgid "verify %files section from <specfile>"
+msgstr "перевірити розділ %files з <файла специфікації>"
+
+msgid "build source and binary packages from <specfile>"
+msgstr "зібрати пакунки з кодами та бінарними файлами за <файлом специфікації>"
+
+msgid "build binary package only from <specfile>"
+msgstr "зібрати за <файлом специфікації> лише пакунок з бінарними файлами"
+
+msgid "build source package only from <specfile>"
+msgstr "зібрати за <файлом специфікації> лише пакунок з кодами"
+
+msgid ""
+"build source package only from <specfile> - calculate dynamic build requires"
+msgstr ""
+"зібрати пакунок початкових кодів лише з <файл специфікації> — обчислити "
+"залежності збирання динамічних залежностей"
+
+#, c-format
+msgid ""
+"build through %prep (unpack sources and apply patches) from <source package>"
+msgstr ""
+"виконати команди аж до %prep (розпакувати коди і накласти латки) з <пакунка "
+"з початковим кодом>"
+
+msgid "<source package>"
+msgstr "<пакунок з кодами>"
+
+#, fuzzy, c-format
+#| msgid "build through %conf (%prep, then %conf) from <specfile>"
+msgid "build through %conf (%prep, then %conf) from <source package>"
+msgstr ""
+"виконати аж до команди %conf (%prep, потім %conf) з <файл специфікації>"
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <source package>"
+msgstr ""
+"виконати аж до команди %build (%prep, %conf, потім збирання) з <пакунок з "
+"кодами>"
+
+msgid "check build dependencies <source package>"
+msgstr "перевірити залежності збирання <пакунка з кодами>"
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <source "
+"package>"
+msgstr ""
+"виконати аж до команди %install (%prep, %conf, %build, потім встановити) з "
+"<пакунка з кодами>"
+
+#, c-format
+msgid "verify %files section from <source package>"
+msgstr "перевірити розділ %files з <пакунка з початковим кодом>"
+
+msgid "build source and binary packages from <source package>"
+msgstr ""
+"зібрати за <пакунком з кодами> пакунок з бінарними файлами та пакунок з "
+"початковим кодом"
+
+msgid "build binary package only from <source package>"
+msgstr "зібрати за <пакунком з кодами> лише пакунок з бінарними файлами"
+
+msgid "build source package only from <source package>"
+msgstr ""
+"зібрати за <пакунком з початковими кодами> лише пакунок з початковими кодами"
+
+msgid ""
+"build source package only from <source package> - calculate dynamic build "
+"requires"
+msgstr ""
+"зібрати пакунок початкових кодів лише з <пакунок з початковими кодами> — "
+"обчислити залежності збирання динамічних залежностей"
+
+#, c-format
+msgid "build through %prep (unpack sources and apply patches) from <tarball>"
+msgstr ""
+"виконати команди аж до %prep (розпакувати коди і накласти латки) з <архіву "
+"tar>"
+
+msgid "<tarball>"
+msgstr "<архів tar>"
+
+#, fuzzy, c-format
+#| msgid "build through %conf (%prep, then %conf) from <specfile>"
+msgid "build through %conf (%prep, then %conf) from <tarball>"
+msgstr ""
+"виконати аж до команди %conf (%prep, потім %conf) з <файл специфікації>"
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <tarball>"
+msgstr ""
+"виконати аж до команди %build (%prep, %conf, потім збирання) з <архіву tar>"
+
+msgid "check build dependencies <tarball>"
+msgstr "перевірити залежності збирання <архіву tar>"
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <tarball>"
+msgstr ""
+"виконати аж до команди %install (%prep, %conf, %build, потім встановити) з "
+"<архіву tar>"
+
+#, c-format
+msgid "verify %files section from <tarball>"
+msgstr "перевірити розділ %files з <архіву tar>"
+
+msgid "build source and binary packages from <tarball>"
+msgstr "зібрати пакунки з кодами та бінарними файлами за <архівом tar>"
+
+msgid "build binary package only from <tarball>"
+msgstr "зібрати за <архівом tar> лише пакунок з бінарними файлами"
+
+msgid "build source package only from <tarball>"
+msgstr "зібрати за <архівом tar> лише пакунок з кодами"
+
+msgid ""
+"build source package only from <tarball> - calculate dynamic build requires"
+msgstr ""
+"зібрати пакунок початкових кодів лише з <архів tar> — обчислити залежності "
+"збирання динамічних залежностей"
+
+msgid "build binary package from <source package>"
+msgstr "зібрати за <пакунком з кодами> пакунок з бінарними файлами"
+
+#, c-format
+msgid ""
+"build through %install (%prep, %build, then install) from <source package>"
+msgstr ""
+"виконати аж до команди %install (%prep, %build, потім встановити) з <пакунка "
+"з кодами>"
+
+#, fuzzy
+#| msgid "override build root"
+msgid "override build root (DEPRECATED)"
+msgstr "перевизначити кореневий каталог збирання"
+
+msgid "remove build tree when done"
+msgstr "вилучити ієрархію каталогу збирання після завершення збирання"
+
+msgid "ignore ExcludeArch: directives from spec file"
+msgstr "ігнорування ExcludeArch: настанови з файла специфікації"
+
+msgid "debug file state machine"
+msgstr "зневаджування кінцевого автомата файлів"
+
+msgid "do not execute any stages of the build"
+msgstr "не виконувати жодного з кроків збирання"
+
+msgid "do not verify build dependencies"
+msgstr "не перевіряти залежності збирання"
+
+msgid "generate package header(s) compatible with (legacy) rpm v3 packaging"
+msgstr ""
+"створити заголовки пакунків, сумісні з (застарілим) пакуванням версій rpm 3"
+
+#, c-format
+msgid "do not execute %clean stage of the build"
+msgstr "не виконувати етапу %clean збирання"
+
+#, c-format
+msgid "do not execute %prep stage of the build"
+msgstr "не виконувати етапу %prep збирання"
+
+#, c-format
+msgid "do not execute %check stage of the build"
+msgstr "не виконувати етапу %check збирання"
+
+msgid "do not accept i18N msgstr's from specfile"
+msgstr "не приймати рядки перекладів з файла специфікації"
+
+msgid "remove sources when done"
+msgstr "вилучити коди після збирання"
+
+msgid "remove specfile when done"
+msgstr "вилучити файл специфікації після збирання"
+
+msgid "skip straight to specified stage (only for c,i)"
+msgstr "перейти одразу до вказаного кроку (лише для c,i)"
+
+msgid "override target platform"
+msgstr "перевизначити платформу призначення"
+
+msgid "Build options with [ <specfile> | <tarball> | <source package> ]:"
+msgstr ""
+"Параметри збирання з [ <файл spec> | <архів tar> | <пакунок з кодами> ]:"
+
+#, c-format
+msgid "Unable to open spec file %s: %s\n"
+msgstr "Не вдалося відкрити файл spec %s: %s\n"
+
+#, c-format
+msgid "Failed to open tar pipe: %m\n"
+msgstr "Не вдалося відкрити канал tar: %m\n"
+
+#, c-format
+msgid "Found more than one spec file in %s\n"
+msgstr "У %s виявлено декілька файлів специфікації\n"
+
+#, c-format
+msgid "Failed to read spec file from %s\n"
+msgstr "Не вдалося прочитати файл spec з %s\n"
+
+#, c-format
+msgid "Failed to rename %s to %s: %m\n"
+msgstr "Не вдалося перейменувати %s на %s: %m\n"
+
+#, c-format
+msgid "failed to stat %s: %m\n"
+msgstr "не вдалося отримати дані за допомогою stat з %s: %m\n"
+
+#, c-format
+msgid "File %s is not a regular file.\n"
+msgstr "Файл %s не є звичайним файлом.\n"
+
+#, c-format
+msgid "File %s does not appear to be a specfile.\n"
+msgstr "Здається, файл %s не є файлом spec.\n"
+
+#, c-format
+msgid "Building target platforms: %s\n"
+msgstr "Збирання для таких платформ: %s\n"
+
+#, c-format
+msgid "Building for target %s\n"
+msgstr "Збирання для %s\n"
+
+#, c-format
 msgid "%s: read manifest failed: %s\n"
 msgstr "%s: помилка читання маніфесту: %s\n"
 
 msgid "don't verify header+payload signature"
 msgstr "не перевіряти підпис заголовка та вмісту"
+
+msgid "verify package signature(s)"
+msgstr "перевірити підписи пакунка"
+
+msgid "import an armored public key"
+msgstr "імпортувати захищених відкритий ключ"
+
+#, fuzzy
+#| msgid "import an armored public key"
+msgid "export an public key"
+msgstr "імпортувати захищених відкритий ключ"
+
+msgid "don't import, but tell if it would work or not"
+msgstr "не імпортувати, але повідомити, працюватиме чи ні"
+
+#, fuzzy
+#| msgid "list keys from RPM keyring"
+msgid "Erase keys from RPM keyring"
+msgstr "показати список ключів зі сховища ключів RPM"
+
+msgid "list keys from RPM keyring"
+msgstr "показати список ключів зі сховища ключів RPM"
+
+msgid "rebuild the keyring - convert to current backend"
+msgstr ""
+
+msgid "get keys from this backend when rebuilding current backend"
+msgstr ""
+
+msgid "Keyring options:"
+msgstr "Параметри сховища ключів:"
+
+msgid "no arguments given"
+msgstr "не вказано жодних параметрів"
 
 msgid "getopt string for scripts options"
 msgstr "рядок getopt для параметрів скриптів"
@@ -3381,11 +3531,170 @@ msgstr "виконати інструкцію"
 msgid "interactive session"
 msgstr "інтерактивний сеанс"
 
+#, fuzzy
+#| msgid "sign package(s) files"
+msgid "sign package(s), adding a new signature"
+msgstr "підписати файли пакунків"
+
+#, fuzzy
+#| msgid "sign package(s) (identical to --addsign)"
+msgid "resign package(s), deleting any previous signatures"
+msgstr "підписати пакунки (тотожне до --addsign)"
+
+msgid "delete package signatures"
+msgstr "вилучити підписи пакунка"
+
+msgid "delete IMA and fsverity file signatures"
+msgstr "вилучити підписи файлів IMA і fsverity"
+
+#, fuzzy
+#| msgid "create rpm v3 header+payload signatures"
+msgid "request legacy rpm v3 header+payload signatures on v4 packages"
+msgstr "створити підписи заголовка і вмісту rpm версії 3"
+
+#, fuzzy
+#| msgid "create rpm v3 header+payload signatures"
+msgid "request legacy rpm v4 header signatures on v6 packages"
+msgstr "створити підписи заголовка і вмісту rpm версії 3"
+
+#, fuzzy
+#| msgid "create rpm v3 header+payload signatures"
+msgid "request rpm v6 header signature on v4 packages"
+msgstr "створити підписи заголовка і вмісту rpm версії 3"
+
+msgid "sign package(s) files"
+msgstr "підписати файли пакунків"
+
+msgid "generate fsverity signatures for package(s) files"
+msgstr "створити підписи fsverity для файлів пакунків"
+
+msgid "algorithm to use for verity signatures, default sha256"
+msgstr "алгоритм, яким слід скористатися для підписів verity, типовим є sha256"
+
+msgid "<algorithm>"
+msgstr "<алгоритм>"
+
+msgid "use file signing cert <cert>"
+msgstr "скористатися сертифікатом для підписування файлів <сертифікат>"
+
+msgid "<cert>"
+msgstr "<сертифікат>"
+
+msgid "use file signing key <key>"
+msgstr "скористатися для підписування файлів ключем <ключ>"
+
+msgid "<key>"
+msgstr "<ключ>"
+
+msgid "prompt for file signing key password"
+msgstr "запит щодо пароля до ключа для підписування"
+
+msgid "Signature options:"
+msgstr "Параметри підписування:"
+
+#, fuzzy, c-format
+#| msgid "You must set \"%%_gpg_name\" in your macro file\n"
+msgid "You must set \"%%_openpgp_sign_id\" in your macro file\n"
+msgstr "Вам слід встановити значення \"%%_gpg_name\" у вашому файлі макросу\n"
+
+#, c-format
+msgid ""
+"You must set \"%%_file_signing_key\" in your macro file or on the command "
+"line with --fskpath\n"
+msgstr ""
+"Вам слід встановити у вашому файлі макросу значення «%%_file_signing_key» "
+"або скористатися у рядку команди параметром --fskpath\n"
+
+msgid "--fskpath may only be specified when signing files"
+msgstr "--fskpath можна вказувати лише при підписуванні файлів"
+
+msgid "parse spec file(s) to stdout"
+msgstr "вивести оброблені дані файлів spec до stdout"
+
+msgid "query spec file(s)"
+msgstr "опитати файли spec"
+
+msgid "interactive macro shell"
+msgstr "інтерактивна макрооболонка"
+
+msgid "operate on binary rpms generated by spec (default)"
+msgstr "обробити бінарні rpm, створені на основі spec (типово)"
+
+msgid "operate on binary package header(s) that would be built from spec"
+msgstr "працювати із заголовками бінарних пакунків, які буде зібрано з spec"
+
+msgid "operate on source package header generated by spec"
+msgstr ""
+"працювати із заголовком пакунка з початковими кодами, який створено на "
+"основі spec"
+
+msgid "Spec options:"
+msgstr "Параметри spec:"
+
+#, c-format
+msgid "RPM version %s macro shell\n"
+msgstr "Макрооболонка RPM версії %s\n"
+
+msgid "no arguments given for parse"
+msgstr "не вказано аргументів обробки"
+
 msgid "extract an archive"
 msgstr "видобути дані з архіву"
 
 msgid "only print what would be done"
 msgstr "лише вивести перелік дій"
+
+msgid "extract into a specific path"
+msgstr ""
+
+#, c-format
+#~ msgid "files over 4GB not supported by cpio, use rpm2archive instead\n"
+#~ msgstr ""
+#~ "підтримки файлів, розмір яких перевищує 4 ГБ, у cpio не передбачено, "
+#~ "скористайтеся rpm2archive\n"
+
+#~ msgid "run build in current directory"
+#~ msgstr "запустити збирання у поточному каталозі"
+
+#~ msgid "sign package(s)"
+#~ msgstr "підписати пакунки"
+
+#, c-format
+#~ msgid "%%{buildroot} couldn't be empty\n"
+#~ msgstr "%%{buildroot} не може бути порожнім\n"
+
+#, c-format
+#~ msgid "%%{buildroot} can not be \"/\"\n"
+#~ msgstr "%%{buildroot} не може приймати значення «/»\n"
+
+#, c-format
+#~ msgid "line %d: second %%prep\n"
+#~ msgstr "рядок %d: друге %%prep\n"
+
+#~ msgid "Only absolute paths are allowed in file triggers"
+#~ msgstr "У файлових перемикачах можна використовувати лише абсолютні шляхи"
+
+#~ msgid "disable user namespace support"
+#~ msgstr "вимкнути підтримку простору назв користувача"
+
+#~ msgid "query/verify package(s) with package identifier"
+#~ msgstr "опитати/перевірити пакунки за ідентифікатором пакунка"
+
+#~ msgid "query/verify package(s) with header identifier"
+#~ msgstr "опитати/перевірити пакунки за ідентифікатором заголовка"
+
+#~ msgid "Invalid symlink"
+#~ msgstr "Некоректне символічне посилання"
+
+#~ msgid "illegal signature type"
+#~ msgstr "некоректний тип підпису"
+
+#~ msgid "unsupported RPM package version"
+#~ msgstr "непідтримувана версія пакунка RPM"
+
+#, c-format
+#~ msgid "%s%s"
+#~ msgstr "%s%s"
 
 #, c-format
 #~ msgid "%%dev glob not permitted: %s\n"

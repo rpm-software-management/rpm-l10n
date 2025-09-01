@@ -11,11 +11,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-04 09:25+0300\n"
+"POT-Creation-Date: 2025-09-01 14:14+0300\n"
 "PO-Revision-Date: 2025-09-01 16:28+0000\n"
 "Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
-"Language-Team: Swedish <https://translate.fedoraproject.org/projects/rpm/"
-"rpm-l10n/sv/>\n"
+"Language-Team: Swedish <https://translate.fedoraproject.org/projects/rpm/rpm-"
+"l10n/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,538 +23,10 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.13\n"
 
-#, c-format
-msgid "%s: %s\n"
-msgstr "%s: %s\n"
-
-#, c-format
-msgid "RPM version %s\n"
-msgstr "RPM version %s\n"
-
-#, c-format
-msgid "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
-msgstr "Copyright © 1998-2002 - Red Hat, Inc.\n"
-
-#, c-format
-msgid ""
-"This program may be freely redistributed under the terms of the GNU GPL\n"
-msgstr "Detta program kan distribueras fritt enligt villkoren i GNU GPL\n"
-
-#, c-format
-msgid "creating a pipe for --pipe failed: %m\n"
-msgstr "misslyckades att skapa rör för --pipe: %m\n"
-
-#, c-format
-msgid "exec failed\n"
-msgstr "exec misslyckades\n"
-
-msgid "create uncompressed tar file"
-msgstr "skapa okomprimerad tar-fil"
-
-#, c-format
-msgid "argument is not an RPM package\n"
-msgstr "argumentet är inte ett RPM-paket\n"
-
-#, c-format
-msgid "error reading header from package\n"
-msgstr "fel vid läsning av pakethuvud\n"
-
-#, c-format
-msgid "cannot re-open payload: %s\n"
-msgstr "kan inte återöppna lasten: %s\n"
-
-#, c-format
-msgid "files over 4GB not supported by cpio, use rpm2archive instead\n"
-msgstr "filer över 4 GB stödjs inte av cpio, använd rpm2archive istället\n"
-
-#, c-format
-msgid "buildroot already specified, ignoring %s\n"
-msgstr "buildroot redan angivet, ignorerar %s\n"
-
-#, c-format
-msgid "build through %prep (unpack sources and apply patches) from <specfile>"
-msgstr ""
-"bygg till %prep (packa upp källkod samt applicera patchar) från <specfil>"
-
-msgid "<specfile>"
-msgstr "<specfil>"
-
-#, c-format
-msgid "build through %conf (%prep, then %conf) from <specfile>"
-msgstr "bygg till och med %conf (%prep, sedan %conf) från <specfil>"
-
-msgid "build through %build (%prep, %conf, then compile) from <specfile>"
-msgstr "bygg till och med %build (%prep, %conf, kompilera sedan) från <specfil>"
-
-msgid "check build dependencies <specfile>"
-msgstr "kontrollera byggberoenden <specfil>"
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <specfile>"
-msgstr ""
-"bygg till och med %install (%prep, %conf, %build, installera sedan) från "
-"<specfil>"
-
-#, c-format
-msgid "verify %files section from <specfile>"
-msgstr "verifiera %files-sektionen i <specfil>"
-
-msgid "build source and binary packages from <specfile>"
-msgstr "bygg käll- och binärpaket från <specfil>"
-
-msgid "build binary package only from <specfile>"
-msgstr "bygg endast binärpaket från <specfil>"
-
-msgid "build source package only from <specfile>"
-msgstr "bygg endast källpaket från <specfil>"
-
-msgid ""
-"build source package only from <specfile> - calculate dynamic build requires"
-msgstr ""
-"bygg källpaket endast från <spec-fil> – beräkna dynamiska byggberoenden"
-
-#, c-format
-msgid ""
-"build through %prep (unpack sources and apply patches) from <source package>"
-msgstr ""
-"bygg till %prep (packa upp källkod samt applicera patchar) från <källpaket>"
-
-msgid "<source package>"
-msgstr "<källpaket>"
-
-msgid "build through %build (%prep, %conf, then compile) from <source package>"
-msgstr ""
-"bygg till och med %build (%prep, %conf kompilera sedan) från <källpaket>"
-
-msgid "check build dependencies <source package>"
-msgstr "kontrollera byggberoenden <källpaket>"
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <source "
-"package>"
-msgstr ""
-"bygg till och med %install (%prep, %conf, %build, installera sedan) från "
-"<källpaket>"
-
-#, c-format
-msgid "verify %files section from <source package>"
-msgstr "verifiera %files-sektionen från <källpaket>"
-
-msgid "build source and binary packages from <source package>"
-msgstr "bygg käll- och binärpaket från <källpaket>"
-
-msgid "build binary package only from <source package>"
-msgstr "bygg endast binärpaket från <källpaket>"
-
-msgid "build source package only from <source package>"
-msgstr "bygg endast källpaket från <källpaket>"
-
-msgid ""
-"build source package only from <source package> - calculate dynamic build "
-"requires"
-msgstr ""
-"bygg källpaket endast från <källpaket> – beräkna dynamiska byggberoenden"
-
-#, c-format
-msgid "build through %prep (unpack sources and apply patches) from <tarball>"
-msgstr ""
-"bygg till och med %prep (packa upp källkod samt applicera patchar) från <tar-"
-"arkiv>"
-
-msgid "<tarball>"
-msgstr "<tar-arkiv>"
-
-msgid "build through %build (%prep, %conf, then compile) from <tarball>"
-msgstr ""
-"bygg till och med %build (%prep, %conf, kompilera sedan) från <tar-arkiv>"
-
-msgid "check build dependencies <tarball>"
-msgstr "kontrollera byggberoenden <tar-arkiv>"
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <tarball>"
-msgstr ""
-"bygg till och med %install (%prep, %conf, %build, installera sedan) från "
-"<tar-arkiv>"
-
-#, c-format
-msgid "verify %files section from <tarball>"
-msgstr "verifiera %files-sektionen från <tar-arkiv>"
-
-msgid "build source and binary packages from <tarball>"
-msgstr "bygg käll- och binärpaket från <tar-arkiv>"
-
-msgid "build binary package only from <tarball>"
-msgstr "bygg endast binärpaket från <tar-arkiv>"
-
-msgid "build source package only from <tarball>"
-msgstr "bygg endast källpaket från <tar-arkiv>"
-
-msgid ""
-"build source package only from <tarball> - calculate dynamic build requires"
-msgstr ""
-"bygg källpaket endast från <tar-boll> – beräkna dynamiska byggberoenden"
-
-msgid "build binary package from <source package>"
-msgstr "bygg binärpaket från <källpaket>"
-
-msgid ""
-"build through %install (%prep, %build, then install) from <source package>"
-msgstr ""
-"bygg till och med %install (%prep, %build, installera sedan) från <källpaket>"
-
-msgid "override build root"
-msgstr "åsidosätt byggrot"
-
-msgid "run build in current directory"
-msgstr "kör bygget i aktuell katalog"
-
-msgid "remove build tree when done"
-msgstr "ta bort byggträd efteråt"
-
-msgid "ignore ExcludeArch: directives from spec file"
-msgstr "ignorera ExcludeArch:-direktiv från specfil"
-
-msgid "debug file state machine"
-msgstr "felsök filtillståndsmaskin"
-
-msgid "do not execute any stages of the build"
-msgstr "utför inga steg i byggnationen"
-
-msgid "do not verify build dependencies"
-msgstr "verifiera inte byggberoenden"
-
-msgid "generate package header(s) compatible with (legacy) rpm v3 packaging"
-msgstr "generera pakethuvd(en) kompatibla med (äldre) rpm-v3-paketering"
-
-#, c-format
-msgid "do not execute %clean stage of the build"
-msgstr "utför inte %clean-steget i byggnationen"
-
-#, c-format
-msgid "do not execute %prep stage of the build"
-msgstr "utför inte %prep-steget i byggnationen"
-
-#, c-format
-msgid "do not execute %check stage of the build"
-msgstr "utför inte %check-steget i byggnationen"
-
-msgid "do not accept i18N msgstr's from specfile"
-msgstr "acceptera inte i18N-msgstr:er från specfilen"
-
-msgid "remove sources when done"
-msgstr "ta bort källkod efteråt"
-
-msgid "remove specfile when done"
-msgstr "ta bort specfil efteråt"
-
-msgid "skip straight to specified stage (only for c,i)"
-msgstr "gå direkt till angivet steg (endast för c,i)"
-
-msgid "override target platform"
-msgstr "åsidosätt målplattform"
-
-msgid "Build options with [ <specfile> | <tarball> | <source package> ]:"
-msgstr "Byggflaggor med [ <specfil> | <tar-arkiv> | <källpaket> ]:"
-
-msgid "Common options for all rpm modes and executables:"
-msgstr "Gemensamma flaggor för alla rpm-lägen och binärer:"
-
-#, c-format
-msgid "Unable to open spec file %s: %s\n"
-msgstr "Kan inte öppna specfilen %s: %s\n"
-
-#, c-format
-msgid "Failed to open tar pipe: %m\n"
-msgstr "Kunde inte öppna ”tar”-rör: %m\n"
-
-#, c-format
-msgid "Found more than one spec file in %s\n"
-msgstr "Hittade mer än en spec-fil i %s\n"
-
-#, c-format
-msgid "Failed to read spec file from %s\n"
-msgstr "Kunde inte läsa specfil från %s\n"
-
-#, c-format
-msgid "Failed to rename %s to %s: %m\n"
-msgstr "Kunde inte byta namn på %s till %s: %m\n"
-
-#, c-format
-msgid "failed to stat %s: %m\n"
-msgstr "kunde inte ta status på %s: %m\n"
-
-#, c-format
-msgid "File %s is not a regular file.\n"
-msgstr "Filen %s är inte en vanlig fil.\n"
-
-#, c-format
-msgid "File %s does not appear to be a specfile.\n"
-msgstr "Filen %s tycks inte vara en specfil.\n"
-
-#, c-format
-msgid "Building target platforms: %s\n"
-msgstr "Bygger målplattformar: %s\n"
-
-#, c-format
-msgid "Building for target %s\n"
-msgstr "Bygger för målet %s\n"
-
-msgid "arguments to --root (-r) must begin with a /"
-msgstr "argument till --root (-r) måste börja med /"
-
-msgid "initialize database"
-msgstr "initiera databas"
-
-msgid "rebuild database inverted lists from installed package headers"
-msgstr "bygg om databasens inverterade listor från installerade pakets huvuden"
-
-msgid "verify database files"
-msgstr "verifiera databasfiler"
-
-msgid "salvage database"
-msgstr "rädda databasen"
-
-msgid "export database to stdout header list"
-msgstr "exportera databasen till standard ut huvudlista"
-
-msgid "import database from stdin header list"
-msgstr "importera databasen från standard in huvudlista"
-
-msgid "Database options:"
-msgstr "Databasflaggor:"
-
-msgid "only one major mode may be specified"
-msgstr "enbart ett huvudläge kan anges"
-
-msgid "verify package signature(s)"
-msgstr "verifiera paketsignatur(er)"
-
-msgid "import an armored public key"
-msgstr "importera en publik nyckel med skal"
-
-msgid "don't import, but tell if it would work or not"
-msgstr "importera inte, men tala om ifall det skulle fungera eller inte"
-
-msgid "list keys from RPM keyring"
-msgstr "lista nycklar från RPM-nyckelringen"
-
-msgid "Keyring options:"
-msgstr "Nyckelringsflaggor:"
-
-msgid "no arguments given"
-msgstr "inga argument angivna"
-
-msgid "Query/Verify package selection options:"
-msgstr "Flaggor för att fråga/kontrollera paket:"
-
-msgid "Query/Verify file selection options:"
-msgstr "Flaggor för att fråga/kontrollera filer:"
-
-msgid "Query options (with -q or --query):"
-msgstr "Frågeflaggor (med -q eller --query):"
-
-msgid "Verify options (with -V or --verify):"
-msgstr "Verifieringsflaggor (med -V eller --verify):"
-
-msgid "Install/Upgrade/Erase options:"
-msgstr "Installations-/Uppdaterings-/Raderingsflaggor:"
-
-msgid "one type of query/verify may be performed at a time"
-msgstr "endast en typ av fråga/verifiering kan utföras åt gången"
-
-msgid "unexpected query flags"
-msgstr "oväntade frågeflaggor"
-
-msgid "unexpected query format"
-msgstr "oväntat frågeformat"
-
-msgid "unexpected query source"
-msgstr "oväntad frågekälla"
-
-msgid "only installation and upgrading may be forced"
-msgstr "bara installation och uppgradering kan tvingas fram"
-
-msgid "files may only be relocated during package installation"
-msgstr "filer kan relokeras endast under paketinstallation"
-
-msgid "cannot use --prefix with --relocate or --excludepath"
-msgstr "kan inte använda --prefix med --relocate eller --excludepath"
-
-msgid ""
-"--relocate and --excludepath may only be used when installing new packages"
-msgstr ""
-"--relocate och --excludepath kan endast användas när nya paket installeras"
-
-msgid "--prefix may only be used when installing new packages"
-msgstr "--prefix kan endast användas när nya paket installeras"
-
-msgid "arguments to --prefix must begin with a /"
-msgstr "argument till --prefix måste börja med /"
-
-msgid ""
-"--hash (-h) may only be specified during package installation and erasure"
-msgstr "--hash (-h) kan enbart användas vid paketinstallation och -radering"
-
-msgid "--percent may only be specified during package installation and erasure"
-msgstr "--percent kan enbart användas vid paketinstallation och -radering"
-
-msgid "--replacepkgs may only be specified during package installation"
-msgstr "--replacepkgs kan enbart användas vid paketinstallation"
-
-msgid "--excludedocs may only be specified during package installation"
-msgstr "--excludedocs kan enbart användas vid paketinstallation"
-
-msgid "--includedocs may only be specified during package installation"
-msgstr "--includedocs kan enbart användas vid paketinstallation"
-
-msgid "only one of --excludedocs and --includedocs may be specified"
-msgstr "enbart en av --excludedocs och --includedocs kan användas"
-
-msgid "--ignorearch may only be specified during package installation"
-msgstr "--ignorearch kan enbart användas vid paketinstallation"
-
-msgid "--ignoreos may only be specified during package installation"
-msgstr "--ignoreos kan enbart användas vid paketinstallation"
-
-msgid "--ignoresize may only be specified during package installation"
-msgstr "--ignoresize kan enbart användas vid paketinstallation"
-
-msgid "--allmatches may only be specified during package erasure"
-msgstr "--allmatches kan enbart användas när paket raderas"
-
-msgid "--allfiles may only be specified during package installation"
-msgstr "--allfiles kan enbart användas vid paketinstallation"
-
-msgid "--justdb may only be specified during package installation and erasure"
-msgstr "--justdb kan enbart användas när paket installeras eller raderas"
-
-msgid ""
-"script disabling options may only be specified during package installation "
-"and erasure"
-msgstr ""
-"skriptinaktiveringsflaggor kan enbart användas när paket installeras eller "
-"raderas"
-
-msgid ""
-"trigger disabling options may only be specified during package installation "
-"and erasure"
-msgstr ""
-"utlösarinaktiveringsflaggor kan enbart användas när paket installeras eller "
-"raderas"
-
-msgid ""
-"--nodeps may only be specified during package installation, erasure, and "
-"verification"
-msgstr ""
-"--nodeps kan enbart användas vid paketinstallation, -radering och -"
-"verifikation"
-
-msgid "--test may only be specified during package installation and erasure"
-msgstr "--test kan enbart användas vid paketinstallation och -radering"
-
-msgid "no packages given for erase"
-msgstr "inga paket angivna att radera"
-
-msgid "no packages given for install"
-msgstr "inga paket angivna för installation"
-
-msgid "no arguments given for query"
-msgstr "inga parametrar angivna för fråga"
-
-msgid "no arguments given for verify"
-msgstr "inga parametrar angivna för verifiering"
-
-msgid "sign package(s)"
-msgstr "signera paket"
-
-msgid "sign package(s) (identical to --addsign)"
-msgstr "signera paket (detsamma som --addsign)"
-
-msgid "delete package signatures"
-msgstr "tag bort paketsignaturer"
-
-msgid "delete IMA and fsverity file signatures"
-msgstr "radera IMA- och fsverity-filsignaturer"
-
-msgid "create rpm v3 header+payload signatures"
-msgstr "skapa rpm v3 huvud+lastsignatur"
-
-msgid "sign package(s) files"
-msgstr "signera paketfiler"
-
-msgid "generate fsverity signatures for package(s) files"
-msgstr "generera fsverity-signaturer för paketfiler"
-
-msgid "algorithm to use for verity signatures, default sha256"
-msgstr "algoritm att använda för att verifiera signaturer, standard sha256"
-
-msgid "<algorithm>"
-msgstr "<algoritm>"
-
-msgid "use file signing cert <cert>"
-msgstr "använd filsignerings certifikat <certifikat>"
-
-msgid "<cert>"
-msgstr "<certifikat>"
-
-msgid "use file signing key <key>"
-msgstr "använd signeringsnyckeln <nyckel>"
-
-msgid "<key>"
-msgstr "<nyckel>"
-
-msgid "prompt for file signing key password"
-msgstr "fråga efter lösenords för filsigneringsnyckeln"
-
-msgid "Signature options:"
-msgstr "Signaturflaggor:"
-
-#, c-format
-msgid "You must set \"%%_gpg_name\" in your macro file\n"
-msgstr "Du måste sätta ”%%_gpg_name” i din makrofil\n"
-
-#, c-format
-msgid ""
-"You must set \"%%_file_signing_key\" in your macro file or on the command "
-"line with --fskpath\n"
-msgstr ""
-"Du måste sätta ”%%_file_signing_key” i din makrofil eller på kommandoraden "
-"med --fskpath\n"
-
-msgid "--fskpath may only be specified when signing files"
-msgstr "--fskpath kan endast anges när filer signeras"
-
-msgid "parse spec file(s) to stdout"
-msgstr "tolka spec-fil(er) till standard ut"
-
-msgid "query spec file(s)"
-msgstr "fråga spec-fil(er)"
-
-msgid "interactive macro shell"
-msgstr "interaktivt makroskal"
-
-msgid "operate on binary rpms generated by spec (default)"
-msgstr "arbeta på binära rpm:er som genereras av spec (standard)"
-
-msgid "operate on binary package header(s) that would be built from spec"
-msgstr "arbeta med binärpakethuvuden som skulle byggts från spec"
-
-msgid "operate on source package header generated by spec"
-msgstr "arbeta på källpaketshuvuden genererade av spec"
-
-msgid "use the following query format"
-msgstr "använd följande frågeformat"
-
-msgid "Spec options:"
-msgstr "Spec-flaggor:"
-
-#, c-format
-msgid "RPM version %s macro shell\n"
-msgstr "RPM version %s makro skal\n"
-
-msgid "no arguments given for parse"
-msgstr "inga parametrar angivna för tolkning"
+#, fuzzy
+#| msgid "unable to parse %s=%s\n"
+msgid "unable to parse _buildtime macro\n"
+msgstr "kan inte tolka %s=%s\n"
 
 msgid "unable to parse SOURCE_DATE_EPOCH\n"
 msgstr "kan inte tolka SOURCE_DATE_EPOCH\n"
@@ -582,12 +54,20 @@ msgstr "Dålig slutstatus från %s (%s)\n"
 msgid "Failed build dependencies:\n"
 msgstr "Ouppfyllda byggberoenden:\n"
 
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to create package build directory %s: %s\n"
+msgstr "misslyckades att skapa katalogen %s: %s\n"
+
 #, c-format
 msgid "setting %s=%s\n"
 msgstr "sätter %s=%s\n"
 
-#, c-format
-msgid "source_date_epoch_from_changelog set but %%changelog is missing\n"
+#, fuzzy, c-format
+#| msgid "source_date_epoch_from_changelog set but %%changelog is missing\n"
+msgid ""
+"%%source_date_epoch_from_changelog is set, but %%changelog has no entries to "
+"take a date from\n"
 msgstr "source_date_epoch_from_changelog inställd men %%changelog saknas\n"
 
 msgid ""
@@ -664,11 +144,23 @@ msgid "File must begin with \"/\": %s\n"
 msgstr "Filnamn måste börja med ”/”: %s\n"
 
 #, c-format
+msgid ""
+"%%clamp_mtime_to_source_date_epoch is deprecated, please use "
+"%%build_mtime_policy\n"
+msgstr ""
+
+#, c-format
 msgid "unable to parse %s=%s\n"
 msgstr "kan inte tolka %s=%s\n"
 
-#, c-format
-msgid "Unknown file digest algorithm %u, falling back to MD5\n"
+#, fuzzy, c-format
+#| msgid "Unknown icon type: %s\n"
+msgid "Unknown mtime policy '%s'\n"
+msgstr "Okänd ikontyp: %s\n"
+
+#, fuzzy, c-format
+#| msgid "Unknown file digest algorithm %u, falling back to MD5\n"
+msgid "Unknown file digest algorithm %u, falling back to %u\n"
 msgstr "Okänd filkontrollsummealgoritm %u, faller tillbaka på MD5\n"
 
 #, c-format
@@ -896,9 +388,24 @@ msgstr "Kunde inte generera utfilnamn för paketet %s: %s\n"
 msgid "Finished binary package job, result %d, filename %s\n"
 msgstr "Avslutade binärt paketjobb, resultat %d, filnamn %s\n"
 
+#, fuzzy, c-format
+#| msgid "line %d: Error parsing %s: %s\n"
+msgid "line %d: Error parsing script: %s: %s\n"
+msgstr "rad %d: Fel vid tolkning av %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "line %d: Bad option %s: %s\n"
+msgid "line %d: Bad %s option %s: %s\n"
+msgstr "rad %d: otillåten flagga %s: %s\n"
+
 #, c-format
 msgid "line %d: second %s\n"
 msgstr "rad %d: andra %s\n"
+
+#, fuzzy, c-format
+#| msgid "line %d: unsupported internal script: %s\n"
+msgid "line %d: append and prepend specified: %s\n"
+msgstr "rad %d: ej stött internt skript: %s\n"
 
 #, c-format
 msgid "bogus date in %%changelog: %s\n"
@@ -1004,6 +511,11 @@ msgstr "OS är inte medtaget: %s\n"
 msgid "%s field must be present in package: %s\n"
 msgstr "%s-fält måste finnas med i paketet: %s\n"
 
+#, fuzzy, c-format
+#| msgid "%s field must be present in package: %s\n"
+msgid "%s field must be present before build in package: %s\n"
+msgstr "%s-fält måste finnas med i paketet: %s\n"
+
 #, c-format
 msgid "Duplicate %s entries in package: %s\n"
 msgstr "Dubbla %s-poster i paketet: %s\n"
@@ -1074,6 +586,11 @@ msgstr "rad %d: Felaktigt BuildArchitecture-format: %s\n"
 msgid "line %d: Duplicate BuildArch entry: %s\n"
 msgstr "rad %d: dubblerad BuildArch-post: %s\n"
 
+#, fuzzy, c-format
+#| msgid "line %d: Only noarch subpackages are supported: %s\n"
+msgid "line %d: Only noarch is allowed after the build: %s\n"
+msgstr "rad %d: Endast noarch-underpaket stöds: %s\n"
+
 #, c-format
 msgid "line %d: Only noarch subpackages are supported: %s\n"
 msgstr "rad %d: Endast noarch-underpaket stöds: %s\n"
@@ -1097,13 +614,15 @@ msgstr "Binärt rpm-paket hittat. Spec-fil förväntades!\n"
 msgid "line %d: Unknown tag: %s\n"
 msgstr "rad %d: Okänd tagg: %s\n"
 
-#, c-format
-msgid "%%{buildroot} couldn't be empty\n"
-msgstr "%%{buildroot} fick inte vara tom\n"
+#, fuzzy, c-format
+#| msgid "line %d: Priorities are allowed only for file triggers : %s\n"
+msgid "line %d: Tag not allowed after build is done: %s\n"
+msgstr "rad %d: prioriteter är endast tillåta för filutlösare: %s\n"
 
-#, c-format
-msgid "%%{buildroot} can not be \"/\"\n"
-msgstr "%%{buildroot} kan inte vara ”/”\n"
+#, fuzzy, c-format
+#| msgid "Invalid capability: %s\n"
+msgid "Invalid buildroot: '%s'\n"
+msgstr "Ogiltig förmåga (capability): %s\n"
 
 #, c-format
 msgid "No patch number %u\n"
@@ -1133,17 +652,6 @@ msgstr "Patchnummer ej specificerad: %s\n"
 msgid "Invalid patch number %s: %s\n"
 msgstr "Felaktigt patch-nummer %s: %s\n"
 
-#, c-format
-msgid "line %d: second %%prep\n"
-msgstr "rad %d: andra %%prep\n"
-
-#, c-format
-msgid ""
-"%%patchN is deprecated (%i usages found), use %%patch N (or %%patch -P N)\n"
-msgstr ""
-"%%patchN är föråldrat (%i användningar hittade), använd %%patch N (eller "
-"%%patch -P N)\n"
-
 msgid "Dependency tokens must begin with alpha-numeric, '_' or '/'"
 msgstr "Beroenden måste börja alfanumeriskt, med ”_” eller med ”/”"
 
@@ -1159,6 +667,11 @@ msgstr "ogiltigt beroende"
 msgid "Version required"
 msgstr "Version krävs"
 
+#, fuzzy
+#| msgid "line %d: file trigger condition must begin with '/': %s"
+msgid "file trigger conditions must begin with '/'"
+msgstr "rad %d: filtriggervillkor måste börja med ”/”: %s"
+
 msgid "Only package names are allowed in Obsoletes"
 msgstr "Endast paketnamn är tillåta i Obsoletes"
 
@@ -1167,9 +680,6 @@ msgstr "Det rekommenderas inte att ha versionslösa Obsoletes"
 
 msgid "It's not recommended to use '>' in Obsoletes"
 msgstr "Det rekommenderas inte att använda ”>” i Obsoletes"
-
-msgid "Only absolute paths are allowed in file triggers"
-msgstr "Endast absoluta sökvägar är tillåtna i filutlösare"
 
 msgid "Trigger fired by the same package is already defined in spec file"
 msgstr "En utlösare startad av samma paket är redan definierad i spec-filen"
@@ -1209,10 +719,6 @@ msgstr "rad %d: En andra %s\n"
 #, c-format
 msgid "line %d: unsupported internal script: %s\n"
 msgstr "rad %d: ej stött internt skript: %s\n"
-
-#, c-format
-msgid "line %d: file trigger condition must begin with '/': %s"
-msgstr "rad %d: filtriggervillkor måste börja med ”/”: %s"
 
 #, c-format
 msgid "line %d: interpreter arguments not allowed in triggers: %s\n"
@@ -1258,6 +764,15 @@ msgstr "%s:%d: felaktigt %s-villkor: %s\n"
 msgid "%s:%d: malformed %%include statement\n"
 msgstr "%s:%d: felformaterad %%include-sats\n"
 
+#, fuzzy, c-format
+#| msgid ""
+#| "%%patchN is deprecated (%i usages found), use %%patch N (or %%patch -P "
+#| "N)\n"
+msgid "%%patchN is obsolete, use %%patch N (or %%patch -P N): %s\n"
+msgstr ""
+"%%patchN är föråldrat (%i användningar hittade), använd %%patch N (eller "
+"%%patch -P N)\n"
+
 #, c-format
 msgid "encoding %s not supported by system\n"
 msgstr "kodningen %s stödjs inte av systemet\n"
@@ -1278,8 +793,36 @@ msgstr "rad %d: %%end förväntades inte här, ingen sektion att avsluta: %s\n"
 msgid "line %d doesn't belong to any section: %s\n"
 msgstr "rad %d tillhör inte någon sektion: %s\n"
 
+#, fuzzy, c-format
+#| msgid "line %d: Unknown tag: %s\n"
+msgid "line %d: Unknown buildsystem: %s\n"
+msgstr "rad %d: Okänd tagg: %s\n"
+
+#, c-format
+msgid ""
+"line %d: Required parametric macro %%%s not defined for buildsystem %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "failed to write all data to %s: %s\n"
+msgid "failed to write buildsystem %s %%%s: %s\n"
+msgstr "misslyckades med att skriva all data till %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "Couldn't create temporary file for %s: %s\n"
+msgid "failed to create temp file for buildsystem: %s\n"
+msgstr "Kunde inte skapa temporärfil för %s: %s\n"
+
+#, c-format
+msgid "Section %s is not allowed after build is done!\n"
+msgstr ""
+
 msgid "No compatible architectures found for build\n"
 msgstr "Hittade inga kompatibla arkitekturer att bygga\n"
+
+#, c-format
+msgid "invalid rpm format %d requested, using %d\n"
+msgstr ""
 
 #, c-format
 msgid "Package has no %%description: %s\n"
@@ -1371,6 +914,10 @@ msgstr "%s misslyckades: %x\n"
 msgid "failed to write all data to %s: %s\n"
 msgstr "misslyckades med att skriva all data till %s: %s\n"
 
+#, c-format
+msgid "invalid or out of order path from generator: %s\n"
+msgstr ""
+
 msgid "Empty file classifier\n"
 msgstr "Tom filklassificerare\n"
 
@@ -1402,6 +949,11 @@ msgid "Failed to find %s:\n"
 msgstr "Misslyckades med att hitta %s:\n"
 
 msgid "Deprecated external dependency generator is used!\n"
+msgstr "Föråldrad extern beroendegenerator används!\n"
+
+#, fuzzy
+#| msgid "Deprecated external dependency generator is used!\n"
+msgid "External dependency generator is incompatible with v6 packages\n"
 msgstr "Föråldrad extern beroendegenerator används!\n"
 
 #, c-format
@@ -1530,8 +1082,9 @@ msgstr "%s%s sparad som %s%s\n"
 msgid "%s%s created as %s%s\n"
 msgstr "%s%s skapades som %s%s\n"
 
-#, c-format
-msgid "%s %s: remove failed: %s\n"
+#, fuzzy, c-format
+#| msgid "%s %s: remove failed: %s\n"
+msgid "%s %s%s: remove failed: %s\n"
 msgstr "%s %s: borttagande misslyckades: %s\n"
 
 msgid "directory"
@@ -1658,8 +1211,39 @@ msgid "array iterator used with different sized arrays"
 msgstr "vektoriterator använd med vektor av annan storlek"
 
 #, c-format
+msgid "%s: reading of public key failed.\n"
+msgstr "%s: misslyckades att läsa publik nyckel.\n"
+
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to create keyring directory %s: %s\n"
+msgstr "misslyckades att skapa katalogen %s: %s\n"
+
+#, c-format
+msgid "failed to import key: %s: %s\n"
+msgstr "Misslyckades att importera nyckel: %s %s\n"
+
+#, fuzzy, c-format
+#| msgid "can't create %s lock on %s (%s)\n"
+msgid "Can't create writelock for keyring at %s: %s\n"
+msgstr "det går inte att skapa %s-lås på %s (%s)\n"
+
+#, c-format
+msgid "Can't acquire writelock for keyring at %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "%s: not an armored public key.\n"
+msgid "%s is not a valid public key\n"
+msgstr "%s: inte en publik nyckel med skal.\n"
+
+#, c-format
 msgid "RPM v3 packages are deprecated: %s\n"
 msgstr "RPM v3-paket är föråldrade: %s\n"
+
+#, c-format
+msgid "RPM version %s\n"
+msgstr "RPM version %s\n"
 
 msgid "Error writing to stdout"
 msgstr "Fel vid skrivning till stdout"
@@ -1766,9 +1350,6 @@ msgstr "felsök lastfilstillståndsmaskin"
 
 msgid "debug rpmio I/O"
 msgstr "felsök rpmio I/O"
-
-msgid "disable user namespace support"
-msgstr "avaktivera stöd för användarnamnrymder"
 
 #, c-format
 msgid "%s: option table misconfigured (%d)\n"
@@ -1997,12 +1578,6 @@ msgstr "fråga/verifiera paket i grupp"
 msgid "query/verify a package file"
 msgstr "fråga/verifiera en paketfil"
 
-msgid "query/verify package(s) with package identifier"
-msgstr "fråga/verifiera paket som med paketidentifierare"
-
-msgid "query/verify package(s) with header identifier"
-msgstr "fråga/verifiera paket med huvudidentifierare"
-
 msgid "rpm query mode"
 msgstr "rpm frågeläge"
 
@@ -2017,6 +1592,11 @@ msgstr "fråga paket utlösta av paketet"
 
 msgid "rpm verify mode"
 msgstr "rpm verifieringsläge"
+
+#, fuzzy
+#| msgid "query/verify the package(s) which obsolete a dependency"
+msgid "query/verify the package(s) which conflict with a dependency"
+msgstr "fråga/verifiera paket som fasar ut ett beroende"
 
 msgid "query/verify the package(s) which require a dependency"
 msgstr "fråga/verifiera paket som behöver ett beroende"
@@ -2074,6 +1654,9 @@ msgstr "visa filinformation"
 
 msgid "list files in package"
 msgstr "lista filer i paketet"
+
+msgid "use the following query format"
+msgstr "använd följande frågeformat"
 
 msgid "display the states of the listed files"
 msgstr "visa tillstånd för de listade filerna"
@@ -2485,17 +2068,20 @@ msgstr "gruppen %s finns inte — använder %s\n"
 msgid "Wrong number of entries for tag %s: %u found but %u expected.\n"
 msgstr "Fel antal poster för taggen %s: %u fanns men %u förväntades.\n"
 
-#, c-format
-msgid "Malformed data for tag %s: %u bytes found but %lu expected.\n"
+#, fuzzy, c-format
+#| msgid "Malformed data for tag %s: %u bytes found but %lu expected.\n"
+msgid "Malformed data for tag %s: %u bytes found but %<PRIu64> expected.\n"
 msgstr ""
 "Felformatterad data för taggen %s: %u bytes fanns men %lu förväntades.\n"
 
-#, c-format
-msgid "%s: base64 decode failed, len %li\n"
+#, fuzzy, c-format
+#| msgid "%s: base64 decode failed, len %li\n"
+msgid "%s: base64 decode failed, len %zu\n"
 msgstr "%s: base64-avkodning misslyckades, len%li\n"
 
-#, c-format
-msgid "%s: base64 decode success, len %li\n"
+#, fuzzy, c-format
+#| msgid "%s: base64 decode success, len %li\n"
+msgid "%s: base64 decode success, len %zu\n"
 msgstr "%s: base64-avkodning lyckades, len%li\n"
 
 msgid "Bad magic"
@@ -2525,8 +2111,10 @@ msgstr "Internt fel"
 msgid "Archive file not in header"
 msgstr "Ingen arkivfilen i huvud"
 
-msgid "Invalid symlink"
-msgstr "Ogiltig symlänk"
+#, fuzzy
+#| msgid "failed symlink"
+msgid "Unsafe symlink"
+msgstr "misslyckad symlänk"
 
 msgid "File from package already exists as a directory in system"
 msgstr "En fil från paketet finns redan som en katalog i systemet"
@@ -2601,6 +2189,11 @@ msgstr "paket %s är inte relokerbart\n"
 msgid "error reading from file %s\n"
 msgstr "fel vid läsning från fil %s\n"
 
+#, fuzzy, c-format
+#| msgid "no package matches %s: %s\n"
+msgid "package format not supported: %s\n"
+msgstr "inga paket matchar %s: %s\n"
+
 #, c-format
 msgid "\"%s\" specifies multiple packages:\n"
 msgstr "”%s” anger flera paket:\n"
@@ -2615,12 +2208,6 @@ msgstr "Installerar %s\n"
 
 msgid "not an rpm package"
 msgstr "inte ett rpm-paket"
-
-msgid "illegal signature type"
-msgstr "ogiltig signaturtyp"
-
-msgid "unsupported RPM package version"
-msgstr "ej stödd RPM-paketversion"
 
 #, c-format
 msgid "read failed: %s (%d)\n"
@@ -2763,6 +2350,11 @@ msgstr "argument till %s saknas vid %s:%d\n"
 msgid "cannot open %s at %s:%d: %m\n"
 msgstr "kan inte öppna %s vid %s:%d: %m\n"
 
+#, fuzzy, c-format
+#| msgid "bad option '%s' at %s:%d\n"
+msgid "Ignoring %s at %s:%d\n"
+msgstr "okänd flagga ”%s” vid %s:%d\n"
+
 #, c-format
 msgid "missing architecture for %s at %s:%d\n"
 msgstr "arkitektur saknas för %s vid %s:%d\n"
@@ -2821,6 +2413,15 @@ msgstr "%s-skript misslyckades, slutstatus %d\n"
 msgid "Unknown format"
 msgstr "Okänt format"
 
+#, c-format
+msgid "erasing gpg-pubkey packages is deprecated; use rpmkeys --delete %s\n"
+msgstr ""
+
+msgid ""
+"public keys can not be installed as gpg-pubkey packages; use rpmkeys --"
+"import <keyfile> for that\n"
+msgstr ""
+
 msgid "install"
 msgstr "installera"
 
@@ -2850,16 +2451,13 @@ msgid "missing ')' in package label: %s\n"
 msgstr "”)” saknas i paketetikett: %s\n"
 
 #, c-format
-msgid "%s: reading of public key failed.\n"
-msgstr "%s: misslyckades att läsa publik nyckel.\n"
-
-#, c-format
 msgid "unknown keyring type: %s, using rpmdb\n"
 msgstr "okänd nyckelringstyp: %s, använder rpmdb\n"
 
-#, c-format
-msgid "failed to import key: %s: %s\n"
-msgstr "Misslyckades att importera nyckel: %s %s\n"
+#, fuzzy, c-format
+#| msgid "Unknown icon type: %s\n"
+msgid "unknown keyring type: %s\n"
+msgstr "Okänd ikontyp: %s\n"
 
 #, c-format
 msgid "invalid package verify level %s\n"
@@ -2884,6 +2482,11 @@ msgstr "%s-tagg %u: felaktig data %p (%u)"
 msgid "%s tag %u: invalid size %u"
 msgstr "%s-tagg %u: felaktig storlek %u"
 
+#, fuzzy, c-format
+#| msgid "%s: tag %u: invalid hex"
+msgid "%s tag %u: invalid base64"
+msgstr "%s: tagg %u: felakigt hextal"
+
 #, c-format
 msgid "%s tag %u: invalid OpenPGP signature"
 msgstr "%s-tagg %u: felaktig OpenPGP-signatur"
@@ -2892,19 +2495,28 @@ msgstr "%s-tagg %u: felaktig OpenPGP-signatur"
 msgid "%s: tag %u: invalid hex"
 msgstr "%s: tagg %u: felakigt hextal"
 
-#, c-format
-msgid "%s%s%s %s"
+#, fuzzy, c-format
+#| msgid "%s%s%s %s"
+msgid "%s %s%s %s"
 msgstr "%s%s%s %s"
 
 msgid "digest"
 msgstr "kontrollsumma"
 
 #, c-format
-msgid "%s%s"
-msgstr "%s%s"
+msgid "%s OpenPGP %s"
+msgstr ""
+
+#, c-format
+msgid "%s OpenPGP %s %s"
+msgstr ""
 
 msgid "signature"
 msgstr "signatur"
+
+#, c-format
+msgid ", key fingerprint: %s"
+msgstr ""
 
 msgid "header"
 msgstr "huvud"
@@ -2912,10 +2524,14 @@ msgstr "huvud"
 msgid "package"
 msgstr "paket"
 
-msgid "Header "
+#, fuzzy
+#| msgid "Header "
+msgid "Header"
 msgstr "Huvud "
 
-msgid "Payload "
+#, fuzzy
+#| msgid "Payload "
+msgid "Payload"
 msgstr "Last "
 
 msgid "Unable to reload signature header.\n"
@@ -2992,7 +2608,9 @@ msgstr "funktionsargumenttyp som inte stöds"
 msgid "syntax error in expression"
 msgstr "syntaxfel i uttryck"
 
-msgid "unsupported funcion"
+#, fuzzy
+#| msgid "unsupported funcion"
+msgid "unsupported function"
 msgstr "ostödd funktion"
 
 msgid "unmatched ("
@@ -3100,7 +2718,16 @@ msgid "A %% is followed by an unparseable macro\n"
 msgstr "Ett %% följs av ett makro som inte kan tolkas\n"
 
 #, c-format
-msgid "======================== active %d empty %d\n"
+msgid "unexpected argument to non-parametric macro %%%s\n"
+msgstr ""
+
+#, c-format
+msgid "macro value out of range for int: %<PRIu64> using %i instead.\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "======================== active %d empty %d\n"
+msgid "======================== active %zu empty %d\n"
 msgstr "======================== aktiva %d tomma %d\n"
 
 #, c-format
@@ -3171,6 +2798,15 @@ msgstr "V%d %s/%s %s, nyckel-ID %s"
 msgid "(none)"
 msgstr "(ingen)"
 
+#, fuzzy, c-format
+#| msgid "Could not read from file %s: %s\n"
+msgid "Could not find url helper: \"%s\"\n"
+msgstr "Kunde inte läsa från filen %s: %s\n"
+
+#, c-format
+msgid "Executing url helper \"%s\" failed with status %i\n"
+msgstr ""
+
 #, c-format
 msgid "%s: Fwrite failed: %s\n"
 msgstr "%s: Fwrite misslyckades: %s\n"
@@ -3183,20 +2819,15 @@ msgstr "%s: Fread misslyckades: %s\n"
 msgid "%s: Fflush failed: %s\n"
 msgstr "%s: Fflush misslyckades: %s\n"
 
-msgid "Unsupported OpenPGP signature\n"
-msgstr "OpenPGP-signaturen stödjs inte\n"
+#, fuzzy, c-format
+#| msgid "reading symlink %s failed: %s\n"
+msgid "Expanding signing macro %s failed\n"
+msgstr "läsning av symlänk %s misslyckades: %s\n"
 
-#, c-format
-msgid "Unsupported OpenPGP hash algorithm %u\n"
-msgstr "OpenPGP-hash-algoritm %u stödjs inte\n"
-
-#, c-format
-msgid "Unsupported OpenPGP pubkey algorithm %u\n"
-msgstr "OpenPGP-publik nyckelalgoritm %u stödjs inte\n"
-
-#, c-format
-msgid "Deprecated OpenPGP signature version %d\n"
-msgstr "Föråldrad OpenPGP-signaturen version %d\n"
+#, fuzzy, c-format
+#| msgid "Invalid %s token: %s\n"
+msgid "Invalid sign command: %s\n"
+msgstr "Ogiltigt %s-element: %s\n"
 
 #, c-format
 msgid "Could not create pipe for signing: %m\n"
@@ -3221,19 +2852,41 @@ msgstr "Kunde inte skriva till ett rör\n"
 msgid "Could not read from file %s: %s\n"
 msgstr "Kunde inte läsa från filen %s: %s\n"
 
-#, c-format
-msgid "gpg waitpid failed (%s)\n"
+#, fuzzy, c-format
+#| msgid "gpg waitpid failed (%s)\n"
+msgid "%s waitpid failed (%s)\n"
 msgstr "gpg waitpid misslyckades (%s)\n"
 
-#, c-format
-msgid "gpg exec failed (%d)\n"
+#, fuzzy, c-format
+#| msgid "gpg exec failed (%d)\n"
+msgid "%s exec failed (%d)\n"
 msgstr "gpg exec misslyckades (%d)\n"
 
-msgid "gpg failed to write signature\n"
+#, fuzzy, c-format
+#| msgid "gpg failed to write signature\n"
+msgid "failed to write signature: %s\n"
 msgstr "gpg kunde inte skriva signatur\n"
 
-msgid "unable to read the signature\n"
+#, fuzzy, c-format
+#| msgid "unable to read the signature\n"
+msgid "unable to read the signature: %s\n"
 msgstr "kan inte läsa signaturen\n"
+
+msgid "Unsupported OpenPGP signature\n"
+msgstr "OpenPGP-signaturen stödjs inte\n"
+
+#, c-format
+msgid "Unsupported OpenPGP hash algorithm %u\n"
+msgstr "OpenPGP-hash-algoritm %u stödjs inte\n"
+
+#, c-format
+msgid "Deprecated OpenPGP signature version %d\n"
+msgstr "Föråldrad OpenPGP-signaturen version %d\n"
+
+#, fuzzy, c-format
+#| msgid "Unsupported OpenPGP pubkey algorithm %u\n"
+msgid "Unsupported OpenPGP pubkey algorithm %u for rpm v3/v4 signatures\n"
+msgstr "OpenPGP-publik nyckelalgoritm %u stödjs inte\n"
 
 msgid "file signing support not built in\n"
 msgstr "Stöd för filsignering är inte inbyggt\n"
@@ -3260,18 +2913,42 @@ msgstr "%s: rpmReadSignature misslyckades: %s"
 msgid "%s: headerRead failed: %s\n"
 msgstr "%s: headerRead misslyckades: %s\n"
 
-msgid "Cannot sign RPM v3 packages\n"
+#, fuzzy, c-format
+#| msgid "Cannot sign RPM v3 packages\n"
+msgid "Cannot sign RPM v3 packages: %s\n"
 msgstr "Kan inte signera RPM-v3-paket\n"
 
+#, fuzzy, c-format
+#| msgid "generate fsverity signatures for package(s) files"
+msgid "not generating v3 signature for v6 package: %s\n"
+msgstr "generera fsverity-signaturer för paketfiler"
+
 #, c-format
-msgid "%s already contains identical signature, skipping\n"
+msgid "File signatures not applicable to src.rpm: %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "Could not seek in file %s: %s\n"
+msgid "Could not get a file size of %s\n"
+msgstr "Kunde inte söka i filen %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "%s already contains identical signature, skipping\n"
+msgid "%s already contains an identical signature, skipping\n"
+msgstr "%s innehåller redan en identisk signatur, hoppar över\n"
+
+#, fuzzy, c-format
+#| msgid "%s already contains identical signature, skipping\n"
+msgid "%s already contains a legacy signature\n"
 msgstr "%s innehåller redan en identisk signatur, hoppar över\n"
 
 #, c-format
 msgid "%s: rpmWriteSignature failed: %s\n"
 msgstr "%s: rpmWriteSignature misslyckades: %s\n"
 
-msgid "rpmMkTemp failed\n"
+#, fuzzy, c-format
+#| msgid "rpmMkTemp failed\n"
+msgid "rpmMkTemp failed: %s\n"
 msgstr "rpmMkTemp misslyckades\n"
 
 #, c-format
@@ -3295,11 +2972,485 @@ msgid "headerPutString failed\n"
 msgstr "headerPutString misslyckades\n"
 
 #, c-format
+msgid "%s: %s\n"
+msgstr "%s: %s\n"
+
+#, c-format
+msgid "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
+msgstr "Copyright © 1998-2002 - Red Hat, Inc.\n"
+
+#, c-format
+msgid ""
+"This program may be freely redistributed under the terms of the GNU GPL\n"
+msgstr "Detta program kan distribueras fritt enligt villkoren i GNU GPL\n"
+
+#, c-format
+msgid "creating a pipe for --pipe failed: %m\n"
+msgstr "misslyckades att skapa rör för --pipe: %m\n"
+
+#, c-format
+msgid "exec failed\n"
+msgstr "exec misslyckades\n"
+
+msgid "Query/Verify package selection options:"
+msgstr "Flaggor för att fråga/kontrollera paket:"
+
+msgid "Query/Verify file selection options:"
+msgstr "Flaggor för att fråga/kontrollera filer:"
+
+msgid "Query options (with -q or --query):"
+msgstr "Frågeflaggor (med -q eller --query):"
+
+msgid "Verify options (with -V or --verify):"
+msgstr "Verifieringsflaggor (med -V eller --verify):"
+
+msgid "Install/Upgrade/Erase options:"
+msgstr "Installations-/Uppdaterings-/Raderingsflaggor:"
+
+msgid "Common options for all rpm modes and executables:"
+msgstr "Gemensamma flaggor för alla rpm-lägen och binärer:"
+
+msgid "one type of query/verify may be performed at a time"
+msgstr "endast en typ av fråga/verifiering kan utföras åt gången"
+
+msgid "unexpected query flags"
+msgstr "oväntade frågeflaggor"
+
+msgid "unexpected query format"
+msgstr "oväntat frågeformat"
+
+msgid "unexpected query source"
+msgstr "oväntad frågekälla"
+
+msgid "only one major mode may be specified"
+msgstr "enbart ett huvudläge kan anges"
+
+msgid "only installation and upgrading may be forced"
+msgstr "bara installation och uppgradering kan tvingas fram"
+
+msgid "files may only be relocated during package installation"
+msgstr "filer kan relokeras endast under paketinstallation"
+
+msgid "cannot use --prefix with --relocate or --excludepath"
+msgstr "kan inte använda --prefix med --relocate eller --excludepath"
+
+msgid ""
+"--relocate and --excludepath may only be used when installing new packages"
+msgstr ""
+"--relocate och --excludepath kan endast användas när nya paket installeras"
+
+msgid "--prefix may only be used when installing new packages"
+msgstr "--prefix kan endast användas när nya paket installeras"
+
+msgid "arguments to --prefix must begin with a /"
+msgstr "argument till --prefix måste börja med /"
+
+msgid ""
+"--hash (-h) may only be specified during package installation and erasure"
+msgstr "--hash (-h) kan enbart användas vid paketinstallation och -radering"
+
+msgid "--percent may only be specified during package installation and erasure"
+msgstr "--percent kan enbart användas vid paketinstallation och -radering"
+
+msgid "--replacepkgs may only be specified during package installation"
+msgstr "--replacepkgs kan enbart användas vid paketinstallation"
+
+msgid "--excludedocs may only be specified during package installation"
+msgstr "--excludedocs kan enbart användas vid paketinstallation"
+
+msgid "--includedocs may only be specified during package installation"
+msgstr "--includedocs kan enbart användas vid paketinstallation"
+
+msgid "only one of --excludedocs and --includedocs may be specified"
+msgstr "enbart en av --excludedocs och --includedocs kan användas"
+
+msgid "--ignorearch may only be specified during package installation"
+msgstr "--ignorearch kan enbart användas vid paketinstallation"
+
+msgid "--ignoreos may only be specified during package installation"
+msgstr "--ignoreos kan enbart användas vid paketinstallation"
+
+msgid "--ignoresize may only be specified during package installation"
+msgstr "--ignoresize kan enbart användas vid paketinstallation"
+
+msgid "--allmatches may only be specified during package erasure"
+msgstr "--allmatches kan enbart användas när paket raderas"
+
+msgid "--allfiles may only be specified during package installation"
+msgstr "--allfiles kan enbart användas vid paketinstallation"
+
+msgid "--justdb may only be specified during package installation and erasure"
+msgstr "--justdb kan enbart användas när paket installeras eller raderas"
+
+msgid ""
+"script disabling options may only be specified during package installation "
+"and erasure"
+msgstr ""
+"skriptinaktiveringsflaggor kan enbart användas när paket installeras eller "
+"raderas"
+
+msgid ""
+"trigger disabling options may only be specified during package installation "
+"and erasure"
+msgstr ""
+"utlösarinaktiveringsflaggor kan enbart användas när paket installeras eller "
+"raderas"
+
+msgid ""
+"--nodeps may only be specified during package installation, erasure, and "
+"verification"
+msgstr ""
+"--nodeps kan enbart användas vid paketinstallation, -radering och -"
+"verifikation"
+
+msgid "--test may only be specified during package installation and erasure"
+msgstr "--test kan enbart användas vid paketinstallation och -radering"
+
+msgid "arguments to --root (-r) must begin with a /"
+msgstr "argument till --root (-r) måste börja med /"
+
+msgid "no packages given for erase"
+msgstr "inga paket angivna att radera"
+
+msgid "no packages given for install"
+msgstr "inga paket angivna för installation"
+
+msgid "no arguments given for query"
+msgstr "inga parametrar angivna för fråga"
+
+msgid "no arguments given for verify"
+msgstr "inga parametrar angivna för verifiering"
+
+#, fuzzy
+#| msgid "create uncompressed tar file"
+msgid "create uncompressed archive"
+msgstr "skapa okomprimerad tar-fil"
+
+msgid "archive format (pax|cpio)"
+msgstr ""
+
+#, c-format
+msgid "argument is not an RPM package\n"
+msgstr "argumentet är inte ett RPM-paket\n"
+
+#, c-format
+msgid "error reading header from package\n"
+msgstr "fel vid läsning av pakethuvud\n"
+
+#, c-format
+msgid "cannot re-open payload: %s\n"
+msgstr "kan inte återöppna lasten: %s\n"
+
+msgid "initialize database"
+msgstr "initiera databas"
+
+msgid "rebuild database inverted lists from installed package headers"
+msgstr "bygg om databasens inverterade listor från installerade pakets huvuden"
+
+#, fuzzy
+#| msgid "verify database files"
+msgid "verify database"
+msgstr "verifiera databasfiler"
+
+msgid "salvage database"
+msgstr "rädda databasen"
+
+msgid "export database to stdout header list"
+msgstr "exportera databasen till standard ut huvudlista"
+
+msgid "import database from stdin header list"
+msgstr "importera databasen från standard in huvudlista"
+
+msgid "Database options:"
+msgstr "Databasflaggor:"
+
+#, c-format
+msgid "buildroot already specified, ignoring %s\n"
+msgstr "buildroot redan angivet, ignorerar %s\n"
+
+#, c-format
+msgid "build through %prep (unpack sources and apply patches) from <specfile>"
+msgstr ""
+"bygg till %prep (packa upp källkod samt applicera patchar) från <specfil>"
+
+msgid "<specfile>"
+msgstr "<specfil>"
+
+#, c-format
+msgid "build through %conf (%prep, then %conf) from <specfile>"
+msgstr "bygg till och med %conf (%prep, sedan %conf) från <specfil>"
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <specfile>"
+msgstr ""
+"bygg till och med %build (%prep, %conf, kompilera sedan) från <specfil>"
+
+msgid "check build dependencies <specfile>"
+msgstr "kontrollera byggberoenden <specfil>"
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <specfile>"
+msgstr ""
+"bygg till och med %install (%prep, %conf, %build, installera sedan) från "
+"<specfil>"
+
+#, c-format
+msgid "verify %files section from <specfile>"
+msgstr "verifiera %files-sektionen i <specfil>"
+
+msgid "build source and binary packages from <specfile>"
+msgstr "bygg käll- och binärpaket från <specfil>"
+
+msgid "build binary package only from <specfile>"
+msgstr "bygg endast binärpaket från <specfil>"
+
+msgid "build source package only from <specfile>"
+msgstr "bygg endast källpaket från <specfil>"
+
+msgid ""
+"build source package only from <specfile> - calculate dynamic build requires"
+msgstr ""
+"bygg källpaket endast från <spec-fil> – beräkna dynamiska byggberoenden"
+
+#, c-format
+msgid ""
+"build through %prep (unpack sources and apply patches) from <source package>"
+msgstr ""
+"bygg till %prep (packa upp källkod samt applicera patchar) från <källpaket>"
+
+msgid "<source package>"
+msgstr "<källpaket>"
+
+#, fuzzy, c-format
+#| msgid "build through %conf (%prep, then %conf) from <specfile>"
+msgid "build through %conf (%prep, then %conf) from <source package>"
+msgstr "bygg till och med %conf (%prep, sedan %conf) från <specfil>"
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <source package>"
+msgstr ""
+"bygg till och med %build (%prep, %conf kompilera sedan) från <källpaket>"
+
+msgid "check build dependencies <source package>"
+msgstr "kontrollera byggberoenden <källpaket>"
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <source "
+"package>"
+msgstr ""
+"bygg till och med %install (%prep, %conf, %build, installera sedan) från "
+"<källpaket>"
+
+#, c-format
+msgid "verify %files section from <source package>"
+msgstr "verifiera %files-sektionen från <källpaket>"
+
+msgid "build source and binary packages from <source package>"
+msgstr "bygg käll- och binärpaket från <källpaket>"
+
+msgid "build binary package only from <source package>"
+msgstr "bygg endast binärpaket från <källpaket>"
+
+msgid "build source package only from <source package>"
+msgstr "bygg endast källpaket från <källpaket>"
+
+msgid ""
+"build source package only from <source package> - calculate dynamic build "
+"requires"
+msgstr ""
+"bygg källpaket endast från <källpaket> – beräkna dynamiska byggberoenden"
+
+#, c-format
+msgid "build through %prep (unpack sources and apply patches) from <tarball>"
+msgstr ""
+"bygg till och med %prep (packa upp källkod samt applicera patchar) från <tar-"
+"arkiv>"
+
+msgid "<tarball>"
+msgstr "<tar-arkiv>"
+
+#, fuzzy, c-format
+#| msgid "build through %conf (%prep, then %conf) from <specfile>"
+msgid "build through %conf (%prep, then %conf) from <tarball>"
+msgstr "bygg till och med %conf (%prep, sedan %conf) från <specfil>"
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <tarball>"
+msgstr ""
+"bygg till och med %build (%prep, %conf, kompilera sedan) från <tar-arkiv>"
+
+msgid "check build dependencies <tarball>"
+msgstr "kontrollera byggberoenden <tar-arkiv>"
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <tarball>"
+msgstr ""
+"bygg till och med %install (%prep, %conf, %build, installera sedan) från "
+"<tar-arkiv>"
+
+#, c-format
+msgid "verify %files section from <tarball>"
+msgstr "verifiera %files-sektionen från <tar-arkiv>"
+
+msgid "build source and binary packages from <tarball>"
+msgstr "bygg käll- och binärpaket från <tar-arkiv>"
+
+msgid "build binary package only from <tarball>"
+msgstr "bygg endast binärpaket från <tar-arkiv>"
+
+msgid "build source package only from <tarball>"
+msgstr "bygg endast källpaket från <tar-arkiv>"
+
+msgid ""
+"build source package only from <tarball> - calculate dynamic build requires"
+msgstr ""
+"bygg källpaket endast från <tar-boll> – beräkna dynamiska byggberoenden"
+
+msgid "build binary package from <source package>"
+msgstr "bygg binärpaket från <källpaket>"
+
+#, c-format
+msgid ""
+"build through %install (%prep, %build, then install) from <source package>"
+msgstr ""
+"bygg till och med %install (%prep, %build, installera sedan) från <källpaket>"
+
+#, fuzzy
+#| msgid "override build root"
+msgid "override build root (DEPRECATED)"
+msgstr "åsidosätt byggrot"
+
+msgid "remove build tree when done"
+msgstr "ta bort byggträd efteråt"
+
+msgid "ignore ExcludeArch: directives from spec file"
+msgstr "ignorera ExcludeArch:-direktiv från specfil"
+
+msgid "debug file state machine"
+msgstr "felsök filtillståndsmaskin"
+
+msgid "do not execute any stages of the build"
+msgstr "utför inga steg i byggnationen"
+
+msgid "do not verify build dependencies"
+msgstr "verifiera inte byggberoenden"
+
+msgid "generate package header(s) compatible with (legacy) rpm v3 packaging"
+msgstr "generera pakethuvd(en) kompatibla med (äldre) rpm-v3-paketering"
+
+#, c-format
+msgid "do not execute %clean stage of the build"
+msgstr "utför inte %clean-steget i byggnationen"
+
+#, c-format
+msgid "do not execute %prep stage of the build"
+msgstr "utför inte %prep-steget i byggnationen"
+
+#, c-format
+msgid "do not execute %check stage of the build"
+msgstr "utför inte %check-steget i byggnationen"
+
+msgid "do not accept i18N msgstr's from specfile"
+msgstr "acceptera inte i18N-msgstr:er från specfilen"
+
+msgid "remove sources when done"
+msgstr "ta bort källkod efteråt"
+
+msgid "remove specfile when done"
+msgstr "ta bort specfil efteråt"
+
+msgid "skip straight to specified stage (only for c,i)"
+msgstr "gå direkt till angivet steg (endast för c,i)"
+
+msgid "override target platform"
+msgstr "åsidosätt målplattform"
+
+msgid "Build options with [ <specfile> | <tarball> | <source package> ]:"
+msgstr "Byggflaggor med [ <specfil> | <tar-arkiv> | <källpaket> ]:"
+
+#, c-format
+msgid "Unable to open spec file %s: %s\n"
+msgstr "Kan inte öppna specfilen %s: %s\n"
+
+#, c-format
+msgid "Failed to open tar pipe: %m\n"
+msgstr "Kunde inte öppna ”tar”-rör: %m\n"
+
+#, c-format
+msgid "Found more than one spec file in %s\n"
+msgstr "Hittade mer än en spec-fil i %s\n"
+
+#, c-format
+msgid "Failed to read spec file from %s\n"
+msgstr "Kunde inte läsa specfil från %s\n"
+
+#, c-format
+msgid "Failed to rename %s to %s: %m\n"
+msgstr "Kunde inte byta namn på %s till %s: %m\n"
+
+#, c-format
+msgid "failed to stat %s: %m\n"
+msgstr "kunde inte ta status på %s: %m\n"
+
+#, c-format
+msgid "File %s is not a regular file.\n"
+msgstr "Filen %s är inte en vanlig fil.\n"
+
+#, c-format
+msgid "File %s does not appear to be a specfile.\n"
+msgstr "Filen %s tycks inte vara en specfil.\n"
+
+#, c-format
+msgid "Building target platforms: %s\n"
+msgstr "Bygger målplattformar: %s\n"
+
+#, c-format
+msgid "Building for target %s\n"
+msgstr "Bygger för målet %s\n"
+
+#, c-format
 msgid "%s: read manifest failed: %s\n"
 msgstr "%s: läsning av paketlista misslyckades: %s\n"
 
 msgid "don't verify header+payload signature"
 msgstr "verifiera inte huvud+lastsignatur"
+
+msgid "verify package signature(s)"
+msgstr "verifiera paketsignatur(er)"
+
+msgid "import an armored public key"
+msgstr "importera en publik nyckel med skal"
+
+#, fuzzy
+#| msgid "import an armored public key"
+msgid "export an public key"
+msgstr "importera en publik nyckel med skal"
+
+msgid "don't import, but tell if it would work or not"
+msgstr "importera inte, men tala om ifall det skulle fungera eller inte"
+
+#, fuzzy
+#| msgid "list keys from RPM keyring"
+msgid "Erase keys from RPM keyring"
+msgstr "lista nycklar från RPM-nyckelringen"
+
+msgid "list keys from RPM keyring"
+msgstr "lista nycklar från RPM-nyckelringen"
+
+msgid "rebuild the keyring - convert to current backend"
+msgstr ""
+
+msgid "get keys from this backend when rebuilding current backend"
+msgstr ""
+
+msgid "Keyring options:"
+msgstr "Nyckelringsflaggor:"
+
+msgid "no arguments given"
+msgstr "inga argument angivna"
 
 msgid "getopt string for scripts options"
 msgstr "getopt-sträng för skriptalternativ"
@@ -3310,11 +3461,166 @@ msgstr "kör sats"
 msgid "interactive session"
 msgstr "interaktiv session"
 
+#, fuzzy
+#| msgid "sign package(s) files"
+msgid "sign package(s), adding a new signature"
+msgstr "signera paketfiler"
+
+#, fuzzy
+#| msgid "sign package(s) (identical to --addsign)"
+msgid "resign package(s), deleting any previous signatures"
+msgstr "signera paket (detsamma som --addsign)"
+
+msgid "delete package signatures"
+msgstr "tag bort paketsignaturer"
+
+msgid "delete IMA and fsverity file signatures"
+msgstr "radera IMA- och fsverity-filsignaturer"
+
+#, fuzzy
+#| msgid "create rpm v3 header+payload signatures"
+msgid "request legacy rpm v3 header+payload signatures on v4 packages"
+msgstr "skapa rpm v3 huvud+lastsignatur"
+
+#, fuzzy
+#| msgid "create rpm v3 header+payload signatures"
+msgid "request legacy rpm v4 header signatures on v6 packages"
+msgstr "skapa rpm v3 huvud+lastsignatur"
+
+#, fuzzy
+#| msgid "create rpm v3 header+payload signatures"
+msgid "request rpm v6 header signature on v4 packages"
+msgstr "skapa rpm v3 huvud+lastsignatur"
+
+msgid "sign package(s) files"
+msgstr "signera paketfiler"
+
+msgid "generate fsverity signatures for package(s) files"
+msgstr "generera fsverity-signaturer för paketfiler"
+
+msgid "algorithm to use for verity signatures, default sha256"
+msgstr "algoritm att använda för att verifiera signaturer, standard sha256"
+
+msgid "<algorithm>"
+msgstr "<algoritm>"
+
+msgid "use file signing cert <cert>"
+msgstr "använd filsignerings certifikat <certifikat>"
+
+msgid "<cert>"
+msgstr "<certifikat>"
+
+msgid "use file signing key <key>"
+msgstr "använd signeringsnyckeln <nyckel>"
+
+msgid "<key>"
+msgstr "<nyckel>"
+
+msgid "prompt for file signing key password"
+msgstr "fråga efter lösenords för filsigneringsnyckeln"
+
+msgid "Signature options:"
+msgstr "Signaturflaggor:"
+
+#, fuzzy, c-format
+#| msgid "You must set \"%%_gpg_name\" in your macro file\n"
+msgid "You must set \"%%_openpgp_sign_id\" in your macro file\n"
+msgstr "Du måste sätta ”%%_gpg_name” i din makrofil\n"
+
+#, c-format
+msgid ""
+"You must set \"%%_file_signing_key\" in your macro file or on the command "
+"line with --fskpath\n"
+msgstr ""
+"Du måste sätta ”%%_file_signing_key” i din makrofil eller på kommandoraden "
+"med --fskpath\n"
+
+msgid "--fskpath may only be specified when signing files"
+msgstr "--fskpath kan endast anges när filer signeras"
+
+msgid "parse spec file(s) to stdout"
+msgstr "tolka spec-fil(er) till standard ut"
+
+msgid "query spec file(s)"
+msgstr "fråga spec-fil(er)"
+
+msgid "interactive macro shell"
+msgstr "interaktivt makroskal"
+
+msgid "operate on binary rpms generated by spec (default)"
+msgstr "arbeta på binära rpm:er som genereras av spec (standard)"
+
+msgid "operate on binary package header(s) that would be built from spec"
+msgstr "arbeta med binärpakethuvuden som skulle byggts från spec"
+
+msgid "operate on source package header generated by spec"
+msgstr "arbeta på källpaketshuvuden genererade av spec"
+
+msgid "Spec options:"
+msgstr "Spec-flaggor:"
+
+#, c-format
+msgid "RPM version %s macro shell\n"
+msgstr "RPM version %s makro skal\n"
+
+msgid "no arguments given for parse"
+msgstr "inga parametrar angivna för tolkning"
+
 msgid "extract an archive"
 msgstr "extrahera ett arkiv"
 
 msgid "only print what would be done"
 msgstr "skriv bara ut vad som skulle göras"
+
+msgid "extract into a specific path"
+msgstr ""
+
+#, c-format
+#~ msgid "files over 4GB not supported by cpio, use rpm2archive instead\n"
+#~ msgstr "filer över 4 GB stödjs inte av cpio, använd rpm2archive istället\n"
+
+#~ msgid "run build in current directory"
+#~ msgstr "kör bygget i aktuell katalog"
+
+#~ msgid "sign package(s)"
+#~ msgstr "signera paket"
+
+#, c-format
+#~ msgid "%%{buildroot} couldn't be empty\n"
+#~ msgstr "%%{buildroot} fick inte vara tom\n"
+
+#, c-format
+#~ msgid "%%{buildroot} can not be \"/\"\n"
+#~ msgstr "%%{buildroot} kan inte vara ”/”\n"
+
+#, c-format
+#~ msgid "line %d: second %%prep\n"
+#~ msgstr "rad %d: andra %%prep\n"
+
+#~ msgid "Only absolute paths are allowed in file triggers"
+#~ msgstr "Endast absoluta sökvägar är tillåtna i filutlösare"
+
+#~ msgid "disable user namespace support"
+#~ msgstr "avaktivera stöd för användarnamnrymder"
+
+#~ msgid "query/verify package(s) with package identifier"
+#~ msgstr "fråga/verifiera paket som med paketidentifierare"
+
+#~ msgid "query/verify package(s) with header identifier"
+#~ msgstr "fråga/verifiera paket med huvudidentifierare"
+
+#~ msgid "Invalid symlink"
+#~ msgstr "Ogiltig symlänk"
+
+#~ msgid "illegal signature type"
+#~ msgstr "ogiltig signaturtyp"
+
+#~ msgid "unsupported RPM package version"
+#~ msgstr "ej stödd RPM-paketversion"
+
+#, c-format
+#~ msgid "%s%s"
+#~ msgstr "%s%s"
 
 #, c-format
 #~ msgid "%%dev glob not permitted: %s\n"

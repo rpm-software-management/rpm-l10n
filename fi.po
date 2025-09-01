@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-04 09:25+0300\n"
+"POT-Creation-Date: 2025-09-01 14:14+0300\n"
 "PO-Revision-Date: 2024-12-20 12:38+0000\n"
 "Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/rpm/rpm-"
@@ -22,542 +22,10 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.9.1\n"
 
-#, c-format
-msgid "%s: %s\n"
-msgstr "%s: %s\n"
-
-#, c-format
-msgid "RPM version %s\n"
-msgstr "RPM versio %s\n"
-
-#, c-format
-msgid "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
-msgstr "Tekijänoikeudet (C) 1998-2002 - Red Hat, Inc.\n"
-
-#, c-format
-msgid ""
-"This program may be freely redistributed under the terms of the GNU GPL\n"
-msgstr "Tätä ohjelmaa voi vapaasti levittää GNU GPL:n puittessa\n"
-
-#, c-format
-msgid "creating a pipe for --pipe failed: %m\n"
-msgstr "putken luominen --pipe:lle epäonnistui: %m\n"
-
-#, c-format
-msgid "exec failed\n"
-msgstr "suoritus epäonnistui\n"
-
-msgid "create uncompressed tar file"
-msgstr "luo pakkaamaton tar-tiedosto"
-
-#, c-format
-msgid "argument is not an RPM package\n"
-msgstr "parametri ei ole RPM paketti\n"
-
-#, c-format
-msgid "error reading header from package\n"
-msgstr "virhe luettaessa otsikkotietoa paketista\n"
-
-#, c-format
-msgid "cannot re-open payload: %s\n"
-msgstr "kuorman uudelleenavaus ei onnistu: %s\n"
-
-#, c-format
-msgid "files over 4GB not supported by cpio, use rpm2archive instead\n"
-msgstr "cpio ei tue yli 4 Gt:n tiedostoja, käytä sen sijaan rpm2archive:ta\n"
-
-#, c-format
-msgid "buildroot already specified, ignoring %s\n"
-msgstr "buildroot on jo määritelty, %s:ää ei huomioida\n"
-
-#, c-format
-msgid "build through %prep (unpack sources and apply patches) from <specfile>"
-msgstr "käännä %prep-osioon asti spec-tiedostosta"
-
-msgid "<specfile>"
-msgstr "<spec-tiedosto>"
-
-#, c-format
-msgid "build through %conf (%prep, then %conf) from <specfile>"
-msgstr "käännä %conf-osioon asti (%prep, sitten %conf) spec-tiedostosta"
-
-msgid "build through %build (%prep, %conf, then compile) from <specfile>"
-msgstr "käännä %build-osion läpi (%prep, %conf, sitten kokoa) spec-tiedostosta"
-
-msgid "check build dependencies <specfile>"
-msgstr "tarkista koontiriippuvuudet <specfile>"
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <specfile>"
-msgstr ""
-"käännä %install-osion läpi (%prep, %conf, %build, sitten asenna) spec-"
-"tiedostosta"
-
-#, c-format
-msgid "verify %files section from <specfile>"
-msgstr "tarkista %files-osio spec-tiedostosta"
-
-msgid "build source and binary packages from <specfile>"
-msgstr "käännä lähde- ja binääripaketit spec-tiedostosta"
-
-msgid "build binary package only from <specfile>"
-msgstr "käännä vain binääripaketti spec-tiedostosta"
-
-msgid "build source package only from <specfile>"
-msgstr "käännä vain lähdepaketti spec-tiedostosta"
-
-msgid ""
-"build source package only from <specfile> - calculate dynamic build requires"
-msgstr ""
-"rakenna lähdepaketti vain <specfile>:sta - laske dynaaminen koontivaatimus"
-
-#, c-format
-msgid ""
-"build through %prep (unpack sources and apply patches) from <source package>"
-msgstr ""
-"rakenna %prep:n kautta (pura lähteet ja asenna korjaustiedostot) "
-"<lähdepaketti>:sta"
-
-msgid "<source package>"
-msgstr "<lähdepaketti>"
-
-msgid "build through %build (%prep, %conf, then compile) from <source package>"
-msgstr "käännä %build:n läpi (%prep, %conf, sitten kokoa) lähdepaketista"
-
-msgid "check build dependencies <source package>"
-msgstr "tarkista koontiriippuvuudet <lähdepaketti>"
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <source "
-"package>"
-msgstr ""
-"käännä %install-osion läpi (%prep, %conf, %build, sitten asenna) "
-"lähdepaketista"
-
-#, c-format
-msgid "verify %files section from <source package>"
-msgstr "tarkista %files osio <lähdepaketista>"
-
-msgid "build source and binary packages from <source package>"
-msgstr "rakenna lähde - ja binaaripaketit <lähdepaketti>:sta"
-
-msgid "build binary package only from <source package>"
-msgstr "rakenna binaaripaketit vain <lähdepaketti>:sta"
-
-msgid "build source package only from <source package>"
-msgstr "käännä lähdepaketti vain <lähdepaketista>"
-
-msgid ""
-"build source package only from <source package> - calculate dynamic build "
-"requires"
-msgstr ""
-"käännä lähdepaketti vain <lähdepaketista> - laske dynaaminen käännösvaatimus"
-
-#, c-format
-msgid "build through %prep (unpack sources and apply patches) from <tarball>"
-msgstr "käännä %prep-osioon asti tar-tiedostosta"
-
-msgid "<tarball>"
-msgstr "<tar-tiedosto>"
-
-msgid "build through %build (%prep, %conf, then compile) from <tarball>"
-msgstr "käännä %build-osion läpi (%prep, %conf, sitten kokoa) tar-tiedostosta"
-
-msgid "check build dependencies <tarball>"
-msgstr "tarkista koontiriippuvuudet <tarball>"
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <tarball>"
-msgstr ""
-"käännä %install-osion läpi (%prep, %conf, %build, sitten asenna) tar-"
-"tiedostosta"
-
-#, c-format
-msgid "verify %files section from <tarball>"
-msgstr "tarkista %files-osio tar-tiedostosta"
-
-msgid "build source and binary packages from <tarball>"
-msgstr "käännä lähde- ja binääripaketit tar-tiedostosta"
-
-msgid "build binary package only from <tarball>"
-msgstr "käännä vain binääripaketti tar-tiedostosta"
-
-msgid "build source package only from <tarball>"
-msgstr "käännä vain lähdepaketti tar-tiedostosta"
-
-msgid ""
-"build source package only from <tarball> - calculate dynamic build requires"
-msgstr ""
-"käännä lähdepaketti vain <tar-tiedostosta> - laske dynaaminen käännösvaatimus"
-
-msgid "build binary package from <source package>"
-msgstr "käännä binääripaketti lähdepaketista"
-
-msgid ""
-"build through %install (%prep, %build, then install) from <source package>"
-msgstr "käännä %install-osioon asti (%prep, %build ja %install) lähdepaketista"
-
-msgid "override build root"
-msgstr "ohita käännösjuuri"
-
-msgid "run build in current directory"
-msgstr "Suorita käännöstä nykyisessä hakemistossa"
-
-msgid "remove build tree when done"
-msgstr "poista käännöspuu, kun valmis"
-
-msgid "ignore ExcludeArch: directives from spec file"
-msgstr "jätä ExcludeArch-directiivit huomioimatta"
-
-msgid "debug file state machine"
-msgstr "vianselvitä tiedoston tilakone"
-
-msgid "do not execute any stages of the build"
-msgstr "älä suorita mitään käännöksen vaiheita"
-
-msgid "do not verify build dependencies"
-msgstr "älä tarkista koontiriippuvuuksia"
-
-msgid "generate package header(s) compatible with (legacy) rpm v3 packaging"
-msgstr ""
-"luo pakettien otsikot, jotka ovat yhteensopivia (vanhojen) rpm v3-pakettien "
-"kanssa"
-
-#, c-format
-msgid "do not execute %clean stage of the build"
-msgstr "älä suorita %clean:n rakennusvaihetta"
-
-#, c-format
-msgid "do not execute %prep stage of the build"
-msgstr "älä suorita %prep:n rakennusvaihetta"
-
-#, c-format
-msgid "do not execute %check stage of the build"
-msgstr "älä suorita %check:n rakennusvaihetta"
-
-msgid "do not accept i18N msgstr's from specfile"
-msgstr "älä hyväksy i18N-sanomia spec-tiedostosta"
-
-msgid "remove sources when done"
-msgstr "poista lähdekoodit kun valmis"
-
-msgid "remove specfile when done"
-msgstr "poista määrittelytiedosto kun valmis"
-
-msgid "skip straight to specified stage (only for c,i)"
-msgstr "siirry suoraan määriteltyyn vaiheeseen (vain c ja i yhteydessä)"
-
-msgid "override target platform"
-msgstr "ohita kohdealusta"
-
-msgid "Build options with [ <specfile> | <tarball> | <source package> ]:"
-msgstr "Käännösvalitsimet:"
-
-msgid "Common options for all rpm modes and executables:"
-msgstr "Yhteiset valitsimet kaikille rpm moodeille:"
-
-#, c-format
-msgid "Unable to open spec file %s: %s\n"
-msgstr "En voi avata spec-tiedostoa %s: %s\n"
-
-#, c-format
-msgid "Failed to open tar pipe: %m\n"
-msgstr "tar-putken avaus epäonnistui: %m\n"
-
-#, c-format
-msgid "Found more than one spec file in %s\n"
-msgstr "Löytyi useampi kuin yksi spec-tiedosto kohteesta %s\n"
-
-#, c-format
-msgid "Failed to read spec file from %s\n"
-msgstr "Spec-tiedoston avaaminen %s:sta epäonnistui\n"
-
-#, c-format
-msgid "Failed to rename %s to %s: %m\n"
-msgstr "Uudelleen nimeäminen %s -> %s epäonnistui: %m\n"
-
-#, c-format
-msgid "failed to stat %s: %m\n"
-msgstr "%s:n stat epäonnistui: %m\n"
-
-#, c-format
-msgid "File %s is not a regular file.\n"
-msgstr "Tiedosto %s ole tavallinen tiedosto.\n"
-
-#, c-format
-msgid "File %s does not appear to be a specfile.\n"
-msgstr "Tiedosto %s ei vaikuta spec-tiedostolta.\n"
-
-#, c-format
-msgid "Building target platforms: %s\n"
-msgstr "Käännetään kohdealustoille: %s\n"
-
-#, c-format
-msgid "Building for target %s\n"
-msgstr "Käännetään kohteelle %s\n"
-
-msgid "arguments to --root (-r) must begin with a /"
-msgstr "parametrit --root (-r):lle alettava /-merkillä"
-
-msgid "initialize database"
-msgstr "alusta tietokanta"
-
-msgid "rebuild database inverted lists from installed package headers"
-msgstr "rakenna tietokanta uudestaan asennettujen pakettien tiedoista"
-
-msgid "verify database files"
-msgstr "tarkista tietokanta"
-
-msgid "salvage database"
-msgstr "pelastustietokanta"
-
-msgid "export database to stdout header list"
-msgstr "vie tietokanta vakiotulosteen otsakelistaan"
-
-msgid "import database from stdin header list"
-msgstr "tuo tietokanta vakiosyötteen otsakelistasta"
-
-msgid "Database options:"
-msgstr "Tietokantavalitsimet:"
-
-msgid "only one major mode may be specified"
-msgstr "vain yksi päätila voidaan määritellä"
-
-msgid "verify package signature(s)"
-msgstr "tarkista paketin allekirjoitus"
-
-msgid "import an armored public key"
-msgstr "tuo panssaroitu julkinen avain"
-
-msgid "don't import, but tell if it would work or not"
-msgstr "älä tuot, mutta kerro, toimiiko se vai ei"
-
-msgid "list keys from RPM keyring"
-msgstr "avainten luettelo RPM-avaimenperästä"
-
-msgid "Keyring options:"
-msgstr "Avaimenperävaihtoehdot:"
-
-msgid "no arguments given"
-msgstr "ei annettu parametrejä"
-
-msgid "Query/Verify package selection options:"
-msgstr "Kysele/Tarkista paketin valintavaihtoehdot:"
-
-msgid "Query/Verify file selection options:"
-msgstr "Kysele/Tarkista tiedostovalinnat:"
-
-msgid "Query options (with -q or --query):"
-msgstr "Kyselyvalitsimet ('--query|-q':n kanssa):"
-
-msgid "Verify options (with -V or --verify):"
-msgstr "Tarkistusvalitsimet ('--verify|-V':n kanssa):"
-
-msgid "Install/Upgrade/Erase options:"
-msgstr "Asennus-, päivitys- ja poistovalitsimet:"
-
-msgid "one type of query/verify may be performed at a time"
-msgstr "vain yhden tyyppinen kysely/tarkistus voidaan suorittaa kerralla"
-
-msgid "unexpected query flags"
-msgstr "odottamattomia kyselyvalintoja"
-
-msgid "unexpected query format"
-msgstr "odottamaton kyselyn muotoilu"
-
-msgid "unexpected query source"
-msgstr "odottamaton kyselyn lähde"
-
-msgid "only installation and upgrading may be forced"
-msgstr "vain asennus ja päivitys voidaan pakottaa"
-
-msgid "files may only be relocated during package installation"
-msgstr "tiedostoja voidaan siirtää toiselle polulle vain asennettaessa"
-
-msgid "cannot use --prefix with --relocate or --excludepath"
-msgstr "--prefix valintaa ei voi käyttää --relocate tai --excludepath kanssa"
-
-msgid ""
-"--relocate and --excludepath may only be used when installing new packages"
-msgstr ""
-"--relocate ja --excludepath: voidaan käyttää vain uusia paketteja "
-"asennettaessa"
-
-msgid "--prefix may only be used when installing new packages"
-msgstr "--prefix: voidaan käyttää vain uusia paketteja asennettaessa"
-
-msgid "arguments to --prefix must begin with a /"
-msgstr "--prefix parametrien pitää alkaa /-merkillä"
-
-msgid ""
-"--hash (-h) may only be specified during package installation and erasure"
-msgstr ""
-"'--hash|-h' voidaan määrittää vain paketin asennuksen ja poiston aikana"
-
-msgid "--percent may only be specified during package installation and erasure"
-msgstr ""
-"'--percent' voidaan määrittää vain paketin asennuksen ja poiston aikana"
-
-msgid "--replacepkgs may only be specified during package installation"
-msgstr "--replacepkgs: voidaan käyttää vain paketteja asennettaessa"
-
-msgid "--excludedocs may only be specified during package installation"
-msgstr "--excludedocs: voidaan käyttää vain paketteja asennettaessa"
-
-msgid "--includedocs may only be specified during package installation"
-msgstr "--includedocs: voidaan käyttää vain paketteja asennettaessa"
-
-msgid "only one of --excludedocs and --includedocs may be specified"
-msgstr "vain toinen --excludedocs tai --includedocs voidaan antaa"
-
-msgid "--ignorearch may only be specified during package installation"
-msgstr "--ignorearch: voidaan käyttää vain paketteja asennettaessa"
-
-msgid "--ignoreos may only be specified during package installation"
-msgstr "--ignoreos: voidaan käyttää vain paketteja asennettaessa"
-
-msgid "--ignoresize may only be specified during package installation"
-msgstr "--ignoresize: voidaan käyttää vain paketteja asennettaessa"
-
-msgid "--allmatches may only be specified during package erasure"
-msgstr "--allmatches: voidaan käyttää vain paketteja poistettaessa"
-
-msgid "--allfiles may only be specified during package installation"
-msgstr "--allfiles: voidaan käyttää vain paketteja asennettaessa"
-
-msgid "--justdb may only be specified during package installation and erasure"
-msgstr ""
-"--justdb: voidaan käyttää vain paketteja asennettaessa tai poistettaessa"
-
-msgid ""
-"script disabling options may only be specified during package installation "
-"and erasure"
-msgstr ""
-"skriptien estovalintoja voidaan käyttää vain paketteja asennettaessa tai "
-"poistettaessa"
-
-msgid ""
-"trigger disabling options may only be specified during package installation "
-"and erasure"
-msgstr ""
-"laukaisimien estovalintoja voidaan käyttää vain paketteja asennettaessa tai "
-"poistettaessa"
-
-msgid ""
-"--nodeps may only be specified during package installation, erasure, and "
-"verification"
-msgstr ""
-"--nodeps voidaan määrittää vain paketin asennuksen, poistamisen ja "
-"tarkistuksen aikana"
-
-msgid "--test may only be specified during package installation and erasure"
-msgstr "'--test' voidaan määrittää vain paketin asennuksen ja poiston aikana"
-
-msgid "no packages given for erase"
-msgstr "poistolle ei määritelty paketteja"
-
-msgid "no packages given for install"
-msgstr "asennukselle ei määritelty paketteja"
-
-msgid "no arguments given for query"
-msgstr "kyselylle ei annettu parametrejä"
-
-msgid "no arguments given for verify"
-msgstr "tarkistukselle ei annettu parametrejä"
-
-msgid "sign package(s)"
-msgstr "allekirjoita paketti"
-
-msgid "sign package(s) (identical to --addsign)"
-msgstr "allekirjoita paketti (hylkää nykyinen allekirjoitus)"
-
-msgid "delete package signatures"
-msgstr "poista paketin allekirjoitus"
-
-msgid "delete IMA and fsverity file signatures"
-msgstr "poista IMA- ja fsverity-tiedostojen allekirjoitukset"
-
-msgid "create rpm v3 header+payload signatures"
-msgstr "luo rpm v3 -otsikko+hyötykuorman allekirjoitukset"
-
-msgid "sign package(s) files"
-msgstr "allekirjoita pakettitiedostot"
-
-msgid "generate fsverity signatures for package(s) files"
-msgstr "luo fsverity-allekirjoitukset pakettitiedostoille"
-
-msgid "algorithm to use for verity signatures, default sha256"
-msgstr ""
-"allekirjoituksien todentamiseen käytettävä algoritmi, oletuksena sha256"
-
-msgid "<algorithm>"
-msgstr "<algoritm>"
-
-msgid "use file signing cert <cert>"
-msgstr "käytä tiedoston allekirjoitussertifikaattia <cert>"
-
-msgid "<cert>"
-msgstr "<cert>"
-
-msgid "use file signing key <key>"
-msgstr "käytä tiedoston allekirjoitusavainta <key>"
-
-msgid "<key>"
-msgstr "<avain>"
-
-msgid "prompt for file signing key password"
-msgstr "pyytää tiedoston allekirjoitusavaimen salasanaa"
-
-msgid "Signature options:"
-msgstr "Allekirjoitusvalitsimet:"
-
-#, c-format
-msgid "You must set \"%%_gpg_name\" in your macro file\n"
-msgstr "Sinun on asetettava \"%%_gpg_name\" makrotiedostoosi\n"
-
-#, c-format
-msgid ""
-"You must set \"%%_file_signing_key\" in your macro file or on the command "
-"line with --fskpath\n"
-msgstr ""
-"Sinun on asetettava \"%%_file_signing_key\" makrotiedostoon tai "
-"komentoriville '--fskpath':lla\n"
-
-msgid "--fskpath may only be specified when signing files"
-msgstr "--fskpath voidaan määrittää vain allekirjoitettaessa tiedostoja"
-
-msgid "parse spec file(s) to stdout"
-msgstr "jäsennä spec-tiedosto(t) vakiotulosteeseen"
-
-msgid "query spec file(s)"
-msgstr "kysy spec-tiedosto(i)sta"
-
-msgid "interactive macro shell"
-msgstr "interaktiivinen makro komentotulkki"
-
-msgid "operate on binary rpms generated by spec (default)"
-msgstr "operoi spesifikaatioiden tuottamilla binäärisillä rpm:llä (oletus)"
-
-msgid "operate on binary package header(s) that would be built from spec"
-msgstr ""
-"työskentele binääripaketin otsikoilla, jotka rakennettaisiin "
-"spesifikaatioista"
-
-msgid "operate on source package header generated by spec"
-msgstr "työskentele lähdepaketin otsikoilla, jotka spesifikaatio luo"
-
-msgid "use the following query format"
-msgstr "käytä seuraava kyselyformaattia"
-
-msgid "Spec options:"
-msgstr "Spec vaihtoehtoja:"
-
-#, c-format
-msgid "RPM version %s macro shell\n"
-msgstr "RPM-versio %s makro komentotulkki\n"
-
-msgid "no arguments given for parse"
-msgstr "jäsentämiseen ei annettu argumentteja"
+#, fuzzy
+#| msgid "unable to parse %s=%s\n"
+msgid "unable to parse _buildtime macro\n"
+msgstr "%s=%s:n jäsentäminen ei onnistu\n"
 
 msgid "unable to parse SOURCE_DATE_EPOCH\n"
 msgstr "SOURCE_DATE_EPOCH-jäsentäminen epäonnistui\n"
@@ -585,12 +53,20 @@ msgstr "Virheellinen poistumistila kohteesta %s (%s)\n"
 msgid "Failed build dependencies:\n"
 msgstr "Epäonnistuneita koontiriippuvuuksia:\n"
 
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to create package build directory %s: %s\n"
+msgstr "hakemiston %s luonti epäonnistui: %s\n"
+
 #, c-format
 msgid "setting %s=%s\n"
 msgstr "asettaa %s=%s\n"
 
-#, c-format
-msgid "source_date_epoch_from_changelog set but %%changelog is missing\n"
+#, fuzzy, c-format
+#| msgid "source_date_epoch_from_changelog set but %%changelog is missing\n"
+msgid ""
+"%%source_date_epoch_from_changelog is set, but %%changelog has no entries to "
+"take a date from\n"
 msgstr "source_date_epoch_from_changelog asetettu, mutta %%changelog puuttuu\n"
 
 msgid ""
@@ -668,11 +144,23 @@ msgid "File must begin with \"/\": %s\n"
 msgstr "Tiedostojen täytyy alkaa \"/\": %s\n"
 
 #, c-format
+msgid ""
+"%%clamp_mtime_to_source_date_epoch is deprecated, please use "
+"%%build_mtime_policy\n"
+msgstr ""
+
+#, c-format
 msgid "unable to parse %s=%s\n"
 msgstr "%s=%s:n jäsentäminen ei onnistu\n"
 
-#, c-format
-msgid "Unknown file digest algorithm %u, falling back to MD5\n"
+#, fuzzy, c-format
+#| msgid "Unknown icon type: %s\n"
+msgid "Unknown mtime policy '%s'\n"
+msgstr "Tuntematon ikonityyppi: %s\n"
+
+#, fuzzy, c-format
+#| msgid "Unknown file digest algorithm %u, falling back to MD5\n"
+msgid "Unknown file digest algorithm %u, falling back to %u\n"
 msgstr "Tuntematon tiedoston tiivistysalgoritmi %u, käytetään MD5:ttä\n"
 
 #, c-format
@@ -902,9 +390,24 @@ msgstr "Tiedostonimen muodostus paketille %s ei onnistu: %s\n"
 msgid "Finished binary package job, result %d, filename %s\n"
 msgstr "Binaaripakettityö valmis, tulos %d, tiedostonimi %s\n"
 
+#, fuzzy, c-format
+#| msgid "line %d: Error parsing %s: %s\n"
+msgid "line %d: Error parsing script: %s: %s\n"
+msgstr "rivi %d: virhe jäsennettäessä %s:ää: %s\n"
+
+#, fuzzy, c-format
+#| msgid "line %d: Bad option %s: %s\n"
+msgid "line %d: Bad %s option %s: %s\n"
+msgstr "rivi %d: virheellinen valinta %s: %s\n"
+
 #, c-format
 msgid "line %d: second %s\n"
 msgstr "rivi %d: toinen %s\n"
+
+#, fuzzy, c-format
+#| msgid "line %d: unsupported internal script: %s\n"
+msgid "line %d: append and prepend specified: %s\n"
+msgstr "rivi %d: sisäinen komentosarja, jota ei tueta: %s\n"
 
 #, c-format
 msgid "bogus date in %%changelog: %s\n"
@@ -1010,6 +513,11 @@ msgstr "Käyttöjärjestelmä ei ole mukaanluettu: %s\n"
 msgid "%s field must be present in package: %s\n"
 msgstr "kenttä %s on vaadittu kenttä paketissa: %s\n"
 
+#, fuzzy, c-format
+#| msgid "%s field must be present in package: %s\n"
+msgid "%s field must be present before build in package: %s\n"
+msgstr "kenttä %s on vaadittu kenttä paketissa: %s\n"
+
 #, c-format
 msgid "Duplicate %s entries in package: %s\n"
 msgstr "Tee paketin %s tietueista kaksoiskappale: %s\n"
@@ -1080,6 +588,11 @@ msgstr "rivi %d: virheellinen käännösarkkitehtuurin muoto: %s\n"
 msgid "line %d: Duplicate BuildArch entry: %s\n"
 msgstr "linja %d: Tee BuildArch:n tietueesta kaksoiskappale: %s\n"
 
+#, fuzzy, c-format
+#| msgid "line %d: Only noarch subpackages are supported: %s\n"
+msgid "line %d: Only noarch is allowed after the build: %s\n"
+msgstr "rivi %d: Vain noarch-alipaketteja tuetaan: %s\n"
+
 #, c-format
 msgid "line %d: Only noarch subpackages are supported: %s\n"
 msgstr "rivi %d: Vain noarch-alipaketteja tuetaan: %s\n"
@@ -1103,13 +616,16 @@ msgstr "Binaarinen rpm-paketti löytyi. Odotettiin spec-tiedostoa!\n"
 msgid "line %d: Unknown tag: %s\n"
 msgstr "rivi %d: tuntematon nimiö: %s\n"
 
-#, c-format
-msgid "%%{buildroot} couldn't be empty\n"
-msgstr "%%{buildroot} ei voi olla tyhjä\n"
+#, fuzzy, c-format
+#| msgid "line %d: Priorities are allowed only for file triggers : %s\n"
+msgid "line %d: Tag not allowed after build is done: %s\n"
+msgstr ""
+"rivi %d: Prioriteetit ovat sallittuja vain tiedoston laukaisimille: %s\n"
 
-#, c-format
-msgid "%%{buildroot} can not be \"/\"\n"
-msgstr "%%{buildroot} ei voi olla \"/\"\n"
+#, fuzzy, c-format
+#| msgid "Invalid capability: %s\n"
+msgid "Invalid buildroot: '%s'\n"
+msgstr "Virheellinen ominaisuus: %s\n"
 
 #, c-format
 msgid "No patch number %u\n"
@@ -1139,15 +655,6 @@ msgstr "Korjauksen numeroa ei ole määritetty: %s\n"
 msgid "Invalid patch number %s: %s\n"
 msgstr "Virheellinen patch-numero %s: %s\n"
 
-#, c-format
-msgid "line %d: second %%prep\n"
-msgstr "rivi %d: toinen %%prep\n"
-
-#, c-format
-msgid ""
-"%%patchN is deprecated (%i usages found), use %%patch N (or %%patch -P N)\n"
-msgstr ""
-
 msgid "Dependency tokens must begin with alpha-numeric, '_' or '/'"
 msgstr ""
 "Riippuvuusmerkkien on alettava joko aakkosnumeerisella merkillä, '_' tai '/'"
@@ -1164,6 +671,11 @@ msgstr "virheellinen riippuvuus"
 msgid "Version required"
 msgstr "Versio pakollinen"
 
+#, fuzzy
+#| msgid "line %d: file trigger condition must begin with '/': %s"
+msgid "file trigger conditions must begin with '/'"
+msgstr "rivi %d: tiedoston laukaisuehdon on alettava merkillä '/': %s"
+
 msgid "Only package names are allowed in Obsoletes"
 msgstr "Ainoastaan pakettien nimet ovat sallittuja Obsoletes:ssa"
 
@@ -1172,9 +684,6 @@ msgstr "Ei ole suositeltavaa käyttää versiottomia Obsoletes:ja"
 
 msgid "It's not recommended to use '>' in Obsoletes"
 msgstr "Vanhentumisessa ei ole suositeltavaa käyttää '>' merkkiä"
-
-msgid "Only absolute paths are allowed in file triggers"
-msgstr "Vain absoluuttiset polut ovat sallittuja tiedoston laukaisimissa"
 
 msgid "Trigger fired by the same package is already defined in spec file"
 msgstr "Saman paketin laukaisema laukaisin on jo määritelty spec-tiedostossa"
@@ -1215,10 +724,6 @@ msgstr "rivi %d: toinen %s\n"
 #, c-format
 msgid "line %d: unsupported internal script: %s\n"
 msgstr "rivi %d: sisäinen komentosarja, jota ei tueta: %s\n"
-
-#, c-format
-msgid "line %d: file trigger condition must begin with '/': %s"
-msgstr "rivi %d: tiedoston laukaisuehdon on alettava merkillä '/': %s"
 
 #, c-format
 msgid "line %d: interpreter arguments not allowed in triggers: %s\n"
@@ -1265,6 +770,10 @@ msgid "%s:%d: malformed %%include statement\n"
 msgstr "%s:%d: virheellisesti muotoiltu %%include lauseke\n"
 
 #, c-format
+msgid "%%patchN is obsolete, use %%patch N (or %%patch -P N): %s\n"
+msgstr ""
+
+#, c-format
 msgid "encoding %s not supported by system\n"
 msgstr "järjestelmä ei tue koodausta %s\n"
 
@@ -1284,8 +793,36 @@ msgstr "rivi %d: %%end ei odotettu täällä, ei suljettavaa osiota : %s\n"
 msgid "line %d doesn't belong to any section: %s\n"
 msgstr "rivi %d ei kuulu millekään lohkolle: %s\n"
 
+#, fuzzy, c-format
+#| msgid "line %d: Unknown tag: %s\n"
+msgid "line %d: Unknown buildsystem: %s\n"
+msgstr "rivi %d: tuntematon nimiö: %s\n"
+
+#, c-format
+msgid ""
+"line %d: Required parametric macro %%%s not defined for buildsystem %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "failed to write all data to %s: %s\n"
+msgid "failed to write buildsystem %s %%%s: %s\n"
+msgstr "epäonnistuttiin kirjoittamaan kaikki tiedot kohteeseen %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "Couldn't create temporary file for %s: %s\n"
+msgid "failed to create temp file for buildsystem: %s\n"
+msgstr "Ei voitu luoda tilapäistiedostoa %s:lle: %s\n"
+
+#, c-format
+msgid "Section %s is not allowed after build is done!\n"
+msgstr ""
+
 msgid "No compatible architectures found for build\n"
 msgstr "Ei yhteensopivia arkkitehtureeja käännökselle\n"
+
+#, c-format
+msgid "invalid rpm format %d requested, using %d\n"
+msgstr ""
 
 #, c-format
 msgid "Package has no %%description: %s\n"
@@ -1380,6 +917,10 @@ msgstr "%s epäonnistui: %x\n"
 msgid "failed to write all data to %s: %s\n"
 msgstr "epäonnistuttiin kirjoittamaan kaikki tiedot kohteeseen %s: %s\n"
 
+#, c-format
+msgid "invalid or out of order path from generator: %s\n"
+msgstr ""
+
 msgid "Empty file classifier\n"
 msgstr "Tyhjä tiedostoluokittelija\n"
 
@@ -1411,6 +952,11 @@ msgid "Failed to find %s:\n"
 msgstr "%s:ää ei löytynyt\n"
 
 msgid "Deprecated external dependency generator is used!\n"
+msgstr "Käytössä on vanhentunut ulkoinen riippuvuusgeneraattori!\n"
+
+#, fuzzy
+#| msgid "Deprecated external dependency generator is used!\n"
+msgid "External dependency generator is incompatible with v6 packages\n"
 msgstr "Käytössä on vanhentunut ulkoinen riippuvuusgeneraattori!\n"
 
 #, c-format
@@ -1540,8 +1086,9 @@ msgstr "%s%s tallennettu nimellä %s%s\n"
 msgid "%s%s created as %s%s\n"
 msgstr "%s%s luotu %s%s:na\n"
 
-#, c-format
-msgid "%s %s: remove failed: %s\n"
+#, fuzzy, c-format
+#| msgid "%s %s: remove failed: %s\n"
+msgid "%s %s%s: remove failed: %s\n"
 msgstr "%s %s: poisto epäonnistui: %s\n"
 
 msgid "directory"
@@ -1669,8 +1216,39 @@ msgid "array iterator used with different sized arrays"
 msgstr "matriisi iteraattori, jota käytetään erikokoisilla matriiseilla"
 
 #, c-format
+msgid "%s: reading of public key failed.\n"
+msgstr "%s: julkisen avaimen luku epäonnistui.\n"
+
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to create keyring directory %s: %s\n"
+msgstr "hakemiston %s luonti epäonnistui: %s\n"
+
+#, c-format
+msgid "failed to import key: %s: %s\n"
+msgstr "avaimen tuonti epäonnistui: %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "can't create %s lock on %s (%s)\n"
+msgid "Can't create writelock for keyring at %s: %s\n"
+msgstr "%s-lukon luonti %s:een ei onnistu (%s)\n"
+
+#, c-format
+msgid "Can't acquire writelock for keyring at %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "%s: not an armored public key.\n"
+msgid "%s is not a valid public key\n"
+msgstr "%s: ei ole panssaroitu julkinen avain.\n"
+
+#, c-format
 msgid "RPM v3 packages are deprecated: %s\n"
 msgstr "RPM v3 -paketit ovat vanhentuneet: %s\n"
+
+#, c-format
+msgid "RPM version %s\n"
+msgstr "RPM versio %s\n"
 
 msgid "Error writing to stdout"
 msgstr "Virhe stdoutiin kirjoittaessa"
@@ -1779,9 +1357,6 @@ msgstr "korjaa virheet hytötykuormatiedoston koneen tilasta"
 
 msgid "debug rpmio I/O"
 msgstr "virheenkorjaa rpmio I/O"
-
-msgid "disable user namespace support"
-msgstr "poista käyttäjän nimitilan tuki käytöstä"
 
 #, c-format
 msgid "%s: option table misconfigured (%d)\n"
@@ -2010,12 +1585,6 @@ msgstr "kysele/tarkista paketteja ryhmässä"
 msgid "query/verify a package file"
 msgstr "kysele/tarkista pakettitiedostoa"
 
-msgid "query/verify package(s) with package identifier"
-msgstr "kysy/tarkista paketit pakettitunnisteella"
-
-msgid "query/verify package(s) with header identifier"
-msgstr "kysy/tarkista paketit otsaketunnisteella"
-
 msgid "rpm query mode"
 msgstr "rpm kyselytila"
 
@@ -2030,6 +1599,11 @@ msgstr "kysy paketin käynnistämistä paketeista"
 
 msgid "rpm verify mode"
 msgstr "rpm tarkistustila"
+
+#, fuzzy
+#| msgid "query/verify the package(s) which obsolete a dependency"
+msgid "query/verify the package(s) which conflict with a dependency"
+msgstr "kysele/tarkista paketteja, jotka vanhentavat jotakin riippuvuutta"
 
 msgid "query/verify the package(s) which require a dependency"
 msgstr "kysele/tarkista paketteja, jotka vaativat ominaisuutta"
@@ -2087,6 +1661,9 @@ msgstr "näytä tiedoston perustiedot"
 
 msgid "list files in package"
 msgstr "luettele paketin tiedostot"
+
+msgid "use the following query format"
+msgstr "käytä seuraava kyselyformaattia"
 
 msgid "display the states of the listed files"
 msgstr "näytä lueteltujen tiedostojen tilat"
@@ -2503,18 +2080,21 @@ msgid "Wrong number of entries for tag %s: %u found but %u expected.\n"
 msgstr ""
 "Väärä määrä merkintöjä tunnisteelle %s: %u löytyi, mutta %u odotettiin.\n"
 
-#, c-format
-msgid "Malformed data for tag %s: %u bytes found but %lu expected.\n"
+#, fuzzy, c-format
+#| msgid "Malformed data for tag %s: %u bytes found but %lu expected.\n"
+msgid "Malformed data for tag %s: %u bytes found but %<PRIu64> expected.\n"
 msgstr ""
 "Väärinmuotoiltua tietoa tunnisteelle %s: %u tavua löytyi, mutta %lu "
 "odotettiin.\n"
 
-#, c-format
-msgid "%s: base64 decode failed, len %li\n"
+#, fuzzy, c-format
+#| msgid "%s: base64 decode failed, len %li\n"
+msgid "%s: base64 decode failed, len %zu\n"
 msgstr "%s: base64-dekoodaus epäonnistui, len %li\n"
 
-#, c-format
-msgid "%s: base64 decode success, len %li\n"
+#, fuzzy, c-format
+#| msgid "%s: base64 decode success, len %li\n"
+msgid "%s: base64 decode success, len %zu\n"
 msgstr "%s: base64-dekoodaus onnistui, len %li\n"
 
 msgid "Bad magic"
@@ -2544,8 +2124,10 @@ msgstr "Sisäinen virhe"
 msgid "Archive file not in header"
 msgstr "Arkistotiedosto ei ole otsikossa"
 
-msgid "Invalid symlink"
-msgstr "Virheellinen symbolinen linkki"
+#, fuzzy
+#| msgid "failed symlink"
+msgid "Unsafe symlink"
+msgstr "epäonnistunut symlinkki"
 
 msgid "File from package already exists as a directory in system"
 msgstr "Paketista tuleva tiedosto on jo järjestelmässä hakemistona"
@@ -2620,6 +2202,11 @@ msgstr "paketti %s ei ole uudelleensijoitettava\n"
 msgid "error reading from file %s\n"
 msgstr "virhe luettaessa tiedostosta %s\n"
 
+#, fuzzy, c-format
+#| msgid "no package matches %s: %s\n"
+msgid "package format not supported: %s\n"
+msgstr "mikään paketti ei vastaa %s: %s\n"
+
 #, c-format
 msgid "\"%s\" specifies multiple packages:\n"
 msgstr "\"%s\" määrittää useita paketteja:\n"
@@ -2634,12 +2221,6 @@ msgstr "Asennetaan %s\n"
 
 msgid "not an rpm package"
 msgstr "ei ole RPM paketti"
-
-msgid "illegal signature type"
-msgstr "laiton allekirjoitustyyppi"
-
-msgid "unsupported RPM package version"
-msgstr "RPM pakettiversio ei ole tuettu"
 
 #, c-format
 msgid "read failed: %s (%d)\n"
@@ -2784,6 +2365,11 @@ msgstr "puuttuva argumentti %s:lle: %s:%d\n"
 msgid "cannot open %s at %s:%d: %m\n"
 msgstr "en voi avata %s:aa %s:%d:ssä: %m\n"
 
+#, fuzzy, c-format
+#| msgid "bad option '%s' at %s:%d\n"
+msgid "Ignoring %s at %s:%d\n"
+msgstr "virheellinen vaihtoehto '%s' kohdassa %s:%d\n"
+
 #, c-format
 msgid "missing architecture for %s at %s:%d\n"
 msgstr "puuttuva arkkitehtuuri %s:a varten %s:%d:ssa\n"
@@ -2842,6 +2428,15 @@ msgstr "%s skripti epäonnistui, palautti %d\n"
 msgid "Unknown format"
 msgstr "Tuntematon formaatti"
 
+#, c-format
+msgid "erasing gpg-pubkey packages is deprecated; use rpmkeys --delete %s\n"
+msgstr ""
+
+msgid ""
+"public keys can not be installed as gpg-pubkey packages; use rpmkeys --"
+"import <keyfile> for that\n"
+msgstr ""
+
 msgid "install"
 msgstr "asenna"
 
@@ -2871,16 +2466,13 @@ msgid "missing ')' in package label: %s\n"
 msgstr "puuttuu ')' pakkauksen etiketistä: %s\n"
 
 #, c-format
-msgid "%s: reading of public key failed.\n"
-msgstr "%s: julkisen avaimen luku epäonnistui.\n"
-
-#, c-format
 msgid "unknown keyring type: %s, using rpmdb\n"
 msgstr "tuntematon avainrengastyyppi: %s, käytetään rpmdb:tä\n"
 
-#, c-format
-msgid "failed to import key: %s: %s\n"
-msgstr "avaimen tuonti epäonnistui: %s: %s\n"
+#, fuzzy, c-format
+#| msgid "Unknown icon type: %s\n"
+msgid "unknown keyring type: %s\n"
+msgstr "Tuntematon ikonityyppi: %s\n"
 
 #, c-format
 msgid "invalid package verify level %s\n"
@@ -2905,6 +2497,11 @@ msgstr "%s tagi %u: virheellisiä tietoja %p (%u)"
 msgid "%s tag %u: invalid size %u"
 msgstr "%s tag %u: ei kelvollinen koko %u"
 
+#, fuzzy, c-format
+#| msgid "%s: tag %u: invalid hex"
+msgid "%s tag %u: invalid base64"
+msgstr "%s: tagi %u: virheellinen hex"
+
 #, c-format
 msgid "%s tag %u: invalid OpenPGP signature"
 msgstr "%s tag %u: ei kelvollinen OpenPGP-allekirjoitus"
@@ -2913,19 +2510,28 @@ msgstr "%s tag %u: ei kelvollinen OpenPGP-allekirjoitus"
 msgid "%s: tag %u: invalid hex"
 msgstr "%s: tagi %u: virheellinen hex"
 
-#, c-format
-msgid "%s%s%s %s"
+#, fuzzy, c-format
+#| msgid "%s%s%s %s"
+msgid "%s %s%s %s"
 msgstr "%s%s%s %s"
 
 msgid "digest"
 msgstr "tarkistussumma"
 
 #, c-format
-msgid "%s%s"
-msgstr "%s%s"
+msgid "%s OpenPGP %s"
+msgstr ""
+
+#, c-format
+msgid "%s OpenPGP %s %s"
+msgstr ""
 
 msgid "signature"
 msgstr "allekirjoitus"
+
+#, c-format
+msgid ", key fingerprint: %s"
+msgstr ""
 
 msgid "header"
 msgstr "otsikko"
@@ -2933,10 +2539,14 @@ msgstr "otsikko"
 msgid "package"
 msgstr "paketti"
 
-msgid "Header "
+#, fuzzy
+#| msgid "Header "
+msgid "Header"
 msgstr "Otsikko "
 
-msgid "Payload "
+#, fuzzy
+#| msgid "Payload "
+msgid "Payload"
 msgstr "Hyötykuorma "
 
 msgid "Unable to reload signature header.\n"
@@ -3013,7 +2623,9 @@ msgstr "ei-tuettu funktion argumenttityyppi"
 msgid "syntax error in expression"
 msgstr "syntaksivirhe lausekkeessa"
 
-msgid "unsupported funcion"
+#, fuzzy
+#| msgid "unsupported funcion"
+msgid "unsupported function"
 msgstr "ei tuettu toiminto"
 
 msgid "unmatched ("
@@ -3124,7 +2736,16 @@ msgid "A %% is followed by an unparseable macro\n"
 msgstr "%% seuraa makro jota ei voida jäsentää\n"
 
 #, c-format
-msgid "======================== active %d empty %d\n"
+msgid "unexpected argument to non-parametric macro %%%s\n"
+msgstr ""
+
+#, c-format
+msgid "macro value out of range for int: %<PRIu64> using %i instead.\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "======================== active %d empty %d\n"
+msgid "======================== active %zu empty %d\n"
 msgstr "======================== aktiivisia %d tyhjiä %d\n"
 
 #, c-format
@@ -3197,6 +2818,15 @@ msgstr "V%d %s/%s %s, avaimen tunnus %s"
 msgid "(none)"
 msgstr "(ei mitään)"
 
+#, fuzzy, c-format
+#| msgid "Could not read from file %s: %s\n"
+msgid "Could not find url helper: \"%s\"\n"
+msgstr "Tiedoston ”%s” lukeminen ei onnistunut: %s\n"
+
+#, c-format
+msgid "Executing url helper \"%s\" failed with status %i\n"
+msgstr ""
+
 #, c-format
 msgid "%s: Fwrite failed: %s\n"
 msgstr "%s: Fwrite epäonnistui: %s\n"
@@ -3209,25 +2839,15 @@ msgstr "%s: Tiedoston luku epäonnistui: %s\n"
 msgid "%s: Fflush failed: %s\n"
 msgstr "%s: Fflush epäonnistui: %s\n"
 
-#, fuzzy
-#| msgid "Unsupported PGP signature\n"
-msgid "Unsupported OpenPGP signature\n"
-msgstr "PGP-allekirjoitusta ei tueta\n"
+#, fuzzy, c-format
+#| msgid "reading symlink %s failed: %s\n"
+msgid "Expanding signing macro %s failed\n"
+msgstr "symlinkin %s lukeminen epäonnistui: %s\n"
 
 #, fuzzy, c-format
-#| msgid "Unsupported PGP hash algorithm %u\n"
-msgid "Unsupported OpenPGP hash algorithm %u\n"
-msgstr "Ei tuettu PGP-hajautusalgoritmi %u\n"
-
-#, fuzzy, c-format
-#| msgid "Unsupported PGP pubkey algorithm %u\n"
-msgid "Unsupported OpenPGP pubkey algorithm %u\n"
-msgstr "PGP-pubkey-algoritmi %u, jota ei tueta\n"
-
-#, fuzzy, c-format
-#| msgid "Unsupported PGP signature\n"
-msgid "Deprecated OpenPGP signature version %d\n"
-msgstr "PGP-allekirjoitusta ei tueta\n"
+#| msgid "Invalid %s token: %s\n"
+msgid "Invalid sign command: %s\n"
+msgstr "Virheellinen %s merkki: %s\n"
 
 #, c-format
 msgid "Could not create pipe for signing: %m\n"
@@ -3254,18 +2874,43 @@ msgstr "Tiedoston ”%s” lukeminen ei onnistunut: %s\n"
 
 #, fuzzy, c-format
 #| msgid "gpg exec failed (%d)\n"
-msgid "gpg waitpid failed (%s)\n"
+msgid "%s waitpid failed (%s)\n"
 msgstr "gpg:n suoritus epäonnistui (%d)\n"
 
-#, c-format
-msgid "gpg exec failed (%d)\n"
+#, fuzzy, c-format
+#| msgid "gpg exec failed (%d)\n"
+msgid "%s exec failed (%d)\n"
 msgstr "gpg:n suoritus epäonnistui (%d)\n"
 
-msgid "gpg failed to write signature\n"
+#, fuzzy, c-format
+#| msgid "gpg failed to write signature\n"
+msgid "failed to write signature: %s\n"
 msgstr "gpg ei voinut kirjoittaa allekirjoitusta\n"
 
-msgid "unable to read the signature\n"
+#, fuzzy, c-format
+#| msgid "unable to read the signature\n"
+msgid "unable to read the signature: %s\n"
 msgstr "ei voinut lukea allekirjoitusta\n"
+
+#, fuzzy
+#| msgid "Unsupported PGP signature\n"
+msgid "Unsupported OpenPGP signature\n"
+msgstr "PGP-allekirjoitusta ei tueta\n"
+
+#, fuzzy, c-format
+#| msgid "Unsupported PGP hash algorithm %u\n"
+msgid "Unsupported OpenPGP hash algorithm %u\n"
+msgstr "Ei tuettu PGP-hajautusalgoritmi %u\n"
+
+#, fuzzy, c-format
+#| msgid "Unsupported PGP signature\n"
+msgid "Deprecated OpenPGP signature version %d\n"
+msgstr "PGP-allekirjoitusta ei tueta\n"
+
+#, fuzzy, c-format
+#| msgid "Unsupported PGP pubkey algorithm %u\n"
+msgid "Unsupported OpenPGP pubkey algorithm %u for rpm v3/v4 signatures\n"
+msgstr "PGP-pubkey-algoritmi %u, jota ei tueta\n"
 
 msgid "file signing support not built in\n"
 msgstr "tiedostojen allekirjoitustukea ei ole sisäänrakennettu\n"
@@ -3292,18 +2937,42 @@ msgstr "%s: rpmReadSignature epäonnistui: %s"
 msgid "%s: headerRead failed: %s\n"
 msgstr "%s: headerRead epäonnistui: %s\n"
 
-msgid "Cannot sign RPM v3 packages\n"
+#, fuzzy, c-format
+#| msgid "Cannot sign RPM v3 packages\n"
+msgid "Cannot sign RPM v3 packages: %s\n"
 msgstr "RPM v3-paketteja ei voi allekirjoittaa\n"
 
+#, fuzzy, c-format
+#| msgid "generate fsverity signatures for package(s) files"
+msgid "not generating v3 signature for v6 package: %s\n"
+msgstr "luo fsverity-allekirjoitukset pakettitiedostoille"
+
 #, c-format
-msgid "%s already contains identical signature, skipping\n"
+msgid "File signatures not applicable to src.rpm: %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "Could not seek in file %s: %s\n"
+msgid "Could not get a file size of %s\n"
+msgstr "Ei voinut etsiä tiedostosta %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "%s already contains identical signature, skipping\n"
+msgid "%s already contains an identical signature, skipping\n"
+msgstr "%s sisältää jo samanlaisen allekirjoituksen, ohitetaan\n"
+
+#, fuzzy, c-format
+#| msgid "%s already contains identical signature, skipping\n"
+msgid "%s already contains a legacy signature\n"
 msgstr "%s sisältää jo samanlaisen allekirjoituksen, ohitetaan\n"
 
 #, c-format
 msgid "%s: rpmWriteSignature failed: %s\n"
 msgstr "%s: rpmWriteSignature epäonnistui: %s\n"
 
-msgid "rpmMkTemp failed\n"
+#, fuzzy, c-format
+#| msgid "rpmMkTemp failed\n"
+msgid "rpmMkTemp failed: %s\n"
 msgstr "rpmMkTemp epäonnistui\n"
 
 #, fuzzy, c-format
@@ -3328,11 +2997,485 @@ msgid "headerPutString failed\n"
 msgstr "headerPutString epäonnistui\n"
 
 #, c-format
+msgid "%s: %s\n"
+msgstr "%s: %s\n"
+
+#, c-format
+msgid "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
+msgstr "Tekijänoikeudet (C) 1998-2002 - Red Hat, Inc.\n"
+
+#, c-format
+msgid ""
+"This program may be freely redistributed under the terms of the GNU GPL\n"
+msgstr "Tätä ohjelmaa voi vapaasti levittää GNU GPL:n puittessa\n"
+
+#, c-format
+msgid "creating a pipe for --pipe failed: %m\n"
+msgstr "putken luominen --pipe:lle epäonnistui: %m\n"
+
+#, c-format
+msgid "exec failed\n"
+msgstr "suoritus epäonnistui\n"
+
+msgid "Query/Verify package selection options:"
+msgstr "Kysele/Tarkista paketin valintavaihtoehdot:"
+
+msgid "Query/Verify file selection options:"
+msgstr "Kysele/Tarkista tiedostovalinnat:"
+
+msgid "Query options (with -q or --query):"
+msgstr "Kyselyvalitsimet ('--query|-q':n kanssa):"
+
+msgid "Verify options (with -V or --verify):"
+msgstr "Tarkistusvalitsimet ('--verify|-V':n kanssa):"
+
+msgid "Install/Upgrade/Erase options:"
+msgstr "Asennus-, päivitys- ja poistovalitsimet:"
+
+msgid "Common options for all rpm modes and executables:"
+msgstr "Yhteiset valitsimet kaikille rpm moodeille:"
+
+msgid "one type of query/verify may be performed at a time"
+msgstr "vain yhden tyyppinen kysely/tarkistus voidaan suorittaa kerralla"
+
+msgid "unexpected query flags"
+msgstr "odottamattomia kyselyvalintoja"
+
+msgid "unexpected query format"
+msgstr "odottamaton kyselyn muotoilu"
+
+msgid "unexpected query source"
+msgstr "odottamaton kyselyn lähde"
+
+msgid "only one major mode may be specified"
+msgstr "vain yksi päätila voidaan määritellä"
+
+msgid "only installation and upgrading may be forced"
+msgstr "vain asennus ja päivitys voidaan pakottaa"
+
+msgid "files may only be relocated during package installation"
+msgstr "tiedostoja voidaan siirtää toiselle polulle vain asennettaessa"
+
+msgid "cannot use --prefix with --relocate or --excludepath"
+msgstr "--prefix valintaa ei voi käyttää --relocate tai --excludepath kanssa"
+
+msgid ""
+"--relocate and --excludepath may only be used when installing new packages"
+msgstr ""
+"--relocate ja --excludepath: voidaan käyttää vain uusia paketteja "
+"asennettaessa"
+
+msgid "--prefix may only be used when installing new packages"
+msgstr "--prefix: voidaan käyttää vain uusia paketteja asennettaessa"
+
+msgid "arguments to --prefix must begin with a /"
+msgstr "--prefix parametrien pitää alkaa /-merkillä"
+
+msgid ""
+"--hash (-h) may only be specified during package installation and erasure"
+msgstr ""
+"'--hash|-h' voidaan määrittää vain paketin asennuksen ja poiston aikana"
+
+msgid "--percent may only be specified during package installation and erasure"
+msgstr ""
+"'--percent' voidaan määrittää vain paketin asennuksen ja poiston aikana"
+
+msgid "--replacepkgs may only be specified during package installation"
+msgstr "--replacepkgs: voidaan käyttää vain paketteja asennettaessa"
+
+msgid "--excludedocs may only be specified during package installation"
+msgstr "--excludedocs: voidaan käyttää vain paketteja asennettaessa"
+
+msgid "--includedocs may only be specified during package installation"
+msgstr "--includedocs: voidaan käyttää vain paketteja asennettaessa"
+
+msgid "only one of --excludedocs and --includedocs may be specified"
+msgstr "vain toinen --excludedocs tai --includedocs voidaan antaa"
+
+msgid "--ignorearch may only be specified during package installation"
+msgstr "--ignorearch: voidaan käyttää vain paketteja asennettaessa"
+
+msgid "--ignoreos may only be specified during package installation"
+msgstr "--ignoreos: voidaan käyttää vain paketteja asennettaessa"
+
+msgid "--ignoresize may only be specified during package installation"
+msgstr "--ignoresize: voidaan käyttää vain paketteja asennettaessa"
+
+msgid "--allmatches may only be specified during package erasure"
+msgstr "--allmatches: voidaan käyttää vain paketteja poistettaessa"
+
+msgid "--allfiles may only be specified during package installation"
+msgstr "--allfiles: voidaan käyttää vain paketteja asennettaessa"
+
+msgid "--justdb may only be specified during package installation and erasure"
+msgstr ""
+"--justdb: voidaan käyttää vain paketteja asennettaessa tai poistettaessa"
+
+msgid ""
+"script disabling options may only be specified during package installation "
+"and erasure"
+msgstr ""
+"skriptien estovalintoja voidaan käyttää vain paketteja asennettaessa tai "
+"poistettaessa"
+
+msgid ""
+"trigger disabling options may only be specified during package installation "
+"and erasure"
+msgstr ""
+"laukaisimien estovalintoja voidaan käyttää vain paketteja asennettaessa tai "
+"poistettaessa"
+
+msgid ""
+"--nodeps may only be specified during package installation, erasure, and "
+"verification"
+msgstr ""
+"--nodeps voidaan määrittää vain paketin asennuksen, poistamisen ja "
+"tarkistuksen aikana"
+
+msgid "--test may only be specified during package installation and erasure"
+msgstr "'--test' voidaan määrittää vain paketin asennuksen ja poiston aikana"
+
+msgid "arguments to --root (-r) must begin with a /"
+msgstr "parametrit --root (-r):lle alettava /-merkillä"
+
+msgid "no packages given for erase"
+msgstr "poistolle ei määritelty paketteja"
+
+msgid "no packages given for install"
+msgstr "asennukselle ei määritelty paketteja"
+
+msgid "no arguments given for query"
+msgstr "kyselylle ei annettu parametrejä"
+
+msgid "no arguments given for verify"
+msgstr "tarkistukselle ei annettu parametrejä"
+
+#, fuzzy
+#| msgid "create uncompressed tar file"
+msgid "create uncompressed archive"
+msgstr "luo pakkaamaton tar-tiedosto"
+
+msgid "archive format (pax|cpio)"
+msgstr ""
+
+#, c-format
+msgid "argument is not an RPM package\n"
+msgstr "parametri ei ole RPM paketti\n"
+
+#, c-format
+msgid "error reading header from package\n"
+msgstr "virhe luettaessa otsikkotietoa paketista\n"
+
+#, c-format
+msgid "cannot re-open payload: %s\n"
+msgstr "kuorman uudelleenavaus ei onnistu: %s\n"
+
+msgid "initialize database"
+msgstr "alusta tietokanta"
+
+msgid "rebuild database inverted lists from installed package headers"
+msgstr "rakenna tietokanta uudestaan asennettujen pakettien tiedoista"
+
+#, fuzzy
+#| msgid "verify database files"
+msgid "verify database"
+msgstr "tarkista tietokanta"
+
+msgid "salvage database"
+msgstr "pelastustietokanta"
+
+msgid "export database to stdout header list"
+msgstr "vie tietokanta vakiotulosteen otsakelistaan"
+
+msgid "import database from stdin header list"
+msgstr "tuo tietokanta vakiosyötteen otsakelistasta"
+
+msgid "Database options:"
+msgstr "Tietokantavalitsimet:"
+
+#, c-format
+msgid "buildroot already specified, ignoring %s\n"
+msgstr "buildroot on jo määritelty, %s:ää ei huomioida\n"
+
+#, c-format
+msgid "build through %prep (unpack sources and apply patches) from <specfile>"
+msgstr "käännä %prep-osioon asti spec-tiedostosta"
+
+msgid "<specfile>"
+msgstr "<spec-tiedosto>"
+
+#, c-format
+msgid "build through %conf (%prep, then %conf) from <specfile>"
+msgstr "käännä %conf-osioon asti (%prep, sitten %conf) spec-tiedostosta"
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <specfile>"
+msgstr "käännä %build-osion läpi (%prep, %conf, sitten kokoa) spec-tiedostosta"
+
+msgid "check build dependencies <specfile>"
+msgstr "tarkista koontiriippuvuudet <specfile>"
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <specfile>"
+msgstr ""
+"käännä %install-osion läpi (%prep, %conf, %build, sitten asenna) spec-"
+"tiedostosta"
+
+#, c-format
+msgid "verify %files section from <specfile>"
+msgstr "tarkista %files-osio spec-tiedostosta"
+
+msgid "build source and binary packages from <specfile>"
+msgstr "käännä lähde- ja binääripaketit spec-tiedostosta"
+
+msgid "build binary package only from <specfile>"
+msgstr "käännä vain binääripaketti spec-tiedostosta"
+
+msgid "build source package only from <specfile>"
+msgstr "käännä vain lähdepaketti spec-tiedostosta"
+
+msgid ""
+"build source package only from <specfile> - calculate dynamic build requires"
+msgstr ""
+"rakenna lähdepaketti vain <specfile>:sta - laske dynaaminen koontivaatimus"
+
+#, c-format
+msgid ""
+"build through %prep (unpack sources and apply patches) from <source package>"
+msgstr ""
+"rakenna %prep:n kautta (pura lähteet ja asenna korjaustiedostot) "
+"<lähdepaketti>:sta"
+
+msgid "<source package>"
+msgstr "<lähdepaketti>"
+
+#, fuzzy, c-format
+#| msgid "build through %conf (%prep, then %conf) from <specfile>"
+msgid "build through %conf (%prep, then %conf) from <source package>"
+msgstr "käännä %conf-osioon asti (%prep, sitten %conf) spec-tiedostosta"
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <source package>"
+msgstr "käännä %build:n läpi (%prep, %conf, sitten kokoa) lähdepaketista"
+
+msgid "check build dependencies <source package>"
+msgstr "tarkista koontiriippuvuudet <lähdepaketti>"
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <source "
+"package>"
+msgstr ""
+"käännä %install-osion läpi (%prep, %conf, %build, sitten asenna) "
+"lähdepaketista"
+
+#, c-format
+msgid "verify %files section from <source package>"
+msgstr "tarkista %files osio <lähdepaketista>"
+
+msgid "build source and binary packages from <source package>"
+msgstr "rakenna lähde - ja binaaripaketit <lähdepaketti>:sta"
+
+msgid "build binary package only from <source package>"
+msgstr "rakenna binaaripaketit vain <lähdepaketti>:sta"
+
+msgid "build source package only from <source package>"
+msgstr "käännä lähdepaketti vain <lähdepaketista>"
+
+msgid ""
+"build source package only from <source package> - calculate dynamic build "
+"requires"
+msgstr ""
+"käännä lähdepaketti vain <lähdepaketista> - laske dynaaminen käännösvaatimus"
+
+#, c-format
+msgid "build through %prep (unpack sources and apply patches) from <tarball>"
+msgstr "käännä %prep-osioon asti tar-tiedostosta"
+
+msgid "<tarball>"
+msgstr "<tar-tiedosto>"
+
+#, fuzzy, c-format
+#| msgid "build through %conf (%prep, then %conf) from <specfile>"
+msgid "build through %conf (%prep, then %conf) from <tarball>"
+msgstr "käännä %conf-osioon asti (%prep, sitten %conf) spec-tiedostosta"
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <tarball>"
+msgstr "käännä %build-osion läpi (%prep, %conf, sitten kokoa) tar-tiedostosta"
+
+msgid "check build dependencies <tarball>"
+msgstr "tarkista koontiriippuvuudet <tarball>"
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <tarball>"
+msgstr ""
+"käännä %install-osion läpi (%prep, %conf, %build, sitten asenna) tar-"
+"tiedostosta"
+
+#, c-format
+msgid "verify %files section from <tarball>"
+msgstr "tarkista %files-osio tar-tiedostosta"
+
+msgid "build source and binary packages from <tarball>"
+msgstr "käännä lähde- ja binääripaketit tar-tiedostosta"
+
+msgid "build binary package only from <tarball>"
+msgstr "käännä vain binääripaketti tar-tiedostosta"
+
+msgid "build source package only from <tarball>"
+msgstr "käännä vain lähdepaketti tar-tiedostosta"
+
+msgid ""
+"build source package only from <tarball> - calculate dynamic build requires"
+msgstr ""
+"käännä lähdepaketti vain <tar-tiedostosta> - laske dynaaminen käännösvaatimus"
+
+msgid "build binary package from <source package>"
+msgstr "käännä binääripaketti lähdepaketista"
+
+#, c-format
+msgid ""
+"build through %install (%prep, %build, then install) from <source package>"
+msgstr "käännä %install-osioon asti (%prep, %build ja %install) lähdepaketista"
+
+#, fuzzy
+#| msgid "override build root"
+msgid "override build root (DEPRECATED)"
+msgstr "ohita käännösjuuri"
+
+msgid "remove build tree when done"
+msgstr "poista käännöspuu, kun valmis"
+
+msgid "ignore ExcludeArch: directives from spec file"
+msgstr "jätä ExcludeArch-directiivit huomioimatta"
+
+msgid "debug file state machine"
+msgstr "vianselvitä tiedoston tilakone"
+
+msgid "do not execute any stages of the build"
+msgstr "älä suorita mitään käännöksen vaiheita"
+
+msgid "do not verify build dependencies"
+msgstr "älä tarkista koontiriippuvuuksia"
+
+msgid "generate package header(s) compatible with (legacy) rpm v3 packaging"
+msgstr ""
+"luo pakettien otsikot, jotka ovat yhteensopivia (vanhojen) rpm v3-pakettien "
+"kanssa"
+
+#, c-format
+msgid "do not execute %clean stage of the build"
+msgstr "älä suorita %clean:n rakennusvaihetta"
+
+#, c-format
+msgid "do not execute %prep stage of the build"
+msgstr "älä suorita %prep:n rakennusvaihetta"
+
+#, c-format
+msgid "do not execute %check stage of the build"
+msgstr "älä suorita %check:n rakennusvaihetta"
+
+msgid "do not accept i18N msgstr's from specfile"
+msgstr "älä hyväksy i18N-sanomia spec-tiedostosta"
+
+msgid "remove sources when done"
+msgstr "poista lähdekoodit kun valmis"
+
+msgid "remove specfile when done"
+msgstr "poista määrittelytiedosto kun valmis"
+
+msgid "skip straight to specified stage (only for c,i)"
+msgstr "siirry suoraan määriteltyyn vaiheeseen (vain c ja i yhteydessä)"
+
+msgid "override target platform"
+msgstr "ohita kohdealusta"
+
+msgid "Build options with [ <specfile> | <tarball> | <source package> ]:"
+msgstr "Käännösvalitsimet:"
+
+#, c-format
+msgid "Unable to open spec file %s: %s\n"
+msgstr "En voi avata spec-tiedostoa %s: %s\n"
+
+#, c-format
+msgid "Failed to open tar pipe: %m\n"
+msgstr "tar-putken avaus epäonnistui: %m\n"
+
+#, c-format
+msgid "Found more than one spec file in %s\n"
+msgstr "Löytyi useampi kuin yksi spec-tiedosto kohteesta %s\n"
+
+#, c-format
+msgid "Failed to read spec file from %s\n"
+msgstr "Spec-tiedoston avaaminen %s:sta epäonnistui\n"
+
+#, c-format
+msgid "Failed to rename %s to %s: %m\n"
+msgstr "Uudelleen nimeäminen %s -> %s epäonnistui: %m\n"
+
+#, c-format
+msgid "failed to stat %s: %m\n"
+msgstr "%s:n stat epäonnistui: %m\n"
+
+#, c-format
+msgid "File %s is not a regular file.\n"
+msgstr "Tiedosto %s ole tavallinen tiedosto.\n"
+
+#, c-format
+msgid "File %s does not appear to be a specfile.\n"
+msgstr "Tiedosto %s ei vaikuta spec-tiedostolta.\n"
+
+#, c-format
+msgid "Building target platforms: %s\n"
+msgstr "Käännetään kohdealustoille: %s\n"
+
+#, c-format
+msgid "Building for target %s\n"
+msgstr "Käännetään kohteelle %s\n"
+
+#, c-format
 msgid "%s: read manifest failed: %s\n"
 msgstr "%s: pakettilistan luku epäonnistui: %s\n"
 
 msgid "don't verify header+payload signature"
 msgstr "älä tarkista otsikon ja kuorman allekirjoitusta"
+
+msgid "verify package signature(s)"
+msgstr "tarkista paketin allekirjoitus"
+
+msgid "import an armored public key"
+msgstr "tuo panssaroitu julkinen avain"
+
+#, fuzzy
+#| msgid "import an armored public key"
+msgid "export an public key"
+msgstr "tuo panssaroitu julkinen avain"
+
+msgid "don't import, but tell if it would work or not"
+msgstr "älä tuot, mutta kerro, toimiiko se vai ei"
+
+#, fuzzy
+#| msgid "list keys from RPM keyring"
+msgid "Erase keys from RPM keyring"
+msgstr "avainten luettelo RPM-avaimenperästä"
+
+msgid "list keys from RPM keyring"
+msgstr "avainten luettelo RPM-avaimenperästä"
+
+msgid "rebuild the keyring - convert to current backend"
+msgstr ""
+
+msgid "get keys from this backend when rebuilding current backend"
+msgstr ""
+
+msgid "Keyring options:"
+msgstr "Avaimenperävaihtoehdot:"
+
+msgid "no arguments given"
+msgstr "ei annettu parametrejä"
 
 msgid "getopt string for scripts options"
 msgstr "getopt-merkkijono komentosarjavaihtoehdoille"
@@ -3343,11 +3486,170 @@ msgstr "suorita lauseke"
 msgid "interactive session"
 msgstr "vuorovaikutteinen istunto"
 
+#, fuzzy
+#| msgid "sign package(s) files"
+msgid "sign package(s), adding a new signature"
+msgstr "allekirjoita pakettitiedostot"
+
+#, fuzzy
+#| msgid "sign package(s) (identical to --addsign)"
+msgid "resign package(s), deleting any previous signatures"
+msgstr "allekirjoita paketti (hylkää nykyinen allekirjoitus)"
+
+msgid "delete package signatures"
+msgstr "poista paketin allekirjoitus"
+
+msgid "delete IMA and fsverity file signatures"
+msgstr "poista IMA- ja fsverity-tiedostojen allekirjoitukset"
+
+#, fuzzy
+#| msgid "create rpm v3 header+payload signatures"
+msgid "request legacy rpm v3 header+payload signatures on v4 packages"
+msgstr "luo rpm v3 -otsikko+hyötykuorman allekirjoitukset"
+
+#, fuzzy
+#| msgid "create rpm v3 header+payload signatures"
+msgid "request legacy rpm v4 header signatures on v6 packages"
+msgstr "luo rpm v3 -otsikko+hyötykuorman allekirjoitukset"
+
+#, fuzzy
+#| msgid "create rpm v3 header+payload signatures"
+msgid "request rpm v6 header signature on v4 packages"
+msgstr "luo rpm v3 -otsikko+hyötykuorman allekirjoitukset"
+
+msgid "sign package(s) files"
+msgstr "allekirjoita pakettitiedostot"
+
+msgid "generate fsverity signatures for package(s) files"
+msgstr "luo fsverity-allekirjoitukset pakettitiedostoille"
+
+msgid "algorithm to use for verity signatures, default sha256"
+msgstr ""
+"allekirjoituksien todentamiseen käytettävä algoritmi, oletuksena sha256"
+
+msgid "<algorithm>"
+msgstr "<algoritm>"
+
+msgid "use file signing cert <cert>"
+msgstr "käytä tiedoston allekirjoitussertifikaattia <cert>"
+
+msgid "<cert>"
+msgstr "<cert>"
+
+msgid "use file signing key <key>"
+msgstr "käytä tiedoston allekirjoitusavainta <key>"
+
+msgid "<key>"
+msgstr "<avain>"
+
+msgid "prompt for file signing key password"
+msgstr "pyytää tiedoston allekirjoitusavaimen salasanaa"
+
+msgid "Signature options:"
+msgstr "Allekirjoitusvalitsimet:"
+
+#, fuzzy, c-format
+#| msgid "You must set \"%%_gpg_name\" in your macro file\n"
+msgid "You must set \"%%_openpgp_sign_id\" in your macro file\n"
+msgstr "Sinun on asetettava \"%%_gpg_name\" makrotiedostoosi\n"
+
+#, c-format
+msgid ""
+"You must set \"%%_file_signing_key\" in your macro file or on the command "
+"line with --fskpath\n"
+msgstr ""
+"Sinun on asetettava \"%%_file_signing_key\" makrotiedostoon tai "
+"komentoriville '--fskpath':lla\n"
+
+msgid "--fskpath may only be specified when signing files"
+msgstr "--fskpath voidaan määrittää vain allekirjoitettaessa tiedostoja"
+
+msgid "parse spec file(s) to stdout"
+msgstr "jäsennä spec-tiedosto(t) vakiotulosteeseen"
+
+msgid "query spec file(s)"
+msgstr "kysy spec-tiedosto(i)sta"
+
+msgid "interactive macro shell"
+msgstr "interaktiivinen makro komentotulkki"
+
+msgid "operate on binary rpms generated by spec (default)"
+msgstr "operoi spesifikaatioiden tuottamilla binäärisillä rpm:llä (oletus)"
+
+msgid "operate on binary package header(s) that would be built from spec"
+msgstr ""
+"työskentele binääripaketin otsikoilla, jotka rakennettaisiin "
+"spesifikaatioista"
+
+msgid "operate on source package header generated by spec"
+msgstr "työskentele lähdepaketin otsikoilla, jotka spesifikaatio luo"
+
+msgid "Spec options:"
+msgstr "Spec vaihtoehtoja:"
+
+#, c-format
+msgid "RPM version %s macro shell\n"
+msgstr "RPM-versio %s makro komentotulkki\n"
+
+msgid "no arguments given for parse"
+msgstr "jäsentämiseen ei annettu argumentteja"
+
 msgid "extract an archive"
 msgstr "pura arkisto"
 
 msgid "only print what would be done"
 msgstr "tulosta vain se, mitä tehdään"
+
+msgid "extract into a specific path"
+msgstr ""
+
+#, c-format
+#~ msgid "files over 4GB not supported by cpio, use rpm2archive instead\n"
+#~ msgstr ""
+#~ "cpio ei tue yli 4 Gt:n tiedostoja, käytä sen sijaan rpm2archive:ta\n"
+
+#~ msgid "run build in current directory"
+#~ msgstr "Suorita käännöstä nykyisessä hakemistossa"
+
+#~ msgid "sign package(s)"
+#~ msgstr "allekirjoita paketti"
+
+#, c-format
+#~ msgid "%%{buildroot} couldn't be empty\n"
+#~ msgstr "%%{buildroot} ei voi olla tyhjä\n"
+
+#, c-format
+#~ msgid "%%{buildroot} can not be \"/\"\n"
+#~ msgstr "%%{buildroot} ei voi olla \"/\"\n"
+
+#, c-format
+#~ msgid "line %d: second %%prep\n"
+#~ msgstr "rivi %d: toinen %%prep\n"
+
+#~ msgid "Only absolute paths are allowed in file triggers"
+#~ msgstr "Vain absoluuttiset polut ovat sallittuja tiedoston laukaisimissa"
+
+#~ msgid "disable user namespace support"
+#~ msgstr "poista käyttäjän nimitilan tuki käytöstä"
+
+#~ msgid "query/verify package(s) with package identifier"
+#~ msgstr "kysy/tarkista paketit pakettitunnisteella"
+
+#~ msgid "query/verify package(s) with header identifier"
+#~ msgstr "kysy/tarkista paketit otsaketunnisteella"
+
+#~ msgid "Invalid symlink"
+#~ msgstr "Virheellinen symbolinen linkki"
+
+#~ msgid "illegal signature type"
+#~ msgstr "laiton allekirjoitustyyppi"
+
+#~ msgid "unsupported RPM package version"
+#~ msgstr "RPM pakettiversio ei ole tuettu"
+
+#, c-format
+#~ msgid "%s%s"
+#~ msgstr "%s%s"
 
 #, c-format
 #~ msgid "%%dev glob not permitted: %s\n"

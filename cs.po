@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-04 09:25+0300\n"
+"POT-Creation-Date: 2025-09-01 14:14+0300\n"
 "PO-Revision-Date: 2024-02-09 08:36+0000\n"
 "Last-Translator: Petr Ptacek <petr106@atlas.cz>\n"
 "Language-Team: Czech <https://translate.fedoraproject.org/projects/rpm/rpm-"
@@ -19,545 +19,10 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Weblate 5.3.1\n"
 
-#, c-format
-msgid "%s: %s\n"
-msgstr "%s: %s\n"
-
-#, c-format
-msgid "RPM version %s\n"
-msgstr "RPM verze %s\n"
-
-#, c-format
-msgid "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
-msgstr "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
-
-#, c-format
-msgid ""
-"This program may be freely redistributed under the terms of the GNU GPL\n"
-msgstr "Tento program lze volně šířit podle podmínek GNU GPL\n"
-
-#, c-format
-msgid "creating a pipe for --pipe failed: %m\n"
-msgstr "vytvoření roury pro --pipe selhalo: %m\n"
-
-#, c-format
-msgid "exec failed\n"
-msgstr "spuštění selhalo\n"
-
-msgid "create uncompressed tar file"
-msgstr "vytvořit nekomprimovaný soubor tar"
-
-#, c-format
-msgid "argument is not an RPM package\n"
-msgstr "parametr není RPM balíček\n"
-
-#, c-format
-msgid "error reading header from package\n"
-msgstr "chyba při čtení hlavičky balíčku\n"
-
-#, c-format
-msgid "cannot re-open payload: %s\n"
-msgstr "nemohu znovu otevřít payload: %s\n"
-
-#, c-format
-msgid "files over 4GB not supported by cpio, use rpm2archive instead\n"
-msgstr ""
-"soubory nad 4 GB nejsou podporovány cpio, použijte místo toho rpm2archive\n"
-
-#, c-format
-msgid "buildroot already specified, ignoring %s\n"
-msgstr "buildroot byl již nastaven, ignoruji %s\n"
-
-#, c-format
-msgid "build through %prep (unpack sources and apply patches) from <specfile>"
-msgstr ""
-"sestavení podle %prep (rozbalení zdrojových kódů a aplikace patchů) podle "
-"<spec_soubor>"
-
-msgid "<specfile>"
-msgstr "<spec_soubor>"
-
-#, c-format
-msgid "build through %conf (%prep, then %conf) from <specfile>"
-msgstr "sestavit pomocí %conf (%prep, poté %conf) z <specfile>"
-
-msgid "build through %build (%prep, %conf, then compile) from <specfile>"
-msgstr "sestavit pomocí %build (%prep, %conf, poté zkompilovat) z <specfile>"
-
-msgid "check build dependencies <specfile>"
-msgstr "kontrola závislostí sestavení <specfile>"
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <specfile>"
-msgstr ""
-"sestavit pomocí %install (%prep, %conf, %build, pak nainstalovat) z "
-"<specfile>"
-
-#, c-format
-msgid "verify %files section from <specfile>"
-msgstr "kontrola části %files ve <spec_soubor>"
-
-msgid "build source and binary packages from <specfile>"
-msgstr "vytvoření zdrojového a binárního balíčku podle <spec_soubor>"
-
-msgid "build binary package only from <specfile>"
-msgstr "vytvoření pouze binárního balíčku podle <spec_soubor>"
-
-msgid "build source package only from <specfile>"
-msgstr "vytvoření zdrojového balíčku podle <spec_soubor>"
-
-msgid ""
-"build source package only from <specfile> - calculate dynamic build requires"
-msgstr ""
-"sestavit zdrojový balíček pouze ze <specfile> - vypočítat požadavky "
-"dynamického sestavení"
-
-#, c-format
-msgid ""
-"build through %prep (unpack sources and apply patches) from <source package>"
-msgstr ""
-"sestavit pomocí %prep (rozbalit zdroje a použít opravy) ze <zdrojového "
-"balíčku>"
-
-msgid "<source package>"
-msgstr "<zdrojový balíček>"
-
-msgid "build through %build (%prep, %conf, then compile) from <source package>"
-msgstr ""
-"sestavit pomocí %build (%prep, %conf, poté zkompilovat) ze <zdrojového "
-"balíčku>"
-
-msgid "check build dependencies <source package>"
-msgstr "kontrola závislostí sestavení <zdrojového balíčku>"
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <source "
-"package>"
-msgstr ""
-"sestavit pomocí %install (%prep, %conf, %build, pak nainstalovat) ze "
-"<zdrojového balíčku>"
-
-#, c-format
-msgid "verify %files section from <source package>"
-msgstr "ověřte sekci %files ze <zdrojového balíčku>"
-
-msgid "build source and binary packages from <source package>"
-msgstr "sestavit zdrojové a binární balíčky ze <zdrojového balíčku>"
-
-msgid "build binary package only from <source package>"
-msgstr "sestavit binární balíček pouze ze <zdrojového balíčku>"
-
-msgid "build source package only from <source package>"
-msgstr "sestavit zdrojový balíček pouze ze <zdrojového balíčku>"
-
-msgid ""
-"build source package only from <source package> - calculate dynamic build "
-"requires"
-msgstr ""
-"sestavit zdrojový balíček pouze ze <zdrojového balíčku> - vypočítat "
-"požadavky dynamického sestavení"
-
-#, c-format
-msgid "build through %prep (unpack sources and apply patches) from <tarball>"
-msgstr ""
-"sestavení podle %prep (rozbalení zdrojových kódů, aplikace patchů) z "
-"<tar_soubor>"
-
-msgid "<tarball>"
-msgstr "<tar_soubor>"
-
-msgid "build through %build (%prep, %conf, then compile) from <tarball>"
-msgstr ""
-"sestavit pomocí %build (%prep, %conf, poté zkompilovat) z <tar_souboru>"
-
-msgid "check build dependencies <tarball>"
-msgstr "kontrola závislostí sestavení <tar_souboru>"
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <tarball>"
-msgstr ""
-"sestavit pomocí %install (%prep, %conf, %build, pak nainstalovat) z "
-"<tar_souboru>"
-
-#, c-format
-msgid "verify %files section from <tarball>"
-msgstr "kontrola části %files z <tar_soubor>"
-
-msgid "build source and binary packages from <tarball>"
-msgstr "vytvoření zdrojového a binárního balíčku z <tar_soubor>"
-
-msgid "build binary package only from <tarball>"
-msgstr "vytvoření pouze binárního balíčku z <tar_soubor>"
-
-msgid "build source package only from <tarball>"
-msgstr "vytvoření pouze zdrojového balíčku z <tar_soubor>"
-
-msgid ""
-"build source package only from <tarball> - calculate dynamic build requires"
-msgstr ""
-"sestavit zdrojový balíček pouze z <tar_souboru> - vypočítat požadavky "
-"dynamického sestavení"
-
-msgid "build binary package from <source package>"
-msgstr "vytvoření binárního balíčku ze <zdrojový balíček>"
-
-msgid ""
-"build through %install (%prep, %build, then install) from <source package>"
-msgstr "sestavení podle %%install (včetně %prep, %build) ze <zdrojový balíček>"
-
-msgid "override build root"
-msgstr "build root předefinován"
-
-msgid "run build in current directory"
-msgstr "spustit sestavení v aktuálním adresáři"
-
-msgid "remove build tree when done"
-msgstr "po dokončení odstranit sestavovací strom"
-
-msgid "ignore ExcludeArch: directives from spec file"
-msgstr "ignorovat ExcludeArch: direktivy ve spec souboru"
-
-msgid "debug file state machine"
-msgstr "ladit nástroj stavu souborů"
-
-msgid "do not execute any stages of the build"
-msgstr "nespouštět žádné etapy vytváření balíčku"
-
-msgid "do not verify build dependencies"
-msgstr "nekontrolovat závislosti balíčků"
-
-msgid "generate package header(s) compatible with (legacy) rpm v3 packaging"
-msgstr ""
-"vygenerovat hlavičku(y) balíčku kompatibilní se (staršími) balíčkovači rpm v3"
-
-#, c-format
-msgid "do not execute %clean stage of the build"
-msgstr "neprovádějte %clean fázi sestavení"
-
-#, c-format
-msgid "do not execute %prep stage of the build"
-msgstr "neprovádějte %prep fázi sestavení"
-
-#, c-format
-msgid "do not execute %check stage of the build"
-msgstr "neprovádějte %check fázi sestavení"
-
-msgid "do not accept i18N msgstr's from specfile"
-msgstr "neakceptovat i18N popisky ze spec souboru"
-
-msgid "remove sources when done"
-msgstr "po dokončení odstranit zdrojové kódy"
-
-msgid "remove specfile when done"
-msgstr "po dokončení odstranit spec soubor"
-
-msgid "skip straight to specified stage (only for c,i)"
-msgstr "přeskočit přímo na určenou etapu (pouze pro c,i)"
-
-msgid "override target platform"
-msgstr "cílová platforma předefinována"
-
-msgid "Build options with [ <specfile> | <tarball> | <source package> ]:"
-msgstr ""
-"Sestavovací volby s [ <spec_soubor> | <tar_soubor> | <zdrojový_balíček> ]:"
-
-msgid "Common options for all rpm modes and executables:"
-msgstr "Společné volby pro všechny rpm režimy a spustitelné soubory:"
-
-#, c-format
-msgid "Unable to open spec file %s: %s\n"
-msgstr "Nelze otevřít spec soubor %s: %s\n"
-
-#, c-format
-msgid "Failed to open tar pipe: %m\n"
-msgstr "Nelze otevřít rouru pro tar: %m\n"
-
-#, c-format
-msgid "Found more than one spec file in %s\n"
-msgstr "V %s bylo nalezeno více než jeden soubor specifikací\n"
-
-#, c-format
-msgid "Failed to read spec file from %s\n"
-msgstr "Nelze číst spec soubor z %s\n"
-
-#, c-format
-msgid "Failed to rename %s to %s: %m\n"
-msgstr "Nelze přejmenovat %s na %s: %m\n"
-
-#, c-format
-msgid "failed to stat %s: %m\n"
-msgstr "nemohu zjistit stav %s: %m\n"
-
-#, c-format
-msgid "File %s is not a regular file.\n"
-msgstr "Soubor %s není obyčejný soubor.\n"
-
-#, c-format
-msgid "File %s does not appear to be a specfile.\n"
-msgstr "Nezdá se, že by %s byl spec soubor.\n"
-
-#, c-format
-msgid "Building target platforms: %s\n"
-msgstr "Sestavuji cílové platformy: %s\n"
-
-#, c-format
-msgid "Building for target %s\n"
-msgstr "Sestavuji pro cíl %s\n"
-
-msgid "arguments to --root (-r) must begin with a /"
-msgstr "parametry pro --root (-r) musejí začínat znakem /"
-
-msgid "initialize database"
-msgstr "inicializuj databázi"
-
-msgid "rebuild database inverted lists from installed package headers"
-msgstr "znovu sestav obrácené seznamy z instalovaných hlaviček balíčků"
-
-msgid "verify database files"
-msgstr "zkontrolovat databázové soubory"
-
-msgid "salvage database"
-msgstr "záchranná databáze"
-
-msgid "export database to stdout header list"
-msgstr "export databáze do seznamu hlaviček stdout"
-
-msgid "import database from stdin header list"
-msgstr "import databáze ze seznamu hlaviček stdin"
-
-msgid "Database options:"
-msgstr "Volby databáze:"
-
-msgid "only one major mode may be specified"
-msgstr "specifikovat lze jen jeden hlavní režim"
-
-msgid "verify package signature(s)"
-msgstr "ověřit podpis v balíčku"
-
-msgid "import an armored public key"
-msgstr "importuj obrněný veřejný klíč"
-
-msgid "don't import, but tell if it would work or not"
-msgstr "neimportujte, ale řekněte, zda by to fungovalo nebo ne"
-
-msgid "list keys from RPM keyring"
-msgstr "seznam klíčů ze klíčenky klíčů RPM"
-
-msgid "Keyring options:"
-msgstr "Volby klíčenky:"
-
-msgid "no arguments given"
-msgstr "nezadány žádné parametry"
-
-msgid "Query/Verify package selection options:"
-msgstr "Dotaz/Ověření na možnosti výběru balíčku:"
-
-msgid "Query/Verify file selection options:"
-msgstr "Dotazu/Ověření na možnosti výběru souboru:"
-
-msgid "Query options (with -q or --query):"
-msgstr "Volby dotazů (s -q nebo --query):"
-
-msgid "Verify options (with -V or --verify):"
-msgstr "Vollby kontroly (s -V nebo --verify):"
-
-msgid "Install/Upgrade/Erase options:"
-msgstr "Volby pro Instalaci/Aktualizaci/Mazání:"
-
-msgid "one type of query/verify may be performed at a time"
-msgstr "najednou lze provést jen jeden typ dotazu či ověření"
-
-msgid "unexpected query flags"
-msgstr "neočekávaný příznak pro dotaz"
-
-msgid "unexpected query format"
-msgstr "neočekávaný formát dotazu"
-
-msgid "unexpected query source"
-msgstr "neočekávaný zdroj dotazu"
-
-msgid "only installation and upgrading may be forced"
-msgstr "pouze instalace a aktualizace mohou být vynuceny"
-
-msgid "files may only be relocated during package installation"
-msgstr "soubory mohou být přemístěny jen při instalaci balíčků"
-
-msgid "cannot use --prefix with --relocate or --excludepath"
-msgstr "nemohu použít --prefix s --relocate nebo --excludepath"
-
-msgid ""
-"--relocate and --excludepath may only be used when installing new packages"
-msgstr ""
-"--relocate a --excludepath je možno použít jen při instalaci nových balíčků"
-
-msgid "--prefix may only be used when installing new packages"
-msgstr "--prefix je možno použít jen při instalaci nových balíčků"
-
-msgid "arguments to --prefix must begin with a /"
-msgstr "parametry pro --prefix musejí začínat znakem /"
-
-msgid ""
-"--hash (-h) may only be specified during package installation and erasure"
-msgstr "--hash (-h) lze zadat pouze během instalace a mazání balíčku"
-
-msgid "--percent may only be specified during package installation and erasure"
-msgstr "--percent lze zadat pouze během instalace a mazání balíčku"
-
-msgid "--replacepkgs may only be specified during package installation"
-msgstr "--replacepkgs může být použit jen při instalaci balíčků"
-
-msgid "--excludedocs may only be specified during package installation"
-msgstr "--excludedocs může být použit jen při instalaci balíčků"
-
-msgid "--includedocs may only be specified during package installation"
-msgstr "--includedocs může být použit jen při instalaci balíčků"
-
-msgid "only one of --excludedocs and --includedocs may be specified"
-msgstr "použít lze jen jeden z parametrů --excludedocs a --includedocs"
-
-msgid "--ignorearch may only be specified during package installation"
-msgstr "--ignorearch může být použit jen při instalaci balíčků"
-
-msgid "--ignoreos may only be specified during package installation"
-msgstr "--ignoreos může být použit jen při instalaci balíčků"
-
-msgid "--ignoresize may only be specified during package installation"
-msgstr "--ignoresize může být použit jen při instalaci balíčků"
-
-msgid "--allmatches may only be specified during package erasure"
-msgstr "--allmatches může být použit jen při instalaci balíčků"
-
-msgid "--allfiles may only be specified during package installation"
-msgstr "--allfiles může být použit jen při instalaci balíčků"
-
-msgid "--justdb may only be specified during package installation and erasure"
-msgstr "--justdb může být použit jen při instalaci a odstraňování balíčků"
-
-msgid ""
-"script disabling options may only be specified during package installation "
-"and erasure"
-msgstr ""
-"volba pro potlačení skriptů může být použita jen při instalaci nebo při "
-"odstraňování balíčků"
-
-msgid ""
-"trigger disabling options may only be specified during package installation "
-"and erasure"
-msgstr ""
-"volba pro potlačení triggerů může být použita jen při instalaci nebo "
-"odstraňování balíčků"
-
-msgid ""
-"--nodeps may only be specified during package installation, erasure, and "
-"verification"
-msgstr "--nodeps lze zadat pouze během instalace, mazání a ověřování balíčku"
-
-msgid "--test may only be specified during package installation and erasure"
-msgstr "--test lze zadat pouze během instalace a mazání balíčku"
-
-msgid "no packages given for erase"
-msgstr "nezadány žádné balíčky pro vymazání"
-
-msgid "no packages given for install"
-msgstr "nezadány žádné balíčky pro instalaci"
-
-msgid "no arguments given for query"
-msgstr "k dotazu nezadány žádné parametry"
-
-msgid "no arguments given for verify"
-msgstr "pro kontrolu nezadány žádné balíčky"
-
-msgid "sign package(s)"
-msgstr "podepsat balíček(y)"
-
-msgid "sign package(s) (identical to --addsign)"
-msgstr "podepsat balíček (identické s --addsign)"
-
-msgid "delete package signatures"
-msgstr "vymazat podpisy balíčku"
-
-msgid "delete IMA and fsverity file signatures"
-msgstr "odstranit IMA a fsverity podpisů souborů"
-
-msgid "create rpm v3 header+payload signatures"
-msgstr "vytvořit hlavičku rpm v3 + podpisy užitečného zatížení"
-
-msgid "sign package(s) files"
-msgstr "podepsat soubory balíčku(ů)"
-
-msgid "generate fsverity signatures for package(s) files"
-msgstr "generovat podpisy fsverity pro soubory balíčku(ů)"
-
-msgid "algorithm to use for verity signatures, default sha256"
-msgstr "algoritmus, který se používá pro podpisy pravosti, výchozí sha256"
-
-msgid "<algorithm>"
-msgstr "<algoritmus>"
-
-msgid "use file signing cert <cert>"
-msgstr "použijte certifikát <certifikát> pro podepisování souborů"
-
-msgid "<cert>"
-msgstr "<certifikát>"
-
-msgid "use file signing key <key>"
-msgstr "použijte klíč <klíč> pro podepisování souborů"
-
-msgid "<key>"
-msgstr "<klíč>"
-
-msgid "prompt for file signing key password"
-msgstr "výzva k zadání hesla klíče pro podepisování souborů"
-
-msgid "Signature options:"
-msgstr "Volby signatury:"
-
-#, c-format
-msgid "You must set \"%%_gpg_name\" in your macro file\n"
-msgstr "Je nutné nastavit \"%%_gpg_name\" ve vašem souboru maker\n"
-
-#, c-format
-msgid ""
-"You must set \"%%_file_signing_key\" in your macro file or on the command "
-"line with --fskpath\n"
-msgstr ""
-"Musíte nastavit \"%%_file_signing_key\" ve vašem souboru makra nebo na "
-"příkazovém řádku pomocí --fskpath\n"
-
-msgid "--fskpath may only be specified when signing files"
-msgstr "--fskpath lze zadat pouze při podepisování souborů"
-
-msgid "parse spec file(s) to stdout"
-msgstr "parsovat spec soubor(y) na stdout"
-
-msgid "query spec file(s)"
-msgstr "spec soubor(y) dotazu"
-
-msgid "interactive macro shell"
-msgstr "interaktivní makro shell"
-
-msgid "operate on binary rpms generated by spec (default)"
-msgstr "pracovat s binárními rpms generovanými spec (výchozí)"
-
-msgid "operate on binary package header(s) that would be built from spec"
-msgstr ""
-"pracovat s binárními hlavičkami balíčků, které by byly sestaveny ze spec"
-
-msgid "operate on source package header generated by spec"
-msgstr "pracovat s hlavičkou zdrojového balíčku generovanou spec"
-
-msgid "use the following query format"
-msgstr "použij následující formát dotazů"
-
-msgid "Spec options:"
-msgstr "Spec volby:"
-
-#, c-format
-msgid "RPM version %s macro shell\n"
-msgstr "Verze RPM %s makro shell\n"
-
-msgid "no arguments given for parse"
-msgstr "nejsou uvedeny žádné argumenty pro parsování"
+#, fuzzy
+#| msgid "unable to parse %s=%s\n"
+msgid "unable to parse _buildtime macro\n"
+msgstr "nelze parsovat %s=%s\n"
 
 msgid "unable to parse SOURCE_DATE_EPOCH\n"
 msgstr "nelze parsovat SOURCE_DATE_EPOCH\n"
@@ -585,12 +50,20 @@ msgstr "Špatný návratový kód z %s (%s)\n"
 msgid "Failed build dependencies:\n"
 msgstr "Chybné závislosti při sestavování:\n"
 
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to create package build directory %s: %s\n"
+msgstr "selhání při vytváření adresáře %s: %s\n"
+
 #, c-format
 msgid "setting %s=%s\n"
 msgstr "nastavení %s=%s\n"
 
-#, c-format
-msgid "source_date_epoch_from_changelog set but %%changelog is missing\n"
+#, fuzzy, c-format
+#| msgid "source_date_epoch_from_changelog set but %%changelog is missing\n"
+msgid ""
+"%%source_date_epoch_from_changelog is set, but %%changelog has no entries to "
+"take a date from\n"
 msgstr "source_date_epoch_from_changelog je nastaven, ale %%changelog chybí\n"
 
 msgid ""
@@ -668,11 +141,23 @@ msgid "File must begin with \"/\": %s\n"
 msgstr "Soubor musí začínat na \"/\": %s\n"
 
 #, c-format
+msgid ""
+"%%clamp_mtime_to_source_date_epoch is deprecated, please use "
+"%%build_mtime_policy\n"
+msgstr ""
+
+#, c-format
 msgid "unable to parse %s=%s\n"
 msgstr "nelze parsovat %s=%s\n"
 
-#, c-format
-msgid "Unknown file digest algorithm %u, falling back to MD5\n"
+#, fuzzy, c-format
+#| msgid "Unknown icon type: %s\n"
+msgid "Unknown mtime policy '%s'\n"
+msgstr "Neznámý typ ikony: %s\n"
+
+#, fuzzy, c-format
+#| msgid "Unknown file digest algorithm %u, falling back to MD5\n"
+msgid "Unknown file digest algorithm %u, falling back to %u\n"
 msgstr "Neznámý soubor volby algoritmu %u, návrat k MD5\n"
 
 #, c-format
@@ -900,9 +385,24 @@ msgstr "Nemohu vygenerovat jméno souboru pro balíček %s: %s\n"
 msgid "Finished binary package job, result %d, filename %s\n"
 msgstr "Dokončena úloha binárního balíčku, výsledek %d, název souboru %s\n"
 
+#, fuzzy, c-format
+#| msgid "line %d: Error parsing %s: %s\n"
+msgid "line %d: Error parsing script: %s: %s\n"
+msgstr "řádek %d: Chyba při parsování %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "line %d: Bad option %s: %s\n"
+msgid "line %d: Bad %s option %s: %s\n"
+msgstr "řádek %d: špatná volba %s: %s\n"
+
 #, c-format
 msgid "line %d: second %s\n"
 msgstr "řádek: %d: druhý %s\n"
+
+#, fuzzy, c-format
+#| msgid "line %d: unsupported internal script: %s\n"
+msgid "line %d: append and prepend specified: %s\n"
+msgstr "řádek %d: nepodporovaný interní skript: %s\n"
 
 #, c-format
 msgid "bogus date in %%changelog: %s\n"
@@ -1008,6 +508,11 @@ msgstr "OS není zahrnut: %s\n"
 msgid "%s field must be present in package: %s\n"
 msgstr "Položka %s musí být v balíčku přítomna: %s\n"
 
+#, fuzzy, c-format
+#| msgid "%s field must be present in package: %s\n"
+msgid "%s field must be present before build in package: %s\n"
+msgstr "Položka %s musí být v balíčku přítomna: %s\n"
+
 #, c-format
 msgid "Duplicate %s entries in package: %s\n"
 msgstr "Duplikovaná položka %s v balíčku: %s\n"
@@ -1078,6 +583,11 @@ msgstr "řádek %d: Špatný formát BuildArchitecture: %s\n"
 msgid "line %d: Duplicate BuildArch entry: %s\n"
 msgstr "řádek %d: Duplicitní položka BuildArch: %s\n"
 
+#, fuzzy, c-format
+#| msgid "line %d: Only noarch subpackages are supported: %s\n"
+msgid "line %d: Only noarch is allowed after the build: %s\n"
+msgstr "řádek %d: Podporovány jsou pouze dílčí balíčky noarch: %s\n"
+
 #, c-format
 msgid "line %d: Only noarch subpackages are supported: %s\n"
 msgstr "řádek %d: Podporovány jsou pouze dílčí balíčky noarch: %s\n"
@@ -1101,13 +611,15 @@ msgstr "Byl nalezen binární rpm balíček. Očekávaný spec soubor!\n"
 msgid "line %d: Unknown tag: %s\n"
 msgstr "řádek %d: Neznámá značka: %s\n"
 
-#, c-format
-msgid "%%{buildroot} couldn't be empty\n"
-msgstr "%%{buildroot} nemohlo být prázdné\n"
+#, fuzzy, c-format
+#| msgid "line %d: Priorities are allowed only for file triggers : %s\n"
+msgid "line %d: Tag not allowed after build is done: %s\n"
+msgstr "řádek %d: Priority jsou povoleny pouze pro souborové spouštěče: %s\n"
 
-#, c-format
-msgid "%%{buildroot} can not be \"/\"\n"
-msgstr "%%{buildroot} nemůže být \"/\"\n"
+#, fuzzy, c-format
+#| msgid "Invalid capability: %s\n"
+msgid "Invalid buildroot: '%s'\n"
+msgstr "Neplatná funkce: %s\n"
 
 #, c-format
 msgid "No patch number %u\n"
@@ -1137,15 +649,6 @@ msgstr "Číslo opravy není zadáno: %s\n"
 msgid "Invalid patch number %s: %s\n"
 msgstr "Neplatné číslo záplaty %s: %s\n"
 
-#, c-format
-msgid "line %d: second %%prep\n"
-msgstr "řádek %d: druhý %%prep\n"
-
-#, c-format
-msgid ""
-"%%patchN is deprecated (%i usages found), use %%patch N (or %%patch -P N)\n"
-msgstr ""
-
 msgid "Dependency tokens must begin with alpha-numeric, '_' or '/'"
 msgstr "Tokeny závislosti musí začínat alfanumerickými znaky, '_' nebo '/'"
 
@@ -1161,6 +664,11 @@ msgstr "neplatná závislost"
 msgid "Version required"
 msgstr "Je vyžadována verze"
 
+#, fuzzy
+#| msgid "line %d: file trigger condition must begin with '/': %s"
+msgid "file trigger conditions must begin with '/'"
+msgstr "řádek %d: spouštěcí podmínka souboru musí začínat '/': %s"
+
 msgid "Only package names are allowed in Obsoletes"
 msgstr "V Zastaralých verzích jsou povoleny pouze názvy balíčků"
 
@@ -1169,9 +677,6 @@ msgstr "Nedoporučuje se mít neverzované zastaralé verze"
 
 msgid "It's not recommended to use '>' in Obsoletes"
 msgstr "V Zastaralých verzích se nedoporučuje používat '>'"
-
-msgid "Only absolute paths are allowed in file triggers"
-msgstr "V souborových triggerech jsou povoleny pouze absolutní cesty"
 
 msgid "Trigger fired by the same package is already defined in spec file"
 msgstr "Spouštěč spouštěný stejným balíčkem je již definován v souboru spec"
@@ -1211,10 +716,6 @@ msgstr "řádek %d: Druhý %s\n"
 #, c-format
 msgid "line %d: unsupported internal script: %s\n"
 msgstr "řádek %d: nepodporovaný interní skript: %s\n"
-
-#, c-format
-msgid "line %d: file trigger condition must begin with '/': %s"
-msgstr "řádek %d: spouštěcí podmínka souboru musí začínat '/': %s"
 
 #, c-format
 msgid "line %d: interpreter arguments not allowed in triggers: %s\n"
@@ -1261,6 +762,10 @@ msgid "%s:%d: malformed %%include statement\n"
 msgstr "%s:%d: chybný příkaz %%include\n"
 
 #, c-format
+msgid "%%patchN is obsolete, use %%patch N (or %%patch -P N): %s\n"
+msgstr ""
+
+#, c-format
 msgid "encoding %s not supported by system\n"
 msgstr "kódování %s není systémem podporováno\n"
 
@@ -1280,8 +785,36 @@ msgstr "řádek %d: %%end se zde neočekává, žádná sekce k uzavření: %s\n
 msgid "line %d doesn't belong to any section: %s\n"
 msgstr "řádek %d nepatří do žádné sekce: %s\n"
 
+#, fuzzy, c-format
+#| msgid "line %d: Unknown tag: %s\n"
+msgid "line %d: Unknown buildsystem: %s\n"
+msgstr "řádek %d: Neznámá značka: %s\n"
+
+#, c-format
+msgid ""
+"line %d: Required parametric macro %%%s not defined for buildsystem %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "failed to write all data to %s: %s\n"
+msgid "failed to write buildsystem %s %%%s: %s\n"
+msgstr "nepodařilo se zapsat všechna data do %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "Couldn't create temporary file for %s: %s\n"
+msgid "failed to create temp file for buildsystem: %s\n"
+msgstr "Nelze vytvořit dočasný soubor pro %s: %s\n"
+
+#, c-format
+msgid "Section %s is not allowed after build is done!\n"
+msgstr ""
+
 msgid "No compatible architectures found for build\n"
 msgstr "Nenalezeny žádné kompatibilní architektury pro sestavení\n"
+
+#, c-format
+msgid "invalid rpm format %d requested, using %d\n"
+msgstr ""
 
 #, c-format
 msgid "Package has no %%description: %s\n"
@@ -1374,6 +907,10 @@ msgstr "%s se nezdařilo: %x\n"
 msgid "failed to write all data to %s: %s\n"
 msgstr "nepodařilo se zapsat všechna data do %s: %s\n"
 
+#, c-format
+msgid "invalid or out of order path from generator: %s\n"
+msgstr ""
+
 msgid "Empty file classifier\n"
 msgstr "Prázdný klasifikátor souboru\n"
 
@@ -1405,6 +942,11 @@ msgid "Failed to find %s:\n"
 msgstr "Selhalo vyhledání %s:\n"
 
 msgid "Deprecated external dependency generator is used!\n"
+msgstr "Je použit zastaralý externí generátor závislostí!\n"
+
+#, fuzzy
+#| msgid "Deprecated external dependency generator is used!\n"
+msgid "External dependency generator is incompatible with v6 packages\n"
 msgstr "Je použit zastaralý externí generátor závislostí!\n"
 
 #, c-format
@@ -1531,8 +1073,9 @@ msgstr "%s%s uloženo jako %s%s\n"
 msgid "%s%s created as %s%s\n"
 msgstr "%s%s vytvořeno jako %s%s\n"
 
-#, c-format
-msgid "%s %s: remove failed: %s\n"
+#, fuzzy, c-format
+#| msgid "%s %s: remove failed: %s\n"
+msgid "%s %s%s: remove failed: %s\n"
 msgstr "%s %s: odstranění se nezdařilo: %s\n"
 
 msgid "directory"
@@ -1659,8 +1202,39 @@ msgid "array iterator used with different sized arrays"
 msgstr "iterátor pole použitý s poli jiné délky"
 
 #, c-format
+msgid "%s: reading of public key failed.\n"
+msgstr "%s: čtení veřejného klíče se nezdařilo.\n"
+
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to create keyring directory %s: %s\n"
+msgstr "selhání při vytváření adresáře %s: %s\n"
+
+#, c-format
+msgid "failed to import key: %s: %s\n"
+msgstr "nepodařilo se importovat klíč: %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "can't create %s lock on %s (%s)\n"
+msgid "Can't create writelock for keyring at %s: %s\n"
+msgstr "nelze vytvořit %s zámek na %s (%s)\n"
+
+#, c-format
+msgid "Can't acquire writelock for keyring at %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "%s: not an armored public key.\n"
+msgid "%s is not a valid public key\n"
+msgstr "%s: není obrněný veřejný klíč.\n"
+
+#, c-format
 msgid "RPM v3 packages are deprecated: %s\n"
 msgstr "Balíčky RPM v3 jsou zastaralé: %s\n"
+
+#, c-format
+msgid "RPM version %s\n"
+msgstr "RPM verze %s\n"
 
 msgid "Error writing to stdout"
 msgstr "Chyba při zápisu do stdout"
@@ -1768,9 +1342,6 @@ msgstr "ladit nástroj stavu souboru payload"
 
 msgid "debug rpmio I/O"
 msgstr "ladit rpmio I/O"
-
-msgid "disable user namespace support"
-msgstr "zakázat podporu uživatelského jmenného prostoru"
 
 #, c-format
 msgid "%s: option table misconfigured (%d)\n"
@@ -1998,12 +1569,6 @@ msgstr "dotaz/ověření balíčku(ů) ve skupině"
 msgid "query/verify a package file"
 msgstr "dotaz/ověření souboru balíčku"
 
-msgid "query/verify package(s) with package identifier"
-msgstr "dotaz/ověření balíčku(ů) s identifikátorem balíčku"
-
-msgid "query/verify package(s) with header identifier"
-msgstr "dotaz/ověření balíčku(ů) s hlavičkovým identifikátorem"
-
 msgid "rpm query mode"
 msgstr "režim dotazů"
 
@@ -2018,6 +1583,11 @@ msgstr "dotaz na balíček(y) aktivovaný balíčkem"
 
 msgid "rpm verify mode"
 msgstr "režim kontroly"
+
+#, fuzzy
+#| msgid "query/verify the package(s) which obsolete a dependency"
+msgid "query/verify the package(s) which conflict with a dependency"
+msgstr "dotaz/ověření balíčku(ů), kterým zastarává závislost"
 
 msgid "query/verify the package(s) which require a dependency"
 msgstr "dotaz/ověření balíčků vyžadujících závislost"
@@ -2075,6 +1645,9 @@ msgstr "zobrazit základní informace o souborech"
 
 msgid "list files in package"
 msgstr "vypsat soubory v balíčku"
+
+msgid "use the following query format"
+msgstr "použij následující formát dotazů"
 
 msgid "display the states of the listed files"
 msgstr "zobrazit stav vypsaných souborů"
@@ -2488,17 +2061,20 @@ msgstr ""
 "Nesprávný počet záznamů pro značku %s: %u bylo nalezeno, ale očekáváno je "
 "%u.\n"
 
-#, c-format
-msgid "Malformed data for tag %s: %u bytes found but %lu expected.\n"
+#, fuzzy, c-format
+#| msgid "Malformed data for tag %s: %u bytes found but %lu expected.\n"
+msgid "Malformed data for tag %s: %u bytes found but %<PRIu64> expected.\n"
 msgstr ""
 "Chybná data pro značku %s: %u bajtů bylo nalezeno, ale očekáváno je %lu.\n"
 
-#, c-format
-msgid "%s: base64 decode failed, len %li\n"
+#, fuzzy, c-format
+#| msgid "%s: base64 decode failed, len %li\n"
+msgid "%s: base64 decode failed, len %zu\n"
 msgstr "%s: dekódování base64 se nezdařilo, délka %li\n"
 
-#, c-format
-msgid "%s: base64 decode success, len %li\n"
+#, fuzzy, c-format
+#| msgid "%s: base64 decode success, len %li\n"
+msgid "%s: base64 decode success, len %zu\n"
 msgstr "%s: dekódování base64 bylo úspěšné, délka %li\n"
 
 msgid "Bad magic"
@@ -2528,8 +2104,10 @@ msgstr "Interní chyba"
 msgid "Archive file not in header"
 msgstr "Soubor z archivu není v hlavičce"
 
-msgid "Invalid symlink"
-msgstr "Neplatný symbolický odkaz"
+#, fuzzy
+#| msgid "failed symlink"
+msgid "Unsafe symlink"
+msgstr "neúspěšný symbolický odkaz"
 
 msgid "File from package already exists as a directory in system"
 msgstr "Soubor z balíčku již existuje jako adresář v systému"
@@ -2604,6 +2182,11 @@ msgstr "balíček %s není přemístitelný\n"
 msgid "error reading from file %s\n"
 msgstr "chyba při vytváření dočasného souboru %s\n"
 
+#, fuzzy, c-format
+#| msgid "no package matches %s: %s\n"
+msgid "package format not supported: %s\n"
+msgstr "žádný balíček se neshoduje s %s: %s\n"
+
 #, c-format
 msgid "\"%s\" specifies multiple packages:\n"
 msgstr "\"%s\" určuje více balíčků:\n"
@@ -2618,12 +2201,6 @@ msgstr "Instaluji: %s\n"
 
 msgid "not an rpm package"
 msgstr "není rpm balíček"
-
-msgid "illegal signature type"
-msgstr "nepovolený typ podpisu"
-
-msgid "unsupported RPM package version"
-msgstr "nepodporovaná verze RPM balíčku"
 
 #, c-format
 msgid "read failed: %s (%d)\n"
@@ -2767,6 +2344,11 @@ msgstr "chybí argument pro %s na %s:%d\n"
 msgid "cannot open %s at %s:%d: %m\n"
 msgstr "nemohu otevřít %s na %s:%d: %m\n"
 
+#, fuzzy, c-format
+#| msgid "bad option '%s' at %s:%d\n"
+msgid "Ignoring %s at %s:%d\n"
+msgstr "špatný parametr'%s' na %s:%d\n"
+
 #, c-format
 msgid "missing architecture for %s at %s:%d\n"
 msgstr "chybí arcitektura pro %s na %s:%d\n"
@@ -2825,6 +2407,15 @@ msgstr "provedení %s skripletu selhalo, návratový kód: %d\n"
 msgid "Unknown format"
 msgstr "Neznámý formát"
 
+#, c-format
+msgid "erasing gpg-pubkey packages is deprecated; use rpmkeys --delete %s\n"
+msgstr ""
+
+msgid ""
+"public keys can not be installed as gpg-pubkey packages; use rpmkeys --"
+"import <keyfile> for that\n"
+msgstr ""
+
 msgid "install"
 msgstr "nainstalovat"
 
@@ -2854,16 +2445,13 @@ msgid "missing ')' in package label: %s\n"
 msgstr "chybějící ')' v názvu balíčku: %s\n"
 
 #, c-format
-msgid "%s: reading of public key failed.\n"
-msgstr "%s: čtení veřejného klíče se nezdařilo.\n"
-
-#, c-format
 msgid "unknown keyring type: %s, using rpmdb\n"
 msgstr "neznámý typ klíčenky: %s, používá se rpmdb\n"
 
-#, c-format
-msgid "failed to import key: %s: %s\n"
-msgstr "nepodařilo se importovat klíč: %s: %s\n"
+#, fuzzy, c-format
+#| msgid "Unknown icon type: %s\n"
+msgid "unknown keyring type: %s\n"
+msgstr "Neznámý typ ikony: %s\n"
 
 #, c-format
 msgid "invalid package verify level %s\n"
@@ -2888,6 +2476,11 @@ msgstr "%s značka %u: neplatná data %p (%u)"
 msgid "%s tag %u: invalid size %u"
 msgstr "%s značka %u: neplatná velikost %u"
 
+#, fuzzy, c-format
+#| msgid "%s: tag %u: invalid hex"
+msgid "%s tag %u: invalid base64"
+msgstr "%s: značka %u: neplatný hex"
+
 #, c-format
 msgid "%s tag %u: invalid OpenPGP signature"
 msgstr "%s značka %u: neplatný OpenPGP podpis"
@@ -2896,19 +2489,28 @@ msgstr "%s značka %u: neplatný OpenPGP podpis"
 msgid "%s: tag %u: invalid hex"
 msgstr "%s: značka %u: neplatný hex"
 
-#, c-format
-msgid "%s%s%s %s"
+#, fuzzy, c-format
+#| msgid "%s%s%s %s"
+msgid "%s %s%s %s"
 msgstr "%s%s%s %s"
 
 msgid "digest"
 msgstr "výběr"
 
 #, c-format
-msgid "%s%s"
-msgstr "%s%s"
+msgid "%s OpenPGP %s"
+msgstr ""
+
+#, c-format
+msgid "%s OpenPGP %s %s"
+msgstr ""
 
 msgid "signature"
 msgstr "podpis"
+
+#, c-format
+msgid ", key fingerprint: %s"
+msgstr ""
 
 msgid "header"
 msgstr "hlavička"
@@ -2916,10 +2518,14 @@ msgstr "hlavička"
 msgid "package"
 msgstr "balíček"
 
-msgid "Header "
+#, fuzzy
+#| msgid "Header "
+msgid "Header"
 msgstr "Hlavička "
 
-msgid "Payload "
+#, fuzzy
+#| msgid "Payload "
+msgid "Payload"
 msgstr "Užitečné zatížení "
 
 msgid "Unable to reload signature header.\n"
@@ -2996,7 +2602,9 @@ msgstr "nepodporovaný typ argumentu funkce"
 msgid "syntax error in expression"
 msgstr "chyba syntaxe ve výrazu"
 
-msgid "unsupported funcion"
+#, fuzzy
+#| msgid "unsupported funcion"
+msgid "unsupported function"
 msgstr "nepodporovaná funkce"
 
 msgid "unmatched ("
@@ -3106,7 +2714,16 @@ msgid "A %% is followed by an unparseable macro\n"
 msgstr "Po %% následuje nezpracovatelné makro\n"
 
 #, c-format
-msgid "======================== active %d empty %d\n"
+msgid "unexpected argument to non-parametric macro %%%s\n"
+msgstr ""
+
+#, c-format
+msgid "macro value out of range for int: %<PRIu64> using %i instead.\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "======================== active %d empty %d\n"
+msgid "======================== active %zu empty %d\n"
 msgstr "======================== aktivní %d prázdné %d\n"
 
 #, c-format
@@ -3177,6 +2794,15 @@ msgstr "V%d %s/%s %s, ID klíče %s"
 msgid "(none)"
 msgstr "(žádné)"
 
+#, fuzzy, c-format
+#| msgid "Could not read from file %s: %s\n"
+msgid "Could not find url helper: \"%s\"\n"
+msgstr "Nelze číst ze souboru %s: %s\n"
+
+#, c-format
+msgid "Executing url helper \"%s\" failed with status %i\n"
+msgstr ""
+
 #, c-format
 msgid "%s: Fwrite failed: %s\n"
 msgstr "%s: Fwrite selhalo: %s\n"
@@ -3189,24 +2815,15 @@ msgstr "%s: Fread selhalo: %s\n"
 msgid "%s: Fflush failed: %s\n"
 msgstr "%s: Fflush selhal: %s\n"
 
-#, fuzzy
-#| msgid "(not an OpenPGP signature)"
-msgid "Unsupported OpenPGP signature\n"
-msgstr "(není OpenPGP podpis)"
+#, fuzzy, c-format
+#| msgid "reading symlink %s failed: %s\n"
+msgid "Expanding signing macro %s failed\n"
+msgstr "čtení symbolického odkazu %s selhalo: %s\n"
 
 #, fuzzy, c-format
-#| msgid "Unsupported fsverity algorithm %s\n"
-msgid "Unsupported OpenPGP hash algorithm %u\n"
-msgstr "Nepodporovaný algoritmus fsverity %s\n"
-
-#, fuzzy, c-format
-#| msgid "Unsupported fsverity algorithm %s\n"
-msgid "Unsupported OpenPGP pubkey algorithm %u\n"
-msgstr "Nepodporovaný algoritmus fsverity %s\n"
-
-#, c-format
-msgid "Deprecated OpenPGP signature version %d\n"
-msgstr ""
+#| msgid "Invalid %s token: %s\n"
+msgid "Invalid sign command: %s\n"
+msgstr "Neplatný %s token: %s\n"
 
 #, c-format
 msgid "Could not create pipe for signing: %m\n"
@@ -3233,18 +2850,42 @@ msgstr "Nelze číst ze souboru %s: %s\n"
 
 #, fuzzy, c-format
 #| msgid "gpg exec failed (%d)\n"
-msgid "gpg waitpid failed (%s)\n"
+msgid "%s waitpid failed (%s)\n"
 msgstr "spuštění gpg selhalo (%d)\n"
 
-#, c-format
-msgid "gpg exec failed (%d)\n"
+#, fuzzy, c-format
+#| msgid "gpg exec failed (%d)\n"
+msgid "%s exec failed (%d)\n"
 msgstr "spuštění gpg selhalo (%d)\n"
 
-msgid "gpg failed to write signature\n"
+#, fuzzy, c-format
+#| msgid "gpg failed to write signature\n"
+msgid "failed to write signature: %s\n"
 msgstr "gpg selhal při zápisu podpisu\n"
 
-msgid "unable to read the signature\n"
+#, fuzzy, c-format
+#| msgid "unable to read the signature\n"
+msgid "unable to read the signature: %s\n"
 msgstr "nemohu přečíst podpis\n"
+
+#, fuzzy
+#| msgid "(not an OpenPGP signature)"
+msgid "Unsupported OpenPGP signature\n"
+msgstr "(není OpenPGP podpis)"
+
+#, fuzzy, c-format
+#| msgid "Unsupported fsverity algorithm %s\n"
+msgid "Unsupported OpenPGP hash algorithm %u\n"
+msgstr "Nepodporovaný algoritmus fsverity %s\n"
+
+#, c-format
+msgid "Deprecated OpenPGP signature version %d\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "Unsupported fsverity algorithm %s\n"
+msgid "Unsupported OpenPGP pubkey algorithm %u for rpm v3/v4 signatures\n"
+msgstr "Nepodporovaný algoritmus fsverity %s\n"
 
 msgid "file signing support not built in\n"
 msgstr "není zabudována podpora podepisování souborů\n"
@@ -3271,18 +2912,42 @@ msgstr "%s: rpmReadSignature selhalo: %s"
 msgid "%s: headerRead failed: %s\n"
 msgstr "%s: čtení hlavičky se nezdařilo: %s\n"
 
-msgid "Cannot sign RPM v3 packages\n"
+#, fuzzy, c-format
+#| msgid "Cannot sign RPM v3 packages\n"
+msgid "Cannot sign RPM v3 packages: %s\n"
 msgstr "Nelze podepsat balíčky RPM v3\n"
 
+#, fuzzy, c-format
+#| msgid "generate fsverity signatures for package(s) files"
+msgid "not generating v3 signature for v6 package: %s\n"
+msgstr "generovat podpisy fsverity pro soubory balíčku(ů)"
+
 #, c-format
-msgid "%s already contains identical signature, skipping\n"
+msgid "File signatures not applicable to src.rpm: %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "Could not seek in file %s: %s\n"
+msgid "Could not get a file size of %s\n"
+msgstr "Nelze hledat v souboru %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "%s already contains identical signature, skipping\n"
+msgid "%s already contains an identical signature, skipping\n"
+msgstr "%s již obsahuje identický podpis, přeskakování\n"
+
+#, fuzzy, c-format
+#| msgid "%s already contains identical signature, skipping\n"
+msgid "%s already contains a legacy signature\n"
 msgstr "%s již obsahuje identický podpis, přeskakování\n"
 
 #, c-format
 msgid "%s: rpmWriteSignature failed: %s\n"
 msgstr "%s: Fwrite selhalo: %s\n"
 
-msgid "rpmMkTemp failed\n"
+#, fuzzy, c-format
+#| msgid "rpmMkTemp failed\n"
+msgid "rpmMkTemp failed: %s\n"
 msgstr "rpmMkTemp selhal\n"
 
 #, fuzzy, c-format
@@ -3307,11 +2972,489 @@ msgid "headerPutString failed\n"
 msgstr "headerPutString se nezdařilo\n"
 
 #, c-format
+msgid "%s: %s\n"
+msgstr "%s: %s\n"
+
+#, c-format
+msgid "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
+msgstr "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
+
+#, c-format
+msgid ""
+"This program may be freely redistributed under the terms of the GNU GPL\n"
+msgstr "Tento program lze volně šířit podle podmínek GNU GPL\n"
+
+#, c-format
+msgid "creating a pipe for --pipe failed: %m\n"
+msgstr "vytvoření roury pro --pipe selhalo: %m\n"
+
+#, c-format
+msgid "exec failed\n"
+msgstr "spuštění selhalo\n"
+
+msgid "Query/Verify package selection options:"
+msgstr "Dotaz/Ověření na možnosti výběru balíčku:"
+
+msgid "Query/Verify file selection options:"
+msgstr "Dotazu/Ověření na možnosti výběru souboru:"
+
+msgid "Query options (with -q or --query):"
+msgstr "Volby dotazů (s -q nebo --query):"
+
+msgid "Verify options (with -V or --verify):"
+msgstr "Vollby kontroly (s -V nebo --verify):"
+
+msgid "Install/Upgrade/Erase options:"
+msgstr "Volby pro Instalaci/Aktualizaci/Mazání:"
+
+msgid "Common options for all rpm modes and executables:"
+msgstr "Společné volby pro všechny rpm režimy a spustitelné soubory:"
+
+msgid "one type of query/verify may be performed at a time"
+msgstr "najednou lze provést jen jeden typ dotazu či ověření"
+
+msgid "unexpected query flags"
+msgstr "neočekávaný příznak pro dotaz"
+
+msgid "unexpected query format"
+msgstr "neočekávaný formát dotazu"
+
+msgid "unexpected query source"
+msgstr "neočekávaný zdroj dotazu"
+
+msgid "only one major mode may be specified"
+msgstr "specifikovat lze jen jeden hlavní režim"
+
+msgid "only installation and upgrading may be forced"
+msgstr "pouze instalace a aktualizace mohou být vynuceny"
+
+msgid "files may only be relocated during package installation"
+msgstr "soubory mohou být přemístěny jen při instalaci balíčků"
+
+msgid "cannot use --prefix with --relocate or --excludepath"
+msgstr "nemohu použít --prefix s --relocate nebo --excludepath"
+
+msgid ""
+"--relocate and --excludepath may only be used when installing new packages"
+msgstr ""
+"--relocate a --excludepath je možno použít jen při instalaci nových balíčků"
+
+msgid "--prefix may only be used when installing new packages"
+msgstr "--prefix je možno použít jen při instalaci nových balíčků"
+
+msgid "arguments to --prefix must begin with a /"
+msgstr "parametry pro --prefix musejí začínat znakem /"
+
+msgid ""
+"--hash (-h) may only be specified during package installation and erasure"
+msgstr "--hash (-h) lze zadat pouze během instalace a mazání balíčku"
+
+msgid "--percent may only be specified during package installation and erasure"
+msgstr "--percent lze zadat pouze během instalace a mazání balíčku"
+
+msgid "--replacepkgs may only be specified during package installation"
+msgstr "--replacepkgs může být použit jen při instalaci balíčků"
+
+msgid "--excludedocs may only be specified during package installation"
+msgstr "--excludedocs může být použit jen při instalaci balíčků"
+
+msgid "--includedocs may only be specified during package installation"
+msgstr "--includedocs může být použit jen při instalaci balíčků"
+
+msgid "only one of --excludedocs and --includedocs may be specified"
+msgstr "použít lze jen jeden z parametrů --excludedocs a --includedocs"
+
+msgid "--ignorearch may only be specified during package installation"
+msgstr "--ignorearch může být použit jen při instalaci balíčků"
+
+msgid "--ignoreos may only be specified during package installation"
+msgstr "--ignoreos může být použit jen při instalaci balíčků"
+
+msgid "--ignoresize may only be specified during package installation"
+msgstr "--ignoresize může být použit jen při instalaci balíčků"
+
+msgid "--allmatches may only be specified during package erasure"
+msgstr "--allmatches může být použit jen při instalaci balíčků"
+
+msgid "--allfiles may only be specified during package installation"
+msgstr "--allfiles může být použit jen při instalaci balíčků"
+
+msgid "--justdb may only be specified during package installation and erasure"
+msgstr "--justdb může být použit jen při instalaci a odstraňování balíčků"
+
+msgid ""
+"script disabling options may only be specified during package installation "
+"and erasure"
+msgstr ""
+"volba pro potlačení skriptů může být použita jen při instalaci nebo při "
+"odstraňování balíčků"
+
+msgid ""
+"trigger disabling options may only be specified during package installation "
+"and erasure"
+msgstr ""
+"volba pro potlačení triggerů může být použita jen při instalaci nebo "
+"odstraňování balíčků"
+
+msgid ""
+"--nodeps may only be specified during package installation, erasure, and "
+"verification"
+msgstr "--nodeps lze zadat pouze během instalace, mazání a ověřování balíčku"
+
+msgid "--test may only be specified during package installation and erasure"
+msgstr "--test lze zadat pouze během instalace a mazání balíčku"
+
+msgid "arguments to --root (-r) must begin with a /"
+msgstr "parametry pro --root (-r) musejí začínat znakem /"
+
+msgid "no packages given for erase"
+msgstr "nezadány žádné balíčky pro vymazání"
+
+msgid "no packages given for install"
+msgstr "nezadány žádné balíčky pro instalaci"
+
+msgid "no arguments given for query"
+msgstr "k dotazu nezadány žádné parametry"
+
+msgid "no arguments given for verify"
+msgstr "pro kontrolu nezadány žádné balíčky"
+
+#, fuzzy
+#| msgid "create uncompressed tar file"
+msgid "create uncompressed archive"
+msgstr "vytvořit nekomprimovaný soubor tar"
+
+msgid "archive format (pax|cpio)"
+msgstr ""
+
+#, c-format
+msgid "argument is not an RPM package\n"
+msgstr "parametr není RPM balíček\n"
+
+#, c-format
+msgid "error reading header from package\n"
+msgstr "chyba při čtení hlavičky balíčku\n"
+
+#, c-format
+msgid "cannot re-open payload: %s\n"
+msgstr "nemohu znovu otevřít payload: %s\n"
+
+msgid "initialize database"
+msgstr "inicializuj databázi"
+
+msgid "rebuild database inverted lists from installed package headers"
+msgstr "znovu sestav obrácené seznamy z instalovaných hlaviček balíčků"
+
+#, fuzzy
+#| msgid "verify database files"
+msgid "verify database"
+msgstr "zkontrolovat databázové soubory"
+
+msgid "salvage database"
+msgstr "záchranná databáze"
+
+msgid "export database to stdout header list"
+msgstr "export databáze do seznamu hlaviček stdout"
+
+msgid "import database from stdin header list"
+msgstr "import databáze ze seznamu hlaviček stdin"
+
+msgid "Database options:"
+msgstr "Volby databáze:"
+
+#, c-format
+msgid "buildroot already specified, ignoring %s\n"
+msgstr "buildroot byl již nastaven, ignoruji %s\n"
+
+#, c-format
+msgid "build through %prep (unpack sources and apply patches) from <specfile>"
+msgstr ""
+"sestavení podle %prep (rozbalení zdrojových kódů a aplikace patchů) podle "
+"<spec_soubor>"
+
+msgid "<specfile>"
+msgstr "<spec_soubor>"
+
+#, c-format
+msgid "build through %conf (%prep, then %conf) from <specfile>"
+msgstr "sestavit pomocí %conf (%prep, poté %conf) z <specfile>"
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <specfile>"
+msgstr "sestavit pomocí %build (%prep, %conf, poté zkompilovat) z <specfile>"
+
+msgid "check build dependencies <specfile>"
+msgstr "kontrola závislostí sestavení <specfile>"
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <specfile>"
+msgstr ""
+"sestavit pomocí %install (%prep, %conf, %build, pak nainstalovat) z "
+"<specfile>"
+
+#, c-format
+msgid "verify %files section from <specfile>"
+msgstr "kontrola části %files ve <spec_soubor>"
+
+msgid "build source and binary packages from <specfile>"
+msgstr "vytvoření zdrojového a binárního balíčku podle <spec_soubor>"
+
+msgid "build binary package only from <specfile>"
+msgstr "vytvoření pouze binárního balíčku podle <spec_soubor>"
+
+msgid "build source package only from <specfile>"
+msgstr "vytvoření zdrojového balíčku podle <spec_soubor>"
+
+msgid ""
+"build source package only from <specfile> - calculate dynamic build requires"
+msgstr ""
+"sestavit zdrojový balíček pouze ze <specfile> - vypočítat požadavky "
+"dynamického sestavení"
+
+#, c-format
+msgid ""
+"build through %prep (unpack sources and apply patches) from <source package>"
+msgstr ""
+"sestavit pomocí %prep (rozbalit zdroje a použít opravy) ze <zdrojového "
+"balíčku>"
+
+msgid "<source package>"
+msgstr "<zdrojový balíček>"
+
+#, fuzzy, c-format
+#| msgid "build through %conf (%prep, then %conf) from <specfile>"
+msgid "build through %conf (%prep, then %conf) from <source package>"
+msgstr "sestavit pomocí %conf (%prep, poté %conf) z <specfile>"
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <source package>"
+msgstr ""
+"sestavit pomocí %build (%prep, %conf, poté zkompilovat) ze <zdrojového "
+"balíčku>"
+
+msgid "check build dependencies <source package>"
+msgstr "kontrola závislostí sestavení <zdrojového balíčku>"
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <source "
+"package>"
+msgstr ""
+"sestavit pomocí %install (%prep, %conf, %build, pak nainstalovat) ze "
+"<zdrojového balíčku>"
+
+#, c-format
+msgid "verify %files section from <source package>"
+msgstr "ověřte sekci %files ze <zdrojového balíčku>"
+
+msgid "build source and binary packages from <source package>"
+msgstr "sestavit zdrojové a binární balíčky ze <zdrojového balíčku>"
+
+msgid "build binary package only from <source package>"
+msgstr "sestavit binární balíček pouze ze <zdrojového balíčku>"
+
+msgid "build source package only from <source package>"
+msgstr "sestavit zdrojový balíček pouze ze <zdrojového balíčku>"
+
+msgid ""
+"build source package only from <source package> - calculate dynamic build "
+"requires"
+msgstr ""
+"sestavit zdrojový balíček pouze ze <zdrojového balíčku> - vypočítat "
+"požadavky dynamického sestavení"
+
+#, c-format
+msgid "build through %prep (unpack sources and apply patches) from <tarball>"
+msgstr ""
+"sestavení podle %prep (rozbalení zdrojových kódů, aplikace patchů) z "
+"<tar_soubor>"
+
+msgid "<tarball>"
+msgstr "<tar_soubor>"
+
+#, fuzzy, c-format
+#| msgid "build through %conf (%prep, then %conf) from <specfile>"
+msgid "build through %conf (%prep, then %conf) from <tarball>"
+msgstr "sestavit pomocí %conf (%prep, poté %conf) z <specfile>"
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <tarball>"
+msgstr ""
+"sestavit pomocí %build (%prep, %conf, poté zkompilovat) z <tar_souboru>"
+
+msgid "check build dependencies <tarball>"
+msgstr "kontrola závislostí sestavení <tar_souboru>"
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <tarball>"
+msgstr ""
+"sestavit pomocí %install (%prep, %conf, %build, pak nainstalovat) z "
+"<tar_souboru>"
+
+#, c-format
+msgid "verify %files section from <tarball>"
+msgstr "kontrola části %files z <tar_soubor>"
+
+msgid "build source and binary packages from <tarball>"
+msgstr "vytvoření zdrojového a binárního balíčku z <tar_soubor>"
+
+msgid "build binary package only from <tarball>"
+msgstr "vytvoření pouze binárního balíčku z <tar_soubor>"
+
+msgid "build source package only from <tarball>"
+msgstr "vytvoření pouze zdrojového balíčku z <tar_soubor>"
+
+msgid ""
+"build source package only from <tarball> - calculate dynamic build requires"
+msgstr ""
+"sestavit zdrojový balíček pouze z <tar_souboru> - vypočítat požadavky "
+"dynamického sestavení"
+
+msgid "build binary package from <source package>"
+msgstr "vytvoření binárního balíčku ze <zdrojový balíček>"
+
+#, c-format
+msgid ""
+"build through %install (%prep, %build, then install) from <source package>"
+msgstr "sestavení podle %%install (včetně %prep, %build) ze <zdrojový balíček>"
+
+#, fuzzy
+#| msgid "override build root"
+msgid "override build root (DEPRECATED)"
+msgstr "build root předefinován"
+
+msgid "remove build tree when done"
+msgstr "po dokončení odstranit sestavovací strom"
+
+msgid "ignore ExcludeArch: directives from spec file"
+msgstr "ignorovat ExcludeArch: direktivy ve spec souboru"
+
+msgid "debug file state machine"
+msgstr "ladit nástroj stavu souborů"
+
+msgid "do not execute any stages of the build"
+msgstr "nespouštět žádné etapy vytváření balíčku"
+
+msgid "do not verify build dependencies"
+msgstr "nekontrolovat závislosti balíčků"
+
+msgid "generate package header(s) compatible with (legacy) rpm v3 packaging"
+msgstr ""
+"vygenerovat hlavičku(y) balíčku kompatibilní se (staršími) balíčkovači rpm v3"
+
+#, c-format
+msgid "do not execute %clean stage of the build"
+msgstr "neprovádějte %clean fázi sestavení"
+
+#, c-format
+msgid "do not execute %prep stage of the build"
+msgstr "neprovádějte %prep fázi sestavení"
+
+#, c-format
+msgid "do not execute %check stage of the build"
+msgstr "neprovádějte %check fázi sestavení"
+
+msgid "do not accept i18N msgstr's from specfile"
+msgstr "neakceptovat i18N popisky ze spec souboru"
+
+msgid "remove sources when done"
+msgstr "po dokončení odstranit zdrojové kódy"
+
+msgid "remove specfile when done"
+msgstr "po dokončení odstranit spec soubor"
+
+msgid "skip straight to specified stage (only for c,i)"
+msgstr "přeskočit přímo na určenou etapu (pouze pro c,i)"
+
+msgid "override target platform"
+msgstr "cílová platforma předefinována"
+
+msgid "Build options with [ <specfile> | <tarball> | <source package> ]:"
+msgstr ""
+"Sestavovací volby s [ <spec_soubor> | <tar_soubor> | <zdrojový_balíček> ]:"
+
+#, c-format
+msgid "Unable to open spec file %s: %s\n"
+msgstr "Nelze otevřít spec soubor %s: %s\n"
+
+#, c-format
+msgid "Failed to open tar pipe: %m\n"
+msgstr "Nelze otevřít rouru pro tar: %m\n"
+
+#, c-format
+msgid "Found more than one spec file in %s\n"
+msgstr "V %s bylo nalezeno více než jeden soubor specifikací\n"
+
+#, c-format
+msgid "Failed to read spec file from %s\n"
+msgstr "Nelze číst spec soubor z %s\n"
+
+#, c-format
+msgid "Failed to rename %s to %s: %m\n"
+msgstr "Nelze přejmenovat %s na %s: %m\n"
+
+#, c-format
+msgid "failed to stat %s: %m\n"
+msgstr "nemohu zjistit stav %s: %m\n"
+
+#, c-format
+msgid "File %s is not a regular file.\n"
+msgstr "Soubor %s není obyčejný soubor.\n"
+
+#, c-format
+msgid "File %s does not appear to be a specfile.\n"
+msgstr "Nezdá se, že by %s byl spec soubor.\n"
+
+#, c-format
+msgid "Building target platforms: %s\n"
+msgstr "Sestavuji cílové platformy: %s\n"
+
+#, c-format
+msgid "Building for target %s\n"
+msgstr "Sestavuji pro cíl %s\n"
+
+#, c-format
 msgid "%s: read manifest failed: %s\n"
 msgstr "%s: čtení seznamu selhalo: %s\n"
 
 msgid "don't verify header+payload signature"
 msgstr "neověřuj podpis hlavičky a payloadu"
+
+msgid "verify package signature(s)"
+msgstr "ověřit podpis v balíčku"
+
+msgid "import an armored public key"
+msgstr "importuj obrněný veřejný klíč"
+
+#, fuzzy
+#| msgid "import an armored public key"
+msgid "export an public key"
+msgstr "importuj obrněný veřejný klíč"
+
+msgid "don't import, but tell if it would work or not"
+msgstr "neimportujte, ale řekněte, zda by to fungovalo nebo ne"
+
+#, fuzzy
+#| msgid "list keys from RPM keyring"
+msgid "Erase keys from RPM keyring"
+msgstr "seznam klíčů ze klíčenky klíčů RPM"
+
+msgid "list keys from RPM keyring"
+msgstr "seznam klíčů ze klíčenky klíčů RPM"
+
+msgid "rebuild the keyring - convert to current backend"
+msgstr ""
+
+msgid "get keys from this backend when rebuilding current backend"
+msgstr ""
+
+msgid "Keyring options:"
+msgstr "Volby klíčenky:"
+
+msgid "no arguments given"
+msgstr "nezadány žádné parametry"
 
 msgid "getopt string for scripts options"
 msgstr "getopt řetězec pro volby skriptů"
@@ -3322,11 +3465,169 @@ msgstr "provést příkaz"
 msgid "interactive session"
 msgstr "interaktivní sezení"
 
+#, fuzzy
+#| msgid "sign package(s) files"
+msgid "sign package(s), adding a new signature"
+msgstr "podepsat soubory balíčku(ů)"
+
+#, fuzzy
+#| msgid "sign package(s) (identical to --addsign)"
+msgid "resign package(s), deleting any previous signatures"
+msgstr "podepsat balíček (identické s --addsign)"
+
+msgid "delete package signatures"
+msgstr "vymazat podpisy balíčku"
+
+msgid "delete IMA and fsverity file signatures"
+msgstr "odstranit IMA a fsverity podpisů souborů"
+
+#, fuzzy
+#| msgid "create rpm v3 header+payload signatures"
+msgid "request legacy rpm v3 header+payload signatures on v4 packages"
+msgstr "vytvořit hlavičku rpm v3 + podpisy užitečného zatížení"
+
+#, fuzzy
+#| msgid "create rpm v3 header+payload signatures"
+msgid "request legacy rpm v4 header signatures on v6 packages"
+msgstr "vytvořit hlavičku rpm v3 + podpisy užitečného zatížení"
+
+#, fuzzy
+#| msgid "create rpm v3 header+payload signatures"
+msgid "request rpm v6 header signature on v4 packages"
+msgstr "vytvořit hlavičku rpm v3 + podpisy užitečného zatížení"
+
+msgid "sign package(s) files"
+msgstr "podepsat soubory balíčku(ů)"
+
+msgid "generate fsverity signatures for package(s) files"
+msgstr "generovat podpisy fsverity pro soubory balíčku(ů)"
+
+msgid "algorithm to use for verity signatures, default sha256"
+msgstr "algoritmus, který se používá pro podpisy pravosti, výchozí sha256"
+
+msgid "<algorithm>"
+msgstr "<algoritmus>"
+
+msgid "use file signing cert <cert>"
+msgstr "použijte certifikát <certifikát> pro podepisování souborů"
+
+msgid "<cert>"
+msgstr "<certifikát>"
+
+msgid "use file signing key <key>"
+msgstr "použijte klíč <klíč> pro podepisování souborů"
+
+msgid "<key>"
+msgstr "<klíč>"
+
+msgid "prompt for file signing key password"
+msgstr "výzva k zadání hesla klíče pro podepisování souborů"
+
+msgid "Signature options:"
+msgstr "Volby signatury:"
+
+#, fuzzy, c-format
+#| msgid "You must set \"%%_gpg_name\" in your macro file\n"
+msgid "You must set \"%%_openpgp_sign_id\" in your macro file\n"
+msgstr "Je nutné nastavit \"%%_gpg_name\" ve vašem souboru maker\n"
+
+#, c-format
+msgid ""
+"You must set \"%%_file_signing_key\" in your macro file or on the command "
+"line with --fskpath\n"
+msgstr ""
+"Musíte nastavit \"%%_file_signing_key\" ve vašem souboru makra nebo na "
+"příkazovém řádku pomocí --fskpath\n"
+
+msgid "--fskpath may only be specified when signing files"
+msgstr "--fskpath lze zadat pouze při podepisování souborů"
+
+msgid "parse spec file(s) to stdout"
+msgstr "parsovat spec soubor(y) na stdout"
+
+msgid "query spec file(s)"
+msgstr "spec soubor(y) dotazu"
+
+msgid "interactive macro shell"
+msgstr "interaktivní makro shell"
+
+msgid "operate on binary rpms generated by spec (default)"
+msgstr "pracovat s binárními rpms generovanými spec (výchozí)"
+
+msgid "operate on binary package header(s) that would be built from spec"
+msgstr ""
+"pracovat s binárními hlavičkami balíčků, které by byly sestaveny ze spec"
+
+msgid "operate on source package header generated by spec"
+msgstr "pracovat s hlavičkou zdrojového balíčku generovanou spec"
+
+msgid "Spec options:"
+msgstr "Spec volby:"
+
+#, c-format
+msgid "RPM version %s macro shell\n"
+msgstr "Verze RPM %s makro shell\n"
+
+msgid "no arguments given for parse"
+msgstr "nejsou uvedeny žádné argumenty pro parsování"
+
 msgid "extract an archive"
 msgstr "extrahovat archiv"
 
 msgid "only print what would be done"
 msgstr "vytisknout pouze to, co by se udělalo"
+
+msgid "extract into a specific path"
+msgstr ""
+
+#, c-format
+#~ msgid "files over 4GB not supported by cpio, use rpm2archive instead\n"
+#~ msgstr ""
+#~ "soubory nad 4 GB nejsou podporovány cpio, použijte místo toho "
+#~ "rpm2archive\n"
+
+#~ msgid "run build in current directory"
+#~ msgstr "spustit sestavení v aktuálním adresáři"
+
+#~ msgid "sign package(s)"
+#~ msgstr "podepsat balíček(y)"
+
+#, c-format
+#~ msgid "%%{buildroot} couldn't be empty\n"
+#~ msgstr "%%{buildroot} nemohlo být prázdné\n"
+
+#, c-format
+#~ msgid "%%{buildroot} can not be \"/\"\n"
+#~ msgstr "%%{buildroot} nemůže být \"/\"\n"
+
+#, c-format
+#~ msgid "line %d: second %%prep\n"
+#~ msgstr "řádek %d: druhý %%prep\n"
+
+#~ msgid "Only absolute paths are allowed in file triggers"
+#~ msgstr "V souborových triggerech jsou povoleny pouze absolutní cesty"
+
+#~ msgid "disable user namespace support"
+#~ msgstr "zakázat podporu uživatelského jmenného prostoru"
+
+#~ msgid "query/verify package(s) with package identifier"
+#~ msgstr "dotaz/ověření balíčku(ů) s identifikátorem balíčku"
+
+#~ msgid "query/verify package(s) with header identifier"
+#~ msgstr "dotaz/ověření balíčku(ů) s hlavičkovým identifikátorem"
+
+#~ msgid "Invalid symlink"
+#~ msgstr "Neplatný symbolický odkaz"
+
+#~ msgid "illegal signature type"
+#~ msgstr "nepovolený typ podpisu"
+
+#~ msgid "unsupported RPM package version"
+#~ msgstr "nepodporovaná verze RPM balíčku"
+
+#, c-format
+#~ msgid "%s%s"
+#~ msgstr "%s%s"
 
 #, c-format
 #~ msgid "%s: writeLead failed: %s\n"

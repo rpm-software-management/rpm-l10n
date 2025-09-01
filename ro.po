@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: rpm 4.18.90\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-04 09:25+0300\n"
+"POT-Creation-Date: 2025-09-01 14:14+0300\n"
 "PO-Revision-Date: 2025-08-19 14:56+0000\n"
 "Last-Translator: Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>\n"
 "Language-Team: Romanian <https://translate.fedoraproject.org/projects/rpm/"
@@ -20,588 +20,10 @@ msgstr ""
 "20)) ? 1 : 2;\n"
 "X-Generator: Weblate 5.13\n"
 
-#, c-format
-msgid "%s: %s\n"
-msgstr "%s: %s\n"
-
-#, c-format
-msgid "RPM version %s\n"
-msgstr "Versiunea RPM %s\n"
-
-#, c-format
-msgid "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
-msgstr "Drepturi de autor © 1998-2002 - Red Hat, Inc.\n"
-
-#, c-format
-msgid ""
-"This program may be freely redistributed under the terms of the GNU GPL\n"
-msgstr ""
-"Acest program poate fi redistribuit gratuit în conformitate cu termenii GNU "
-"GPL\n"
-
-#, c-format
-msgid "creating a pipe for --pipe failed: %m\n"
-msgstr "crearea unei conducte pentru „--pipe” a eșuat: %m\n"
-
-#, c-format
-msgid "exec failed\n"
-msgstr "exec() a eșuat\n"
-
-msgid "create uncompressed tar file"
-msgstr "creează un fișier tar necomprimat"
-
-#, c-format
-msgid "argument is not an RPM package\n"
-msgstr "argumentul nu este un pachet RPM\n"
-
-#, c-format
-msgid "error reading header from package\n"
-msgstr "eroare la citirea antetului din pachet\n"
-
-#, c-format
-msgid "cannot re-open payload: %s\n"
-msgstr "nu se poate redeschide încărcătura utilă: %s\n"
-
-#, c-format
-msgid "files over 4GB not supported by cpio, use rpm2archive instead\n"
-msgstr ""
-"fișierele de peste 4GB nu sunt acceptate de cpio, utilizați rpm2archive în "
-"schimb\n"
-
-#, c-format
-msgid "buildroot already specified, ignoring %s\n"
-msgstr "buildroot deja specificat, se ignoră %s\n"
-
-#, c-format
-msgid "build through %prep (unpack sources and apply patches) from <specfile>"
-msgstr ""
-"construiește prin %prep (despachetează sursele și aplică corecțiile) din "
-"<fișierul-spec>"
-
-msgid "<specfile>"
-msgstr "<fișierul-spec>"
-
-#, c-format
-msgid "build through %conf (%prep, then %conf) from <specfile>"
-msgstr "construiește prin %conf (%prep, apoi %conf) din <fișierul-spec>"
-
-msgid "build through %build (%prep, %conf, then compile) from <specfile>"
-msgstr ""
-"construiește prin %build (%prep, %conf, apoi compilează) din <fișierul-spec>"
-
-msgid "check build dependencies <specfile>"
-msgstr "verifică dependențele de compilare <fișierul-spec>"
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <specfile>"
-msgstr ""
-"construiește prin %install (%prep, %conf, %build, apoi instalează) din "
-"<fișierul-spec>"
-
-#, c-format
-msgid "verify %files section from <specfile>"
-msgstr "verifică secțiunea %files din <fișierul-spec>"
-
-msgid "build source and binary packages from <specfile>"
-msgstr "construiește pachetele sursă și binar din <fișierul-spec>"
-
-msgid "build binary package only from <specfile>"
-msgstr "construiește doar pachetul binar din <fișierul-spec>"
-
-msgid "build source package only from <specfile>"
-msgstr "construiește doar pachetul sursă din <fișierul-spec>"
-
-msgid ""
-"build source package only from <specfile> - calculate dynamic build requires"
-msgstr ""
-"construiește doar pachetul sursă din <fișierul-spec> - calculează cerințele "
-"pentru construirea dinamică"
-
-#, c-format
-msgid ""
-"build through %prep (unpack sources and apply patches) from <source package>"
-msgstr ""
-"construiește prin %prep (despachetează sursele și aplică corecțiile) din "
-"<pachetul sursă>"
-
-msgid "<source package>"
-msgstr "<pachetul sursă>"
-
-msgid "build through %build (%prep, %conf, then compile) from <source package>"
-msgstr ""
-"construiește prin %build (%prep, %conf, apoi compilează) din <pachetul sursă>"
-
-msgid "check build dependencies <source package>"
-msgstr "verifică dependențele de compilare <pachetul sursă>"
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <source "
-"package>"
-msgstr ""
-"construiește prin %install (%prep, %conf, %build, apoi instalează) din "
-"<pachetul sursă>"
-
-#, c-format
-msgid "verify %files section from <source package>"
-msgstr "verifică secțiunea %files din <pachetul sursă>"
-
-msgid "build source and binary packages from <source package>"
-msgstr "construiește pachetele sursă și binar din <pachetul sursă>"
-
-msgid "build binary package only from <source package>"
-msgstr "construiește doar pachetul binar din <pachetul sursă>"
-
-msgid "build source package only from <source package>"
-msgstr "construiește doar pachetul sursă din <pachetul sursă>"
-
-msgid ""
-"build source package only from <source package> - calculate dynamic build "
-"requires"
-msgstr ""
-"construiește doar pachetul sursă din <pachetul sursă> - calculează cerințele "
-"pentru construirea dinamică"
-
-#, c-format
-msgid "build through %prep (unpack sources and apply patches) from <tarball>"
-msgstr ""
-"construiește prin %prep (despachetează sursele și aplică corecțiile) din "
-"<arhiva-comprimată>"
-
-msgid "<tarball>"
-msgstr "<arhiva-comprimată>"
-
-msgid "build through %build (%prep, %conf, then compile) from <tarball>"
-msgstr ""
-"construiește prin %build (%prep, %conf, apoi compilează) din <arhiva-"
-"comprimată>"
-
-msgid "check build dependencies <tarball>"
-msgstr "verifică dependențele de compilare <arhiva-comprimată>"
-
-msgid ""
-"build through %install (%prep, %conf, %build, then install) from <tarball>"
-msgstr ""
-"construiește prin %install (%prep, %conf, %build, apoi instalează) din "
-"<arhiva-comprimată>"
-
-#, c-format
-msgid "verify %files section from <tarball>"
-msgstr "verifică secțiunea %files din <arhiva-comprimată>"
-
-msgid "build source and binary packages from <tarball>"
-msgstr "construiește pachetele sursă și binar din <arhiva-comprimată>"
-
-msgid "build binary package only from <tarball>"
-msgstr "construiește doar pachetul binar din <arhiva-comprimată>"
-
-msgid "build source package only from <tarball>"
-msgstr "construiește doar pachetul sursă din <arhiva-comprimată>"
-
-msgid ""
-"build source package only from <tarball> - calculate dynamic build requires"
-msgstr ""
-"construiește doar pachetul sursă din <arhiva-comprimată> - calculează "
-"cerințele pentru construirea dinamică"
-
-msgid "build binary package from <source package>"
-msgstr "construiește pachetul binar din <pachetul sursă>"
-
-msgid ""
-"build through %install (%prep, %build, then install) from <source package>"
-msgstr ""
-"construiește prin %install (%prep, %build, apoi install) din <pachetul sursă>"
-
-msgid "override build root"
-msgstr "suprascrie directorul-rădăcină de construcție (buildroot)"
-
-msgid "run build in current directory"
-msgstr "rulează construirea în directorul curent"
-
-msgid "remove build tree when done"
-msgstr "elimină arborele de construcție atunci când este gata"
-
-msgid "ignore ExcludeArch: directives from spec file"
-msgstr "ignoră ExcludeArch: directivele din fișierul spec"
-
-msgid "debug file state machine"
-msgstr "depanează mașina de stare a fișierelor"
-
-msgid "do not execute any stages of the build"
-msgstr "nu execută nicio etapă a construcției"
-
-msgid "do not verify build dependencies"
-msgstr "nu verifică dependențele de construire"
-
-msgid "generate package header(s) compatible with (legacy) rpm v3 packaging"
-msgstr "generează antet(e) de pachet compatibil(e) cu pachetele rpm v3 (vechi)"
-
-#, c-format
-msgid "do not execute %clean stage of the build"
-msgstr "nu se execută etapa %clean a construirii"
-
-#, c-format
-msgid "do not execute %prep stage of the build"
-msgstr "nu execută etapa %prep a construirii"
-
-#, c-format
-msgid "do not execute %check stage of the build"
-msgstr "nu execută etapa %check a construirii"
-
-msgid "do not accept i18N msgstr's from specfile"
-msgstr "nu acceptă msgstr-urile i18N din fișierul-spec"
-
-msgid "remove sources when done"
-msgstr "elimină sursele după terminare"
-
-msgid "remove specfile when done"
-msgstr "elimină fișierul spec după terminare"
-
-msgid "skip straight to specified stage (only for c,i)"
-msgstr "trece direct la etapa specificată (numai pentru c,i)"
-
-msgid "override target platform"
-msgstr "suprascrie platforma țintă"
-
-msgid "Build options with [ <specfile> | <tarball> | <source package> ]:"
-msgstr ""
-"Opțiuni de construire cu [ <fișierul-spec> | <arhiva-comprimată> | <pachetul "
-"sursă> ]:"
-
-msgid "Common options for all rpm modes and executables:"
-msgstr "Opțiuni comune pentru toate modurile și executabilele rpm:"
-
-#, c-format
-msgid "Unable to open spec file %s: %s\n"
-msgstr "Nu s-a putut deschide fișierul spec %s: %s\n"
-
-#, c-format
-msgid "Failed to open tar pipe: %m\n"
-msgstr "Nu s-a putut deschide conducta pentru tar: %m\n"
-
-#, c-format
-msgid "Found more than one spec file in %s\n"
-msgstr "S-a găsit mai mult de un fișier spec în %s\n"
-
-#, c-format
-msgid "Failed to read spec file from %s\n"
-msgstr "Citirea fișierului spec din %s a eșuat\n"
-
-#, c-format
-msgid "Failed to rename %s to %s: %m\n"
-msgstr "Redenumirea %s în %s a eșuat: %m\n"
-
-#, c-format
-msgid "failed to stat %s: %m\n"
-msgstr "apelul stat() asupra %s a eșuat: %m\n"
-
-#, c-format
-msgid "File %s is not a regular file.\n"
-msgstr "Fișierul %s nu este un fișier obișnuit.\n"
-
-#, c-format
-msgid "File %s does not appear to be a specfile.\n"
-msgstr "Fișierul %s nu pare a fi un fișier spec.\n"
-
-#, c-format
-msgid "Building target platforms: %s\n"
-msgstr "Se construiesc platformele țintă: %s\n"
-
-#, c-format
-msgid "Building for target %s\n"
-msgstr "Se construiește pentru ținta %s\n"
-
-msgid "arguments to --root (-r) must begin with a /"
-msgstr ""
-"argumentele pentru opțiunea „--root” (-r) trebuie să înceapă cu un caracter "
-"„/”"
-
-msgid "initialize database"
-msgstr "inițializează baza de date"
-
-msgid "rebuild database inverted lists from installed package headers"
-msgstr ""
-"reconstruiește baza de date cu liste inversate din antetele pachetelor "
-"instalate"
-
-msgid "verify database files"
-msgstr "verifică fișierele bazei de date"
-
-msgid "salvage database"
-msgstr "recuperează baza de date"
-
-msgid "export database to stdout header list"
-msgstr "exportă bază de date către lista de antet de la ieșirea standard"
-
-msgid "import database from stdin header list"
-msgstr "importă bază de date din lista de antet de la ieșirea standard"
-
-msgid "Database options:"
-msgstr "Opțiuni ale bazei de date:"
-
-msgid "only one major mode may be specified"
-msgstr "poate fi specificat un singur mod principal"
-
-msgid "verify package signature(s)"
-msgstr "verifică semnăturile pachetului"
-
-msgid "import an armored public key"
-msgstr "importă o cheie publică blindată"
-
-msgid "don't import, but tell if it would work or not"
-msgstr "nu importă, dar informează dacă ar funcționa sau nu"
-
-msgid "list keys from RPM keyring"
-msgstr "listează cheile din inelul de chei RPM"
-
-msgid "Keyring options:"
-msgstr "Opțiuni ale inelului de chei:"
-
-msgid "no arguments given"
-msgstr "nu s-a furnizat niciun argument"
-
-msgid "Query/Verify package selection options:"
-msgstr "Opțiuni de interogare/verificare a selecției pachetelor:"
-
-msgid "Query/Verify file selection options:"
-msgstr "Opțiuni de interogare/verificare a selecției fișierelor:"
-
-msgid "Query options (with -q or --query):"
-msgstr "Opțiuni de interogare (cu -q sau --query):"
-
-msgid "Verify options (with -V or --verify):"
-msgstr "Opțiuni de verificare (cu -V sau --verify):"
-
-msgid "Install/Upgrade/Erase options:"
-msgstr "Opțiuni de instalare/actualizare/ștergere:"
-
-msgid "one type of query/verify may be performed at a time"
-msgstr ""
-"un singur tip de interogare/verificare poate fi efectuat la un moment dat"
-
-msgid "unexpected query flags"
-msgstr "opțiuni de interogare neașteptate"
-
-msgid "unexpected query format"
-msgstr "format de interogare neașteptat"
-
-msgid "unexpected query source"
-msgstr "sursă de interogare neașteptată"
-
-msgid "only installation and upgrading may be forced"
-msgstr "numai instalarea și actualizarea pot fi forțate"
-
-msgid "files may only be relocated during package installation"
-msgstr "fișierele pot fi realocate numai în timpul instalării pachetului"
-
-msgid "cannot use --prefix with --relocate or --excludepath"
-msgstr ""
-"nu se poate utiliza opțiunea „--prefix” cu opțiunea „--relocate” sau „--"
-"excludepath”"
-
-msgid ""
-"--relocate and --excludepath may only be used when installing new packages"
-msgstr ""
-"opțiunile „--relocate” și „--excludepath” pot fi utilizate numai la "
-"instalarea de pachete noi"
-
-msgid "--prefix may only be used when installing new packages"
-msgstr ""
-"opțiunea „--prefix” poate fi utilizată numai la instalarea de pachete noi"
-
-msgid "arguments to --prefix must begin with a /"
-msgstr ""
-"argumentele pentru opțiunea „--prefix” trebuie să înceapă cu un caracter „/”"
-
-msgid ""
-"--hash (-h) may only be specified during package installation and erasure"
-msgstr ""
-"opțiunea „--hash” (-h) poate fi specificată numai în timpul instalării și "
-"ștergerii pachetului"
-
-msgid "--percent may only be specified during package installation and erasure"
-msgstr ""
-"opțiunea „--percent” poate fi specificată numai în timpul instalării și "
-"ștergerii pachetului"
-
-msgid "--replacepkgs may only be specified during package installation"
-msgstr ""
-"opțiunea „--replacepkgs” poate fi specificată numai în timpul instalării "
-"pachetului"
-
-msgid "--excludedocs may only be specified during package installation"
-msgstr ""
-"opțiunea „--excludedocs” poate fi specificată numai în timpul instalării "
-"pachetului"
-
-msgid "--includedocs may only be specified during package installation"
-msgstr ""
-"opțiunea „--includedocs” poate fi specificată numai în timpul instalării "
-"pachetului"
-
-msgid "only one of --excludedocs and --includedocs may be specified"
-msgstr ""
-"doar una dintre opțiunile „--excludedocs” sau „--includedocs” poate fi "
-"specificată"
-
-msgid "--ignorearch may only be specified during package installation"
-msgstr ""
-"opțiunea „--ignorearch” poate fi specificată numai în timpul instalării "
-"pachetului"
-
-msgid "--ignoreos may only be specified during package installation"
-msgstr ""
-"opțiunea „--ignoreos” poate fi specificată numai în timpul instalării "
-"pachetului"
-
-msgid "--ignoresize may only be specified during package installation"
-msgstr ""
-"opțiunea „--ignoresize” poate fi specificată numai în timpul instalării "
-"pachetului"
-
-msgid "--allmatches may only be specified during package erasure"
-msgstr ""
-"opțiunea „--allmatches” poate fi specificată numai în timpul ștergerii "
-"pachetului"
-
-msgid "--allfiles may only be specified during package installation"
-msgstr ""
-"opțiunea „--allfiles” poate fi specificată numai în timpul instalării "
-"pachetului"
-
-msgid "--justdb may only be specified during package installation and erasure"
-msgstr ""
-"opțiunea „--justdb” poate fi specificată numai în timpul instalării și "
-"ștergerii pachetului"
-
-msgid ""
-"script disabling options may only be specified during package installation "
-"and erasure"
-msgstr ""
-"opțiunile de dezactivare a scripturilor pot fi specificate numai în timpul "
-"instalării și ștergerii pachetelor"
-
-msgid ""
-"trigger disabling options may only be specified during package installation "
-"and erasure"
-msgstr ""
-"opțiunile de dezactivare a declanșatorilor pot fi specificate numai în "
-"timpul instalării și ștergerii pachetului"
-
-msgid ""
-"--nodeps may only be specified during package installation, erasure, and "
-"verification"
-msgstr ""
-"opțiunea --nodeps poate fi specificată numai în timpul instalării, ștergerii "
-"și verificării pachetelor"
-
-msgid "--test may only be specified during package installation and erasure"
-msgstr ""
-"opțiunea --test poate fi specificată numai în timpul instalării și ștergerii "
-"pachetului"
-
-msgid "no packages given for erase"
-msgstr "nu s-a specificat niciun pachet pentru ștergere"
-
-msgid "no packages given for install"
-msgstr "nu s-a specificat niciun pachet pentru instalare"
-
-msgid "no arguments given for query"
-msgstr "nu s-a specificat niciun argument pentru interogare"
-
-msgid "no arguments given for verify"
-msgstr "nu s-a specificat niciun argument pentru verificare"
-
-msgid "sign package(s)"
-msgstr "semnează pachetul(ele)"
-
-msgid "sign package(s) (identical to --addsign)"
-msgstr "semnează pachetul(ele) (identic cu --addsign)"
-
-msgid "delete package signatures"
-msgstr "șterge semnăturile pachetelor"
-
-msgid "delete IMA and fsverity file signatures"
-msgstr "șterge semnăturile fișierelor IMA și fsverity"
-
-msgid "create rpm v3 header+payload signatures"
-msgstr "creează semnături rpm v3 pentru antet + încărcare utilă"
-
-msgid "sign package(s) files"
-msgstr "semnează fișierele pachetului(elor)"
-
-msgid "generate fsverity signatures for package(s) files"
-msgstr "generează semnături fsverity pentru fișierele pachetului(elor)"
-
-msgid "algorithm to use for verity signatures, default sha256"
-msgstr "algoritmul utilizat pentru semnăturile „verity”, implicit sha256"
-
-msgid "<algorithm>"
-msgstr "<algoritm>"
-
-msgid "use file signing cert <cert>"
-msgstr "utilizează certificatul de semnare a fișierului <certificat>"
-
-msgid "<cert>"
-msgstr "<certificat>"
-
-msgid "use file signing key <key>"
-msgstr "utilizează cheia de semnare a fișierului <cheie>"
-
-msgid "<key>"
-msgstr "<cheie>"
-
-msgid "prompt for file signing key password"
-msgstr "solicită parola pentru cheia de semnare a fișierului"
-
-msgid "Signature options:"
-msgstr "Opțiuni de semnătură:"
-
-#, c-format
-msgid "You must set \"%%_gpg_name\" in your macro file\n"
-msgstr "Trebuie să definiți „%%_gpg_name” în fișierul macro\n"
-
-#, c-format
-msgid ""
-"You must set \"%%_file_signing_key\" in your macro file or on the command "
-"line with --fskpath\n"
-msgstr ""
-"Trebuie să definiți „%%_file_signing_key” în fișierul macro sau în linia de "
-"comandă cu opțiunea „--fskpath”\n"
-
-msgid "--fskpath may only be specified when signing files"
-msgstr "opțiunea „--fskpath” poate fi specificată numai la semnarea fișierelor"
-
-msgid "parse spec file(s) to stdout"
-msgstr "analizează fișierul (fișierele) spec la ieșirea standard"
-
-msgid "query spec file(s)"
-msgstr "interoghează fișierul(ele) spec"
-
-msgid "interactive macro shell"
-msgstr "shell macro interactivă"
-
-msgid "operate on binary rpms generated by spec (default)"
-msgstr "operează pe rpms binare generate de spec (implicit)"
-
-msgid "operate on binary package header(s) that would be built from spec"
-msgstr ""
-"operează pe antetul (antetele) pachetului binar care ar fi construit din spec"
-
-msgid "operate on source package header generated by spec"
-msgstr "operează pe antetul pachetului sursă generat de spec"
-
-msgid "use the following query format"
-msgstr "utilizează următorul format de interogare"
-
-msgid "Spec options:"
-msgstr "Opțiuni spec:"
-
-#, c-format
-msgid "RPM version %s macro shell\n"
-msgstr "Versiunea RPM %s macro shell\n"
-
-msgid "no arguments given for parse"
-msgstr "nu s-a specificat niciun argument pentru analizare"
+#, fuzzy
+#| msgid "unable to parse %s=%s\n"
+msgid "unable to parse _buildtime macro\n"
+msgstr "nu se poate analiza %s=%s\n"
 
 msgid "unable to parse SOURCE_DATE_EPOCH\n"
 msgstr "nu se poate analiza SOURCE_DATE_EPOCH\n"
@@ -629,12 +51,20 @@ msgstr "Stare de ieșire incorectă de la %s (%s)\n"
 msgid "Failed build dependencies:\n"
 msgstr "Dependențe de construcție nesatisfăcute:\n"
 
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to create package build directory %s: %s\n"
+msgstr "crearea directorului %s a eșuat: %s\n"
+
 #, c-format
 msgid "setting %s=%s\n"
 msgstr "se definește %s=%s\n"
 
-#, c-format
-msgid "source_date_epoch_from_changelog set but %%changelog is missing\n"
+#, fuzzy, c-format
+#| msgid "source_date_epoch_from_changelog set but %%changelog is missing\n"
+msgid ""
+"%%source_date_epoch_from_changelog is set, but %%changelog has no entries to "
+"take a date from\n"
 msgstr ""
 "source_date_epoch_from_changelog este definită, dar %%changelog lipsește\n"
 
@@ -715,11 +145,23 @@ msgid "File must begin with \"/\": %s\n"
 msgstr "Fișierul trebuie să înceapă cu „/”: %s\n"
 
 #, c-format
+msgid ""
+"%%clamp_mtime_to_source_date_epoch is deprecated, please use "
+"%%build_mtime_policy\n"
+msgstr ""
+
+#, c-format
 msgid "unable to parse %s=%s\n"
 msgstr "nu se poate analiza %s=%s\n"
 
-#, c-format
-msgid "Unknown file digest algorithm %u, falling back to MD5\n"
+#, fuzzy, c-format
+#| msgid "Unknown icon type: %s\n"
+msgid "Unknown mtime policy '%s'\n"
+msgstr "Tip de pictogramă necunoscut: %s\n"
+
+#, fuzzy, c-format
+#| msgid "Unknown file digest algorithm %u, falling back to MD5\n"
+msgid "Unknown file digest algorithm %u, falling back to %u\n"
 msgstr ""
 "Algoritm de sumă de control de fișier necunoscut %u, se revine la algoritmul "
 "MD5\n"
@@ -956,9 +398,24 @@ msgid "Finished binary package job, result %d, filename %s\n"
 msgstr ""
 "Construirea pachetului binar a fost finalizată, rezultat %d, nume fișier %s\n"
 
+#, fuzzy, c-format
+#| msgid "line %d: Error parsing %s: %s\n"
+msgid "line %d: Error parsing script: %s: %s\n"
+msgstr "linia %d: eroare la analizarea %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "line %d: Bad option %s: %s\n"
+msgid "line %d: Bad %s option %s: %s\n"
+msgstr "linia %d: opțiune greșită %s: %s\n"
+
 #, c-format
 msgid "line %d: second %s\n"
 msgstr "linia %d: secunda %s\n"
+
+#, fuzzy, c-format
+#| msgid "line %d: unsupported internal script: %s\n"
+msgid "line %d: append and prepend specified: %s\n"
+msgstr "linia %d: script intern neacceptat: %s\n"
 
 #, c-format
 msgid "bogus date in %%changelog: %s\n"
@@ -1064,6 +521,11 @@ msgstr "Sistemul de operare nu este inclus: %s\n"
 msgid "%s field must be present in package: %s\n"
 msgstr "Câmpul %s trebuie să fie prezent în pachet: %s\n"
 
+#, fuzzy, c-format
+#| msgid "%s field must be present in package: %s\n"
+msgid "%s field must be present before build in package: %s\n"
+msgstr "Câmpul %s trebuie să fie prezent în pachet: %s\n"
+
 #, c-format
 msgid "Duplicate %s entries in package: %s\n"
 msgstr "Intrări %s duplicate în pachetul: %s\n"
@@ -1134,6 +596,11 @@ msgstr "linia %d: format BuildArchitecture incorect: %s\n"
 msgid "line %d: Duplicate BuildArch entry: %s\n"
 msgstr "linia %d: intrare BuildArch duplicată: %s\n"
 
+#, fuzzy, c-format
+#| msgid "line %d: Only noarch subpackages are supported: %s\n"
+msgid "line %d: Only noarch is allowed after the build: %s\n"
+msgstr "linia %d: doar subpachetele noarch sunt acceptate: %s\n"
+
 #, c-format
 msgid "line %d: Only noarch subpackages are supported: %s\n"
 msgstr "linia %d: doar subpachetele noarch sunt acceptate: %s\n"
@@ -1157,13 +624,17 @@ msgstr "Pachet binar rpm găsit. Se aștepta un fișier spec!\n"
 msgid "line %d: Unknown tag: %s\n"
 msgstr "linia %d: etichetă necunoscută: %s\n"
 
-#, c-format
-msgid "%%{buildroot} couldn't be empty\n"
-msgstr "%%{buildroot} nu poate fi gol\n"
+#, fuzzy, c-format
+#| msgid "line %d: Priorities are allowed only for file triggers : %s\n"
+msgid "line %d: Tag not allowed after build is done: %s\n"
+msgstr ""
+"linia %d: prioritățile sunt permise numai pentru declanșatoarele de "
+"fișiere : %s\n"
 
-#, c-format
-msgid "%%{buildroot} can not be \"/\"\n"
-msgstr "%%{buildroot} nu poate fi „/”\n"
+#, fuzzy, c-format
+#| msgid "Invalid capability: %s\n"
+msgid "Invalid buildroot: '%s'\n"
+msgstr "Capacitate nevalidă: %s\n"
 
 #, c-format
 msgid "No patch number %u\n"
@@ -1193,17 +664,6 @@ msgstr "Numărul plasturelui (corecției) nu este specificat: %s\n"
 msgid "Invalid patch number %s: %s\n"
 msgstr "Număr de plasture nevalid (corecție) %s: %s\n"
 
-#, c-format
-msgid "line %d: second %%prep\n"
-msgstr "linia %d: secunda %%prep\n"
-
-#, c-format
-msgid ""
-"%%patchN is deprecated (%i usages found), use %%patch N (or %%patch -P N)\n"
-msgstr ""
-"%%patchN este depreciat (%i utilizări găsite), utilizați %%patch N (sau "
-"%%patch -P N)\n"
-
 msgid "Dependency tokens must begin with alpha-numeric, '_' or '/'"
 msgstr ""
 "Indicatoarele de dependență trebuie să înceapă cu alfanumerice, „_” sau „/”"
@@ -1220,6 +680,12 @@ msgstr "dependență nevalidă"
 msgid "Version required"
 msgstr "Versiunea cerută"
 
+#, fuzzy
+#| msgid "line %d: file trigger condition must begin with '/': %s"
+msgid "file trigger conditions must begin with '/'"
+msgstr ""
+"linia %d: condiția de declanșare a fișierului trebuie să înceapă cu „/”: %s"
+
 msgid "Only package names are allowed in Obsoletes"
 msgstr "Numai numele pachetelor sunt permise în Obsoletes"
 
@@ -1228,9 +694,6 @@ msgstr "Nu este recomandat să aveți Obsoletes fără versiune"
 
 msgid "It's not recommended to use '>' in Obsoletes"
 msgstr "Nu este recomandat să se utilizeze „>” în Obsoletes"
-
-msgid "Only absolute paths are allowed in file triggers"
-msgstr "Numai rutele absolute sunt permise în declanșatoarele de fișiere"
 
 msgid "Trigger fired by the same package is already defined in spec file"
 msgstr ""
@@ -1273,11 +736,6 @@ msgstr "linia %d: al doilea %s\n"
 #, c-format
 msgid "line %d: unsupported internal script: %s\n"
 msgstr "linia %d: script intern neacceptat: %s\n"
-
-#, c-format
-msgid "line %d: file trigger condition must begin with '/': %s"
-msgstr ""
-"linia %d: condiția de declanșare a fișierului trebuie să înceapă cu „/”: %s"
 
 #, c-format
 msgid "line %d: interpreter arguments not allowed in triggers: %s\n"
@@ -1325,6 +783,15 @@ msgstr "%s:%d: condiție %s incorectă: %s\n"
 msgid "%s:%d: malformed %%include statement\n"
 msgstr "%s:%d: declarație %%include prost formată\n"
 
+#, fuzzy, c-format
+#| msgid ""
+#| "%%patchN is deprecated (%i usages found), use %%patch N (or %%patch -P "
+#| "N)\n"
+msgid "%%patchN is obsolete, use %%patch N (or %%patch -P N): %s\n"
+msgstr ""
+"%%patchN este depreciat (%i utilizări găsite), utilizați %%patch N (sau "
+"%%patch -P N)\n"
+
 #, c-format
 msgid "encoding %s not supported by system\n"
 msgstr "codificarea %s nu este acceptată de sistem\n"
@@ -1346,8 +813,36 @@ msgstr ""
 msgid "line %d doesn't belong to any section: %s\n"
 msgstr "linia %d nu aparține niciunei secțiuni: %s\n"
 
+#, fuzzy, c-format
+#| msgid "line %d: Unknown tag: %s\n"
+msgid "line %d: Unknown buildsystem: %s\n"
+msgstr "linia %d: etichetă necunoscută: %s\n"
+
+#, c-format
+msgid ""
+"line %d: Required parametric macro %%%s not defined for buildsystem %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "failed to write all data to %s: %s\n"
+msgid "failed to write buildsystem %s %%%s: %s\n"
+msgstr "nu s-a reușit să se scrie toate datele în %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "Couldn't create temporary file for %s: %s\n"
+msgid "failed to create temp file for buildsystem: %s\n"
+msgstr "Nu s-a putut crea un fișier temporar pentru %s: %s\n"
+
+#, c-format
+msgid "Section %s is not allowed after build is done!\n"
+msgstr ""
+
 msgid "No compatible architectures found for build\n"
 msgstr "Nu au fost găsite arhitecturi compatibile pentru construire\n"
+
+#, c-format
+msgid "invalid rpm format %d requested, using %d\n"
+msgstr ""
 
 #, c-format
 msgid "Package has no %%description: %s\n"
@@ -1440,6 +935,10 @@ msgstr "%s a eșuat: %x\n"
 msgid "failed to write all data to %s: %s\n"
 msgstr "nu s-a reușit să se scrie toate datele în %s: %s\n"
 
+#, c-format
+msgid "invalid or out of order path from generator: %s\n"
+msgstr ""
+
 msgid "Empty file classifier\n"
 msgstr "Clasificator de fișier gol\n"
 
@@ -1471,6 +970,11 @@ msgid "Failed to find %s:\n"
 msgstr "Căutarea %s a eșuat:\n"
 
 msgid "Deprecated external dependency generator is used!\n"
+msgstr "Este utilizat un generator de dependențe externe depreciat!\n"
+
+#, fuzzy
+#| msgid "Deprecated external dependency generator is used!\n"
+msgid "External dependency generator is incompatible with v6 packages\n"
 msgstr "Este utilizat un generator de dependențe externe depreciat!\n"
 
 #, c-format
@@ -1603,8 +1107,9 @@ msgstr "%s%s salvat ca %s%s\n"
 msgid "%s%s created as %s%s\n"
 msgstr "%s%s creat ca %s%s\n"
 
-#, c-format
-msgid "%s %s: remove failed: %s\n"
+#, fuzzy, c-format
+#| msgid "%s %s: remove failed: %s\n"
+msgid "%s %s%s: remove failed: %s\n"
 msgstr "%s %s: eliminarea a eșuat: %s\n"
 
 msgid "directory"
@@ -1736,8 +1241,39 @@ msgid "array iterator used with different sized arrays"
 msgstr "iterator de matrice utilizat cu matrice de dimensiuni diferite"
 
 #, c-format
+msgid "%s: reading of public key failed.\n"
+msgstr "%s: citirea cheii publice a eșuat.\n"
+
+#, fuzzy, c-format
+#| msgid "failed to create directory %s: %s\n"
+msgid "failed to create keyring directory %s: %s\n"
+msgstr "crearea directorului %s a eșuat: %s\n"
+
+#, c-format
+msgid "failed to import key: %s: %s\n"
+msgstr "nu s-a reușit să se importe cheia: %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "can't create %s lock on %s (%s)\n"
+msgid "Can't create writelock for keyring at %s: %s\n"
+msgstr "nu se poate crea blocarea %s pe %s (%s)\n"
+
+#, c-format
+msgid "Can't acquire writelock for keyring at %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "%s: not an armored public key.\n"
+msgid "%s is not a valid public key\n"
+msgstr "%s: nu este o cheie publică blindată.\n"
+
+#, c-format
 msgid "RPM v3 packages are deprecated: %s\n"
 msgstr "Pachetele RPM v3 sunt depreciate: %s\n"
+
+#, c-format
+msgid "RPM version %s\n"
+msgstr "Versiunea RPM %s\n"
 
 msgid "Error writing to stdout"
 msgstr "Eroare la scrierea la ieșirea standard"
@@ -1846,9 +1382,6 @@ msgstr "depanează mașina de stare a fișierului de încărcătură utilă"
 
 msgid "debug rpmio I/O"
 msgstr "depanează In/Ieș rpmio"
-
-msgid "disable user namespace support"
-msgstr "dezactivează suportul pentru spațiul de nume al utilizatorului"
 
 #, c-format
 msgid "%s: option table misconfigured (%d)\n"
@@ -2080,12 +1613,6 @@ msgstr "interoghează/verifică pachetul(ele) din grup"
 msgid "query/verify a package file"
 msgstr "interoghează/verifică un fișier al pachetului"
 
-msgid "query/verify package(s) with package identifier"
-msgstr "interoghează/verifică pachetul(ele) cu identificatorul pachetului"
-
-msgid "query/verify package(s) with header identifier"
-msgstr "interoghează/verifică pachetul(ele) cu identificatorul de antet"
-
 msgid "rpm query mode"
 msgstr "modul de interogare al pachetelor rpm"
 
@@ -2100,6 +1627,11 @@ msgstr "interoghează pachetul(ele) declanșat(e) de pachet"
 
 msgid "rpm verify mode"
 msgstr "modul de verificare al pachetelor rpm"
+
+#, fuzzy
+#| msgid "query/verify the package(s) which obsolete a dependency"
+msgid "query/verify the package(s) which conflict with a dependency"
+msgstr "interoghează/verifică pachetul(ele) care elimină o dependență"
 
 msgid "query/verify the package(s) which require a dependency"
 msgstr "interoghează/verifică pachetul(ele) care necesită o dependență"
@@ -2157,6 +1689,9 @@ msgstr "afișează informațiile de bază despre fișiere"
 
 msgid "list files in package"
 msgstr "listează fișierele din pachet"
+
+msgid "use the following query format"
+msgstr "utilizează următorul format de interogare"
 
 msgid "display the states of the listed files"
 msgstr "afișează starea fișierelor listate"
@@ -2578,17 +2113,20 @@ msgstr ""
 "Număr greșit de intrări pentru eticheta %s: s-a găsit %u, dar se aștepta "
 "%u.\n"
 
-#, c-format
-msgid "Malformed data for tag %s: %u bytes found but %lu expected.\n"
+#, fuzzy, c-format
+#| msgid "Malformed data for tag %s: %u bytes found but %lu expected.\n"
+msgid "Malformed data for tag %s: %u bytes found but %<PRIu64> expected.\n"
 msgstr ""
 "Date incorecte pentru eticheta %s: %u octeți găsiți dar %lu așteptați.\n"
 
-#, c-format
-msgid "%s: base64 decode failed, len %li\n"
+#, fuzzy, c-format
+#| msgid "%s: base64 decode failed, len %li\n"
+msgid "%s: base64 decode failed, len %zu\n"
 msgstr "%s: decodificarea base64 a eșuat, lungime %li\n"
 
-#, c-format
-msgid "%s: base64 decode success, len %li\n"
+#, fuzzy, c-format
+#| msgid "%s: base64 decode success, len %li\n"
+msgid "%s: base64 decode success, len %zu\n"
 msgstr "%s: decodificare base64 reușită, lungime %li\n"
 
 msgid "Bad magic"
@@ -2618,8 +2156,10 @@ msgstr "Eroare internă"
 msgid "Archive file not in header"
 msgstr "Fișierul de arhivă nu se află în antet"
 
-msgid "Invalid symlink"
-msgstr "Legătură simbolică nevalidă"
+#, fuzzy
+#| msgid "failed symlink"
+msgid "Unsafe symlink"
+msgstr "legătura simbolică a eșuat"
 
 msgid "File from package already exists as a directory in system"
 msgstr "Fișierul din pachet există deja ca director în sistem"
@@ -2694,6 +2234,11 @@ msgstr "pachetul %s nu poate fi repoziționat\n"
 msgid "error reading from file %s\n"
 msgstr "eroare la citirea din fișierul %s\n"
 
+#, fuzzy, c-format
+#| msgid "no package matches %s: %s\n"
+msgid "package format not supported: %s\n"
+msgstr "niciun pachet nu se potrivește cu %s: %s\n"
+
 #, c-format
 msgid "\"%s\" specifies multiple packages:\n"
 msgstr "„%s” specifică mai multe pachete:\n"
@@ -2708,12 +2253,6 @@ msgstr "Se instalează %s\n"
 
 msgid "not an rpm package"
 msgstr "nu este un pachet rpm"
-
-msgid "illegal signature type"
-msgstr "tip de semnătură ilegal"
-
-msgid "unsupported RPM package version"
-msgstr "versiune neacceptată a pachetului RPM"
 
 #, c-format
 msgid "read failed: %s (%d)\n"
@@ -2859,6 +2398,11 @@ msgstr "lipsește argumentul pentru %s în %s:%d\n"
 msgid "cannot open %s at %s:%d: %m\n"
 msgstr "nu se poate deschide %s din %s:%d: %m\n"
 
+#, fuzzy, c-format
+#| msgid "bad option '%s' at %s:%d\n"
+msgid "Ignoring %s at %s:%d\n"
+msgstr "opțiune greșită „%s” în %s:%d\n"
+
 #, c-format
 msgid "missing architecture for %s at %s:%d\n"
 msgstr "lipsește arhitectura pentru %s în %s:%d\n"
@@ -2917,6 +2461,15 @@ msgstr "scriptul %s a eșuat, starea de ieșire %d\n"
 msgid "Unknown format"
 msgstr "Format necunoscut"
 
+#, c-format
+msgid "erasing gpg-pubkey packages is deprecated; use rpmkeys --delete %s\n"
+msgstr ""
+
+msgid ""
+"public keys can not be installed as gpg-pubkey packages; use rpmkeys --"
+"import <keyfile> for that\n"
+msgstr ""
+
 msgid "install"
 msgstr "instalează"
 
@@ -2946,16 +2499,13 @@ msgid "missing ')' in package label: %s\n"
 msgstr "lipsește „)” în eticheta pachetului: %s\n"
 
 #, c-format
-msgid "%s: reading of public key failed.\n"
-msgstr "%s: citirea cheii publice a eșuat.\n"
-
-#, c-format
 msgid "unknown keyring type: %s, using rpmdb\n"
 msgstr "tip de inel de chei necunoscut: %s, se utilizează rpmdb\n"
 
-#, c-format
-msgid "failed to import key: %s: %s\n"
-msgstr "nu s-a reușit să se importe cheia: %s: %s\n"
+#, fuzzy, c-format
+#| msgid "Unknown icon type: %s\n"
+msgid "unknown keyring type: %s\n"
+msgstr "Tip de pictogramă necunoscut: %s\n"
 
 #, c-format
 msgid "invalid package verify level %s\n"
@@ -2980,6 +2530,11 @@ msgstr "%s etichetă %u: date nevalide %p (%u)"
 msgid "%s tag %u: invalid size %u"
 msgstr "%s etichetă %u: dimensiune nevalidă %u"
 
+#, fuzzy, c-format
+#| msgid "%s: tag %u: invalid hex"
+msgid "%s tag %u: invalid base64"
+msgstr "%s: etichetă %u: hexazecimal nevalid"
+
 #, c-format
 msgid "%s tag %u: invalid OpenPGP signature"
 msgstr "%s etichetă %u: semnătură OpenPGP nevalidă"
@@ -2988,19 +2543,28 @@ msgstr "%s etichetă %u: semnătură OpenPGP nevalidă"
 msgid "%s: tag %u: invalid hex"
 msgstr "%s: etichetă %u: hexazecimal nevalid"
 
-#, c-format
-msgid "%s%s%s %s"
+#, fuzzy, c-format
+#| msgid "%s%s%s %s"
+msgid "%s %s%s %s"
 msgstr "%s%s%s %s"
 
 msgid "digest"
 msgstr "suma de control"
 
 #, c-format
-msgid "%s%s"
-msgstr "%s%s"
+msgid "%s OpenPGP %s"
+msgstr ""
+
+#, c-format
+msgid "%s OpenPGP %s %s"
+msgstr ""
 
 msgid "signature"
 msgstr "semnătură"
+
+#, c-format
+msgid ", key fingerprint: %s"
+msgstr ""
 
 msgid "header"
 msgstr "antet"
@@ -3008,10 +2572,14 @@ msgstr "antet"
 msgid "package"
 msgstr "pachet"
 
-msgid "Header "
+#, fuzzy
+#| msgid "Header "
+msgid "Header"
 msgstr "Antet "
 
-msgid "Payload "
+#, fuzzy
+#| msgid "Payload "
+msgid "Payload"
 msgstr "Încărcătura utilă "
 
 msgid "Unable to reload signature header.\n"
@@ -3092,7 +2660,9 @@ msgstr "tip de argument de funcție neacceptat"
 msgid "syntax error in expression"
 msgstr "eroare de sintaxă în expresie"
 
-msgid "unsupported funcion"
+#, fuzzy
+#| msgid "unsupported funcion"
+msgid "unsupported function"
 msgstr "funcție neacceptată"
 
 msgid "unmatched ("
@@ -3204,7 +2774,16 @@ msgid "A %% is followed by an unparseable macro\n"
 msgstr "Un %% este urmat de o macro neanalizabilă\n"
 
 #, c-format
-msgid "======================== active %d empty %d\n"
+msgid "unexpected argument to non-parametric macro %%%s\n"
+msgstr ""
+
+#, c-format
+msgid "macro value out of range for int: %<PRIu64> using %i instead.\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "======================== active %d empty %d\n"
+msgid "======================== active %zu empty %d\n"
 msgstr "======================== %d active %d goale\n"
 
 #, c-format
@@ -3275,6 +2854,15 @@ msgstr "V%d %s/%s %s, ID cheie %s"
 msgid "(none)"
 msgstr "(nimic)"
 
+#, fuzzy, c-format
+#| msgid "Could not read from file %s: %s\n"
+msgid "Could not find url helper: \"%s\"\n"
+msgstr "Nu s-a putut citi din fișierul %s: %s\n"
+
+#, c-format
+msgid "Executing url helper \"%s\" failed with status %i\n"
+msgstr ""
+
 #, c-format
 msgid "%s: Fwrite failed: %s\n"
 msgstr "%s: fwrite() a eșuat: %s\n"
@@ -3287,20 +2875,15 @@ msgstr "%s: fread() a eșuat: %s\n"
 msgid "%s: Fflush failed: %s\n"
 msgstr "%s: fflush() a eșuat: %s\n"
 
-msgid "Unsupported OpenPGP signature\n"
-msgstr "Semnătură OpenPGP neacceptată\n"
+#, fuzzy, c-format
+#| msgid "reading symlink %s failed: %s\n"
+msgid "Expanding signing macro %s failed\n"
+msgstr "citirea legăturii simbolice %s a eșuat: %s\n"
 
-#, c-format
-msgid "Unsupported OpenPGP hash algorithm %u\n"
-msgstr "Algoritm de sumă de control OpenPGP neacceptat %u\n"
-
-#, c-format
-msgid "Unsupported OpenPGP pubkey algorithm %u\n"
-msgstr "Algoritm de cheie publică OpenPGP neacceptat %u\n"
-
-#, c-format
-msgid "Deprecated OpenPGP signature version %d\n"
-msgstr "Versiune de semnătură OpenPGP învechită %d\n"
+#, fuzzy, c-format
+#| msgid "Invalid %s token: %s\n"
+msgid "Invalid sign command: %s\n"
+msgstr "Simbol %s nevalid: %s\n"
 
 #, c-format
 msgid "Could not create pipe for signing: %m\n"
@@ -3325,19 +2908,41 @@ msgstr "Nu s-a putut scrie în conductă\n"
 msgid "Could not read from file %s: %s\n"
 msgstr "Nu s-a putut citi din fișierul %s: %s\n"
 
-#, c-format
-msgid "gpg waitpid failed (%s)\n"
+#, fuzzy, c-format
+#| msgid "gpg waitpid failed (%s)\n"
+msgid "%s waitpid failed (%s)\n"
 msgstr "waitpid() gpg a eșuat (%s)\n"
 
-#, c-format
-msgid "gpg exec failed (%d)\n"
+#, fuzzy, c-format
+#| msgid "gpg exec failed (%d)\n"
+msgid "%s exec failed (%d)\n"
 msgstr "execuția gpg a eșuat (%d)\n"
 
-msgid "gpg failed to write signature\n"
+#, fuzzy, c-format
+#| msgid "gpg failed to write signature\n"
+msgid "failed to write signature: %s\n"
 msgstr "gpg a eșuat la scrierea semnăturii\n"
 
-msgid "unable to read the signature\n"
+#, fuzzy, c-format
+#| msgid "unable to read the signature\n"
+msgid "unable to read the signature: %s\n"
 msgstr "nu s- a putut citi semnătura\n"
+
+msgid "Unsupported OpenPGP signature\n"
+msgstr "Semnătură OpenPGP neacceptată\n"
+
+#, c-format
+msgid "Unsupported OpenPGP hash algorithm %u\n"
+msgstr "Algoritm de sumă de control OpenPGP neacceptat %u\n"
+
+#, c-format
+msgid "Deprecated OpenPGP signature version %d\n"
+msgstr "Versiune de semnătură OpenPGP învechită %d\n"
+
+#, fuzzy, c-format
+#| msgid "Unsupported OpenPGP pubkey algorithm %u\n"
+msgid "Unsupported OpenPGP pubkey algorithm %u for rpm v3/v4 signatures\n"
+msgstr "Algoritm de cheie publică OpenPGP neacceptat %u\n"
 
 msgid "file signing support not built in\n"
 msgstr "suportul pentru semnarea fișierelor nu este integrat\n"
@@ -3364,18 +2969,42 @@ msgstr "%s: rpmReadSignature a eșuat: %s"
 msgid "%s: headerRead failed: %s\n"
 msgstr "%s: headerRead a eșuat: %s\n"
 
-msgid "Cannot sign RPM v3 packages\n"
+#, fuzzy, c-format
+#| msgid "Cannot sign RPM v3 packages\n"
+msgid "Cannot sign RPM v3 packages: %s\n"
 msgstr "Nu se pot semna pachetele RPM v3\n"
 
+#, fuzzy, c-format
+#| msgid "generate fsverity signatures for package(s) files"
+msgid "not generating v3 signature for v6 package: %s\n"
+msgstr "generează semnături fsverity pentru fișierele pachetului(elor)"
+
 #, c-format
-msgid "%s already contains identical signature, skipping\n"
+msgid "File signatures not applicable to src.rpm: %s\n"
+msgstr ""
+
+#, fuzzy, c-format
+#| msgid "Could not seek in file %s: %s\n"
+msgid "Could not get a file size of %s\n"
+msgstr "Nu s-a putut căuta în fișierul %s: %s\n"
+
+#, fuzzy, c-format
+#| msgid "%s already contains identical signature, skipping\n"
+msgid "%s already contains an identical signature, skipping\n"
+msgstr "%s conține deja o semnătură identică, se omite\n"
+
+#, fuzzy, c-format
+#| msgid "%s already contains identical signature, skipping\n"
+msgid "%s already contains a legacy signature\n"
 msgstr "%s conține deja o semnătură identică, se omite\n"
 
 #, c-format
 msgid "%s: rpmWriteSignature failed: %s\n"
 msgstr "%s: rpmWriteSignature a eșuat: %s\n"
 
-msgid "rpmMkTemp failed\n"
+#, fuzzy, c-format
+#| msgid "rpmMkTemp failed\n"
+msgid "rpmMkTemp failed: %s\n"
 msgstr "rpmMkTemp a eșuat\n"
 
 #, c-format
@@ -3399,11 +3028,531 @@ msgid "headerPutString failed\n"
 msgstr "headerPutString a eșuat\n"
 
 #, c-format
+msgid "%s: %s\n"
+msgstr "%s: %s\n"
+
+#, c-format
+msgid "Copyright (C) 1998-2002 - Red Hat, Inc.\n"
+msgstr "Drepturi de autor © 1998-2002 - Red Hat, Inc.\n"
+
+#, c-format
+msgid ""
+"This program may be freely redistributed under the terms of the GNU GPL\n"
+msgstr ""
+"Acest program poate fi redistribuit gratuit în conformitate cu termenii GNU "
+"GPL\n"
+
+#, c-format
+msgid "creating a pipe for --pipe failed: %m\n"
+msgstr "crearea unei conducte pentru „--pipe” a eșuat: %m\n"
+
+#, c-format
+msgid "exec failed\n"
+msgstr "exec() a eșuat\n"
+
+msgid "Query/Verify package selection options:"
+msgstr "Opțiuni de interogare/verificare a selecției pachetelor:"
+
+msgid "Query/Verify file selection options:"
+msgstr "Opțiuni de interogare/verificare a selecției fișierelor:"
+
+msgid "Query options (with -q or --query):"
+msgstr "Opțiuni de interogare (cu -q sau --query):"
+
+msgid "Verify options (with -V or --verify):"
+msgstr "Opțiuni de verificare (cu -V sau --verify):"
+
+msgid "Install/Upgrade/Erase options:"
+msgstr "Opțiuni de instalare/actualizare/ștergere:"
+
+msgid "Common options for all rpm modes and executables:"
+msgstr "Opțiuni comune pentru toate modurile și executabilele rpm:"
+
+msgid "one type of query/verify may be performed at a time"
+msgstr ""
+"un singur tip de interogare/verificare poate fi efectuat la un moment dat"
+
+msgid "unexpected query flags"
+msgstr "opțiuni de interogare neașteptate"
+
+msgid "unexpected query format"
+msgstr "format de interogare neașteptat"
+
+msgid "unexpected query source"
+msgstr "sursă de interogare neașteptată"
+
+msgid "only one major mode may be specified"
+msgstr "poate fi specificat un singur mod principal"
+
+msgid "only installation and upgrading may be forced"
+msgstr "numai instalarea și actualizarea pot fi forțate"
+
+msgid "files may only be relocated during package installation"
+msgstr "fișierele pot fi realocate numai în timpul instalării pachetului"
+
+msgid "cannot use --prefix with --relocate or --excludepath"
+msgstr ""
+"nu se poate utiliza opțiunea „--prefix” cu opțiunea „--relocate” sau „--"
+"excludepath”"
+
+msgid ""
+"--relocate and --excludepath may only be used when installing new packages"
+msgstr ""
+"opțiunile „--relocate” și „--excludepath” pot fi utilizate numai la "
+"instalarea de pachete noi"
+
+msgid "--prefix may only be used when installing new packages"
+msgstr ""
+"opțiunea „--prefix” poate fi utilizată numai la instalarea de pachete noi"
+
+msgid "arguments to --prefix must begin with a /"
+msgstr ""
+"argumentele pentru opțiunea „--prefix” trebuie să înceapă cu un caracter „/”"
+
+msgid ""
+"--hash (-h) may only be specified during package installation and erasure"
+msgstr ""
+"opțiunea „--hash” (-h) poate fi specificată numai în timpul instalării și "
+"ștergerii pachetului"
+
+msgid "--percent may only be specified during package installation and erasure"
+msgstr ""
+"opțiunea „--percent” poate fi specificată numai în timpul instalării și "
+"ștergerii pachetului"
+
+msgid "--replacepkgs may only be specified during package installation"
+msgstr ""
+"opțiunea „--replacepkgs” poate fi specificată numai în timpul instalării "
+"pachetului"
+
+msgid "--excludedocs may only be specified during package installation"
+msgstr ""
+"opțiunea „--excludedocs” poate fi specificată numai în timpul instalării "
+"pachetului"
+
+msgid "--includedocs may only be specified during package installation"
+msgstr ""
+"opțiunea „--includedocs” poate fi specificată numai în timpul instalării "
+"pachetului"
+
+msgid "only one of --excludedocs and --includedocs may be specified"
+msgstr ""
+"doar una dintre opțiunile „--excludedocs” sau „--includedocs” poate fi "
+"specificată"
+
+msgid "--ignorearch may only be specified during package installation"
+msgstr ""
+"opțiunea „--ignorearch” poate fi specificată numai în timpul instalării "
+"pachetului"
+
+msgid "--ignoreos may only be specified during package installation"
+msgstr ""
+"opțiunea „--ignoreos” poate fi specificată numai în timpul instalării "
+"pachetului"
+
+msgid "--ignoresize may only be specified during package installation"
+msgstr ""
+"opțiunea „--ignoresize” poate fi specificată numai în timpul instalării "
+"pachetului"
+
+msgid "--allmatches may only be specified during package erasure"
+msgstr ""
+"opțiunea „--allmatches” poate fi specificată numai în timpul ștergerii "
+"pachetului"
+
+msgid "--allfiles may only be specified during package installation"
+msgstr ""
+"opțiunea „--allfiles” poate fi specificată numai în timpul instalării "
+"pachetului"
+
+msgid "--justdb may only be specified during package installation and erasure"
+msgstr ""
+"opțiunea „--justdb” poate fi specificată numai în timpul instalării și "
+"ștergerii pachetului"
+
+msgid ""
+"script disabling options may only be specified during package installation "
+"and erasure"
+msgstr ""
+"opțiunile de dezactivare a scripturilor pot fi specificate numai în timpul "
+"instalării și ștergerii pachetelor"
+
+msgid ""
+"trigger disabling options may only be specified during package installation "
+"and erasure"
+msgstr ""
+"opțiunile de dezactivare a declanșatorilor pot fi specificate numai în "
+"timpul instalării și ștergerii pachetului"
+
+msgid ""
+"--nodeps may only be specified during package installation, erasure, and "
+"verification"
+msgstr ""
+"opțiunea --nodeps poate fi specificată numai în timpul instalării, ștergerii "
+"și verificării pachetelor"
+
+msgid "--test may only be specified during package installation and erasure"
+msgstr ""
+"opțiunea --test poate fi specificată numai în timpul instalării și ștergerii "
+"pachetului"
+
+msgid "arguments to --root (-r) must begin with a /"
+msgstr ""
+"argumentele pentru opțiunea „--root” (-r) trebuie să înceapă cu un caracter "
+"„/”"
+
+msgid "no packages given for erase"
+msgstr "nu s-a specificat niciun pachet pentru ștergere"
+
+msgid "no packages given for install"
+msgstr "nu s-a specificat niciun pachet pentru instalare"
+
+msgid "no arguments given for query"
+msgstr "nu s-a specificat niciun argument pentru interogare"
+
+msgid "no arguments given for verify"
+msgstr "nu s-a specificat niciun argument pentru verificare"
+
+#, fuzzy
+#| msgid "create uncompressed tar file"
+msgid "create uncompressed archive"
+msgstr "creează un fișier tar necomprimat"
+
+msgid "archive format (pax|cpio)"
+msgstr ""
+
+#, c-format
+msgid "argument is not an RPM package\n"
+msgstr "argumentul nu este un pachet RPM\n"
+
+#, c-format
+msgid "error reading header from package\n"
+msgstr "eroare la citirea antetului din pachet\n"
+
+#, c-format
+msgid "cannot re-open payload: %s\n"
+msgstr "nu se poate redeschide încărcătura utilă: %s\n"
+
+msgid "initialize database"
+msgstr "inițializează baza de date"
+
+msgid "rebuild database inverted lists from installed package headers"
+msgstr ""
+"reconstruiește baza de date cu liste inversate din antetele pachetelor "
+"instalate"
+
+#, fuzzy
+#| msgid "verify database files"
+msgid "verify database"
+msgstr "verifică fișierele bazei de date"
+
+msgid "salvage database"
+msgstr "recuperează baza de date"
+
+msgid "export database to stdout header list"
+msgstr "exportă bază de date către lista de antet de la ieșirea standard"
+
+msgid "import database from stdin header list"
+msgstr "importă bază de date din lista de antet de la ieșirea standard"
+
+msgid "Database options:"
+msgstr "Opțiuni ale bazei de date:"
+
+#, c-format
+msgid "buildroot already specified, ignoring %s\n"
+msgstr "buildroot deja specificat, se ignoră %s\n"
+
+#, c-format
+msgid "build through %prep (unpack sources and apply patches) from <specfile>"
+msgstr ""
+"construiește prin %prep (despachetează sursele și aplică corecțiile) din "
+"<fișierul-spec>"
+
+msgid "<specfile>"
+msgstr "<fișierul-spec>"
+
+#, c-format
+msgid "build through %conf (%prep, then %conf) from <specfile>"
+msgstr "construiește prin %conf (%prep, apoi %conf) din <fișierul-spec>"
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <specfile>"
+msgstr ""
+"construiește prin %build (%prep, %conf, apoi compilează) din <fișierul-spec>"
+
+msgid "check build dependencies <specfile>"
+msgstr "verifică dependențele de compilare <fișierul-spec>"
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <specfile>"
+msgstr ""
+"construiește prin %install (%prep, %conf, %build, apoi instalează) din "
+"<fișierul-spec>"
+
+#, c-format
+msgid "verify %files section from <specfile>"
+msgstr "verifică secțiunea %files din <fișierul-spec>"
+
+msgid "build source and binary packages from <specfile>"
+msgstr "construiește pachetele sursă și binar din <fișierul-spec>"
+
+msgid "build binary package only from <specfile>"
+msgstr "construiește doar pachetul binar din <fișierul-spec>"
+
+msgid "build source package only from <specfile>"
+msgstr "construiește doar pachetul sursă din <fișierul-spec>"
+
+msgid ""
+"build source package only from <specfile> - calculate dynamic build requires"
+msgstr ""
+"construiește doar pachetul sursă din <fișierul-spec> - calculează cerințele "
+"pentru construirea dinamică"
+
+#, c-format
+msgid ""
+"build through %prep (unpack sources and apply patches) from <source package>"
+msgstr ""
+"construiește prin %prep (despachetează sursele și aplică corecțiile) din "
+"<pachetul sursă>"
+
+msgid "<source package>"
+msgstr "<pachetul sursă>"
+
+#, fuzzy, c-format
+#| msgid "build through %conf (%prep, then %conf) from <specfile>"
+msgid "build through %conf (%prep, then %conf) from <source package>"
+msgstr "construiește prin %conf (%prep, apoi %conf) din <fișierul-spec>"
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <source package>"
+msgstr ""
+"construiește prin %build (%prep, %conf, apoi compilează) din <pachetul sursă>"
+
+msgid "check build dependencies <source package>"
+msgstr "verifică dependențele de compilare <pachetul sursă>"
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <source "
+"package>"
+msgstr ""
+"construiește prin %install (%prep, %conf, %build, apoi instalează) din "
+"<pachetul sursă>"
+
+#, c-format
+msgid "verify %files section from <source package>"
+msgstr "verifică secțiunea %files din <pachetul sursă>"
+
+msgid "build source and binary packages from <source package>"
+msgstr "construiește pachetele sursă și binar din <pachetul sursă>"
+
+msgid "build binary package only from <source package>"
+msgstr "construiește doar pachetul binar din <pachetul sursă>"
+
+msgid "build source package only from <source package>"
+msgstr "construiește doar pachetul sursă din <pachetul sursă>"
+
+msgid ""
+"build source package only from <source package> - calculate dynamic build "
+"requires"
+msgstr ""
+"construiește doar pachetul sursă din <pachetul sursă> - calculează cerințele "
+"pentru construirea dinamică"
+
+#, c-format
+msgid "build through %prep (unpack sources and apply patches) from <tarball>"
+msgstr ""
+"construiește prin %prep (despachetează sursele și aplică corecțiile) din "
+"<arhiva-comprimată>"
+
+msgid "<tarball>"
+msgstr "<arhiva-comprimată>"
+
+#, fuzzy, c-format
+#| msgid "build through %conf (%prep, then %conf) from <specfile>"
+msgid "build through %conf (%prep, then %conf) from <tarball>"
+msgstr "construiește prin %conf (%prep, apoi %conf) din <fișierul-spec>"
+
+#, c-format
+msgid "build through %build (%prep, %conf, then compile) from <tarball>"
+msgstr ""
+"construiește prin %build (%prep, %conf, apoi compilează) din <arhiva-"
+"comprimată>"
+
+msgid "check build dependencies <tarball>"
+msgstr "verifică dependențele de compilare <arhiva-comprimată>"
+
+#, c-format
+msgid ""
+"build through %install (%prep, %conf, %build, then install) from <tarball>"
+msgstr ""
+"construiește prin %install (%prep, %conf, %build, apoi instalează) din "
+"<arhiva-comprimată>"
+
+#, c-format
+msgid "verify %files section from <tarball>"
+msgstr "verifică secțiunea %files din <arhiva-comprimată>"
+
+msgid "build source and binary packages from <tarball>"
+msgstr "construiește pachetele sursă și binar din <arhiva-comprimată>"
+
+msgid "build binary package only from <tarball>"
+msgstr "construiește doar pachetul binar din <arhiva-comprimată>"
+
+msgid "build source package only from <tarball>"
+msgstr "construiește doar pachetul sursă din <arhiva-comprimată>"
+
+msgid ""
+"build source package only from <tarball> - calculate dynamic build requires"
+msgstr ""
+"construiește doar pachetul sursă din <arhiva-comprimată> - calculează "
+"cerințele pentru construirea dinamică"
+
+msgid "build binary package from <source package>"
+msgstr "construiește pachetul binar din <pachetul sursă>"
+
+#, c-format
+msgid ""
+"build through %install (%prep, %build, then install) from <source package>"
+msgstr ""
+"construiește prin %install (%prep, %build, apoi install) din <pachetul sursă>"
+
+#, fuzzy
+#| msgid "override build root"
+msgid "override build root (DEPRECATED)"
+msgstr "suprascrie directorul-rădăcină de construcție (buildroot)"
+
+msgid "remove build tree when done"
+msgstr "elimină arborele de construcție atunci când este gata"
+
+msgid "ignore ExcludeArch: directives from spec file"
+msgstr "ignoră ExcludeArch: directivele din fișierul spec"
+
+msgid "debug file state machine"
+msgstr "depanează mașina de stare a fișierelor"
+
+msgid "do not execute any stages of the build"
+msgstr "nu execută nicio etapă a construcției"
+
+msgid "do not verify build dependencies"
+msgstr "nu verifică dependențele de construire"
+
+msgid "generate package header(s) compatible with (legacy) rpm v3 packaging"
+msgstr "generează antet(e) de pachet compatibil(e) cu pachetele rpm v3 (vechi)"
+
+#, c-format
+msgid "do not execute %clean stage of the build"
+msgstr "nu se execută etapa %clean a construirii"
+
+#, c-format
+msgid "do not execute %prep stage of the build"
+msgstr "nu execută etapa %prep a construirii"
+
+#, c-format
+msgid "do not execute %check stage of the build"
+msgstr "nu execută etapa %check a construirii"
+
+msgid "do not accept i18N msgstr's from specfile"
+msgstr "nu acceptă msgstr-urile i18N din fișierul-spec"
+
+msgid "remove sources when done"
+msgstr "elimină sursele după terminare"
+
+msgid "remove specfile when done"
+msgstr "elimină fișierul spec după terminare"
+
+msgid "skip straight to specified stage (only for c,i)"
+msgstr "trece direct la etapa specificată (numai pentru c,i)"
+
+msgid "override target platform"
+msgstr "suprascrie platforma țintă"
+
+msgid "Build options with [ <specfile> | <tarball> | <source package> ]:"
+msgstr ""
+"Opțiuni de construire cu [ <fișierul-spec> | <arhiva-comprimată> | <pachetul "
+"sursă> ]:"
+
+#, c-format
+msgid "Unable to open spec file %s: %s\n"
+msgstr "Nu s-a putut deschide fișierul spec %s: %s\n"
+
+#, c-format
+msgid "Failed to open tar pipe: %m\n"
+msgstr "Nu s-a putut deschide conducta pentru tar: %m\n"
+
+#, c-format
+msgid "Found more than one spec file in %s\n"
+msgstr "S-a găsit mai mult de un fișier spec în %s\n"
+
+#, c-format
+msgid "Failed to read spec file from %s\n"
+msgstr "Citirea fișierului spec din %s a eșuat\n"
+
+#, c-format
+msgid "Failed to rename %s to %s: %m\n"
+msgstr "Redenumirea %s în %s a eșuat: %m\n"
+
+#, c-format
+msgid "failed to stat %s: %m\n"
+msgstr "apelul stat() asupra %s a eșuat: %m\n"
+
+#, c-format
+msgid "File %s is not a regular file.\n"
+msgstr "Fișierul %s nu este un fișier obișnuit.\n"
+
+#, c-format
+msgid "File %s does not appear to be a specfile.\n"
+msgstr "Fișierul %s nu pare a fi un fișier spec.\n"
+
+#, c-format
+msgid "Building target platforms: %s\n"
+msgstr "Se construiesc platformele țintă: %s\n"
+
+#, c-format
+msgid "Building for target %s\n"
+msgstr "Se construiește pentru ținta %s\n"
+
+#, c-format
 msgid "%s: read manifest failed: %s\n"
 msgstr "%s: citirea manifestului a eșuat: %s\n"
 
 msgid "don't verify header+payload signature"
 msgstr "nu verifică semnătura antetului + încărcătura utilă"
+
+msgid "verify package signature(s)"
+msgstr "verifică semnăturile pachetului"
+
+msgid "import an armored public key"
+msgstr "importă o cheie publică blindată"
+
+#, fuzzy
+#| msgid "import an armored public key"
+msgid "export an public key"
+msgstr "importă o cheie publică blindată"
+
+msgid "don't import, but tell if it would work or not"
+msgstr "nu importă, dar informează dacă ar funcționa sau nu"
+
+#, fuzzy
+#| msgid "list keys from RPM keyring"
+msgid "Erase keys from RPM keyring"
+msgstr "listează cheile din inelul de chei RPM"
+
+msgid "list keys from RPM keyring"
+msgstr "listează cheile din inelul de chei RPM"
+
+msgid "rebuild the keyring - convert to current backend"
+msgstr ""
+
+msgid "get keys from this backend when rebuilding current backend"
+msgstr ""
+
+msgid "Keyring options:"
+msgstr "Opțiuni ale inelului de chei:"
+
+msgid "no arguments given"
+msgstr "nu s-a furnizat niciun argument"
 
 msgid "getopt string for scripts options"
 msgstr "șirul getopt pentru opțiunile scripturilor"
@@ -3414,8 +3563,166 @@ msgstr "execută instrucțiunea"
 msgid "interactive session"
 msgstr "sesiune interactivă"
 
+#, fuzzy
+#| msgid "sign package(s) files"
+msgid "sign package(s), adding a new signature"
+msgstr "semnează fișierele pachetului(elor)"
+
+#, fuzzy
+#| msgid "sign package(s) (identical to --addsign)"
+msgid "resign package(s), deleting any previous signatures"
+msgstr "semnează pachetul(ele) (identic cu --addsign)"
+
+msgid "delete package signatures"
+msgstr "șterge semnăturile pachetelor"
+
+msgid "delete IMA and fsverity file signatures"
+msgstr "șterge semnăturile fișierelor IMA și fsverity"
+
+#, fuzzy
+#| msgid "create rpm v3 header+payload signatures"
+msgid "request legacy rpm v3 header+payload signatures on v4 packages"
+msgstr "creează semnături rpm v3 pentru antet + încărcare utilă"
+
+#, fuzzy
+#| msgid "create rpm v3 header+payload signatures"
+msgid "request legacy rpm v4 header signatures on v6 packages"
+msgstr "creează semnături rpm v3 pentru antet + încărcare utilă"
+
+#, fuzzy
+#| msgid "create rpm v3 header+payload signatures"
+msgid "request rpm v6 header signature on v4 packages"
+msgstr "creează semnături rpm v3 pentru antet + încărcare utilă"
+
+msgid "sign package(s) files"
+msgstr "semnează fișierele pachetului(elor)"
+
+msgid "generate fsverity signatures for package(s) files"
+msgstr "generează semnături fsverity pentru fișierele pachetului(elor)"
+
+msgid "algorithm to use for verity signatures, default sha256"
+msgstr "algoritmul utilizat pentru semnăturile „verity”, implicit sha256"
+
+msgid "<algorithm>"
+msgstr "<algoritm>"
+
+msgid "use file signing cert <cert>"
+msgstr "utilizează certificatul de semnare a fișierului <certificat>"
+
+msgid "<cert>"
+msgstr "<certificat>"
+
+msgid "use file signing key <key>"
+msgstr "utilizează cheia de semnare a fișierului <cheie>"
+
+msgid "<key>"
+msgstr "<cheie>"
+
+msgid "prompt for file signing key password"
+msgstr "solicită parola pentru cheia de semnare a fișierului"
+
+msgid "Signature options:"
+msgstr "Opțiuni de semnătură:"
+
+#, fuzzy, c-format
+#| msgid "You must set \"%%_gpg_name\" in your macro file\n"
+msgid "You must set \"%%_openpgp_sign_id\" in your macro file\n"
+msgstr "Trebuie să definiți „%%_gpg_name” în fișierul macro\n"
+
+#, c-format
+msgid ""
+"You must set \"%%_file_signing_key\" in your macro file or on the command "
+"line with --fskpath\n"
+msgstr ""
+"Trebuie să definiți „%%_file_signing_key” în fișierul macro sau în linia de "
+"comandă cu opțiunea „--fskpath”\n"
+
+msgid "--fskpath may only be specified when signing files"
+msgstr "opțiunea „--fskpath” poate fi specificată numai la semnarea fișierelor"
+
+msgid "parse spec file(s) to stdout"
+msgstr "analizează fișierul (fișierele) spec la ieșirea standard"
+
+msgid "query spec file(s)"
+msgstr "interoghează fișierul(ele) spec"
+
+msgid "interactive macro shell"
+msgstr "shell macro interactivă"
+
+msgid "operate on binary rpms generated by spec (default)"
+msgstr "operează pe rpms binare generate de spec (implicit)"
+
+msgid "operate on binary package header(s) that would be built from spec"
+msgstr ""
+"operează pe antetul (antetele) pachetului binar care ar fi construit din spec"
+
+msgid "operate on source package header generated by spec"
+msgstr "operează pe antetul pachetului sursă generat de spec"
+
+msgid "Spec options:"
+msgstr "Opțiuni spec:"
+
+#, c-format
+msgid "RPM version %s macro shell\n"
+msgstr "Versiunea RPM %s macro shell\n"
+
+msgid "no arguments given for parse"
+msgstr "nu s-a specificat niciun argument pentru analizare"
+
 msgid "extract an archive"
 msgstr "extrage o arhivă"
 
 msgid "only print what would be done"
 msgstr "afișează doar ceea ce s-ar face (rulează în gol)"
+
+msgid "extract into a specific path"
+msgstr ""
+
+#, c-format
+#~ msgid "files over 4GB not supported by cpio, use rpm2archive instead\n"
+#~ msgstr ""
+#~ "fișierele de peste 4GB nu sunt acceptate de cpio, utilizați rpm2archive "
+#~ "în schimb\n"
+
+#~ msgid "run build in current directory"
+#~ msgstr "rulează construirea în directorul curent"
+
+#~ msgid "sign package(s)"
+#~ msgstr "semnează pachetul(ele)"
+
+#, c-format
+#~ msgid "%%{buildroot} couldn't be empty\n"
+#~ msgstr "%%{buildroot} nu poate fi gol\n"
+
+#, c-format
+#~ msgid "%%{buildroot} can not be \"/\"\n"
+#~ msgstr "%%{buildroot} nu poate fi „/”\n"
+
+#, c-format
+#~ msgid "line %d: second %%prep\n"
+#~ msgstr "linia %d: secunda %%prep\n"
+
+#~ msgid "Only absolute paths are allowed in file triggers"
+#~ msgstr "Numai rutele absolute sunt permise în declanșatoarele de fișiere"
+
+#~ msgid "disable user namespace support"
+#~ msgstr "dezactivează suportul pentru spațiul de nume al utilizatorului"
+
+#~ msgid "query/verify package(s) with package identifier"
+#~ msgstr "interoghează/verifică pachetul(ele) cu identificatorul pachetului"
+
+#~ msgid "query/verify package(s) with header identifier"
+#~ msgstr "interoghează/verifică pachetul(ele) cu identificatorul de antet"
+
+#~ msgid "Invalid symlink"
+#~ msgstr "Legătură simbolică nevalidă"
+
+#~ msgid "illegal signature type"
+#~ msgstr "tip de semnătură ilegal"
+
+#~ msgid "unsupported RPM package version"
+#~ msgstr "versiune neacceptată a pachetului RPM"
+
+#, c-format
+#~ msgid "%s%s"
+#~ msgstr "%s%s"
