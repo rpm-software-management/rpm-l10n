@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-01 14:14+0300\n"
-"PO-Revision-Date: 2025-08-23 10:45+0000\n"
+"PO-Revision-Date: 2025-09-02 17:09+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/rpm/rpm-l10n/pt_BR/>\n"
@@ -22,10 +22,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 5.13\n"
 
-#, fuzzy
-#| msgid "unable to parse %s=%s\n"
 msgid "unable to parse _buildtime macro\n"
-msgstr "incapaz de analisar %s=%s\n"
+msgstr "incapaz de analisar a macro _buildtime\n"
 
 msgid "unable to parse SOURCE_DATE_EPOCH\n"
 msgstr "incapaz de analisar SOURCE_DATE_EPOCH\n"
@@ -53,10 +51,9 @@ msgstr "Status de saída de %s inválido (%s)\n"
 msgid "Failed build dependencies:\n"
 msgstr "Falha ao construir dependências:\n"
 
-#, fuzzy, c-format
-#| msgid "failed to create directory %s: %s\n"
+#, c-format
 msgid "failed to create package build directory %s: %s\n"
-msgstr "falha ao criar o diretório %s: %s\n"
+msgstr "falha ao criar o diretório de construção de pacote %s: %s\n"
 
 #, c-format
 msgid "setting %s=%s\n"
@@ -67,16 +64,22 @@ msgid ""
 "%%source_date_epoch_from_changelog is set, but %%changelog has no entries to "
 "take a date from\n"
 msgstr ""
+"%%source_date_epoch_from_changelog está definido, mas %%changelog não tem "
+"entradas para tirar uma data\n"
 
 msgid ""
 "\n"
 "RPM build warnings:\n"
 msgstr ""
+"\n"
+"Avisos na construção do RPM:\n"
 
 msgid ""
 "\n"
 "RPM build errors:\n"
 msgstr ""
+"\n"
+"Erros na construção do RPM:\n"
 
 #, c-format
 msgid "Missing '(' in %s %s\n"
@@ -125,14 +128,13 @@ msgstr "Capacidade inválida: %s\n"
 msgid "File capability support not built in\n"
 msgstr "Suporte à capacidade de arquivo não embutida\n"
 
-#, fuzzy, c-format
-#| msgid "Missing build-id in %s\n"
+#, c-format
 msgid "Missing quote: %s\n"
-msgstr "Faltando build-id em %s\n"
+msgstr "Faltando aspas: %s\n"
 
 #, c-format
 msgid "Trailing backslash: %s\n"
-msgstr ""
+msgstr "Contrabarra ao final: %s\n"
 
 #, c-format
 msgid "File must begin with \"/\": %s\n"
@@ -143,21 +145,21 @@ msgid ""
 "%%clamp_mtime_to_source_date_epoch is deprecated, please use "
 "%%build_mtime_policy\n"
 msgstr ""
+"%%clamp_mtime_to_source_date_epoch está descontinuada, use %%"
+"build_mtime_policy\n"
 
 #, c-format
 msgid "unable to parse %s=%s\n"
 msgstr "incapaz de analisar %s=%s\n"
 
-#, fuzzy, c-format
-#| msgid "Unknown icon type: %s\n"
+#, c-format
 msgid "Unknown mtime policy '%s'\n"
-msgstr "Tipo de ícone desconhecido: %s\n"
+msgstr "Política de mtime desconhecida:\" %s\"\n"
 
-#, fuzzy, c-format
-#| msgid "Unknown file digest algorithm %u, falling back to MD5\n"
+#, c-format
 msgid "Unknown file digest algorithm %u, falling back to %u\n"
 msgstr ""
-"Algoritmo de digest %u do arquivo é desconhecido, utilizando o MD5 como "
+"Algoritmo de digest %u do arquivo é desconhecido, utilizando o %u como "
 "alternativa\n"
 
 #, c-format
@@ -253,10 +255,8 @@ msgstr "build-id encontrado em %s muito grande\n"
 msgid "failed to create directory"
 msgstr "falha ao criar o diretório"
 
-#, fuzzy
-#| msgid "Mixing main ELF and debug files in package"
 msgid "Mixing main ELF and debug files in package\n"
-msgstr "Juntando arquivos main ELF e de debug no pacote"
+msgstr "Juntando arquivos main ELF e de debug no pacote\n"
 
 #, c-format
 msgid "File needs leading \"/\": %s\n"
@@ -390,15 +390,13 @@ msgstr ""
 msgid "Finished binary package job, result %d, filename %s\n"
 msgstr "Job de pacote binário finalizado, resultado %d, nome de arquivo %s\n"
 
-#, fuzzy, c-format
-#| msgid "line %d: Error parsing %s: %s\n"
+#, c-format
 msgid "line %d: Error parsing script: %s: %s\n"
-msgstr "linha %d: Erro ao analisar %s: %s\n"
+msgstr "linha %d: Erro ao analisar o script %s: %s\n"
 
-#, fuzzy, c-format
-#| msgid "line %d: Bad option %s: %s\n"
+#, c-format
 msgid "line %d: Bad %s option %s: %s\n"
-msgstr "linha %d: Opção inválida %s: %s\n"
+msgstr "linha %d: Opção %s inválida %s: %s\n"
 
 #, c-format
 msgid "line %d: second %s\n"
@@ -2504,10 +2502,9 @@ msgstr ""
 msgid "%s: tag %u: invalid hex"
 msgstr ""
 
-#, fuzzy, c-format
-#| msgid "%s%s%s %s"
+#, c-format
 msgid "%s %s%s %s"
-msgstr "%s%s%s %s"
+msgstr "%s %s%s %s"
 
 msgid "digest"
 msgstr "digest"
@@ -2533,10 +2530,8 @@ msgstr ""
 msgid "package"
 msgstr "pacote"
 
-#, fuzzy
-#| msgid "Header "
 msgid "Header"
-msgstr "Cabeçalho "
+msgstr "Cabeçalho"
 
 msgid "Payload"
 msgstr ""
