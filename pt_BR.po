@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-01 14:14+0300\n"
-"PO-Revision-Date: 2025-09-02 17:09+0000\n"
+"PO-Revision-Date: 2025-09-02 20:22+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/rpm/rpm-l10n/pt_BR/>\n"
@@ -511,10 +511,9 @@ msgstr "O SO não está incluído: %s\n"
 msgid "%s field must be present in package: %s\n"
 msgstr "o campo %s deve estar presente no pacote: %s\n"
 
-#, fuzzy, c-format
-#| msgid "%s field must be present in package: %s\n"
+#, c-format
 msgid "%s field must be present before build in package: %s\n"
-msgstr "o campo %s deve estar presente no pacote: %s\n"
+msgstr "o campo %s deve estar presente antes da construção no pacote: %s\n"
 
 #, c-format
 msgid "Duplicate %s entries in package: %s\n"
@@ -647,7 +646,7 @@ msgstr "linha %d: Opção inválida %s de %%setup: %s\n"
 
 #, c-format
 msgid "Patch number not specified: %s\n"
-msgstr ""
+msgstr "Número do patch não especificado: %s\n"
 
 #, c-format
 msgid "Invalid patch number %s: %s\n"
@@ -684,7 +683,7 @@ msgid "It's not recommended to use '>' in Obsoletes"
 msgstr "Não é recomendável utilizar '>' em obsoletos"
 
 msgid "Trigger fired by the same package is already defined in spec file"
-msgstr ""
+msgstr "Gatilho disparado pelo mesmo pacote está definido no arquivo spec"
 
 #, c-format
 msgid "line %d: %s: %s\n"
@@ -762,15 +761,15 @@ msgstr "%s: linha %d: %s após %s\n"
 
 #, c-format
 msgid "%s:%d: bad %s condition: %s\n"
-msgstr ""
+msgstr "%s:%d: condição %s errônea: %s\n"
 
 #, c-format
 msgid "%s:%d: malformed %%include statement\n"
-msgstr ""
+msgstr "%s:%d: instrução %%include malformada\n"
 
 #, c-format
 msgid "%%patchN is obsolete, use %%patch N (or %%patch -P N): %s\n"
-msgstr ""
+msgstr "%%patchN está obsoleto, use %%patch N (ou %%patch -P N): %s\n"
 
 #, c-format
 msgid "encoding %s not supported by system\n"
@@ -801,6 +800,8 @@ msgstr "linha %d: Etiqueta desconhecida: %s\n"
 msgid ""
 "line %d: Required parametric macro %%%s not defined for buildsystem %s\n"
 msgstr ""
+"linha %d: Macro para métrica obrigatória %%%s não está definida para o "
+"sistema de construção %s\n"
 
 #, fuzzy, c-format
 #| msgid "failed to write all data to %s: %s\n"
@@ -814,14 +815,14 @@ msgstr "Não foi possível criar um arquivo temporário para %s: %s\n"
 
 #, c-format
 msgid "Section %s is not allowed after build is done!\n"
-msgstr ""
+msgstr "A seção %s não é permitida após a construção finalizar!\n"
 
 msgid "No compatible architectures found for build\n"
 msgstr "Nenhuma arquitetura compatível encontrada para a construção\n"
 
 #, c-format
 msgid "invalid rpm format %d requested, using %d\n"
-msgstr ""
+msgstr "formato de rpm inválido %d solicitado, usando %d\n"
 
 #, c-format
 msgid "Package has no %%description: %s\n"
@@ -829,11 +830,11 @@ msgstr "O pacote não tem %%description: %s\n"
 
 #, c-format
 msgid "Policy module '%s' duplicated with overlapping types\n"
-msgstr ""
+msgstr "Módulo de política \"%s\" duplicado com tipos em sobreposição\n"
 
 #, c-format
 msgid "Base modules '%s' and '%s' have overlapping types\n"
-msgstr ""
+msgstr "Módulos base \"%s\" e \"%s\" têm tipos em sobreposição\n"
 
 msgid "Failed to get policies from header\n"
 msgstr ""
