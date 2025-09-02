@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpm 4.18.90\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-01 14:14+0300\n"
-"PO-Revision-Date: 2025-08-19 14:56+0000\n"
+"PO-Revision-Date: 2025-09-02 17:09+0000\n"
 "Last-Translator: Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>\n"
 "Language-Team: Romanian <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/ro/>\n"
@@ -20,10 +20,8 @@ msgstr ""
 "20)) ? 1 : 2;\n"
 "X-Generator: Weblate 5.13\n"
 
-#, fuzzy
-#| msgid "unable to parse %s=%s\n"
 msgid "unable to parse _buildtime macro\n"
-msgstr "nu se poate analiza %s=%s\n"
+msgstr "nu se poate analiza macrocomanda _buildtime\n"
 
 msgid "unable to parse SOURCE_DATE_EPOCH\n"
 msgstr "nu se poate analiza SOURCE_DATE_EPOCH\n"
@@ -51,22 +49,21 @@ msgstr "Stare de ieșire incorectă de la %s (%s)\n"
 msgid "Failed build dependencies:\n"
 msgstr "Dependențe de construcție nesatisfăcute:\n"
 
-#, fuzzy, c-format
-#| msgid "failed to create directory %s: %s\n"
+#, c-format
 msgid "failed to create package build directory %s: %s\n"
-msgstr "crearea directorului %s a eșuat: %s\n"
+msgstr "crearea directorului de compilare a pachetului %s a eșuat: %s\n"
 
 #, c-format
 msgid "setting %s=%s\n"
 msgstr "se definește %s=%s\n"
 
-#, fuzzy, c-format
-#| msgid "source_date_epoch_from_changelog set but %%changelog is missing\n"
+#, c-format
 msgid ""
 "%%source_date_epoch_from_changelog is set, but %%changelog has no entries to "
 "take a date from\n"
 msgstr ""
-"source_date_epoch_from_changelog este definită, dar %%changelog lipsește\n"
+"%%source_date_epoch_from_changelog este definită, dar %%changelog nu are "
+"intrări din care să preia o dată\n"
 
 msgid ""
 "\n"
@@ -149,22 +146,22 @@ msgid ""
 "%%clamp_mtime_to_source_date_epoch is deprecated, please use "
 "%%build_mtime_policy\n"
 msgstr ""
+"%%clamp_mtime_to_source_date_epoch este depreciată, vă rugăm să utilizați %%"
+"build_mtime_policy\n"
 
 #, c-format
 msgid "unable to parse %s=%s\n"
 msgstr "nu se poate analiza %s=%s\n"
 
-#, fuzzy, c-format
-#| msgid "Unknown icon type: %s\n"
+#, c-format
 msgid "Unknown mtime policy '%s'\n"
-msgstr "Tip de pictogramă necunoscut: %s\n"
+msgstr "Politică necunoscută privind ora modificării „%s”\n"
 
-#, fuzzy, c-format
-#| msgid "Unknown file digest algorithm %u, falling back to MD5\n"
+#, c-format
 msgid "Unknown file digest algorithm %u, falling back to %u\n"
 msgstr ""
 "Algoritm de sumă de control de fișier necunoscut %u, se revine la algoritmul "
-"MD5\n"
+"%u\n"
 
 #, c-format
 msgid "File listed twice: %s\n"
@@ -398,24 +395,21 @@ msgid "Finished binary package job, result %d, filename %s\n"
 msgstr ""
 "Construirea pachetului binar a fost finalizată, rezultat %d, nume fișier %s\n"
 
-#, fuzzy, c-format
-#| msgid "line %d: Error parsing %s: %s\n"
+#, c-format
 msgid "line %d: Error parsing script: %s: %s\n"
-msgstr "linia %d: eroare la analizarea %s: %s\n"
+msgstr "linia %d: eroare la analizarea scriptului: %s: %s\n"
 
-#, fuzzy, c-format
-#| msgid "line %d: Bad option %s: %s\n"
+#, c-format
 msgid "line %d: Bad %s option %s: %s\n"
-msgstr "linia %d: opțiune greșită %s: %s\n"
+msgstr "linia %d: opțiune %s greșită %s: %s\n"
 
 #, c-format
 msgid "line %d: second %s\n"
 msgstr "linia %d: secunda %s\n"
 
-#, fuzzy, c-format
-#| msgid "line %d: unsupported internal script: %s\n"
+#, c-format
 msgid "line %d: append and prepend specified: %s\n"
-msgstr "linia %d: script intern neacceptat: %s\n"
+msgstr "linia %d: adăugare și adăugare la început (prepend) specificate: %s\n"
 
 #, c-format
 msgid "bogus date in %%changelog: %s\n"
@@ -521,10 +515,9 @@ msgstr "Sistemul de operare nu este inclus: %s\n"
 msgid "%s field must be present in package: %s\n"
 msgstr "Câmpul %s trebuie să fie prezent în pachet: %s\n"
 
-#, fuzzy, c-format
-#| msgid "%s field must be present in package: %s\n"
+#, c-format
 msgid "%s field must be present before build in package: %s\n"
-msgstr "Câmpul %s trebuie să fie prezent în pachet: %s\n"
+msgstr "Câmpul %s trebuie să fie prezent înainte de compilarea pachetului: %s\n"
 
 #, c-format
 msgid "Duplicate %s entries in package: %s\n"
@@ -596,10 +589,9 @@ msgstr "linia %d: format BuildArchitecture incorect: %s\n"
 msgid "line %d: Duplicate BuildArch entry: %s\n"
 msgstr "linia %d: intrare BuildArch duplicată: %s\n"
 
-#, fuzzy, c-format
-#| msgid "line %d: Only noarch subpackages are supported: %s\n"
+#, c-format
 msgid "line %d: Only noarch is allowed after the build: %s\n"
-msgstr "linia %d: doar subpachetele noarch sunt acceptate: %s\n"
+msgstr "linia %d: doar subpachetele noarch sunt permise după compilare: %s\n"
 
 #, c-format
 msgid "line %d: Only noarch subpackages are supported: %s\n"
@@ -624,17 +616,13 @@ msgstr "Pachet binar rpm găsit. Se aștepta un fișier spec!\n"
 msgid "line %d: Unknown tag: %s\n"
 msgstr "linia %d: etichetă necunoscută: %s\n"
 
-#, fuzzy, c-format
-#| msgid "line %d: Priorities are allowed only for file triggers : %s\n"
+#, c-format
 msgid "line %d: Tag not allowed after build is done: %s\n"
-msgstr ""
-"linia %d: prioritățile sunt permise numai pentru declanșatoarele de "
-"fișiere : %s\n"
+msgstr "linia %d: eticheta nu este permisă după finalizarea compilării: %s\n"
 
-#, fuzzy, c-format
-#| msgid "Invalid capability: %s\n"
+#, c-format
 msgid "Invalid buildroot: '%s'\n"
-msgstr "Capacitate nevalidă: %s\n"
+msgstr "Buildroot nevalid: %s\n"
 
 #, c-format
 msgid "No patch number %u\n"
@@ -680,11 +668,8 @@ msgstr "dependență nevalidă"
 msgid "Version required"
 msgstr "Versiunea cerută"
 
-#, fuzzy
-#| msgid "line %d: file trigger condition must begin with '/': %s"
 msgid "file trigger conditions must begin with '/'"
-msgstr ""
-"linia %d: condiția de declanșare a fișierului trebuie să înceapă cu „/”: %s"
+msgstr "condițiile de declanșare a fișierului trebuie să înceapă cu „/”"
 
 msgid "Only package names are allowed in Obsoletes"
 msgstr "Numai numele pachetelor sunt permise în Obsoletes"
@@ -783,14 +768,9 @@ msgstr "%s:%d: condiție %s incorectă: %s\n"
 msgid "%s:%d: malformed %%include statement\n"
 msgstr "%s:%d: declarație %%include prost formată\n"
 
-#, fuzzy, c-format
-#| msgid ""
-#| "%%patchN is deprecated (%i usages found), use %%patch N (or %%patch -P "
-#| "N)\n"
+#, c-format
 msgid "%%patchN is obsolete, use %%patch N (or %%patch -P N): %s\n"
-msgstr ""
-"%%patchN este depreciat (%i utilizări găsite), utilizați %%patch N (sau "
-"%%patch -P N)\n"
+msgstr "%%patchN este învechită, utilizați %%patch N (sau %%patch -P N): %s\n"
 
 #, c-format
 msgid "encoding %s not supported by system\n"
@@ -813,36 +793,38 @@ msgstr ""
 msgid "line %d doesn't belong to any section: %s\n"
 msgstr "linia %d nu aparține niciunei secțiuni: %s\n"
 
-#, fuzzy, c-format
-#| msgid "line %d: Unknown tag: %s\n"
+#, c-format
 msgid "line %d: Unknown buildsystem: %s\n"
-msgstr "linia %d: etichetă necunoscută: %s\n"
+msgstr "linia %d: sistem de construire „buildsystem” necunoscut: %s\n"
 
 #, c-format
 msgid ""
 "line %d: Required parametric macro %%%s not defined for buildsystem %s\n"
 msgstr ""
+"linia %d: macrocomanda parametrică necesară %%%s nu este definită pentru "
+"sistemul de construire „buildsystem” %s\n"
 
-#, fuzzy, c-format
-#| msgid "failed to write all data to %s: %s\n"
+#, c-format
 msgid "failed to write buildsystem %s %%%s: %s\n"
-msgstr "nu s-a reușit să se scrie toate datele în %s: %s\n"
+msgstr ""
+"nu s-a reușit scrierea sistemului de construire „buildsystem” %s %%%s: %s\n"
 
-#, fuzzy, c-format
-#| msgid "Couldn't create temporary file for %s: %s\n"
+#, c-format
 msgid "failed to create temp file for buildsystem: %s\n"
-msgstr "Nu s-a putut crea un fișier temporar pentru %s: %s\n"
+msgstr ""
+"crearea fișierului temporar pentru sistemul de construire „buildsystem” a "
+"eșuat: %s\n"
 
 #, c-format
 msgid "Section %s is not allowed after build is done!\n"
-msgstr ""
+msgstr "Secțiunea %s nu este permisă după ce construirea este finalizată!\n"
 
 msgid "No compatible architectures found for build\n"
 msgstr "Nu au fost găsite arhitecturi compatibile pentru construire\n"
 
 #, c-format
 msgid "invalid rpm format %d requested, using %d\n"
-msgstr ""
+msgstr "format rpm nevalid %d solicitat, se utilizează %d\n"
 
 #, c-format
 msgid "Package has no %%description: %s\n"
@@ -937,7 +919,7 @@ msgstr "nu s-a reușit să se scrie toate datele în %s: %s\n"
 
 #, c-format
 msgid "invalid or out of order path from generator: %s\n"
-msgstr ""
+msgstr "rută nevalidă sau în ordine defectuoasă de la generator: %s\n"
 
 msgid "Empty file classifier\n"
 msgstr "Clasificator de fișier gol\n"
@@ -972,10 +954,8 @@ msgstr "Căutarea %s a eșuat:\n"
 msgid "Deprecated external dependency generator is used!\n"
 msgstr "Este utilizat un generator de dependențe externe depreciat!\n"
 
-#, fuzzy
-#| msgid "Deprecated external dependency generator is used!\n"
 msgid "External dependency generator is incompatible with v6 packages\n"
-msgstr "Este utilizat un generator de dependențe externe depreciat!\n"
+msgstr "Generatorul de dependențe externe este incompatibil cu pachetele v6 !\n"
 
 #, c-format
 msgid "line %d: %s: package %s does not exist\n"
@@ -1107,10 +1087,9 @@ msgstr "%s%s salvat ca %s%s\n"
 msgid "%s%s created as %s%s\n"
 msgstr "%s%s creat ca %s%s\n"
 
-#, fuzzy, c-format
-#| msgid "%s %s: remove failed: %s\n"
+#, c-format
 msgid "%s %s%s: remove failed: %s\n"
-msgstr "%s %s: eliminarea a eșuat: %s\n"
+msgstr "%s %s%s: eliminarea a eșuat: %s\n"
 
 msgid "directory"
 msgstr "director"
@@ -1244,28 +1223,25 @@ msgstr "iterator de matrice utilizat cu matrice de dimensiuni diferite"
 msgid "%s: reading of public key failed.\n"
 msgstr "%s: citirea cheii publice a eșuat.\n"
 
-#, fuzzy, c-format
-#| msgid "failed to create directory %s: %s\n"
+#, c-format
 msgid "failed to create keyring directory %s: %s\n"
-msgstr "crearea directorului %s a eșuat: %s\n"
+msgstr "crearea directorului inelului de chei %s a eșuat: %s\n"
 
 #, c-format
 msgid "failed to import key: %s: %s\n"
 msgstr "nu s-a reușit să se importe cheia: %s: %s\n"
 
-#, fuzzy, c-format
-#| msgid "can't create %s lock on %s (%s)\n"
+#, c-format
 msgid "Can't create writelock for keyring at %s: %s\n"
-msgstr "nu se poate crea blocarea %s pe %s (%s)\n"
+msgstr "Nu se poate crea blocarea la scriere pentru inelul de chei la %s: %s\n"
 
 #, c-format
 msgid "Can't acquire writelock for keyring at %s\n"
-msgstr ""
+msgstr "Nu se poate obține blocarea scrierii pentru inelul de chei la %s\n"
 
-#, fuzzy, c-format
-#| msgid "%s: not an armored public key.\n"
+#, c-format
 msgid "%s is not a valid public key\n"
-msgstr "%s: nu este o cheie publică blindată.\n"
+msgstr "%s: nu este o cheie publică validă\n"
 
 #, c-format
 msgid "RPM v3 packages are deprecated: %s\n"
@@ -1628,10 +1604,9 @@ msgstr "interoghează pachetul(ele) declanșat(e) de pachet"
 msgid "rpm verify mode"
 msgstr "modul de verificare al pachetelor rpm"
 
-#, fuzzy
-#| msgid "query/verify the package(s) which obsolete a dependency"
 msgid "query/verify the package(s) which conflict with a dependency"
-msgstr "interoghează/verifică pachetul(ele) care elimină o dependență"
+msgstr ""
+"interoghează/verifică pachetul(ele) care intră în conflict cu o dependență"
 
 msgid "query/verify the package(s) which require a dependency"
 msgstr "interoghează/verifică pachetul(ele) care necesită o dependență"
@@ -2113,21 +2088,19 @@ msgstr ""
 "Număr greșit de intrări pentru eticheta %s: s-a găsit %u, dar se aștepta "
 "%u.\n"
 
-#, fuzzy, c-format
-#| msgid "Malformed data for tag %s: %u bytes found but %lu expected.\n"
+#, c-format
 msgid "Malformed data for tag %s: %u bytes found but %<PRIu64> expected.\n"
 msgstr ""
-"Date incorecte pentru eticheta %s: %u octeți găsiți dar %lu așteptați.\n"
+"Date incorecte pentru eticheta %s: %u octeți găsiți dar %<PRIu64> așteptați."
+"\n"
 
-#, fuzzy, c-format
-#| msgid "%s: base64 decode failed, len %li\n"
+#, c-format
 msgid "%s: base64 decode failed, len %zu\n"
-msgstr "%s: decodificarea base64 a eșuat, lungime %li\n"
+msgstr "%s: decodificarea base64 a eșuat, lungime %zu\n"
 
-#, fuzzy, c-format
-#| msgid "%s: base64 decode success, len %li\n"
+#, c-format
 msgid "%s: base64 decode success, len %zu\n"
-msgstr "%s: decodificare base64 reușită, lungime %li\n"
+msgstr "%s: decodificare base64 reușită, lungime %zu\n"
 
 msgid "Bad magic"
 msgstr "Magic greșit"
@@ -2156,10 +2129,8 @@ msgstr "Eroare internă"
 msgid "Archive file not in header"
 msgstr "Fișierul de arhivă nu se află în antet"
 
-#, fuzzy
-#| msgid "failed symlink"
 msgid "Unsafe symlink"
-msgstr "legătura simbolică a eșuat"
+msgstr "Legătură simbolică nesigură"
 
 msgid "File from package already exists as a directory in system"
 msgstr "Fișierul din pachet există deja ca director în sistem"
@@ -2234,10 +2205,9 @@ msgstr "pachetul %s nu poate fi repoziționat\n"
 msgid "error reading from file %s\n"
 msgstr "eroare la citirea din fișierul %s\n"
 
-#, fuzzy, c-format
-#| msgid "no package matches %s: %s\n"
+#, c-format
 msgid "package format not supported: %s\n"
-msgstr "niciun pachet nu se potrivește cu %s: %s\n"
+msgstr "formatul pachetului nu este acceptat: %s\n"
 
 #, c-format
 msgid "\"%s\" specifies multiple packages:\n"
@@ -2398,10 +2368,9 @@ msgstr "lipsește argumentul pentru %s în %s:%d\n"
 msgid "cannot open %s at %s:%d: %m\n"
 msgstr "nu se poate deschide %s din %s:%d: %m\n"
 
-#, fuzzy, c-format
-#| msgid "bad option '%s' at %s:%d\n"
+#, c-format
 msgid "Ignoring %s at %s:%d\n"
-msgstr "opțiune greșită „%s” în %s:%d\n"
+msgstr "Se ignoră %s la %s:%d\n"
 
 #, c-format
 msgid "missing architecture for %s at %s:%d\n"
@@ -2464,11 +2433,15 @@ msgstr "Format necunoscut"
 #, c-format
 msgid "erasing gpg-pubkey packages is deprecated; use rpmkeys --delete %s\n"
 msgstr ""
+"ștergerea pachetelor gpg-pubkey este depreciată; utilizați «rpmkeys --delete "
+"%s»\n"
 
 msgid ""
 "public keys can not be installed as gpg-pubkey packages; use rpmkeys --"
 "import <keyfile> for that\n"
 msgstr ""
+"cheile publice nu pot fi instalate ca pachete gpg-pubkey; utilizați «rpmkeys "
+"--import <fișier-cheie>» pentru aceasta\n"
 
 msgid "install"
 msgstr "instalează"
@@ -2502,10 +2475,9 @@ msgstr "lipsește „)” în eticheta pachetului: %s\n"
 msgid "unknown keyring type: %s, using rpmdb\n"
 msgstr "tip de inel de chei necunoscut: %s, se utilizează rpmdb\n"
 
-#, fuzzy, c-format
-#| msgid "Unknown icon type: %s\n"
+#, c-format
 msgid "unknown keyring type: %s\n"
-msgstr "Tip de pictogramă necunoscut: %s\n"
+msgstr "tip de inel de chei necunoscut: %s\n"
 
 #, c-format
 msgid "invalid package verify level %s\n"
@@ -2530,10 +2502,9 @@ msgstr "%s etichetă %u: date nevalide %p (%u)"
 msgid "%s tag %u: invalid size %u"
 msgstr "%s etichetă %u: dimensiune nevalidă %u"
 
-#, fuzzy, c-format
-#| msgid "%s: tag %u: invalid hex"
+#, c-format
 msgid "%s tag %u: invalid base64"
-msgstr "%s: etichetă %u: hexazecimal nevalid"
+msgstr "%s: etichetă %u: base64 nevalid"
 
 #, c-format
 msgid "%s tag %u: invalid OpenPGP signature"
@@ -2543,28 +2514,27 @@ msgstr "%s etichetă %u: semnătură OpenPGP nevalidă"
 msgid "%s: tag %u: invalid hex"
 msgstr "%s: etichetă %u: hexazecimal nevalid"
 
-#, fuzzy, c-format
-#| msgid "%s%s%s %s"
+#, c-format
 msgid "%s %s%s %s"
-msgstr "%s%s%s %s"
+msgstr "%s %s%s %s"
 
 msgid "digest"
 msgstr "suma de control"
 
 #, c-format
 msgid "%s OpenPGP %s"
-msgstr ""
+msgstr "%s OpenPGP %s"
 
 #, c-format
 msgid "%s OpenPGP %s %s"
-msgstr ""
+msgstr "%s OpenPGP %s %s"
 
 msgid "signature"
 msgstr "semnătură"
 
 #, c-format
 msgid ", key fingerprint: %s"
-msgstr ""
+msgstr ", amprentă de cheie: %s"
 
 msgid "header"
 msgstr "antet"
@@ -2572,15 +2542,11 @@ msgstr "antet"
 msgid "package"
 msgstr "pachet"
 
-#, fuzzy
-#| msgid "Header "
 msgid "Header"
-msgstr "Antet "
+msgstr "Antet"
 
-#, fuzzy
-#| msgid "Payload "
 msgid "Payload"
-msgstr "Încărcătura utilă "
+msgstr "Încărcătura utilă"
 
 msgid "Unable to reload signature header.\n"
 msgstr "Nu s-a putut reîncărca antetul semnăturii.\n"
@@ -2660,8 +2626,6 @@ msgstr "tip de argument de funcție neacceptat"
 msgid "syntax error in expression"
 msgstr "eroare de sintaxă în expresie"
 
-#, fuzzy
-#| msgid "unsupported funcion"
 msgid "unsupported function"
 msgstr "funcție neacceptată"
 
@@ -2775,16 +2739,17 @@ msgstr "Un %% este urmat de o macro neanalizabilă\n"
 
 #, c-format
 msgid "unexpected argument to non-parametric macro %%%s\n"
-msgstr ""
+msgstr "argument neașteptat pentru macrocomanda neparametrică %%%s\n"
 
 #, c-format
 msgid "macro value out of range for int: %<PRIu64> using %i instead.\n"
 msgstr ""
+"valoarea macrocomenzii în afara intervalului pentru un număr întreg: "
+"%<PRIu64>, se utilizează %i în schimb.\n"
 
-#, fuzzy, c-format
-#| msgid "======================== active %d empty %d\n"
+#, c-format
 msgid "======================== active %zu empty %d\n"
-msgstr "======================== %d active %d goale\n"
+msgstr "======================== %zu active %d goale\n"
 
 #, c-format
 msgid "error creating temporary file %s: %m\n"
@@ -2854,14 +2819,13 @@ msgstr "V%d %s/%s %s, ID cheie %s"
 msgid "(none)"
 msgstr "(nimic)"
 
-#, fuzzy, c-format
-#| msgid "Could not read from file %s: %s\n"
+#, c-format
 msgid "Could not find url helper: \"%s\"\n"
-msgstr "Nu s-a putut citi din fișierul %s: %s\n"
+msgstr "Nu s-a putut găsi asistentul pentru adresa URL: „%s”\n"
 
 #, c-format
 msgid "Executing url helper \"%s\" failed with status %i\n"
-msgstr ""
+msgstr "Executarea asistentului pentru adrese URL „%s” a eșuat cu starea %i\n"
 
 #, c-format
 msgid "%s: Fwrite failed: %s\n"
@@ -2875,15 +2839,13 @@ msgstr "%s: fread() a eșuat: %s\n"
 msgid "%s: Fflush failed: %s\n"
 msgstr "%s: fflush() a eșuat: %s\n"
 
-#, fuzzy, c-format
-#| msgid "reading symlink %s failed: %s\n"
+#, c-format
 msgid "Expanding signing macro %s failed\n"
-msgstr "citirea legăturii simbolice %s a eșuat: %s\n"
+msgstr "Extinderea macrocomenzii de semnare %s a eșuat\n"
 
-#, fuzzy, c-format
-#| msgid "Invalid %s token: %s\n"
+#, c-format
 msgid "Invalid sign command: %s\n"
-msgstr "Simbol %s nevalid: %s\n"
+msgstr "Comandă de semnare nevalidă: %s\n"
 
 #, c-format
 msgid "Could not create pipe for signing: %m\n"
@@ -2908,25 +2870,21 @@ msgstr "Nu s-a putut scrie în conductă\n"
 msgid "Could not read from file %s: %s\n"
 msgstr "Nu s-a putut citi din fișierul %s: %s\n"
 
-#, fuzzy, c-format
-#| msgid "gpg waitpid failed (%s)\n"
+#, c-format
 msgid "%s waitpid failed (%s)\n"
-msgstr "waitpid() gpg a eșuat (%s)\n"
+msgstr "waitpid() %s a eșuat (%s)\n"
 
-#, fuzzy, c-format
-#| msgid "gpg exec failed (%d)\n"
+#, c-format
 msgid "%s exec failed (%d)\n"
-msgstr "execuția gpg a eșuat (%d)\n"
+msgstr "execuția %s a eșuat (%d)\n"
 
-#, fuzzy, c-format
-#| msgid "gpg failed to write signature\n"
+#, c-format
 msgid "failed to write signature: %s\n"
-msgstr "gpg a eșuat la scrierea semnăturii\n"
+msgstr "scrierea semnăturii a eșuat: %s\n"
 
-#, fuzzy, c-format
-#| msgid "unable to read the signature\n"
+#, c-format
 msgid "unable to read the signature: %s\n"
-msgstr "nu s- a putut citi semnătura\n"
+msgstr "nu s- a putut citi semnătura: %s\n"
 
 msgid "Unsupported OpenPGP signature\n"
 msgstr "Semnătură OpenPGP neacceptată\n"
@@ -2939,10 +2897,10 @@ msgstr "Algoritm de sumă de control OpenPGP neacceptat %u\n"
 msgid "Deprecated OpenPGP signature version %d\n"
 msgstr "Versiune de semnătură OpenPGP învechită %d\n"
 
-#, fuzzy, c-format
-#| msgid "Unsupported OpenPGP pubkey algorithm %u\n"
+#, c-format
 msgid "Unsupported OpenPGP pubkey algorithm %u for rpm v3/v4 signatures\n"
-msgstr "Algoritm de cheie publică OpenPGP neacceptat %u\n"
+msgstr ""
+"Algoritm de cheie publică OpenPGP neacceptat %u pentru semnături rpm v3/v4\n"
 
 msgid "file signing support not built in\n"
 msgstr "suportul pentru semnarea fișierelor nu este integrat\n"
@@ -2969,43 +2927,37 @@ msgstr "%s: rpmReadSignature a eșuat: %s"
 msgid "%s: headerRead failed: %s\n"
 msgstr "%s: headerRead a eșuat: %s\n"
 
-#, fuzzy, c-format
-#| msgid "Cannot sign RPM v3 packages\n"
+#, c-format
 msgid "Cannot sign RPM v3 packages: %s\n"
-msgstr "Nu se pot semna pachetele RPM v3\n"
+msgstr "Nu se pot semna pachetele RPM v3: %s\n"
 
-#, fuzzy, c-format
-#| msgid "generate fsverity signatures for package(s) files"
+#, c-format
 msgid "not generating v3 signature for v6 package: %s\n"
-msgstr "generează semnături fsverity pentru fișierele pachetului(elor)"
+msgstr "nu se generează semnătura v3 pentru pachetul v6: %s\n"
 
 #, c-format
 msgid "File signatures not applicable to src.rpm: %s\n"
-msgstr ""
+msgstr "Semnăturile fișierelor nu se aplică la src.rpm: %s\n"
 
-#, fuzzy, c-format
-#| msgid "Could not seek in file %s: %s\n"
+#, c-format
 msgid "Could not get a file size of %s\n"
-msgstr "Nu s-a putut căuta în fișierul %s: %s\n"
+msgstr "Nu s-a putut obține dimensiunea fișierului din %s\n"
 
-#, fuzzy, c-format
-#| msgid "%s already contains identical signature, skipping\n"
+#, c-format
 msgid "%s already contains an identical signature, skipping\n"
 msgstr "%s conține deja o semnătură identică, se omite\n"
 
-#, fuzzy, c-format
-#| msgid "%s already contains identical signature, skipping\n"
+#, c-format
 msgid "%s already contains a legacy signature\n"
-msgstr "%s conține deja o semnătură identică, se omite\n"
+msgstr "%s conține deja o semnătură veche\n"
 
 #, c-format
 msgid "%s: rpmWriteSignature failed: %s\n"
 msgstr "%s: rpmWriteSignature a eșuat: %s\n"
 
-#, fuzzy, c-format
-#| msgid "rpmMkTemp failed\n"
+#, c-format
 msgid "rpmMkTemp failed: %s\n"
-msgstr "rpmMkTemp a eșuat\n"
+msgstr "rpmMkTemp a eșuat: %s\n"
 
 #, c-format
 msgid "%s: failed to copy rpm lead: %s\n"
@@ -3213,13 +3165,11 @@ msgstr "nu s-a specificat niciun argument pentru interogare"
 msgid "no arguments given for verify"
 msgstr "nu s-a specificat niciun argument pentru verificare"
 
-#, fuzzy
-#| msgid "create uncompressed tar file"
 msgid "create uncompressed archive"
-msgstr "creează un fișier tar necomprimat"
+msgstr "creează o arhivă necomprimată"
 
 msgid "archive format (pax|cpio)"
-msgstr ""
+msgstr "format de arhivă (pax|cpio)"
 
 #, c-format
 msgid "argument is not an RPM package\n"
@@ -3241,10 +3191,8 @@ msgstr ""
 "reconstruiește baza de date cu liste inversate din antetele pachetelor "
 "instalate"
 
-#, fuzzy
-#| msgid "verify database files"
 msgid "verify database"
-msgstr "verifică fișierele bazei de date"
+msgstr "verifică baza de date"
 
 msgid "salvage database"
 msgstr "recuperează baza de date"
@@ -3319,10 +3267,9 @@ msgstr ""
 msgid "<source package>"
 msgstr "<pachetul sursă>"
 
-#, fuzzy, c-format
-#| msgid "build through %conf (%prep, then %conf) from <specfile>"
+#, c-format
 msgid "build through %conf (%prep, then %conf) from <source package>"
-msgstr "construiește prin %conf (%prep, apoi %conf) din <fișierul-spec>"
+msgstr "construiește prin %conf (%prep, apoi %conf) din <pachetul sursă>"
 
 #, c-format
 msgid "build through %build (%prep, %conf, then compile) from <source package>"
@@ -3369,10 +3316,9 @@ msgstr ""
 msgid "<tarball>"
 msgstr "<arhiva-comprimată>"
 
-#, fuzzy, c-format
-#| msgid "build through %conf (%prep, then %conf) from <specfile>"
+#, c-format
 msgid "build through %conf (%prep, then %conf) from <tarball>"
-msgstr "construiește prin %conf (%prep, apoi %conf) din <fișierul-spec>"
+msgstr "construiește prin %conf (%prep, apoi %conf) din <arhiva-comprimată>"
 
 #, c-format
 msgid "build through %build (%prep, %conf, then compile) from <tarball>"
@@ -3418,10 +3364,8 @@ msgid ""
 msgstr ""
 "construiește prin %install (%prep, %build, apoi install) din <pachetul sursă>"
 
-#, fuzzy
-#| msgid "override build root"
 msgid "override build root (DEPRECATED)"
-msgstr "suprascrie directorul-rădăcină de construcție (buildroot)"
+msgstr "suprascrie directorul-rădăcină de construcție (buildroot) (DEPRECIATĂ)"
 
 msgid "remove build tree when done"
 msgstr "elimină arborele de construcție atunci când este gata"
@@ -3526,27 +3470,25 @@ msgstr "verifică semnăturile pachetului"
 msgid "import an armored public key"
 msgstr "importă o cheie publică blindată"
 
-#, fuzzy
-#| msgid "import an armored public key"
 msgid "export an public key"
-msgstr "importă o cheie publică blindată"
+msgstr "exportă o cheie publică"
 
 msgid "don't import, but tell if it would work or not"
 msgstr "nu importă, dar informează dacă ar funcționa sau nu"
 
-#, fuzzy
-#| msgid "list keys from RPM keyring"
 msgid "Erase keys from RPM keyring"
-msgstr "listează cheile din inelul de chei RPM"
+msgstr "Șterge cheile din inelul de chei RPM"
 
 msgid "list keys from RPM keyring"
 msgstr "listează cheile din inelul de chei RPM"
 
 msgid "rebuild the keyring - convert to current backend"
-msgstr ""
+msgstr "reconstruiește cheia - convertește la motorul de criptare actual"
 
 msgid "get keys from this backend when rebuilding current backend"
 msgstr ""
+"obține cheile din acest motor de criptare atunci când reconstruiește motorul "
+"de criptare actual"
 
 msgid "Keyring options:"
 msgstr "Opțiuni ale inelului de chei:"
@@ -3563,15 +3505,11 @@ msgstr "execută instrucțiunea"
 msgid "interactive session"
 msgstr "sesiune interactivă"
 
-#, fuzzy
-#| msgid "sign package(s) files"
 msgid "sign package(s), adding a new signature"
-msgstr "semnează fișierele pachetului(elor)"
+msgstr "semnează pachetul(ele), adăugând o semnătură nouă"
 
-#, fuzzy
-#| msgid "sign package(s) (identical to --addsign)"
 msgid "resign package(s), deleting any previous signatures"
-msgstr "semnează pachetul(ele) (identic cu --addsign)"
+msgstr "resemnează pachetul (pachetele), ștergând orice semnături anterioare"
 
 msgid "delete package signatures"
 msgstr "șterge semnăturile pachetelor"
@@ -3579,20 +3517,15 @@ msgstr "șterge semnăturile pachetelor"
 msgid "delete IMA and fsverity file signatures"
 msgstr "șterge semnăturile fișierelor IMA și fsverity"
 
-#, fuzzy
-#| msgid "create rpm v3 header+payload signatures"
 msgid "request legacy rpm v3 header+payload signatures on v4 packages"
-msgstr "creează semnături rpm v3 pentru antet + încărcare utilă"
+msgstr ""
+"solicită semnături vechi de antet+încărcătură utilă rpm v3 pe pachetele v4"
 
-#, fuzzy
-#| msgid "create rpm v3 header+payload signatures"
 msgid "request legacy rpm v4 header signatures on v6 packages"
-msgstr "creează semnături rpm v3 pentru antet + încărcare utilă"
+msgstr "solicită semnături vechi de antet rpm v4 pe pachetele v6"
 
-#, fuzzy
-#| msgid "create rpm v3 header+payload signatures"
 msgid "request rpm v6 header signature on v4 packages"
-msgstr "creează semnături rpm v3 pentru antet + încărcare utilă"
+msgstr "solicită semnătura antetului rpm v6 pe pachetele v4"
 
 msgid "sign package(s) files"
 msgstr "semnează fișierele pachetului(elor)"
@@ -3624,10 +3557,9 @@ msgstr "solicită parola pentru cheia de semnare a fișierului"
 msgid "Signature options:"
 msgstr "Opțiuni de semnătură:"
 
-#, fuzzy, c-format
-#| msgid "You must set \"%%_gpg_name\" in your macro file\n"
+#, c-format
 msgid "You must set \"%%_openpgp_sign_id\" in your macro file\n"
-msgstr "Trebuie să definiți „%%_gpg_name” în fișierul macro\n"
+msgstr "Trebuie să definiți „%%_openpgp_sign_id” în fișierul macro\n"
 
 #, c-format
 msgid ""
@@ -3676,7 +3608,7 @@ msgid "only print what would be done"
 msgstr "afișează doar ceea ce s-ar face (rulează în gol)"
 
 msgid "extract into a specific path"
-msgstr ""
+msgstr "extrage într-o rută specifică"
 
 #, c-format
 #~ msgid "files over 4GB not supported by cpio, use rpm2archive instead\n"
