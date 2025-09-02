@@ -13,8 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-01 14:14+0300\n"
 "PO-Revision-Date: 2025-09-02 17:09+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/sv/>\n"
 "Language: sv\n"
@@ -24,10 +23,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.13\n"
 
-#, fuzzy
-#| msgid "unable to parse %s=%s\n"
 msgid "unable to parse _buildtime macro\n"
-msgstr "kan inte tolka %s=%s\n"
+msgstr "kan inte tolka makrot _buildtime\n"
 
 msgid "unable to parse SOURCE_DATE_EPOCH\n"
 msgstr "kan inte tolka SOURCE_DATE_EPOCH\n"
@@ -55,21 +52,21 @@ msgstr "Dålig slutstatus från %s (%s)\n"
 msgid "Failed build dependencies:\n"
 msgstr "Ouppfyllda byggberoenden:\n"
 
-#, fuzzy, c-format
-#| msgid "failed to create directory %s: %s\n"
+#, c-format
 msgid "failed to create package build directory %s: %s\n"
-msgstr "misslyckades att skapa katalogen %s: %s\n"
+msgstr "misslyckades att skapa paketbyggeskatalogen %s: %s\n"
 
 #, c-format
 msgid "setting %s=%s\n"
 msgstr "sätter %s=%s\n"
 
-#, fuzzy, c-format
-#| msgid "source_date_epoch_from_changelog set but %%changelog is missing\n"
+#, c-format
 msgid ""
 "%%source_date_epoch_from_changelog is set, but %%changelog has no entries to "
 "take a date from\n"
-msgstr "source_date_epoch_from_changelog inställd men %%changelog saknas\n"
+msgstr ""
+"%%source_date_epoch_from_changelog är inställt, men %%changelog har inga "
+"poster att ta datumet ifrån\n"
 
 msgid ""
 "\n"
@@ -149,20 +146,20 @@ msgid ""
 "%%clamp_mtime_to_source_date_epoch is deprecated, please use "
 "%%build_mtime_policy\n"
 msgstr ""
+"%%clamp_mtime_to_source_date_epoch är föråldrat, använd %%"
+"build_mtime_policy\n"
 
 #, c-format
 msgid "unable to parse %s=%s\n"
 msgstr "kan inte tolka %s=%s\n"
 
-#, fuzzy, c-format
-#| msgid "Unknown icon type: %s\n"
+#, c-format
 msgid "Unknown mtime policy '%s'\n"
-msgstr "Okänd ikontyp: %s\n"
+msgstr "Okänd mtime-policy ”%s”\n"
 
-#, fuzzy, c-format
-#| msgid "Unknown file digest algorithm %u, falling back to MD5\n"
+#, c-format
 msgid "Unknown file digest algorithm %u, falling back to %u\n"
-msgstr "Okänd filkontrollsummealgoritm %u, faller tillbaka på MD5\n"
+msgstr "Okänd filkontrollsummealgoritm %u, faller tillbaka på %u\n"
 
 #, c-format
 msgid "File listed twice: %s\n"
@@ -389,23 +386,21 @@ msgstr "Kunde inte generera utfilnamn för paketet %s: %s\n"
 msgid "Finished binary package job, result %d, filename %s\n"
 msgstr "Avslutade binärt paketjobb, resultat %d, filnamn %s\n"
 
-#, fuzzy, c-format
-#| msgid "line %d: Error parsing %s: %s\n"
+#, c-format
 msgid "line %d: Error parsing script: %s: %s\n"
-msgstr "rad %d: Fel vid tolkning av %s: %s\n"
+msgstr "rad %d: Fel vid tolkning av skriptet %s: %s\n"
 
 #, c-format
 msgid "line %d: Bad %s option %s: %s\n"
-msgstr "rad %d: otillåten flagga %s: %s\n"
+msgstr "rad %d: otillåten %s-flagga %s: %s\n"
 
 #, c-format
 msgid "line %d: second %s\n"
 msgstr "rad %d: andra %s\n"
 
-#, fuzzy, c-format
-#| msgid "line %d: unsupported internal script: %s\n"
+#, c-format
 msgid "line %d: append and prepend specified: %s\n"
-msgstr "rad %d: ej stött internt skript: %s\n"
+msgstr "rad %d: append och prepend angivna: %s\n"
 
 #, c-format
 msgid "bogus date in %%changelog: %s\n"
@@ -511,10 +506,9 @@ msgstr "OS är inte medtaget: %s\n"
 msgid "%s field must be present in package: %s\n"
 msgstr "%s-fält måste finnas med i paketet: %s\n"
 
-#, fuzzy, c-format
-#| msgid "%s field must be present in package: %s\n"
+#, c-format
 msgid "%s field must be present before build in package: %s\n"
-msgstr "%s-fält måste finnas med i paketet: %s\n"
+msgstr "%s-fält måste finnas före bygget i paketet: %s\n"
 
 #, c-format
 msgid "Duplicate %s entries in package: %s\n"
@@ -586,10 +580,9 @@ msgstr "rad %d: Felaktigt BuildArchitecture-format: %s\n"
 msgid "line %d: Duplicate BuildArch entry: %s\n"
 msgstr "rad %d: dubblerad BuildArch-post: %s\n"
 
-#, fuzzy, c-format
-#| msgid "line %d: Only noarch subpackages are supported: %s\n"
+#, c-format
 msgid "line %d: Only noarch is allowed after the build: %s\n"
-msgstr "rad %d: Endast noarch-underpaket stöds: %s\n"
+msgstr "rad %d: Endast noarch är tillåtet efter bygget: %s\n"
 
 #, c-format
 msgid "line %d: Only noarch subpackages are supported: %s\n"
@@ -614,15 +607,13 @@ msgstr "Binärt rpm-paket hittat. Spec-fil förväntades!\n"
 msgid "line %d: Unknown tag: %s\n"
 msgstr "rad %d: Okänd tagg: %s\n"
 
-#, fuzzy, c-format
-#| msgid "line %d: Priorities are allowed only for file triggers : %s\n"
+#, c-format
 msgid "line %d: Tag not allowed after build is done: %s\n"
-msgstr "rad %d: prioriteter är endast tillåta för filutlösare: %s\n"
+msgstr "rad %d: tag är inte tillåtet efter att bygget är gjort: %s\n"
 
-#, fuzzy, c-format
-#| msgid "Invalid capability: %s\n"
+#, c-format
 msgid "Invalid buildroot: '%s'\n"
-msgstr "Ogiltig förmåga (capability): %s\n"
+msgstr "Ogiltig byggrot: ”%s”\n"
 
 #, c-format
 msgid "No patch number %u\n"
@@ -667,10 +658,8 @@ msgstr "ogiltigt beroende"
 msgid "Version required"
 msgstr "Version krävs"
 
-#, fuzzy
-#| msgid "line %d: file trigger condition must begin with '/': %s"
 msgid "file trigger conditions must begin with '/'"
-msgstr "rad %d: filtriggervillkor måste börja med ”/”: %s"
+msgstr "filutlösarvillkor måste börja med ”/”"
 
 msgid "Only package names are allowed in Obsoletes"
 msgstr "Endast paketnamn är tillåta i Obsoletes"
@@ -764,14 +753,9 @@ msgstr "%s:%d: felaktigt %s-villkor: %s\n"
 msgid "%s:%d: malformed %%include statement\n"
 msgstr "%s:%d: felformaterad %%include-sats\n"
 
-#, fuzzy, c-format
-#| msgid ""
-#| "%%patchN is deprecated (%i usages found), use %%patch N (or %%patch -P "
-#| "N)\n"
+#, c-format
 msgid "%%patchN is obsolete, use %%patch N (or %%patch -P N): %s\n"
-msgstr ""
-"%%patchN är föråldrat (%i användningar hittade), använd %%patch N (eller "
-"%%patch -P N)\n"
+msgstr "%%patchN är föråldrat, använd %%patch N (eller %%patch -P N): %s\n"
 
 #, c-format
 msgid "encoding %s not supported by system\n"
@@ -793,36 +777,35 @@ msgstr "rad %d: %%end förväntades inte här, ingen sektion att avsluta: %s\n"
 msgid "line %d doesn't belong to any section: %s\n"
 msgstr "rad %d tillhör inte någon sektion: %s\n"
 
-#, fuzzy, c-format
-#| msgid "line %d: Unknown tag: %s\n"
+#, c-format
 msgid "line %d: Unknown buildsystem: %s\n"
-msgstr "rad %d: Okänd tagg: %s\n"
+msgstr "rad %d: Okänt byggsystem: %s\n"
 
 #, c-format
 msgid ""
 "line %d: Required parametric macro %%%s not defined for buildsystem %s\n"
 msgstr ""
+"rad %d: nödvändigt parametriserat makro %%%s är inte definierat för "
+"byggsystemet %s\n"
 
-#, fuzzy, c-format
-#| msgid "failed to write all data to %s: %s\n"
+#, c-format
 msgid "failed to write buildsystem %s %%%s: %s\n"
-msgstr "misslyckades med att skriva all data till %s: %s\n"
+msgstr "misslyckades med att skriva byggsystem %s %%%s: %s\n"
 
-#, fuzzy, c-format
-#| msgid "Couldn't create temporary file for %s: %s\n"
+#, c-format
 msgid "failed to create temp file for buildsystem: %s\n"
-msgstr "Kunde inte skapa temporärfil för %s: %s\n"
+msgstr "misslyckades med att skapa temporärfil för byggsystemet: %s\n"
 
 #, c-format
 msgid "Section %s is not allowed after build is done!\n"
-msgstr ""
+msgstr "Avsnittet %s är inte tillåtet efter att bygget är gjort!\n"
 
 msgid "No compatible architectures found for build\n"
 msgstr "Hittade inga kompatibla arkitekturer att bygga\n"
 
 #, c-format
 msgid "invalid rpm format %d requested, using %d\n"
-msgstr ""
+msgstr "felaktigt rpm-format %d begärt, använder %d\n"
 
 #, c-format
 msgid "Package has no %%description: %s\n"
@@ -1812,7 +1795,7 @@ msgstr "post %u kunde inte läsas\n"
 
 #, c-format
 msgid "package %s is not installed\n"
-msgstr "paket %s är inte installerat\n"
+msgstr "paketet %s är inte installerat\n"
 
 #, c-format
 msgid "unknown tag: \"%s\"\n"
@@ -2257,7 +2240,7 @@ msgstr "paket %s är redan installerat"
 
 #, c-format
 msgid "package %s is not installed"
-msgstr "paket %s är inte installerat"
+msgstr "paketet %s är inte installerat"
 
 #, c-format
 msgid "path %s in package %s is not relocatable"
