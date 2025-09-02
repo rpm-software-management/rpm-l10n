@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-01 14:14+0300\n"
-"PO-Revision-Date: 2025-09-02 17:09+0000\n"
+"PO-Revision-Date: 2025-09-02 20:22+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/uk/>\n"
@@ -801,7 +801,7 @@ msgstr ""
 
 #, c-format
 msgid "failed to write buildsystem %s %%%s: %s\n"
-msgstr "Не вдалося записати систему збирання %s: %s\n"
+msgstr "Не вдалося записати систему збирання %s %%%s: %s\n"
 
 #, c-format
 msgid "failed to create temp file for buildsystem: %s\n"
@@ -2086,8 +2086,8 @@ msgstr ""
 #, c-format
 msgid "Malformed data for tag %s: %u bytes found but %<PRIu64> expected.\n"
 msgstr ""
-"Помилкове форматування даних для мітки %s: виявлено %<PRIu64> байтів, мало "
-"бути — %lu.\n"
+"Помилкове форматування даних для мітки %s: виявлено %u, але мало бути "
+"%<PRIu64>.\n"
 
 #, c-format
 msgid "%s: base64 decode failed, len %zu\n"
@@ -2805,14 +2805,15 @@ msgstr "V%d %s/%s %s, ід. ключа %s"
 msgid "(none)"
 msgstr "(нічого)"
 
-#, fuzzy, c-format
-#| msgid "Could not read from file %s: %s\n"
+#, c-format
 msgid "Could not find url helper: \"%s\"\n"
-msgstr "Не вдалося виконати читання з файла %s: %s\n"
+msgstr "Не вдалося знайти допоміжний засіб обробки адрес: «%s»\n"
 
 #, c-format
 msgid "Executing url helper \"%s\" failed with status %i\n"
 msgstr ""
+"Виконання допоміжного засобу обробки адрес «%s» завершилося помилкою із "
+"станом %i\n"
 
 #, c-format
 msgid "%s: Fwrite failed: %s\n"
@@ -2826,15 +2827,13 @@ msgstr "%s: помилка fread: %s\n"
 msgid "%s: Fflush failed: %s\n"
 msgstr "%s: помилка Fflush: %s\n"
 
-#, fuzzy, c-format
-#| msgid "reading symlink %s failed: %s\n"
+#, c-format
 msgid "Expanding signing macro %s failed\n"
-msgstr "під час спроби читання символічного посилання %s сталася помилка: %s\n"
+msgstr "Не вдалося розгорнути макрос підписування %s\n"
 
-#, fuzzy, c-format
-#| msgid "Invalid %s token: %s\n"
+#, c-format
 msgid "Invalid sign command: %s\n"
-msgstr "Некоректний елемент %s: %s\n"
+msgstr "Некоректна команда підписування: %s\n"
 
 #, c-format
 msgid "Could not create pipe for signing: %m\n"
@@ -2859,25 +2858,21 @@ msgstr "Не вдалося виконати запис до каналу\n"
 msgid "Could not read from file %s: %s\n"
 msgstr "Не вдалося виконати читання з файла %s: %s\n"
 
-#, fuzzy, c-format
-#| msgid "gpg waitpid failed (%s)\n"
+#, c-format
 msgid "%s waitpid failed (%s)\n"
-msgstr "помилка waitpid gpg (%s)\n"
+msgstr "помилка waitpid %s (%s)\n"
 
-#, fuzzy, c-format
-#| msgid "gpg exec failed (%d)\n"
+#, c-format
 msgid "%s exec failed (%d)\n"
-msgstr "помилка виконання gpg (%d)\n"
+msgstr "не вдалося виконати %s (%d)\n"
 
-#, fuzzy, c-format
-#| msgid "gpg failed to write signature\n"
+#, c-format
 msgid "failed to write signature: %s\n"
-msgstr "gpg не вдалося записати підпис\n"
+msgstr "не вдалося записати підпис: %s\n"
 
-#, fuzzy, c-format
-#| msgid "unable to read the signature\n"
+#, c-format
 msgid "unable to read the signature: %s\n"
-msgstr "не вдалося прочитати підпис\n"
+msgstr "не вдалося прочитати підпис: %s\n"
 
 msgid "Unsupported OpenPGP signature\n"
 msgstr "Непідтримуваний підпис OpenPGP\n"
@@ -2890,10 +2885,11 @@ msgstr "Непідтримуваний алгоритм хешування OpenP
 msgid "Deprecated OpenPGP signature version %d\n"
 msgstr "Застаріла версія підпису OpenPGP %d\n"
 
-#, fuzzy, c-format
-#| msgid "Unsupported OpenPGP pubkey algorithm %u\n"
+#, c-format
 msgid "Unsupported OpenPGP pubkey algorithm %u for rpm v3/v4 signatures\n"
-msgstr "Непідтримуваний алгоритм обчислення відкритого ключа OpenPGP, %u\n"
+msgstr ""
+"Непідтримуваний алгоритм обчислення відкритого ключа OpenPGP, %u, для "
+"підписів rpm версій 3 і 4\n"
 
 msgid "file signing support not built in\n"
 msgstr "підтримку підписування файлів не зібрано\n"
@@ -2920,43 +2916,37 @@ msgstr "%s: помилка rpmReadSignature: %s"
 msgid "%s: headerRead failed: %s\n"
 msgstr "%s: помилка headerRead: %s\n"
 
-#, fuzzy, c-format
-#| msgid "Cannot sign RPM v3 packages\n"
+#, c-format
 msgid "Cannot sign RPM v3 packages: %s\n"
-msgstr "Підписування пакунків RPM версії 3 неможливе\n"
+msgstr "Підписування пакунків RPM версії 3 неможливе: %s\n"
 
-#, fuzzy, c-format
-#| msgid "generate fsverity signatures for package(s) files"
+#, c-format
 msgid "not generating v3 signature for v6 package: %s\n"
-msgstr "створити підписи fsverity для файлів пакунків"
+msgstr "не створюємо підпис версії 3 для пакунка версії 6: %s\n"
 
 #, c-format
 msgid "File signatures not applicable to src.rpm: %s\n"
-msgstr ""
+msgstr "Підписування файлів не застосовне до src.rpm: %s\n"
 
-#, fuzzy, c-format
-#| msgid "Could not seek in file %s: %s\n"
+#, c-format
 msgid "Could not get a file size of %s\n"
-msgstr "Не вдалося виконати позиціювання у файлі %s: %s\n"
+msgstr "Не вдалося отримати розмір файла %s\n"
 
-#, fuzzy, c-format
-#| msgid "%s already contains identical signature, skipping\n"
+#, c-format
 msgid "%s already contains an identical signature, skipping\n"
 msgstr "%s вже містить ідентичний підпис, пропускаємо\n"
 
-#, fuzzy, c-format
-#| msgid "%s already contains identical signature, skipping\n"
+#, c-format
 msgid "%s already contains a legacy signature\n"
-msgstr "%s вже містить ідентичний підпис, пропускаємо\n"
+msgstr "%s вже містить застарілий підпис\n"
 
 #, c-format
 msgid "%s: rpmWriteSignature failed: %s\n"
 msgstr "%s: помилка rpmWriteSignature: %s\n"
 
-#, fuzzy, c-format
-#| msgid "rpmMkTemp failed\n"
+#, c-format
 msgid "rpmMkTemp failed: %s\n"
-msgstr "помилка rpmMkTemp\n"
+msgstr "помилка rpmMkTemp: %s\n"
 
 #, c-format
 msgid "%s: failed to copy rpm lead: %s\n"
@@ -3136,13 +3126,11 @@ msgstr "не вказано аргументів запиту"
 msgid "no arguments given for verify"
 msgstr "не вказано аргументів перевірки"
 
-#, fuzzy
-#| msgid "create uncompressed tar file"
 msgid "create uncompressed archive"
-msgstr "створити нестиснений файл tar"
+msgstr "створити нестиснений архів"
 
 msgid "archive format (pax|cpio)"
-msgstr ""
+msgstr "формат архіву (pax|cpio)"
 
 #, c-format
 msgid "argument is not an RPM package\n"
@@ -3164,10 +3152,8 @@ msgstr ""
 "перебудувати зворотні списки бази даних на основі заголовків встановлених "
 "пакунків"
 
-#, fuzzy
-#| msgid "verify database files"
 msgid "verify database"
-msgstr "перевірити файли бази даних"
+msgstr "перевірити базу даних"
 
 msgid "salvage database"
 msgstr "врятувати базу даних"
@@ -3244,11 +3230,10 @@ msgstr ""
 msgid "<source package>"
 msgstr "<пакунок з кодами>"
 
-#, fuzzy, c-format
-#| msgid "build through %conf (%prep, then %conf) from <specfile>"
+#, c-format
 msgid "build through %conf (%prep, then %conf) from <source package>"
 msgstr ""
-"виконати аж до команди %conf (%prep, потім %conf) з <файл специфікації>"
+"виконати аж до команди %conf (%prep, потім %conf) з <файла початкового коду>"
 
 #, c-format
 msgid "build through %build (%prep, %conf, then compile) from <source package>"
@@ -3299,11 +3284,9 @@ msgstr ""
 msgid "<tarball>"
 msgstr "<архів tar>"
 
-#, fuzzy, c-format
-#| msgid "build through %conf (%prep, then %conf) from <specfile>"
+#, c-format
 msgid "build through %conf (%prep, then %conf) from <tarball>"
-msgstr ""
-"виконати аж до команди %conf (%prep, потім %conf) з <файл специфікації>"
+msgstr "виконати аж до команди %conf (%prep, потім %conf) з <архів tar>"
 
 #, c-format
 msgid "build through %build (%prep, %conf, then compile) from <tarball>"
@@ -3349,10 +3332,8 @@ msgstr ""
 "виконати аж до команди %install (%prep, %build, потім встановити) з <пакунка "
 "з кодами>"
 
-#, fuzzy
-#| msgid "override build root"
 msgid "override build root (DEPRECATED)"
-msgstr "перевизначити кореневий каталог збирання"
+msgstr "перевизначити кореневий каталог збирання (ЗАСТАРІЛЕ)"
 
 msgid "remove build tree when done"
 msgstr "вилучити ієрархію каталогу збирання після завершення збирання"
@@ -3457,27 +3438,25 @@ msgstr "перевірити підписи пакунка"
 msgid "import an armored public key"
 msgstr "імпортувати захищених відкритий ключ"
 
-#, fuzzy
-#| msgid "import an armored public key"
 msgid "export an public key"
-msgstr "імпортувати захищених відкритий ключ"
+msgstr "експортувати відкритий ключ"
 
 msgid "don't import, but tell if it would work or not"
 msgstr "не імпортувати, але повідомити, працюватиме чи ні"
 
-#, fuzzy
-#| msgid "list keys from RPM keyring"
 msgid "Erase keys from RPM keyring"
-msgstr "показати список ключів зі сховища ключів RPM"
+msgstr "Витерти ключі зі сховища ключів RPM"
 
 msgid "list keys from RPM keyring"
 msgstr "показати список ключів зі сховища ключів RPM"
 
 msgid "rebuild the keyring - convert to current backend"
-msgstr ""
+msgstr "перезібрати сховище ключів – перетворити до поточного модуля обробки"
 
 msgid "get keys from this backend when rebuilding current backend"
 msgstr ""
+"отримати ключі з цього модуля обробки при повторному збиранні поточного "
+"модуля обробки"
 
 msgid "Keyring options:"
 msgstr "Параметри сховища ключів:"
@@ -3494,15 +3473,11 @@ msgstr "виконати інструкцію"
 msgid "interactive session"
 msgstr "інтерактивний сеанс"
 
-#, fuzzy
-#| msgid "sign package(s) files"
 msgid "sign package(s), adding a new signature"
-msgstr "підписати файли пакунків"
+msgstr "підписати пакунки з додаванням нового підпису"
 
-#, fuzzy
-#| msgid "sign package(s) (identical to --addsign)"
 msgid "resign package(s), deleting any previous signatures"
-msgstr "підписати пакунки (тотожне до --addsign)"
+msgstr "повторно підписати пакунки з вилученням будь-яких попередніх підписів"
 
 msgid "delete package signatures"
 msgstr "вилучити підписи пакунка"
@@ -3510,20 +3485,19 @@ msgstr "вилучити підписи пакунка"
 msgid "delete IMA and fsverity file signatures"
 msgstr "вилучити підписи файлів IMA і fsverity"
 
-#, fuzzy
-#| msgid "create rpm v3 header+payload signatures"
 msgid "request legacy rpm v3 header+payload signatures on v4 packages"
-msgstr "створити підписи заголовка і вмісту rpm версії 3"
+msgstr ""
+"надсилати запит щодо застарілого заголовка версії 3+підписування вмісту для "
+"пакунків версії 4"
 
-#, fuzzy
-#| msgid "create rpm v3 header+payload signatures"
 msgid "request legacy rpm v4 header signatures on v6 packages"
-msgstr "створити підписи заголовка і вмісту rpm версії 3"
+msgstr ""
+"надсилати запит щодо застарілих підписів заголовка rpm версії 4 для пакунків "
+"версії 6"
 
-#, fuzzy
-#| msgid "create rpm v3 header+payload signatures"
 msgid "request rpm v6 header signature on v4 packages"
-msgstr "створити підписи заголовка і вмісту rpm версії 3"
+msgstr ""
+"надсилати запит щодо підписування заголовка версії 6 для пакунків версії 4"
 
 msgid "sign package(s) files"
 msgstr "підписати файли пакунків"
@@ -3555,10 +3529,10 @@ msgstr "запит щодо пароля до ключа для підписув
 msgid "Signature options:"
 msgstr "Параметри підписування:"
 
-#, fuzzy, c-format
-#| msgid "You must set \"%%_gpg_name\" in your macro file\n"
+#, c-format
 msgid "You must set \"%%_openpgp_sign_id\" in your macro file\n"
-msgstr "Вам слід встановити значення \"%%_gpg_name\" у вашому файлі макросу\n"
+msgstr ""
+"Вам слід встановити значення «%%_openpgp_sign_id» у вашому файлі макросу\n"
 
 #, c-format
 msgid ""
@@ -3608,7 +3582,7 @@ msgid "only print what would be done"
 msgstr "лише вивести перелік дій"
 
 msgid "extract into a specific path"
-msgstr ""
+msgstr "видобути за вказаним шляхом"
 
 #, c-format
 #~ msgid "files over 4GB not supported by cpio, use rpm2archive instead\n"
