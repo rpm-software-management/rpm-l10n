@@ -13,8 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-01 14:14+0300\n"
 "PO-Revision-Date: 2025-09-04 03:39+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/sv/>\n"
 "Language: sv\n"
@@ -900,7 +899,7 @@ msgstr "misslyckades med att skriva all data till %s: %s\n"
 
 #, c-format
 msgid "invalid or out of order path from generator: %s\n"
-msgstr ""
+msgstr "sökvägen från generatorn är felaktig eller i fel ordning: %s\n"
 
 msgid "Empty file classifier\n"
 msgstr "Tom filklassificerare\n"
@@ -935,10 +934,8 @@ msgstr "Misslyckades med att hitta %s:\n"
 msgid "Deprecated external dependency generator is used!\n"
 msgstr "Föråldrad extern beroendegenerator används!\n"
 
-#, fuzzy
-#| msgid "Deprecated external dependency generator is used!\n"
 msgid "External dependency generator is incompatible with v6 packages\n"
-msgstr "Föråldrad extern beroendegenerator används!\n"
+msgstr "Extern beroendegenerator är inkompatibelt med v6-paket\n"
 
 #, c-format
 msgid "line %d: %s: package %s does not exist\n"
@@ -1068,7 +1065,7 @@ msgstr "%s%s skapades som %s%s\n"
 
 #, c-format
 msgid "%s %s%s: remove failed: %s\n"
-msgstr "%s %s: borttagande misslyckades: %s\n"
+msgstr "%s %s%s: borttagande misslyckades: %s\n"
 
 msgid "directory"
 msgstr "katalog"
@@ -1197,28 +1194,25 @@ msgstr "vektoriterator använd med vektor av annan storlek"
 msgid "%s: reading of public key failed.\n"
 msgstr "%s: misslyckades att läsa publik nyckel.\n"
 
-#, fuzzy, c-format
-#| msgid "failed to create directory %s: %s\n"
+#, c-format
 msgid "failed to create keyring directory %s: %s\n"
-msgstr "misslyckades att skapa katalogen %s: %s\n"
+msgstr "misslyckades att skapa nyckelringskatalogen %s: %s\n"
 
 #, c-format
 msgid "failed to import key: %s: %s\n"
 msgstr "Misslyckades att importera nyckel: %s %s\n"
 
-#, fuzzy, c-format
-#| msgid "can't create %s lock on %s (%s)\n"
+#, c-format
 msgid "Can't create writelock for keyring at %s: %s\n"
-msgstr "det går inte att skapa %s-lås på %s (%s)\n"
+msgstr "Kan inte skapa ett skrivlås för nyckelringen på %s: %s\n"
 
 #, c-format
 msgid "Can't acquire writelock for keyring at %s\n"
-msgstr ""
+msgstr "Kan inte ta skrivlåset för nyckelringen på %s\n"
 
-#, fuzzy, c-format
-#| msgid "%s: not an armored public key.\n"
+#, c-format
 msgid "%s is not a valid public key\n"
-msgstr "%s: inte en publik nyckel med skal.\n"
+msgstr "%s är inte en giltigpublik nyckel\n"
 
 #, c-format
 msgid "RPM v3 packages are deprecated: %s\n"
@@ -1576,10 +1570,8 @@ msgstr "fråga paket utlösta av paketet"
 msgid "rpm verify mode"
 msgstr "rpm verifieringsläge"
 
-#, fuzzy
-#| msgid "query/verify the package(s) which obsolete a dependency"
 msgid "query/verify the package(s) which conflict with a dependency"
-msgstr "fråga/verifiera paket som fasar ut ett beroende"
+msgstr "fråga/verifiera paket som står i konflikt med ett beroende"
 
 msgid "query/verify the package(s) which require a dependency"
 msgstr "fråga/verifiera paket som behöver ett beroende"
@@ -2051,21 +2043,18 @@ msgstr "gruppen %s finns inte — använder %s\n"
 msgid "Wrong number of entries for tag %s: %u found but %u expected.\n"
 msgstr "Fel antal poster för taggen %s: %u fanns men %u förväntades.\n"
 
-#, fuzzy, c-format
-#| msgid "Malformed data for tag %s: %u bytes found but %lu expected.\n"
+#, c-format
 msgid "Malformed data for tag %s: %u bytes found but %<PRIu64> expected.\n"
 msgstr ""
-"Felformatterad data för taggen %s: %u bytes fanns men %lu förväntades.\n"
+"Felformaterad data för taggen %s: %u bytes fanns men %<PRlu64> förväntades.\n"
 
-#, fuzzy, c-format
-#| msgid "%s: base64 decode failed, len %li\n"
+#, c-format
 msgid "%s: base64 decode failed, len %zu\n"
-msgstr "%s: base64-avkodning misslyckades, len%li\n"
+msgstr "%s: base64-avkodning misslyckades, len %zu\n"
 
-#, fuzzy, c-format
-#| msgid "%s: base64 decode success, len %li\n"
+#, c-format
 msgid "%s: base64 decode success, len %zu\n"
-msgstr "%s: base64-avkodning lyckades, len%li\n"
+msgstr "%s: base64-avkodning lyckades, len %zu\n"
 
 msgid "Bad magic"
 msgstr "Felaktigt magiskt tal"
@@ -2094,10 +2083,8 @@ msgstr "Internt fel"
 msgid "Archive file not in header"
 msgstr "Ingen arkivfilen i huvud"
 
-#, fuzzy
-#| msgid "failed symlink"
 msgid "Unsafe symlink"
-msgstr "misslyckad symlänk"
+msgstr "Osäker symlänk"
 
 msgid "File from package already exists as a directory in system"
 msgstr "En fil från paketet finns redan som en katalog i systemet"
@@ -2172,10 +2159,9 @@ msgstr "paket %s är inte relokerbart\n"
 msgid "error reading from file %s\n"
 msgstr "fel vid läsning från fil %s\n"
 
-#, fuzzy, c-format
-#| msgid "no package matches %s: %s\n"
+#, c-format
 msgid "package format not supported: %s\n"
-msgstr "inga paket matchar %s: %s\n"
+msgstr "paketformatet stödjs inte: %s\n"
 
 #, c-format
 msgid "\"%s\" specifies multiple packages:\n"
@@ -2333,10 +2319,9 @@ msgstr "argument till %s saknas vid %s:%d\n"
 msgid "cannot open %s at %s:%d: %m\n"
 msgstr "kan inte öppna %s vid %s:%d: %m\n"
 
-#, fuzzy, c-format
-#| msgid "bad option '%s' at %s:%d\n"
+#, c-format
 msgid "Ignoring %s at %s:%d\n"
-msgstr "okänd flagga ”%s” vid %s:%d\n"
+msgstr "Ignorerar %s vid %s:%d\n"
 
 #, c-format
 msgid "missing architecture for %s at %s:%d\n"
@@ -2398,12 +2383,14 @@ msgstr "Okänt format"
 
 #, c-format
 msgid "erasing gpg-pubkey packages is deprecated; use rpmkeys --delete %s\n"
-msgstr ""
+msgstr "att radera gpg-pubkey-paket är föråldrat; använd rpmkeys --delete %s\n"
 
 msgid ""
 "public keys can not be installed as gpg-pubkey packages; use rpmkeys --"
 "import <keyfile> for that\n"
 msgstr ""
+"publika nycklar kan inte installeras som gpg-pubkey-paket; använd rpmkeys --"
+"import <nyckelfil> till det\n"
 
 msgid "install"
 msgstr "installera"
@@ -2437,10 +2424,9 @@ msgstr "”)” saknas i paketetikett: %s\n"
 msgid "unknown keyring type: %s, using rpmdb\n"
 msgstr "okänd nyckelringstyp: %s, använder rpmdb\n"
 
-#, fuzzy, c-format
-#| msgid "Unknown icon type: %s\n"
+#, c-format
 msgid "unknown keyring type: %s\n"
-msgstr "Okänd ikontyp: %s\n"
+msgstr "okänd nyckelringstyp: %s\n"
 
 #, c-format
 msgid "invalid package verify level %s\n"
@@ -2465,10 +2451,9 @@ msgstr "%s-tagg %u: felaktig data %p (%u)"
 msgid "%s tag %u: invalid size %u"
 msgstr "%s-tagg %u: felaktig storlek %u"
 
-#, fuzzy, c-format
-#| msgid "%s: tag %u: invalid hex"
+#, c-format
 msgid "%s tag %u: invalid base64"
-msgstr "%s: tagg %u: felakigt hextal"
+msgstr "%s-tagg %u: felakig base64"
 
 #, c-format
 msgid "%s tag %u: invalid OpenPGP signature"
@@ -2480,18 +2465,18 @@ msgstr "%s: tagg %u: felakigt hextal"
 
 #, c-format
 msgid "%s %s%s %s"
-msgstr "%s%s%s %s"
+msgstr "%s %s%s %s"
 
 msgid "digest"
 msgstr "kontrollsumma"
 
 #, c-format
 msgid "%s OpenPGP %s"
-msgstr ""
+msgstr "%s OpenPGP %s"
 
 #, c-format
 msgid "%s OpenPGP %s %s"
-msgstr ""
+msgstr "%s OpenPGP %s %s"
 
 msgid "signature"
 msgstr "signatur"
