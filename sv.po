@@ -12,8 +12,9 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-01 14:14+0300\n"
-"PO-Revision-Date: 2025-09-02 17:09+0000\n"
-"Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
+"PO-Revision-Date: 2025-09-04 03:39+0000\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/sv/>\n"
 "Language: sv\n"
@@ -1065,8 +1066,7 @@ msgstr "%s%s sparad som %s%s\n"
 msgid "%s%s created as %s%s\n"
 msgstr "%s%s skapades som %s%s\n"
 
-#, fuzzy, c-format
-#| msgid "%s %s: remove failed: %s\n"
+#, c-format
 msgid "%s %s%s: remove failed: %s\n"
 msgstr "%s %s: borttagande misslyckades: %s\n"
 
