@@ -2478,8 +2478,7 @@ msgstr "%s-tagg %u: felaktig OpenPGP-signatur"
 msgid "%s: tag %u: invalid hex"
 msgstr "%s: tagg %u: felakigt hextal"
 
-#, fuzzy, c-format
-#| msgid "%s%s%s %s"
+#, c-format
 msgid "%s %s%s %s"
 msgstr "%s%s%s %s"
 
