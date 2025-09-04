@@ -13,7 +13,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-01 14:14+0300\n"
 "PO-Revision-Date: 2025-09-05 20:53+0000\n"
-"Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/sv/>\n"
 "Language: sv\n"
@@ -2491,15 +2492,11 @@ msgstr "huvud"
 msgid "package"
 msgstr "paket"
 
-#, fuzzy
-#| msgid "Header "
 msgid "Header"
-msgstr "Huvud "
+msgstr "Huvud"
 
-#, fuzzy
-#| msgid "Payload "
 msgid "Payload"
-msgstr "Last "
+msgstr "Last"
 
 msgid "Unable to reload signature header.\n"
 msgstr "Kan inte läsa om signaturhuvud.\n"
