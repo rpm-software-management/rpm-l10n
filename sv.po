@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-01 14:14+0300\n"
-"PO-Revision-Date: 2025-09-04 03:39+0000\n"
+"PO-Revision-Date: 2025-09-05 20:53+0000\n"
 "Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/sv/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.13\n"
+"X-Generator: Weblate 5.13.2\n"
 
 msgid "unable to parse _buildtime macro\n"
 msgstr "kan inte tolka makrot _buildtime\n"
@@ -2483,7 +2483,7 @@ msgstr "signatur"
 
 #, c-format
 msgid ", key fingerprint: %s"
-msgstr ""
+msgstr ", nyckelfingeravtryck: %s"
 
 msgid "header"
 msgstr "huvud"
@@ -2575,10 +2575,8 @@ msgstr "funktionsargumenttyp som inte stöds"
 msgid "syntax error in expression"
 msgstr "syntaxfel i uttryck"
 
-#, fuzzy
-#| msgid "unsupported funcion"
 msgid "unsupported function"
-msgstr "ostödd funktion"
+msgstr "ej stödd funktion"
 
 msgid "unmatched ("
 msgstr "ensam ("
@@ -2686,16 +2684,16 @@ msgstr "Ett %% följs av ett makro som inte kan tolkas\n"
 
 #, c-format
 msgid "unexpected argument to non-parametric macro %%%s\n"
-msgstr ""
+msgstr "oväntat argument till parameterlöst makro %%%s\n"
 
 #, c-format
 msgid "macro value out of range for int: %<PRIu64> using %i instead.\n"
 msgstr ""
+"makrovärdet är utanför intervallet för int: %<PRlu64> använder %i istället.\n"
 
-#, fuzzy, c-format
-#| msgid "======================== active %d empty %d\n"
+#, c-format
 msgid "======================== active %zu empty %d\n"
-msgstr "======================== aktiva %d tomma %d\n"
+msgstr "======================== aktiva %zu tomma %d\n"
 
 #, c-format
 msgid "error creating temporary file %s: %m\n"
@@ -2765,14 +2763,13 @@ msgstr "V%d %s/%s %s, nyckel-ID %s"
 msgid "(none)"
 msgstr "(ingen)"
 
-#, fuzzy, c-format
-#| msgid "Could not read from file %s: %s\n"
+#, c-format
 msgid "Could not find url helper: \"%s\"\n"
-msgstr "Kunde inte läsa från filen %s: %s\n"
+msgstr "Kunde inte hitta url-hjälparen: ”%s”\n"
 
 #, c-format
 msgid "Executing url helper \"%s\" failed with status %i\n"
-msgstr ""
+msgstr "Att köra url-hjälparen ”%s” misslyckades med statusen %i'\n"
 
 #, c-format
 msgid "%s: Fwrite failed: %s\n"
@@ -2786,15 +2783,13 @@ msgstr "%s: Fread misslyckades: %s\n"
 msgid "%s: Fflush failed: %s\n"
 msgstr "%s: Fflush misslyckades: %s\n"
 
-#, fuzzy, c-format
-#| msgid "reading symlink %s failed: %s\n"
+#, c-format
 msgid "Expanding signing macro %s failed\n"
-msgstr "läsning av symlänk %s misslyckades: %s\n"
+msgstr "Att expandera signeringsmakrot %s misslyckades\n"
 
-#, fuzzy, c-format
-#| msgid "Invalid %s token: %s\n"
+#, c-format
 msgid "Invalid sign command: %s\n"
-msgstr "Ogiltigt %s-element: %s\n"
+msgstr "Felaktigt signeringskommando: %s\n"
 
 #, c-format
 msgid "Could not create pipe for signing: %m\n"
@@ -2819,25 +2814,21 @@ msgstr "Kunde inte skriva till ett rör\n"
 msgid "Could not read from file %s: %s\n"
 msgstr "Kunde inte läsa från filen %s: %s\n"
 
-#, fuzzy, c-format
-#| msgid "gpg waitpid failed (%s)\n"
+#, c-format
 msgid "%s waitpid failed (%s)\n"
-msgstr "gpg waitpid misslyckades (%s)\n"
+msgstr "%s waitpid misslyckades (%s)\n"
 
-#, fuzzy, c-format
-#| msgid "gpg exec failed (%d)\n"
+#, c-format
 msgid "%s exec failed (%d)\n"
-msgstr "gpg exec misslyckades (%d)\n"
+msgstr "%s exec misslyckades (%d)\n"
 
-#, fuzzy, c-format
-#| msgid "gpg failed to write signature\n"
+#, c-format
 msgid "failed to write signature: %s\n"
-msgstr "gpg kunde inte skriva signatur\n"
+msgstr "kunde inte skriva signaturen: %s\n"
 
-#, fuzzy, c-format
-#| msgid "unable to read the signature\n"
+#, c-format
 msgid "unable to read the signature: %s\n"
-msgstr "kan inte läsa signaturen\n"
+msgstr "kan inte läsa signaturen: %s\n"
 
 msgid "Unsupported OpenPGP signature\n"
 msgstr "OpenPGP-signaturen stödjs inte\n"
@@ -2850,10 +2841,9 @@ msgstr "OpenPGP-hash-algoritm %u stödjs inte\n"
 msgid "Deprecated OpenPGP signature version %d\n"
 msgstr "Föråldrad OpenPGP-signaturen version %d\n"
 
-#, fuzzy, c-format
-#| msgid "Unsupported OpenPGP pubkey algorithm %u\n"
+#, c-format
 msgid "Unsupported OpenPGP pubkey algorithm %u for rpm v3/v4 signatures\n"
-msgstr "OpenPGP-publik nyckelalgoritm %u stödjs inte\n"
+msgstr "OpenPGP-publik-nyckelalgoritm %u stödjs inte för rpm v3/v4-signaturer\n"
 
 msgid "file signing support not built in\n"
 msgstr "Stöd för filsignering är inte inbyggt\n"
@@ -2880,43 +2870,37 @@ msgstr "%s: rpmReadSignature misslyckades: %s"
 msgid "%s: headerRead failed: %s\n"
 msgstr "%s: headerRead misslyckades: %s\n"
 
-#, fuzzy, c-format
-#| msgid "Cannot sign RPM v3 packages\n"
+#, c-format
 msgid "Cannot sign RPM v3 packages: %s\n"
-msgstr "Kan inte signera RPM-v3-paket\n"
+msgstr "Kan inte signera RPM-v3-paket: %s\n"
 
-#, fuzzy, c-format
-#| msgid "generate fsverity signatures for package(s) files"
+#, c-format
 msgid "not generating v3 signature for v6 package: %s\n"
-msgstr "generera fsverity-signaturer för paketfiler"
+msgstr "genererar inte en v3-signatur för ett v6-paket: %s\n"
 
 #, c-format
 msgid "File signatures not applicable to src.rpm: %s\n"
-msgstr ""
+msgstr "Filsignaturer är inte tillämpliga på src.rpm: %s\n"
 
-#, fuzzy, c-format
-#| msgid "Could not seek in file %s: %s\n"
+#, c-format
 msgid "Could not get a file size of %s\n"
-msgstr "Kunde inte söka i filen %s: %s\n"
+msgstr "Kunde inte få filstorleken på %s\n"
 
-#, fuzzy, c-format
-#| msgid "%s already contains identical signature, skipping\n"
+#, c-format
 msgid "%s already contains an identical signature, skipping\n"
 msgstr "%s innehåller redan en identisk signatur, hoppar över\n"
 
-#, fuzzy, c-format
-#| msgid "%s already contains identical signature, skipping\n"
+#, c-format
 msgid "%s already contains a legacy signature\n"
-msgstr "%s innehåller redan en identisk signatur, hoppar över\n"
+msgstr "%s innehåller redan en gammaldags signatur\n"
 
 #, c-format
 msgid "%s: rpmWriteSignature failed: %s\n"
 msgstr "%s: rpmWriteSignature misslyckades: %s\n"
 
-#, fuzzy, c-format
-#| msgid "rpmMkTemp failed\n"
+#, c-format
 msgid "rpmMkTemp failed: %s\n"
-msgstr "rpmMkTemp misslyckades\n"
+msgstr "rpmMkTemp misslyckades: %s\n"
 
 #, c-format
 msgid "%s: failed to copy rpm lead: %s\n"
@@ -3088,13 +3072,11 @@ msgstr "inga parametrar angivna för fråga"
 msgid "no arguments given for verify"
 msgstr "inga parametrar angivna för verifiering"
 
-#, fuzzy
-#| msgid "create uncompressed tar file"
 msgid "create uncompressed archive"
-msgstr "skapa okomprimerad tar-fil"
+msgstr "skapa ett okomprimerat arkiv"
 
 msgid "archive format (pax|cpio)"
-msgstr ""
+msgstr "arkivformat (pax|cpio)"
 
 #, c-format
 msgid "argument is not an RPM package\n"
@@ -3114,10 +3096,8 @@ msgstr "initiera databas"
 msgid "rebuild database inverted lists from installed package headers"
 msgstr "bygg om databasens inverterade listor från installerade pakets huvuden"
 
-#, fuzzy
-#| msgid "verify database files"
 msgid "verify database"
-msgstr "verifiera databasfiler"
+msgstr "verifiera databasen"
 
 msgid "salvage database"
 msgstr "rädda databasen"
@@ -3189,10 +3169,9 @@ msgstr ""
 msgid "<source package>"
 msgstr "<källpaket>"
 
-#, fuzzy, c-format
-#| msgid "build through %conf (%prep, then %conf) from <specfile>"
+#, c-format
 msgid "build through %conf (%prep, then %conf) from <source package>"
-msgstr "bygg till och med %conf (%prep, sedan %conf) från <specfil>"
+msgstr "bygg till och med %conf (%prep, sedan %conf) från <källpaket>"
 
 #, c-format
 msgid "build through %build (%prep, %conf, then compile) from <source package>"
@@ -3238,10 +3217,9 @@ msgstr ""
 msgid "<tarball>"
 msgstr "<tar-arkiv>"
 
-#, fuzzy, c-format
-#| msgid "build through %conf (%prep, then %conf) from <specfile>"
+#, c-format
 msgid "build through %conf (%prep, then %conf) from <tarball>"
-msgstr "bygg till och med %conf (%prep, sedan %conf) från <specfil>"
+msgstr "bygg till och med %conf (%prep, sedan %conf) från <tarboll>"
 
 #, c-format
 msgid "build through %build (%prep, %conf, then compile) from <tarball>"
@@ -3285,10 +3263,8 @@ msgid ""
 msgstr ""
 "bygg till och med %install (%prep, %build, installera sedan) från <källpaket>"
 
-#, fuzzy
-#| msgid "override build root"
 msgid "override build root (DEPRECATED)"
-msgstr "åsidosätt byggrot"
+msgstr "åsidosätt byggrot (FÖRÅLDRAT)"
 
 msgid "remove build tree when done"
 msgstr "ta bort byggträd efteråt"
@@ -3391,27 +3367,23 @@ msgstr "verifiera paketsignatur(er)"
 msgid "import an armored public key"
 msgstr "importera en publik nyckel med skal"
 
-#, fuzzy
-#| msgid "import an armored public key"
 msgid "export an public key"
-msgstr "importera en publik nyckel med skal"
+msgstr "exportera en publik nyckel"
 
 msgid "don't import, but tell if it would work or not"
 msgstr "importera inte, men tala om ifall det skulle fungera eller inte"
 
-#, fuzzy
-#| msgid "list keys from RPM keyring"
 msgid "Erase keys from RPM keyring"
-msgstr "lista nycklar från RPM-nyckelringen"
+msgstr "Radera nycklar från RPM-nyckelringen"
 
 msgid "list keys from RPM keyring"
 msgstr "lista nycklar från RPM-nyckelringen"
 
 msgid "rebuild the keyring - convert to current backend"
-msgstr ""
+msgstr "bygg om nyckelringen — konvertera till aktuell bakände"
 
 msgid "get keys from this backend when rebuilding current backend"
-msgstr ""
+msgstr "hämta nycklar från denna bakände när den aktuella bakänden byggs om"
 
 msgid "Keyring options:"
 msgstr "Nyckelringsflaggor:"
@@ -3428,15 +3400,11 @@ msgstr "kör sats"
 msgid "interactive session"
 msgstr "interaktiv session"
 
-#, fuzzy
-#| msgid "sign package(s) files"
 msgid "sign package(s), adding a new signature"
-msgstr "signera paketfiler"
+msgstr "signera paket, och lägg till en ny signatur"
 
-#, fuzzy
-#| msgid "sign package(s) (identical to --addsign)"
 msgid "resign package(s), deleting any previous signatures"
-msgstr "signera paket (detsamma som --addsign)"
+msgstr "signera om paket (radera eventuella tidigare signaturer)"
 
 msgid "delete package signatures"
 msgstr "tag bort paketsignaturer"
@@ -3444,20 +3412,14 @@ msgstr "tag bort paketsignaturer"
 msgid "delete IMA and fsverity file signatures"
 msgstr "radera IMA- och fsverity-filsignaturer"
 
-#, fuzzy
-#| msgid "create rpm v3 header+payload signatures"
 msgid "request legacy rpm v3 header+payload signatures on v4 packages"
-msgstr "skapa rpm v3 huvud+lastsignatur"
+msgstr "begär föråldrade signaturer i format rpm v3 huvud+last på v4-paket"
 
-#, fuzzy
-#| msgid "create rpm v3 header+payload signatures"
 msgid "request legacy rpm v4 header signatures on v6 packages"
-msgstr "skapa rpm v3 huvud+lastsignatur"
+msgstr "begär föråldrade signaturer i format rpm v4 huvud på v6-paket"
 
-#, fuzzy
-#| msgid "create rpm v3 header+payload signatures"
 msgid "request rpm v6 header signature on v4 packages"
-msgstr "skapa rpm v3 huvud+lastsignatur"
+msgstr "begär signatur i format rpm v6 huvud på v4-paket"
 
 msgid "sign package(s) files"
 msgstr "signera paketfiler"
@@ -3489,10 +3451,9 @@ msgstr "fråga efter lösenords för filsigneringsnyckeln"
 msgid "Signature options:"
 msgstr "Signaturflaggor:"
 
-#, fuzzy, c-format
-#| msgid "You must set \"%%_gpg_name\" in your macro file\n"
+#, c-format
 msgid "You must set \"%%_openpgp_sign_id\" in your macro file\n"
-msgstr "Du måste sätta ”%%_gpg_name” i din makrofil\n"
+msgstr "Du måste sätta ”%%_openpgp_sign_id” i din makrofil\n"
 
 #, c-format
 msgid ""
@@ -3540,7 +3501,7 @@ msgid "only print what would be done"
 msgstr "skriv bara ut vad som skulle göras"
 
 msgid "extract into a specific path"
-msgstr ""
+msgstr "extrahera till en specifik sökväg"
 
 #, c-format
 #~ msgid "files over 4GB not supported by cpio, use rpm2archive instead\n"
