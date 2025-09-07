@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-01 14:14+0300\n"
-"PO-Revision-Date: 2025-08-21 12:53+0000\n"
+"PO-Revision-Date: 2025-09-07 10:21+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/ka/>\n"
@@ -16,12 +16,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.13\n"
+"X-Generator: Weblate 5.13.2\n"
 
-#, fuzzy
-#| msgid "unable to parse %s=%s\n"
 msgid "unable to parse _buildtime macro\n"
-msgstr "შეცდომა დამუშავებისას %s=%s\n"
+msgstr "შეცდომა _buildtime მაკროს დამუშავებისას\n"
 
 msgid "unable to parse SOURCE_DATE_EPOCH\n"
 msgstr ""
@@ -49,10 +47,9 @@ msgstr "%s-დან გამოსვლის ცუდი სტატუს
 msgid "Failed build dependencies:\n"
 msgstr "აგების დამოკიდებულებების შეცდომა:\n"
 
-#, fuzzy, c-format
-#| msgid "failed to create directory %s: %s\n"
+#, c-format
 msgid "failed to create package build directory %s: %s\n"
-msgstr "საქაღალდის (%s) შექმნის შეცდომა: %s\n"
+msgstr "პაკეტის აგების საქაღალდის (%s) შექმნის შეცდომა: %s\n"
 
 #, c-format
 msgid "setting %s=%s\n"
@@ -147,10 +144,9 @@ msgstr ""
 msgid "unable to parse %s=%s\n"
 msgstr "შეცდომა დამუშავებისას %s=%s\n"
 
-#, fuzzy, c-format
-#| msgid "Unknown system: %s\n"
+#, c-format
 msgid "Unknown mtime policy '%s'\n"
-msgstr "უცნობი სისტემა: %s\n"
+msgstr "უცნობი mtime-ის პოლიტიკა: %s\n"
 
 #, c-format
 msgid "Unknown file digest algorithm %u, falling back to %u\n"
@@ -379,15 +375,13 @@ msgstr ""
 msgid "Finished binary package job, result %d, filename %s\n"
 msgstr ""
 
-#, fuzzy, c-format
-#| msgid "Error parsing %s: %s\n"
+#, c-format
 msgid "line %d: Error parsing script: %s: %s\n"
-msgstr "'%s'-ის დამუშავების შეცდომა: %s\n"
+msgstr "ხაზი %d: სკრიპტის დამუშავების შეცდომა: %s: %s\n"
 
-#, fuzzy, c-format
-#| msgid "line %d: %s in: %s\n"
+#, c-format
 msgid "line %d: Bad %s option %s: %s\n"
-msgstr "ხაზი %d: %s %s-ში\n"
+msgstr "ხაზი %d: არასწორი %s-ის პარამეტრი %s: %s\n"
 
 #, c-format
 msgid "line %d: second %s\n"
@@ -407,7 +401,7 @@ msgstr ""
 
 #, c-format
 msgid "incomplete %%changelog entry\n"
-msgstr "დაუსრულებელი ცვლილებების ჟურნალის ჩანაწერი %%\n"
+msgstr "დაუსრულებელი ჩანაწერი %%changelog\n"
 
 #, c-format
 msgid "bad date in %%changelog: %s\n"
@@ -491,11 +485,11 @@ msgstr "არქიტექტურა ჩასმული არაა: %s
 
 #, c-format
 msgid "OS is excluded: %s\n"
-msgstr "ოს-ი გამორიცხული არაა: %s\n"
+msgstr "ოს გამორიცხულია: %s\n"
 
 #, c-format
 msgid "OS is not included: %s\n"
-msgstr "ოს-ი ჩასმული არაა: %s\n"
+msgstr "ოს ჩასმული არაა: %s\n"
 
 #, c-format
 msgid "%s field must be present in package: %s\n"
@@ -606,10 +600,9 @@ msgstr ""
 msgid "line %d: Tag not allowed after build is done: %s\n"
 msgstr ""
 
-#, fuzzy, c-format
-#| msgid "Invalid capability: %s\n"
+#, c-format
 msgid "Invalid buildroot: '%s'\n"
-msgstr "არასწორი შესაძლებლობა: %s\n"
+msgstr "არასწორი აგების root საქაღალდე: %s\n"
 
 #, c-format
 msgid "No patch number %u\n"
@@ -773,25 +766,22 @@ msgstr ""
 msgid "line %d doesn't belong to any section: %s\n"
 msgstr ""
 
-#, fuzzy, c-format
-#| msgid "Unknown system: %s\n"
+#, c-format
 msgid "line %d: Unknown buildsystem: %s\n"
-msgstr "უცნობი სისტემა: %s\n"
+msgstr "ხაზი %d: უცნობი აგების სისტემა: %s\n"
 
 #, c-format
 msgid ""
 "line %d: Required parametric macro %%%s not defined for buildsystem %s\n"
 msgstr ""
 
-#, fuzzy, c-format
-#| msgid "failed to open dir %s of %s: %s\n"
+#, c-format
 msgid "failed to write buildsystem %s %%%s: %s\n"
-msgstr "%s საქაღალდის გახსნის შეცდომა %s-დან: %s\n"
+msgstr "ვერ ჩავწერე აგების სისტემა %s %%%s:%s\n"
 
-#, fuzzy, c-format
-#| msgid "failed to create directory %s: %s\n"
+#, c-format
 msgid "failed to create temp file for buildsystem: %s\n"
-msgstr "საქაღალდის (%s) შექმნის შეცდომა: %s\n"
+msgstr "ვერ შევქმენი დროებითი ფაილი აგების სისტემისთვის: %s\n"
 
 #, c-format
 msgid "Section %s is not allowed after build is done!\n"
@@ -881,10 +871,9 @@ msgstr "%s-ის ფორკის შეცდომა: %s\n"
 msgid "Couldn't exec %s: %s\n"
 msgstr "%s-ის გაშვების შეცდომა: %s\n"
 
-#, fuzzy, c-format
-#| msgid "failed to open dir %s of %s: %s\n"
+#, c-format
 msgid "Failed to wait for exit status of %s: %s\n"
-msgstr "%s საქაღალდის გახსნის შეცდომა %s-დან: %s\n"
+msgstr "ვერ დაველოდე %s-ის გამოსვლის სტატუსს: %s\n"
 
 #, c-format
 msgid "%s failed: %x\n"
@@ -1057,10 +1046,9 @@ msgstr "%s%s შენახულია, როგორც %s%s\n"
 msgid "%s%s created as %s%s\n"
 msgstr "%s%s შეიქმნა, როგორც %s%s\n"
 
-#, fuzzy, c-format
-#| msgid "%s %s: remove failed: %s\n"
+#, c-format
 msgid "%s %s%s: remove failed: %s\n"
-msgstr "%s %s: წაშლის შეცდომა: %s\n"
+msgstr "%s %s%s: წაშლის შეცდომა: %s\n"
 
 msgid "directory"
 msgstr "საქაღალდე"
@@ -1189,19 +1177,17 @@ msgstr ""
 msgid "%s: reading of public key failed.\n"
 msgstr ""
 
-#, fuzzy, c-format
-#| msgid "failed to create directory %s: %s\n"
+#, c-format
 msgid "failed to create keyring directory %s: %s\n"
-msgstr "საქაღალდის (%s) შექმნის შეცდომა: %s\n"
+msgstr "ვერ შევქმენი ბრელოკის საქაღალდე %s: %s\n"
 
 #, c-format
 msgid "failed to import key: %s: %s\n"
 msgstr ""
 
-#, fuzzy, c-format
-#| msgid "failed to create directory %s: %s\n"
+#, c-format
 msgid "Can't create writelock for keyring at %s: %s\n"
-msgstr "საქაღალდის (%s) შექმნის შეცდომა: %s\n"
+msgstr "ვერ შევქმენი ჩაწერის ბლოკი ბრასლეტისთვის მისამართზე %s: %s\n"
 
 #, c-format
 msgid "Can't acquire writelock for keyring at %s\n"
@@ -1953,7 +1939,7 @@ msgid "package scriptlets may access the rpm database while installing."
 msgstr ""
 
 msgid "internal support for lua scripts."
-msgstr "lua-ს სკრიპტების შიდა მხარდაჭერა."
+msgstr "lua სკრიპტების შიდა მხარდაჭერა."
 
 msgid "file digest algorithm is per package configurable"
 msgstr ""
@@ -2036,10 +2022,9 @@ msgstr ""
 msgid "Malformed data for tag %s: %u bytes found but %<PRIu64> expected.\n"
 msgstr ""
 
-#, fuzzy, c-format
-#| msgid "%s %s: remove failed: %s\n"
+#, c-format
 msgid "%s: base64 decode failed, len %zu\n"
-msgstr "%s %s: წაშლის შეცდომა: %s\n"
+msgstr "%s: base64 დეკოდერი ჩავარდა. სიგრძე %zu\n"
 
 #, c-format
 msgid "%s: base64 decode success, len %zu\n"
@@ -2072,10 +2057,8 @@ msgstr "შიდა შეცდომა"
 msgid "Archive file not in header"
 msgstr "არქივის ფაილი თავსართში არაა"
 
-#, fuzzy
-#| msgid "failed symlink"
 msgid "Unsafe symlink"
-msgstr "ჩავარდნილი სიმბმული"
+msgstr "სახიფათო სიმბმული"
 
 msgid "File from package already exists as a directory in system"
 msgstr "ფაილი ამ პაკეტიდან უკვე არსებობს, საქაღალდის სახით"
@@ -2150,10 +2133,9 @@ msgstr ""
 msgid "error reading from file %s\n"
 msgstr "ფაილიდან წაკითხვის შეცდომა: %s\n"
 
-#, fuzzy, c-format
-#| msgid "no package matches %s: %s\n"
+#, c-format
 msgid "package format not supported: %s\n"
-msgstr "არცერთი პაკეტი ემთხვევა %s: %s\n"
+msgstr "პაკეტის ფორმატი მხარდაჭერილი არაა: %s\n"
 
 #, c-format
 msgid "\"%s\" specifies multiple packages:\n"
@@ -2308,10 +2290,9 @@ msgstr ""
 msgid "cannot open %s at %s:%d: %m\n"
 msgstr ""
 
-#, fuzzy, c-format
-#| msgid "Downloading %s to %s\n"
+#, c-format
 msgid "Ignoring %s at %s:%d\n"
-msgstr "%s-ის %s-ში გადმოწერა\n"
+msgstr "გამოვტოვებ %s მისამართზე %s: %d\n"
 
 #, c-format
 msgid "missing architecture for %s at %s:%d\n"
@@ -2412,10 +2393,9 @@ msgstr ""
 msgid "unknown keyring type: %s, using rpmdb\n"
 msgstr ""
 
-#, fuzzy, c-format
-#| msgid "Unknown system: %s\n"
+#, c-format
 msgid "unknown keyring type: %s\n"
-msgstr "უცნობი სისტემა: %s\n"
+msgstr "უცნობი ბრასლეტის ტიპი: %s\n"
 
 #, c-format
 msgid "invalid package verify level %s\n"
@@ -2452,8 +2432,7 @@ msgstr ""
 msgid "%s: tag %u: invalid hex"
 msgstr ""
 
-#, fuzzy, c-format
-#| msgid "%s%s%s %s"
+#, c-format
 msgid "%s %s%s %s"
 msgstr "%s%s%s %s"
 
@@ -2481,15 +2460,11 @@ msgstr "თავსართი"
 msgid "package"
 msgstr "პაკეტი"
 
-#, fuzzy
-#| msgid "Header "
 msgid "Header"
-msgstr "თავსართი "
+msgstr "თავსართი"
 
-#, fuzzy
-#| msgid "Payload "
 msgid "Payload"
-msgstr "შემცველობა "
+msgstr "სასარგებლო დატვირთვა"
 
 msgid "Unable to reload signature header.\n"
 msgstr ""
@@ -2565,8 +2540,6 @@ msgstr ""
 msgid "syntax error in expression"
 msgstr "გამოსახულების სინტაქსის შეცდომმა"
 
-#, fuzzy
-#| msgid "unsupported funcion"
 msgid "unsupported function"
 msgstr "მხარდაუჭერელი ფუნქცია"
 
@@ -2654,10 +2627,9 @@ msgstr ""
 msgid "invalid argument: %s\n"
 msgstr "არასწორი არგუმენტი: %s\n"
 
-#, fuzzy, c-format
-#| msgid "failed to create directory %s: %s\n"
+#, c-format
 msgid "failed to get available memory for %s\n"
-msgstr "საქაღალდის (%s) შექმნის შეცდომა: %s\n"
+msgstr "%s-სთვის ხელმისაწვდომი მეხსიერების მიღება ჩავარდა\n"
 
 msgid "argument expected"
 msgstr "მოველოდი არგუმენტს"
@@ -2753,10 +2725,9 @@ msgstr ""
 msgid "(none)"
 msgstr "(არცერთი)"
 
-#, fuzzy, c-format
-#| msgid "Could not open %s: %s\n"
+#, c-format
 msgid "Could not find url helper: \"%s\"\n"
-msgstr "%s-ის გახსნის შეცდომა: %s\n"
+msgstr "ვერ ვიპოვე ბმულის დამხმარე: \"%s\"\n"
 
 #, c-format
 msgid "Executing url helper \"%s\" failed with status %i\n"
@@ -2778,10 +2749,9 @@ msgstr "%s: Fflush -ის შეცდომა: %s\n"
 msgid "Expanding signing macro %s failed\n"
 msgstr ""
 
-#, fuzzy, c-format
-#| msgid "invalid argument: %s\n"
+#, c-format
 msgid "Invalid sign command: %s\n"
-msgstr "არასწორი არგუმენტი: %s\n"
+msgstr "არასწორი ხელმოწერის ბრძანება: %s\n"
 
 #, c-format
 msgid "Could not create pipe for signing: %m\n"
@@ -2806,25 +2776,21 @@ msgstr ""
 msgid "Could not read from file %s: %s\n"
 msgstr ""
 
-#, fuzzy, c-format
-#| msgid "%s: writeLead failed: %s\n"
+#, c-format
 msgid "%s waitpid failed (%s)\n"
-msgstr "%s: writeLead -ის შეცდომა: %s\n"
+msgstr "%s waitpid ჩავარდა (%s)\n"
 
-#, fuzzy, c-format
-#| msgid "%s: regexec failed: %s\n"
+#, c-format
 msgid "%s exec failed (%d)\n"
-msgstr "%s: regexec -ის შეცდომა: %s\n"
+msgstr "%s-ის გაშვება ჩავარდა (%d)\n"
 
-#, fuzzy, c-format
-#| msgid "Unable to write package: %s\n"
+#, c-format
 msgid "failed to write signature: %s\n"
-msgstr "პაკეტის ჩაწერის შეცდომა: %s\n"
+msgstr "ხელმოწერის ჩაწერის შეცდომა: %s\n"
 
-#, fuzzy, c-format
-#| msgid "Unable to read icon %s: %s\n"
+#, c-format
 msgid "unable to read the signature: %s\n"
-msgstr "ხატულის (%s) გახსნის შეცდომა: %s\n"
+msgstr "ხელმოწერის წაკითხვის შეცდომა: %s\n"
 
 msgid "Unsupported OpenPGP signature\n"
 msgstr ""
@@ -2878,10 +2844,9 @@ msgstr ""
 msgid "File signatures not applicable to src.rpm: %s\n"
 msgstr ""
 
-#, fuzzy, c-format
-#| msgid "Could not exec %s: %s\n"
+#, c-format
 msgid "Could not get a file size of %s\n"
-msgstr "%s-ის გაშვების შეცდომა: %s\n"
+msgstr "%s-ის ფაილის ზომის მიღება შეუძლებელია\n"
 
 #, c-format
 msgid "%s already contains an identical signature, skipping\n"
@@ -2895,15 +2860,13 @@ msgstr ""
 msgid "%s: rpmWriteSignature failed: %s\n"
 msgstr "%s: rpmWriteSignature -ის შეცდომა: %s\n"
 
-#, fuzzy, c-format
-#| msgid "rpmMkTemp failed\n"
+#, c-format
 msgid "rpmMkTemp failed: %s\n"
-msgstr "rpmMkTemp -ის შეცდომა\n"
+msgstr "rpmMkTemp ჩავარდა: %s\n"
 
-#, fuzzy, c-format
-#| msgid "Failed to encode policy file: %s\n"
+#, c-format
 msgid "%s: failed to copy rpm lead: %s\n"
-msgstr "წესების ფაილის კითხვის შეცდომა: %s\n"
+msgstr "%s: ჩავარდა rpm-ის lead-ის კოპირება: %s\n"
 
 #, c-format
 msgid "replacing %s failed: %s\n"
@@ -3088,10 +3051,8 @@ msgstr "მონაცემთა ბაზის ინიციალიზ�
 msgid "rebuild database inverted lists from installed package headers"
 msgstr ""
 
-#, fuzzy
-#| msgid "verify database files"
 msgid "verify database"
-msgstr "ბაზის ფაილების შემოწმება"
+msgstr "მონაცემთა ბაზის შემოწმება"
 
 msgid "salvage database"
 msgstr "მონაცემთა ბაზის გადარჩენა"
@@ -3240,10 +3201,8 @@ msgid ""
 "build through %install (%prep, %build, then install) from <source package>"
 msgstr ""
 
-#, fuzzy
-#| msgid "override build root"
 msgid "override build root (DEPRECATED)"
-msgstr "აგების ძირითადი საქაღალდის გადაფარვა"
+msgstr "აგების ძირითადი საქაღალდის გადაფარვა (მოძველებულია)"
 
 msgid "remove build tree when done"
 msgstr ""
@@ -3379,15 +3338,11 @@ msgstr "გამოსახულების შესრულება"
 msgid "interactive session"
 msgstr "ინტერაქტიური სესია"
 
-#, fuzzy
-#| msgid "sign package(s) files"
 msgid "sign package(s), adding a new signature"
-msgstr "პაკეტის ფაილების ხელმოწერა"
+msgstr "პაკეტის ფაილების ხელმოწერა, ახალი ხელმოწერის დამატება"
 
-#, fuzzy
-#| msgid "sign package(s) (identical to --addsign)"
 msgid "resign package(s), deleting any previous signatures"
-msgstr "პაკეტების ხელმოწერა (იგივე, რაც --addsign)"
+msgstr "პაკეტების თავიდან ხელმოწერა, წინა ხელმოწერების წაშლა"
 
 msgid "delete package signatures"
 msgstr "პაკეტის ხელმოწერების წაშლა"
