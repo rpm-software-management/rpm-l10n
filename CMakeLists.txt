@@ -11,7 +11,6 @@ add_custom_target(update-pot
 			--package-version=${CMAKE_PROJECT_VERSION}
 			--output=${CMAKE_CURRENT_SOURCE_DIR}/rpm.pot
 			--language=C
-			--no-location
 			--keyword=_ --keyword=N_
 			--files-from=${CMAKE_CURRENT_SOURCE_DIR}/POTFILES.in
 	  WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
