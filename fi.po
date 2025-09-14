@@ -12,8 +12,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-01 14:14+0300\n"
 "PO-Revision-Date: 2025-09-14 13:54+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/fi/>\n"
 "Language: fi\n"
@@ -2503,10 +2502,9 @@ msgstr "%s tag %u: ei kelvollinen OpenPGP-allekirjoitus"
 msgid "%s: tag %u: invalid hex"
 msgstr "%s: tagi %u: virheellinen hex"
 
-#, fuzzy, c-format
-#| msgid "%s%s%s %s"
+#, c-format
 msgid "%s %s%s %s"
-msgstr "%s%s%s %s"
+msgstr "%s %s%s %s"
 
 msgid "digest"
 msgstr "tarkistussumma"
