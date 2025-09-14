@@ -11,8 +11,9 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-01 14:14+0300\n"
-"PO-Revision-Date: 2025-09-04 03:39+0000\n"
-"Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
+"PO-Revision-Date: 2025-09-14 13:54+0000\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/fi/>\n"
 "Language: fi\n"
@@ -20,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.13\n"
+"X-Generator: Weblate 5.13.3\n"
 
 msgid "unable to parse _buildtime macro\n"
 msgstr "_buildtime-makroa ei voida jäsentää\n"
@@ -252,10 +253,8 @@ msgstr "%s löydetty build-id on liian suuri\n"
 msgid "failed to create directory"
 msgstr "hakemiston luonti epäonnistui"
 
-#, fuzzy
-#| msgid "Mixing main ELF and debug files in package"
 msgid "Mixing main ELF and debug files in package\n"
-msgstr "Sekoitettu ELF- ja virheenkorjaustiedostoja paketissa"
+msgstr "Sekoitettu ELF- ja virheenkorjaustiedostoja paketissa\n"
 
 #, c-format
 msgid "File needs leading \"/\": %s\n"
@@ -391,8 +390,7 @@ msgstr "Binaaripakettityö valmis, tulos %d, tiedostonimi %s\n"
 msgid "line %d: Error parsing script: %s: %s\n"
 msgstr "rivi %d: virhe jäsennettäessä %s:ää: %s\n"
 
-#, fuzzy, c-format
-#| msgid "line %d: Bad option %s: %s\n"
+#, c-format
 msgid "line %d: Bad %s option %s: %s\n"
 msgstr "rivi %d: virheellinen valinta %s: %s\n"
 
@@ -1082,8 +1080,7 @@ msgstr "%s%s tallennettu nimellä %s%s\n"
 msgid "%s%s created as %s%s\n"
 msgstr "%s%s luotu %s%s:na\n"
 
-#, fuzzy, c-format
-#| msgid "%s %s: remove failed: %s\n"
+#, c-format
 msgid "%s %s%s: remove failed: %s\n"
 msgstr "%s %s: poisto epäonnistui: %s\n"
 
@@ -2535,15 +2532,11 @@ msgstr "otsikko"
 msgid "package"
 msgstr "paketti"
 
-#, fuzzy
-#| msgid "Header "
 msgid "Header"
-msgstr "Otsikko "
+msgstr "Otsikko"
 
-#, fuzzy
-#| msgid "Payload "
 msgid "Payload"
-msgstr "Hyötykuorma "
+msgstr "Hyötykuorma"
 
 msgid "Unable to reload signature header.\n"
 msgstr "Allekirjoitusotsikon uudelleenlataus ei onnistu\n"
@@ -2707,10 +2700,9 @@ msgstr "Makro %%%s määritetty, mutta ei käytössä piirin sisällä\n"
 msgid "no such macro: '%s'\n"
 msgstr "ei sellaista makroa: '%s'\n"
 
-#, fuzzy, c-format
-#| msgid "invalid package number: %s\n"
+#, c-format
 msgid "invalid argument: %s\n"
-msgstr "virheellinen paketin numero: %s\n"
+msgstr "virheellinen argumentti: %s\n"
 
 #, fuzzy, c-format
 #| msgid "failed to create directory %s: %s\n"
