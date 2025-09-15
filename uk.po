@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
-"PO-Revision-Date: 2025-09-02 20:22+0000\n"
+"PO-Revision-Date: 2025-09-15 12:31+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/uk/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.13\n"
+"X-Generator: Weblate 5.13.3\n"
 
 #: build/build.cc:42
 msgid "unable to parse _buildtime macro\n"
@@ -2807,10 +2807,9 @@ msgid "\"%s\" specifies multiple packages:\n"
 msgstr "«%s» задає декілька пакунків:\n"
 
 #: lib/rpminstall.cc:785
-#, fuzzy, c-format
-#| msgid "line %d doesn't belong to any section: %s\n"
+#, c-format
 msgid "failed to add restore element to transaction: %s\n"
-msgstr "рядок %d не належить до жодного з розділів: %s\n"
+msgstr "не вдалося додати елемент restore до операції: %s\n"
 
 #: lib/rpminstall.cc:824
 #, c-format
