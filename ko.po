@@ -10,16 +10,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
-"PO-Revision-Date: 2025-09-05 20:53+0000\n"
+"PO-Revision-Date: 2025-09-16 17:20+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
-"Language-Team: Korean <https://translate.fedoraproject.org/projects/rpm/rpm-"
-"l10n/ko/>\n"
+"Language-Team: Korean <https://translate.fedoraproject.org/projects/rpm/"
+"rpm-l10n/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.13.2\n"
+"X-Generator: Weblate 5.13.3\n"
 
 #: build/build.cc:42
 msgid "unable to parse _buildtime macro\n"
@@ -2768,10 +2768,9 @@ msgid "\"%s\" specifies multiple packages:\n"
 msgstr "\"%s\" 다중 꾸러미를 지정합니다:\n"
 
 #: lib/rpminstall.cc:785
-#, fuzzy, c-format
-#| msgid "line %d doesn't belong to any section: %s\n"
+#, c-format
 msgid "failed to add restore element to transaction: %s\n"
-msgstr "행 %d 는 어떤 부분에 속하지 않습니다: %s\n"
+msgstr "연결에 복구 요소를 추가하는 데 실패함: %s\n"
 
 #: lib/rpminstall.cc:824
 #, c-format
