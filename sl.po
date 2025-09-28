@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
-"PO-Revision-Date: 2024-12-13 23:38+0000\n"
+"PO-Revision-Date: 2025-09-28 18:07+0000\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: Slovenian <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/sl/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 5.8.4\n"
+"X-Generator: Weblate 5.13.3\n"
 
 #: build/build.cc:42
 msgid "unable to parse _buildtime macro\n"
@@ -65,7 +65,7 @@ msgstr ""
 #: build/build.cc:387
 #, c-format
 msgid "setting %s=%s\n"
-msgstr ""
+msgstr "nastavitev %s=%s\n"
 
 #: build/build.cc:391
 #, c-format
@@ -79,12 +79,16 @@ msgid ""
 "\n"
 "RPM build warnings:\n"
 msgstr ""
+"\n"
+"Opozorila gradnje RPM:\n"
 
 #: build/build.cc:569
 msgid ""
 "\n"
 "RPM build errors:\n"
 msgstr ""
+"\n"
+"Napake gradnje RPM:\n"
 
 #: build/files.cc:346 build/files.cc:527 build/files.cc:751
 #, c-format
