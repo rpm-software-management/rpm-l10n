@@ -11,10 +11,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
-"PO-Revision-Date: 2025-09-14 13:54+0000\n"
-"Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
-"Language-Team: Finnish <https://translate.fedoraproject.org/projects/rpm/rpm-"
-"l10n/fi/>\n"
+"PO-Revision-Date: 2025-10-02 12:53+0000\n"
+"Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
+"Language-Team: Finnish <https://translate.fedoraproject.org/projects/rpm/"
+"rpm-l10n/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -70,12 +70,13 @@ msgid "setting %s=%s\n"
 msgstr "asettaa %s=%s\n"
 
 #: build/build.cc:391
-#, fuzzy, c-format
-#| msgid "source_date_epoch_from_changelog set but %%changelog is missing\n"
+#, c-format
 msgid ""
 "%%source_date_epoch_from_changelog is set, but %%changelog has no entries to "
 "take a date from\n"
-msgstr "source_date_epoch_from_changelog asetettu, mutta %%changelog puuttuu\n"
+msgstr ""
+"%%source_date_epoch_from_changelog on asetettu, mutta %%changelog:ssa ei ole "
+"merkintöjä, joista päivämäärä voitaisiin ottaa\n"
 
 #: build/build.cc:563
 msgid ""
@@ -181,16 +182,14 @@ msgid "unable to parse %s=%s\n"
 msgstr "%s=%s:n jäsentäminen ei onnistu\n"
 
 #: build/files.cc:1057
-#, fuzzy, c-format
-#| msgid "Unknown icon type: %s\n"
+#, c-format
 msgid "Unknown mtime policy '%s'\n"
-msgstr "Tuntematon ikonityyppi: %s\n"
+msgstr "Tuntematon mtime-käytäntö '%s'\n"
 
 #: build/files.cc:1073
-#, fuzzy, c-format
-#| msgid "Unknown file digest algorithm %u, falling back to MD5\n"
+#, c-format
 msgid "Unknown file digest algorithm %u, falling back to %u\n"
-msgstr "Tuntematon tiedoston tiivistysalgoritmi %u, käytetään MD5:ttä\n"
+msgstr "Tuntematon tiedoston tiivistysalgoritmi %u, käytetään %u:ta\n"
 
 #: build/files.cc:1125
 #, c-format
@@ -476,10 +475,9 @@ msgid "Finished binary package job, result %d, filename %s\n"
 msgstr "Binaaripakettityö valmis, tulos %d, tiedostonimi %s\n"
 
 #: build/parseSimpleScript.cc:30
-#, fuzzy, c-format
-#| msgid "line %d: Error parsing %s: %s\n"
+#, c-format
 msgid "line %d: Error parsing script: %s: %s\n"
-msgstr "rivi %d: virhe jäsennettäessä %s:ää: %s\n"
+msgstr "rivi %d: virhe jäsennettäessä skripttä %s: %s\n"
 
 #: build/parseSimpleScript.cc:38
 #, c-format
@@ -515,7 +513,7 @@ msgstr "epätäydellinen %%changelog-merkintä\n"
 #: build/parseChangelog.cc:244
 #, c-format
 msgid "bad date in %%changelog: %s\n"
-msgstr "virheellinen päivämäärä %%changelogissa: %s\n"
+msgstr "virheellinen päivämäärä %%changelog:ssa: %s\n"
 
 #: build/parseChangelog.cc:255
 #, c-format
@@ -525,12 +523,12 @@ msgstr "%%changelog ei ole kronologisessa järjestyksessä\n"
 #: build/parseChangelog.cc:267 build/parseChangelog.cc:278
 #, c-format
 msgid "missing name in %%changelog\n"
-msgstr "puuttuva nimi %%changelogissa\n"
+msgstr "puuttuva nimi %%changelog:ssa\n"
 
 #: build/parseChangelog.cc:285
 #, c-format
 msgid "no description in %%changelog\n"
-msgstr "ei kuvausta %%changelogissa\n"
+msgstr "ei kuvausta %%changelog:ssa\n"
 
 #: build/parseChangelog.cc:322
 #, c-format
@@ -828,10 +826,8 @@ msgid "Version required"
 msgstr "Versio pakollinen"
 
 #: build/parseReqs.cc:282
-#, fuzzy
-#| msgid "line %d: file trigger condition must begin with '/': %s"
 msgid "file trigger conditions must begin with '/'"
-msgstr "rivi %d: tiedoston laukaisuehdon on alettava merkillä '/': %s"
+msgstr "tiedoston laukaisuehtojen on alettava merkillä '/'"
 
 #: build/parseReqs.cc:294
 msgid "Only package names are allowed in Obsoletes"
@@ -993,10 +989,9 @@ msgid ""
 msgstr ""
 
 #: build/parseSpec.cc:1014
-#, fuzzy, c-format
-#| msgid "failed to write all data to %s: %s\n"
+#, c-format
 msgid "failed to write buildsystem %s %%%s: %s\n"
-msgstr "epäonnistuttiin kirjoittamaan kaikki tiedot kohteeseen %s: %s\n"
+msgstr "buildsystem %s %%%s:n kirjoittaminen epäonnistui: %s\n"
 
 #: build/parseSpec.cc:1036
 #, fuzzy, c-format
@@ -1876,16 +1871,14 @@ msgid "do not execute %%posttrans scriptlet (if any)"
 msgstr "älä suorita %%posttrans-sovelmaa (jos sellainen on)"
 
 #: lib/poptI.cc:229
-#, fuzzy, c-format
-#| msgid "do not execute %%pretrans scriptlet (if any)"
+#, c-format
 msgid "do not execute %%preuntrans scriptlet (if any)"
-msgstr "älä suorita %%pretrans-sovelmaa (jos sellainen on)"
+msgstr "älä suorita %%preuntrans-sovelmaa (jos sellainen on)"
 
 #: lib/poptI.cc:232
-#, fuzzy, c-format
-#| msgid "do not execute %%posttrans scriptlet (if any)"
+#, c-format
 msgid "do not execute %%postuntrans scriptlet (if any)"
-msgstr "älä suorita %%posttrans-sovelmaa (jos sellainen on)"
+msgstr "älä suorita %%postuntrans-sovelmaa (jos sellainen on)"
 
 #: lib/poptI.cc:235
 msgid "do not execute any scriptlet(s) triggered by this package"
@@ -2634,24 +2627,21 @@ msgstr ""
 "Väärä määrä merkintöjä tunnisteelle %s: %u löytyi, mutta %u odotettiin.\n"
 
 #: lib/rpmfi.cc:1352
-#, fuzzy, c-format
-#| msgid "Malformed data for tag %s: %u bytes found but %lu expected.\n"
+#, c-format
 msgid "Malformed data for tag %s: %u bytes found but %<PRIu64> expected.\n"
 msgstr ""
-"Väärinmuotoiltua tietoa tunnisteelle %s: %u tavua löytyi, mutta %lu "
+"Väärinmuotoiltua tietoa tunnisteelle %s: %u tavua löytyi, mutta %<PRIu64> "
 "odotettiin.\n"
 
 #: lib/rpmfi.cc:1537
-#, fuzzy, c-format
-#| msgid "%s: base64 decode failed, len %li\n"
+#, c-format
 msgid "%s: base64 decode failed, len %zu\n"
-msgstr "%s: base64-dekoodaus epäonnistui, len %li\n"
+msgstr "%s: base64-dekoodaus epäonnistui, len %zu\n"
 
 #: lib/rpmfi.cc:1545
-#, fuzzy, c-format
-#| msgid "%s: base64 decode success, len %li\n"
+#, c-format
 msgid "%s: base64 decode success, len %zu\n"
-msgstr "%s: base64-dekoodaus onnistui, len %li\n"
+msgstr "%s: base64-dekoodaus onnistui, len %zu\n"
 
 #: lib/rpmfi.cc:2405
 msgid "Bad magic"
@@ -2801,10 +2791,9 @@ msgid "\"%s\" specifies multiple packages:\n"
 msgstr "\"%s\" määrittää useita paketteja:\n"
 
 #: lib/rpminstall.cc:785
-#, fuzzy, c-format
-#| msgid "line %d doesn't belong to any section: %s\n"
+#, c-format
 msgid "failed to add restore element to transaction: %s\n"
-msgstr "rivi %d ei kuulu millekään lohkolle: %s\n"
+msgstr "Palautuselementin lisääminen tapahtumaan epäonnistui: %s\n"
 
 #: lib/rpminstall.cc:824
 #, c-format
@@ -3474,10 +3463,9 @@ msgid "macro value out of range for int: %<PRIu64> using %i instead.\n"
 msgstr ""
 
 #: rpmio/macro.cc:2094
-#, fuzzy, c-format
-#| msgid "======================== active %d empty %d\n"
+#, c-format
 msgid "======================== active %zu empty %d\n"
-msgstr "======================== aktiivisia %d tyhjiä %d\n"
+msgstr "======================== aktiivisia %zu tyhjiä %d\n"
 
 #: rpmio/rpmfileutil.cc:97
 #, c-format
@@ -3636,28 +3624,24 @@ msgid "Could not read from file %s: %s\n"
 msgstr "Tiedoston ”%s” lukeminen ei onnistunut: %s\n"
 
 #: sign/rpmgensig.cc:242
-#, fuzzy, c-format
-#| msgid "gpg exec failed (%d)\n"
+#, c-format
 msgid "%s waitpid failed (%s)\n"
-msgstr "gpg:n suoritus epäonnistui (%d)\n"
+msgstr "%s waitpid epäonnistui (%s)\n"
 
 #: sign/rpmgensig.cc:245
-#, fuzzy, c-format
-#| msgid "gpg exec failed (%d)\n"
+#, c-format
 msgid "%s exec failed (%d)\n"
-msgstr "gpg:n suoritus epäonnistui (%d)\n"
+msgstr "%s exec epäonnistui (%d)\n"
 
 #: sign/rpmgensig.cc:271
-#, fuzzy, c-format
-#| msgid "gpg failed to write signature\n"
+#, c-format
 msgid "failed to write signature: %s\n"
-msgstr "gpg ei voinut kirjoittaa allekirjoitusta\n"
+msgstr "allekirjoituksen kirjoittaminen epäonnistui: %s\n"
 
 #: sign/rpmgensig.cc:287
-#, fuzzy, c-format
-#| msgid "unable to read the signature\n"
+#, c-format
 msgid "unable to read the signature: %s\n"
-msgstr "ei voinut lukea allekirjoitusta\n"
+msgstr "ei voinut lukea allekirjoitusta: %s\n"
 
 #: sign/rpmgensig.cc:377
 #, fuzzy
@@ -3672,10 +3656,9 @@ msgid "Unsupported OpenPGP hash algorithm %u\n"
 msgstr "Ei tuettu PGP-hajautusalgoritmi %u\n"
 
 #: sign/rpmgensig.cc:390
-#, fuzzy, c-format
-#| msgid "Unsupported PGP signature\n"
+#, c-format
 msgid "Deprecated OpenPGP signature version %d\n"
-msgstr "PGP-allekirjoitusta ei tueta\n"
+msgstr "OpenPGP-allekirjoitusversiota ei enää tueta %d\n"
 
 #: sign/rpmgensig.cc:463
 #, fuzzy, c-format
@@ -3716,16 +3699,14 @@ msgid "%s: headerRead failed: %s\n"
 msgstr "%s: headerRead epäonnistui: %s\n"
 
 #: sign/rpmgensig.cc:699
-#, fuzzy, c-format
-#| msgid "Cannot sign RPM v3 packages\n"
+#, c-format
 msgid "Cannot sign RPM v3 packages: %s\n"
-msgstr "RPM v3-paketteja ei voi allekirjoittaa\n"
+msgstr "RPM v3-paketteja ei voi allekirjoittaa: %s\n"
 
 #: sign/rpmgensig.cc:709
-#, fuzzy, c-format
-#| msgid "generate fsverity signatures for package(s) files"
+#, c-format
 msgid "not generating v3 signature for v6 package: %s\n"
-msgstr "luo fsverity-allekirjoitukset pakettitiedostoille"
+msgstr "v3-allekirjoitusta ei luoda v6-paketille: %s\n"
 
 #: sign/rpmgensig.cc:724
 #, c-format
@@ -3756,10 +3737,9 @@ msgid "%s: rpmWriteSignature failed: %s\n"
 msgstr "%s: rpmWriteSignature epäonnistui: %s\n"
 
 #: sign/rpmgensig.cc:827
-#, fuzzy, c-format
-#| msgid "rpmMkTemp failed\n"
+#, c-format
 msgid "rpmMkTemp failed: %s\n"
-msgstr "rpmMkTemp epäonnistui\n"
+msgstr "rpmMkTemp epäonnistui: %s\n"
 
 #: sign/rpmgensig.cc:835
 #, fuzzy, c-format
@@ -4501,10 +4481,9 @@ msgid "Signature options:"
 msgstr "Allekirjoitusvalitsimet:"
 
 #: tools/rpmsign.cc:139
-#, fuzzy, c-format
-#| msgid "You must set \"%%_gpg_name\" in your macro file\n"
+#, c-format
 msgid "You must set \"%%_openpgp_sign_id\" in your macro file\n"
-msgstr "Sinun on asetettava \"%%_gpg_name\" makrotiedostoosi\n"
+msgstr "Sinun on asetettava \"%%_openpgp_sign_id\" makrotiedostoosi\n"
 
 #: tools/rpmsign.cc:161
 #, c-format
