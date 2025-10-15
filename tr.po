@@ -12,11 +12,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
-"PO-Revision-Date: 2025-09-14 13:54+0000\n"
-"Last-Translator: Abdullah Bagyapan <abdullahbagyapan@users.noreply.translate."
-"fedoraproject.org>\n"
-"Language-Team: Turkish <https://translate.fedoraproject.org/projects/rpm/rpm-"
-"l10n/tr/>\n"
+"PO-Revision-Date: 2025-10-15 13:53+0000\n"
+"Last-Translator: Oğuz Ersen <oguz@ersen.moe>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/rpm/"
+"rpm-l10n/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,10 +24,8 @@ msgstr ""
 "X-Generator: Weblate 5.13.3\n"
 
 #: build/build.cc:42
-#, fuzzy
-#| msgid "unable to parse %s=%s\n"
 msgid "unable to parse _buildtime macro\n"
-msgstr "%s=%s ayrıştırılamadı\n"
+msgstr "_buildtime makrosu ayrıştırılamadı\n"
 
 #: build/build.cc:50
 msgid "unable to parse SOURCE_DATE_EPOCH\n"
@@ -64,10 +61,9 @@ msgid "Failed build dependencies:\n"
 msgstr "Başarısız oluşturma bağımlılıkları:\n"
 
 #: build/build.cc:346
-#, fuzzy, c-format
-#| msgid "failed to create directory"
+#, c-format
 msgid "failed to create package build directory %s: %s\n"
-msgstr "dizin oluşturulamadı"
+msgstr "paket oluşturma dizini %s oluşturulamadı: %s\n"
 
 #: build/build.cc:387
 #, c-format
@@ -75,13 +71,13 @@ msgid "setting %s=%s\n"
 msgstr "ayar %s=%s\n"
 
 #: build/build.cc:391
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "%%source_date_epoch_from_changelog is set, but %%changelog has no entries to "
 "take a date from\n"
 msgstr ""
-"%%source_date_epoch_from_changelog ayarlandı, ancak %%changelog'un tarih "
-"almak için hiçbir girişi yok\n"
+"%%source_date_epoch_from_changelog ayarlandı, ancak tarih almak için "
+"%%changelog girdisi yok\n"
 
 #: build/build.cc:563
 msgid ""
@@ -118,7 +114,7 @@ msgstr "Belirteç %s geçersiz: %s\n"
 #: build/files.cc:493
 #, c-format
 msgid "Missing %s in %s(%s)\n"
-msgstr ""
+msgstr "eksik %s, %s(%s) içinde\n"
 
 #: build/files.cc:547
 #, c-format
@@ -190,16 +186,14 @@ msgid "unable to parse %s=%s\n"
 msgstr "%s=%s ayrıştırılamadı\n"
 
 #: build/files.cc:1057
-#, fuzzy, c-format
-#| msgid "Unknown icon type: %s\n"
+#, c-format
 msgid "Unknown mtime policy '%s'\n"
-msgstr "bilinmeyen kısayol simgesi türü: %s\n"
+msgstr "Bilinmeyen mtime ilkesi '%s'\n"
 
 #: build/files.cc:1073
-#, fuzzy, c-format
-#| msgid "Unknown file digest algorithm %u, falling back to MD5\n"
+#, c-format
 msgid "Unknown file digest algorithm %u, falling back to %u\n"
-msgstr "Bilinmeyen dosya özet algoritması %u, bunun yerine MD5 kullanılıyor\n"
+msgstr "Bilinmeyen dosya özet algoritması %u, bunun yerine %u kullanılıyor\n"
 
 #: build/files.cc:1125
 #, c-format
@@ -341,7 +335,7 @@ msgstr "Boş %s dosyası %s\n"
 #: build/files.cc:2301
 #, c-format
 msgid "illegal _docdir_fmt %s: %s\n"
-msgstr ""
+msgstr "illegal _docdir_fmt %s: %s\n"
 
 #: build/files.cc:2489
 #, c-format
@@ -486,10 +480,9 @@ msgid "Finished binary package job, result %d, filename %s\n"
 msgstr ""
 
 #: build/parseSimpleScript.cc:30
-#, fuzzy, c-format
-#| msgid "line %d: Error parsing %s: %s\n"
+#, c-format
 msgid "line %d: Error parsing script: %s: %s\n"
-msgstr "satır %d: %s çözümlenirken hata oluştu: %s\n"
+msgstr "satır %d: betik çözümlenirken hata oluştu: %s: %s\n"
 
 #: build/parseSimpleScript.cc:38
 #, fuzzy, c-format
@@ -598,7 +591,7 @@ msgstr ""
 #: build/parsePreamble.cc:228
 #, c-format
 msgid "Downloading %s to %s\n"
-msgstr ""
+msgstr "%s, %s konumuna indiriliyor\n"
 
 #: build/parsePreamble.cc:230
 #, c-format
@@ -777,10 +770,9 @@ msgstr ""
 "satır %d: Önceliklere yalnızca dosya tetikleyicileri için izin verilir : %s\n"
 
 #: build/parsePreamble.cc:1330
-#, fuzzy, c-format
-#| msgid "Invalid capability: %s\n"
+#, c-format
 msgid "Invalid buildroot: '%s'\n"
-msgstr "Geçersiz yeterlilik: %s\n"
+msgstr "Geçersiz buildroot: %s\n"
 
 #: build/parsePrep.cc:72
 #, c-format
@@ -838,10 +830,8 @@ msgid "Version required"
 msgstr "Sürüm gerekli"
 
 #: build/parseReqs.cc:282
-#, fuzzy
-#| msgid "line %d: file trigger condition must begin with '/': %s"
 msgid "file trigger conditions must begin with '/'"
-msgstr "satır %d: dosya tetikleyici koşulu '/' ile başlamalıdır: %s"
+msgstr "dosya tetikleyici koşulları '/' ile başlamalıdır"
 
 #: build/parseReqs.cc:294
 msgid "Only package names are allowed in Obsoletes"
@@ -1019,7 +1009,7 @@ msgstr "%s paketinden spec dosyası okunamadı\n"
 #: build/parseSpec.cc:1096
 #, c-format
 msgid "Section %s is not allowed after build is done!\n"
-msgstr ""
+msgstr "Oluşturma tamamlandıktan sonra %s bölümüne izin verilmiyor\n"
 
 #: build/parseSpec.cc:1249
 msgid "No compatible architectures found for build\n"
@@ -1028,7 +1018,7 @@ msgstr "Derleme için uyumlu mimariler bulunamadı\n"
 #: build/parseSpec.cc:1369
 #, c-format
 msgid "invalid rpm format %d requested, using %d\n"
-msgstr ""
+msgstr "geçersiz rpm biçimi %d istendi, %d kullanılıyor\n"
 
 #: build/parseSpec.cc:1404
 #, c-format
@@ -1047,27 +1037,27 @@ msgstr ""
 
 #: build/policies.cc:108
 msgid "Failed to get policies from header\n"
-msgstr ""
+msgstr "Başlıktan ilkeler alınamadı\n"
 
 #: build/policies.cc:161
 #, c-format
 msgid "%%semodule requires a file path\n"
-msgstr ""
+msgstr "%%semodule bir dosya yolu gerektirir\n"
 
 #: build/policies.cc:170
 #, c-format
 msgid "Failed to read  policy file: %s\n"
-msgstr ""
+msgstr "İlke dosyası okunamadı: %s\n"
 
 #: build/policies.cc:177
 #, c-format
 msgid "Failed to encode policy file: %s\n"
-msgstr ""
+msgstr "İlke dosyası kodlanamadı: %s\n"
 
 #: build/policies.cc:194
 #, c-format
 msgid "Failed to determine a policy name: %s\n"
-msgstr ""
+msgstr "İlke adı belirlenemedi: %s\n"
 
 #: build/policies.cc:206
 #, c-format
@@ -1084,7 +1074,7 @@ msgstr "%s ayrıştırılırken hata: %s\n"
 #: build/policies.cc:259
 #, c-format
 msgid "Expecting %%semodule tag: %s\n"
-msgstr ""
+msgstr "%%semodule etiketi bekleniyor: %s\n"
 
 #: build/policies.cc:269
 #, c-format
@@ -1099,12 +1089,12 @@ msgstr ""
 #: build/policies.cc:320
 #, c-format
 msgid "Processing policies: %s\n"
-msgstr ""
+msgstr "İlkeler işleniyor: %s\n"
 
 #: build/rpmfc.cc:164
 #, c-format
 msgid "Ignoring invalid regex %s\n"
-msgstr ""
+msgstr "Geçersiz düzenli ifade %s yok sayılıyor\n"
 
 #: build/rpmfc.cc:198
 #, c-format
@@ -1135,7 +1125,7 @@ msgstr "%s çıkışında hata (%s)\n"
 #: build/rpmfc.cc:421
 #, c-format
 msgid "%s failed: %x\n"
-msgstr ""
+msgstr "%s başarısız: %x\n"
 
 #: build/rpmfc.cc:425
 #, c-format
@@ -1153,22 +1143,22 @@ msgstr ""
 
 #: build/rpmfc.cc:1240
 msgid "No file attributes configured\n"
-msgstr ""
+msgstr "Dosya özniteliği yapılandırılmadı\n"
 
 #: build/rpmfc.cc:1268
 #, c-format
 msgid "magic_open(0x%x) failed: %s\n"
-msgstr ""
+msgstr "magic_open(0x%x) başarısız: %s\n"
 
 #: build/rpmfc.cc:1274 build/rpmfc.cc:1278
 #, c-format
 msgid "magic_load failed: %s\n"
-msgstr ""
+msgstr "magic_load başarısız: %s\n"
 
 #: build/rpmfc.cc:1325
 #, c-format
 msgid "Recognition of file \"%s\" failed: mode %06o %s\n"
-msgstr ""
+msgstr "\"%s\" dosyasının tanınması başarısız: kipi %06o %s\n"
 
 #: build/rpmfc.cc:1344
 #, c-format
