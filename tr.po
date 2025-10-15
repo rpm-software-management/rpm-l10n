@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
-"PO-Revision-Date: 2025-10-15 13:53+0000\n"
+"PO-Revision-Date: 2025-10-16 15:53+0000\n"
 "Last-Translator: Oğuz Ersen <oguz@ersen.moe>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/tr/>\n"
@@ -1258,12 +1258,12 @@ msgstr ""
 #: lib/depends.cc:344
 #, c-format
 msgid "package %s was already added, skipping %s\n"
-msgstr ""
+msgstr "%s paketi zaten eklendi, %s atlanıyor\n"
 
 #: lib/depends.cc:345
 #, c-format
 msgid "package %s was already added, replacing with %s\n"
-msgstr ""
+msgstr "%s paketi zaten eklendi, %s ile değiştiriliyor\n"
 
 #: lib/formats.cc:44
 msgid "(not a blob)"
@@ -1296,7 +1296,7 @@ msgstr "(OpenPGP imzası değil)"
 #: lib/formats.cc:439
 #, c-format
 msgid "Invalid date %u"
-msgstr ""
+msgstr "Geçersiz tarih %u"
 
 #: lib/formats.cc:505
 msgid "normal"
@@ -1304,7 +1304,7 @@ msgstr "normal"
 
 #: lib/formats.cc:508 lib/verify.cc:314
 msgid "replaced"
-msgstr ""
+msgstr "değiştirildi"
 
 #: lib/formats.cc:511 lib/verify.cc:308
 msgid "not installed"
@@ -1312,7 +1312,7 @@ msgstr "kurulmamış"
 
 #: lib/formats.cc:514 lib/verify.cc:310
 msgid "net shared"
-msgstr ""
+msgstr "ağ paylaşımlı"
 
 #: lib/formats.cc:517 lib/verify.cc:312
 msgid "wrong color"
@@ -1334,18 +1334,17 @@ msgstr ""
 #: lib/fsm.cc:730
 #, c-format
 msgid "%s%s saved as %s%s\n"
-msgstr ""
+msgstr "%s%s, %s%s olarak kaydedildi\n"
 
 #: lib/fsm.cc:788
 #, c-format
 msgid "%s%s created as %s%s\n"
-msgstr ""
+msgstr "%s%s, %s%s olarak oluşturuldu\n"
 
 #: lib/fsm.cc:1182
-#, fuzzy, c-format
-#| msgid "%s: open failed: %s\n"
+#, c-format
 msgid "%s %s%s: remove failed: %s\n"
-msgstr "%s: açılamadı: %s\n"
+msgstr "%s %s%s: kaldırma başarısız: %s\n"
 
 #: lib/fsm.cc:1183
 msgid "directory"
@@ -1424,7 +1423,7 @@ msgstr ""
 
 #: lib/header.cc:2028
 msgid "signature "
-msgstr ""
+msgstr "imza "
 
 #: lib/header.cc:2044
 msgid "hdr length: BAD"
@@ -1437,17 +1436,17 @@ msgstr ""
 
 #: lib/headerfmt.cc:447
 msgid "invalid field width"
-msgstr ""
+msgstr "geçersiz alan genişliği"
 
 #: lib/headerfmt.cc:453
 #, c-format
 msgid "missing { after %%"
-msgstr ""
+msgstr "%% sonrasında { eksik"
 
 #: lib/headerfmt.cc:475
 #, c-format
 msgid "missing } after %%{"
-msgstr ""
+msgstr "%%{ sonrasında } eksik"
 
 #: lib/headerfmt.cc:486
 msgid "empty tag format"
@@ -1460,7 +1459,7 @@ msgstr "etiket ismi boş"
 #: lib/headerfmt.cc:504
 #, c-format
 msgid "unknown tag: \"%s\""
-msgstr ""
+msgstr "bilinmeyen etiket: \"%s\""
 
 #: lib/headerfmt.cc:524
 msgid "] expected at end of array"
@@ -1476,7 +1475,7 @@ msgstr "beklenmeyen }"
 
 #: lib/headerfmt.cc:564
 msgid "escaped char expected after \\"
-msgstr ""
+msgstr "\\ sonrasında kaçış karakteri bekleniyor"
 
 #: lib/headerfmt.cc:606
 msgid "? expected in expression"
@@ -1509,7 +1508,7 @@ msgstr ""
 #: lib/keystore.cc:62
 #, c-format
 msgid "%s: reading of public key failed.\n"
-msgstr ""
+msgstr "%s: ortak anahtar okuması başarısız oldu.\n"
 
 #: lib/keystore.cc:90 lib/keystore.cc:195
 #, fuzzy, c-format
@@ -1520,7 +1519,7 @@ msgstr "dizin oluşturulamadı"
 #: lib/keystore.cc:105
 #, c-format
 msgid "failed to import key: %s: %s\n"
-msgstr ""
+msgstr "anahtar içe aktarılamadı: %s: %s\n"
 
 #: lib/keystore.cc:201
 #, fuzzy, c-format
@@ -1534,15 +1533,14 @@ msgid "Can't acquire writelock for keyring at %s\n"
 msgstr ""
 
 #: lib/keystore.cc:298
-#, fuzzy, c-format
-#| msgid "%s: not an armored public key.\n"
+#, c-format
 msgid "%s is not a valid public key\n"
-msgstr "%s: zırhlanmış bir ortak anahtar değil.\n"
+msgstr "%s geçerli bir ortak anahtar değil\n"
 
 #: lib/package.cc:265
 #, c-format
 msgid "RPM v3 packages are deprecated: %s\n"
-msgstr ""
+msgstr "RPM v3 paketleri kullanımdan kaldırıldı: %s\n"
 
 #: lib/poptALL.cc:59 tools/cliutils.cc:24
 #, c-format
@@ -1551,17 +1549,17 @@ msgstr "RPM Sürümü %s\n"
 
 #: lib/poptALL.cc:139
 msgid "Error writing to stdout"
-msgstr ""
+msgstr "Standart çıktıya yazılırken hata oluştu"
 
 #: lib/poptALL.cc:150 rpmio/macro.cc:1300
 #, c-format
 msgid "failed to load macro file %s\n"
-msgstr ""
+msgstr "%s makro dosyası yüklenemedi\n"
 
 #: lib/poptALL.cc:157
 #, c-format
 msgid "arguments to --dbpath must begin with '/'\n"
-msgstr ""
+msgstr "--dbpath argümanları '/' ile başlamalıdır\n"
 
 #: lib/poptALL.cc:180
 #, c-format
@@ -1599,7 +1597,7 @@ msgstr ""
 
 #: lib/poptALL.cc:225
 msgid "Specify target platform"
-msgstr ""
+msgstr "Hedef platformu belirt"
 
 #: lib/poptALL.cc:225
 msgid "CPU-VENDOR-OS"
@@ -1615,7 +1613,7 @@ msgstr ""
 
 #: lib/poptALL.cc:230
 msgid "load a single macro file"
-msgstr ""
+msgstr "tek bir makro dosyası yükle"
 
 #: lib/poptALL.cc:231
 msgid "<FILE>"
@@ -1623,19 +1621,19 @@ msgstr ""
 
 #: lib/poptALL.cc:236
 msgid "don't enable any plugins"
-msgstr ""
+msgstr "hiçbir eklentiyi etkinleştirme"
 
 #: lib/poptALL.cc:239
 msgid "don't verify package digest(s)"
-msgstr ""
+msgstr "paket özet(ler)ini doğrulama"
 
 #: lib/poptALL.cc:241
 msgid "don't verify database header(s) when retrieved"
-msgstr ""
+msgstr "alındığında veri tabanı başlıklarını doğrulama"
 
 #: lib/poptALL.cc:243
 msgid "don't verify package signature(s)"
-msgstr ""
+msgstr "paket imza(lar)ını doğrulama"
 
 #: lib/poptALL.cc:246
 msgid "send stdout to CMD"
@@ -1728,7 +1726,7 @@ msgstr ""
 
 #: lib/poptI.cc:133
 msgid "print dependency loops as warning"
-msgstr ""
+msgstr "bağımlılık döngülerini uyarı olarak yazdır"
 
 #: lib/poptI.cc:137
 msgid "erase (uninstall) package"
@@ -1745,7 +1743,7 @@ msgstr "belgeleri kurmaz"
 
 #: lib/poptI.cc:143 lib/poptI.cc:185
 msgid "do not install configuration files"
-msgstr ""
+msgstr "yapılandırma dosyalarını kurma"
 
 #: lib/poptI.cc:146 lib/poptI.cc:190
 msgid "do not install documentation"
