@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
-"PO-Revision-Date: 2025-10-16 15:53+0000\n"
-"Last-Translator: Oğuz Ersen <oguz@ersen.moe>\n"
+"PO-Revision-Date: 2025-10-19 20:54+0000\n"
+"Last-Translator: Ahmet Kaya <neodeveloper27@gmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/tr/>\n"
 "Language: tr\n"
@@ -139,12 +139,12 @@ msgstr "dirmode spec hatalı: %s(%s)\n"
 #: build/files.cc:713
 #, c-format
 msgid "Unusual locale length: \"%s\" in %%lang(%s)\n"
-msgstr ""
+msgstr "Alışılmadık yerel uzunluğu: %%lang(%s)'de \"%s\"\n"
 
 #: build/files.cc:720
 #, c-format
 msgid "Duplicate locale %s in %%lang(%s)\n"
-msgstr ""
+msgstr "%%lang(%s) dilinde %s yereli yinele\n"
 
 #: build/files.cc:837
 #, c-format
@@ -156,15 +156,14 @@ msgid "File capability support not built in\n"
 msgstr "Dosya yeterliliği için yerleşik destek yok\n"
 
 #: build/files.cc:896
-#, fuzzy, c-format
-#| msgid "Missing '(' in %s %s\n"
+#, c-format
 msgid "Missing quote: %s\n"
-msgstr "%s içinde '(' yok: %s\n"
+msgstr "Kayıp alıntı:%s\n"
 
 #: build/files.cc:902
 #, c-format
 msgid "Trailing backslash: %s\n"
-msgstr ""
+msgstr "Arkadan ters eğik çizgi: %s\n"
 
 #: build/files.cc:914
 #, c-format
@@ -393,11 +392,11 @@ msgstr "Dosyalar işleniyor: %s\n"
 #: build/files.cc:3165
 #, c-format
 msgid "Binaries arch (%d) not matching the package arch (%d).\n"
-msgstr ""
+msgstr "İkililerin mimarisi (%d) paket mimarisine uymuyor(%d).\n"
 
 #: build/files.cc:3171
 msgid "Arch dependent binaries in noarch package\n"
-msgstr ""
+msgstr "Mimarisiz paketin içinde mimariye bağımlı ikililer\n"
 
 #: build/pack.cc:102
 #, c-format
@@ -412,13 +411,13 @@ msgstr "arşiv oluşturma başarısız oldu: %s\n"
 #: build/pack.cc:331
 #, c-format
 msgid "Unknown payload compression: %s\n"
-msgstr ""
+msgstr "Bilinmeyen yük sıkıştırması: %s\n"
 
 #: build/pack.cc:385 sign/rpmgensig.cc:207 sign/rpmgensig.cc:808
 #: sign/rpmgensig.cc:847
 #, c-format
 msgid "Could not seek in file %s: %s\n"
-msgstr ""
+msgstr "%s içerisinde aranamıyor: %s\n"
 
 #: build/pack.cc:411
 #, c-format
@@ -427,12 +426,12 @@ msgstr "%jd bayt %s dosyasında okunamadı: %s\n"
 
 #: build/pack.cc:425
 msgid "Unable to create immutable header region\n"
-msgstr ""
+msgstr "Değişmez başlık bölgesi oluşturamuyor\n"
 
 #: build/pack.cc:430
 #, c-format
 msgid "Unable to write header to %s: %s\n"
-msgstr ""
+msgstr "Başlık %s'e yazılamıyor: %s\n"
 
 #: build/pack.cc:525
 #, c-format
@@ -477,7 +476,7 @@ msgstr "%s paket dosyası için çıktı dosya adı üretilemedi: %s\n"
 #: build/pack.cc:856
 #, c-format
 msgid "Finished binary package job, result %d, filename %s\n"
-msgstr ""
+msgstr "İkili paket işi bitti, sonuç %d, dosyaadı %s\n"
 
 #: build/parseSimpleScript.cc:30
 #, c-format
@@ -485,10 +484,9 @@ msgid "line %d: Error parsing script: %s: %s\n"
 msgstr "satır %d: betik çözümlenirken hata oluştu: %s: %s\n"
 
 #: build/parseSimpleScript.cc:38
-#, fuzzy, c-format
-#| msgid "line %d: Bad option %s: %s\n"
+#, c-format
 msgid "line %d: Bad %s option %s: %s\n"
-msgstr "satır %d: %s seçeneği hatalı: %s\n"
+msgstr "satır %d: Hatalı %s seçeneği: %s\n"
 
 #: build/parseSimpleScript.cc:46 build/parsePreamble.cc:779
 #, c-format
@@ -496,10 +494,9 @@ msgid "line %d: second %s\n"
 msgstr "satır %d: ikinci %s\n"
 
 #: build/parseSimpleScript.cc:52
-#, fuzzy, c-format
-#| msgid "line %d: unsupported internal script: %s\n"
+#, c-format
 msgid "line %d: append and prepend specified: %s\n"
-msgstr "satır %d: desteklenmeyen içsel betik: %s\n"
+msgstr "satır %d: belirtilen ekleme ve ön ekleme: %s\n"
 
 #: build/parseChangelog.cc:184
 #, c-format
@@ -586,7 +583,7 @@ msgstr "satır %d: Numara hatalı: %s\n"
 #: build/parsePreamble.cc:200
 #, c-format
 msgid "line %d: Bad no%s number: %u\n"
-msgstr ""
+msgstr "satır %d: Hatalı no%s numarası: %u\n"
 
 #: build/parsePreamble.cc:228
 #, c-format
@@ -634,10 +631,9 @@ msgid "%s field must be present in package: %s\n"
 msgstr "Pakette %s alan mevcut olmalı: %s\n"
 
 #: build/parsePreamble.cc:536
-#, fuzzy, c-format
-#| msgid "%s field must be present in package: %s\n"
+#, c-format
 msgid "%s field must be present before build in package: %s\n"
-msgstr "Pakette %s alan mevcut olmalı: %s\n"
+msgstr "İnşadan önce pakette %s alan mevcut olmalı: %s\n"
 
 #: build/parsePreamble.cc:559
 #, c-format
@@ -667,12 +663,12 @@ msgstr "satır %d: Etiket yalnızca tek belirteç alır: %s\n"
 #: build/parsePreamble.cc:680
 #, c-format
 msgid "line %d: %s in: %s\n"
-msgstr ""
+msgstr "satir %d: %s içinde %s\n"
 
 #: build/parsePreamble.cc:682
 #, c-format
 msgid "%s in: %s\n"
-msgstr ""
+msgstr "%s içinde %s\n"
 
 #: build/parsePreamble.cc:703 build/parsePreamble.cc:710
 #, c-format
@@ -728,10 +724,9 @@ msgid "line %d: Duplicate BuildArch entry: %s\n"
 msgstr "satır %d: Yinelenen BuildArch girdisi: %s\n"
 
 #: build/parsePreamble.cc:1023
-#, fuzzy, c-format
-#| msgid "line %d: Only noarch subpackages are supported: %s\n"
+#, c-format
 msgid "line %d: Only noarch is allowed after the build: %s\n"
-msgstr "satır %d: Yalnızca noarch alt paketleri destekleniyor: %s\n"
+msgstr "satır %d: İnşadan sonra sadece mimarisiz kabuk edilir: %s\n"
 
 #: build/parsePreamble.cc:1033
 #, c-format
@@ -755,7 +750,7 @@ msgstr "Paket özellikleri hatalı: %s\n"
 
 #: build/parsePreamble.cc:1260
 msgid "Binary rpm package found. Expected spec file!\n"
-msgstr ""
+msgstr "İkili RPM paketi bulundu. Özellik dosyası bekleniyor!\n"
 
 #: build/parsePreamble.cc:1263
 #, c-format
@@ -763,11 +758,9 @@ msgid "line %d: Unknown tag: %s\n"
 msgstr "satır %d: Bilinmeyen etiket: %s\n"
 
 #: build/parsePreamble.cc:1268
-#, fuzzy, c-format
-#| msgid "line %d: Priorities are allowed only for file triggers : %s\n"
+#, c-format
 msgid "line %d: Tag not allowed after build is done: %s\n"
-msgstr ""
-"satır %d: Önceliklere yalnızca dosya tetikleyicileri için izin verilir : %s\n"
+msgstr "satır %d: İnşa tamamlandıktan sonra etikete izin verilmez : %s\n"
 
 #: build/parsePreamble.cc:1330
 #, c-format
@@ -777,12 +770,12 @@ msgstr "Geçersiz buildroot: %s\n"
 #: build/parsePrep.cc:72
 #, c-format
 msgid "No patch number %u\n"
-msgstr ""
+msgstr "Yama numara %u yok\n"
 
 #: build/parsePrep.cc:134
 #, c-format
 msgid "No source number %u\n"
-msgstr ""
+msgstr "Kaynak numara %u yok\n"
 
 #: build/parsePrep.cc:189
 #, c-format
@@ -905,7 +898,7 @@ msgstr ""
 #: build/parseSpec.cc:251
 #, c-format
 msgid "extra tokens at the end of %s directive in line %d:  %s\n"
-msgstr ""
+msgstr "satır %d içinde yönergenin sonunda fazladan işaret: %s\n"
 
 #: build/parseSpec.cc:287
 #, c-format
@@ -940,7 +933,7 @@ msgstr "%s: satır %d: %%if olmayan %s\n"
 #: build/parseSpec.cc:506
 #, c-format
 msgid "%s: line %d: %s after %s\n"
-msgstr ""
+msgstr "%s: satır %d: %s sonrası %s\n"
 
 #: build/parseSpec.cc:533
 #, c-format
@@ -956,6 +949,7 @@ msgstr "%s:%d: %%include koşulu bozuk\n"
 #, c-format
 msgid "%%patchN is obsolete, use %%patch N (or %%patch -P N): %s\n"
 msgstr ""
+"%%patchN artık kullanılmıyor, %%patch N (veya %%patch -P N) kullanın: %s\n"
 
 #: build/parseSpec.cc:823
 #, c-format
