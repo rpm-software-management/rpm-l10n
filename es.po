@@ -17,22 +17,20 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
-"PO-Revision-Date: 2025-04-12 16:53+0000\n"
-"Last-Translator: Javier Francisco <fserrador@gmail.com>\n"
-"Language-Team: Spanish <https://translate.fedoraproject.org/projects/rpm/rpm-"
-"l10n/es/>\n"
+"PO-Revision-Date: 2025-10-30 22:54+0000\n"
+"Last-Translator: \"Fco. Javier F. Serrador\" <fserrador@gmail.com>\n"
+"Language-Team: Spanish <https://translate.fedoraproject.org/projects/rpm/"
+"rpm-l10n/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.13.3\n"
 
 #: build/build.cc:42
-#, fuzzy
-#| msgid "unable to parse %s=%s\n"
 msgid "unable to parse _buildtime macro\n"
-msgstr "no es capaz de interpretar %s=%s\n"
+msgstr "no es capaz de interpretar macro _buildtime\n"
 
 #: build/build.cc:50
 msgid "unable to parse SOURCE_DATE_EPOCH\n"
@@ -68,10 +66,9 @@ msgid "Failed build dependencies:\n"
 msgstr "Fallo al construir las dependencias:\n"
 
 #: build/build.cc:346
-#, fuzzy, c-format
-#| msgid "failed to create directory %s: %s\n"
+#, c-format
 msgid "failed to create package build directory %s: %s\n"
-msgstr "no se pudo crear el directorio %s: %s\n"
+msgstr "ha fallado al crear directorio %s de compilación de paquete: %s\n"
 
 #: build/build.cc:387
 #, c-format
@@ -79,13 +76,13 @@ msgid "setting %s=%s\n"
 msgstr "establece %s=%s\n"
 
 #: build/build.cc:391
-#, fuzzy, c-format
-#| msgid "source_date_epoch_from_changelog set but %%changelog is missing\n"
+#, c-format
 msgid ""
 "%%source_date_epoch_from_changelog is set, but %%changelog has no entries to "
 "take a date from\n"
 msgstr ""
-"source_date_epoch_from_changelog puesto pero %%changelog no se encuentra\n"
+"%%source_date_epoch_from_changelog puesto, pero %%changelog no tiene apuntes "
+"para tomar un dato de origen\n"
 
 #: build/build.cc:563
 msgid ""
@@ -93,7 +90,7 @@ msgid ""
 "RPM build warnings:\n"
 msgstr ""
 "\n"
-"advertencia de compilación RPM\n"
+"advertencia de compilación RPM:\n"
 
 #: build/build.cc:569
 msgid ""
@@ -164,15 +161,14 @@ msgid "File capability support not built in\n"
 msgstr "Soporte para la capacidad del archivo no compilado\n"
 
 #: build/files.cc:896
-#, fuzzy, c-format
-#| msgid "Missing module path in line: %s\n"
+#, c-format
 msgid "Missing quote: %s\n"
-msgstr "No se encuentra ruta de módulo en la línea: %s\n"
+msgstr "No se encuentra cuota: %s\n"
 
 #: build/files.cc:902
 #, c-format
 msgid "Trailing backslash: %s\n"
-msgstr ""
+msgstr "Tratando contrabarra: %s\n"
 
 #: build/files.cc:914
 #, c-format
@@ -185,6 +181,8 @@ msgid ""
 "%%clamp_mtime_to_source_date_epoch is deprecated, please use "
 "%%build_mtime_policy\n"
 msgstr ""
+"%%clamp_mtime_to_source_date_epoch está obsoleta, utilice %%"
+"build_mtime_policy\n"
 
 #: build/files.cc:1050
 #, c-format
@@ -192,16 +190,14 @@ msgid "unable to parse %s=%s\n"
 msgstr "no es capaz de interpretar %s=%s\n"
 
 #: build/files.cc:1057
-#, fuzzy, c-format
-#| msgid "Unknown icon type: %s\n"
+#, c-format
 msgid "Unknown mtime policy '%s'\n"
-msgstr "Tipo de icono desconocido: %s\n"
+msgstr "Normativa desconocida mtime '%s'\n"
 
 #: build/files.cc:1073
-#, fuzzy, c-format
-#| msgid "Unknown file digest algorithm %u, falling back to MD5\n"
+#, c-format
 msgid "Unknown file digest algorithm %u, falling back to %u\n"
-msgstr "Algoritmo de resumen de archivo %u desconocido, regresando a MD5\n"
+msgstr "Algoritmo de resumen de archivo %u desconocido, regresando a %u\n"
 
 #: build/files.cc:1125
 #, c-format
@@ -211,17 +207,17 @@ msgstr "Archivo listado dos veces: %s\n"
 #: build/files.cc:1245
 #, c-format
 msgid "reading symlink %s failed: %s\n"
-msgstr "falló la lectura %s de symlink: %s\n"
+msgstr "falló la lectura %s de enlace simbólico: %s\n"
 
 #: build/files.cc:1251
 #, c-format
 msgid "absolute symlink: %s -> %s\n"
-msgstr "enlace de firma absoluta: %s->%s\n"
+msgstr "enlace de firma absoluta: %s→%s\n"
 
 #: build/files.cc:1257
 #, c-format
 msgid "Symlink points to BuildRoot: %s -> %s\n"
-msgstr "El enlace simbólico apunta a BuildRoot: %s -> %s\n"
+msgstr "El enlace simbólico apunta a BuildRoot: %s → %s\n"
 
 #: build/files.cc:1381
 #, c-format
@@ -231,7 +227,7 @@ msgstr "Carácter ilegal (0x%x) en nombre de archivo: %s\n"
 #: build/files.cc:1416
 #, c-format
 msgid "Path is outside buildroot: %s\n"
-msgstr "La ruta queda fuera de la raíz de compilación: %s\n"
+msgstr "La ruta queda fuera de buildroot: %s\n"
 
 #: build/files.cc:1460
 #, c-format
@@ -322,7 +318,7 @@ msgstr "no se pudo crear el directorio"
 
 #: build/files.cc:1975
 msgid "Mixing main ELF and debug files in package\n"
-msgstr ""
+msgstr "Mezclando ELF principal y archivos de depuración interno a paquete\n"
 
 #: build/files.cc:2173
 #, c-format
@@ -491,16 +487,14 @@ msgstr ""
 "Tarea de paquete binario finalizada, resultado %d, nombre de archivo %s\n"
 
 #: build/parseSimpleScript.cc:30
-#, fuzzy, c-format
-#| msgid "line %d: Error parsing %s: %s\n"
+#, c-format
 msgid "line %d: Error parsing script: %s: %s\n"
-msgstr "línea %d: error al interpretar %s: %s\n"
+msgstr "línea %d: error al interpretar guion: %s: %s\n"
 
 #: build/parseSimpleScript.cc:38
-#, fuzzy, c-format
-#| msgid "line %d: Bad option %s: %s\n"
+#, c-format
 msgid "line %d: Bad %s option %s: %s\n"
-msgstr "línea %d: Opción incorrecta %s: %s\n"
+msgstr "línea %d: opción %s incorrecta %s: %s\n"
 
 #: build/parseSimpleScript.cc:46 build/parsePreamble.cc:779
 #, c-format
@@ -508,10 +502,9 @@ msgid "line %d: second %s\n"
 msgstr "línea %d: segundo %s\n"
 
 #: build/parseSimpleScript.cc:52
-#, fuzzy, c-format
-#| msgid "line %d: unsupported internal script: %s\n"
+#, c-format
 msgid "line %d: append and prepend specified: %s\n"
-msgstr "línea %d: script interno no soportado: %s\n"
+msgstr "línea %d: especifica posponer y anteponer: %s\n"
 
 #: build/parseChangelog.cc:184
 #, c-format
@@ -646,10 +639,9 @@ msgid "%s field must be present in package: %s\n"
 msgstr "el campo %s debe estar presente en el paquete: %s\n"
 
 #: build/parsePreamble.cc:536
-#, fuzzy, c-format
-#| msgid "%s field must be present in package: %s\n"
+#, c-format
 msgid "%s field must be present before build in package: %s\n"
-msgstr "el campo %s debe estar presente en el paquete: %s\n"
+msgstr "el campo %s debe estar presente antes de genera el paquete: %s\n"
 
 #: build/parsePreamble.cc:559
 #, c-format
@@ -740,10 +732,9 @@ msgid "line %d: Duplicate BuildArch entry: %s\n"
 msgstr "línea %d: apunte duplica BuildArch: %s\n"
 
 #: build/parsePreamble.cc:1023
-#, fuzzy, c-format
-#| msgid "line %d: Only noarch subpackages are supported: %s\n"
+#, c-format
 msgid "line %d: Only noarch is allowed after the build: %s\n"
-msgstr "línea %d: solo están mantenidos los subpaquetes sin arquitectura: %s\n"
+msgstr "línea %d: solo están concedidos tras la compilación: %s\n"
 
 #: build/parsePreamble.cc:1033
 #, c-format
@@ -775,17 +766,14 @@ msgid "line %d: Unknown tag: %s\n"
 msgstr "línea %d: etiqueta desconocida: %s\n"
 
 #: build/parsePreamble.cc:1268
-#, fuzzy, c-format
-#| msgid "line %d: Priorities are allowed only for file triggers : %s\n"
+#, c-format
 msgid "line %d: Tag not allowed after build is done: %s\n"
-msgstr ""
-"línea %d: prioridades solo están permitidas por disparadores de archivo: %s\n"
+msgstr "línea %d: etiqueta no concedida tras compilación hecha: %s\n"
 
 #: build/parsePreamble.cc:1330
-#, fuzzy, c-format
-#| msgid "Invalid capability: %s\n"
+#, c-format
 msgid "Invalid buildroot: '%s'\n"
-msgstr "Capacidad inválida %s\n"
+msgstr "La raíz buildroot no es válida: '%s'\n"
 
 #: build/parsePrep.cc:72
 #, c-format
@@ -845,10 +833,8 @@ msgid "Version required"
 msgstr "se necesita una versión"
 
 #: build/parseReqs.cc:282
-#, fuzzy
-#| msgid "line %d: file trigger condition must begin with '/': %s"
 msgid "file trigger conditions must begin with '/'"
-msgstr "línea %d: condición de disparador de archivo debe comenzar con '/': %s"
+msgstr "las condiciones de disparador de archivo debe comenzar con '/'"
 
 #: build/parseReqs.cc:294
 msgid "Only package names are allowed in Obsoletes"
@@ -974,7 +960,7 @@ msgstr "%s:%d: declaración %%include con formato incorrecto\n"
 #: build/parseSpec.cc:623
 #, c-format
 msgid "%%patchN is obsolete, use %%patch N (or %%patch -P N): %s\n"
-msgstr ""
+msgstr "%%patchN está obsoleto, utilice %%patch N (o %%patch -P N): %s\n"
 
 #: build/parseSpec.cc:823
 #, c-format
@@ -1002,33 +988,31 @@ msgid "line %d doesn't belong to any section: %s\n"
 msgstr "línea %d no pertenece a cualquier sección: %s\n"
 
 #: build/parseSpec.cc:979
-#, fuzzy, c-format
-#| msgid "line %d: Unknown tag: %s\n"
+#, c-format
 msgid "line %d: Unknown buildsystem: %s\n"
-msgstr "línea %d: etiqueta desconocida: %s\n"
+msgstr "línea %d: sistema de compilador desconocido: %s\n"
 
 #: build/parseSpec.cc:983
 #, c-format
 msgid ""
 "line %d: Required parametric macro %%%s not defined for buildsystem %s\n"
 msgstr ""
+"línea %d: requiere macro paramétrica %%%s no definida para buildsystem %s\n"
 
 #: build/parseSpec.cc:1014
-#, fuzzy, c-format
-#| msgid "failed to write all data to %s: %s\n"
+#, c-format
 msgid "failed to write buildsystem %s %%%s: %s\n"
-msgstr "ha fallado al escribir todos los datos a %s: %s\n"
+msgstr "ha fallado al escribir sistema de compilación %s %%%s: %s\n"
 
 #: build/parseSpec.cc:1036
-#, fuzzy, c-format
-#| msgid "Couldn't create temporary file for %s: %s\n"
+#, c-format
 msgid "failed to create temp file for buildsystem: %s\n"
-msgstr "No pudo crear archivo temporal para %s: %s\n"
+msgstr "incorrecto al crear archivo temporal para buildsystem: %s\n"
 
 #: build/parseSpec.cc:1096
 #, c-format
 msgid "Section %s is not allowed after build is done!\n"
-msgstr ""
+msgstr "Sección %s no es concedida tras compilación es realizada.\n"
 
 #: build/parseSpec.cc:1249
 msgid "No compatible architectures found for build\n"
@@ -1037,7 +1021,7 @@ msgstr "No se encontraron arquitecturas compatibles para la compilación\n"
 #: build/parseSpec.cc:1369
 #, c-format
 msgid "invalid rpm format %d requested, using %d\n"
-msgstr ""
+msgstr "se solicitó formato %d de rpm no válido, utilizando %d\n"
 
 #: build/parseSpec.cc:1404
 #, c-format
@@ -1138,10 +1122,9 @@ msgid "Couldn't exec %s: %s\n"
 msgstr "No pudo ejecutar %s: %s\n"
 
 #: build/rpmfc.cc:412
-#, fuzzy, c-format
-#| msgid "failed to open dir %s of %s: %s\n"
+#, c-format
 msgid "Failed to wait for exit status of %s: %s\n"
-msgstr "incorrecto al abrir dir %s de %s: %s\n"
+msgstr "Incorrecto al esperar estado de salida de %s: %s\n"
 
 #: build/rpmfc.cc:421
 #, c-format
@@ -1156,7 +1139,7 @@ msgstr "ha fallado al escribir todos los datos a %s: %s\n"
 #: build/rpmfc.cc:639
 #, c-format
 msgid "invalid or out of order path from generator: %s\n"
-msgstr ""
+msgstr "no válido o fuera de ordenación de ruta desde generador: %s\n"
 
 #: build/rpmfc.cc:1231
 msgid "Empty file classifier\n"
@@ -1201,10 +1184,8 @@ msgid "Deprecated external dependency generator is used!\n"
 msgstr "Se está utilizando generador de dependencia externa obsoleto.\n"
 
 #: build/rpmfc.cc:1624
-#, fuzzy
-#| msgid "Deprecated external dependency generator is used!\n"
 msgid "External dependency generator is incompatible with v6 packages\n"
-msgstr "Se está utilizando generador de dependencia externa obsoleto.\n"
+msgstr "Generador de dependencia externa es incompatible con paquetes v6\n"
 
 #: build/spec.cc:77
 #, c-format
@@ -1374,10 +1355,9 @@ msgid "%s%s created as %s%s\n"
 msgstr "%s%s creado como %s%s\n"
 
 #: lib/fsm.cc:1182
-#, fuzzy, c-format
-#| msgid "%s %s: remove failed: %s\n"
+#, c-format
 msgid "%s %s%s: remove failed: %s\n"
-msgstr "%s %s: incorrecto al retirar: %s\n"
+msgstr "%s %s%s: incorrecto al retirar: %s\n"
 
 #: lib/fsm.cc:1183
 msgid "directory"
@@ -1544,10 +1524,9 @@ msgid "%s: reading of public key failed.\n"
 msgstr "%s: lectura de clave pública incorrecta.\n"
 
 #: lib/keystore.cc:90 lib/keystore.cc:195
-#, fuzzy, c-format
-#| msgid "failed to create directory %s: %s\n"
+#, c-format
 msgid "failed to create keyring directory %s: %s\n"
-msgstr "no se pudo crear el directorio %s: %s\n"
+msgstr "no se pudo crear el directorio de llavero %s: %s\n"
 
 #: lib/keystore.cc:105
 #, c-format
@@ -1555,21 +1534,19 @@ msgid "failed to import key: %s: %s\n"
 msgstr "ha fallado para importar llave: %s: %s\n"
 
 #: lib/keystore.cc:201
-#, fuzzy, c-format
-#| msgid "can't create %s lock on %s (%s)\n"
+#, c-format
 msgid "Can't create writelock for keyring at %s: %s\n"
-msgstr "no puede crear el bloqueo %s sobre %s (%s)\n"
+msgstr "No puede crear el bloqueo de escritura para anillo en %s: %s\n"
 
 #: lib/keystore.cc:203
 #, c-format
 msgid "Can't acquire writelock for keyring at %s\n"
-msgstr ""
+msgstr "No puede adquirir bloqueo de escritura para anillo en %s\n"
 
 #: lib/keystore.cc:298
-#, fuzzy, c-format
-#| msgid "%s: not an armored public key.\n"
+#, c-format
 msgid "%s is not a valid public key\n"
-msgstr "%s: no es una clave pública blindada.\n"
+msgstr "%s no es una llave pública válida\n"
 
 #: lib/package.cc:265
 #, c-format
@@ -1902,16 +1879,14 @@ msgid "do not execute %%posttrans scriptlet (if any)"
 msgstr "no ejecutar guiones de %%posttrans (si hay)"
 
 #: lib/poptI.cc:229
-#, fuzzy, c-format
-#| msgid "do not execute %%pretrans scriptlet (if any)"
+#, c-format
 msgid "do not execute %%preuntrans scriptlet (if any)"
-msgstr "no ejecutar guiones %%pretrans (si hay)"
+msgstr "no ejecutar guiones %%preuntrans (si hay)"
 
 #: lib/poptI.cc:232
-#, fuzzy, c-format
-#| msgid "do not execute %%posttrans scriptlet (if any)"
+#, c-format
 msgid "do not execute %%postuntrans scriptlet (if any)"
-msgstr "no ejecutar guiones de %%posttrans (si hay)"
+msgstr "no ejecutar guiones de %%postuntrans (si hay)"
 
 #: lib/poptI.cc:235
 msgid "do not execute any scriptlet(s) triggered by this package"
@@ -1940,7 +1915,7 @@ msgstr "no ejecutar ningún %%triggerpostun scriptlet(s)"
 #: lib/poptI.cc:251
 #, c-format
 msgid "do not create %%sysusers users and groups"
-msgstr ""
+msgstr "no crear usuarios y grupos de %%sysusers"
 
 #: lib/poptI.cc:255
 msgid ""
@@ -2039,10 +2014,10 @@ msgid "rpm verify mode"
 msgstr "modo de verificación de rpm"
 
 #: lib/poptQV.cc:102
-#, fuzzy
-#| msgid "query/verify the package(s) which obsolete a dependency"
 msgid "query/verify the package(s) which conflict with a dependency"
-msgstr "consultar/verificar el/los paquete(s) el cual obsoleta una dependencia"
+msgstr ""
+"consultar/verificar el/los paquete(s) el cual entran en conflicto con una "
+"dependencia"
 
 #: lib/poptQV.cc:104
 msgid "query/verify the package(s) which require a dependency"
@@ -2666,24 +2641,21 @@ msgstr ""
 "esperado.\n"
 
 #: lib/rpmfi.cc:1352
-#, fuzzy, c-format
-#| msgid "Malformed data for tag %s: %u bytes found but %lu expected.\n"
+#, c-format
 msgid "Malformed data for tag %s: %u bytes found but %<PRIu64> expected.\n"
 msgstr ""
 "Datos defectuosos para etiqueta %s: se encontraron %u bytes pero esperaban "
-"%lu.\n"
+"%<PRIu64>.\n"
 
 #: lib/rpmfi.cc:1537
-#, fuzzy, c-format
-#| msgid "%s: base64 decode failed, len %li\n"
+#, c-format
 msgid "%s: base64 decode failed, len %zu\n"
-msgstr "%s: decodificación en base64 incorrecta, longitud %li\n"
+msgstr "%s: decodificación en base64 incorrecta, longitud %zu\n"
 
 #: lib/rpmfi.cc:1545
-#, fuzzy, c-format
-#| msgid "%s: base64 decode success, len %li\n"
+#, c-format
 msgid "%s: base64 decode success, len %zu\n"
-msgstr "%s: base64 decodifica correcta, lon %li\n"
+msgstr "%s: base64 decodifica correcta, lon %zu\n"
 
 #: lib/rpmfi.cc:2405
 msgid "Bad magic"
@@ -2722,10 +2694,8 @@ msgid "Archive file not in header"
 msgstr "El archivador no está en la cabecera"
 
 #: lib/rpmfi.cc:2436
-#, fuzzy
-#| msgid "failed symlink"
 msgid "Unsafe symlink"
-msgstr "enlace simbólico incorrecto"
+msgstr "Enlace simbólico inseguro"
 
 #: lib/rpmfi.cc:2441
 msgid "File from package already exists as a directory in system"
@@ -2822,10 +2792,9 @@ msgid "error reading from file %s\n"
 msgstr "error al leer del archivo %s\n"
 
 #: lib/rpminstall.cc:640
-#, fuzzy, c-format
-#| msgid "no package matches %s: %s\n"
+#, c-format
 msgid "package format not supported: %s\n"
-msgstr "ningún paquete coincide con %s: %s\n"
+msgstr "formato de paquete no admitido: %s\n"
 
 #: lib/rpminstall.cc:744
 #, c-format
@@ -2833,10 +2802,9 @@ msgid "\"%s\" specifies multiple packages:\n"
 msgstr "«%s» especifica varios paquetes:\n"
 
 #: lib/rpminstall.cc:785
-#, fuzzy, c-format
-#| msgid "line %d doesn't belong to any section: %s\n"
+#, c-format
 msgid "failed to add restore element to transaction: %s\n"
-msgstr "línea %d no pertenece a cualquier sección: %s\n"
+msgstr "incorrecto al añadir elemento de restauración a transacción: %s\n"
 
 #: lib/rpminstall.cc:824
 #, c-format
@@ -3033,10 +3001,9 @@ msgid "cannot open %s at %s:%d: %m\n"
 msgstr "no se puede abrir %s en %s:%d: %m\n"
 
 #: lib/rpmrc.cc:493
-#, fuzzy, c-format
-#| msgid "bad option '%s' at %s:%d\n"
+#, c-format
 msgid "Ignoring %s at %s:%d\n"
-msgstr "opción '%s' incorrecta en %s:%d\n"
+msgstr "Se hace caso omiso a %s en %s:%d\n"
 
 #: lib/rpmrc.cc:502
 #, c-format
@@ -3115,12 +3082,16 @@ msgstr "Formato desconocido"
 #, c-format
 msgid "erasing gpg-pubkey packages is deprecated; use rpmkeys --delete %s\n"
 msgstr ""
+"borrado de paquetes de clave pública gpg está obsoleta; utilice rpmkeys --"
+"delete %s\n"
 
 #: lib/rpmte.cc:159
 msgid ""
 "public keys can not be installed as gpg-pubkey packages; use rpmkeys --"
 "import <keyfile> for that\n"
 msgstr ""
+"llaves públicas no pueden ser instaladas como paquetes gpg-pubkey; utilice "
+"rpmkeys --import <archivollave> para eso\n"
 
 #: lib/rpmte.cc:770
 msgid "install"
@@ -3164,10 +3135,9 @@ msgid "unknown keyring type: %s, using rpmdb\n"
 msgstr "tipo de anillo desconocido: %s, utilizando rpmdb\n"
 
 #: lib/rpmts.cc:422
-#, fuzzy, c-format
-#| msgid "Unknown icon type: %s\n"
+#, c-format
 msgid "unknown keyring type: %s\n"
-msgstr "Tipo de icono desconocido: %s\n"
+msgstr "tipo de anillo desconocido: %s\n"
 
 #: lib/rpmts.cc:931
 #, c-format
@@ -3199,10 +3169,9 @@ msgid "%s tag %u: invalid size %u"
 msgstr "%s etiqueta %u: tam %u no válido"
 
 #: lib/rpmvs.cc:225
-#, fuzzy, c-format
-#| msgid "%s: tag %u: invalid hex"
+#, c-format
 msgid "%s tag %u: invalid base64"
-msgstr "%s: etiqueta %u: hex no válida"
+msgstr "%s etiqueta %u: base64 no válida"
 
 #: lib/rpmvs.cc:244
 #, c-format
@@ -3215,10 +3184,9 @@ msgid "%s: tag %u: invalid hex"
 msgstr "%s: etiqueta %u: hex no válida"
 
 #: lib/rpmvs.cc:320
-#, fuzzy, c-format
-#| msgid "%s%s%s %s"
+#, c-format
 msgid "%s %s%s %s"
-msgstr "%s%s%s %s"
+msgstr "%s %s%s %s"
 
 #: lib/rpmvs.cc:324
 msgid "digest"
@@ -3227,12 +3195,12 @@ msgstr "resumen"
 #: lib/rpmvs.cc:329 lib/rpmvs.cc:339
 #, c-format
 msgid "%s OpenPGP %s"
-msgstr ""
+msgstr "%s OpenPGP %s"
 
 #: lib/rpmvs.cc:334
 #, c-format
 msgid "%s OpenPGP %s %s"
-msgstr ""
+msgstr "%s OpenPGP %s %s"
 
 #: lib/rpmvs.cc:337 lib/rpmvs.cc:341
 msgid "signature"
@@ -3241,7 +3209,7 @@ msgstr "firma"
 #: lib/rpmvs.cc:360
 #, c-format
 msgid ", key fingerprint: %s"
-msgstr ""
+msgstr ", llave huella: %s"
 
 #: lib/rpmvs.cc:386
 msgid "header"
@@ -3252,16 +3220,12 @@ msgid "package"
 msgstr "paquete"
 
 #: lib/rpmvs.cc:634
-#, fuzzy
-#| msgid "Header "
 msgid "Header"
-msgstr "Cabecera "
+msgstr "Cabecera"
 
 #: lib/rpmvs.cc:635
-#, fuzzy
-#| msgid "Payload "
 msgid "Payload"
-msgstr "Carga "
+msgstr "Carga"
 
 #: lib/signature.cc:232
 msgid "Unable to reload signature header.\n"
@@ -3362,8 +3326,6 @@ msgid "syntax error in expression"
 msgstr "error sintáctico en expresión"
 
 #: rpmio/expression.cc:589
-#, fuzzy
-#| msgid "unsupported funcion"
 msgid "unsupported function"
 msgstr "función no admitida"
 
@@ -3475,16 +3437,14 @@ msgid "no such macro: '%s'\n"
 msgstr "sin macro: '%s'\n"
 
 #: rpmio/macro.cc:1195
-#, fuzzy, c-format
-#| msgid "invalid package number: %s\n"
+#, c-format
 msgid "invalid argument: %s\n"
-msgstr "número de paquete inválido: %s\n"
+msgstr "argumento no válido: %s\n"
 
 #: rpmio/macro.cc:1207
-#, fuzzy, c-format
-#| msgid "failed to create directory %s: %s\n"
+#, c-format
 msgid "failed to get available memory for %s\n"
-msgstr "no se pudo crear el directorio %s: %s\n"
+msgstr "no se pudo obtener memoria disponible para %s\n"
 
 #: rpmio/macro.cc:1458
 msgid "argument expected"
@@ -3507,18 +3467,19 @@ msgstr "Un %% está seguido por un macro no interpretable\n"
 #: rpmio/macro.cc:1682
 #, c-format
 msgid "unexpected argument to non-parametric macro %%%s\n"
-msgstr ""
+msgstr "argumento inesperado para macro no paramétrica %%%s\n"
 
 #: rpmio/macro.cc:2044
 #, c-format
 msgid "macro value out of range for int: %<PRIu64> using %i instead.\n"
 msgstr ""
+"valor de macro fuera de intervalo para int: %<PRIu64> utilizando %i en su "
+"lugar.\n"
 
 #: rpmio/macro.cc:2094
-#, fuzzy, c-format
-#| msgid "======================== active %d empty %d\n"
+#, c-format
 msgid "======================== active %zu empty %d\n"
-msgstr "======================== activo %d vacío %d\n"
+msgstr "======================== activo %zu vacío %d\n"
 
 #: rpmio/rpmfileutil.cc:97
 #, c-format
@@ -3566,7 +3527,7 @@ msgstr "sintaxis no válida en scriptlet lua: %s\n"
 
 #: rpmio/rpmlua.cc:229
 msgid "runaway fork() in Lua script\n"
-msgstr ""
+msgstr "fork() desbocado en guion Lua\n"
 
 #: rpmio/rpmlua.cc:255
 #, c-format
@@ -3608,15 +3569,14 @@ msgid "(none)"
 msgstr "(ninguno)"
 
 #: rpmio/url.cc:125
-#, fuzzy, c-format
-#| msgid "Could not read from file %s: %s\n"
+#, c-format
 msgid "Could not find url helper: \"%s\"\n"
-msgstr "No se pudo leer desde archivo %s: %s\n"
+msgstr "No se pudo encontrar uri ayudante: «%s»\n"
 
 #: rpmio/url.cc:129
 #, c-format
 msgid "Executing url helper \"%s\" failed with status %i\n"
-msgstr ""
+msgstr "Ejecutando cabecera url «%s» incorrecta con estado %i\n"
 
 #: sign/rpmgensig.cc:114
 #, c-format
@@ -3634,16 +3594,14 @@ msgid "%s: Fflush failed: %s\n"
 msgstr "%s: Fflush incorrecto: %s\n"
 
 #: sign/rpmgensig.cc:144
-#, fuzzy, c-format
-#| msgid "reading symlink %s failed: %s\n"
+#, c-format
 msgid "Expanding signing macro %s failed\n"
-msgstr "falló la lectura %s de symlink: %s\n"
+msgstr "Expandiendo signo de macro %s incorrecta\n"
 
 #: sign/rpmgensig.cc:150
-#, fuzzy, c-format
-#| msgid "Invalid %s token: %s\n"
+#, c-format
 msgid "Invalid sign command: %s\n"
-msgstr "Ficha %s no válida: %s\n"
+msgstr "Signo del comando no válido: %s\n"
 
 #: sign/rpmgensig.cc:173
 #, c-format
@@ -3675,52 +3633,44 @@ msgid "Could not read from file %s: %s\n"
 msgstr "No se pudo leer desde archivo %s: %s\n"
 
 #: sign/rpmgensig.cc:242
-#, fuzzy, c-format
-#| msgid "gpg exec failed (%d)\n"
+#, c-format
 msgid "%s waitpid failed (%s)\n"
-msgstr "ejecución incorrecta de gpg (%d)\n"
+msgstr "%s de waitpid incorrecto (%s)\n"
 
 #: sign/rpmgensig.cc:245
-#, fuzzy, c-format
-#| msgid "gpg exec failed (%d)\n"
+#, c-format
 msgid "%s exec failed (%d)\n"
-msgstr "ejecución incorrecta de gpg (%d)\n"
+msgstr "%s en ejecución incorrecta (%d)\n"
 
 #: sign/rpmgensig.cc:271
-#, fuzzy, c-format
-#| msgid "gpg failed to write signature\n"
+#, c-format
 msgid "failed to write signature: %s\n"
-msgstr "gpg incorrecta para escritura de firma\n"
+msgstr "incorrecto al escribir firma: %s\n"
 
 #: sign/rpmgensig.cc:287
-#, fuzzy, c-format
-#| msgid "unable to read the signature\n"
+#, c-format
 msgid "unable to read the signature: %s\n"
-msgstr "incapaz de leer la firma\n"
+msgstr "incapaz de leer la firma: %s\n"
 
 #: sign/rpmgensig.cc:377
-#, fuzzy
-#| msgid "Unsupported PGP signature\n"
 msgid "Unsupported OpenPGP signature\n"
-msgstr "Firma PGP no soportada\n"
+msgstr "Firma OpenPGP no soportada\n"
 
 #: sign/rpmgensig.cc:383
-#, fuzzy, c-format
-#| msgid "Unsupported PGP hash algorithm %u\n"
+#, c-format
 msgid "Unsupported OpenPGP hash algorithm %u\n"
-msgstr "Algoritmo hash PGP no soportado %u\n"
+msgstr "Algoritmo hash OpenPGP no soportado %u\n"
 
 #: sign/rpmgensig.cc:390
-#, fuzzy, c-format
-#| msgid "Unsupported PGP signature\n"
+#, c-format
 msgid "Deprecated OpenPGP signature version %d\n"
-msgstr "Firma PGP no soportada\n"
+msgstr "Firma OpenPGP obsoleta con versión %d\n"
 
 #: sign/rpmgensig.cc:463
-#, fuzzy, c-format
-#| msgid "Unsupported PGP pubkey algorithm %u\n"
+#, c-format
 msgid "Unsupported OpenPGP pubkey algorithm %u for rpm v3/v4 signatures\n"
-msgstr "Algoritmo de llave pública PGP no soportado %u\n"
+msgstr ""
+"Algoritmo %u de llave pública OpenPGP no soportado para firma rpm v3/v4\n"
 
 #: sign/rpmgensig.cc:563
 msgid "file signing support not built in\n"
@@ -3755,39 +3705,34 @@ msgid "%s: headerRead failed: %s\n"
 msgstr "%s: headerRead incorrecto: %s\n"
 
 #: sign/rpmgensig.cc:699
-#, fuzzy, c-format
-#| msgid "Cannot sign RPM v3 packages\n"
+#, c-format
 msgid "Cannot sign RPM v3 packages: %s\n"
-msgstr "No es posible firmar paquetes RPM v3\n"
+msgstr "No es posible firmar paquetes RPM v3: %s\n"
 
 #: sign/rpmgensig.cc:709
-#, fuzzy, c-format
-#| msgid "generate fsverity signatures for package(s) files"
+#, c-format
 msgid "not generating v3 signature for v6 package: %s\n"
-msgstr "genera firmas fsverity para archivos de paquete(s)"
+msgstr "no genera firmas v3 para paquete v6: %s\n"
 
 #: sign/rpmgensig.cc:724
 #, c-format
 msgid "File signatures not applicable to src.rpm: %s\n"
-msgstr ""
+msgstr "Firma de archivo no aplicable para src.rpm: %s\n"
 
 #: sign/rpmgensig.cc:749
-#, fuzzy, c-format
-#| msgid "Could not seek in file %s: %s\n"
+#, c-format
 msgid "Could not get a file size of %s\n"
-msgstr "No se pudo continuar en archivo %s: %s\n"
+msgstr "No se pudo obtener un tamaño de archivo de %s\n"
 
 #: sign/rpmgensig.cc:769
-#, fuzzy, c-format
-#| msgid "%s already contains identical signature, skipping\n"
+#, c-format
 msgid "%s already contains an identical signature, skipping\n"
 msgstr "%s ya contiene una firma idéntica, se descarta\n"
 
 #: sign/rpmgensig.cc:776
-#, fuzzy, c-format
-#| msgid "%s already contains identical signature, skipping\n"
+#, c-format
 msgid "%s already contains a legacy signature\n"
-msgstr "%s ya contiene una firma idéntica, se descarta\n"
+msgstr "%s ya contiene una firma heredada\n"
 
 #: sign/rpmgensig.cc:816 sign/rpmgensig.cc:841
 #, c-format
@@ -3795,16 +3740,14 @@ msgid "%s: rpmWriteSignature failed: %s\n"
 msgstr "%s: rpmWriteSignature incorrecto: %s\n"
 
 #: sign/rpmgensig.cc:827
-#, fuzzy, c-format
-#| msgid "rpmMkTemp failed\n"
+#, c-format
 msgid "rpmMkTemp failed: %s\n"
-msgstr "rpmMkTemp incorrecto\n"
+msgstr "rpmMkTemp incorrecto: %s\n"
 
 #: sign/rpmgensig.cc:835
-#, fuzzy, c-format
-#| msgid "%s: failed to encode\n"
+#, c-format
 msgid "%s: failed to copy rpm lead: %s\n"
-msgstr "%s: no se pudo codificar\n"
+msgstr "%s: no se pudo copiar cabecera de rpm; %s\n"
 
 #: sign/rpmgensig.cc:864
 #, c-format
@@ -4044,14 +3987,12 @@ msgid "no arguments given for verify"
 msgstr "no ha sido indicado ningún argumento para la verificación"
 
 #: tools/rpm2archive.cc:30
-#, fuzzy
-#| msgid "create uncompressed tar file"
 msgid "create uncompressed archive"
-msgstr "crear un archivo tar descomprimido"
+msgstr "crear un archivador descomprimido"
 
 #: tools/rpm2archive.cc:33
 msgid "archive format (pax|cpio)"
-msgstr ""
+msgstr "formato de archivador (pax|cpio)"
 
 #: tools/rpm2archive.cc:151
 #, c-format
@@ -4079,10 +4020,8 @@ msgstr ""
 "instalado"
 
 #: tools/rpmdb.cc:27
-#, fuzzy
-#| msgid "verify database files"
 msgid "verify database"
-msgstr "verificar archivos de base de datos"
+msgstr "verificar base de datos"
 
 #: tools/rpmdb.cc:29
 msgid "salvage database"
@@ -4128,7 +4067,7 @@ msgstr "compilar a través de %conf (%prep, luego %conf) desde <specfile>"
 #, c-format
 msgid "build through %build (%prep, %conf, then compile) from <specfile>"
 msgstr ""
-"compilar por medio de %build (%prepm %conf, después compilar) desde "
+"compilar por medio de %build (%prep, %conf, entonces compilar) desde "
 "<specfile>"
 
 #: tools/rpmbuild.cc:160
@@ -4183,10 +4122,9 @@ msgid "<source package>"
 msgstr "<paquete fuente>"
 
 #: tools/rpmbuild.cc:185
-#, fuzzy, c-format
-#| msgid "build through %conf (%prep, then %conf) from <specfile>"
+#, c-format
 msgid "build through %conf (%prep, then %conf) from <source package>"
-msgstr "compilar a través de %conf (%prep, luego %conf) desde <specfile>"
+msgstr "compilar a través de %conf (%prep, luego %conf) desde <paquete fuente>"
 
 #: tools/rpmbuild.cc:188
 #, c-format
@@ -4247,10 +4185,9 @@ msgid "<tarball>"
 msgstr "<tarball>"
 
 #: tools/rpmbuild.cc:216
-#, fuzzy, c-format
-#| msgid "build through %conf (%prep, then %conf) from <specfile>"
+#, c-format
 msgid "build through %conf (%prep, then %conf) from <tarball>"
-msgstr "compilar a través de %conf (%prep, luego %conf) desde <specfile>"
+msgstr "compilar a través de %conf (%prep, luego %conf) desde <tarball>"
 
 #: tools/rpmbuild.cc:219
 #, c-format
@@ -4307,10 +4244,8 @@ msgstr ""
 "<paquete fuente>"
 
 #: tools/rpmbuild.cc:250
-#, fuzzy
-#| msgid "override build root"
 msgid "override build root (DEPRECATED)"
-msgstr "sobrescribir raíz de construcción"
+msgstr "sobrescribir raíz de compilación (OBSOLETO)"
 
 #: tools/rpmbuild.cc:252
 msgid "remove build tree when done"
@@ -4447,20 +4382,16 @@ msgid "import an armored public key"
 msgstr "importar una clave pública blindada"
 
 #: tools/rpmkeys.cc:31
-#, fuzzy
-#| msgid "import an armored public key"
 msgid "export an public key"
-msgstr "importar una clave pública blindada"
+msgstr "exportar una llave pública"
 
 #: tools/rpmkeys.cc:33
 msgid "don't import, but tell if it would work or not"
 msgstr "no importar, pero indicar si funcionará o no"
 
 #: tools/rpmkeys.cc:35 tools/rpmkeys.cc:37
-#, fuzzy
-#| msgid "list keys from RPM keyring"
 msgid "Erase keys from RPM keyring"
-msgstr "lista las llaves del administrador de llaves RPM"
+msgstr "Elimina llaves desde anillo RPM"
 
 #: tools/rpmkeys.cc:39
 msgid "list keys from RPM keyring"
@@ -4468,11 +4399,11 @@ msgstr "lista las llaves del administrador de llaves RPM"
 
 #: tools/rpmkeys.cc:41
 msgid "rebuild the keyring - convert to current backend"
-msgstr ""
+msgstr "recompila el anillo: convierte al actual backend"
 
 #: tools/rpmkeys.cc:43
 msgid "get keys from this backend when rebuilding current backend"
-msgstr ""
+msgstr "obtiene claves desde este backend cunado recompila el backend actual"
 
 #: tools/rpmkeys.cc:49
 msgid "Keyring options:"
@@ -4495,16 +4426,12 @@ msgid "interactive session"
 msgstr "sesión interactiva"
 
 #: tools/rpmsign.cc:36
-#, fuzzy
-#| msgid "sign package(s) files"
 msgid "sign package(s), adding a new signature"
-msgstr "firma archivos de paquete(s)"
+msgstr "firma paquete(s), añadiendo una firma nueva"
 
 #: tools/rpmsign.cc:38
-#, fuzzy
-#| msgid "sign package(s) (identical to --addsign)"
 msgid "resign package(s), deleting any previous signatures"
-msgstr "firmar paquete(s) (idéntico a --addsign)"
+msgstr "refirmar paquete(s), borrando cualquier firma anterior"
 
 #: tools/rpmsign.cc:40
 msgid "delete package signatures"
@@ -4515,22 +4442,16 @@ msgid "delete IMA and fsverity file signatures"
 msgstr "elimina IMA y firma de archivo fsverity"
 
 #: tools/rpmsign.cc:47
-#, fuzzy
-#| msgid "create rpm v3 header+payload signatures"
 msgid "request legacy rpm v3 header+payload signatures on v4 packages"
-msgstr "crea cabecera rpm v3+firma de carga"
+msgstr "solicita rpm v3 heredado con cabecera+carga de firmas en paquetes v4"
 
 #: tools/rpmsign.cc:50
-#, fuzzy
-#| msgid "create rpm v3 header+payload signatures"
 msgid "request legacy rpm v4 header signatures on v6 packages"
-msgstr "crea cabecera rpm v3+firma de carga"
+msgstr "solicita firmas de cabecera rpm v4 heredada sobre paquetes v6"
 
 #: tools/rpmsign.cc:53
-#, fuzzy
-#| msgid "create rpm v3 header+payload signatures"
 msgid "request rpm v6 header signature on v4 packages"
-msgstr "crea cabecera rpm v3+firma de carga"
+msgstr "solicita cabecera de firma rpm v6 sobre paquetes v4"
 
 #: tools/rpmsign.cc:57
 msgid "sign package(s) files"
@@ -4573,10 +4494,9 @@ msgid "Signature options:"
 msgstr "Opciones de firma:"
 
 #: tools/rpmsign.cc:139
-#, fuzzy, c-format
-#| msgid "You must set \"%%_gpg_name\" in your macro file\n"
+#, c-format
 msgid "You must set \"%%_openpgp_sign_id\" in your macro file\n"
-msgstr "Debe establecer \"%%_gpg_name\" en su archivo de macro\n"
+msgstr "Debe establecer \"%%_openpgp_sign_id\" en su archivo de macro\n"
 
 #: tools/rpmsign.cc:161
 #, c-format
@@ -4638,7 +4558,7 @@ msgstr "solo declara lo que se haría"
 
 #: tools/rpmuncompress.cc:30
 msgid "extract into a specific path"
-msgstr ""
+msgstr "extraer en una ruta específica"
 
 #, c-format
 #~ msgid "files over 4GB not supported by cpio, use rpm2archive instead\n"
