@@ -10,22 +10,20 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
-"PO-Revision-Date: 2025-06-01 11:12+0000\n"
+"PO-Revision-Date: 2025-11-02 11:54+0000\n"
 "Last-Translator: Salvatore Cocuzza <info@salvatorecocuzza.it>\n"
-"Language-Team: Italian <https://translate.fedoraproject.org/projects/rpm/rpm-"
-"l10n/it/>\n"
+"Language-Team: Italian <https://translate.fedoraproject.org/projects/rpm/"
+"rpm-l10n/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11.4\n"
+"X-Generator: Weblate 5.13.3\n"
 
 #: build/build.cc:42
-#, fuzzy
-#| msgid "unable to parse %s=%s\n"
 msgid "unable to parse _buildtime macro\n"
-msgstr "impossibile analizzare %s=%s\n"
+msgstr "impossibile analizzare la macro _buildtime\n"
 
 #: build/build.cc:50
 msgid "unable to parse SOURCE_DATE_EPOCH\n"
@@ -61,10 +59,9 @@ msgid "Failed build dependencies:\n"
 msgstr "Dipendenze di build fallite:\n"
 
 #: build/build.cc:346
-#, fuzzy, c-format
-#| msgid "failed to create directory %s: %s\n"
+#, c-format
 msgid "failed to create package build directory %s: %s\n"
-msgstr "impossibile creare la cartella %s: %s\n"
+msgstr "impossibile creare la directory di compilazione del pacchetto %s: %s\n"
 
 #: build/build.cc:387
 #, c-format
@@ -72,12 +69,13 @@ msgid "setting %s=%s\n"
 msgstr "impostazione %s=%s\n"
 
 #: build/build.cc:391
-#, fuzzy, c-format
-#| msgid "source_date_epoch_from_changelog set but %%changelog is missing\n"
+#, c-format
 msgid ""
 "%%source_date_epoch_from_changelog is set, but %%changelog has no entries to "
 "take a date from\n"
-msgstr "source_date_epoch_from_changelog impostato ma %%changelog è mancante\n"
+msgstr ""
+"%%source_date_epoch_from_changelog è impostato, ma %%changelog non ha voci "
+"da cui prendere una data\n"
 
 #: build/build.cc:563
 msgid ""
@@ -156,15 +154,14 @@ msgid "File capability support not built in\n"
 msgstr "Supporto per capability dei file non disponibile\n"
 
 #: build/files.cc:896
-#, fuzzy, c-format
-#| msgid "Missing module path in line: %s\n"
+#, c-format
 msgid "Missing quote: %s\n"
-msgstr "Percorso del modulo mancante alla linea: %s\n"
+msgstr "Citazione mancante: %s\n"
 
 #: build/files.cc:902
 #, c-format
 msgid "Trailing backslash: %s\n"
-msgstr ""
+msgstr "Barra rovesciata finale: %s\n"
 
 #: build/files.cc:914
 #, c-format
@@ -177,6 +174,8 @@ msgid ""
 "%%clamp_mtime_to_source_date_epoch is deprecated, please use "
 "%%build_mtime_policy\n"
 msgstr ""
+"%%clamp_mtime_to_source_date_epoch è obsoleto, utilizzare %%"
+"build_mtime_policy\n"
 
 #: build/files.cc:1050
 #, c-format
@@ -184,16 +183,14 @@ msgid "unable to parse %s=%s\n"
 msgstr "impossibile analizzare %s=%s\n"
 
 #: build/files.cc:1057
-#, fuzzy, c-format
-#| msgid "Unknown icon type: %s\n"
+#, c-format
 msgid "Unknown mtime policy '%s'\n"
-msgstr "Tipo di icona sconosciuto: %s\n"
+msgstr "Criterio mtime sconosciuto '%s'\n"
 
 #: build/files.cc:1073
-#, fuzzy, c-format
-#| msgid "Unknown file digest algorithm %u, falling back to MD5\n"
+#, c-format
 msgid "Unknown file digest algorithm %u, falling back to %u\n"
-msgstr "Algoritmo di digest %u sconosciuto, ritorno a MD5\n"
+msgstr "Algoritmo di digest del file sconosciuto %u, con ritorno a %u\n"
 
 #: build/files.cc:1125
 #, c-format
@@ -314,7 +311,7 @@ msgstr "impossibile creare la directory"
 
 #: build/files.cc:1975
 msgid "Mixing main ELF and debug files in package\n"
-msgstr ""
+msgstr "Combinazione di file ELF principali e di debug nel pacchetto\n"
 
 #: build/files.cc:2173
 #, c-format
@@ -480,10 +477,9 @@ msgid "Finished binary package job, result %d, filename %s\n"
 msgstr "Processo pacchetto binario terminato, risultato %d, nome file %s\n"
 
 #: build/parseSimpleScript.cc:30
-#, fuzzy, c-format
-#| msgid "line %d: Error parsing %s: %s\n"
+#, c-format
 msgid "line %d: Error parsing script: %s: %s\n"
-msgstr "riga %d: Errore nel parsing di %s: %s\n"
+msgstr "riga %d: Errore durante l'analisi dello script: %s: %s\n"
 
 #: build/parseSimpleScript.cc:38
 #, fuzzy, c-format
@@ -497,10 +493,9 @@ msgid "line %d: second %s\n"
 msgstr "riga %d: secondo %s\n"
 
 #: build/parseSimpleScript.cc:52
-#, fuzzy, c-format
-#| msgid "line %d: unsupported internal script: %s\n"
+#, c-format
 msgid "line %d: append and prepend specified: %s\n"
-msgstr "linea %d: script interno non supportato: %s\n"
+msgstr "riga %d: aggiungi e anteponi specificato: %s\n"
 
 #: build/parseChangelog.cc:184
 #, c-format
@@ -635,10 +630,10 @@ msgid "%s field must be present in package: %s\n"
 msgstr "il campo %s deve essere presente nel pacchetto: %s\n"
 
 #: build/parsePreamble.cc:536
-#, fuzzy, c-format
-#| msgid "%s field must be present in package: %s\n"
+#, c-format
 msgid "%s field must be present before build in package: %s\n"
-msgstr "il campo %s deve essere presente nel pacchetto: %s\n"
+msgstr ""
+"Il campo %s deve essere presente prima della compilazione nel pacchetto: %s\n"
 
 #: build/parsePreamble.cc:559
 #, c-format
@@ -729,10 +724,9 @@ msgid "line %d: Duplicate BuildArch entry: %s\n"
 msgstr "riga %d: Voce BuildArch duplicata: %s\n"
 
 #: build/parsePreamble.cc:1023
-#, fuzzy, c-format
-#| msgid "line %d: Only noarch subpackages are supported: %s\n"
+#, c-format
 msgid "line %d: Only noarch is allowed after the build: %s\n"
-msgstr "riga %d: Sono supportati solo sottopacchetti noarch: %s\n"
+msgstr "riga %d: dopo la build è consentito solo noarch: %s\n"
 
 #: build/parsePreamble.cc:1033
 #, c-format
@@ -764,16 +758,14 @@ msgid "line %d: Unknown tag: %s\n"
 msgstr "riga %d: Tag sconosciuto: %s\n"
 
 #: build/parsePreamble.cc:1268
-#, fuzzy, c-format
-#| msgid "line %d: Priorities are allowed only for file triggers : %s\n"
+#, c-format
 msgid "line %d: Tag not allowed after build is done: %s\n"
-msgstr "riga %d: Le priorità sono consentite solo per i trigger di file: %s\n"
+msgstr "riga %d: tag non consentito dopo il completamento della build: %s\n"
 
 #: build/parsePreamble.cc:1330
-#, fuzzy, c-format
-#| msgid "Invalid capability: %s\n"
+#, c-format
 msgid "Invalid buildroot: '%s'\n"
-msgstr "Capability non valida: %s\n"
+msgstr "Buildroot non valido: '%s'\n"
 
 #: build/parsePrep.cc:72
 #, c-format
@@ -831,10 +823,8 @@ msgid "Version required"
 msgstr "Versione richiesta"
 
 #: build/parseReqs.cc:282
-#, fuzzy
-#| msgid "line %d: file trigger condition must begin with '/': %s"
 msgid "file trigger conditions must begin with '/'"
-msgstr "riga %d: la condizione del trigger di file deve iniziare con '/': %s"
+msgstr "le condizioni di attivazione del file devono iniziare con '/'"
 
 #: build/parseReqs.cc:294
 msgid "Only package names are allowed in Obsoletes"
@@ -958,7 +948,7 @@ msgstr "%s: %d: istruzione %%include malformata\n"
 #: build/parseSpec.cc:623
 #, c-format
 msgid "%%patchN is obsolete, use %%patch N (or %%patch -P N): %s\n"
-msgstr ""
+msgstr "%%patchN è obsoleto, usa %%patch N (o %%patch -P N): %s\n"
 
 #: build/parseSpec.cc:823
 #, c-format
@@ -986,33 +976,33 @@ msgid "line %d doesn't belong to any section: %s\n"
 msgstr "la riga %d non appartiene a nessuna sezione: %s\n"
 
 #: build/parseSpec.cc:979
-#, fuzzy, c-format
-#| msgid "line %d: Unknown tag: %s\n"
+#, c-format
 msgid "line %d: Unknown buildsystem: %s\n"
-msgstr "riga %d: Tag sconosciuto: %s\n"
+msgstr "riga %d: sistema di compilazione sconosciuto: %s\n"
 
 #: build/parseSpec.cc:983
 #, c-format
 msgid ""
 "line %d: Required parametric macro %%%s not defined for buildsystem %s\n"
 msgstr ""
+"riga %d: macro parametrica obbligatoria %%%s non definita per buildsystem %"
+"s\n"
 
 #: build/parseSpec.cc:1014
-#, fuzzy, c-format
-#| msgid "failed to write all data to %s: %s\n"
+#, c-format
 msgid "failed to write buildsystem %s %%%s: %s\n"
-msgstr "impossibile salvare tutti i dati su %s: %s\n"
+msgstr "impossibile scrivere buildsystem %s %%%s: %s\n"
 
 #: build/parseSpec.cc:1036
-#, fuzzy, c-format
-#| msgid "Couldn't create temporary file for %s: %s\n"
+#, c-format
 msgid "failed to create temp file for buildsystem: %s\n"
-msgstr "Impossibile creare il file temporaneo per %s: %s\n"
+msgstr "impossibile creare il file temporaneo per buildsystem: %s\n"
 
 #: build/parseSpec.cc:1096
 #, c-format
 msgid "Section %s is not allowed after build is done!\n"
 msgstr ""
+"La sezione %s non è consentita dopo il completamento della compilazione!\n"
 
 #: build/parseSpec.cc:1249
 msgid "No compatible architectures found for build\n"
