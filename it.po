@@ -11,7 +11,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
 "PO-Revision-Date: 2025-11-02 11:54+0000\n"
-"Last-Translator: Salvatore Cocuzza <info@salvatorecocuzza.it>\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
 "Language-Team: Italian <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/it/>\n"
 "Language: it\n"
@@ -482,8 +483,7 @@ msgid "line %d: Error parsing script: %s: %s\n"
 msgstr "riga %d: Errore durante l'analisi dello script: %s: %s\n"
 
 #: build/parseSimpleScript.cc:38
-#, fuzzy, c-format
-#| msgid "line %d: Bad option %s: %s\n"
+#, c-format
 msgid "line %d: Bad %s option %s: %s\n"
 msgstr "riga  %d: Opzione %s errata: %s\n"
 
