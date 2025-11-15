@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
-"PO-Revision-Date: 2025-10-02 12:53+0000\n"
-"Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
+"PO-Revision-Date: 2025-11-15 14:07+0000\n"
+"Last-Translator: Jouko Tiilikainen <jouko.tiilikainen@gmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/fi/>\n"
 "Language: fi\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.13.3\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #: build/build.cc:42
 msgid "unable to parse _buildtime macro\n"
@@ -162,7 +162,7 @@ msgstr "Puuttuvat lainaukset: %s\n"
 #: build/files.cc:902
 #, c-format
 msgid "Trailing backslash: %s\n"
-msgstr ""
+msgstr "Perässä oleva kenoviiva: %s\n"
 
 #: build/files.cc:914
 #, c-format
@@ -170,11 +170,13 @@ msgid "File must begin with \"/\": %s\n"
 msgstr "Tiedostojen täytyy alkaa \"/\": %s\n"
 
 #: build/files.cc:1033
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "%%clamp_mtime_to_source_date_epoch is deprecated, please use "
 "%%build_mtime_policy\n"
 msgstr ""
+"%%clamp_mtime_to_source_date_epoch on vanhentunut, käytä %%"
+"build_mtime_policy\n"
 
 #: build/files.cc:1050
 #, c-format
@@ -949,7 +951,7 @@ msgstr "%s:%d: virheellisesti muotoiltu %%include lauseke\n"
 #: build/parseSpec.cc:623
 #, c-format
 msgid "%%patchN is obsolete, use %%patch N (or %%patch -P N): %s\n"
-msgstr ""
+msgstr "%%patchN on vanhentunut, käytä %%patch N (tai %%patch -P N): %s\n"
 
 #: build/parseSpec.cc:823
 #, c-format
@@ -987,6 +989,8 @@ msgstr "rivi %d: tuntematon nimiö: %s\n"
 msgid ""
 "line %d: Required parametric macro %%%s not defined for buildsystem %s\n"
 msgstr ""
+"rivi %d: Pakollinen parametrinen makro %%%s ei ole määritetty "
+"buildsystemille %s\n"
 
 #: build/parseSpec.cc:1014
 #, c-format
@@ -1002,7 +1006,7 @@ msgstr "Ei voitu luoda tilapäistiedostoa %s:lle: %s\n"
 #: build/parseSpec.cc:1096
 #, c-format
 msgid "Section %s is not allowed after build is done!\n"
-msgstr ""
+msgstr "Osio %s ei ole sallittu koontiversion jälkeen!\n"
 
 #: build/parseSpec.cc:1249
 msgid "No compatible architectures found for build\n"
@@ -1011,7 +1015,7 @@ msgstr "Ei yhteensopivia arkkitehtureeja käännökselle\n"
 #: build/parseSpec.cc:1369
 #, c-format
 msgid "invalid rpm format %d requested, using %d\n"
-msgstr ""
+msgstr "Virheellinen RPM-muoto %d pyydetty, käyttämällä %d\n"
 
 #: build/parseSpec.cc:1404
 #, c-format
@@ -1131,7 +1135,7 @@ msgstr "epäonnistuttiin kirjoittamaan kaikki tiedot kohteeseen %s: %s\n"
 #: build/rpmfc.cc:639
 #, c-format
 msgid "invalid or out of order path from generator: %s\n"
-msgstr ""
+msgstr "Virheellinen tai epäkunnossa oleva polku generaattorista: %s\n"
 
 #: build/rpmfc.cc:1231
 msgid "Empty file classifier\n"
@@ -1533,7 +1537,7 @@ msgstr "%s-lukon luonti %s:een ei onnistu (%s)\n"
 #: lib/keystore.cc:203
 #, c-format
 msgid "Can't acquire writelock for keyring at %s\n"
-msgstr ""
+msgstr "Kirjoituslukkoa ei voi hankkia avaimenperälle arvolla %s\n"
 
 #: lib/keystore.cc:298
 #, fuzzy, c-format
@@ -1907,7 +1911,7 @@ msgstr "älä suorita %%triggerpostun-sovelmia"
 #: lib/poptI.cc:251
 #, c-format
 msgid "do not create %%sysusers users and groups"
-msgstr ""
+msgstr "Älä luo %%sysusers-käyttäjiä ja -ryhmiä"
 
 #: lib/poptI.cc:255
 msgid ""
@@ -3070,12 +3074,16 @@ msgstr "Tuntematon formaatti"
 #, c-format
 msgid "erasing gpg-pubkey packages is deprecated; use rpmkeys --delete %s\n"
 msgstr ""
+"gpg-pubkey-pakettien poistaminen on vanhentunut; käytä rpm-näppäimiä --"
+"poista %s\n"
 
 #: lib/rpmte.cc:159
 msgid ""
 "public keys can not be installed as gpg-pubkey packages; use rpmkeys --"
 "import <keyfile> for that\n"
 msgstr ""
+"julkisia avaimia ei voi asentaa gpg-pubkey-paketteina; käytä rpmkeys --"
+"import <keyfile> tuota varten\n"
 
 #: lib/rpmte.cc:770
 msgid "install"
@@ -3181,12 +3189,12 @@ msgstr "tarkistussumma"
 #: lib/rpmvs.cc:329 lib/rpmvs.cc:339
 #, c-format
 msgid "%s OpenPGP %s"
-msgstr ""
+msgstr "%s OpenPGP %s"
 
 #: lib/rpmvs.cc:334
 #, c-format
 msgid "%s OpenPGP %s %s"
-msgstr ""
+msgstr "%s OpenPGP %s %s"
 
 #: lib/rpmvs.cc:337 lib/rpmvs.cc:341
 msgid "signature"
@@ -3195,7 +3203,7 @@ msgstr "allekirjoitus"
 #: lib/rpmvs.cc:360
 #, c-format
 msgid ", key fingerprint: %s"
-msgstr ""
+msgstr ", avaimen sormenjälki: %s"
 
 #: lib/rpmvs.cc:386
 msgid "header"
@@ -3455,12 +3463,13 @@ msgstr "%% seuraa makro jota ei voida jäsentää\n"
 #: rpmio/macro.cc:1682
 #, c-format
 msgid "unexpected argument to non-parametric macro %%%s\n"
-msgstr ""
+msgstr "Odottamaton argumentti ei-parametriseen makroon %%%s\n"
 
 #: rpmio/macro.cc:2044
 #, c-format
 msgid "macro value out of range for int: %<PRIu64> using %i instead.\n"
 msgstr ""
+"Makron arvo alueen ulkopuolella INT: %<PRIu64> käyttämällä sen sijaan %i.\n"
 
 #: rpmio/macro.cc:2094
 #, c-format
@@ -3565,7 +3574,7 @@ msgstr "Tiedoston ”%s” lukeminen ei onnistunut: %s\n"
 #: rpmio/url.cc:129
 #, c-format
 msgid "Executing url helper \"%s\" failed with status %i\n"
-msgstr ""
+msgstr "URL-ohjeen %s suorittaminen epäonnistui tilassa %i\n"
 
 #: sign/rpmgensig.cc:114
 #, c-format
@@ -3711,7 +3720,7 @@ msgstr "v3-allekirjoitusta ei luoda v6-paketille: %s\n"
 #: sign/rpmgensig.cc:724
 #, c-format
 msgid "File signatures not applicable to src.rpm: %s\n"
-msgstr ""
+msgstr "Tiedoston allekirjoitukset, jotka eivät koske tiedostoa src.rpm: %s\n"
 
 #: sign/rpmgensig.cc:749
 #, fuzzy, c-format
@@ -3976,7 +3985,7 @@ msgstr "luo pakkaamaton tar-tiedosto"
 
 #: tools/rpm2archive.cc:33
 msgid "archive format (pax|cpio)"
-msgstr ""
+msgstr "Arkistomuoto (PAX|CPIO)"
 
 #: tools/rpm2archive.cc:151
 #, c-format
@@ -4374,12 +4383,15 @@ msgid "list keys from RPM keyring"
 msgstr "avainten luettelo RPM-avaimenperästä"
 
 #: tools/rpmkeys.cc:41
+#, fuzzy
 msgid "rebuild the keyring - convert to current backend"
-msgstr ""
+msgstr "Rakenna avaimenperä uudelleen - muunna nykyiseksi taustajärjestelmäksi"
 
 #: tools/rpmkeys.cc:43
 msgid "get keys from this backend when rebuilding current backend"
 msgstr ""
+"Hanki avaimet tästä taustajärjestelmästä, kun rakennat nykyistä "
+"taustajärjestelmää uudelleen"
 
 #: tools/rpmkeys.cc:49
 msgid "Keyring options:"
@@ -4547,7 +4559,7 @@ msgstr "tulosta vain se, mitä tehdään"
 
 #: tools/rpmuncompress.cc:30
 msgid "extract into a specific path"
-msgstr ""
+msgstr "poimia tiettyyn polkuun"
 
 #, c-format
 #~ msgid "files over 4GB not supported by cpio, use rpm2archive instead\n"
