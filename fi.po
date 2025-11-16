@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
-"PO-Revision-Date: 2025-11-15 14:07+0000\n"
+"PO-Revision-Date: 2025-11-17 12:03+0000\n"
 "Last-Translator: Jouko Tiilikainen <jouko.tiilikainen@gmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/fi/>\n"
@@ -4363,20 +4363,16 @@ msgid "import an armored public key"
 msgstr "tuo panssaroitu julkinen avain"
 
 #: tools/rpmkeys.cc:31
-#, fuzzy
-#| msgid "import an armored public key"
 msgid "export an public key"
-msgstr "tuo panssaroitu julkinen avain"
+msgstr "tuo julkinen avain"
 
 #: tools/rpmkeys.cc:33
 msgid "don't import, but tell if it would work or not"
 msgstr "älä tuot, mutta kerro, toimiiko se vai ei"
 
 #: tools/rpmkeys.cc:35 tools/rpmkeys.cc:37
-#, fuzzy
-#| msgid "list keys from RPM keyring"
 msgid "Erase keys from RPM keyring"
-msgstr "avainten luettelo RPM-avaimenperästä"
+msgstr "Poista avain RPM-avaimenperästä"
 
 #: tools/rpmkeys.cc:39
 msgid "list keys from RPM keyring"
@@ -4414,16 +4410,12 @@ msgid "interactive session"
 msgstr "vuorovaikutteinen istunto"
 
 #: tools/rpmsign.cc:36
-#, fuzzy
-#| msgid "sign package(s) files"
 msgid "sign package(s), adding a new signature"
-msgstr "allekirjoita pakettitiedostot"
+msgstr "allekirjoita pakettitiedostot, lisää uusi allekirjoitus"
 
 #: tools/rpmsign.cc:38
-#, fuzzy
-#| msgid "sign package(s) (identical to --addsign)"
 msgid "resign package(s), deleting any previous signatures"
-msgstr "allekirjoita paketti (hylkää nykyinen allekirjoitus)"
+msgstr "uudelleen allekirjoita paketti(t), hylkää nykyinen allekirjoitus"
 
 #: tools/rpmsign.cc:40
 msgid "delete package signatures"
@@ -4440,16 +4432,12 @@ msgid "request legacy rpm v3 header+payload signatures on v4 packages"
 msgstr "luo rpm v3 -otsikko+hyötykuorman allekirjoitukset"
 
 #: tools/rpmsign.cc:50
-#, fuzzy
-#| msgid "create rpm v3 header+payload signatures"
 msgid "request legacy rpm v4 header signatures on v6 packages"
-msgstr "luo rpm v3 -otsikko+hyötykuorman allekirjoitukset"
+msgstr "Pyydä vanhoja RPM v4 -otsikon allekirjoituksia v6-paketeissa"
 
 #: tools/rpmsign.cc:53
-#, fuzzy
-#| msgid "create rpm v3 header+payload signatures"
 msgid "request rpm v6 header signature on v4 packages"
-msgstr "luo rpm v3 -otsikko+hyötykuorman allekirjoitukset"
+msgstr "Pyydä RPM v6 -otsikon allekirjoitusta v4-paketeissa"
 
 #: tools/rpmsign.cc:57
 msgid "sign package(s) files"
