@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
-"PO-Revision-Date: 2025-09-02 20:22+0000\n"
+"PO-Revision-Date: 2025-12-06 04:32+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/rpm/rpm-l10n/pt_BR/>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.13\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #: build/build.cc:42
 msgid "unable to parse _buildtime macro\n"
@@ -497,10 +497,9 @@ msgid "line %d: second %s\n"
 msgstr "linha %d: segundo %s\n"
 
 #: build/parseSimpleScript.cc:52
-#, fuzzy, c-format
-#| msgid "line %d: unsupported internal script: %s\n"
+#, c-format
 msgid "line %d: append and prepend specified: %s\n"
-msgstr "linha %d: script interno não suportado: %s\n"
+msgstr "linha %d: opção de anexar depois e antes especificado: %s\n"
 
 #: build/parseChangelog.cc:184
 #, c-format
@@ -728,10 +727,9 @@ msgid "line %d: Duplicate BuildArch entry: %s\n"
 msgstr "linha %d: Entrada duplicada de arquitetura de compilação: %s\n"
 
 #: build/parsePreamble.cc:1023
-#, fuzzy, c-format
-#| msgid "line %d: Only noarch subpackages are supported: %s\n"
+#, c-format
 msgid "line %d: Only noarch is allowed after the build: %s\n"
-msgstr "linha %d: Somente subpacotes noarch são suportados: %s\n"
+msgstr "linha %d: Somente noarch é permitido após a construção: %s\n"
 
 #: build/parsePreamble.cc:1033
 #, c-format
@@ -763,17 +761,14 @@ msgid "line %d: Unknown tag: %s\n"
 msgstr "linha %d: Etiqueta desconhecida: %s\n"
 
 #: build/parsePreamble.cc:1268
-#, fuzzy, c-format
-#| msgid "line %d: Priorities are allowed only for file triggers : %s\n"
+#, c-format
 msgid "line %d: Tag not allowed after build is done: %s\n"
-msgstr ""
-"linha %d: prioridades são permitidas apenas para gatilhos de arquivo : %s\n"
+msgstr "linha %d: Tag não permitida após construção ser concluída: %s\n"
 
 #: build/parsePreamble.cc:1330
-#, fuzzy, c-format
-#| msgid "Invalid capability: %s\n"
+#, c-format
 msgid "Invalid buildroot: '%s'\n"
-msgstr "Capacidade inválida: %s\n"
+msgstr "buildroot inválida: \"%s\"\n"
 
 #: build/parsePrep.cc:72
 #, c-format
@@ -832,10 +827,8 @@ msgid "Version required"
 msgstr "Uma versão é requerida"
 
 #: build/parseReqs.cc:282
-#, fuzzy
-#| msgid "line %d: file trigger condition must begin with '/': %s"
 msgid "file trigger conditions must begin with '/'"
-msgstr "linha %d: condição de gatilho de arquivo deve começar com '/': %s"
+msgstr "condições de gatilho de arquivo devem começar com '/'"
 
 #: build/parseReqs.cc:294
 msgid "Only package names are allowed in Obsoletes"
@@ -986,10 +979,9 @@ msgid "line %d doesn't belong to any section: %s\n"
 msgstr "a linha %d não pertence a nenhuma seção: %s\n"
 
 #: build/parseSpec.cc:979
-#, fuzzy, c-format
-#| msgid "line %d: Unknown tag: %s\n"
+#, c-format
 msgid "line %d: Unknown buildsystem: %s\n"
-msgstr "linha %d: Etiqueta desconhecida: %s\n"
+msgstr "linha %d: sistema de construção desconhecido: %s\n"
 
 #: build/parseSpec.cc:983
 #, c-format
@@ -1000,16 +992,14 @@ msgstr ""
 "sistema de construção %s\n"
 
 #: build/parseSpec.cc:1014
-#, fuzzy, c-format
-#| msgid "failed to write all data to %s: %s\n"
+#, c-format
 msgid "failed to write buildsystem %s %%%s: %s\n"
-msgstr "falha ao escrever todos os dados em %s: %s\n"
+msgstr "falha ao escrever o sistema de construção %s %%%s: %s\n"
 
 #: build/parseSpec.cc:1036
-#, fuzzy, c-format
-#| msgid "Couldn't create temporary file for %s: %s\n"
+#, c-format
 msgid "failed to create temp file for buildsystem: %s\n"
-msgstr "Não foi possível criar um arquivo temporário para %s: %s\n"
+msgstr "falha ao criar um arquivo temporário para o sistema de construção: %s\n"
 
 #: build/parseSpec.cc:1096
 #, c-format
@@ -1042,27 +1032,27 @@ msgstr "Módulos base \"%s\" e \"%s\" têm tipos em sobreposição\n"
 
 #: build/policies.cc:108
 msgid "Failed to get policies from header\n"
-msgstr ""
+msgstr "Falha ao obter políticas a partir do cabeçalho\n"
 
 #: build/policies.cc:161
 #, c-format
 msgid "%%semodule requires a file path\n"
-msgstr ""
+msgstr "%%semodule requer um caminho de arquivos\n"
 
 #: build/policies.cc:170
 #, c-format
 msgid "Failed to read  policy file: %s\n"
-msgstr ""
+msgstr "Falha ao ler o arquivo de política: %s\n"
 
 #: build/policies.cc:177
 #, c-format
 msgid "Failed to encode policy file: %s\n"
-msgstr ""
+msgstr "Falha ao codificar o arquivo de política: %s\n"
 
 #: build/policies.cc:194
 #, c-format
 msgid "Failed to determine a policy name: %s\n"
-msgstr ""
+msgstr "Falha ao determinar um nome de política: %s\n"
 
 #: build/policies.cc:206
 #, c-format
@@ -1070,6 +1060,8 @@ msgid ""
 "'%s' type given with other types in %%semodule %s. Compacting types to "
 "'%s'.\n"
 msgstr ""
+"Tipo \"%s\" dado com outros tipos em %%semodule %s. Compactando tipos a "
+"\"%s\".\n"
 
 #: build/policies.cc:253
 #, c-format
@@ -1079,12 +1071,12 @@ msgstr "Erro ao analisar %s: %s\n"
 #: build/policies.cc:259
 #, c-format
 msgid "Expecting %%semodule tag: %s\n"
-msgstr ""
+msgstr "Esperava-se a tag %%semodule: %s\n"
 
 #: build/policies.cc:269
 #, c-format
 msgid "Missing module path in line: %s\n"
-msgstr ""
+msgstr "Faltando o caminho do módulo na linha: %s\n"
 
 #: build/policies.cc:275
 #, c-format
@@ -1094,7 +1086,7 @@ msgstr "Muitos argumentos na linha: %s\n"
 #: build/policies.cc:320
 #, c-format
 msgid "Processing policies: %s\n"
-msgstr ""
+msgstr "Processando políticas: %s\n"
 
 #: build/rpmfc.cc:164
 #, c-format
@@ -1104,7 +1096,7 @@ msgstr "Ignorar regex inválida %s\n"
 #: build/rpmfc.cc:198
 #, c-format
 msgid "%s: mime and magic supplied, only mime will be used\n"
-msgstr ""
+msgstr "%s: mime e magic fornecidos, apenas mime será usado\n"
 
 #: build/rpmfc.cc:269
 #, c-format
@@ -1122,10 +1114,9 @@ msgid "Couldn't exec %s: %s\n"
 msgstr "Não foi possível executar %s: %s\n"
 
 #: build/rpmfc.cc:412
-#, fuzzy, c-format
-#| msgid "failed to write all data to %s: %s\n"
+#, c-format
 msgid "Failed to wait for exit status of %s: %s\n"
-msgstr "falha ao escrever todos os dados em %s: %s\n"
+msgstr "Falha ao esperar por status de saída de %s: %s\n"
 
 #: build/rpmfc.cc:421
 #, c-format
@@ -1140,11 +1131,11 @@ msgstr "falha ao escrever todos os dados em %s: %s\n"
 #: build/rpmfc.cc:639
 #, c-format
 msgid "invalid or out of order path from generator: %s\n"
-msgstr ""
+msgstr "caminho inválido ou fora de ordem a partir do gerador: %s\n"
 
 #: build/rpmfc.cc:1231
 msgid "Empty file classifier\n"
-msgstr ""
+msgstr "Classificador de arquivo vazio\n"
 
 #: build/rpmfc.cc:1240
 msgid "No file attributes configured\n"
@@ -1168,7 +1159,7 @@ msgstr "Falha no reconhecimento do arquivo \"%s\": modo %06o %s\n"
 #: build/rpmfc.cc:1344
 #, c-format
 msgid "Recognition of file mtype \"%s\" failed: mode %06o %s\n"
-msgstr ""
+msgstr "Reconhecimento de mtype de arquivo \"%s\" falhou: modo %06o %s\n"
 
 #: build/rpmfc.cc:1562
 #, c-format
@@ -1182,11 +1173,11 @@ msgstr "Falha ao localizar %s:\n"
 
 #: build/rpmfc.cc:1620
 msgid "Deprecated external dependency generator is used!\n"
-msgstr ""
+msgstr "Gerador de dependências externas descontinuado está sendo usado!\n"
 
 #: build/rpmfc.cc:1624
 msgid "External dependency generator is incompatible with v6 packages\n"
-msgstr ""
+msgstr "Gerador de dependências externas é incompatível com pacotes v6\n"
 
 #: build/spec.cc:77
 #, c-format
@@ -1206,25 +1197,27 @@ msgstr "a consulta ao specfile %s falhou, não foi possível analisá-lo\n"
 #: lib/backend/dbi.cc:96
 #, c-format
 msgid "invalid %%_db_backend: %s\n"
-msgstr ""
+msgstr "%%_db_backend inválido: %s\n"
 
 #: lib/backend/dbi.cc:114
 #, c-format
 msgid "Converting database from %s to %s backend\n"
-msgstr ""
+msgstr "Convertendo banco de dados do backend %s para %s\n"
 
 #: lib/backend/dbi.cc:118
 #, c-format
 msgid "Found %s %s database while attempting %s backend: using %s backend.\n"
 msgstr ""
+"Encontrado banco de dados %s em %s enquanto tentava o backend %s: usando "
+"backend %s.\n"
 
 #: lib/backend/ndb/glue.cc:102
 msgid "Detected outdated index databases\n"
-msgstr ""
+msgstr "Detectados bancos de dados com índice desatualizados\n"
 
 #: lib/backend/ndb/glue.cc:104
 msgid "Rebuilding outdated index databases\n"
-msgstr ""
+msgstr "Reconstruindo bancos de dados de índice desatualizados\n"
 
 #: lib/backend/ndb/rpmidx.c:205
 #, c-format
@@ -1242,7 +1235,7 @@ msgstr ""
 
 #: lib/backend/ndb/rpmpkg.c:495
 msgid "rpmpkg: detected non-zero blob, trying auto repair\n"
-msgstr ""
+msgstr "rpmpkg: detectou blob diferente de zero, tentando reparo automático\n"
 
 #: lib/backend/ndb/rpmxdb.c:242
 #, c-format
@@ -1340,23 +1333,22 @@ msgstr "(desconhecido)"
 #: lib/fsm.cc:420
 #, c-format
 msgid "failed to open dir %s of %s: %s\n"
-msgstr ""
+msgstr "falha ao abrir o diretório %s de %s: %s\n"
 
 #: lib/fsm.cc:730
 #, c-format
 msgid "%s%s saved as %s%s\n"
-msgstr ""
+msgstr "%s%s salvo como %s%s\n"
 
 #: lib/fsm.cc:788
 #, c-format
 msgid "%s%s created as %s%s\n"
-msgstr ""
+msgstr "%s%s criado como %s%s\n"
 
 #: lib/fsm.cc:1182
-#, fuzzy, c-format
-#| msgid "%s: open failed: %s\n"
+#, c-format
 msgid "%s %s%s: remove failed: %s\n"
-msgstr "%s: falha ao abrir: %s\n"
+msgstr "%s %s%s: remoção falhou: %s\n"
 
 #: lib/fsm.cc:1183
 msgid "directory"
@@ -1369,15 +1361,15 @@ msgstr "arquivo"
 #: lib/header.cc:352
 #, c-format
 msgid "tag[%d]: BAD, tag %d type %d offset %d count %d len %d"
-msgstr ""
+msgstr "tag[%d]: INCORRETA, tag %d tipo %d posição %d contagem %d tamanho %d"
 
 #: lib/header.cc:1042
 msgid "hdr load: BAD"
-msgstr ""
+msgstr "carga de cabeçalho: INCORRETA"
 
 #: lib/header.cc:1857
 msgid "region: no tags"
-msgstr ""
+msgstr "região: sem tags"
 
 #: lib/header.cc:1879
 #, c-format
