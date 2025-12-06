@@ -8,22 +8,20 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
-"PO-Revision-Date: 2024-02-09 08:36+0000\n"
-"Last-Translator: Petr Ptacek <petr106@atlas.cz>\n"
-"Language-Team: Czech <https://translate.fedoraproject.org/projects/rpm/rpm-"
-"l10n/cs/>\n"
+"PO-Revision-Date: 2025-12-07 09:33+0000\n"
+"Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
+"Language-Team: Czech <https://translate.fedoraproject.org/projects/rpm/"
+"rpm-l10n/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 5.3.1\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #: build/build.cc:42
-#, fuzzy
-#| msgid "unable to parse %s=%s\n"
 msgid "unable to parse _buildtime macro\n"
-msgstr "nelze parsovat %s=%s\n"
+msgstr "nelze zpracovat _buildtime macro\n"
 
 #: build/build.cc:50
 msgid "unable to parse SOURCE_DATE_EPOCH\n"
@@ -70,12 +68,13 @@ msgid "setting %s=%s\n"
 msgstr "nastavení %s=%s\n"
 
 #: build/build.cc:391
-#, fuzzy, c-format
-#| msgid "source_date_epoch_from_changelog set but %%changelog is missing\n"
+#, c-format
 msgid ""
 "%%source_date_epoch_from_changelog is set, but %%changelog has no entries to "
 "take a date from\n"
-msgstr "source_date_epoch_from_changelog je nastaven, ale %%changelog chybí\n"
+msgstr ""
+"%%source_date_epoch_from_changelog je nastaveno, ale %%changelog nemá žádné "
+"položky, ze který brát datum\n"
 
 #: build/build.cc:563
 msgid ""
@@ -221,7 +220,8 @@ msgstr "Neplatný znak (0x%x) v názvu souboru: %s\n"
 #: build/files.cc:1416
 #, c-format
 msgid "Path is outside buildroot: %s\n"
-msgstr "Cesta je mimo kořenový adresář sestavení: %s\n"
+msgstr ""
+"Popis umístění se nachází mimo kořenovou složku sestavování (buildroot): %s\n"
 
 #: build/files.cc:1460
 #, c-format
@@ -828,10 +828,8 @@ msgid "Version required"
 msgstr "Je vyžadována verze"
 
 #: build/parseReqs.cc:282
-#, fuzzy
-#| msgid "line %d: file trigger condition must begin with '/': %s"
 msgid "file trigger conditions must begin with '/'"
-msgstr "řádek %d: spouštěcí podmínka souboru musí začínat '/': %s"
+msgstr "je třeba, aby podmínka spouštění souborem začínala na „/“"
 
 #: build/parseReqs.cc:294
 msgid "Only package names are allowed in Obsoletes"
@@ -992,10 +990,9 @@ msgid ""
 msgstr ""
 
 #: build/parseSpec.cc:1014
-#, fuzzy, c-format
-#| msgid "failed to write all data to %s: %s\n"
+#, c-format
 msgid "failed to write buildsystem %s %%%s: %s\n"
-msgstr "nepodařilo se zapsat všechna data do %s: %s\n"
+msgstr "nepodařilo se zapsat buildsystem %s %%%s: %s\n"
 
 #: build/parseSpec.cc:1036
 #, fuzzy, c-format
@@ -1062,7 +1059,8 @@ msgid ""
 "'%s' type given with other types in %%semodule %s. Compacting types to "
 "'%s'.\n"
 msgstr ""
-"Typ '%s' uvedený s ostatními typy v %%semodulu %s. Zhutňování typů na '%s'.\n"
+"Typ „%s“ uvedený s ostatními typy v %%semodule %s. Typy budou zhutněny na "
+"„%s“.\n"
 
 #: build/policies.cc:253
 #, c-format
@@ -1112,7 +1110,7 @@ msgstr "Nemohu provést fork %s: %s\n"
 #: build/rpmfc.cc:321
 #, c-format
 msgid "Couldn't exec %s: %s\n"
-msgstr "Nemohu spustit %s: %s\n"
+msgstr "Nebylo možné spustit %s: %s\n"
 
 #: build/rpmfc.cc:412
 #, fuzzy, c-format
