@@ -11,16 +11,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
-"PO-Revision-Date: 2025-11-17 12:03+0000\n"
-"Last-Translator: Jouko Tiilikainen <jouko.tiilikainen@gmail.com>\n"
-"Language-Team: Finnish <https://translate.fedoraproject.org/projects/rpm/"
-"rpm-l10n/fi/>\n"
+"PO-Revision-Date: 2025-12-30 19:58+0000\n"
+"Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
+"Language-Team: Finnish <https://translate.fedoraproject.org/projects/rpm/rpm-"
+"l10n/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.14.3\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #: build/build.cc:42
 msgid "unable to parse _buildtime macro\n"
@@ -170,13 +170,13 @@ msgid "File must begin with \"/\": %s\n"
 msgstr "Tiedostojen täytyy alkaa \"/\": %s\n"
 
 #: build/files.cc:1033
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "%%clamp_mtime_to_source_date_epoch is deprecated, please use "
 "%%build_mtime_policy\n"
 msgstr ""
-"%%clamp_mtime_to_source_date_epoch on vanhentunut, käytä %%"
-"build_mtime_policy\n"
+"%%clamp_mtime_to_source_date_epoch on vanhentunut, käytä "
+"%%build_mtime_policy\n"
 
 #: build/files.cc:1050
 #, c-format
@@ -630,10 +630,9 @@ msgid "%s field must be present in package: %s\n"
 msgstr "kenttä %s on vaadittu kenttä paketissa: %s\n"
 
 #: build/parsePreamble.cc:536
-#, fuzzy, c-format
-#| msgid "%s field must be present in package: %s\n"
+#, c-format
 msgid "%s field must be present before build in package: %s\n"
-msgstr "kenttä %s on vaadittu kenttä paketissa: %s\n"
+msgstr "%s-kentän on oltava läsnä ennen paketin sisäänrakentamista: %s\n"
 
 #: build/parsePreamble.cc:559
 #, c-format
@@ -989,7 +988,7 @@ msgstr "rivi %d: tuntematon nimiö: %s\n"
 msgid ""
 "line %d: Required parametric macro %%%s not defined for buildsystem %s\n"
 msgstr ""
-"rivi %d: Pakollinen parametrinen makro %%%s ei ole määritetty "
+"rivi %d: Pakollinen parametrinen makro %%%s ei ole määritelty "
 "buildsystemille %s\n"
 
 #: build/parseSpec.cc:1014
@@ -1518,10 +1517,9 @@ msgid "%s: reading of public key failed.\n"
 msgstr "%s: julkisen avaimen luku epäonnistui.\n"
 
 #: lib/keystore.cc:90 lib/keystore.cc:195
-#, fuzzy, c-format
-#| msgid "failed to create directory %s: %s\n"
+#, c-format
 msgid "failed to create keyring directory %s: %s\n"
-msgstr "hakemiston %s luonti epäonnistui: %s\n"
+msgstr "Avainnipun hakemiston %s luominen epäonnistui: %s\n"
 
 #: lib/keystore.cc:105
 #, c-format
@@ -1529,10 +1527,9 @@ msgid "failed to import key: %s: %s\n"
 msgstr "avaimen tuonti epäonnistui: %s: %s\n"
 
 #: lib/keystore.cc:201
-#, fuzzy, c-format
-#| msgid "can't create %s lock on %s (%s)\n"
+#, c-format
 msgid "Can't create writelock for keyring at %s: %s\n"
-msgstr "%s-lukon luonti %s:een ei onnistu (%s)\n"
+msgstr "Avainnipun kirjoituslukkoa ei voida luoda osoitteessa %s: %s\n"
 
 #: lib/keystore.cc:203
 #, c-format
@@ -2011,10 +2008,9 @@ msgid "rpm verify mode"
 msgstr "rpm tarkistustila"
 
 #: lib/poptQV.cc:102
-#, fuzzy
-#| msgid "query/verify the package(s) which obsolete a dependency"
 msgid "query/verify the package(s) which conflict with a dependency"
-msgstr "kysele/tarkista paketteja, jotka vanhentavat jotakin riippuvuutta"
+msgstr ""
+"kysely/tarkista paketti(t), joka(t) on(vat) ristiriidassa riippuvuuden kanssa"
 
 #: lib/poptQV.cc:104
 msgid "query/verify the package(s) which require a dependency"
@@ -3659,10 +3655,9 @@ msgid "Unsupported OpenPGP signature\n"
 msgstr "PGP-allekirjoitusta ei tueta\n"
 
 #: sign/rpmgensig.cc:383
-#, fuzzy, c-format
-#| msgid "Unsupported PGP hash algorithm %u\n"
+#, c-format
 msgid "Unsupported OpenPGP hash algorithm %u\n"
-msgstr "Ei tuettu PGP-hajautusalgoritmi %u\n"
+msgstr "Ei tuettu OpenPGP-hashalgoritmi %u\n"
 
 #: sign/rpmgensig.cc:390
 #, c-format
@@ -3729,8 +3724,7 @@ msgid "Could not get a file size of %s\n"
 msgstr "Ei voinut etsiä tiedostosta %s: %s\n"
 
 #: sign/rpmgensig.cc:769
-#, fuzzy, c-format
-#| msgid "%s already contains identical signature, skipping\n"
+#, c-format
 msgid "%s already contains an identical signature, skipping\n"
 msgstr "%s sisältää jo samanlaisen allekirjoituksen, ohitetaan\n"
 
@@ -3978,10 +3972,8 @@ msgid "no arguments given for verify"
 msgstr "tarkistukselle ei annettu parametrejä"
 
 #: tools/rpm2archive.cc:30
-#, fuzzy
-#| msgid "create uncompressed tar file"
 msgid "create uncompressed archive"
-msgstr "luo pakkaamaton tar-tiedosto"
+msgstr "luo pakkaamaton tiedosto"
 
 #: tools/rpm2archive.cc:33
 msgid "archive format (pax|cpio)"
@@ -4011,8 +4003,6 @@ msgid "rebuild database inverted lists from installed package headers"
 msgstr "rakenna tietokanta uudestaan asennettujen pakettien tiedoista"
 
 #: tools/rpmdb.cc:27
-#, fuzzy
-#| msgid "verify database files"
 msgid "verify database"
 msgstr "tarkista tietokanta"
 
@@ -4110,10 +4100,11 @@ msgid "<source package>"
 msgstr "<lähdepaketti>"
 
 #: tools/rpmbuild.cc:185
-#, fuzzy, c-format
-#| msgid "build through %conf (%prep, then %conf) from <specfile>"
+#, c-format
 msgid "build through %conf (%prep, then %conf) from <source package>"
-msgstr "käännä %conf-osioon asti (%prep, sitten %conf) spec-tiedostosta"
+msgstr ""
+"Käännetään komennolla %conf (%prep, sitten %conf) lähdekoodipaketista "
+"<lähdekoodipaketti>"
 
 #: tools/rpmbuild.cc:188
 #, c-format
@@ -4169,10 +4160,10 @@ msgid "<tarball>"
 msgstr "<tar-tiedosto>"
 
 #: tools/rpmbuild.cc:216
-#, fuzzy, c-format
-#| msgid "build through %conf (%prep, then %conf) from <specfile>"
+#, c-format
 msgid "build through %conf (%prep, then %conf) from <tarball>"
-msgstr "käännä %conf-osioon asti (%prep, sitten %conf) spec-tiedostosta"
+msgstr ""
+"rakenna %conf-komennon (%prep, sitten %conf) avulla tiedostosta <tarball>"
 
 #: tools/rpmbuild.cc:219
 #, c-format
@@ -4426,10 +4417,9 @@ msgid "delete IMA and fsverity file signatures"
 msgstr "poista IMA- ja fsverity-tiedostojen allekirjoitukset"
 
 #: tools/rpmsign.cc:47
-#, fuzzy
-#| msgid "create rpm v3 header+payload signatures"
 msgid "request legacy rpm v3 header+payload signatures on v4 packages"
-msgstr "luo rpm v3 -otsikko+hyötykuorman allekirjoitukset"
+msgstr ""
+"pyytää vanhoja rpm v3 -otsikko- ja hyötykuorma-allekirjoituksia v4-paketeissa"
 
 #: tools/rpmsign.cc:50
 msgid "request legacy rpm v4 header signatures on v6 packages"
