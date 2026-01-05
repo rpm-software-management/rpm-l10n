@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
-"PO-Revision-Date: 2025-12-30 19:58+0000\n"
-"Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
+"PO-Revision-Date: 2026-01-06 11:58+0000\n"
+"Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/rpm/rpm-"
 "l10n/fi/>\n"
 "Language: fi\n"
@@ -2319,11 +2319,11 @@ msgstr "Fread epäonnistui: %s"
 
 #: lib/rpmchecksig.cc:239
 msgid "DIGESTS"
-msgstr "TARKISTUSSUMMIA"
+msgstr "TARKISTUSSUMMAT"
 
 #: lib/rpmchecksig.cc:239
 msgid "digests"
-msgstr "tarkistussummia"
+msgstr "tarkistussummat"
 
 #: lib/rpmchecksig.cc:243
 msgid "SIGNATURES"
@@ -2339,7 +2339,7 @@ msgstr "EI OK"
 
 #: lib/rpmchecksig.cc:245
 msgid "OK"
-msgstr "Hyvä on"
+msgstr "Hyvä"
 
 #: lib/rpmchecksig.cc:287 sign/rpmgensig.cc:81
 #, c-format
@@ -2898,7 +2898,7 @@ msgstr "paketti %s (joka on uudempi kuin %s) on jo asennettuna"
 msgid ""
 "installing package %s needs %<PRIu64>%cB more space on the %s filesystem"
 msgstr ""
-"paketin %s asentaminen tarvitsee %<PRIu64>%cB enemmän tilaa %s-"
+"paketin %s asentaminen tarvitsee %<PRIu64> %cB enemmän tilaa %s-"
 "tiedostojärjestelmässä"
 
 #: lib/rpmprob.cc:147
