@@ -8,7 +8,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
 "PO-Revision-Date: 2026-01-15 08:58+0000\n"
-"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/ka/>\n"
 "Language: ka\n"
@@ -3704,6 +3705,8 @@ msgstr "ყველა უფლება დაცულია (C) 1998-2002 -
 msgid ""
 "This program may be freely redistributed under the terms of the GNU GPL\n"
 msgstr ""
+"შეიძლება თავისუფლად გავრცელდეს GNU Public License-ის პირობების და წესების "
+"მიხედვით.\n"
 
 #: tools/cliutils.cc:50
 #, c-format
