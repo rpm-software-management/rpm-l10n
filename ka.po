@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
-"PO-Revision-Date: 2025-12-21 00:26+0000\n"
+"PO-Revision-Date: 2026-01-15 08:58+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/ka/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #: build/build.cc:42
 msgid "unable to parse _buildtime macro\n"
@@ -556,7 +556,7 @@ msgstr ""
 #: build/parsePolicies.cc:32
 #, c-format
 msgid "line %d: Error parsing %%policies: %s\n"
-msgstr ""
+msgstr "ხაზი %d: %%policies-ის დამუშავების შეცდომა: %s\n"
 
 #: build/parsePreamble.cc:81
 #, c-format
@@ -734,7 +734,7 @@ msgstr ""
 #: build/parsePreamble.cc:1213
 #, c-format
 msgid "Bad package specification: %s\n"
-msgstr ""
+msgstr "არასწორი პაკეტის სპეციფიკაცია: %s\n"
 
 #: build/parsePreamble.cc:1260
 msgid "Binary rpm package found. Expected spec file!\n"
@@ -778,7 +778,7 @@ msgstr ""
 #: build/parsePrep.cc:216
 #, c-format
 msgid "line %d: Bad %%setup option %s: %s\n"
-msgstr ""
+msgstr "ხაზი %d: არასწორი %%setup-ის პარამეტრი %s: %s\n"
 
 #: build/parsePrep.cc:369
 #, c-format
@@ -788,7 +788,7 @@ msgstr ""
 #: build/parsePrep.cc:378
 #, c-format
 msgid "Invalid patch number %s: %s\n"
-msgstr ""
+msgstr "არასწორი პაჩის ნომერი %s: %s\n"
 
 #: build/parseReqs.cc:52
 msgid "Dependency tokens must begin with alpha-numeric, '_' or '/'"
@@ -848,7 +848,7 @@ msgstr ""
 #: build/parseScript.cc:278 build/parseScript.cc:348
 #, c-format
 msgid "line %d: Error parsing %s: %s\n"
-msgstr ""
+msgstr "ხაზი %d: %s-ის დამუშავების შეცდომა: %s\n"
 
 #: build/parseScript.cc:290
 #, c-format
@@ -1165,7 +1165,7 @@ msgstr ""
 #: build/spec.cc:80
 #, c-format
 msgid "line %d: %s: package %s already exists\n"
-msgstr ""
+msgstr "ხაზი %d: %s: პაკეტი %s უკვე არსებობს\n"
 
 #: build/spec.cc:457
 #, c-format
@@ -1502,7 +1502,7 @@ msgstr "ვერ შევქმენი ჩაწერის ბლოკი
 #: lib/keystore.cc:203
 #, c-format
 msgid "Can't acquire writelock for keyring at %s\n"
-msgstr ""
+msgstr "ჩაწერის ბლოკის მიღების შეცდომა ბრელოკისთვის მისამართზე %s\n"
 
 #: lib/keystore.cc:298
 #, c-format
@@ -1521,7 +1521,7 @@ msgstr "RPM-ის ვერსია %s\n"
 
 #: lib/poptALL.cc:139
 msgid "Error writing to stdout"
-msgstr ""
+msgstr "stdout-ზე ჩაწერის შეცდომა"
 
 #: lib/poptALL.cc:150 rpmio/macro.cc:1300
 #, c-format
@@ -1605,7 +1605,7 @@ msgstr ""
 
 #: lib/poptALL.cc:243
 msgid "don't verify package signature(s)"
-msgstr ""
+msgstr "პაკეტის ხელმოწერები არ შემოწმდება"
 
 #: lib/poptALL.cc:246
 msgid "send stdout to CMD"
@@ -1732,7 +1732,7 @@ msgstr ""
 
 #: lib/poptI.cc:156
 msgid "upgrade package(s) if already installed"
-msgstr ""
+msgstr "პაკეტების განახლება, თუ ისინი უკვე დაყენებულია"
 
 #: lib/poptI.cc:157 lib/poptI.cc:176 lib/poptI.cc:277 lib/poptI.cc:281
 #: lib/poptI.cc:285
@@ -2083,7 +2083,7 @@ msgstr "ფაილის უსაფრთხოების კონტე�
 
 #: lib/poptQV.cc:271
 msgid "don't verify capabilities of files"
-msgstr ""
+msgstr "ფაილის შესაძლებლობები არ გადამოწმდება"
 
 #: lib/poptQV.cc:273
 msgid "don't verify files in package"
@@ -2263,7 +2263,7 @@ msgstr "%s: გასაღების შემოტანის შეცდ
 #: lib/rpmchecksig.cc:64
 #, c-format
 msgid "%s: key %d not an armored public key.\n"
-msgstr ""
+msgstr "%s: გასაღები %d შეჯავშნული საჯარო გასაღები არაა.\n"
 
 #: lib/rpmchecksig.cc:96
 #, c-format
@@ -2592,7 +2592,7 @@ msgstr "%s: base64 დეკოდერი ჩავარდა. სიგრ�
 #: lib/rpmfi.cc:1545
 #, c-format
 msgid "%s: base64 decode success, len %zu\n"
-msgstr ""
+msgstr "%s: base64 დეკოდირება წარმატებულია. სიგრძე %zu\n"
 
 #: lib/rpmfi.cc:2405
 msgid "Bad magic"
@@ -2706,7 +2706,7 @@ msgstr "%s-ის დაყენება შეუძლებელია\n"
 #: lib/rpminstall.cc:468
 #, c-format
 msgid "File not found by glob: %s\n"
-msgstr ""
+msgstr "გლობმა ფაილი ვერ იპოვა: %s\n"
 
 #: lib/rpminstall.cc:508
 #, c-format
@@ -2873,7 +2873,7 @@ msgstr ""
 #: lib/rpmprob.cc:163
 #, c-format
 msgid "package %s does not verify: %s"
-msgstr ""
+msgstr "პაკეტი %s არ მოწმდება: %s"
 
 #: lib/rpmprob.cc:168
 #, c-format
@@ -2923,7 +2923,7 @@ msgstr ""
 #: lib/rpmrc.cc:473 lib/rpmrc.cc:510
 #, c-format
 msgid "missing argument for %s at %s:%d\n"
-msgstr ""
+msgstr "აკლია %s-ის არგუმენტი მისამართზე %s:%d\n"
 
 #: lib/rpmrc.cc:484
 #, c-format
@@ -3240,7 +3240,7 @@ msgstr ""
 
 #: rpmio/expression.cc:497
 msgid "parse error in expression"
-msgstr ""
+msgstr "დამუშავების შეცდომა გამოსახულებაში"
 
 #: rpmio/expression.cc:542
 msgid "unsupported function argument type"
@@ -3868,7 +3868,7 @@ msgstr ""
 
 #: tools/rpm.cc:266
 msgid "no packages given for install"
-msgstr ""
+msgstr "დასაყენებლად პაკეტები მითითებული არაა"
 
 #: tools/rpm.cc:279 tools/rpmspec.cc:130
 msgid "no arguments given for query"
@@ -4178,7 +4178,7 @@ msgstr ""
 #: tools/rpmbuild.cc:322
 #, c-format
 msgid "Unable to open spec file %s: %s\n"
-msgstr ""
+msgstr "გახსნის შეცდომა spec ფაილისთვის %s: %s\n"
 
 #: tools/rpmbuild.cc:383
 #, c-format
