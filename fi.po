@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
-"PO-Revision-Date: 2026-01-06 11:58+0000\n"
+"PO-Revision-Date: 2026-01-15 08:58+0000\n"
 "Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/rpm/rpm-"
 "l10n/fi/>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.15.1\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #: build/build.cc:42
 msgid "unable to parse _buildtime macro\n"
@@ -4359,25 +4359,24 @@ msgstr "tuo julkinen avain"
 
 #: tools/rpmkeys.cc:33
 msgid "don't import, but tell if it would work or not"
-msgstr "älä tuot, mutta kerro, toimiiko se vai ei"
+msgstr "Älä tuo, vaan kerro toimiiko se vai ei"
 
 #: tools/rpmkeys.cc:35 tools/rpmkeys.cc:37
 msgid "Erase keys from RPM keyring"
-msgstr "Poista avain RPM-avaimenperästä"
+msgstr "Poista avaimet RPM-avaimenperästä"
 
 #: tools/rpmkeys.cc:39
 msgid "list keys from RPM keyring"
 msgstr "avainten luettelo RPM-avaimenperästä"
 
 #: tools/rpmkeys.cc:41
-#, fuzzy
 msgid "rebuild the keyring - convert to current backend"
-msgstr "Rakenna avaimenperä uudelleen - muunna nykyiseksi taustajärjestelmäksi"
+msgstr "rakenna avaimenperä uudelleen - muunna nykyiseksi taustajärjestelmäksi"
 
 #: tools/rpmkeys.cc:43
 msgid "get keys from this backend when rebuilding current backend"
 msgstr ""
-"Hanki avaimet tästä taustajärjestelmästä, kun rakennat nykyistä "
+"hanki avaimet tästä taustajärjestelmästä, kun rakennat nykyistä "
 "taustajärjestelmää uudelleen"
 
 #: tools/rpmkeys.cc:49
