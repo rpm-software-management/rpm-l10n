@@ -12,8 +12,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
 "PO-Revision-Date: 2026-01-22 17:58+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/rpm/rpm-"
 "l10n/fi/>\n"
 "Language: fi\n"
@@ -493,10 +492,9 @@ msgid "line %d: second %s\n"
 msgstr "rivi %d: toinen %s\n"
 
 #: build/parseSimpleScript.cc:52
-#, fuzzy, c-format
-#| msgid "line %d: unsupported internal script: %s\n"
+#, c-format
 msgid "line %d: append and prepend specified: %s\n"
-msgstr "rivi %d: sisäinen komentosarja, jota ei tueta: %s\n"
+msgstr "rivi %d: liitä ja lisää alkuun määritelty: %s\n"
 
 #: build/parseChangelog.cc:184
 #, c-format
@@ -724,10 +722,9 @@ msgid "line %d: Duplicate BuildArch entry: %s\n"
 msgstr "linja %d: Tee BuildArch:n tietueesta kaksoiskappale: %s\n"
 
 #: build/parsePreamble.cc:1023
-#, fuzzy, c-format
-#| msgid "line %d: Only noarch subpackages are supported: %s\n"
+#, c-format
 msgid "line %d: Only noarch is allowed after the build: %s\n"
-msgstr "rivi %d: Vain noarch-alipaketteja tuetaan: %s\n"
+msgstr "rivi %d: Vain noarch on sallittu koonnin jälkeen: %s\n"
 
 #: build/parsePreamble.cc:1033
 #, c-format
@@ -759,17 +756,14 @@ msgid "line %d: Unknown tag: %s\n"
 msgstr "rivi %d: tuntematon nimiö: %s\n"
 
 #: build/parsePreamble.cc:1268
-#, fuzzy, c-format
-#| msgid "line %d: Priorities are allowed only for file triggers : %s\n"
+#, c-format
 msgid "line %d: Tag not allowed after build is done: %s\n"
-msgstr ""
-"rivi %d: Prioriteetit ovat sallittuja vain tiedoston laukaisimille: %s\n"
+msgstr "rivi %d: Tunnistetta ei sallita koonnin valmistumisen jälkeen: %s\n"
 
 #: build/parsePreamble.cc:1330
-#, fuzzy, c-format
-#| msgid "Invalid capability: %s\n"
+#, c-format
 msgid "Invalid buildroot: '%s'\n"
-msgstr "Virheellinen ominaisuus: %s\n"
+msgstr "Virheellinen buildroot: '%s'\n"
 
 #: build/parsePrep.cc:72
 #, c-format
@@ -979,10 +973,9 @@ msgid "line %d doesn't belong to any section: %s\n"
 msgstr "rivi %d ei kuulu millekään lohkolle: %s\n"
 
 #: build/parseSpec.cc:979
-#, fuzzy, c-format
-#| msgid "line %d: Unknown tag: %s\n"
+#, c-format
 msgid "line %d: Unknown buildsystem: %s\n"
-msgstr "rivi %d: tuntematon nimiö: %s\n"
+msgstr "rivi %d: Tuntematon käännösjärjestelmä: %s\n"
 
 #: build/parseSpec.cc:983
 #, c-format
@@ -998,10 +991,9 @@ msgid "failed to write buildsystem %s %%%s: %s\n"
 msgstr "buildsystem %s %%%s:n kirjoittaminen epäonnistui: %s\n"
 
 #: build/parseSpec.cc:1036
-#, fuzzy, c-format
-#| msgid "Couldn't create temporary file for %s: %s\n"
+#, c-format
 msgid "failed to create temp file for buildsystem: %s\n"
-msgstr "Ei voitu luoda tilapäistiedostoa %s:lle: %s\n"
+msgstr "Ei voitu luoda tilapäistiedostoa rakennusjärjestelmälle: %s\n"
 
 #: build/parseSpec.cc:1096
 #, c-format
@@ -1117,10 +1109,9 @@ msgid "Couldn't exec %s: %s\n"
 msgstr "Ei voitu suorittaa %s:ää: %s\n"
 
 #: build/rpmfc.cc:412
-#, fuzzy, c-format
-#| msgid "failed to open dir %s of %s: %s\n"
+#, c-format
 msgid "Failed to wait for exit status of %s: %s\n"
-msgstr "hakemiston %s avaaminen epäonnistui: %s: %s\n"
+msgstr "%s:n lopetustilan odottaminen epäonnistui: %s\n"
 
 #: build/rpmfc.cc:421
 #, c-format
@@ -1180,10 +1171,9 @@ msgid "Deprecated external dependency generator is used!\n"
 msgstr "Käytössä on vanhentunut ulkoinen riippuvuusgeneraattori!\n"
 
 #: build/rpmfc.cc:1624
-#, fuzzy
-#| msgid "Deprecated external dependency generator is used!\n"
 msgid "External dependency generator is incompatible with v6 packages\n"
-msgstr "Käytössä on vanhentunut ulkoinen riippuvuusgeneraattori!\n"
+msgstr ""
+"Ulkoinen riippuvuusgeneraattori ei ole yhteensopiva v6-pakettien kanssa\n"
 
 #: build/spec.cc:77
 #, c-format
@@ -1520,7 +1510,7 @@ msgstr "%s: julkisen avaimen luku epäonnistui.\n"
 #: lib/keystore.cc:90 lib/keystore.cc:195
 #, c-format
 msgid "failed to create keyring directory %s: %s\n"
-msgstr "Avainnipun hakemiston %s luominen epäonnistui: %s\n"
+msgstr "Avainnipun hakemiston %s luonti epäonnistui: %s\n"
 
 #: lib/keystore.cc:105
 #, c-format
@@ -1538,10 +1528,9 @@ msgid "Can't acquire writelock for keyring at %s\n"
 msgstr "Kirjoituslukkoa ei voi hankkia avaimenperälle arvolla %s\n"
 
 #: lib/keystore.cc:298
-#, fuzzy, c-format
-#| msgid "%s: not an armored public key.\n"
+#, c-format
 msgid "%s is not a valid public key\n"
-msgstr "%s: ei ole panssaroitu julkinen avain.\n"
+msgstr "%s ei ole kelvollinen julkinen avain\n"
 
 #: lib/package.cc:265
 #, c-format
@@ -2680,10 +2669,8 @@ msgid "Archive file not in header"
 msgstr "Arkistotiedosto ei ole otsikossa"
 
 #: lib/rpmfi.cc:2436
-#, fuzzy
-#| msgid "failed symlink"
 msgid "Unsafe symlink"
-msgstr "epäonnistunut symlinkki"
+msgstr "Vaarallinen symbolinen linkki"
 
 #: lib/rpmfi.cc:2441
 msgid "File from package already exists as a directory in system"
@@ -2780,10 +2767,9 @@ msgid "error reading from file %s\n"
 msgstr "virhe luettaessa tiedostosta %s\n"
 
 #: lib/rpminstall.cc:640
-#, fuzzy, c-format
-#| msgid "no package matches %s: %s\n"
+#, c-format
 msgid "package format not supported: %s\n"
-msgstr "mikään paketti ei vastaa %s: %s\n"
+msgstr "Paketin muotoa ei tueta: %s\n"
 
 #: lib/rpminstall.cc:744
 #, c-format
@@ -2988,10 +2974,9 @@ msgid "cannot open %s at %s:%d: %m\n"
 msgstr "en voi avata %s:aa %s:%d:ssä: %m\n"
 
 #: lib/rpmrc.cc:493
-#, fuzzy, c-format
-#| msgid "bad option '%s' at %s:%d\n"
+#, c-format
 msgid "Ignoring %s at %s:%d\n"
-msgstr "virheellinen vaihtoehto '%s' kohdassa %s:%d\n"
+msgstr "Ohitetaan %s kohdassa %s:%d\n"
 
 #: lib/rpmrc.cc:502
 #, c-format
@@ -3123,10 +3108,9 @@ msgid "unknown keyring type: %s, using rpmdb\n"
 msgstr "tuntematon avainrengastyyppi: %s, käytetään rpmdb:tä\n"
 
 #: lib/rpmts.cc:422
-#, fuzzy, c-format
-#| msgid "Unknown icon type: %s\n"
+#, c-format
 msgid "unknown keyring type: %s\n"
-msgstr "Tuntematon ikonityyppi: %s\n"
+msgstr "tuntematon avainrenkaan tyyppi: %s\n"
 
 #: lib/rpmts.cc:931
 #, c-format
@@ -3158,10 +3142,9 @@ msgid "%s tag %u: invalid size %u"
 msgstr "%s tag %u: ei kelvollinen koko %u"
 
 #: lib/rpmvs.cc:225
-#, fuzzy, c-format
-#| msgid "%s: tag %u: invalid hex"
+#, c-format
 msgid "%s tag %u: invalid base64"
-msgstr "%s: tagi %u: virheellinen hex"
+msgstr "%s: tagi %u: virheellinen base64"
 
 #: lib/rpmvs.cc:244
 #, c-format
@@ -3316,8 +3299,6 @@ msgid "syntax error in expression"
 msgstr "syntaksivirhe lausekkeessa"
 
 #: rpmio/expression.cc:589
-#, fuzzy
-#| msgid "unsupported funcion"
 msgid "unsupported function"
 msgstr "ei tuettu toiminto"
 
@@ -3433,10 +3414,9 @@ msgid "invalid argument: %s\n"
 msgstr "virheellinen argumentti: %s\n"
 
 #: rpmio/macro.cc:1207
-#, fuzzy, c-format
-#| msgid "failed to create directory %s: %s\n"
+#, c-format
 msgid "failed to get available memory for %s\n"
-msgstr "hakemiston %s luonti epäonnistui: %s\n"
+msgstr "%s käytettävissä olevan muistin hakeminen epäonnistui\n"
 
 #: rpmio/macro.cc:1458
 msgid "argument expected"
@@ -3517,10 +3497,8 @@ msgid "invalid syntax in lua scriptlet: %s\n"
 msgstr "virheellinen syntaksi lua-skriptissä: %s\n"
 
 #: rpmio/rpmlua.cc:229
-#, fuzzy
-#| msgid "No exec() called after fork() in lua scriptlet\n"
 msgid "runaway fork() in Lua script\n"
-msgstr "exec() ei kutsuttu fork() jälkeen lua-komentosarjassa\n"
+msgstr "runaway fork() Lua-skriptissä\n"
 
 #: rpmio/rpmlua.cc:255
 #, c-format
@@ -3562,10 +3540,9 @@ msgid "(none)"
 msgstr "(ei mitään)"
 
 #: rpmio/url.cc:125
-#, fuzzy, c-format
-#| msgid "Could not read from file %s: %s\n"
+#, c-format
 msgid "Could not find url helper: \"%s\"\n"
-msgstr "Tiedoston ”%s” lukeminen ei onnistunut: %s\n"
+msgstr "URL-apuohjelmaa ei löytynyt: \"%s\"\n"
 
 #: rpmio/url.cc:129
 #, c-format
@@ -3588,16 +3565,14 @@ msgid "%s: Fflush failed: %s\n"
 msgstr "%s: Fflush epäonnistui: %s\n"
 
 #: sign/rpmgensig.cc:144
-#, fuzzy, c-format
-#| msgid "reading symlink %s failed: %s\n"
+#, c-format
 msgid "Expanding signing macro %s failed\n"
-msgstr "symlinkin %s lukeminen epäonnistui: %s\n"
+msgstr "Allekirjoitusmakron %s laajentaminen epäonnistui\n"
 
 #: sign/rpmgensig.cc:150
-#, fuzzy, c-format
-#| msgid "Invalid %s token: %s\n"
+#, c-format
 msgid "Invalid sign command: %s\n"
-msgstr "Virheellinen %s merkki: %s\n"
+msgstr "Virheellinen allekirjoituskomento: %s\n"
 
 #: sign/rpmgensig.cc:173
 #, c-format
@@ -3649,10 +3624,8 @@ msgid "unable to read the signature: %s\n"
 msgstr "ei voinut lukea allekirjoitusta: %s\n"
 
 #: sign/rpmgensig.cc:377
-#, fuzzy
-#| msgid "Unsupported PGP signature\n"
 msgid "Unsupported OpenPGP signature\n"
-msgstr "PGP-allekirjoitusta ei tueta\n"
+msgstr "OpenPGP-allekirjoitusta ei tueta\n"
 
 #: sign/rpmgensig.cc:383
 #, c-format
@@ -3665,10 +3638,9 @@ msgid "Deprecated OpenPGP signature version %d\n"
 msgstr "OpenPGP-allekirjoitusversiota ei enää tueta %d\n"
 
 #: sign/rpmgensig.cc:463
-#, fuzzy, c-format
-#| msgid "Unsupported PGP pubkey algorithm %u\n"
+#, c-format
 msgid "Unsupported OpenPGP pubkey algorithm %u for rpm v3/v4 signatures\n"
-msgstr "PGP-pubkey-algoritmi %u, jota ei tueta\n"
+msgstr "OpenPGP-pubkey-algoritmia %u ei tueta rpm v3/v4 -allekirjoituksille\n"
 
 #: sign/rpmgensig.cc:563
 msgid "file signing support not built in\n"
@@ -3718,10 +3690,9 @@ msgid "File signatures not applicable to src.rpm: %s\n"
 msgstr "Tiedoston allekirjoitukset, jotka eivät koske tiedostoa src.rpm: %s\n"
 
 #: sign/rpmgensig.cc:749
-#, fuzzy, c-format
-#| msgid "Could not seek in file %s: %s\n"
+#, c-format
 msgid "Could not get a file size of %s\n"
-msgstr "Ei voinut etsiä tiedostosta %s: %s\n"
+msgstr "Tiedoston kokoa %s ei voitu hakea\n"
 
 #: sign/rpmgensig.cc:769
 #, c-format
@@ -3729,10 +3700,9 @@ msgid "%s already contains an identical signature, skipping\n"
 msgstr "%s sisältää jo samanlaisen allekirjoituksen, ohitetaan\n"
 
 #: sign/rpmgensig.cc:776
-#, fuzzy, c-format
-#| msgid "%s already contains identical signature, skipping\n"
+#, c-format
 msgid "%s already contains a legacy signature\n"
-msgstr "%s sisältää jo samanlaisen allekirjoituksen, ohitetaan\n"
+msgstr "%s sisältää jo vanhan allekirjoituksen\n"
 
 #: sign/rpmgensig.cc:816 sign/rpmgensig.cc:841
 #, c-format
@@ -3745,10 +3715,9 @@ msgid "rpmMkTemp failed: %s\n"
 msgstr "rpmMkTemp epäonnistui: %s\n"
 
 #: sign/rpmgensig.cc:835
-#, fuzzy, c-format
-#| msgid "%s: failed to encode\n"
+#, c-format
 msgid "%s: failed to copy rpm lead: %s\n"
-msgstr "%s: koodaaminen epäonnistui\n"
+msgstr "%s: rpm leadin ei voitu kopioida: %s\n"
 
 #: sign/rpmgensig.cc:864
 #, c-format
@@ -4216,10 +4185,8 @@ msgid ""
 msgstr "käännä %install-osioon asti (%prep, %build ja %install) lähdepaketista"
 
 #: tools/rpmbuild.cc:250
-#, fuzzy
-#| msgid "override build root"
 msgid "override build root (DEPRECATED)"
-msgstr "ohita käännösjuuri"
+msgstr "ohita koontitiedoston juuri (VANHENTUNUT)"
 
 #: tools/rpmbuild.cc:252
 msgid "remove build tree when done"
