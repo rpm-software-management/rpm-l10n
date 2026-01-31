@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
-"PO-Revision-Date: 2025-06-18 19:22+0000\n"
+"PO-Revision-Date: 2026-02-01 14:58+0000\n"
 "Last-Translator: Jim Spentzos <jimspentzos2000@gmail.com>\n"
 "Language-Team: Greek <https://translate.fedoraproject.org/projects/rpm/rpm-"
 "l10n/el/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.12.1\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #: build/build.cc:42
 msgid "unable to parse _buildtime macro\n"
@@ -3059,10 +3059,9 @@ msgid "unknown keyring type: %s, using rpmdb\n"
 msgstr ""
 
 #: lib/rpmts.cc:422
-#, fuzzy, c-format
-#| msgid "Unknown file type"
+#, c-format
 msgid "unknown keyring type: %s\n"
-msgstr "Άγνωστος τύπος αρχείου"
+msgstr "άγνωστος τύπος κλειδοθήκης: %s\n"
 
 #: lib/rpmts.cc:931
 #, c-format
@@ -3557,10 +3556,9 @@ msgid "%s waitpid failed (%s)\n"
 msgstr ""
 
 #: sign/rpmgensig.cc:245
-#, fuzzy, c-format
-#| msgid "exec failed\n"
+#, c-format
 msgid "%s exec failed (%d)\n"
-msgstr "αποτυχία εκτέλεσης\n"
+msgstr "αποτυχία εκτέλεσης %s (%d)\n"
 
 #: sign/rpmgensig.cc:271
 #, c-format
@@ -3624,10 +3622,9 @@ msgid "%s: headerRead failed: %s\n"
 msgstr ""
 
 #: sign/rpmgensig.cc:699
-#, fuzzy, c-format
-#| msgid "argument is not an RPM package\n"
+#, c-format
 msgid "Cannot sign RPM v3 packages: %s\n"
-msgstr "το όρισμα αυτό δεν είναι ένα RPM πακέτο\n"
+msgstr "Δεν είναι δυνατή η υπογραφή πακέτων RPM v3: %s\n"
 
 #: sign/rpmgensig.cc:709
 #, c-format
@@ -3711,7 +3708,7 @@ msgstr ""
 #: tools/cliutils.cc:50
 #, c-format
 msgid "creating a pipe for --pipe failed: %m\n"
-msgstr "δημιουργία μίας σωλήνωσης για --αποτυχία σωλήνωσης: %m\n"
+msgstr "αποτυχία δημιουργίας καναλιού για το --pipe: %m\n"
 
 #: tools/cliutils.cc:59
 #, c-format
