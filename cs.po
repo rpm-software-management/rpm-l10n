@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
-"PO-Revision-Date: 2025-12-07 09:33+0000\n"
+"PO-Revision-Date: 2026-02-18 19:58+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
-"Language-Team: Czech <https://translate.fedoraproject.org/projects/rpm/"
-"rpm-l10n/cs/>\n"
+"Language-Team: Czech <https://translate.fedoraproject.org/projects/rpm/rpm-"
+"l10n/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 5.14.3\n"
+"X-Generator: Weblate 5.16\n"
 
 #: build/build.cc:42
 msgid "unable to parse _buildtime macro\n"
@@ -1839,22 +1839,22 @@ msgstr "nespouštět žádné skripty určené pro balíčky"
 #: lib/poptI.cc:211
 #, c-format
 msgid "do not execute %%pre scriptlet (if any)"
-msgstr "nespouštět žádné skripty (jsou-li nějaké)"
+msgstr "nespouštět žádné %%pre skripty (jsou-li nějaké)"
 
 #: lib/poptI.cc:214
 #, c-format
 msgid "do not execute %%post scriptlet (if any)"
-msgstr "nespouštět žádné skripty (jsou-li nějaké)"
+msgstr "nespouštět žádné %%post skripty (jsou-li nějaké)"
 
 #: lib/poptI.cc:217
 #, c-format
 msgid "do not execute %%preun scriptlet (if any)"
-msgstr "nespouštět žádné skripty (jsou-li nějaké)"
+msgstr "nespouštět žádné %%preun skripty (jsou-li nějaké)"
 
 #: lib/poptI.cc:220
 #, c-format
 msgid "do not execute %%postun scriptlet (if any)"
-msgstr "nespouštět žádné skripty (jsou-li nějaké)"
+msgstr "nespouštět žádné %%postun skripty (jsou-li nějaké)"
 
 #: lib/poptI.cc:223
 #, c-format
@@ -1867,16 +1867,14 @@ msgid "do not execute %%posttrans scriptlet (if any)"
 msgstr "nespouštět skriptlet %%posttrans (pokud existuje)"
 
 #: lib/poptI.cc:229
-#, fuzzy, c-format
-#| msgid "do not execute %%pretrans scriptlet (if any)"
+#, c-format
 msgid "do not execute %%preuntrans scriptlet (if any)"
-msgstr "nespouštět skriptlet %%pretrans (pokud existuje)"
+msgstr "nespouštět skriptlet %%preuntrans (pokud existuje)"
 
 #: lib/poptI.cc:232
-#, fuzzy, c-format
-#| msgid "do not execute %%posttrans scriptlet (if any)"
+#, c-format
 msgid "do not execute %%postuntrans scriptlet (if any)"
-msgstr "nespouštět skriptlet %%posttrans (pokud existuje)"
+msgstr "nespouštět skriptlet %%postuntrans (pokud existuje)"
 
 #: lib/poptI.cc:235
 msgid "do not execute any scriptlet(s) triggered by this package"
@@ -1885,22 +1883,22 @@ msgstr "nespouštět žádné skripty aktivované tímto balíčkem"
 #: lib/poptI.cc:238
 #, c-format
 msgid "do not execute any %%triggerprein scriptlet(s)"
-msgstr "nespouštět žádné skripty určené pro balíčky"
+msgstr "nespouštět žádné %%triggerprein skripty"
 
 #: lib/poptI.cc:241
 #, c-format
 msgid "do not execute any %%triggerin scriptlet(s)"
-msgstr "nespouštět žádné instalační skripty"
+msgstr "nespouštět žádné %%triggerin skripty"
 
 #: lib/poptI.cc:244
 #, c-format
 msgid "do not execute any %%triggerun scriptlet(s)"
-msgstr "nespouštět žádné instalační skripty"
+msgstr "nespouštět žádné %%triggerun skripty"
 
 #: lib/poptI.cc:247
 #, c-format
 msgid "do not execute any %%triggerpostun scriptlet(s)"
-msgstr "nespouštět žádné instalační skripty"
+msgstr "nespouštět žádné %%triggerpostun skripty"
 
 #: lib/poptI.cc:251
 #, c-format
@@ -2621,23 +2619,21 @@ msgstr ""
 "%u.\n"
 
 #: lib/rpmfi.cc:1352
-#, fuzzy, c-format
-#| msgid "Malformed data for tag %s: %u bytes found but %lu expected.\n"
+#, c-format
 msgid "Malformed data for tag %s: %u bytes found but %<PRIu64> expected.\n"
 msgstr ""
-"Chybná data pro značku %s: %u bajtů bylo nalezeno, ale očekáváno je %lu.\n"
+"Chybná data pro štítek %s: %u bajtů bylo nalezeno, ale očekáváno je %<PRIu64>"
+".\n"
 
 #: lib/rpmfi.cc:1537
-#, fuzzy, c-format
-#| msgid "%s: base64 decode failed, len %li\n"
+#, c-format
 msgid "%s: base64 decode failed, len %zu\n"
-msgstr "%s: dekódování base64 se nezdařilo, délka %li\n"
+msgstr "%s: dekódování base64 se nezdařilo, délka %zu\n"
 
 #: lib/rpmfi.cc:1545
-#, fuzzy, c-format
-#| msgid "%s: base64 decode success, len %li\n"
+#, c-format
 msgid "%s: base64 decode success, len %zu\n"
-msgstr "%s: dekódování base64 bylo úspěšné, délka %li\n"
+msgstr "%s: dekódování base64 bylo úspěšné, délka %zu\n"
 
 #: lib/rpmfi.cc:2405
 msgid "Bad magic"
@@ -2787,10 +2783,9 @@ msgid "\"%s\" specifies multiple packages:\n"
 msgstr "\"%s\" určuje více balíčků:\n"
 
 #: lib/rpminstall.cc:785
-#, fuzzy, c-format
-#| msgid "line %d doesn't belong to any section: %s\n"
+#, c-format
 msgid "failed to add restore element to transaction: %s\n"
-msgstr "řádek %d nepatří do žádné sekce: %s\n"
+msgstr "nepodařilo se přidat prvek obnovení do transakce: %s\n"
 
 #: lib/rpminstall.cc:824
 #, c-format
@@ -3464,10 +3459,9 @@ msgid "macro value out of range for int: %<PRIu64> using %i instead.\n"
 msgstr ""
 
 #: rpmio/macro.cc:2094
-#, fuzzy, c-format
-#| msgid "======================== active %d empty %d\n"
+#, c-format
 msgid "======================== active %zu empty %d\n"
-msgstr "======================== aktivní %d prázdné %d\n"
+msgstr "======================== aktivní %zu prázdné %d\n"
 
 #: rpmio/rpmfileutil.cc:97
 #, c-format
@@ -3624,40 +3618,33 @@ msgid "Could not read from file %s: %s\n"
 msgstr "Nelze číst ze souboru %s: %s\n"
 
 #: sign/rpmgensig.cc:242
-#, fuzzy, c-format
-#| msgid "gpg exec failed (%d)\n"
+#, c-format
 msgid "%s waitpid failed (%s)\n"
-msgstr "spuštění gpg selhalo (%d)\n"
+msgstr "%s waitpid se nezdařilo (%s)\n"
 
 #: sign/rpmgensig.cc:245
-#, fuzzy, c-format
-#| msgid "gpg exec failed (%d)\n"
+#, c-format
 msgid "%s exec failed (%d)\n"
-msgstr "spuštění gpg selhalo (%d)\n"
+msgstr "spuštění %s se nezdařilo (%d)\n"
 
 #: sign/rpmgensig.cc:271
-#, fuzzy, c-format
-#| msgid "gpg failed to write signature\n"
+#, c-format
 msgid "failed to write signature: %s\n"
-msgstr "gpg selhal při zápisu podpisu\n"
+msgstr "nepodařilo se zapsat podpis: %s\n"
 
 #: sign/rpmgensig.cc:287
-#, fuzzy, c-format
-#| msgid "unable to read the signature\n"
+#, c-format
 msgid "unable to read the signature: %s\n"
-msgstr "nemohu přečíst podpis\n"
+msgstr "nebylo možné přečíst podpis: %s\n"
 
 #: sign/rpmgensig.cc:377
-#, fuzzy
-#| msgid "(not an OpenPGP signature)"
 msgid "Unsupported OpenPGP signature\n"
-msgstr "(není OpenPGP podpis)"
+msgstr "Nepodporovaný OpenPGP podpis\n"
 
 #: sign/rpmgensig.cc:383
-#, fuzzy, c-format
-#| msgid "Unsupported fsverity algorithm %s\n"
+#, c-format
 msgid "Unsupported OpenPGP hash algorithm %u\n"
-msgstr "Nepodporovaný algoritmus fsverity %s\n"
+msgstr "Nepodporovaný algoritmus otisku %u pro OpenPGP\n"
 
 #: sign/rpmgensig.cc:390
 #, c-format
@@ -3665,10 +3652,10 @@ msgid "Deprecated OpenPGP signature version %d\n"
 msgstr ""
 
 #: sign/rpmgensig.cc:463
-#, fuzzy, c-format
-#| msgid "Unsupported fsverity algorithm %s\n"
+#, c-format
 msgid "Unsupported OpenPGP pubkey algorithm %u for rpm v3/v4 signatures\n"
-msgstr "Nepodporovaný algoritmus fsverity %s\n"
+msgstr ""
+"Nepodporovaný algoritmus %u veřejného OpenPGP klíče pro podpisy rpm v3/v4\n"
 
 #: sign/rpmgensig.cc:563
 msgid "file signing support not built in\n"
@@ -3703,16 +3690,14 @@ msgid "%s: headerRead failed: %s\n"
 msgstr "%s: čtení hlavičky se nezdařilo: %s\n"
 
 #: sign/rpmgensig.cc:699
-#, fuzzy, c-format
-#| msgid "Cannot sign RPM v3 packages\n"
+#, c-format
 msgid "Cannot sign RPM v3 packages: %s\n"
-msgstr "Nelze podepsat balíčky RPM v3\n"
+msgstr "Není možné podepsat RPM v3 balíčky: %s\n"
 
 #: sign/rpmgensig.cc:709
-#, fuzzy, c-format
-#| msgid "generate fsverity signatures for package(s) files"
+#, c-format
 msgid "not generating v3 signature for v6 package: %s\n"
-msgstr "generovat podpisy fsverity pro soubory balíčku(ů)"
+msgstr "nevytvářejí se v3 podpisy pro v6 balíček: %s\n"
 
 #: sign/rpmgensig.cc:724
 #, c-format
@@ -3743,10 +3728,9 @@ msgid "%s: rpmWriteSignature failed: %s\n"
 msgstr "%s: Fwrite selhalo: %s\n"
 
 #: sign/rpmgensig.cc:827
-#, fuzzy, c-format
-#| msgid "rpmMkTemp failed\n"
+#, c-format
 msgid "rpmMkTemp failed: %s\n"
-msgstr "rpmMkTemp selhal\n"
+msgstr "rpmMkTemp se nezdařilo: %s\n"
 
 #: sign/rpmgensig.cc:835
 #, fuzzy, c-format
@@ -4224,7 +4208,8 @@ msgstr "vytvoření binárního balíčku ze <zdrojový balíček>"
 #, c-format
 msgid ""
 "build through %install (%prep, %build, then install) from <source package>"
-msgstr "sestavení podle %%install (včetně %prep, %build) ze <zdrojový balíček>"
+msgstr ""
+"sestavení podle %install (%prep, %build, poté install) ze <zdrojový balíček>"
 
 #: tools/rpmbuild.cc:250
 #, fuzzy
@@ -4419,10 +4404,8 @@ msgid "sign package(s), adding a new signature"
 msgstr "podepsat soubory balíčku(ů)"
 
 #: tools/rpmsign.cc:38
-#, fuzzy
-#| msgid "sign package(s) (identical to --addsign)"
 msgid "resign package(s), deleting any previous signatures"
-msgstr "podepsat balíček (identické s --addsign)"
+msgstr "znovu podepsat balíček/balíčky a smazat veškeré předchozí podpisy"
 
 #: tools/rpmsign.cc:40
 msgid "delete package signatures"
@@ -4491,10 +4474,9 @@ msgid "Signature options:"
 msgstr "Volby signatury:"
 
 #: tools/rpmsign.cc:139
-#, fuzzy, c-format
-#| msgid "You must set \"%%_gpg_name\" in your macro file\n"
+#, c-format
 msgid "You must set \"%%_openpgp_sign_id\" in your macro file\n"
-msgstr "Je nutné nastavit \"%%_gpg_name\" ve vašem souboru maker\n"
+msgstr "Je třeba nastavit „%%_openpgp_sign_id“ ve vašem souboru maker\n"
 
 #: tools/rpmsign.cc:161
 #, c-format
