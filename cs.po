@@ -483,8 +483,7 @@ msgid "line %d: Error parsing script: %s: %s\n"
 msgstr "řádek %d: Chyba při parsování %s: %s\n"
 
 #: build/parseSimpleScript.cc:38
-#, fuzzy, c-format
-#| msgid "line %d: Bad option %s: %s\n"
+#, c-format
 msgid "line %d: Bad %s option %s: %s\n"
 msgstr "řádek %d: špatná volba %s: %s\n"
 
