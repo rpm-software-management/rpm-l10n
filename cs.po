@@ -3972,8 +3972,6 @@ msgid "rebuild database inverted lists from installed package headers"
 msgstr "znovu sestav obrácené seznamy z instalovaných hlaviček balíčků"
 
 #: tools/rpmdb.cc:27
-#, fuzzy
-#| msgid "verify database files"
 msgid "verify database"
 msgstr "zkontrolovat databázové soubory"
 
