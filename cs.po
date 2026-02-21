@@ -9,8 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
 "PO-Revision-Date: 2026-02-22 15:58+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://translate.fedoraproject.org/projects/rpm/rpm-"
 "l10n/cs/>\n"
 "Language: cs\n"
@@ -188,10 +187,9 @@ msgid "Unknown mtime policy '%s'\n"
 msgstr "Neznámý typ ikony: %s\n"
 
 #: build/files.cc:1073
-#, fuzzy, c-format
-#| msgid "Unknown file digest algorithm %u, falling back to MD5\n"
+#, c-format
 msgid "Unknown file digest algorithm %u, falling back to %u\n"
-msgstr "Neznámý soubor volby algoritmu %u, návrat k MD5\n"
+msgstr "Neznámý algoritmus otisku souboru %u – náhradně bude použit %u\n"
 
 #: build/files.cc:1125
 #, c-format
@@ -271,12 +269,12 @@ msgstr "neúspěšný symbolický odkaz"
 #: build/files.cc:1782 build/files.cc:1785
 #, c-format
 msgid "Duplicate build-id, stat %s: %m\n"
-msgstr "Duplicitní ID sestavení, stat %s: %m\n"
+msgstr "Duplicitní identif. sestavení, stat %s: %m\n"
 
 #: build/files.cc:1792
 #, c-format
 msgid "Duplicate build-ids %s and %s\n"
-msgstr "Duplicitní ID sestavení %s a %s\n"
+msgstr "Duplicitní identif. sestavení %s a %s\n"
 
 #: build/files.cc:1844
 msgid "_build_id_links macro not set, assuming 'compat'\n"
@@ -290,22 +288,22 @@ msgstr "Makro _build_id_links nastaveno na neznámou hodnotu '%s'\n"
 #: build/files.cc:1932
 #, c-format
 msgid "error reading build-id in %s: %s\n"
-msgstr "chyba při čtení ID sestavení v %s: %s\n"
+msgstr "chyba při čtení identif. sestavení v %s: %s\n"
 
 #: build/files.cc:1936
 #, c-format
 msgid "Missing build-id in %s\n"
-msgstr "Chybí ID sestavení v %s\n"
+msgstr "Chybí identif. sestavení v %s\n"
 
 #: build/files.cc:1941
 #, c-format
 msgid "build-id found in %s too small\n"
-msgstr "ID sestavení v %s je příliš malé\n"
+msgstr "Identif. sestavení v %s je příliš malý\n"
 
 #: build/files.cc:1942
 #, c-format
 msgid "build-id found in %s too large\n"
-msgstr "ID sestavení v %s je příliš velké\n"
+msgstr "Identif. sestavení v %s je příliš velký\n"
 
 #: build/files.cc:1957 rpmio/rpmfileutil.cc:419
 msgid "failed to create directory"
@@ -352,7 +350,7 @@ msgstr "Více než jeden soubor na řádku: %s\n"
 
 #: build/files.cc:2597
 msgid "Generating build-id links failed\n"
-msgstr "Generování odkazů ID sestavení se nezdařilo\n"
+msgstr "Vytváření odkazů identif. sestavení se nezdařilo\n"
 
 #: build/files.cc:2702
 #, c-format
@@ -480,12 +478,12 @@ msgstr "Dokončena úloha binárního balíčku, výsledek %d, název souboru %s
 #: build/parseSimpleScript.cc:30
 #, c-format
 msgid "line %d: Error parsing script: %s: %s\n"
-msgstr "řádek %d: Chyba při parsování %s: %s\n"
+msgstr "řádek %d: Chyba při zpracovávání skritpu: %s: %s\n"
 
 #: build/parseSimpleScript.cc:38
 #, c-format
 msgid "line %d: Bad %s option %s: %s\n"
-msgstr "řádek %d: špatná volba %s: %s\n"
+msgstr "řádek %d: nesprávná volba %s %s: %s\n"
 
 #: build/parseSimpleScript.cc:46 build/parsePreamble.cc:779
 #, c-format
@@ -633,7 +631,7 @@ msgstr "Položka %s musí být v balíčku přítomna: %s\n"
 #: build/parsePreamble.cc:536
 #, c-format
 msgid "%s field must be present before build in package: %s\n"
-msgstr "Položka %s musí být v balíčku přítomna: %s\n"
+msgstr "Je třeba, aby kolonka %s byla přítomna před sestavením balíčku: %s\n"
 
 #: build/parsePreamble.cc:559
 #, c-format
@@ -1341,7 +1339,7 @@ msgstr "%s%s vytvořeno jako %s%s\n"
 #: lib/fsm.cc:1182
 #, c-format
 msgid "%s %s%s: remove failed: %s\n"
-msgstr "%s %s: odstranění se nezdařilo: %s\n"
+msgstr "%s %s%s: odstranění se nezdařilo: %s\n"
 
 #: lib/fsm.cc:1183
 msgid "directory"
@@ -1510,7 +1508,7 @@ msgstr "%s: čtení veřejného klíče se nezdařilo.\n"
 #: lib/keystore.cc:90 lib/keystore.cc:195
 #, c-format
 msgid "failed to create keyring directory %s: %s\n"
-msgstr "nemohu otevřít adresář %s: %s\n"
+msgstr "vytvoření složky klíčenky %s se nezdařilo: %s\n"
 
 #: lib/keystore.cc:105
 #, c-format
@@ -1865,12 +1863,12 @@ msgstr "nespouštět skriptlet %%posttrans (pokud existuje)"
 #: lib/poptI.cc:229
 #, c-format
 msgid "do not execute %%preuntrans scriptlet (if any)"
-msgstr "nespouštět skriptlet %%pretrans (pokud existuje)"
+msgstr "nespouštět skriptlet %%preuntrans (pokud existuje)"
 
 #: lib/poptI.cc:232
 #, c-format
 msgid "do not execute %%postuntrans scriptlet (if any)"
-msgstr "nespouštět žádné skripty (jsou-li nějaké)"
+msgstr "nespouštět scriplet %%postuntrans (pokud existuje)"
 
 #: lib/poptI.cc:235
 msgid "do not execute any scriptlet(s) triggered by this package"
@@ -1999,7 +1997,7 @@ msgstr "režim kontroly"
 
 #: lib/poptQV.cc:102
 msgid "query/verify the package(s) which conflict with a dependency"
-msgstr "dotaz/ověření balíčků poskytujících závislost"
+msgstr "dotaz/ověření balíčků které kolidují se závislostí"
 
 #: lib/poptQV.cc:104
 msgid "query/verify the package(s) which require a dependency"
@@ -2487,7 +2485,7 @@ msgstr "soubory payloadu balíčku mají předponu \"./\"."
 
 #: lib/rpmds.cc:1064
 msgid "package name-version-release is not implicitly provided."
-msgstr "NVR balíčku není implicitně zprostředkována."
+msgstr "NVR balíčku není implicitně zprostředkováno."
 
 #: lib/rpmds.cc:1067
 msgid "header tags are always sorted after being loaded."
@@ -3157,7 +3155,7 @@ msgstr "%s: značka %u: neplatný hex"
 #: lib/rpmvs.cc:320
 #, c-format
 msgid "%s %s%s %s"
-msgstr "%s%s%s – %s"
+msgstr "%s %s%s %s"
 
 #: lib/rpmvs.cc:324
 msgid "digest"
@@ -3297,8 +3295,6 @@ msgid "syntax error in expression"
 msgstr "chyba syntaxe ve výrazu"
 
 #: rpmio/expression.cc:589
-#, fuzzy
-#| msgid "unsupported funcion"
 msgid "unsupported function"
 msgstr "nepodporovaná funkce"
 
@@ -3701,7 +3697,7 @@ msgstr "Nelze hledat v souboru %s: %s\n"
 #: sign/rpmgensig.cc:769
 #, c-format
 msgid "%s already contains an identical signature, skipping\n"
-msgstr "%s již obsahuje identický podpis, přeskakování\n"
+msgstr "%s už obsahuje identický podpis – bude přeskočeno\n"
 
 #: sign/rpmgensig.cc:776
 #, fuzzy, c-format
@@ -3736,7 +3732,7 @@ msgstr "sign_hash se nezdařilo\n"
 
 #: sign/rpmsignfiles.cc:96
 msgid "File digest algorithm id is invalid"
-msgstr "ID algoritmu volby souboru je neplatné"
+msgstr "Identif. algoritmu otisku souboru není neplatný"
 
 #: sign/rpmsignfiles.cc:117
 msgid "signFile failed\n"
@@ -3942,7 +3938,7 @@ msgstr "pro kontrolu nezadány žádné balíčky"
 
 #: tools/rpm2archive.cc:30
 msgid "create uncompressed archive"
-msgstr "vytvořit nekomprimovaný soubor tar"
+msgstr "vytvořit nekomprimovaný archiv"
 
 #: tools/rpm2archive.cc:33
 msgid "archive format (pax|cpio)"
@@ -3973,7 +3969,7 @@ msgstr "znovu sestav obrácené seznamy z instalovaných hlaviček balíčků"
 
 #: tools/rpmdb.cc:27
 msgid "verify database"
-msgstr "zkontrolovat databázové soubory"
+msgstr "zkontrolovat databázi"
 
 #: tools/rpmdb.cc:29
 msgid "salvage database"
@@ -4074,7 +4070,7 @@ msgstr "<zdrojový balíček>"
 #: tools/rpmbuild.cc:185
 #, c-format
 msgid "build through %conf (%prep, then %conf) from <source package>"
-msgstr "sestavení podle %%install (včetně %prep, %build) ze <zdrojový balíček>"
+msgstr "sestavení podle %conf (%prep, pak %conf) ze <zdrojový balíček>"
 
 #: tools/rpmbuild.cc:188
 #, c-format
