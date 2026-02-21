@@ -3155,10 +3155,9 @@ msgid "%s: tag %u: invalid hex"
 msgstr "%s: značka %u: neplatný hex"
 
 #: lib/rpmvs.cc:320
-#, fuzzy, c-format
-#| msgid "%s%s%s %s"
+#, c-format
 msgid "%s %s%s %s"
-msgstr "%s%s%s %s"
+msgstr "%s%s%s – %s"
 
 #: lib/rpmvs.cc:324
 msgid "digest"
