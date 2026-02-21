@@ -1870,7 +1870,7 @@ msgstr "nespouštět skriptlet %%pretrans (pokud existuje)"
 #: lib/poptI.cc:232
 #, c-format
 msgid "do not execute %%postuntrans scriptlet (if any)"
-msgstr "nespouštět skriptlet %%postuntrans (pokud existuje)"
+msgstr "nespouštět žádné skripty (jsou-li nějaké)"
 
 #: lib/poptI.cc:235
 msgid "do not execute any scriptlet(s) triggered by this package"
