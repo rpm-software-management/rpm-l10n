@@ -1508,10 +1508,9 @@ msgid "%s: reading of public key failed.\n"
 msgstr "%s: čtení veřejného klíče se nezdařilo.\n"
 
 #: lib/keystore.cc:90 lib/keystore.cc:195
-#, fuzzy, c-format
-#| msgid "failed to create directory %s: %s\n"
+#, c-format
 msgid "failed to create keyring directory %s: %s\n"
-msgstr "selhání při vytváření adresáře %s: %s\n"
+msgstr "nemohu otevřít adresář %s: %s\n"
 
 #: lib/keystore.cc:105
 #, c-format
