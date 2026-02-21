@@ -3408,10 +3408,9 @@ msgid "no such macro: '%s'\n"
 msgstr "žádné takové makro: '%s'\n"
 
 #: rpmio/macro.cc:1195
-#, fuzzy, c-format
-#| msgid "invalid package number: %s\n"
+#, c-format
 msgid "invalid argument: %s\n"
-msgstr "neplatné číslo balíčku: %s\n"
+msgstr "neplatný argument: %s\n"
 
 #: rpmio/macro.cc:1207
 #, fuzzy, c-format
@@ -3700,8 +3699,7 @@ msgid "Could not get a file size of %s\n"
 msgstr "Nelze hledat v souboru %s: %s\n"
 
 #: sign/rpmgensig.cc:769
-#, fuzzy, c-format
-#| msgid "%s already contains identical signature, skipping\n"
+#, c-format
 msgid "%s already contains an identical signature, skipping\n"
 msgstr "%s již obsahuje identický podpis, přeskakování\n"
 
