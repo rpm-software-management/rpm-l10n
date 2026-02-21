@@ -4072,10 +4072,9 @@ msgid "<source package>"
 msgstr "<zdrojový balíček>"
 
 #: tools/rpmbuild.cc:185
-#, fuzzy, c-format
-#| msgid "build through %conf (%prep, then %conf) from <specfile>"
+#, c-format
 msgid "build through %conf (%prep, then %conf) from <source package>"
-msgstr "sestavit pomocí %conf (%prep, poté %conf) z <specfile>"
+msgstr "sestavení podle %%install (včetně %prep, %build) ze <zdrojový balíček>"
 
 #: tools/rpmbuild.cc:188
 #, c-format
