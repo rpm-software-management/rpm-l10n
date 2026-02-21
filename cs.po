@@ -1339,8 +1339,7 @@ msgid "%s%s created as %s%s\n"
 msgstr "%s%s vytvořeno jako %s%s\n"
 
 #: lib/fsm.cc:1182
-#, fuzzy, c-format
-#| msgid "%s %s: remove failed: %s\n"
+#, c-format
 msgid "%s %s%s: remove failed: %s\n"
 msgstr "%s %s: odstranění se nezdařilo: %s\n"
 
