@@ -1998,10 +1998,8 @@ msgid "rpm verify mode"
 msgstr "režim kontroly"
 
 #: lib/poptQV.cc:102
-#, fuzzy
-#| msgid "query/verify the package(s) which obsolete a dependency"
 msgid "query/verify the package(s) which conflict with a dependency"
-msgstr "dotaz/ověření balíčku(ů), kterým zastarává závislost"
+msgstr "dotaz/ověření balíčků poskytujících závislost"
 
 #: lib/poptQV.cc:104
 msgid "query/verify the package(s) which require a dependency"
