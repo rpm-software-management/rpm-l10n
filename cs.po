@@ -631,8 +631,7 @@ msgid "%s field must be present in package: %s\n"
 msgstr "Položka %s musí být v balíčku přítomna: %s\n"
 
 #: build/parsePreamble.cc:536
-#, fuzzy, c-format
-#| msgid "%s field must be present in package: %s\n"
+#, c-format
 msgid "%s field must be present before build in package: %s\n"
 msgstr "Položka %s musí být v balíčku přítomna: %s\n"
 
