@@ -3941,8 +3941,6 @@ msgid "no arguments given for verify"
 msgstr "pro kontrolu nezadány žádné balíčky"
 
 #: tools/rpm2archive.cc:30
-#, fuzzy
-#| msgid "create uncompressed tar file"
 msgid "create uncompressed archive"
 msgstr "vytvořit nekomprimovaný soubor tar"
 
