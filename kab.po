@@ -8,14 +8,17 @@ msgstr ""
 "Project-Id-Version: rpm 6.0.90\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-03-31 13:58+0000\n"
+"Last-Translator: ButterflyOfFire "
+"<butterflyoffire@users.noreply.translate.fedoraproject.org>\n"
+"Language-Team: Kabyle <https://translate.fedoraproject.org/projects/rpm/rpm-"
+"l10n/kab/>\n"
 "Language: kab\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #: build/build.cc:42
 msgid "unable to parse _buildtime macro\n"
@@ -651,7 +654,7 @@ msgstr ""
 #: build/parsePreamble.cc:682
 #, c-format
 msgid "%s in: %s\n"
-msgstr ""
+msgstr "%s deg: %s\n"
 
 #: build/parsePreamble.cc:703 build/parsePreamble.cc:710
 #, c-format
@@ -1269,7 +1272,7 @@ msgstr ""
 
 #: lib/formats.cc:505
 msgid "normal"
-msgstr ""
+msgstr "amagnu"
 
 #: lib/formats.cc:508 lib/verify.cc:314
 msgid "replaced"
@@ -1293,7 +1296,7 @@ msgstr ""
 
 #: lib/formats.cc:523
 msgid "(unknown)"
-msgstr ""
+msgstr "(d arussin)"
 
 #: lib/fsm.cc:420
 #, c-format
@@ -1317,11 +1320,11 @@ msgstr ""
 
 #: lib/fsm.cc:1183
 msgid "directory"
-msgstr ""
+msgstr "akaram"
 
 #: lib/fsm.cc:1183
 msgid "file"
-msgstr ""
+msgstr "afaylu"
 
 #: lib/header.cc:352
 #, c-format
@@ -1392,7 +1395,7 @@ msgstr ""
 
 #: lib/header.cc:2028
 msgid "signature "
-msgstr ""
+msgstr "azmul "
 
 #: lib/header.cc:2044
 msgid "hdr length: BAD"
@@ -1512,7 +1515,7 @@ msgstr ""
 #: lib/poptALL.cc:59 tools/cliutils.cc:24
 #, c-format
 msgid "RPM version %s\n"
-msgstr ""
+msgstr "Lqem RPM wis %s\n"
 
 #: lib/poptALL.cc:139
 msgid "Error writing to stdout"
@@ -1552,7 +1555,7 @@ msgstr ""
 
 #: lib/poptALL.cc:220
 msgid "MACRO"
-msgstr ""
+msgstr "MACRO"
 
 #: lib/poptALL.cc:222
 msgid "print macro expansion of EXPR"
@@ -1560,7 +1563,7 @@ msgstr ""
 
 #: lib/poptALL.cc:223
 msgid "'EXPR'"
-msgstr ""
+msgstr "'EXPR'"
 
 #: lib/poptALL.cc:225
 msgid "Specify target platform"
@@ -1568,7 +1571,7 @@ msgstr ""
 
 #: lib/poptALL.cc:225
 msgid "CPU-VENDOR-OS"
-msgstr ""
+msgstr "CPU-VENDOR-OS"
 
 #: lib/poptALL.cc:227 lib/poptALL.cc:249
 msgid "read <FILE:...> instead of default file(s)"
@@ -1576,7 +1579,7 @@ msgstr ""
 
 #: lib/poptALL.cc:228 lib/poptALL.cc:250
 msgid "<FILE:...>"
-msgstr ""
+msgstr "<AFAYLU:...>"
 
 #: lib/poptALL.cc:230
 msgid "load a single macro file"
@@ -1584,7 +1587,7 @@ msgstr ""
 
 #: lib/poptALL.cc:231
 msgid "<FILE>"
-msgstr ""
+msgstr "<FILE>"
 
 #: lib/poptALL.cc:236
 msgid "don't enable any plugins"
@@ -1608,7 +1611,7 @@ msgstr ""
 
 #: lib/poptALL.cc:247
 msgid "CMD"
-msgstr ""
+msgstr "CMD"
 
 #: lib/poptALL.cc:252
 msgid "use ROOT as top level directory"
@@ -1624,7 +1627,7 @@ msgstr ""
 
 #: lib/poptALL.cc:256
 msgid "DIRECTORY"
-msgstr ""
+msgstr "AKARAM"
 
 #: lib/poptALL.cc:259
 msgid "display known query tags"
@@ -1719,7 +1722,7 @@ msgstr ""
 
 #: lib/poptI.cc:149
 msgid "<path>"
-msgstr ""
+msgstr "<abrid>"
 
 #: lib/poptI.cc:152
 msgid "short hand for --replacepkgs --replacefiles"
@@ -1883,7 +1886,7 @@ msgstr ""
 
 #: lib/poptI.cc:262
 msgid "<dir>"
-msgstr ""
+msgstr "<akar>"
 
 #: lib/poptI.cc:264
 msgid "relocate files from path <old> to <new>"
@@ -1891,7 +1894,7 @@ msgstr ""
 
 #: lib/poptI.cc:265
 msgid "<old>=<new>"
-msgstr ""
+msgstr "<aqbuṛ>=<amaynut>"
 
 #: lib/poptI.cc:268
 msgid "ignore file conflicts between packages"
@@ -2125,7 +2128,7 @@ msgstr ""
 
 #: lib/query.cc:154
 msgid "normal        "
-msgstr ""
+msgstr "amagnu        "
 
 #: lib/query.cc:157
 msgid "replaced      "
@@ -2223,7 +2226,7 @@ msgstr ""
 #: lib/query.cc:437
 #, c-format
 msgid "file %s: %s\n"
-msgstr ""
+msgstr "afaylu %s: %s\n"
 
 #: lib/query.cc:440
 #, c-format
@@ -2292,7 +2295,7 @@ msgstr ""
 
 #: lib/rpmchecksig.cc:245
 msgid "OK"
-msgstr ""
+msgstr "IH"
 
 #: lib/rpmchecksig.cc:287 sign/rpmgensig.cc:81
 #, c-format
@@ -2419,11 +2422,11 @@ msgstr ""
 
 #: lib/rpmds.cc:677
 msgid "NO "
-msgstr ""
+msgstr "UHU "
 
 #: lib/rpmds.cc:677
 msgid "YES"
-msgstr ""
+msgstr "IH"
 
 #: lib/rpmds.cc:1042
 msgid "PreReq:, Provides:, and Obsoletes: dependencies support versions."
@@ -2640,7 +2643,7 @@ msgstr ""
 #: lib/rpmfi.cc:2451
 #, c-format
 msgid "%s: (error 0x%x)"
-msgstr ""
+msgstr "%s: (tuccḍa 0x%x)"
 
 #: lib/rpmgi.cc:56 lib/rpminstall.cc:113 lib/rpminstall.cc:319
 #: lib/rpminstall.cc:351 tools/rpmgraph.cc:84 tools/rpmgraph.cc:123
@@ -2661,7 +2664,7 @@ msgstr ""
 #: lib/rpminstall.cc:139
 #, c-format
 msgid "Updating / installing...\n"
-msgstr ""
+msgstr "Amucceḍ / asbeddi...\n"
 
 #: lib/rpminstall.cc:141
 #, c-format
@@ -2670,7 +2673,7 @@ msgstr ""
 
 #: lib/rpminstall.cc:193
 msgid "Preparing..."
-msgstr ""
+msgstr "Aheyyi…"
 
 #: lib/rpminstall.cc:193
 msgid "Verifying..."
@@ -2947,7 +2950,7 @@ msgstr ""
 #: lib/rpmrc.cc:1508
 #, c-format
 msgid "Unknown system: %s\n"
-msgstr ""
+msgstr "Anagraw arussin: %s\n"
 
 #: lib/rpmrc.cc:1510
 #, c-format
@@ -3016,7 +3019,7 @@ msgstr ""
 
 #: lib/rpmte.cc:770
 msgid "install"
-msgstr ""
+msgstr "Sbedd"
 
 #: lib/rpmte.cc:771
 msgid "erase"
@@ -3107,7 +3110,7 @@ msgstr ""
 #: lib/rpmvs.cc:320
 #, c-format
 msgid "%s %s%s %s"
-msgstr ""
+msgstr "%s %s%s %s"
 
 #: lib/rpmvs.cc:324
 msgid "digest"
@@ -3116,16 +3119,16 @@ msgstr ""
 #: lib/rpmvs.cc:329 lib/rpmvs.cc:339
 #, c-format
 msgid "%s OpenPGP %s"
-msgstr ""
+msgstr "%s OpenPGP %s"
 
 #: lib/rpmvs.cc:334
 #, c-format
 msgid "%s OpenPGP %s %s"
-msgstr ""
+msgstr "%s OpenPGP %s %s"
 
 #: lib/rpmvs.cc:337 lib/rpmvs.cc:341
 msgid "signature"
-msgstr ""
+msgstr "azmul"
 
 #: lib/rpmvs.cc:360
 #, c-format
@@ -3290,7 +3293,7 @@ msgstr ""
 #: rpmio/macro.cc:300
 #, c-format
 msgid "%3d>%*s(empty)\n"
-msgstr ""
+msgstr "%3d>%*s(d ilem)\n"
 
 #: rpmio/macro.cc:427
 msgid ""
@@ -3413,7 +3416,7 @@ msgstr ""
 
 #: rpmio/rpmio.cc:286
 msgid "[none]"
-msgstr ""
+msgstr "[ula yiwen]"
 
 #: rpmio/rpmlog.cc:95
 msgid "(no error)"
@@ -3425,7 +3428,7 @@ msgstr ""
 
 #: rpmio/rpmlog.cc:190
 msgid "error: "
-msgstr ""
+msgstr "tuccḍa: "
 
 #: rpmio/rpmlog.cc:191
 msgid "warning: "
@@ -3687,7 +3690,7 @@ msgstr ""
 #: tools/cliutils.cc:18
 #, c-format
 msgid "%s: %s\n"
-msgstr ""
+msgstr "%s: %s\n"
 
 #: tools/cliutils.cc:29
 #, c-format
@@ -4323,7 +4326,7 @@ msgstr ""
 
 #: tools/rpmsign.cc:65
 msgid "<algorithm>"
-msgstr ""
+msgstr "<algorithm>"
 
 #: tools/rpmsign.cc:67
 msgid "use file signing cert <cert>"
@@ -4331,7 +4334,7 @@ msgstr ""
 
 #: tools/rpmsign.cc:68
 msgid "<cert>"
-msgstr ""
+msgstr "<cert>"
 
 #: tools/rpmsign.cc:72
 msgid "use file signing key <key>"
@@ -4339,7 +4342,7 @@ msgstr ""
 
 #: tools/rpmsign.cc:73
 msgid "<key>"
-msgstr ""
+msgstr "<key>"
 
 #: tools/rpmsign.cc:75
 msgid "prompt for file signing key password"
