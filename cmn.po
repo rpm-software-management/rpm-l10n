@@ -11,26 +11,24 @@ msgstr ""
 "Project-Id-Version: RPM\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
-"PO-Revision-Date: 2024-02-21 10:35+0000\n"
-"Last-Translator: eirik song <eirik.song@gmail.com>\n"
-"Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
-"projects/rpm/rpm-l10n/zh_Hans/>\n"
+"PO-Revision-Date: 2026-04-02 20:59+0000\n"
+"Last-Translator: 耗子 <haozi@loli.email>\n"
+"Language-Team: Chinese (Simplified Han script) <https://"
+"translate.fedoraproject.org/projects/rpm/rpm-l10n/zh_Hans/>\n"
 "Language: cmn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.4\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #: build/build.cc:42
-#, fuzzy
-#| msgid "unable to read the signature\n"
 msgid "unable to parse _buildtime macro\n"
-msgstr "无法读取签名\n"
+msgstr "无法解析 _buildtime 宏\n"
 
 #: build/build.cc:50
 msgid "unable to parse SOURCE_DATE_EPOCH\n"
-msgstr ""
+msgstr "无法解析 SOURCE_DATE_EPOCH\n"
 
 #: build/build.cc:84
 #, c-format
@@ -62,15 +60,14 @@ msgid "Failed build dependencies:\n"
 msgstr "相依性建置失败：\n"
 
 #: build/build.cc:346
-#, fuzzy, c-format
-#| msgid "failed to create directory %s: %s\n"
+#, c-format
 msgid "failed to create package build directory %s: %s\n"
-msgstr "建立目录 %s 时失败：%s\n"
+msgstr "创建软件包构建目录 %s 失败：%s\n"
 
 #: build/build.cc:387
 #, c-format
 msgid "setting %s=%s\n"
-msgstr ""
+msgstr "设置 %s=%s\n"
 
 #: build/build.cc:391
 #, c-format
@@ -78,18 +75,24 @@ msgid ""
 "%%source_date_epoch_from_changelog is set, but %%changelog has no entries to "
 "take a date from\n"
 msgstr ""
+"已设置 %%source_date_epoch_from_changelog，但 %%changelog 中没有可供获取日期"
+"的条目\n"
 
 #: build/build.cc:563
 msgid ""
 "\n"
 "RPM build warnings:\n"
 msgstr ""
+"\n"
+"RPM 构建警告：\n"
 
 #: build/build.cc:569
 msgid ""
 "\n"
 "RPM build errors:\n"
 msgstr ""
+"\n"
+"RPM 构建错误：\n"
 
 #: build/files.cc:346 build/files.cc:527 build/files.cc:751
 #, c-format
@@ -110,7 +113,7 @@ msgstr "无效的 %s 符记：%s\n"
 #: build/files.cc:493
 #, c-format
 msgid "Missing %s in %s(%s)\n"
-msgstr ""
+msgstr "“%s” 不存在于 “%s” 中（%s）\n"
 
 #: build/files.cc:547
 #, c-format
@@ -152,15 +155,14 @@ msgid "File capability support not built in\n"
 msgstr "档案功能支持未内建于\n"
 
 #: build/files.cc:896
-#, fuzzy, c-format
-#| msgid "Missing module path in line: %s\n"
+#, c-format
 msgid "Missing quote: %s\n"
-msgstr "缺少模块路径于列号：%s\n"
+msgstr "缺少引号：%s\n"
 
 #: build/files.cc:902
 #, c-format
 msgid "Trailing backslash: %s\n"
-msgstr ""
+msgstr "尾部反斜杠：%s\n"
 
 #: build/files.cc:914
 #, c-format
@@ -172,24 +174,22 @@ msgstr "档案必须以「/」开头：%s\n"
 msgid ""
 "%%clamp_mtime_to_source_date_epoch is deprecated, please use "
 "%%build_mtime_policy\n"
-msgstr ""
+msgstr "%%clamp_mtime_to_source_date_epoch 已弃用，请使用 %%build_mtime_policy\n"
 
 #: build/files.cc:1050
 #, c-format
 msgid "unable to parse %s=%s\n"
-msgstr ""
+msgstr "无法解析 %s=%s\n"
 
 #: build/files.cc:1057
-#, fuzzy, c-format
-#| msgid "Unknown icon type: %s\n"
+#, c-format
 msgid "Unknown mtime policy '%s'\n"
-msgstr "不明的图示类型：%s\n"
+msgstr "未知的 mtime 策略 '%s'\n"
 
 #: build/files.cc:1073
-#, fuzzy, c-format
-#| msgid "Unknown file digest algorithm %u, falling back to MD5\n"
+#, c-format
 msgid "Unknown file digest algorithm %u, falling back to %u\n"
-msgstr "不明档案摘要算法 %u，权宜落回 MD5\n"
+msgstr "未知的文件摘要算法 %u，回退到 %u\n"
 
 #: build/files.cc:1125
 #, c-format
@@ -204,7 +204,7 @@ msgstr "读取符号链结 %s 失败：%s\n"
 #: build/files.cc:1251
 #, c-format
 msgid "absolute symlink: %s -> %s\n"
-msgstr ""
+msgstr "绝对符号连接： %s -> %s\n"
 
 #: build/files.cc:1257
 #, c-format
@@ -214,12 +214,12 @@ msgstr "指向 BuildRoot 的符号链结：%s -> %s\n"
 #: build/files.cc:1381
 #, c-format
 msgid "Illegal character (0x%x) in filename: %s\n"
-msgstr ""
+msgstr "文件名中出现非法字符 (0x%x): %s\n"
 
 #: build/files.cc:1416
 #, c-format
 msgid "Path is outside buildroot: %s\n"
-msgstr ""
+msgstr "路径在 buildroot 之外：%s\n"
 
 #: build/files.cc:1460
 #, c-format
@@ -234,12 +234,12 @@ msgstr "找不到档案：%s\n"
 #: build/files.cc:1482
 #, c-format
 msgid "Not a directory: %s\n"
-msgstr ""
+msgstr "此路径不是一个目录：%s\n"
 
 #: build/files.cc:1621
-#, fuzzy, c-format
+#, c-format
 msgid "Can't read content of file: %s\n"
-msgstr "讀取策略檔案時失敗：%s\n"
+msgstr "无法读取文件内容：%s\n"
 
 #: build/files.cc:1661
 #, c-format
@@ -263,46 +263,46 @@ msgstr "%s：编码失败\n"
 
 #: build/files.cc:1726
 msgid "failed symlink"
-msgstr ""
+msgstr "无法创建符号连接"
 
 #: build/files.cc:1782 build/files.cc:1785
 #, c-format
 msgid "Duplicate build-id, stat %s: %m\n"
-msgstr ""
+msgstr "复制 build-id, stat %s: %m\n"
 
 #: build/files.cc:1792
 #, c-format
 msgid "Duplicate build-ids %s and %s\n"
-msgstr ""
+msgstr "复制 build-ids %s and %s\n"
 
 #: build/files.cc:1844
 msgid "_build_id_links macro not set, assuming 'compat'\n"
-msgstr ""
+msgstr "未设置build_id_links宏，“compat”\n"
 
 #: build/files.cc:1857
 #, c-format
 msgid "_build_id_links macro set to unknown value '%s'\n"
-msgstr ""
+msgstr "_build_id_links 宏设置为了未知值 '%s'\n"
 
 #: build/files.cc:1932
 #, c-format
 msgid "error reading build-id in %s: %s\n"
-msgstr ""
+msgstr "读取 %s 中的 build-id 时发生错误：%s\n"
 
 #: build/files.cc:1936
 #, c-format
 msgid "Missing build-id in %s\n"
-msgstr ""
+msgstr "在%s中找不到 build-id\n"
 
 #: build/files.cc:1941
 #, c-format
 msgid "build-id found in %s too small\n"
-msgstr ""
+msgstr "从 %s 中发现的 build-id 过小\n"
 
 #: build/files.cc:1942
 #, c-format
 msgid "build-id found in %s too large\n"
-msgstr ""
+msgstr "从 %s 中发现的 build-id 过大\n"
 
 #: build/files.cc:1957 rpmio/rpmfileutil.cc:419
 msgid "failed to create directory"
@@ -310,7 +310,7 @@ msgstr "无法建立目录"
 
 #: build/files.cc:1975
 msgid "Mixing main ELF and debug files in package\n"
-msgstr ""
+msgstr "软件包中混合了主 ELF 文件和调试文件\n"
 
 #: build/files.cc:2173
 #, c-format
@@ -318,14 +318,14 @@ msgid "File needs leading \"/\": %s\n"
 msgstr "档案需要以「/」开头：%s\n"
 
 #: build/files.cc:2231
-#, fuzzy, c-format
+#, c-format
 msgid "Could not open %s file %s: %m\n"
-msgstr "無法開啟 %%files 檔案 %s：%m\n"
+msgstr "无法打开 %s 文件 %s: %m\n"
 
 #: build/files.cc:2256
-#, fuzzy, c-format
+#, c-format
 msgid "Empty %s file %s\n"
-msgstr "空的檔案分類器\n"
+msgstr "空 %s 文件 %s\n"
 
 #: build/files.cc:2301
 #, c-format
@@ -335,7 +335,7 @@ msgstr "不合法的 _docdir_fmt %s：%s\n"
 #: build/files.cc:2489
 #, c-format
 msgid "Special file in generated file list: %s\n"
-msgstr ""
+msgstr "生成文件列表中的特殊文件：%s\n"
 
 #: build/files.cc:2513
 #, c-format
@@ -349,7 +349,7 @@ msgstr "一列中超过一个档案：%s\n"
 
 #: build/files.cc:2597
 msgid "Generating build-id links failed\n"
-msgstr ""
+msgstr "生成build-id 链接失败\n"
 
 #: build/files.cc:2702
 #, c-format
@@ -371,14 +371,14 @@ msgstr ""
 "%s"
 
 #: build/files.cc:2829
-#, fuzzy, c-format
+#, c-format
 msgid "package %s already exists\n"
-msgstr "套件 %s 已經安裝"
+msgstr "软件包 %s 已经存在\n"
 
 #: build/files.cc:2892
 #, c-format
 msgid "%s was mapped to multiple filenames"
-msgstr ""
+msgstr "%s 被映射到多个文件名"
 
 #: build/files.cc:3143
 #, c-format
@@ -413,21 +413,21 @@ msgstr "不明酬载压缩：%s\n"
 #: sign/rpmgensig.cc:847
 #, c-format
 msgid "Could not seek in file %s: %s\n"
-msgstr ""
+msgstr "无法 seek 文件 %s：%s\n"
 
 #: build/pack.cc:411
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to read %jd bytes in file %s: %s\n"
-msgstr "讀取策略檔案時失敗：%s\n"
+msgstr "无法读取 %jd 字节 (在文件 %s 中)：%s\n"
 
 #: build/pack.cc:425
 msgid "Unable to create immutable header region\n"
-msgstr ""
+msgstr "无法创建不可变的标头区域\n"
 
 #: build/pack.cc:430
 #, c-format
 msgid "Unable to write header to %s: %s\n"
-msgstr ""
+msgstr "无法将标题写入 %s: %s\n"
 
 #: build/pack.cc:525
 #, c-format
@@ -472,19 +472,17 @@ msgstr "无法产生套件 %s 的文件名输出：%s\n"
 #: build/pack.cc:856
 #, c-format
 msgid "Finished binary package job, result %d, filename %s\n"
-msgstr ""
+msgstr "已完成二进制包打包，返回 %d，文件名 %s\n"
 
 #: build/parseSimpleScript.cc:30
-#, fuzzy, c-format
-#| msgid "line %d: Error parsing %s: %s\n"
+#, c-format
 msgid "line %d: Error parsing script: %s: %s\n"
-msgstr "第 %d 列：剖析 %s 时发生错误：%s\n"
+msgstr "第 %d 行：解析脚本 %s 时出错：%s\n"
 
 #: build/parseSimpleScript.cc:38
-#, fuzzy, c-format
-#| msgid "line %d: Bad option %s: %s\n"
+#, c-format
 msgid "line %d: Bad %s option %s: %s\n"
-msgstr "第 %d 列：不当选项 %s：%s\n"
+msgstr "第 %d 行：错误的 %s 选项 %s：%s\n"
 
 #: build/parseSimpleScript.cc:46 build/parsePreamble.cc:779
 #, c-format
@@ -492,10 +490,9 @@ msgid "line %d: second %s\n"
 msgstr "第 %d 列：第二个 %s\n"
 
 #: build/parseSimpleScript.cc:52
-#, fuzzy, c-format
-#| msgid "line %d: unsupported internal script: %s\n"
+#, c-format
 msgid "line %d: append and prepend specified: %s\n"
-msgstr "第 %d 列：不支持的内部指令稿：%s\n"
+msgstr "第 %d 行：同时指定了追加和前置：%s\n"
 
 #: build/parseChangelog.cc:184
 #, c-format
@@ -535,7 +532,7 @@ msgstr "%%changelog 中没有描述\n"
 #: build/parseChangelog.cc:322
 #, c-format
 msgid "line %d: second %%changelog\n"
-msgstr ""
+msgstr "行 %d: 第二个 %%changelog\n"
 
 #: build/parseDescription.cc:33
 #, c-format
@@ -562,7 +559,7 @@ msgstr "第 %d 列：剖析 %%files 时发生错误：%s\n"
 #: build/parseFiles.cc:73
 #, c-format
 msgid "line %d: multiple %%files for package '%s'\n"
-msgstr ""
+msgstr "第 %d 行：太多 %%files 为软件包 '%s'\n"
 
 #: build/parsePolicies.cc:32
 #, c-format
@@ -630,10 +627,9 @@ msgid "%s field must be present in package: %s\n"
 msgstr "%s 字段必须出现于套件中：%s\n"
 
 #: build/parsePreamble.cc:536
-#, fuzzy, c-format
-#| msgid "%s field must be present in package: %s\n"
+#, c-format
 msgid "%s field must be present before build in package: %s\n"
-msgstr "%s 字段必须出现于套件中：%s\n"
+msgstr "%s 字段必须在软件包构建前存在：%s\n"
 
 #: build/parsePreamble.cc:559
 #, c-format
@@ -663,25 +659,25 @@ msgstr "第 %d 列：标签只需单一符记：%s\n"
 #: build/parsePreamble.cc:680
 #, c-format
 msgid "line %d: %s in: %s\n"
-msgstr ""
+msgstr "行 %d：%s 位于：%s\n"
 
 #: build/parsePreamble.cc:682
 #, c-format
 msgid "%s in: %s\n"
-msgstr ""
+msgstr "%s 位于：%s\n"
 
 #: build/parsePreamble.cc:703 build/parsePreamble.cc:710
 #, c-format
 msgid "Illegal char '%c' (0x%x)"
-msgstr ""
+msgstr "无效字符 '%c' (0x%x)"
 
 #: build/parsePreamble.cc:717
 msgid "Possible unexpanded macro"
-msgstr ""
+msgstr "可能未展开的宏"
 
 #: build/parsePreamble.cc:723
 msgid "Illegal sequence \"..\""
-msgstr ""
+msgstr "非法序列“..”"
 
 #: build/parsePreamble.cc:826
 #, c-format
@@ -721,13 +717,12 @@ msgstr "第 %d 列：不当 BuildArchitecture 格式：%s\n"
 #: build/parsePreamble.cc:1015
 #, c-format
 msgid "line %d: Duplicate BuildArch entry: %s\n"
-msgstr ""
+msgstr "第 %d行：重复的 BuildArch 条目：%s\n"
 
 #: build/parsePreamble.cc:1023
-#, fuzzy, c-format
-#| msgid "line %d: Only noarch subpackages are supported: %s\n"
+#, c-format
 msgid "line %d: Only noarch is allowed after the build: %s\n"
-msgstr "第 %d 列：只有支持 noarch 子套装模块：%s\n"
+msgstr "第 %d 行：构建后只允许 noarch：%s\n"
 
 #: build/parsePreamble.cc:1033
 #, c-format
@@ -751,7 +746,7 @@ msgstr "不当套件规格：%s\n"
 
 #: build/parsePreamble.cc:1260
 msgid "Binary rpm package found. Expected spec file!\n"
-msgstr ""
+msgstr "找到二进制 RPM 包。需要 spec 文件！\n"
 
 #: build/parsePreamble.cc:1263
 #, c-format
@@ -759,16 +754,14 @@ msgid "line %d: Unknown tag: %s\n"
 msgstr "第 %d 列：不明标签：%s\n"
 
 #: build/parsePreamble.cc:1268
-#, fuzzy, c-format
-#| msgid "line %d: Tag takes single token only: %s\n"
+#, c-format
 msgid "line %d: Tag not allowed after build is done: %s\n"
-msgstr "第 %d 列：标签只需单一符记：%s\n"
+msgstr "第 %d 行：构建完成后不允许使用此标签：%s\n"
 
 #: build/parsePreamble.cc:1330
-#, fuzzy, c-format
-#| msgid "Invalid capability: %s\n"
+#, c-format
 msgid "Invalid buildroot: '%s'\n"
-msgstr "无效的功能：%s\n"
+msgstr "无效的 buildroot：'%s'\n"
 
 #: build/parsePrep.cc:72
 #, c-format
@@ -798,7 +791,7 @@ msgstr "第 %d 列：不当 %%setup 选项 %s：%s\n"
 #: build/parsePrep.cc:369
 #, c-format
 msgid "Patch number not specified: %s\n"
-msgstr ""
+msgstr "未指定补丁号：%s\n"
 
 #: build/parsePrep.cc:378
 #, c-format
@@ -815,7 +808,7 @@ msgstr "不允许标上版本的文件名"
 
 #: build/parseReqs.cc:222
 msgid "No rich dependencies allowed for this type"
-msgstr ""
+msgstr "此类型不允许富依赖关系"
 
 #: build/parseReqs.cc:232 build/parseReqs.cc:325
 msgid "invalid dependency"
@@ -826,26 +819,24 @@ msgid "Version required"
 msgstr "所需版本"
 
 #: build/parseReqs.cc:282
-#, fuzzy
-#| msgid "relocations must begin with a /"
 msgid "file trigger conditions must begin with '/'"
-msgstr "重新分配位置必须以 / 开头"
+msgstr "文件触发器条件必须以 '/' 开头"
 
 #: build/parseReqs.cc:294
 msgid "Only package names are allowed in Obsoletes"
-msgstr ""
+msgstr "在 Obsoletes 中只允许使用软件包名称"
 
 #: build/parseReqs.cc:299
 msgid "It's not recommended to have unversioned Obsoletes"
-msgstr ""
+msgstr "不建议加上未标注版本的 Obsoletes"
 
 #: build/parseReqs.cc:302
 msgid "It's not recommended to use '>' in Obsoletes"
-msgstr ""
+msgstr "不建议在Obsoletes中使用 '>'"
 
 #: build/parseReqs.cc:314
 msgid "Trigger fired by the same package is already defined in spec file"
-msgstr ""
+msgstr "同一个软件包的触发器已在 spec 文件中定义"
 
 #: build/parseReqs.cc:342
 #, c-format
@@ -860,7 +851,7 @@ msgstr "第 %d 列：触发器必须包含 --：%s\n"
 #: build/parseScript.cc:268
 #, c-format
 msgid "line %d: missing trigger condition: %s\n"
-msgstr ""
+msgstr "行 %d：缺少触发器条件：%s\n"
 
 #: build/parseScript.cc:278 build/parseScript.cc:348
 #, c-format
@@ -880,7 +871,7 @@ msgstr "第 %d 列：指令稿程序必须以「/」开头：%s\n"
 #: build/parseScript.cc:310
 #, c-format
 msgid "line %d: Priorities are allowed only for file triggers : %s\n"
-msgstr ""
+msgstr "行 %d：仅文件触发器中允许使用优先级：%s\n"
 
 #: build/parseScript.cc:341
 #, c-format
@@ -900,12 +891,12 @@ msgstr "第 %d 列：解释器自变量不允许存在触发器中：%s\n"
 #: build/parseSpec.cc:251
 #, c-format
 msgid "extra tokens at the end of %s directive in line %d:  %s\n"
-msgstr ""
+msgstr "%s 命令在第 %d 行有多余的标志：%s\n"
 
 #: build/parseSpec.cc:287
 #, c-format
 msgid "Macro expanded in comment on line %d: %s\n"
-msgstr ""
+msgstr "展开行 %d 注释中的宏：%s\n"
 
 #: build/parseSpec.cc:411
 #, c-format
@@ -928,19 +919,19 @@ msgid "line %d: unclosed macro or bad line continuation\n"
 msgstr "第 %d 列：未关闭的宏或不当的列延续\n"
 
 #: build/parseSpec.cc:503
-#, fuzzy, c-format
+#, c-format
 msgid "%s: line %d: %s with no %%if\n"
-msgstr "%s:%d：有個 %%else 沒有對應 %%if\n"
+msgstr "%s: 行 %d：%s 没有 %%if\n"
 
 #: build/parseSpec.cc:506
-#, fuzzy, c-format
+#, c-format
 msgid "%s: line %d: %s after %s\n"
-msgstr "第 %d 列：%s：%s\n"
+msgstr "%s: 行 %d: %s 在 %s 之后\n"
 
 #: build/parseSpec.cc:533
-#, fuzzy, c-format
+#, c-format
 msgid "%s:%d: bad %s condition: %s\n"
-msgstr "%s:%d：不當的 %%if 條件\n"
+msgstr "%s:%d: 不正确的 %s 条件：%s\n"
 
 #: build/parseSpec.cc:561
 #, c-format
@@ -950,61 +941,58 @@ msgstr "%s:%d：异常的 %%include 叙述\n"
 #: build/parseSpec.cc:623
 #, c-format
 msgid "%%patchN is obsolete, use %%patch N (or %%patch -P N): %s\n"
-msgstr ""
+msgstr "%%patchN 已过时，请使用 %%patch N（或 %%patch -P N）：%s\n"
 
 #: build/parseSpec.cc:823
 #, c-format
 msgid "encoding %s not supported by system\n"
-msgstr ""
+msgstr "系统不支持编码 %s\n"
 
 #: build/parseSpec.cc:852
 #, c-format
 msgid "Package %s: invalid %s encoding in %s: %s - %s\n"
-msgstr ""
+msgstr "软件包 %s：无效的 %s 编码于 %s：%s - %s\n"
 
 #: build/parseSpec.cc:889
 #, c-format
 msgid "line %d: %%end doesn't take any arguments: %s\n"
-msgstr ""
+msgstr "行 %d: %%end 没有任何参数：%s\n"
 
 #: build/parseSpec.cc:897
 #, c-format
 msgid "line %d: %%end not expected here, no section to close: %s\n"
-msgstr ""
+msgstr "行 %d: %%end 不应该在这，没有需要关闭的段：%s\n"
 
 #: build/parseSpec.cc:913
 #, c-format
 msgid "line %d doesn't belong to any section: %s\n"
-msgstr ""
+msgstr "第%d行不属于任何段：%s\n"
 
 #: build/parseSpec.cc:979
-#, fuzzy, c-format
-#| msgid "line %d: Unknown tag: %s\n"
+#, c-format
 msgid "line %d: Unknown buildsystem: %s\n"
-msgstr "第 %d 列：不明标签：%s\n"
+msgstr "第 %d 行：未知的构建系统：%s\n"
 
 #: build/parseSpec.cc:983
 #, c-format
 msgid ""
 "line %d: Required parametric macro %%%s not defined for buildsystem %s\n"
-msgstr ""
+msgstr "第 %d 行：构建系统 %s 未定义所需的参数化宏 %%%s\n"
 
 #: build/parseSpec.cc:1014
-#, fuzzy, c-format
-#| msgid "failed to write all data to %s: %s\n"
+#, c-format
 msgid "failed to write buildsystem %s %%%s: %s\n"
-msgstr "无法写入所有数据至 %s：%s\n"
+msgstr "写入构建系统 %s %%%s 失败：%s\n"
 
 #: build/parseSpec.cc:1036
-#, fuzzy, c-format
-#| msgid "Couldn't create temporary file for %s: %s\n"
+#, c-format
 msgid "failed to create temp file for buildsystem: %s\n"
-msgstr "无法建立暂存档用于 %s：%s\n"
+msgstr "为构建系统创建临时文件失败：%s\n"
 
 #: build/parseSpec.cc:1096
 #, c-format
 msgid "Section %s is not allowed after build is done!\n"
-msgstr ""
+msgstr "构建完成后不允许使用 %s 节！\n"
 
 #: build/parseSpec.cc:1249
 msgid "No compatible architectures found for build\n"
@@ -1013,7 +1001,7 @@ msgstr "找不到可供建置的兼容架构\n"
 #: build/parseSpec.cc:1369
 #, c-format
 msgid "invalid rpm format %d requested, using %d\n"
-msgstr ""
+msgstr "请求的 RPM 格式 %d 无效，使用 %d\n"
 
 #: build/parseSpec.cc:1404
 #, c-format
@@ -1094,7 +1082,7 @@ msgstr "忽略无效的正规表示式 %s\n"
 #: build/rpmfc.cc:198
 #, c-format
 msgid "%s: mime and magic supplied, only mime will be used\n"
-msgstr ""
+msgstr "%s：同时提供 mime 和 magic，但只有 mine 会被使用\n"
 
 #: build/rpmfc.cc:269
 #, c-format
@@ -1112,10 +1100,9 @@ msgid "Couldn't exec %s: %s\n"
 msgstr "无法执行 %s：%s\n"
 
 #: build/rpmfc.cc:412
-#, fuzzy, c-format
-#| msgid "failed to write all data to %s: %s\n"
+#, c-format
 msgid "Failed to wait for exit status of %s: %s\n"
-msgstr "无法写入所有数据至 %s：%s\n"
+msgstr "等待 %s 的退出状态失败：%s\n"
 
 #: build/rpmfc.cc:421
 #, c-format
@@ -1130,7 +1117,7 @@ msgstr "无法写入所有数据至 %s：%s\n"
 #: build/rpmfc.cc:639
 #, c-format
 msgid "invalid or out of order path from generator: %s\n"
-msgstr ""
+msgstr "生成器返回的路径无效或顺序错误：%s\n"
 
 #: build/rpmfc.cc:1231
 msgid "Empty file classifier\n"
@@ -1158,7 +1145,7 @@ msgstr "档案「%s」辨识失败：模式 %06o %s\n"
 #: build/rpmfc.cc:1344
 #, c-format
 msgid "Recognition of file mtype \"%s\" failed: mode %06o %s\n"
-msgstr ""
+msgstr "文件 mtype \"%s\" 辨识失败：模式 %06o %s\n"
 
 #: build/rpmfc.cc:1562
 #, c-format
@@ -1172,21 +1159,21 @@ msgstr "找不到 %s：\n"
 
 #: build/rpmfc.cc:1620
 msgid "Deprecated external dependency generator is used!\n"
-msgstr ""
+msgstr "强烈不推荐使用外部的依赖关系生成器！\n"
 
 #: build/rpmfc.cc:1624
 msgid "External dependency generator is incompatible with v6 packages\n"
-msgstr ""
+msgstr "外部依赖生成器与 v6 软件包不兼容\n"
 
 #: build/spec.cc:77
 #, c-format
 msgid "line %d: %s: package %s does not exist\n"
-msgstr ""
+msgstr "第%d行: %s: 包 %s 不存在\n"
 
 #: build/spec.cc:80
 #, c-format
 msgid "line %d: %s: package %s already exists\n"
-msgstr ""
+msgstr "第%d行: %s: 包 %s 已存在\n"
 
 #: build/spec.cc:457
 #, c-format
@@ -1196,49 +1183,49 @@ msgstr "%s 规格文件查询失败，无法剖析\n"
 #: lib/backend/dbi.cc:96
 #, c-format
 msgid "invalid %%_db_backend: %s\n"
-msgstr ""
+msgstr "%% _db_backend 无效：%s\n"
 
 #: lib/backend/dbi.cc:114
 #, c-format
 msgid "Converting database from %s to %s backend\n"
-msgstr ""
+msgstr "将资料库从 %s 转换至 %s 后端\n"
 
 #: lib/backend/dbi.cc:118
 #, c-format
 msgid "Found %s %s database while attempting %s backend: using %s backend.\n"
-msgstr ""
+msgstr "尝试 %3$s 后端时发现 %1$s %2$s 数据库：使用 %4$s 后端。\n"
 
 #: lib/backend/ndb/glue.cc:102
 msgid "Detected outdated index databases\n"
-msgstr ""
+msgstr "发现过时的索引数据库\n"
 
 #: lib/backend/ndb/glue.cc:104
 msgid "Rebuilding outdated index databases\n"
-msgstr ""
+msgstr "正在重建过时的索引数据库\n"
 
 #: lib/backend/ndb/rpmidx.c:205
 #, c-format
 msgid "rpmidx: Version mismatch. Expected version: %u. Found version: %u\n"
-msgstr ""
+msgstr "rpmidx：版本不符。预期版本：%u。找到版本：%u\n"
 
 #: lib/backend/ndb/rpmpkg.c:121
 #, c-format
 msgid "rpmpkg: Version mismatch. Expected version: %u. Found version: %u\n"
-msgstr ""
+msgstr "rpmpkg：版本不符。预期版本：%u。找到版本：%u\n"
 
 #: lib/backend/ndb/rpmpkg.c:495
 msgid "rpmpkg: detected non-zero blob, trying auto repair\n"
-msgstr ""
+msgstr "rpmpkg：检测到非 0 的 blob，尝试自动修复\n"
 
 #: lib/backend/ndb/rpmxdb.c:242
 #, c-format
 msgid "rpmxdb: Version mismatch. Expected version: %u. Found version: %u\n"
-msgstr ""
+msgstr "rpmxdb：版本不符。预期版本：%u。找到版本：%u\n"
 
 #: lib/backend/sqlite.cc:152
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to open sqlite database %s: %s\n"
-msgstr "無法開啟 %s 規格檔：%s\n"
+msgstr "无法打开 sqlite 数据库 %s: %s\n"
 
 #: lib/depends.cc:59
 #, c-format
@@ -1324,23 +1311,22 @@ msgstr "(不明)"
 #: lib/fsm.cc:420
 #, c-format
 msgid "failed to open dir %s of %s: %s\n"
-msgstr ""
+msgstr "打开目录 %s （来自%s）失败：%s\n"
 
 #: lib/fsm.cc:730
 #, c-format
 msgid "%s%s saved as %s%s\n"
-msgstr ""
+msgstr "%s%s 另存为 %s%s\n"
 
 #: lib/fsm.cc:788
 #, c-format
 msgid "%s%s created as %s%s\n"
-msgstr ""
+msgstr "%s%s 创建为 %s%s\n"
 
 #: lib/fsm.cc:1182
-#, fuzzy, c-format
-#| msgid "%s %s: remove failed: %s\n"
+#, c-format
 msgid "%s %s%s: remove failed: %s\n"
-msgstr "%s %s：移除失败：%s\n"
+msgstr "%s %s%s：移除失败：%s\n"
 
 #: lib/fsm.cc:1183
 msgid "directory"
@@ -1353,82 +1339,82 @@ msgstr "档案"
 #: lib/header.cc:352
 #, c-format
 msgid "tag[%d]: BAD, tag %d type %d offset %d count %d len %d"
-msgstr ""
+msgstr "标签[%d]: 错误, 标签%d 类型%d 偏移%d 数量%d 长度%d"
 
 #: lib/header.cc:1042
 msgid "hdr load: BAD"
-msgstr ""
+msgstr "头部载入：不当"
 
 #: lib/header.cc:1857
 msgid "region: no tags"
-msgstr ""
+msgstr "区域：没有标签"
 
 #: lib/header.cc:1879
 #, c-format
 msgid "region tag: BAD, tag %d type %d offset %d count %d"
-msgstr ""
+msgstr "区域标签：不当，标记 %d 类型 %d 偏移 %d 计数 %d"
 
 #: lib/header.cc:1887
 #, c-format
 msgid "region offset: BAD, tag %d type %d offset %d count %d"
-msgstr ""
+msgstr "区域偏移：不当，标记 %d 类型 %d 偏移 %d 计数 %d"
 
 #: lib/header.cc:1909
 #, c-format
 msgid "region trailer: BAD, tag %d type %d offset %d count %d"
-msgstr ""
+msgstr "区域结尾：不当，标记 %d 类型 %d 偏移 %d 计数 %d"
 
 #: lib/header.cc:1918
 #, c-format
 msgid "region %d size: BAD, ril %d il %d rdl %d dl %d"
-msgstr ""
+msgstr "区域%d 大小: 不当, ril %d il %d rdl %d dl %d"
 
 #: lib/header.cc:1926
 #, c-format
 msgid "region %d: tag number mismatch il %d ril %d dl %d rdl %d\n"
-msgstr ""
+msgstr "区域 %d：标签号码不符 il %d ril %d dl %d rdl %d\n"
 
 #: lib/header.cc:1962
 #, c-format
 msgid "hdr tags: BAD, no. of tags(%<PRIu32>) out of range"
-msgstr ""
+msgstr "头部标签：不当，标签(%<PRIu32>)的编号超出范围"
 
 #: lib/header.cc:1966
 #, c-format
 msgid "hdr data: BAD, no. of bytes(%<PRIu32>) out of range"
-msgstr ""
+msgstr "头部数据：不当，字节(%<PRIu32>)的编号超出范围"
 
 #: lib/header.cc:1988
 #, c-format
 msgid "hdr size(%d): BAD, read returned %d"
-msgstr ""
+msgstr "头部大小(%d)：不当，读取返回 %d"
 
 #: lib/header.cc:1992
 msgid "hdr magic: BAD"
-msgstr ""
+msgstr "头部幻数：不当"
 
 #: lib/header.cc:2006
 #, c-format
 msgid "hdr blob(%zd): BAD, read returned %d"
-msgstr ""
+msgstr "头部 blob(%zd)：不当，读取返回 %d"
 
 #: lib/header.cc:2015
 #, c-format
 msgid "sigh pad(%zd): BAD, read %zd bytes"
-msgstr ""
+msgstr "sigh 填充(%zd)：不当，读取 %zd 字节"
 
 #: lib/header.cc:2028
 msgid "signature "
-msgstr ""
+msgstr "签名 "
 
 #: lib/header.cc:2044
 msgid "hdr length: BAD"
-msgstr ""
+msgstr "头部长度：不当"
 
 #: lib/header.cc:2062
 #, c-format
 msgid "blob size(%d): BAD, 8 + 16 * il(%d) + dl(%d)"
-msgstr ""
+msgstr "blob 大小(%d)：不当，8 + 16 * il(%d) + dl(%d)"
 
 #: lib/headerfmt.cc:447
 msgid "invalid field width"
@@ -1437,12 +1423,12 @@ msgstr "无效的字段宽度"
 #: lib/headerfmt.cc:453
 #, c-format
 msgid "missing { after %%"
-msgstr ""
+msgstr "在 %% 之后缺少 {"
 
 #: lib/headerfmt.cc:475
 #, c-format
 msgid "missing } after %%{"
-msgstr ""
+msgstr "在 %%{ 之后缺少 }"
 
 #: lib/headerfmt.cc:486
 msgid "empty tag format"
@@ -1455,7 +1441,7 @@ msgstr "空白标签名称"
 #: lib/headerfmt.cc:504
 #, c-format
 msgid "unknown tag: \"%s\""
-msgstr ""
+msgstr "未知标签：“%s”"
 
 #: lib/headerfmt.cc:524
 msgid "] expected at end of array"
@@ -1471,7 +1457,7 @@ msgstr "未预期的 }"
 
 #: lib/headerfmt.cc:564
 msgid "escaped char expected after \\"
-msgstr ""
+msgstr "\\ 之后应为转义字符"
 
 #: lib/headerfmt.cc:606
 msgid "? expected in expression"
@@ -1507,37 +1493,34 @@ msgid "%s: reading of public key failed.\n"
 msgstr "%s：读取公钥时失败。\n"
 
 #: lib/keystore.cc:90 lib/keystore.cc:195
-#, fuzzy, c-format
-#| msgid "failed to create directory %s: %s\n"
+#, c-format
 msgid "failed to create keyring directory %s: %s\n"
-msgstr "建立目录 %s 时失败：%s\n"
+msgstr "创建密钥环目录 %s 失败：%s\n"
 
 #: lib/keystore.cc:105
 #, c-format
 msgid "failed to import key: %s: %s\n"
-msgstr ""
+msgstr "导入秘钥%s失败：%s\n"
 
 #: lib/keystore.cc:201
-#, fuzzy, c-format
-#| msgid "can't create %s lock on %s (%s)\n"
+#, c-format
 msgid "Can't create writelock for keyring at %s: %s\n"
-msgstr "无法建立 %s 锁定于 %s (%s)\n"
+msgstr "无法在 %s 创建密钥环写锁：%s\n"
 
 #: lib/keystore.cc:203
 #, c-format
 msgid "Can't acquire writelock for keyring at %s\n"
-msgstr ""
+msgstr "无法在 %s 获取密钥环的写锁\n"
 
 #: lib/keystore.cc:298
-#, fuzzy, c-format
-#| msgid "%s: not an armored public key.\n"
+#, c-format
 msgid "%s is not a valid public key\n"
-msgstr "%s：不是一个受保护的公钥。\n"
+msgstr "%s 不是有效的公钥\n"
 
 #: lib/package.cc:265
-#, fuzzy, c-format
+#, c-format
 msgid "RPM v3 packages are deprecated: %s\n"
-msgstr "第 %d 列：%s 已過時：%s\n"
+msgstr "RPM v3 软件包已被弃用：%s\n"
 
 #: lib/poptALL.cc:59 tools/cliutils.cc:24
 #, c-format
@@ -1546,23 +1529,23 @@ msgstr "RPM 版本 %s\n"
 
 #: lib/poptALL.cc:139
 msgid "Error writing to stdout"
-msgstr ""
+msgstr "写入 stdout 出错"
 
 #: lib/poptALL.cc:150 rpmio/macro.cc:1300
-#, fuzzy, c-format
+#, c-format
 msgid "failed to load macro file %s\n"
-msgstr "讀取策略檔案時失敗：%s\n"
+msgstr "加载宏文件 %s 失败\n"
 
 #: lib/poptALL.cc:157
-#, fuzzy, c-format
+#, c-format
 msgid "arguments to --dbpath must begin with '/'\n"
-msgstr "--prefix 的引數必須以「/」開頭"
+msgstr "传入 --dbpath 的参数开头必须是 '/'\n"
 
 #: lib/poptALL.cc:180
 #, c-format
 msgid ""
 "%s: error: more than one --pipe specified (incompatible popt aliases?)\n"
-msgstr ""
+msgstr "%s：错误：指定了多次 --pipe (可能是不兼容的 popt 别名？)\n"
 
 #: lib/poptALL.cc:213
 msgid "predefine MACRO with value EXPR"
@@ -1578,11 +1561,11 @@ msgstr "定义 MACRO 值为 EXPR"
 
 #: lib/poptALL.cc:219
 msgid "undefine MACRO"
-msgstr ""
+msgstr "未定义的 MACRO"
 
 #: lib/poptALL.cc:220
 msgid "MACRO"
-msgstr ""
+msgstr "MACRO"
 
 #: lib/poptALL.cc:222
 msgid "print macro expansion of EXPR"
@@ -1594,11 +1577,11 @@ msgstr "「EXPR」"
 
 #: lib/poptALL.cc:225
 msgid "Specify target platform"
-msgstr ""
+msgstr "指定目标平台"
 
 #: lib/poptALL.cc:225
 msgid "CPU-VENDOR-OS"
-msgstr ""
+msgstr "CPU-VENDOR-OS"
 
 #: lib/poptALL.cc:227 lib/poptALL.cc:249
 msgid "read <FILE:...> instead of default file(s)"
@@ -1610,16 +1593,15 @@ msgstr "<FILE:…>"
 
 #: lib/poptALL.cc:230
 msgid "load a single macro file"
-msgstr ""
+msgstr "载入单一宏文件"
 
 #: lib/poptALL.cc:231
-#, fuzzy
 msgid "<FILE>"
-msgstr "<FILE:…>"
+msgstr "<FILE>"
 
 #: lib/poptALL.cc:236
 msgid "don't enable any plugins"
-msgstr ""
+msgstr "不要启用任何插件"
 
 #: lib/poptALL.cc:239
 msgid "don't verify package digest(s)"
@@ -1735,9 +1717,8 @@ msgid "<package>+"
 msgstr "<package>+"
 
 #: lib/poptI.cc:140
-#, fuzzy
 msgid "do not install artifacts"
-msgstr "不安裝文件"
+msgstr "不安装附加物"
 
 #: lib/poptI.cc:143 lib/poptI.cc:185
 msgid "do not install configuration files"
@@ -1785,9 +1766,8 @@ msgid "don't check disk space before installing"
 msgstr "安装前不检查磁盘空间"
 
 #: lib/poptI.cc:171
-#, fuzzy
 msgid "short hand for --ignorepayload --ignoresignature"
-msgstr "--replacepkgs 與 --replacefiles 的速寫"
+msgstr "--ignorepayload --ignoresignature 的缩写"
 
 #: lib/poptI.cc:173
 msgid "install documentation"
@@ -1803,7 +1783,7 @@ msgstr "更新数据库，但不修改文件系统"
 
 #: lib/poptI.cc:181
 msgid "do not update the database, but modify the filesystem"
-msgstr ""
+msgstr "不更新数据库，但修改文件系统"
 
 #: lib/poptI.cc:187
 msgid "do not verify package dependencies"
@@ -1823,7 +1803,7 @@ msgstr "不安装档案安全情境数据"
 
 #: lib/poptI.cc:199
 msgid "don't install file capabilities"
-msgstr ""
+msgstr "不安装文件功能"
 
 #: lib/poptI.cc:203
 msgid "do not reorder package installation to satisfy dependencies"
@@ -1856,24 +1836,22 @@ msgstr "不执行 %%postun 指令稿片段 (如果有)"
 #: lib/poptI.cc:223
 #, c-format
 msgid "do not execute %%pretrans scriptlet (if any)"
-msgstr ""
+msgstr "不执行 %%pretrans 事务前的小脚本 (若存在)"
 
 #: lib/poptI.cc:226
 #, c-format
 msgid "do not execute %%posttrans scriptlet (if any)"
-msgstr ""
+msgstr "不执行 %%posttrans 短脚本 (若存在)"
 
 #: lib/poptI.cc:229
-#, fuzzy, c-format
-#| msgid "do not execute %%preun scriptlet (if any)"
+#, c-format
 msgid "do not execute %%preuntrans scriptlet (if any)"
-msgstr "不执行 %%preun 指令稿片段 (如果有)"
+msgstr "不执行 %%preuntrans 脚本（如果有）"
 
 #: lib/poptI.cc:232
-#, fuzzy, c-format
-#| msgid "do not execute %%postun scriptlet (if any)"
+#, c-format
 msgid "do not execute %%postuntrans scriptlet (if any)"
-msgstr "不执行 %%postun 指令稿片段 (如果有)"
+msgstr "不执行 %%postuntrans 脚本（如果有）"
 
 #: lib/poptI.cc:235
 msgid "do not execute any scriptlet(s) triggered by this package"
@@ -1902,7 +1880,7 @@ msgstr "不执行任何 %%triggerpostun 指令稿片段"
 #: lib/poptI.cc:251
 #, c-format
 msgid "do not create %%sysusers users and groups"
-msgstr ""
+msgstr "不创建 %%sysusers 用户和组"
 
 #: lib/poptI.cc:255
 msgid ""
@@ -1948,11 +1926,11 @@ msgstr "升级套件"
 
 #: lib/poptI.cc:280
 msgid "reinstall package(s)"
-msgstr ""
+msgstr "重新安装软件包"
 
 #: lib/poptI.cc:284
 msgid "restore package(s)"
-msgstr ""
+msgstr "恢复软件包"
 
 #: lib/poptQV.cc:79
 msgid "query/verify all packages"
@@ -1964,11 +1942,11 @@ msgstr "rpm 检查签名模式"
 
 #: lib/poptQV.cc:83
 msgid "query/verify package(s) owning installed file"
-msgstr ""
+msgstr "查询/验证拥有已安装文件的软件包"
 
 #: lib/poptQV.cc:85
 msgid "query/verify package(s) owning path, installed or not"
-msgstr ""
+msgstr "查询/验证拥有路径的软件包是否已安装"
 
 #: lib/poptQV.cc:87
 msgid "query/verify package(s) in group"
@@ -1999,18 +1977,16 @@ msgid "rpm verify mode"
 msgstr "rpm 验证模式"
 
 #: lib/poptQV.cc:102
-#, fuzzy
 msgid "query/verify the package(s) which conflict with a dependency"
-msgstr "查詢/驗證需要某些相依套件的套件"
+msgstr "查询/验证与依赖冲突的软件包"
 
 #: lib/poptQV.cc:104
 msgid "query/verify the package(s) which require a dependency"
 msgstr "查询/验证需要某些相依套件的套件"
 
 #: lib/poptQV.cc:106
-#, fuzzy
 msgid "query/verify the package(s) which obsolete a dependency"
-msgstr "查詢/驗證需要某些相依套件的套件"
+msgstr "查询/验证废弃依赖的软件包"
 
 #: lib/poptQV.cc:108
 msgid "query/verify the package(s) which provide a dependency"
@@ -2018,19 +1994,19 @@ msgstr "查询/验证提供某些相依套件的套件"
 
 #: lib/poptQV.cc:110
 msgid "query/verify the package(s) which recommends a dependency"
-msgstr ""
+msgstr "查询/验证推荐依赖的软件包"
 
 #: lib/poptQV.cc:112
 msgid "query/verify the package(s) which suggests a dependency"
-msgstr ""
+msgstr "查询/验证建议依赖的软件包"
 
 #: lib/poptQV.cc:114
 msgid "query/verify the package(s) which supplements a dependency"
-msgstr ""
+msgstr "查询/验证补充依赖的软件包"
 
 #: lib/poptQV.cc:116
 msgid "query/verify the package(s) which enhances a dependency"
-msgstr ""
+msgstr "查询/验证增强依赖的软件包"
 
 #: lib/poptQV.cc:119
 msgid "do not glob arguments"
@@ -2041,37 +2017,35 @@ msgid "do not process non-package files as manifests"
 msgstr "不以清单形式处理非套件档案"
 
 #: lib/poptQV.cc:190
-#, fuzzy
 msgid "only include configuration files"
-msgstr "不安裝組態檔案"
+msgstr "只包含设定文件"
 
 #: lib/poptQV.cc:193
-#, fuzzy
 msgid "only include documentation files"
-msgstr "列出所有文件檔案"
+msgstr "只包含文档文件"
 
 #: lib/poptQV.cc:196
 msgid "only include license files"
-msgstr ""
+msgstr "只包括许可证文件"
 
 #: lib/poptQV.cc:199
 msgid "only include artifact files"
-msgstr ""
+msgstr "只包括 artifact 文件"
 
 #: lib/poptQV.cc:202
-#, fuzzy, c-format
+#, c-format
 msgid "exclude %%ghost files"
-msgstr "略過 %%ghost 檔案"
+msgstr "排除 %%ghost 文件"
 
 #: lib/poptQV.cc:205
 #, c-format
 msgid "exclude %%config files"
-msgstr ""
+msgstr "排除 %%config 文件"
 
 #: lib/poptQV.cc:208
 #, c-format
 msgid "exclude %%artifact files"
-msgstr ""
+msgstr "排除 %%artifact 文件"
 
 #: lib/poptQV.cc:220
 msgid "dump basic file information"
@@ -2222,14 +2196,14 @@ msgid "no package matches %s: %s\n"
 msgstr "没有套件符合 %s：%s\n"
 
 #: lib/query.cc:351
-#, fuzzy, c-format
+#, c-format
 msgid "no package conflicts %s\n"
-msgstr "沒有套件提供 %s\n"
+msgstr "没有与 %s 冲突的包\n"
 
 #: lib/query.cc:358
-#, fuzzy, c-format
+#, c-format
 msgid "no package obsoletes %s\n"
-msgstr "沒有套件需要 %s\n"
+msgstr "没有弃用 %s 的包\n"
 
 #: lib/query.cc:365
 #, c-format
@@ -2239,22 +2213,22 @@ msgstr "没有套件需要 %s\n"
 #: lib/query.cc:372
 #, c-format
 msgid "no package recommends %s\n"
-msgstr ""
+msgstr "没有推荐安装 %s 的软件包\n"
 
 #: lib/query.cc:379
 #, c-format
 msgid "no package suggests %s\n"
-msgstr ""
+msgstr "没有建议安装 %s 的软件包\n"
 
 #: lib/query.cc:386
 #, c-format
 msgid "no package supplements %s\n"
-msgstr ""
+msgstr "没有提供 %s 的软件包\n"
 
 #: lib/query.cc:393
 #, c-format
 msgid "no package enhances %s\n"
-msgstr ""
+msgstr "没有用于增强 %s 的软件包\n"
 
 #: lib/query.cc:401
 #, c-format
@@ -2309,23 +2283,23 @@ msgstr "%s：汇入时读取失败(%d)。\n"
 #: lib/rpmchecksig.cc:116
 #, c-format
 msgid "Fread failed: %s"
-msgstr ""
+msgstr "Fread 失败：%s"
 
 #: lib/rpmchecksig.cc:239
 msgid "DIGESTS"
-msgstr ""
+msgstr "DIGESTS"
 
 #: lib/rpmchecksig.cc:239
 msgid "digests"
-msgstr ""
+msgstr "摘要"
 
 #: lib/rpmchecksig.cc:243
 msgid "SIGNATURES"
-msgstr ""
+msgstr "SIGNATURES"
 
 #: lib/rpmchecksig.cc:243
 msgid "signatures"
-msgstr ""
+msgstr "签名"
 
 #: lib/rpmchecksig.cc:245
 msgid "NOT OK"
@@ -2368,7 +2342,7 @@ msgstr "正在产生 %d 个缺少的索引，请稍待…\n"
 #: lib/rpmdb.cc:138 lib/rpmdb.cc:184
 #, c-format
 msgid "cannot open %s index using %s - %s (%d)\n"
-msgstr ""
+msgstr "无法使用 %2$s 打开 %1$s 索引 - %3$s (%4$d)\n"
 
 #: lib/rpmdb.cc:397
 msgid "no dbpath has been set\n"
@@ -2379,9 +2353,9 @@ msgid "miFreeHeader: skipping"
 msgstr "miFreeHeader：跳过"
 
 #: lib/rpmdb.cc:912
-#, fuzzy, c-format
+#, c-format
 msgid "error(%d) storing record #%d into %s\n"
-msgstr "储存记录 #%2$d 到 %3$s 时发生错误(%1$d)\n"
+msgstr "将记录 #%2$d 存储到 %3$s 时出错 (%1$d)\n"
 
 #: lib/rpmdb.cc:1012
 #, c-format
@@ -2409,27 +2383,27 @@ msgstr "%s：无法读取位于 0x%x 的标头\n"
 
 #: lib/rpmdb.cc:2286
 msgid "could not move new database in place\n"
-msgstr ""
+msgstr "无法将新数据库移动到位\n"
 
 #: lib/rpmdb.cc:2289
 #, c-format
 msgid "could also not restore old database from %s\n"
-msgstr ""
+msgstr "也无法从 %s 恢复旧数据库\n"
 
 #: lib/rpmdb.cc:2291 lib/rpmdb.cc:2466
 #, c-format
 msgid "replace files in %s with files from %s to recover\n"
-msgstr ""
+msgstr "用 %2$s 中的文件替换 %1$s 中的文件以恢复\n"
 
 #: lib/rpmdb.cc:2300
 #, c-format
 msgid "Could not get public keys from %s\n"
-msgstr ""
+msgstr "无法从 %s 取得公钥\n"
 
 #: lib/rpmdb.cc:2307
 #, c-format
 msgid "could not delete old database at %s\n"
-msgstr ""
+msgstr "无法移除在%s的旧数据库\n"
 
 #: lib/rpmdb.cc:2378
 msgid "no dbpath has been set"
@@ -2531,106 +2505,104 @@ msgid "dependency comparison supports versions with tilde."
 msgstr "相关性的比较支持附有波折号的版本。"
 
 #: lib/rpmds.cc:1096
-#, fuzzy
 msgid "dependency comparison supports versions with caret."
-msgstr "依存性的比較支援附有波折號的版本。"
+msgstr "依赖关系对比支持带'^'的版本。"
 
 #: lib/rpmds.cc:1099
 msgid "support files larger than 4GB"
-msgstr ""
+msgstr "支持超过 4G 的文件"
 
 #: lib/rpmds.cc:1102
 msgid "support for rich dependencies."
-msgstr ""
+msgstr "富依赖关系支持。"
 
 #: lib/rpmds.cc:1105
 msgid "support for dynamic buildrequires."
-msgstr ""
+msgstr "支持动态的构建需求。"
 
 #: lib/rpmds.cc:1109
 msgid "package payload can be compressed using zstd."
-msgstr ""
+msgstr "软件包负载可以使用 zstd 压缩。"
 
 #: lib/rpmds.cc:1289
 #, c-format
 msgid "Unknown rich dependency op '%.*s'"
-msgstr ""
+msgstr "未知的富依赖关系操作符“%.*s”"
 
 #: lib/rpmds.cc:1330
 msgid "Name required"
-msgstr ""
+msgstr "名称是必填项"
 
 #: lib/rpmds.cc:1367
 msgid "Illegal ops in with/without"
-msgstr ""
+msgstr "with/without 中的操作非法"
 
 #: lib/rpmds.cc:1374
 msgid "Illegal context for 'unless', please use 'or' instead"
-msgstr ""
+msgstr "'unless' 的上下文非法，请改用 'or'"
 
 #: lib/rpmds.cc:1379
 msgid "Illegal context for 'if', please use 'and' instead"
-msgstr ""
+msgstr "'if' 的上下文非法，请改用 'and'"
 
 #: lib/rpmds.cc:1395
 msgid "Rich dependency does not start with '('"
-msgstr ""
+msgstr "富依赖关系未以“(”开头"
 
 #: lib/rpmds.cc:1403
 msgid "Missing argument to rich dependency op"
-msgstr ""
+msgstr "富依赖关系操作符缺少参数"
 
 #: lib/rpmds.cc:1405
 msgid "Empty rich dependency"
-msgstr ""
+msgstr "富依赖关系为空"
 
 #: lib/rpmds.cc:1423
 #, c-format
 msgid "Unterminated rich dependency: %s"
-msgstr ""
+msgstr "富依赖关系缺少结尾：%s"
 
 #: lib/rpmds.cc:1438
 msgid "Cannot chain different ops"
-msgstr ""
+msgstr "无法连接不同操作"
 
 #: lib/rpmds.cc:1443
 msgid "Can only chain and/or/with ops"
-msgstr ""
+msgstr "只能连接 and/or/with 操作"
 
 #: lib/rpmds.cc:1574
 msgid "Junk after rich dependency"
-msgstr ""
+msgstr "富依赖关系后有多余内容"
 
 #: lib/rpmfi.cc:820
 #, c-format
 msgid "user %s does not exist - using %s\n"
-msgstr ""
+msgstr "用户 %s 不存在，请改用 %s\n"
 
 #: lib/rpmfi.cc:827
 #, c-format
 msgid "group %s does not exist - using %s\n"
-msgstr ""
+msgstr "组 %s 不存在，请改用 %s\n"
 
 #: lib/rpmfi.cc:1347
 #, c-format
 msgid "Wrong number of entries for tag %s: %u found but %u expected.\n"
-msgstr ""
+msgstr "标签 %s 的条目数错误：找到 %u个，但应为 %u 个。\n"
 
 #: lib/rpmfi.cc:1352
 #, c-format
 msgid "Malformed data for tag %s: %u bytes found but %<PRIu64> expected.\n"
-msgstr ""
+msgstr "标签 %s 的数据格式错误：发现 %u 字节，但应为 %<PRIu64> 字节。\n"
 
 #: lib/rpmfi.cc:1537
-#, fuzzy, c-format
-#| msgid "%s %s: remove failed: %s\n"
+#, c-format
 msgid "%s: base64 decode failed, len %zu\n"
-msgstr "%s %s：移除失败：%s\n"
+msgstr "%s：base64 解码失败，长度 %zu\n"
 
 #: lib/rpmfi.cc:1545
 #, c-format
 msgid "%s: base64 decode success, len %zu\n"
-msgstr ""
+msgstr "%s：base64 解码成功，长度 %zu\n"
 
 #: lib/rpmfi.cc:2405
 msgid "Bad magic"
@@ -2654,7 +2626,7 @@ msgstr "不明文件类型"
 
 #: lib/rpmfi.cc:2432
 msgid "Missing file(s)"
-msgstr ""
+msgstr "丢失文件"
 
 #: lib/rpmfi.cc:2433
 msgid "Digest mismatch"
@@ -2670,11 +2642,11 @@ msgstr "在标头中没有封存档"
 
 #: lib/rpmfi.cc:2436
 msgid "Unsafe symlink"
-msgstr ""
+msgstr "不安全的符号链接"
 
 #: lib/rpmfi.cc:2441
 msgid "File from package already exists as a directory in system"
-msgstr ""
+msgstr "软件包中的文件已经作为目录存在于系统中"
 
 #: lib/rpmfi.cc:2448
 msgid " failed - "
@@ -2683,7 +2655,7 @@ msgstr " 失败 - "
 #: lib/rpmfi.cc:2451
 #, c-format
 msgid "%s: (error 0x%x)"
-msgstr ""
+msgstr "%s：(错误 0x%x)"
 
 #: lib/rpmgi.cc:56 lib/rpminstall.cc:113 lib/rpminstall.cc:319
 #: lib/rpminstall.cc:351 tools/rpmgraph.cc:84 tools/rpmgraph.cc:123
@@ -2694,7 +2666,7 @@ msgstr "开启 %s 失败：%s\n"
 #: lib/rpmgi.cc:145
 #, c-format
 msgid "Max level of manifest recursion exceeded: %s\n"
-msgstr ""
+msgstr "超出清单递归的最大级别：%s\n"
 
 #: lib/rpmgi.cc:156
 #, c-format
@@ -2716,18 +2688,16 @@ msgid "Preparing..."
 msgstr "准备…"
 
 #: lib/rpminstall.cc:193
-#, fuzzy
 msgid "Verifying..."
-msgstr "準備…"
+msgstr "校验中……"
 
 #: lib/rpminstall.cc:196
 msgid "Preparing packages..."
 msgstr "准备套件…"
 
 #: lib/rpminstall.cc:196
-#, fuzzy
 msgid "Verifying packages..."
-msgstr "準備套件…"
+msgstr "正在校验软件包……"
 
 #: lib/rpminstall.cc:274 tools/rpmgraph.cc:164
 msgid "Failed dependencies:\n"
@@ -2769,10 +2739,9 @@ msgid "error reading from file %s\n"
 msgstr "读取档案 %s 时发生错误\n"
 
 #: lib/rpminstall.cc:640
-#, fuzzy, c-format
-#| msgid "no package matches %s: %s\n"
+#, c-format
 msgid "package format not supported: %s\n"
-msgstr "没有套件符合 %s：%s\n"
+msgstr "不支持的软件包格式：%s\n"
 
 #: lib/rpminstall.cc:744
 #, c-format
@@ -2780,10 +2749,9 @@ msgid "\"%s\" specifies multiple packages:\n"
 msgstr "「%s」指定多个套件：\n"
 
 #: lib/rpminstall.cc:785
-#, fuzzy, c-format
-#| msgid "failed to write all data to %s: %s\n"
+#, c-format
 msgid "failed to add restore element to transaction: %s\n"
-msgstr "无法写入所有数据至 %s：%s\n"
+msgstr "向事务添加恢复元素失败：%s\n"
 
 #: lib/rpminstall.cc:824
 #, c-format
@@ -2831,7 +2799,7 @@ msgstr "解析符号 %s 时失败：%s\n"
 #: lib/rpmplugins.cc:164
 #, c-format
 msgid "Plugin %%__%s_%s not configured\n"
-msgstr ""
+msgstr "插件 %%__%s_%s 未配置\n"
 
 #: lib/rpmplugins.cc:207
 #, c-format
@@ -2858,24 +2826,24 @@ msgid "package %s is already installed"
 msgstr "套件 %s 已经安装"
 
 #: lib/rpmprob.cc:114
-#, fuzzy, c-format
+#, c-format
 msgid "package %s is not installed"
-msgstr "套件 %s 尚未安裝\n"
+msgstr "软件包 %s 未安装"
 
 #: lib/rpmprob.cc:117
-#, fuzzy, c-format
+#, c-format
 msgid "path %s in package %s is not relocatable"
-msgstr "在套件 %2$s 中的路径 %1$s 无法重新分配位置"
+msgstr "%2$s 软件包中的路径 %1$s 无法重定位"
 
 #: lib/rpmprob.cc:122
-#, fuzzy, c-format
+#, c-format
 msgid "file %s conflicts between attempted installs of %s and %s"
-msgstr "在试图安装 %2$s 和 %3$s 之间产生档案 %1$s 冲突"
+msgstr "试图安装 %2$s 和 %3$s 会导致文件 %1$s 冲突"
 
 #: lib/rpmprob.cc:127
-#, fuzzy, c-format
+#, c-format
 msgid "file %s from install of %s conflicts with file from package %s"
-msgstr "从 %2$s 安装的档案 %1$s 与来自套件 %3$s 的档案产生冲突"
+msgstr "安装 %2$s 中的文件 %1$s 与软件包 %3$s 中的文件冲突"
 
 #: lib/rpmprob.cc:132
 #, c-format
@@ -2883,15 +2851,15 @@ msgid "package %s (which is newer than %s) is already installed"
 msgstr "套件 %s (比 %s 还新) 已经安装"
 
 #: lib/rpmprob.cc:137
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "installing package %s needs %<PRIu64>%cB more space on the %s filesystem"
-msgstr "安裝套件 %s 需要 %<PRIu64>%cB 於 %s 檔案系統之上"
+msgstr "安装%s软件包需要额外 %<PRIu64>%cB 位于%s档案系统的空间"
 
 #: lib/rpmprob.cc:147
-#, fuzzy, c-format
+#, c-format
 msgid "installing package %s needs %<PRIu64> more inodes on the %s filesystem"
-msgstr "安裝套件 %s 需要 %<PRIu64> inodes 於 %s 檔案系統之上"
+msgstr "安装%s软件包需要额外 %<PRIu64> 位于%s文件系统的索引节点"
 
 #: lib/rpmprob.cc:151
 #, c-format
@@ -2913,9 +2881,9 @@ msgid "%s is obsoleted by %s%s"
 msgstr "%s 已被 %s%s 淘汰"
 
 #: lib/rpmprob.cc:163
-#, fuzzy, c-format
+#, c-format
 msgid "package %s does not verify: %s"
-msgstr "套件 %s 尚未安裝\n"
+msgstr "%s软件包未核验：%s"
 
 #: lib/rpmprob.cc:168
 #, c-format
@@ -2973,10 +2941,9 @@ msgid "cannot open %s at %s:%d: %m\n"
 msgstr "无法开启 %s 于 %s:%d：%m\n"
 
 #: lib/rpmrc.cc:493
-#, fuzzy, c-format
-#| msgid "bad option '%s' at %s:%d\n"
+#, c-format
 msgid "Ignoring %s at %s:%d\n"
-msgstr "不当选项「%s」位于 %s:%d\n"
+msgstr "忽略 %s，位于 %s:%d\n"
 
 #: lib/rpmrc.cc:502
 #, c-format
@@ -3013,9 +2980,9 @@ msgid "Unable to restore current directory: %m"
 msgstr "无法还原当前目录：%m"
 
 #: lib/rpmscript.cc:285
-#, fuzzy, c-format
+#, c-format
 msgid "failed to exec scriptlet interpreter %s: %s\n"
-msgstr "建立目錄 %s 時失敗：%s\n"
+msgstr "执行脚本解释器 %s 失败： %s\n"
 
 #: lib/rpmscript.cc:339
 #, c-format
@@ -3030,7 +2997,7 @@ msgstr "无法复制档案描述符号：%s：%s\n"
 #: lib/rpmscript.cc:415
 #, c-format
 msgid "Fwrite failed: %s"
-msgstr ""
+msgstr "fwrite 失败：%s"
 
 #: lib/rpmscript.cc:433
 #, c-format
@@ -3054,13 +3021,13 @@ msgstr "不明格式"
 #: lib/rpmte.cc:152
 #, c-format
 msgid "erasing gpg-pubkey packages is deprecated; use rpmkeys --delete %s\n"
-msgstr ""
+msgstr "删除 gpg-pubkey 软件包已弃用；请使用 rpmkeys --delete %s\n"
 
 #: lib/rpmte.cc:159
 msgid ""
 "public keys can not be installed as gpg-pubkey packages; use rpmkeys --"
 "import <keyfile> for that\n"
-msgstr ""
+msgstr "公钥不能作为 gpg-pubkey 软件包安装；请使用 rpmkeys --import <密钥文件>\n"
 
 #: lib/rpmte.cc:770
 msgid "install"
@@ -3072,11 +3039,11 @@ msgstr "抹除"
 
 #: lib/rpmte.cc:772
 msgid "rpmdb"
-msgstr ""
+msgstr "rpmdb"
 
 #: lib/rpmte.cc:773
 msgid "restored"
-msgstr ""
+msgstr "已恢复"
 
 #: lib/rpmts.cc:99
 #, c-format
@@ -3101,18 +3068,17 @@ msgstr "套件标贴遗漏「)」：%s\n"
 #: lib/rpmts.cc:285
 #, c-format
 msgid "unknown keyring type: %s, using rpmdb\n"
-msgstr ""
+msgstr "未知密钥环类型：%s，使用 rpmdb\n"
 
 #: lib/rpmts.cc:422
-#, fuzzy, c-format
-#| msgid "Unknown icon type: %s\n"
+#, c-format
 msgid "unknown keyring type: %s\n"
-msgstr "不明的图示类型：%s\n"
+msgstr "未知的密钥环类型：%s\n"
 
 #: lib/rpmts.cc:931
-#, fuzzy, c-format
+#, c-format
 msgid "invalid package verify level %s\n"
-msgstr "無效的套件編號：%s\n"
+msgstr "无效的软件包核验级别%s\n"
 
 #: lib/rpmts.cc:1095
 msgid "transaction"
@@ -3121,97 +3087,93 @@ msgstr "异动作业"
 #: lib/rpmvs.cc:181
 #, c-format
 msgid "%s tag %u: invalid type %u"
-msgstr ""
+msgstr "%s 标签 %u: 无效的类型 %u"
 
 #: lib/rpmvs.cc:187
 #, c-format
 msgid "%s: tag %u: invalid count %u"
-msgstr ""
+msgstr "%s: 标签 %u: 无效数量 %u"
 
 #: lib/rpmvs.cc:207
 #, c-format
 msgid "%s tag %u: invalid data %p (%u)"
-msgstr ""
+msgstr "%s 标签 %u: 无效数据 %p (%u)"
 
 #: lib/rpmvs.cc:217
 #, c-format
 msgid "%s tag %u: invalid size %u"
-msgstr ""
+msgstr "%s 标签 %u: 无效大小 %u"
 
 #: lib/rpmvs.cc:225
 #, c-format
 msgid "%s tag %u: invalid base64"
-msgstr ""
+msgstr "%s 标签 %u：无效的 base64"
 
 #: lib/rpmvs.cc:244
 #, c-format
 msgid "%s tag %u: invalid OpenPGP signature"
-msgstr ""
+msgstr "%s 标签%u: 无效 OpenPGP 签名"
 
 #: lib/rpmvs.cc:261
 #, c-format
 msgid "%s: tag %u: invalid hex"
-msgstr ""
+msgstr "%s: 标签 %u: 无效的16进制码"
 
 #: lib/rpmvs.cc:320
-#, fuzzy, c-format
-#| msgid "%s saved as %s\n"
+#, c-format
 msgid "%s %s%s %s"
-msgstr "%s 已被另存為 %s\n"
+msgstr "%s %s%s %s"
 
 #: lib/rpmvs.cc:324
 msgid "digest"
-msgstr ""
+msgstr "摘要"
 
 #: lib/rpmvs.cc:329 lib/rpmvs.cc:339
 #, c-format
 msgid "%s OpenPGP %s"
-msgstr ""
+msgstr "%s OpenPGP %s"
 
 #: lib/rpmvs.cc:334
 #, c-format
 msgid "%s OpenPGP %s %s"
-msgstr ""
+msgstr "%s OpenPGP %s %s"
 
 #: lib/rpmvs.cc:337 lib/rpmvs.cc:341
 msgid "signature"
-msgstr ""
+msgstr "签名"
 
 #: lib/rpmvs.cc:360
 #, c-format
 msgid ", key fingerprint: %s"
-msgstr ""
+msgstr "，密钥指纹：%s"
 
 #: lib/rpmvs.cc:386
 msgid "header"
-msgstr ""
+msgstr "头文件"
 
 #: lib/rpmvs.cc:386
 msgid "package"
-msgstr ""
+msgstr "软件包"
 
 #: lib/rpmvs.cc:634
-#, fuzzy
-#| msgid "Header "
 msgid "Header"
-msgstr "标头 "
+msgstr "头"
 
 #: lib/rpmvs.cc:635
 msgid "Payload"
-msgstr ""
+msgstr "负载"
 
 #: lib/signature.cc:232
 msgid "Unable to reload signature header.\n"
 msgstr "无法重载签名标头。\n"
 
 #: lib/transaction.cc:1198
-#, fuzzy
 msgid "no signature"
-msgstr "(不是個 OpenPGP 簽名)"
+msgstr "没有签名"
 
 #: lib/transaction.cc:1198
 msgid "no digest"
-msgstr ""
+msgstr "没有摘要"
 
 #: lib/transaction.cc:1636
 msgid "skipped"
@@ -3223,11 +3185,11 @@ msgstr "已失败"
 
 #: lib/verify.cc:316
 msgid "no state"
-msgstr ""
+msgstr "没有状态"
 
 #: lib/verify.cc:318
 msgid "unknown state"
-msgstr ""
+msgstr "未知状态"
 
 #: lib/verify.cc:374
 #, c-format
@@ -3242,122 +3204,108 @@ msgstr "未满足 %s 的相关性：\n"
 #: plugins/prioreset.c:30
 #, c-format
 msgid "Unable to reset nice value: %s"
-msgstr ""
+msgstr "无法重设 nice 的值：%s"
 
 #: plugins/prioreset.c:41
 #, c-format
 msgid "Unable to reset I/O priority: %s"
-msgstr ""
+msgstr "无法重设I/O优先级：%s"
 
 #: rpmio/expression.cc:365
-#, fuzzy
 msgid "syntax error while parsing =="
-msgstr "剖析 == 時有語法錯誤\n"
+msgstr "解析 == 时出现语法错误"
 
 #: rpmio/expression.cc:395
-#, fuzzy
 msgid "syntax error while parsing &&"
-msgstr "剖析 && 時有語法錯誤\n"
+msgstr "解析 && 时出现语法错误"
 
 #: rpmio/expression.cc:404
-#, fuzzy
 msgid "syntax error while parsing ||"
-msgstr "剖析 || 時有語法錯誤\n"
+msgstr "解析 || 时出现语法错误"
 
 #: rpmio/expression.cc:435
 msgid "macro expansion returned a bare word, please use \"...\""
-msgstr ""
+msgstr "宏展开只返回了一个没有引号的词，请使用 \"...\""
 
 #: rpmio/expression.cc:437
 msgid "macro expansion did not return an integer"
-msgstr ""
+msgstr "宏展开没有返回整数"
 
 #: rpmio/expression.cc:438
 #, c-format
 msgid "expanded string: %s\n"
-msgstr ""
+msgstr "展开的字符串：%s\n"
 
 #: rpmio/expression.cc:467
-#, fuzzy
 msgid "unterminated string in expression"
-msgstr "{ 預期於表述式中的 ? 之後"
+msgstr "表达式中出现未结尾的字符串"
 
 #: rpmio/expression.cc:481
-#, fuzzy
 msgid "invalid version"
-msgstr "(無效型態)"
+msgstr "无效版本"
 
 #: rpmio/expression.cc:493
 msgid "bare words are no longer supported, please use \"...\""
-msgstr ""
+msgstr "不支持无引号的单词，请使用 \"...\""
 
 #: rpmio/expression.cc:497
-#, fuzzy
 msgid "parse error in expression"
-msgstr "表述式剖析錯誤\n"
+msgstr "表达式解析错误"
 
 #: rpmio/expression.cc:542
 msgid "unsupported function argument type"
-msgstr ""
+msgstr "不支持的函数参数类型"
 
 #: rpmio/expression.cc:571 rpmio/expression.cc:578 rpmio/expression.cc:666
 #: rpmio/expression.cc:953 rpmio/expression.cc:1007 rpmio/expression.cc:1044
-#, fuzzy
 msgid "syntax error in expression"
-msgstr "表述式中有語法錯誤\n"
+msgstr "表达式有语法错误"
 
 #: rpmio/expression.cc:589
-#, fuzzy
 msgid "unsupported function"
-msgstr "字串不支援 -\n"
+msgstr "不支持的函数"
 
 #: rpmio/expression.cc:620
-#, fuzzy
 msgid "unmatched ("
-msgstr "不符合的 (\n"
+msgstr "不成对的 ("
 
 #: rpmio/expression.cc:643
-#, fuzzy
 msgid "- only on numbers"
-msgstr "- 只能用於數字\n"
+msgstr "- 只能用于数字"
 
 #: rpmio/expression.cc:662
-#, fuzzy
 msgid "unexpected end of expression"
-msgstr "| 預期於表述式的結尾"
+msgstr "未预料的表达式结尾"
 
 #: rpmio/expression.cc:707 rpmio/expression.cc:769 rpmio/expression.cc:832
 #: rpmio/expression.cc:909 rpmio/expression.cc:968
-#, fuzzy
 msgid "types must match"
-msgstr "類型必須符合\n"
+msgstr "类型必须匹配"
 
 #: rpmio/expression.cc:717
 msgid "division by zero"
-msgstr ""
+msgstr "除以零"
 
 #: rpmio/expression.cc:725
 msgid "* and / not supported for versions"
-msgstr ""
+msgstr "版本不支持 * 和 /"
 
 #: rpmio/expression.cc:728
-#, fuzzy
 msgid "* and / not supported for strings"
-msgstr "字串不支援 *、/\n"
+msgstr "字符串不支持 * 与 /"
 
 #: rpmio/expression.cc:781
 msgid "+ and - not supported for versions"
-msgstr ""
+msgstr "版本不支持 + 和 -"
 
 #: rpmio/expression.cc:785
-#, fuzzy
 msgid "- not supported for strings"
-msgstr "字串不支援 -\n"
+msgstr "字符串不支持 -"
 
 #: rpmio/macro.cc:300
-#, fuzzy, c-format
+#, c-format
 msgid "%3d>%*s(empty)\n"
-msgstr "%3d>%*s(清空)"
+msgstr "%3d>%*s（清空）\n"
 
 #: rpmio/macro.cc:427
 msgid ""
@@ -3366,19 +3314,19 @@ msgid ""
 msgstr "在宏展开中有太多层的递归。它似乎是递归的宏宣告所造成的。\n"
 
 #: rpmio/macro.cc:501
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to open shell expansion pipe for command: %s: %m \n"
-msgstr "無法開啟 tar 管線：%m\n"
+msgstr "为此命令打开 shell 展开管道失败：%s: %m \n"
 
 #: rpmio/macro.cc:576
 #, c-format
 msgid "Macro %%%s has illegal name (%s)\n"
-msgstr ""
+msgstr "宏 %%%s 含有非法名称 (%s)\n"
 
 #: rpmio/macro.cc:582
-#, fuzzy, c-format
+#, c-format
 msgid "Macro %%%s is a built-in (%s)\n"
-msgstr "巨集 %%%s 具有未終結的選項\n"
+msgstr "宏 %%%s 是内建宏 (%s)\n"
 
 #: rpmio/macro.cc:628
 #, c-format
@@ -3398,7 +3346,7 @@ msgstr "宏 %%%s 具有空的主体\n"
 #: rpmio/macro.cc:707
 #, c-format
 msgid "Macro %%%s needs whitespace before body\n"
-msgstr ""
+msgstr "宏 %%%s 在结构之前需要空格\n"
 
 #: rpmio/macro.cc:712
 #, c-format
@@ -3406,41 +3354,37 @@ msgid "Macro %%%s failed to expand\n"
 msgstr "宏 %%%s 展开时失败\n"
 
 #: rpmio/macro.cc:839 rpmio/rpmlua.cc:268
-#, fuzzy, c-format
+#, c-format
 msgid "Unknown option %c in %s(%s)\n"
-msgstr "在 %2$s(%3$s) 中有不明的选项 %1$c\n"
+msgstr "在 %2$s(%3$s) 中存在未知的选项 %1$c\n"
 
 #: rpmio/macro.cc:891
 #, c-format
 msgid "Macro %%%s defined but not used within scope\n"
-msgstr ""
+msgstr "宏 %%%s 已经定义但是没有使用\n"
 
 #: rpmio/macro.cc:1010
 #, c-format
 msgid "no such macro: '%s'\n"
-msgstr ""
+msgstr "没有这个宏：'%s'\n"
 
 #: rpmio/macro.cc:1195
-#, fuzzy, c-format
-#| msgid "invalid package number: %s\n"
+#, c-format
 msgid "invalid argument: %s\n"
-msgstr "无效的套件编号：%s\n"
+msgstr "无效的参数：%s\n"
 
 #: rpmio/macro.cc:1207
-#, fuzzy, c-format
-#| msgid "failed to create directory %s: %s\n"
+#, c-format
 msgid "failed to get available memory for %s\n"
-msgstr "建立目录 %s 时失败：%s\n"
+msgstr "无法获取 %s 的可用内存\n"
 
 #: rpmio/macro.cc:1458
-#, fuzzy
 msgid "argument expected"
-msgstr "未預期的 ]"
+msgstr "预期为参数"
 
 #: rpmio/macro.cc:1458
-#, fuzzy
 msgid "unexpected argument"
-msgstr "未預期的 ]"
+msgstr "未预料的参数"
 
 #: rpmio/macro.cc:1578
 #, c-format
@@ -3455,18 +3399,17 @@ msgstr "在无法剖析的宏之后跟着一个 %%\n"
 #: rpmio/macro.cc:1682
 #, c-format
 msgid "unexpected argument to non-parametric macro %%%s\n"
-msgstr ""
+msgstr "非参数化宏 %%%s 收到意外参数\n"
 
 #: rpmio/macro.cc:2044
 #, c-format
 msgid "macro value out of range for int: %<PRIu64> using %i instead.\n"
-msgstr ""
+msgstr "宏值超出整数范围：%<PRIu64>，改用 %i。\n"
 
 #: rpmio/macro.cc:2094
-#, fuzzy, c-format
-#| msgid "======================== active %d empty %d\n"
+#, c-format
 msgid "======================== active %zu empty %d\n"
-msgstr "======================== 作用中 %d 清空 %d\n"
+msgstr "======================== 活跃 %zu 空 %d\n"
 
 #: rpmio/rpmfileutil.cc:97
 #, c-format
@@ -3505,7 +3448,7 @@ msgstr "警告: "
 
 #: rpmio/rpmlog.cc:265
 msgid "Error writing to log"
-msgstr ""
+msgstr "写入日志时发生错误"
 
 #: rpmio/rpmlua.cc:203
 #, c-format
@@ -3514,7 +3457,7 @@ msgstr "无效的语法于 lua 指令稿片段：%s\n"
 
 #: rpmio/rpmlua.cc:229
 msgid "runaway fork() in Lua script\n"
-msgstr ""
+msgstr "Lua 脚本中出现失控的 fork()\n"
 
 #: rpmio/rpmlua.cc:255
 #, c-format
@@ -3529,7 +3472,7 @@ msgstr "lua 指令稿失败：%s\n"
 #: rpmio/rpmlua.cc:296
 #, c-format
 msgid "result print failed: %s\n"
-msgstr ""
+msgstr "结果打印失败：%s\n"
 
 #: rpmio/rpmlua.cc:318
 #, c-format
@@ -3556,15 +3499,14 @@ msgid "(none)"
 msgstr "(无)"
 
 #: rpmio/url.cc:125
-#, fuzzy, c-format
-#| msgid "Could not open %s file: %s\n"
+#, c-format
 msgid "Could not find url helper: \"%s\"\n"
-msgstr "無法開啟 %s 檔案：%s\n"
+msgstr "找不到 URL 辅助程序：\"%s\"\n"
 
 #: rpmio/url.cc:129
 #, c-format
 msgid "Executing url helper \"%s\" failed with status %i\n"
-msgstr ""
+msgstr "执行 URL 辅助程序 \"%s\" 失败，状态为 %i\n"
 
 #: sign/rpmgensig.cc:114
 #, c-format
@@ -3582,26 +3524,24 @@ msgid "%s: Fflush failed: %s\n"
 msgstr "%s：Fflush 失败：%s\n"
 
 #: sign/rpmgensig.cc:144
-#, fuzzy, c-format
-#| msgid "reading symlink %s failed: %s\n"
+#, c-format
 msgid "Expanding signing macro %s failed\n"
-msgstr "读取符号链结 %s 失败：%s\n"
+msgstr "展开签名宏 %s 失败\n"
 
 #: sign/rpmgensig.cc:150
-#, fuzzy, c-format
-#| msgid "Invalid %s token: %s\n"
+#, c-format
 msgid "Invalid sign command: %s\n"
-msgstr "无效的 %s 符记：%s\n"
+msgstr "无效的签名命令：%s\n"
 
 #: sign/rpmgensig.cc:173
-#, fuzzy, c-format
+#, c-format
 msgid "Could not create pipe for signing: %m\n"
-msgstr "無法為 %s 建立管線：%m\n"
+msgstr "无法为签名建立管道：%m\n"
 
 #: sign/rpmgensig.cc:185
-#, fuzzy, c-format
+#, c-format
 msgid "Could not set GPG_TTY to stdin: %m\n"
-msgstr "無法開啟 %%files 檔案 %s：%m\n"
+msgstr "无法设置 GPG_TTY 为 stdin：%m\n"
 
 #: sign/rpmgensig.cc:194
 #, c-format
@@ -3609,88 +3549,79 @@ msgid "Could not exec %s: %s\n"
 msgstr "无法执行 %s：%s\n"
 
 #: sign/rpmgensig.cc:202
-#, fuzzy, c-format
+#, c-format
 msgid "Could not open pipe for writing: %m\n"
-msgstr "無法為 %s 建立管線：%m\n"
+msgstr "无法为写入建立管道： %m\n"
 
 #: sign/rpmgensig.cc:217
 msgid "Could not write to pipe\n"
-msgstr ""
+msgstr "无法写入到管道\n"
 
 #: sign/rpmgensig.cc:224
 #, c-format
 msgid "Could not read from file %s: %s\n"
-msgstr ""
+msgstr "无法从文件 %s 读取：%s\n"
 
 #: sign/rpmgensig.cc:242
-#, fuzzy, c-format
-#| msgid "gpg exec failed (%d)\n"
+#, c-format
 msgid "%s waitpid failed (%s)\n"
-msgstr "gpg 执行失败 (%d)\n"
+msgstr "%s waitpid 失败（%s）\n"
 
 #: sign/rpmgensig.cc:245
-#, fuzzy, c-format
-#| msgid "gpg exec failed (%d)\n"
+#, c-format
 msgid "%s exec failed (%d)\n"
-msgstr "gpg 执行失败 (%d)\n"
+msgstr "%s 执行失败（%d）\n"
 
 #: sign/rpmgensig.cc:271
-#, fuzzy, c-format
-#| msgid "gpg failed to write signature\n"
+#, c-format
 msgid "failed to write signature: %s\n"
-msgstr "写入签名时 gpg 失败\n"
+msgstr "写入签名失败：%s\n"
 
 #: sign/rpmgensig.cc:287
-#, fuzzy, c-format
-#| msgid "unable to read the signature\n"
+#, c-format
 msgid "unable to read the signature: %s\n"
-msgstr "无法读取签名\n"
+msgstr "无法读取签名：%s\n"
 
 #: sign/rpmgensig.cc:377
-#, fuzzy
-#| msgid "Unsupported PGP signature\n"
 msgid "Unsupported OpenPGP signature\n"
-msgstr "未支援的 PGP 簽名\n"
+msgstr "不支持的 OpenPGP 签名\n"
 
 #: sign/rpmgensig.cc:383
-#, fuzzy, c-format
-#| msgid "Unsupported PGP hash algorithm %u\n"
+#, c-format
 msgid "Unsupported OpenPGP hash algorithm %u\n"
-msgstr "未支援的 PGP 雜湊演算法 %u\n"
+msgstr "不支持的 OpenPGP 哈希算法 %u\n"
 
 #: sign/rpmgensig.cc:390
-#, fuzzy, c-format
-#| msgid "Unsupported PGP signature\n"
+#, c-format
 msgid "Deprecated OpenPGP signature version %d\n"
-msgstr "未支援的 PGP 簽名\n"
+msgstr "已弃用的 OpenPGP 签名版本 %d\n"
 
 #: sign/rpmgensig.cc:463
-#, fuzzy, c-format
-#| msgid "Unsupported PGP pubkey algorithm %u\n"
+#, c-format
 msgid "Unsupported OpenPGP pubkey algorithm %u for rpm v3/v4 signatures\n"
-msgstr "未支援的 PGP 公鑰演算法 %u\n"
+msgstr "RPM v3/v4 签名不支持的 OpenPGP 公钥算法 %u\n"
 
 #: sign/rpmgensig.cc:563
 msgid "file signing support not built in\n"
-msgstr ""
+msgstr "没有内置文件签名支持\n"
 
 #: sign/rpmgensig.cc:585
 #, c-format
 msgid "Searching for algorithm %s got %i\n"
-msgstr ""
+msgstr "搜索算法 %s 得到 %i\n"
 
 #: sign/rpmgensig.cc:588
 #, c-format
 msgid "Unsupported fsverity algorithm %s\n"
-msgstr ""
+msgstr "不支持的fsverity算法 %s\n"
 
 #: sign/rpmgensig.cc:597
 msgid "fsverity signatures requires a key and a cert\n"
-msgstr ""
+msgstr "fsverity 签名需要密钥和证书\n"
 
 #: sign/rpmgensig.cc:607
 msgid "fsverity signing support not built in\n"
-msgstr ""
+msgstr "未内置fsverity签名支持\n"
 
 #: sign/rpmgensig.cc:685
 #, c-format
@@ -3703,39 +3634,34 @@ msgid "%s: headerRead failed: %s\n"
 msgstr "%s：headerRead 失败：%s\n"
 
 #: sign/rpmgensig.cc:699
-#, fuzzy, c-format
-#| msgid "Cannot sign RPM v3 packages\n"
+#, c-format
 msgid "Cannot sign RPM v3 packages: %s\n"
-msgstr "无法签署 RPM v3 套件\n"
+msgstr "无法对 RPM v3 软件包签名：%s\n"
 
 #: sign/rpmgensig.cc:709
-#, fuzzy, c-format
-#| msgid "Could not generate output filename for package %s: %s\n"
+#, c-format
 msgid "not generating v3 signature for v6 package: %s\n"
-msgstr "无法产生套件 %s 的文件名输出：%s\n"
+msgstr "不为 v6 软件包生成 v3 签名：%s\n"
 
 #: sign/rpmgensig.cc:724
 #, c-format
 msgid "File signatures not applicable to src.rpm: %s\n"
-msgstr ""
+msgstr "文件签名不适用于 src.rpm：%s\n"
 
 #: sign/rpmgensig.cc:749
-#, fuzzy, c-format
-#| msgid "Could not open %s file: %s\n"
+#, c-format
 msgid "Could not get a file size of %s\n"
-msgstr "無法開啟 %s 檔案：%s\n"
+msgstr "无法获取 %s 的文件大小\n"
 
 #: sign/rpmgensig.cc:769
-#, fuzzy, c-format
-#| msgid "%s already contains identical signature, skipping\n"
+#, c-format
 msgid "%s already contains an identical signature, skipping\n"
-msgstr "%s 已经含有相同的签名，跳过\n"
+msgstr "%s 已包含相同的签名，跳过\n"
 
 #: sign/rpmgensig.cc:776
-#, fuzzy, c-format
-#| msgid "%s already contains identical signature, skipping\n"
+#, c-format
 msgid "%s already contains a legacy signature\n"
-msgstr "%s 已经含有相同的签名，跳过\n"
+msgstr "%s 已包含旧式签名\n"
 
 #: sign/rpmgensig.cc:816 sign/rpmgensig.cc:841
 #, c-format
@@ -3743,16 +3669,14 @@ msgid "%s: rpmWriteSignature failed: %s\n"
 msgstr "%s：rpmWriteSignature 失败：%s\n"
 
 #: sign/rpmgensig.cc:827
-#, fuzzy, c-format
-#| msgid "rpmMkTemp failed\n"
+#, c-format
 msgid "rpmMkTemp failed: %s\n"
-msgstr "rpmMkTemp 失败\n"
+msgstr "rpmMkTemp 失败：%s\n"
 
 #: sign/rpmgensig.cc:835
-#, fuzzy, c-format
-#| msgid "%s: failed to encode\n"
+#, c-format
 msgid "%s: failed to copy rpm lead: %s\n"
-msgstr "%s：编码失败\n"
+msgstr "%s：复制 RPM 引导区失败：%s\n"
 
 #: sign/rpmgensig.cc:864
 #, c-format
@@ -3761,19 +3685,19 @@ msgstr "置换 %s 时失败：%s\n"
 
 #: sign/rpmsignfiles.cc:67
 msgid "sign_hash failed\n"
-msgstr ""
+msgstr "sign_hash 失败\n"
 
 #: sign/rpmsignfiles.cc:96
 msgid "File digest algorithm id is invalid"
-msgstr ""
+msgstr "文件摘要算法 ID 无效"
 
 #: sign/rpmsignfiles.cc:117
 msgid "signFile failed\n"
-msgstr ""
+msgstr "signFile 失败\n"
 
 #: sign/rpmsignfiles.cc:122
 msgid "headerPutString failed\n"
-msgstr ""
+msgstr "headerPutString 失败\n"
 
 #: tools/cliutils.cc:18
 #, c-format
@@ -3806,9 +3730,8 @@ msgid "Query/Verify package selection options:"
 msgstr "查询/验证所选套件的选项："
 
 #: tools/rpm.cc:41
-#, fuzzy
 msgid "Query/Verify file selection options:"
-msgstr "查詢/驗證所選套件的選項："
+msgstr "查询/验证文件选项："
 
 #: tools/rpm.cc:44
 msgid "Query options (with -q or --query):"
@@ -3967,11 +3890,11 @@ msgstr "没有给定验证自变量"
 
 #: tools/rpm2archive.cc:30
 msgid "create uncompressed archive"
-msgstr ""
+msgstr "创建未压缩的归档"
 
 #: tools/rpm2archive.cc:33
 msgid "archive format (pax|cpio)"
-msgstr ""
+msgstr "归档格式（pax|cpio）"
 
 #: tools/rpm2archive.cc:151
 #, c-format
@@ -3997,23 +3920,20 @@ msgid "rebuild database inverted lists from installed package headers"
 msgstr "从安装的套件标头重建数据库的反向列表"
 
 #: tools/rpmdb.cc:27
-#, fuzzy
-#| msgid "verify database files"
 msgid "verify database"
-msgstr "验证数据库档案"
+msgstr "验证数据库"
 
 #: tools/rpmdb.cc:29
-#, fuzzy
 msgid "salvage database"
-msgstr "初始化資料庫"
+msgstr "抢救数据库"
 
 #: tools/rpmdb.cc:31
 msgid "export database to stdout header list"
-msgstr ""
+msgstr "将数据库导出到标准输出头列表"
 
 #: tools/rpmdb.cc:34
 msgid "import database from stdin header list"
-msgstr ""
+msgstr "从标准输入头列表导入数据库"
 
 #: tools/rpmdb.cc:41
 msgid "Database options:"
@@ -4039,22 +3959,22 @@ msgstr "<specfile>"
 #: tools/rpmbuild.cc:154
 #, c-format
 msgid "build through %conf (%prep, then %conf) from <specfile>"
-msgstr ""
+msgstr "通过 %conf（%prep，然后 %conf）从 <specfile> 构建"
 
 #: tools/rpmbuild.cc:157
 #, c-format
 msgid "build through %build (%prep, %conf, then compile) from <specfile>"
-msgstr ""
+msgstr "依据 <specfile> 从 %build (%prep，%conf 之后编译) 开始构建"
 
 #: tools/rpmbuild.cc:160
 msgid "check build dependencies <specfile>"
-msgstr ""
+msgstr "检查构建依赖项<specfile>"
 
 #: tools/rpmbuild.cc:163
 #, c-format
 msgid ""
 "build through %install (%prep, %conf, %build, then install) from <specfile>"
-msgstr ""
+msgstr "通过 %install (%prep, %conf, %build,然后安装) 从 <specfile> 构建"
 
 #: tools/rpmbuild.cc:166
 #, c-format
@@ -4074,16 +3994,15 @@ msgid "build source package only from <specfile>"
 msgstr "根据 <specfile> 只建置原始码套件"
 
 #: tools/rpmbuild.cc:178
-#, fuzzy
 msgid ""
 "build source package only from <specfile> - calculate dynamic build requires"
-msgstr "根據 <specfile> 只建置原始碼套件"
+msgstr "仅从 <specfile> 构建源代码包 - 动态计算构建依赖"
 
 #: tools/rpmbuild.cc:182
 #, c-format
 msgid ""
 "build through %prep (unpack sources and apply patches) from <source package>"
-msgstr ""
+msgstr "仅执行 <source package> 的 %prep 部分（解包源代码并应用补丁）"
 
 #: tools/rpmbuild.cc:183 tools/rpmbuild.cc:189 tools/rpmbuild.cc:192
 #: tools/rpmbuild.cc:195 tools/rpmbuild.cc:198 tools/rpmbuild.cc:201
@@ -4093,51 +4012,48 @@ msgid "<source package>"
 msgstr "<source package>"
 
 #: tools/rpmbuild.cc:185
-#, fuzzy, c-format
-#| msgid ""
-#| "build through %install (%prep, %build, then install) from <source package>"
+#, c-format
 msgid "build through %conf (%prep, then %conf) from <source package>"
-msgstr "从 <source package> 透过 %install (%prep，%build，然后安装) 来建置"
+msgstr "从 <源软件包> 通过 %conf（%prep，然后 %conf）构建"
 
 #: tools/rpmbuild.cc:188
 #, c-format
 msgid "build through %build (%prep, %conf, then compile) from <source package>"
-msgstr ""
+msgstr "从 <source package> 的 %build（%prep、%conf，然后编译）开始构建"
 
 #: tools/rpmbuild.cc:191
 msgid "check build dependencies <source package>"
-msgstr ""
+msgstr "检查构建依赖项 <源代码包>"
 
 #: tools/rpmbuild.cc:194
 #, c-format
 msgid ""
 "build through %install (%prep, %conf, %build, then install) from <source "
 "package>"
-msgstr ""
+msgstr "从 <source package> 的 %install（%prep、%conf、%build，然后安装）开始构建"
 
 #: tools/rpmbuild.cc:197
 #, c-format
 msgid "verify %files section from <source package>"
-msgstr ""
+msgstr "依据 <source package> 校验 %files 部分"
 
 #: tools/rpmbuild.cc:200
 msgid "build source and binary packages from <source package>"
-msgstr ""
+msgstr "从 <source package> 中构建二进制和源代码包"
 
 #: tools/rpmbuild.cc:203
 msgid "build binary package only from <source package>"
-msgstr ""
+msgstr "仅从 <source package> 中构建二进制包"
 
 #: tools/rpmbuild.cc:206
 msgid "build source package only from <source package>"
-msgstr ""
+msgstr "仅从 <source package> 中构建源代码包"
 
 #: tools/rpmbuild.cc:209
-#, fuzzy
 msgid ""
 "build source package only from <source package> - calculate dynamic build "
 "requires"
-msgstr "根據 <specfile> 只建置原始碼套件"
+msgstr "仅从 <source package> 构建源代码包 - 动态计算构建依赖"
 
 #: tools/rpmbuild.cc:213
 #, c-format
@@ -4151,25 +4067,24 @@ msgid "<tarball>"
 msgstr "<tarball>"
 
 #: tools/rpmbuild.cc:216
-#, fuzzy, c-format
-#| msgid "build through %build (%prep, then compile) from <tarball>"
+#, c-format
 msgid "build through %conf (%prep, then %conf) from <tarball>"
-msgstr "從 <tarball> 透過 %build (%prep，然後編譯) 來建置"
+msgstr "从 <tarball> 通过 %conf（%prep，然后 %conf）构建"
 
 #: tools/rpmbuild.cc:219
 #, c-format
 msgid "build through %build (%prep, %conf, then compile) from <tarball>"
-msgstr ""
+msgstr "从 <tarball> 的 %build (%prep、%conf，然后编译) 开始构建"
 
 #: tools/rpmbuild.cc:222
 msgid "check build dependencies <tarball>"
-msgstr ""
+msgstr "检查构建依赖项 <tarball>"
 
 #: tools/rpmbuild.cc:225
 #, c-format
 msgid ""
 "build through %install (%prep, %conf, %build, then install) from <tarball>"
-msgstr ""
+msgstr "从 <tarball> 的 %install (%prep、%conf、%build，然后安装) 开始构建"
 
 #: tools/rpmbuild.cc:228
 #, c-format
@@ -4189,10 +4104,9 @@ msgid "build source package only from <tarball>"
 msgstr "从 <tarball> 中只建置原始码套件"
 
 #: tools/rpmbuild.cc:240
-#, fuzzy
 msgid ""
 "build source package only from <tarball> - calculate dynamic build requires"
-msgstr "從 <tarball> 中只建置原始碼套件"
+msgstr "仅从 <tarball> 构建源代码包 - 动态计算构建依赖"
 
 #: tools/rpmbuild.cc:243
 msgid "build binary package from <source package>"
@@ -4205,10 +4119,8 @@ msgid ""
 msgstr "从 <source package> 透过 %install (%prep，%build，然后安装) 来建置"
 
 #: tools/rpmbuild.cc:250
-#, fuzzy
-#| msgid "override build root"
 msgid "override build root (DEPRECATED)"
-msgstr "强制覆写建置根目录"
+msgstr "覆盖构建根路径（已弃用）"
 
 #: tools/rpmbuild.cc:252
 msgid "remove build tree when done"
@@ -4242,7 +4154,7 @@ msgstr "不执行组建的 %clean 阶段"
 #: tools/rpmbuild.cc:268
 #, c-format
 msgid "do not execute %prep stage of the build"
-msgstr ""
+msgstr "不执行构建的 %prep 阶段"
 
 #: tools/rpmbuild.cc:270
 #, c-format
@@ -4286,7 +4198,7 @@ msgstr "无法开启 tar 管线：%m\n"
 #: tools/rpmbuild.cc:398
 #, c-format
 msgid "Found more than one spec file in %s\n"
-msgstr ""
+msgstr "在 %s 中发现多个 spec 规格文件\n"
 
 #: tools/rpmbuild.cc:409
 #, c-format
@@ -4341,20 +4253,16 @@ msgid "import an armored public key"
 msgstr "汇入一个受保护的公钥"
 
 #: tools/rpmkeys.cc:31
-#, fuzzy
-#| msgid "import an armored public key"
 msgid "export an public key"
-msgstr "汇入一个受保护的公钥"
+msgstr "导出公钥"
 
 #: tools/rpmkeys.cc:33
 msgid "don't import, but tell if it would work or not"
 msgstr "不汇入，但会分辨是否它有作用"
 
 #: tools/rpmkeys.cc:35 tools/rpmkeys.cc:37
-#, fuzzy
-#| msgid "list keys from RPM keyring"
 msgid "Erase keys from RPM keyring"
-msgstr "列出 RPM 钥匙圈的密钥"
+msgstr "从 RPM 密钥环删除密钥"
 
 #: tools/rpmkeys.cc:39
 msgid "list keys from RPM keyring"
@@ -4362,11 +4270,11 @@ msgstr "列出 RPM 钥匙圈的密钥"
 
 #: tools/rpmkeys.cc:41
 msgid "rebuild the keyring - convert to current backend"
-msgstr ""
+msgstr "重建密钥环 - 转换到当前后端"
 
 #: tools/rpmkeys.cc:43
 msgid "get keys from this backend when rebuilding current backend"
-msgstr ""
+msgstr "重建当前后端时从此后端获取密钥"
 
 #: tools/rpmkeys.cc:49
 msgid "Keyring options:"
@@ -4378,27 +4286,23 @@ msgstr "没有给定自变量"
 
 #: tools/rpmlua.cc:24
 msgid "getopt string for scripts options"
-msgstr ""
+msgstr "getopt 字符串，用于获取脚本选项"
 
 #: tools/rpmlua.cc:26
 msgid "execute statement"
-msgstr ""
+msgstr "执行语句"
 
 #: tools/rpmlua.cc:28
 msgid "interactive session"
-msgstr ""
+msgstr "交互式会话"
 
 #: tools/rpmsign.cc:36
-#, fuzzy
-#| msgid "sign package(s) (identical to --addsign)"
 msgid "sign package(s), adding a new signature"
-msgstr "签署套件 (与 --addsign 含义相同)"
+msgstr "签署软件包，添加新签名"
 
 #: tools/rpmsign.cc:38
-#, fuzzy
-#| msgid "sign package(s) (identical to --addsign)"
 msgid "resign package(s), deleting any previous signatures"
-msgstr "签署套件 (与 --addsign 含义相同)"
+msgstr "重新签署软件包，删除所有先前签名"
 
 #: tools/rpmsign.cc:40
 msgid "delete package signatures"
@@ -4406,79 +4310,75 @@ msgstr "删除套件签名"
 
 #: tools/rpmsign.cc:43
 msgid "delete IMA and fsverity file signatures"
-msgstr ""
+msgstr "删除 IMA 和 fsverity 文件签名"
 
 #: tools/rpmsign.cc:47
-#, fuzzy
 msgid "request legacy rpm v3 header+payload signatures on v4 packages"
-msgstr "不驗證標頭+酬載簽名"
+msgstr "为 v4 软件包请求旧式 RPM v3 头+负载签名"
 
 #: tools/rpmsign.cc:50
-#, fuzzy
 msgid "request legacy rpm v4 header signatures on v6 packages"
-msgstr "不驗證標頭+酬載簽名"
+msgstr "为 v6 软件包请求旧式 RPM v4 头签名"
 
 #: tools/rpmsign.cc:53
-#, fuzzy
 msgid "request rpm v6 header signature on v4 packages"
-msgstr "不驗證標頭+酬載簽名"
+msgstr "为 v4 软件包请求 RPM v6 头签名"
 
 #: tools/rpmsign.cc:57
 msgid "sign package(s) files"
-msgstr ""
+msgstr "签署一个或多个包文件"
 
 #: tools/rpmsign.cc:62
 msgid "generate fsverity signatures for package(s) files"
-msgstr ""
+msgstr "为软件包文件生成 fsverity 签名"
 
 #: tools/rpmsign.cc:64
 msgid "algorithm to use for verity signatures, default sha256"
-msgstr ""
+msgstr "用于验证签名的算法，默认为 sha256"
 
 #: tools/rpmsign.cc:65
 msgid "<algorithm>"
-msgstr ""
+msgstr "<算法>"
 
 #: tools/rpmsign.cc:67
 msgid "use file signing cert <cert>"
-msgstr ""
+msgstr "使用文件签名证书 <证书>"
 
 #: tools/rpmsign.cc:68
 msgid "<cert>"
-msgstr ""
+msgstr "<证书>"
 
 #: tools/rpmsign.cc:72
 msgid "use file signing key <key>"
-msgstr ""
+msgstr "使用 <key> 作为签名密钥"
 
 #: tools/rpmsign.cc:73
 msgid "<key>"
-msgstr ""
+msgstr "<key>"
 
 #: tools/rpmsign.cc:75
 msgid "prompt for file signing key password"
-msgstr ""
+msgstr "当需要输入签名密钥的密码时显示提示"
 
 #: tools/rpmsign.cc:82
 msgid "Signature options:"
 msgstr "签名选项："
 
 #: tools/rpmsign.cc:139
-#, fuzzy, c-format
-#| msgid "You must set \"%%_gpg_name\" in your macro file\n"
+#, c-format
 msgid "You must set \"%%_openpgp_sign_id\" in your macro file\n"
-msgstr "您必须在您的宏文件中设定「%%_gpg_name」\n"
+msgstr "你必须在宏文件中设置 \"%%_openpgp_sign_id\"\n"
 
 #: tools/rpmsign.cc:161
 #, c-format
 msgid ""
 "You must set \"%%_file_signing_key\" in your macro file or on the command "
 "line with --fskpath\n"
-msgstr ""
+msgstr "您必须在宏文件中或通过 --fskpath 参数设置 \"%%_file_signing_key\"\n"
 
 #: tools/rpmsign.cc:214
 msgid "--fskpath may only be specified when signing files"
-msgstr ""
+msgstr "--fskpath 参数只能在签名时使用"
 
 #: tools/rpmspec.cc:30
 msgid "parse spec file(s) to stdout"
@@ -4490,7 +4390,7 @@ msgstr "查询规格档案"
 
 #: tools/rpmspec.cc:35
 msgid "interactive macro shell"
-msgstr ""
+msgstr "交互式宏 shell"
 
 #: tools/rpmspec.cc:38
 msgid "operate on binary rpms generated by spec (default)"
@@ -4498,11 +4398,11 @@ msgstr "操作透过规格所建立的二进制 rpm (默认)"
 
 #: tools/rpmspec.cc:40
 msgid "operate on binary package header(s) that would be built from spec"
-msgstr ""
+msgstr "对二进制包头进行操作，这些包头将根据规范构建"
 
 #: tools/rpmspec.cc:42
 msgid "operate on source package header generated by spec"
-msgstr ""
+msgstr "操作由 spec 生成的源代码包头"
 
 #: tools/rpmspec.cc:53
 msgid "Spec options:"
@@ -4511,7 +4411,7 @@ msgstr "规格选项："
 #: tools/rpmspec.cc:68
 #, c-format
 msgid "RPM version %s macro shell\n"
-msgstr ""
+msgstr "RPM 版本 %s 宏 shell\n"
 
 #: tools/rpmspec.cc:95
 msgid "no arguments given for parse"
@@ -4519,15 +4419,15 @@ msgstr "没有任何自变量用于剖析"
 
 #: tools/rpmuncompress.cc:24
 msgid "extract an archive"
-msgstr ""
+msgstr "解压"
 
 #: tools/rpmuncompress.cc:28
 msgid "only print what would be done"
-msgstr ""
+msgstr "只打印会做的事"
 
 #: tools/rpmuncompress.cc:30
 msgid "extract into a specific path"
-msgstr ""
+msgstr "提取到指定路径"
 
 #, c-format
 #~ msgid "files over 4GB not supported by cpio, use rpm2archive instead\n"
