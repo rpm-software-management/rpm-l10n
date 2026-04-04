@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
-"PO-Revision-Date: 2026-02-25 18:58+0000\n"
+"PO-Revision-Date: 2026-04-05 18:58+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://translate.fedoraproject.org/projects/rpm/rpm-"
 "l10n/cs/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 5.16\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #: build/build.cc:42
 msgid "unable to parse _buildtime macro\n"
@@ -57,10 +57,9 @@ msgid "Failed build dependencies:\n"
 msgstr "Chybné závislosti při sestavování:\n"
 
 #: build/build.cc:346
-#, fuzzy, c-format
-#| msgid "failed to create directory %s: %s\n"
+#, c-format
 msgid "failed to create package build directory %s: %s\n"
-msgstr "selhání při vytváření adresáře %s: %s\n"
+msgstr "nepodařilo se vytvořit složku pro sestavení balíčku %s: %s\n"
 
 #: build/build.cc:387
 #, c-format
@@ -153,15 +152,14 @@ msgid "File capability support not built in\n"
 msgstr "Podpora funkcí souborů není integrována\n"
 
 #: build/files.cc:896
-#, fuzzy, c-format
-#| msgid "Missing module path in line: %s\n"
+#, c-format
 msgid "Missing quote: %s\n"
-msgstr "Chybějící cesta modulu na řádku: %s\n"
+msgstr "Chybějící uvozovka: %s\n"
 
 #: build/files.cc:902
 #, c-format
 msgid "Trailing backslash: %s\n"
-msgstr ""
+msgstr "Zpětné lomítko na konci: %s\n"
 
 #: build/files.cc:914
 #, c-format
@@ -174,6 +172,8 @@ msgid ""
 "%%clamp_mtime_to_source_date_epoch is deprecated, please use "
 "%%build_mtime_policy\n"
 msgstr ""
+"%%clamp_mtime_to_source_date_epoch je zastaralé, namísto toho použijte "
+"%%build_mtime_policy\n"
 
 #: build/files.cc:1050
 #, c-format
@@ -181,10 +181,9 @@ msgid "unable to parse %s=%s\n"
 msgstr "nelze parsovat %s=%s\n"
 
 #: build/files.cc:1057
-#, fuzzy, c-format
-#| msgid "Unknown icon type: %s\n"
+#, c-format
 msgid "Unknown mtime policy '%s'\n"
-msgstr "Neznámý typ ikony: %s\n"
+msgstr "Neznámá zásada mtime: %s\n"
 
 #: build/files.cc:1073
 #, c-format
@@ -311,7 +310,7 @@ msgstr "nepodařilo se vytvořit adresář"
 
 #: build/files.cc:1975
 msgid "Mixing main ELF and debug files in package\n"
-msgstr ""
+msgstr "Kombinování hlavních ELF a ladících souborů v balíčku\n"
 
 #: build/files.cc:2173
 #, c-format
@@ -491,10 +490,9 @@ msgid "line %d: second %s\n"
 msgstr "řádek: %d: druhý %s\n"
 
 #: build/parseSimpleScript.cc:52
-#, fuzzy, c-format
-#| msgid "line %d: unsupported internal script: %s\n"
+#, c-format
 msgid "line %d: append and prepend specified: %s\n"
-msgstr "řádek %d: nepodporovaný interní skript: %s\n"
+msgstr "řádek %d: zadáno připojení před a za: %s\n"
 
 #: build/parseChangelog.cc:184
 #, c-format
@@ -722,10 +720,9 @@ msgid "line %d: Duplicate BuildArch entry: %s\n"
 msgstr "řádek %d: Duplicitní položka BuildArch: %s\n"
 
 #: build/parsePreamble.cc:1023
-#, fuzzy, c-format
-#| msgid "line %d: Only noarch subpackages are supported: %s\n"
+#, c-format
 msgid "line %d: Only noarch is allowed after the build: %s\n"
-msgstr "řádek %d: Podporovány jsou pouze dílčí balíčky noarch: %s\n"
+msgstr "řádek %d: Po sestavení je povoleno pouze noarch: %s\n"
 
 #: build/parsePreamble.cc:1033
 #, c-format
@@ -757,16 +754,14 @@ msgid "line %d: Unknown tag: %s\n"
 msgstr "řádek %d: Neznámá značka: %s\n"
 
 #: build/parsePreamble.cc:1268
-#, fuzzy, c-format
-#| msgid "line %d: Priorities are allowed only for file triggers : %s\n"
+#, c-format
 msgid "line %d: Tag not allowed after build is done: %s\n"
-msgstr "řádek %d: Priority jsou povoleny pouze pro souborové spouštěče: %s\n"
+msgstr "řádek %d: Poté, co je sestavení dokončeno, není štítek dovolen: %s\n"
 
 #: build/parsePreamble.cc:1330
-#, fuzzy, c-format
-#| msgid "Invalid capability: %s\n"
+#, c-format
 msgid "Invalid buildroot: '%s'\n"
-msgstr "Neplatná funkce: %s\n"
+msgstr "Neplatný buildroot: „%s“\n"
 
 #: build/parsePrep.cc:72
 #, c-format
@@ -946,7 +941,7 @@ msgstr "%s:%d: chybný příkaz %%include\n"
 #: build/parseSpec.cc:623
 #, c-format
 msgid "%%patchN is obsolete, use %%patch N (or %%patch -P N): %s\n"
-msgstr ""
+msgstr "%%patchN je zastaralé, použijte %%patch N (nebo %%patch -P N): %s\n"
 
 #: build/parseSpec.cc:823
 #, c-format
@@ -974,16 +969,17 @@ msgid "line %d doesn't belong to any section: %s\n"
 msgstr "řádek %d nepatří do žádné sekce: %s\n"
 
 #: build/parseSpec.cc:979
-#, fuzzy, c-format
-#| msgid "line %d: Unknown tag: %s\n"
+#, c-format
 msgid "line %d: Unknown buildsystem: %s\n"
-msgstr "řádek %d: Neznámá značka: %s\n"
+msgstr "řádek %d: Neznámý sestavovací systém: %s\n"
 
 #: build/parseSpec.cc:983
 #, c-format
 msgid ""
 "line %d: Required parametric macro %%%s not defined for buildsystem %s\n"
 msgstr ""
+"řádek %d: Vyžadované parametrické makro %%%s není definováno pro systém "
+"sestavování %s\n"
 
 #: build/parseSpec.cc:1014
 #, c-format
@@ -991,15 +987,14 @@ msgid "failed to write buildsystem %s %%%s: %s\n"
 msgstr "nepodařilo se zapsat buildsystem %s %%%s: %s\n"
 
 #: build/parseSpec.cc:1036
-#, fuzzy, c-format
-#| msgid "Couldn't create temporary file for %s: %s\n"
+#, c-format
 msgid "failed to create temp file for buildsystem: %s\n"
-msgstr "Nelze vytvořit dočasný soubor pro %s: %s\n"
+msgstr "nepodařilo se vytvořit dočasný soubor pro systém sestavování: %s\n"
 
 #: build/parseSpec.cc:1096
 #, c-format
 msgid "Section %s is not allowed after build is done!\n"
-msgstr ""
+msgstr "Sekce %s není po dokončení sestavení povolená!\n"
 
 #: build/parseSpec.cc:1249
 msgid "No compatible architectures found for build\n"
@@ -1008,7 +1003,7 @@ msgstr "Nenalezeny žádné kompatibilní architektury pro sestavení\n"
 #: build/parseSpec.cc:1369
 #, c-format
 msgid "invalid rpm format %d requested, using %d\n"
-msgstr ""
+msgstr "vyžádán neplatný rpm formát %d, pomocí %d\n"
 
 #: build/parseSpec.cc:1404
 #, c-format
@@ -1109,10 +1104,9 @@ msgid "Couldn't exec %s: %s\n"
 msgstr "Nebylo možné spustit %s: %s\n"
 
 #: build/rpmfc.cc:412
-#, fuzzy, c-format
-#| msgid "failed to open dir %s of %s: %s\n"
+#, c-format
 msgid "Failed to wait for exit status of %s: %s\n"
-msgstr "nepodařilo se otevřít adresář %s z %s: %s\n"
+msgstr "Nepodařilo se vyčkat na návratový stav %s: %s\n"
 
 #: build/rpmfc.cc:421
 #, c-format
@@ -1127,7 +1121,7 @@ msgstr "nepodařilo se zapsat všechna data do %s: %s\n"
 #: build/rpmfc.cc:639
 #, c-format
 msgid "invalid or out of order path from generator: %s\n"
-msgstr ""
+msgstr "neplatný nebo nefunkční popis umístění z generátoru: %s\n"
 
 #: build/rpmfc.cc:1231
 msgid "Empty file classifier\n"
@@ -1172,10 +1166,8 @@ msgid "Deprecated external dependency generator is used!\n"
 msgstr "Je použit zastaralý externí generátor závislostí!\n"
 
 #: build/rpmfc.cc:1624
-#, fuzzy
-#| msgid "Deprecated external dependency generator is used!\n"
 msgid "External dependency generator is incompatible with v6 packages\n"
-msgstr "Je použit zastaralý externí generátor závislostí!\n"
+msgstr "Externí generátor závislostí není kompatibilní s v6 balíčky\n"
 
 #: build/spec.cc:77
 #, c-format
@@ -1516,21 +1508,19 @@ msgid "failed to import key: %s: %s\n"
 msgstr "nepodařilo se importovat klíč: %s: %s\n"
 
 #: lib/keystore.cc:201
-#, fuzzy, c-format
-#| msgid "can't create %s lock on %s (%s)\n"
+#, c-format
 msgid "Can't create writelock for keyring at %s: %s\n"
-msgstr "nelze vytvořit %s zámek na %s (%s)\n"
+msgstr "Nebylo možné vytvořit zámek zápisu pro klíčenku na %s: %s\n"
 
 #: lib/keystore.cc:203
 #, c-format
 msgid "Can't acquire writelock for keyring at %s\n"
-msgstr ""
+msgstr "Nebylo možné získat zámek pro zápis pro klíčenku na %s\n"
 
 #: lib/keystore.cc:298
-#, fuzzy, c-format
-#| msgid "%s: not an armored public key.\n"
+#, c-format
 msgid "%s is not a valid public key\n"
-msgstr "%s: není obrněný veřejný klíč.\n"
+msgstr "%s: není platný veřejný klíč\n"
 
 #: lib/package.cc:265
 #, c-format
@@ -1897,7 +1887,7 @@ msgstr "nespouštět žádné %%triggerpostun skripty"
 #: lib/poptI.cc:251
 #, c-format
 msgid "do not create %%sysusers users and groups"
-msgstr ""
+msgstr "nevytvářet %%sysusers uživatele a skupiny"
 
 #: lib/poptI.cc:255
 msgid ""
@@ -2664,10 +2654,8 @@ msgid "Archive file not in header"
 msgstr "Soubor z archivu není v hlavičce"
 
 #: lib/rpmfi.cc:2436
-#, fuzzy
-#| msgid "failed symlink"
 msgid "Unsafe symlink"
-msgstr "neúspěšný symbolický odkaz"
+msgstr "Nebezpečný symbolický odkaz"
 
 #: lib/rpmfi.cc:2441
 msgid "File from package already exists as a directory in system"
@@ -2764,10 +2752,9 @@ msgid "error reading from file %s\n"
 msgstr "chyba při vytváření dočasného souboru %s\n"
 
 #: lib/rpminstall.cc:640
-#, fuzzy, c-format
-#| msgid "no package matches %s: %s\n"
+#, c-format
 msgid "package format not supported: %s\n"
-msgstr "žádný balíček se neshoduje s %s: %s\n"
+msgstr "formát balíčku nepodporován: %s\n"
 
 #: lib/rpminstall.cc:744
 #, c-format
@@ -2971,10 +2958,9 @@ msgid "cannot open %s at %s:%d: %m\n"
 msgstr "nemohu otevřít %s na %s:%d: %m\n"
 
 #: lib/rpmrc.cc:493
-#, fuzzy, c-format
-#| msgid "bad option '%s' at %s:%d\n"
+#, c-format
 msgid "Ignoring %s at %s:%d\n"
-msgstr "špatný parametr'%s' na %s:%d\n"
+msgstr "Ignoruje se %s na %s:%d\n"
 
 #: lib/rpmrc.cc:502
 #, c-format
@@ -3053,12 +3039,16 @@ msgstr "Neznámý formát"
 #, c-format
 msgid "erasing gpg-pubkey packages is deprecated; use rpmkeys --delete %s\n"
 msgstr ""
+"mazání balíčku gpg-pubkey je zastaralé – namísto toho použijte rpmkeys --"
+"delete %s\n"
 
 #: lib/rpmte.cc:159
 msgid ""
 "public keys can not be installed as gpg-pubkey packages; use rpmkeys --"
 "import <keyfile> for that\n"
 msgstr ""
+"veřejné klíče není možné instalovat jako gpg-pubkey balíčky – použijte pro "
+"to rpmkeys --import <souborklice>\n"
 
 #: lib/rpmte.cc:770
 msgid "install"
@@ -3102,10 +3092,9 @@ msgid "unknown keyring type: %s, using rpmdb\n"
 msgstr "neznámý typ klíčenky: %s, používá se rpmdb\n"
 
 #: lib/rpmts.cc:422
-#, fuzzy, c-format
-#| msgid "Unknown icon type: %s\n"
+#, c-format
 msgid "unknown keyring type: %s\n"
-msgstr "Neznámý typ ikony: %s\n"
+msgstr "neznámý typ klíčenky: %s\n"
 
 #: lib/rpmts.cc:931
 #, c-format
@@ -3137,10 +3126,9 @@ msgid "%s tag %u: invalid size %u"
 msgstr "%s značka %u: neplatná velikost %u"
 
 #: lib/rpmvs.cc:225
-#, fuzzy, c-format
-#| msgid "%s: tag %u: invalid hex"
+#, c-format
 msgid "%s tag %u: invalid base64"
-msgstr "%s: značka %u: neplatný hex"
+msgstr "%s štítek %u: neplatné base64"
 
 #: lib/rpmvs.cc:244
 #, c-format
@@ -3164,12 +3152,12 @@ msgstr "výběr"
 #: lib/rpmvs.cc:329 lib/rpmvs.cc:339
 #, c-format
 msgid "%s OpenPGP %s"
-msgstr ""
+msgstr "%s OpenPGP %s"
 
 #: lib/rpmvs.cc:334
 #, c-format
 msgid "%s OpenPGP %s %s"
-msgstr ""
+msgstr "%s OpenPGP %s %s"
 
 #: lib/rpmvs.cc:337 lib/rpmvs.cc:341
 msgid "signature"
