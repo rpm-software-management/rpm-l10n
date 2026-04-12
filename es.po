@@ -17,16 +17,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
-"PO-Revision-Date: 2025-10-30 22:54+0000\n"
+"PO-Revision-Date: 2026-04-13 03:42+0000\n"
 "Last-Translator: \"Fco. Javier F. Serrador\" <fserrador@gmail.com>\n"
-"Language-Team: Spanish <https://translate.fedoraproject.org/projects/rpm/"
-"rpm-l10n/es/>\n"
+"Language-Team: Spanish <https://translate.fedoraproject.org/projects/rpm/rpm-"
+"l10n/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.13.3\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #: build/build.cc:42
 msgid "unable to parse _buildtime macro\n"
@@ -276,12 +276,12 @@ msgstr "enlace simbólico incorrecto"
 #: build/files.cc:1782 build/files.cc:1785
 #, c-format
 msgid "Duplicate build-id, stat %s: %m\n"
-msgstr "Duplica ID de compilación, estado %s: %m\n"
+msgstr "Duplica build-id, estado %s: %m\n"
 
 #: build/files.cc:1792
 #, c-format
 msgid "Duplicate build-ids %s and %s\n"
-msgstr "Duplica ID de compilación %s y %s\n"
+msgstr "Duplica build-id %s y %s\n"
 
 #: build/files.cc:1844
 msgid "_build_id_links macro not set, assuming 'compat'\n"
@@ -1256,7 +1256,7 @@ msgstr ""
 #: lib/backend/sqlite.cc:152
 #, c-format
 msgid "Unable to open sqlite database %s: %s\n"
-msgstr "No se puede abrir la base de datos SQLite %s: %s\n"
+msgstr "No se puede abrir la base de datos sqlite %s: %s\n"
 
 #: lib/depends.cc:59
 #, c-format
@@ -1300,7 +1300,7 @@ msgstr "(no es base64)"
 
 #: lib/formats.cc:306
 msgid "(invalid xml type)"
-msgstr "(tipo XML no válido)"
+msgstr "(tipo xml no válido)"
 
 #: lib/formats.cc:428
 msgid "(not an OpenPGP signature)"
