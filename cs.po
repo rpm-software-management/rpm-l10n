@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
-"PO-Revision-Date: 2026-04-05 18:58+0000\n"
+"PO-Revision-Date: 2026-04-14 07:58+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://translate.fedoraproject.org/projects/rpm/rpm-"
 "l10n/cs/>\n"
@@ -3166,7 +3166,7 @@ msgstr "podpis"
 #: lib/rpmvs.cc:360
 #, c-format
 msgid ", key fingerprint: %s"
-msgstr ""
+msgstr ", otisk klíče: %s"
 
 #: lib/rpmvs.cc:386
 msgid "header"
@@ -3397,10 +3397,9 @@ msgid "invalid argument: %s\n"
 msgstr "neplatný argument: %s\n"
 
 #: rpmio/macro.cc:1207
-#, fuzzy, c-format
-#| msgid "failed to create directory %s: %s\n"
+#, c-format
 msgid "failed to get available memory for %s\n"
-msgstr "selhání při vytváření adresáře %s: %s\n"
+msgstr "nepodařilo se zjistit, kolik paměti je k dispozici pro %s\n"
 
 #: rpmio/macro.cc:1458
 msgid "argument expected"
@@ -3423,12 +3422,14 @@ msgstr "Po %% následuje nezpracovatelné makro\n"
 #: rpmio/macro.cc:1682
 #, c-format
 msgid "unexpected argument to non-parametric macro %%%s\n"
-msgstr ""
+msgstr "neočekávaný argument pro neparametrické makro %%%s\n"
 
 #: rpmio/macro.cc:2044
 #, c-format
 msgid "macro value out of range for int: %<PRIu64> using %i instead.\n"
 msgstr ""
+"hodnota makra mimo rozsah pro celočíselné: %<PRIu64> namísto toho bude "
+"použito %i.\n"
 
 #: rpmio/macro.cc:2094
 #, c-format
@@ -3481,7 +3482,7 @@ msgstr "neplatná syntax v lua skriptletu: %s\n"
 
 #: rpmio/rpmlua.cc:229
 msgid "runaway fork() in Lua script\n"
-msgstr ""
+msgstr "(nekonečně) dlouho běžící funkce (tzv. runaway) fork() v Lua scriptu\n"
 
 #: rpmio/rpmlua.cc:255
 #, c-format
@@ -3523,15 +3524,14 @@ msgid "(none)"
 msgstr "(žádné)"
 
 #: rpmio/url.cc:125
-#, fuzzy, c-format
-#| msgid "Could not read from file %s: %s\n"
+#, c-format
 msgid "Could not find url helper: \"%s\"\n"
-msgstr "Nelze číst ze souboru %s: %s\n"
+msgstr "Nebylo možné nalézt pomocné pro url: „%s“\n"
 
 #: rpmio/url.cc:129
 #, c-format
 msgid "Executing url helper \"%s\" failed with status %i\n"
-msgstr ""
+msgstr "Spouštění pomocného pro url „%s“ se nezdařilo se stavem %i\n"
 
 #: sign/rpmgensig.cc:114
 #, c-format
@@ -3549,16 +3549,14 @@ msgid "%s: Fflush failed: %s\n"
 msgstr "%s: Fflush selhal: %s\n"
 
 #: sign/rpmgensig.cc:144
-#, fuzzy, c-format
-#| msgid "reading symlink %s failed: %s\n"
+#, c-format
 msgid "Expanding signing macro %s failed\n"
-msgstr "čtení symbolického odkazu %s selhalo: %s\n"
+msgstr "Dosazování do podepisovacího makra %s se nezdařilo\n"
 
 #: sign/rpmgensig.cc:150
-#, fuzzy, c-format
-#| msgid "Invalid %s token: %s\n"
+#, c-format
 msgid "Invalid sign command: %s\n"
-msgstr "Neplatný %s token: %s\n"
+msgstr "Neplatný podepisovací příkaz: %s\n"
 
 #: sign/rpmgensig.cc:173
 #, c-format
@@ -3621,7 +3619,7 @@ msgstr "Nepodporovaný algoritmus otisku %u pro OpenPGP\n"
 #: sign/rpmgensig.cc:390
 #, c-format
 msgid "Deprecated OpenPGP signature version %d\n"
-msgstr ""
+msgstr "Zastaralá verze OpenPGP podpisu %d\n"
 
 #: sign/rpmgensig.cc:463
 #, c-format
@@ -3674,13 +3672,12 @@ msgstr "nevytvářejí se v3 podpisy pro v6 balíček: %s\n"
 #: sign/rpmgensig.cc:724
 #, c-format
 msgid "File signatures not applicable to src.rpm: %s\n"
-msgstr ""
+msgstr "Podpisy souborů neuplatnitelné na src.rpm: %s\n"
 
 #: sign/rpmgensig.cc:749
-#, fuzzy, c-format
-#| msgid "Could not seek in file %s: %s\n"
+#, c-format
 msgid "Could not get a file size of %s\n"
-msgstr "Nelze hledat v souboru %s: %s\n"
+msgstr "Nebylo možné zjistit velikost %s\n"
 
 #: sign/rpmgensig.cc:769
 #, c-format
@@ -3688,10 +3685,9 @@ msgid "%s already contains an identical signature, skipping\n"
 msgstr "%s už obsahuje identický podpis – bude přeskočeno\n"
 
 #: sign/rpmgensig.cc:776
-#, fuzzy, c-format
-#| msgid "%s already contains identical signature, skipping\n"
+#, c-format
 msgid "%s already contains a legacy signature\n"
-msgstr "%s již obsahuje identický podpis, přeskakování\n"
+msgstr "%s už obsahuje zastaralý podpis\n"
 
 #: sign/rpmgensig.cc:816 sign/rpmgensig.cc:841
 #, c-format
@@ -3704,10 +3700,9 @@ msgid "rpmMkTemp failed: %s\n"
 msgstr "rpmMkTemp se nezdařilo: %s\n"
 
 #: sign/rpmgensig.cc:835
-#, fuzzy, c-format
-#| msgid "%s: failed to encode\n"
+#, c-format
 msgid "%s: failed to copy rpm lead: %s\n"
-msgstr "%s: kódování se nezdařilo\n"
+msgstr "%s: nepodařilo se zkopírovat úvod rpm: %s\n"
 
 #: sign/rpmgensig.cc:864
 #, c-format
@@ -3930,7 +3925,7 @@ msgstr "vytvořit nekomprimovaný archiv"
 
 #: tools/rpm2archive.cc:33
 msgid "archive format (pax|cpio)"
-msgstr ""
+msgstr "formát archivu (pax|cpio)"
 
 #: tools/rpm2archive.cc:151
 #, c-format
@@ -4177,10 +4172,8 @@ msgstr ""
 "sestavení podle %install (%prep, %build, poté install) ze <zdrojový balíček>"
 
 #: tools/rpmbuild.cc:250
-#, fuzzy
-#| msgid "override build root"
 msgid "override build root (DEPRECATED)"
-msgstr "build root předefinován"
+msgstr "přebít kořen sestavování (ZASTARALÉ)"
 
 #: tools/rpmbuild.cc:252
 msgid "remove build tree when done"
@@ -4315,10 +4308,8 @@ msgid "import an armored public key"
 msgstr "importuj obrněný veřejný klíč"
 
 #: tools/rpmkeys.cc:31
-#, fuzzy
-#| msgid "import an armored public key"
 msgid "export an public key"
-msgstr "importuj obrněný veřejný klíč"
+msgstr "exportovat veřejný klíč"
 
 #: tools/rpmkeys.cc:33
 msgid "don't import, but tell if it would work or not"
@@ -4334,11 +4325,13 @@ msgstr "seznam klíčů ze klíčenky klíčů RPM"
 
 #: tools/rpmkeys.cc:41
 msgid "rebuild the keyring - convert to current backend"
-msgstr ""
+msgstr "znovu sestavit klíčenku – převést do stávající podpůrné vrstvy"
 
 #: tools/rpmkeys.cc:43
 msgid "get keys from this backend when rebuilding current backend"
 msgstr ""
+"při opětovném sestavování stávající podpůrné vrstvy, získat klíče z určené "
+"podpůrné vrstvy"
 
 #: tools/rpmkeys.cc:49
 msgid "Keyring options:"
@@ -4361,10 +4354,8 @@ msgid "interactive session"
 msgstr "interaktivní sezení"
 
 #: tools/rpmsign.cc:36
-#, fuzzy
-#| msgid "sign package(s) files"
 msgid "sign package(s), adding a new signature"
-msgstr "podepsat soubory balíčku(ů)"
+msgstr "podepsat balíčky, přidáním nového podpisu"
 
 #: tools/rpmsign.cc:38
 msgid "resign package(s), deleting any previous signatures"
@@ -4379,22 +4370,16 @@ msgid "delete IMA and fsverity file signatures"
 msgstr "odstranit IMA a fsverity podpisů souborů"
 
 #: tools/rpmsign.cc:47
-#, fuzzy
-#| msgid "create rpm v3 header+payload signatures"
 msgid "request legacy rpm v3 header+payload signatures on v4 packages"
-msgstr "vytvořit hlavičku rpm v3 + podpisy užitečného zatížení"
+msgstr "vyžádat zastaralé rpm v3 hlavička+náklad podpisy na v4 balíčcích"
 
 #: tools/rpmsign.cc:50
-#, fuzzy
-#| msgid "create rpm v3 header+payload signatures"
 msgid "request legacy rpm v4 header signatures on v6 packages"
-msgstr "vytvořit hlavičku rpm v3 + podpisy užitečného zatížení"
+msgstr "vyžádat zastaralé rpm v4 podpisy hlavičky na v6 balíčcích"
 
 #: tools/rpmsign.cc:53
-#, fuzzy
-#| msgid "create rpm v3 header+payload signatures"
 msgid "request rpm v6 header signature on v4 packages"
-msgstr "vytvořit hlavičku rpm v3 + podpisy užitečného zatížení"
+msgstr "vyžádat rpm v6 podpis hlavičky na v4 balíčcích"
 
 #: tools/rpmsign.cc:57
 msgid "sign package(s) files"
@@ -4502,7 +4487,7 @@ msgstr "vytisknout pouze to, co by se udělalo"
 
 #: tools/rpmuncompress.cc:30
 msgid "extract into a specific path"
-msgstr ""
+msgstr "rozbalit do zadaného umístění"
 
 #, c-format
 #~ msgid "files over 4GB not supported by cpio, use rpm2archive instead\n"
