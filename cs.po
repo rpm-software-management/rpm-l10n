@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
-"PO-Revision-Date: 2026-04-14 07:58+0000\n"
+"PO-Revision-Date: 2026-04-16 07:09+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://translate.fedoraproject.org/projects/rpm/rpm-"
 "l10n/cs/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 5.16.2\n"
+"X-Generator: Weblate 5.17\n"
 
 #: build/build.cc:42
 msgid "unable to parse _buildtime macro\n"
@@ -30,7 +30,7 @@ msgstr "nelze parsovat SOURCE_DATE_EPOCH\n"
 #: build/build.cc:84
 #, c-format
 msgid "Could not canonicalize hostname: %s\n"
-msgstr "Nemohu získat jméno počítače: %s\n"
+msgstr "Nedaří se získat název stroje: %s\n"
 
 #: build/build.cc:202
 #, c-format
