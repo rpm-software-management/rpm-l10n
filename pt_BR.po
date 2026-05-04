@@ -12,8 +12,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
 "PO-Revision-Date: 2026-05-05 18:59+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/rpm/rpm-l10n/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -1962,11 +1961,11 @@ msgstr "reinstalar pacote(s)"
 
 #: lib/poptI.cc:284
 msgid "restore package(s)"
-msgstr ""
+msgstr "restaura pacote(s)"
 
 #: lib/poptQV.cc:79
 msgid "query/verify all packages"
-msgstr "consultar/verificar todos os pacotes"
+msgstr "consulta/verifica todos os pacotes"
 
 #: lib/poptQV.cc:81
 msgid "rpm checksig mode"
@@ -1974,19 +1973,20 @@ msgstr "modo checksig do rpm"
 
 #: lib/poptQV.cc:83
 msgid "query/verify package(s) owning installed file"
-msgstr "consultar/verificar pacote(s) que detém o arquivo"
+msgstr "consulta/verifica um ou mais pacotes que detêm o arquivo"
 
 #: lib/poptQV.cc:85
 msgid "query/verify package(s) owning path, installed or not"
 msgstr ""
+"consulta/verifica um ou mais pacotes que detêm o caminho, instalados ou não"
 
 #: lib/poptQV.cc:87
 msgid "query/verify package(s) in group"
-msgstr "consultar/verificar pacote(s) em um grupo"
+msgstr "consulta/verifica pacote(s) em um grupo"
 
 #: lib/poptQV.cc:89
 msgid "query/verify a package file"
-msgstr "consultar/verificar um arquivo de pacote"
+msgstr "consulta/verifica um arquivo de pacote"
 
 #: lib/poptQV.cc:92
 msgid "rpm query mode"
@@ -1994,15 +1994,15 @@ msgstr "modo de consulta do rpm"
 
 #: lib/poptQV.cc:94
 msgid "query/verify a header instance"
-msgstr "consultar/verificar uma instância do cabeçalho"
+msgstr "consulta/verifica uma instância do cabeçalho"
 
 #: lib/poptQV.cc:96
 msgid "query/verify package(s) from install transaction"
-msgstr "consultar/verificar pacote(s) da transação de instalação"
+msgstr "consulta/verifica pacote(s) da transação de instalação"
 
 #: lib/poptQV.cc:98
 msgid "query the package(s) triggered by the package"
-msgstr "consultar o(s) pacote(s) disparado pelo pacote"
+msgstr "consulta o(s) pacote(s) disparado(s) pelo pacote"
 
 #: lib/poptQV.cc:100
 msgid "rpm verify mode"
@@ -2010,98 +2010,98 @@ msgstr "modo de verificação do rpm"
 
 #: lib/poptQV.cc:102
 msgid "query/verify the package(s) which conflict with a dependency"
-msgstr "consultar/verificar pacote(s) que obsoleta uma dependência"
+msgstr "consulta/verifica o(s) pacote(s) que conflita(m) com uma dependência"
 
 #: lib/poptQV.cc:104
 msgid "query/verify the package(s) which require a dependency"
-msgstr "consultar/verificar pacotes que precisam de uma dependência"
+msgstr "consulta/verifica o(s) pacote(s) que precisa(m) de uma dependência"
 
 #: lib/poptQV.cc:106
 msgid "query/verify the package(s) which obsolete a dependency"
-msgstr "consultar/verificar o(s) pacote(s) que obsoleta uma dependência"
+msgstr "consulta/verifica o(s) pacote(s) que tornam obsoleta uma dependência"
 
 #: lib/poptQV.cc:108
 msgid "query/verify the package(s) which provide a dependency"
-msgstr "consultar/verificar pacote(s) que fornecem uma dependência"
+msgstr "consulta/verifica pacote(s) que fornece(m) uma dependência"
 
 #: lib/poptQV.cc:110
 msgid "query/verify the package(s) which recommends a dependency"
-msgstr "consultar/verificar o(s) pacote(s) que recomenda uma dependência"
+msgstr "consulta/verifica o(s) pacote(s) que recomenda(m) uma dependência"
 
 #: lib/poptQV.cc:112
 msgid "query/verify the package(s) which suggests a dependency"
-msgstr "consultar/verificar o(s) pacote(s) que sugere uma dependência"
+msgstr "consulta/verifica o(s) pacote(s) que sugere(m) uma dependência"
 
 #: lib/poptQV.cc:114
 msgid "query/verify the package(s) which supplements a dependency"
-msgstr "consultar/verificar o(s) pacote(s) que complementa uma dependência"
+msgstr "consulta/verifica o(s) pacote(s) que complementa(m) uma dependência"
 
 #: lib/poptQV.cc:116
 msgid "query/verify the package(s) which enhances a dependency"
-msgstr ""
+msgstr "consulta/verifica o(s) pacote(s) que melhora(m) uma dependência"
 
 #: lib/poptQV.cc:119
 msgid "do not glob arguments"
-msgstr "não fazer glob com os argumentos"
+msgstr "não faz glob com os argumentos"
 
 #: lib/poptQV.cc:121
 msgid "do not process non-package files as manifests"
-msgstr "não processar arquivos que não são de pacotes como manifestos"
+msgstr "não processa arquivos que não são de pacotes como manifestos"
 
 #: lib/poptQV.cc:190
 msgid "only include configuration files"
-msgstr ""
+msgstr "só inclui arquivos de configuração"
 
 #: lib/poptQV.cc:193
 msgid "only include documentation files"
-msgstr ""
+msgstr "só inclui arquivos de documentação"
 
 #: lib/poptQV.cc:196
 msgid "only include license files"
-msgstr ""
+msgstr "só inclui arquivos de licenças"
 
 #: lib/poptQV.cc:199
 msgid "only include artifact files"
-msgstr ""
+msgstr "só inclui arquivos de artefato"
 
 #: lib/poptQV.cc:202
 #, c-format
 msgid "exclude %%ghost files"
-msgstr ""
+msgstr "exclui arquivos %%ghost"
 
 #: lib/poptQV.cc:205
 #, c-format
 msgid "exclude %%config files"
-msgstr ""
+msgstr "exclui arquivos %%config"
 
 #: lib/poptQV.cc:208
 #, c-format
 msgid "exclude %%artifact files"
-msgstr ""
+msgstr "exclui arquivos %%artifact"
 
 #: lib/poptQV.cc:220
 msgid "dump basic file information"
-msgstr "descarregar informações básicas do arquivo"
+msgstr "descarrega informações básicas de arquivo"
 
 #: lib/poptQV.cc:224
 msgid "list files in package"
-msgstr "listar arquivos do pacote"
+msgstr "lista arquivos do pacote"
 
 #: lib/poptQV.cc:228 tools/rpmspec.cc:44
 msgid "use the following query format"
-msgstr "utilizar o seguinte formato de consulta"
+msgstr "utiliza o seguinte formato de consulta"
 
 #: lib/poptQV.cc:230
 msgid "display the states of the listed files"
-msgstr "exibir o estado dos arquivos listados"
+msgstr "exibe os estados dos arquivos listados"
 
 #: lib/poptQV.cc:248
 msgid "don't verify size of files"
-msgstr "não verificar o tamanho dos arquivos"
+msgstr "não verifica o tamanho dos arquivos"
 
 #: lib/poptQV.cc:251
 msgid "don't verify symlink path of files"
-msgstr "não verificar o caminho da ligação simbólica dos arquivos"
+msgstr "não verifica o caminho da ligação simbólica dos arquivos"
 
 #: lib/poptQV.cc:254
 msgid "don't verify owner of files"
@@ -2255,7 +2255,7 @@ msgstr ""
 #: lib/query.cc:386
 #, c-format
 msgid "no package supplements %s\n"
-msgstr ""
+msgstr "nenhum pacote complementa %s\n"
 
 #: lib/query.cc:393
 #, c-format
