@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: RPM\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
-"PO-Revision-Date: 2026-06-27 00:17+0000\n"
+"PO-Revision-Date: 2026-06-28 23:17+0000\n"
 "Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
 "Language-Team: Portuguese <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/pt/>\n"
@@ -25,7 +25,7 @@ msgstr "incapaz de analisar macro _buildtime\n"
 
 #: build/build.cc:50
 msgid "unable to parse SOURCE_DATE_EPOCH\n"
-msgstr ""
+msgstr "incapaz de analisar SOURCE_DATE_EPOCH\n"
 
 #: build/build.cc:84
 #, c-format
@@ -40,7 +40,7 @@ msgstr "Incapaz de abrir ficheiro temporário: %s\n"
 #: build/build.cc:207
 #, c-format
 msgid "Unable to open stream: %s\n"
-msgstr ""
+msgstr "Incapaz de abrir fluxo: %s\n"
 
 #: build/build.cc:246
 #, c-format
@@ -54,7 +54,7 @@ msgstr "Código de saída inválido do %s (%s)\n"
 
 #: build/build.cc:317
 msgid "Failed build dependencies:\n"
-msgstr ""
+msgstr "Falhou as dependências de compilação:\n"
 
 #: build/build.cc:346
 #, c-format
@@ -64,7 +64,7 @@ msgstr "falhou ao criar diretório de compilação do pacote %s: %s\n"
 #: build/build.cc:387
 #, c-format
 msgid "setting %s=%s\n"
-msgstr ""
+msgstr "a definir %s=%s\n"
 
 #: build/build.cc:391
 #, c-format
@@ -72,18 +72,24 @@ msgid ""
 "%%source_date_epoch_from_changelog is set, but %%changelog has no entries to "
 "take a date from\n"
 msgstr ""
+"%%source_date_epoch_from_changelog está definido, mas %%changelog não tem "
+"entradas de onde obter a data\n"
 
 #: build/build.cc:563
 msgid ""
 "\n"
 "RPM build warnings:\n"
 msgstr ""
+"\n"
+"Avisos de compilação do RPM:\n"
 
 #: build/build.cc:569
 msgid ""
 "\n"
 "RPM build errors:\n"
 msgstr ""
+"\n"
+"Erros de compilação do RPM:\n"
 
 #: build/files.cc:346 build/files.cc:527 build/files.cc:751
 #, c-format
@@ -104,7 +110,7 @@ msgstr "Testemunho %s inválido: %s\n"
 #: build/files.cc:493
 #, c-format
 msgid "Missing %s in %s(%s)\n"
-msgstr ""
+msgstr "Falta %s em %s(%s)\n"
 
 #: build/files.cc:547
 #, c-format
@@ -119,42 +125,41 @@ msgstr "Sintaxe inválida: %s(%s)\n"
 #: build/files.cc:596
 #, c-format
 msgid "Bad mode spec: %s(%s)\n"
-msgstr "Spec de modo inválido: %s(%s)\n"
+msgstr "Especificação de modo inválido: %s(%s)\n"
 
 #: build/files.cc:608
 #, c-format
 msgid "Bad dirmode spec: %s(%s)\n"
-msgstr "Spec de dirmode inválido: %s(%s)\n"
+msgstr "Especificação de dirmode inválido: %s(%s)\n"
 
 #: build/files.cc:713
 #, c-format
 msgid "Unusual locale length: \"%s\" in %%lang(%s)\n"
-msgstr ""
+msgstr "Comprimento de locale anormal: \"%s\" em %%lang(%s)\n"
 
 #: build/files.cc:720
 #, c-format
 msgid "Duplicate locale %s in %%lang(%s)\n"
-msgstr ""
+msgstr "locale duplicado %s em %%lang(%s)\n"
 
 #: build/files.cc:837
 #, c-format
 msgid "Invalid capability: %s\n"
-msgstr ""
+msgstr "Capacidade inválida: %s\n"
 
 #: build/files.cc:847
 msgid "File capability support not built in\n"
-msgstr ""
+msgstr "Suporte de capacidade de ficheiro não compilado em\n"
 
 #: build/files.cc:896
-#, fuzzy, c-format
-#| msgid "Missing '(' in %s %s\n"
+#, c-format
 msgid "Missing quote: %s\n"
-msgstr "Falta um '(' em %s %s\n"
+msgstr "Citação em falta: %s\n"
 
 #: build/files.cc:902
 #, c-format
 msgid "Trailing backslash: %s\n"
-msgstr ""
+msgstr "Barra invertida final: %s\n"
 
 #: build/files.cc:914
 #, c-format
@@ -167,22 +172,24 @@ msgid ""
 "%%clamp_mtime_to_source_date_epoch is deprecated, please use "
 "%%build_mtime_policy\n"
 msgstr ""
+"%%clamp_mtime_to_source_date_epoch está descontinuado, por favor use "
+"%%build_mtime_policy\n"
 
 #: build/files.cc:1050
 #, c-format
 msgid "unable to parse %s=%s\n"
-msgstr ""
+msgstr "incapaz de analisar %s=%s\n"
 
 #: build/files.cc:1057
-#, fuzzy, c-format
-#| msgid "Unknown icon type: %s\n"
+#, c-format
 msgid "Unknown mtime policy '%s'\n"
-msgstr "Tipo de ícone desconhecido: %s\n"
+msgstr "Política mtime desconhecida: '%s'\n"
 
 #: build/files.cc:1073
 #, c-format
 msgid "Unknown file digest algorithm %u, falling back to %u\n"
 msgstr ""
+"Algoritmo desconhecido de digestão de ficheiro %u, a regressar para %u\n"
 
 #: build/files.cc:1125
 #, c-format
@@ -192,32 +199,32 @@ msgstr "Ficheiro listado duas vezes: %s\n"
 #: build/files.cc:1245
 #, c-format
 msgid "reading symlink %s failed: %s\n"
-msgstr ""
+msgstr "leitura de link simbólico %s falhou: %s\n"
 
 #: build/files.cc:1251
 #, c-format
 msgid "absolute symlink: %s -> %s\n"
-msgstr ""
+msgstr "link simbólico absoluto: %s -> %s\n"
 
 #: build/files.cc:1257
 #, c-format
 msgid "Symlink points to BuildRoot: %s -> %s\n"
-msgstr "A 'symlink' aponta para a BuildRoot: %s -> %s\n"
+msgstr "O link simbólico aponta para a BuildRoot: %s -> %s\n"
 
 #: build/files.cc:1381
 #, c-format
 msgid "Illegal character (0x%x) in filename: %s\n"
-msgstr ""
+msgstr "Caractere ilegal (0x%x) em nome de ficheiro: %s\n"
 
 #: build/files.cc:1416
 #, c-format
 msgid "Path is outside buildroot: %s\n"
-msgstr ""
+msgstr "Caminho fica fora da buildroot: %s\n"
 
 #: build/files.cc:1460
 #, c-format
 msgid "Directory not found: %s\n"
-msgstr ""
+msgstr "Diretório não encontrado: %s\n"
 
 #: build/files.cc:1461 lib/rpminstall.cc:466
 #, c-format
@@ -227,83 +234,83 @@ msgstr "Ficheiro não encontrado: %s\n"
 #: build/files.cc:1482
 #, c-format
 msgid "Not a directory: %s\n"
-msgstr ""
+msgstr "Não é um diretório: %s\n"
 
 #: build/files.cc:1621
-#, fuzzy, c-format
+#, c-format
 msgid "Can't read content of file: %s\n"
-msgstr "%s: a leitura do manifesto falhou: %s\n"
+msgstr "Incapaz de ler conteúdo de ficheiro: %s\n"
 
 #: build/files.cc:1661
 #, c-format
 msgid "%s: can't load unknown tag (%d).\n"
-msgstr ""
+msgstr "%s: incapaz de carregar etiqueta desconhecida (%d).\n"
 
 #: build/files.cc:1667
 #, c-format
 msgid "%s: public key read failed.\n"
-msgstr ""
+msgstr "%s: leitura de chave pública falhou.\n"
 
 #: build/files.cc:1671
 #, c-format
 msgid "%s: not an armored public key.\n"
-msgstr ""
+msgstr "%s: não é uma chave pública blindada.\n"
 
 #: build/files.cc:1680
 #, c-format
 msgid "%s: failed to encode\n"
-msgstr ""
+msgstr "%s: falhou ao codificar\n"
 
 #: build/files.cc:1726
 msgid "failed symlink"
-msgstr ""
+msgstr "link simbólico falhou"
 
 #: build/files.cc:1782 build/files.cc:1785
 #, c-format
 msgid "Duplicate build-id, stat %s: %m\n"
-msgstr ""
+msgstr "build-id duplicado , estado %s: %m\n"
 
 #: build/files.cc:1792
 #, c-format
 msgid "Duplicate build-ids %s and %s\n"
-msgstr ""
+msgstr "build-ids duplicados %s e %s\n"
 
 #: build/files.cc:1844
 msgid "_build_id_links macro not set, assuming 'compat'\n"
-msgstr ""
+msgstr "macro _build_id_links não definida, a assumir 'compat'\n"
 
 #: build/files.cc:1857
 #, c-format
 msgid "_build_id_links macro set to unknown value '%s'\n"
-msgstr ""
+msgstr "macro _build_id_links definida para valor desconhecido '%s'\n"
 
 #: build/files.cc:1932
 #, c-format
 msgid "error reading build-id in %s: %s\n"
-msgstr ""
+msgstr "erro ao ler build-id em %s: %s\n"
 
 #: build/files.cc:1936
 #, c-format
 msgid "Missing build-id in %s\n"
-msgstr ""
+msgstr "build-id em falta em %s\n"
 
 #: build/files.cc:1941
 #, c-format
 msgid "build-id found in %s too small\n"
-msgstr ""
+msgstr "build-id encontrado em %s demasiado pequeno\n"
 
 #: build/files.cc:1942
 #, c-format
 msgid "build-id found in %s too large\n"
-msgstr ""
+msgstr "build-id encontrado em %s demasiado grande\n"
 
 #: build/files.cc:1957 rpmio/rpmfileutil.cc:419
 msgid "failed to create directory"
-msgstr ""
+msgstr "falhou ao criar diretório"
 
 #: build/files.cc:1975
 msgid "Mixing main ELF and debug files in package\n"
-msgstr ""
+msgstr "A misturar ELF principal e ficheiros de depuração no pacote\n"
 
 #: build/files.cc:2173
 #, c-format
@@ -311,38 +318,38 @@ msgid "File needs leading \"/\": %s\n"
 msgstr "O ficheiro precisa de começar por \"/\": %s\n"
 
 #: build/files.cc:2231
-#, fuzzy, c-format
+#, c-format
 msgid "Could not open %s file %s: %m\n"
-msgstr "Não consigo aceder ao %s: %s\n"
+msgstr "Incapaz de abrir %s ficheiro %s: %m\n"
 
 #: build/files.cc:2256
-#, fuzzy, c-format
+#, c-format
 msgid "Empty %s file %s\n"
-msgstr "o acesso ao %s falhou: %s\n"
+msgstr "Vazio %s ficheiro %s\n"
 
 #: build/files.cc:2301
 #, c-format
 msgid "illegal _docdir_fmt %s: %s\n"
-msgstr ""
+msgstr "_docdir_fmt ilegal %s: %s\n"
 
 #: build/files.cc:2489
 #, c-format
 msgid "Special file in generated file list: %s\n"
-msgstr ""
+msgstr "Ficheiro especial em lista de ficheiros gerados: %s\n"
 
 #: build/files.cc:2513
 #, c-format
 msgid "Can't mix special %s with other forms: %s\n"
-msgstr ""
+msgstr "Não pode misturar %s especial com outras formas: %s\n"
 
 #: build/files.cc:2529
 #, c-format
 msgid "More than one file on a line: %s\n"
-msgstr ""
+msgstr "Mais do que um ficheiro numa linha: %s\n"
 
 #: build/files.cc:2597
 msgid "Generating build-id links failed\n"
-msgstr ""
+msgstr "Geração de links de build-id falhou\n"
 
 #: build/files.cc:2702
 #, c-format
@@ -352,7 +359,7 @@ msgstr "Ficheiro inválido: %s: %s\n"
 #: build/files.cc:2759
 #, c-format
 msgid "Checking for unpackaged file(s): %s\n"
-msgstr ""
+msgstr "A verificar por ficheiro(s) desempacotados: %s\n"
 
 #: build/files.cc:2772
 #, c-format
@@ -360,122 +367,124 @@ msgid ""
 "Installed (but unpackaged) file(s) found:\n"
 "%s"
 msgstr ""
+"Encontrados ficheiro(s) instalados (mas desempacotados):\n"
+"%s"
 
 #: build/files.cc:2829
-#, fuzzy, c-format
+#, c-format
 msgid "package %s already exists\n"
-msgstr "o pacote %s já está instalado"
+msgstr "o pacote %s já existe\n"
 
 #: build/files.cc:2892
 #, c-format
 msgid "%s was mapped to multiple filenames"
-msgstr ""
+msgstr "%s foi mapeado para múltiplos nomes de ficheiros"
 
 #: build/files.cc:3143
 #, c-format
 msgid "Processing files: %s\n"
-msgstr ""
+msgstr "A processar ficheiros: %s\n"
 
 #: build/files.cc:3165
 #, c-format
 msgid "Binaries arch (%d) not matching the package arch (%d).\n"
 msgstr ""
+"Arquitetura de binários (%d) não corresponde à arquitetura do pacote (%d).\n"
 
 #: build/files.cc:3171
 msgid "Arch dependent binaries in noarch package\n"
-msgstr ""
+msgstr "Binários dependentes de arquitectura em pacote sem arquitectura\n"
 
 #: build/pack.cc:102
 #, c-format
 msgid "create archive failed on file %s: %s\n"
-msgstr ""
+msgstr "criação de arquivo falhou no ficheiro %s: %s\n"
 
 #: build/pack.cc:105
 #, c-format
 msgid "create archive failed: %s\n"
-msgstr ""
+msgstr "criação de arquivo falhou: %s\n"
 
 #: build/pack.cc:331
 #, c-format
 msgid "Unknown payload compression: %s\n"
-msgstr ""
+msgstr "Compressão de conteúdo desconhecida: %s\n"
 
 #: build/pack.cc:385 sign/rpmgensig.cc:207 sign/rpmgensig.cc:808
 #: sign/rpmgensig.cc:847
 #, c-format
 msgid "Could not seek in file %s: %s\n"
-msgstr ""
+msgstr "Incapaz de procurar no ficheiro %s: %s\n"
 
 #: build/pack.cc:411
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to read %jd bytes in file %s: %s\n"
-msgstr "Não consegui ler o ficheiro spec do %s\n"
+msgstr "Falhou ao ler %jd bytes no ficheiro %s: %s\n"
 
 #: build/pack.cc:425
 msgid "Unable to create immutable header region\n"
-msgstr ""
+msgstr "Incapaz de criar região de cabeçalho imutável\n"
 
 #: build/pack.cc:430
 #, c-format
 msgid "Unable to write header to %s: %s\n"
-msgstr ""
+msgstr "Incapaz de escrever cabeçalho para %s: %s\n"
 
 #: build/pack.cc:525
 #, c-format
 msgid "Could not open %s: %s\n"
-msgstr "Não consigo aceder ao %s: %s\n"
+msgstr "Incapaz de abrir %s: %s\n"
 
 #: build/pack.cc:532
 #, c-format
 msgid "Unable to write package: %s\n"
-msgstr "Não consegui gravar o pacote: %s\n"
+msgstr "Incapaz de escrever pacote: %s\n"
 
 #: build/pack.cc:663
 #, c-format
 msgid "Wrote: %s\n"
-msgstr "Gravei: %s\n"
+msgstr "Escrito: %s\n"
 
 #: build/pack.cc:682
 #, c-format
 msgid "Executing \"%s\":\n"
-msgstr ""
+msgstr "A executar \"%s\":\n"
 
 #: build/pack.cc:685
 #, c-format
 msgid "Execution of \"%s\" failed.\n"
-msgstr ""
+msgstr "Execução de \"%s\" falhou.\n"
 
 #: build/pack.cc:689
 #, c-format
 msgid "Package check \"%s\" failed.\n"
-msgstr ""
+msgstr "Verificação de pacote \"%s\" falhou.\n"
 
 #: build/pack.cc:751
 #, c-format
 msgid "cannot create %s: %s\n"
-msgstr "não consigo criar o %s: %s\n"
+msgstr "incapaz de criar o %s: %s\n"
 
 #: build/pack.cc:770
 #, c-format
 msgid "Could not generate output filename for package %s: %s\n"
-msgstr "Não consigo gerar o ficheiro de saída para o pacote %s: %s\n"
+msgstr "Incapaz de gerar nome de ficheiro de saída para o pacote %s: %s\n"
 
 #: build/pack.cc:856
 #, c-format
 msgid "Finished binary package job, result %d, filename %s\n"
 msgstr ""
+"Trabalho de pacote binário terminado, resultado %d, nome de ficheiro %s\n"
 
 #: build/parseSimpleScript.cc:30
-#, fuzzy, c-format
-#| msgid "line %d: Error parsing %s: %s\n"
+#, c-format
 msgid "line %d: Error parsing script: %s: %s\n"
-msgstr "linha %d: Erro ao analisar o %s: %s\n"
+msgstr "linha %d: Erro ao analisar script %s: %s\n"
 
 #: build/parseSimpleScript.cc:38
-#, fuzzy, c-format
-#| msgid "line %d: Bad option %s: %s\n"
+#, c-format
 msgid "line %d: Bad %s option %s: %s\n"
-msgstr "linha %d: Opção inválida %s: %s\n"
+msgstr "linha %d: Opção %s inválida %s: %s\n"
 
 #: build/parseSimpleScript.cc:46 build/parsePreamble.cc:779
 #, c-format
@@ -483,20 +492,19 @@ msgid "line %d: second %s\n"
 msgstr "linha %d: segundo %s\n"
 
 #: build/parseSimpleScript.cc:52
-#, fuzzy, c-format
-#| msgid "line %d: Bad option %s: %s\n"
+#, c-format
 msgid "line %d: append and prepend specified: %s\n"
-msgstr "linha %d: Opção inválida %s: %s\n"
+msgstr "linha %d: especificado acrescentar no final e no início: %s\n"
 
 #: build/parseChangelog.cc:184
 #, c-format
 msgid "bogus date in %%changelog: %s\n"
-msgstr ""
+msgstr "dados falsos em %%changelog: %s\n"
 
 #: build/parseChangelog.cc:225
 #, c-format
 msgid "%%changelog entries must start with *\n"
-msgstr "As entradas de %%changelog têm de começar por *\n"
+msgstr "as entradas de %%changelog têm de começar com *\n"
 
 #: build/parseChangelog.cc:233
 #, c-format
@@ -511,7 +519,7 @@ msgstr "data inválida no %%changelog: %s\n"
 #: build/parseChangelog.cc:255
 #, c-format
 msgid "%%changelog not in descending chronological order\n"
-msgstr "O %%changelog não está na ordem cronológica descendente\n"
+msgstr "O %%changelog não está em ordem cronológica descendente\n"
 
 #: build/parseChangelog.cc:267 build/parseChangelog.cc:278
 #, c-format
@@ -521,17 +529,17 @@ msgstr "falta o nome no %%changelog\n"
 #: build/parseChangelog.cc:285
 #, c-format
 msgid "no description in %%changelog\n"
-msgstr "falta a descrição no %%changelog\n"
+msgstr "nenhuma descrição no %%changelog\n"
 
 #: build/parseChangelog.cc:322
 #, c-format
 msgid "line %d: second %%changelog\n"
-msgstr ""
+msgstr "linha %d: segundo %%changelog\n"
 
 #: build/parseDescription.cc:33
 #, c-format
 msgid "line %d: Error parsing %%description: %s\n"
-msgstr "linha %d: Erro ao analisar a %%description: %s\n"
+msgstr "linha %d: Erro ao analisar %%description: %s\n"
 
 #: build/parseDescription.cc:46 build/parseFiles.cc:46
 #: build/parsePolicies.cc:45 build/parseScript.cc:318
@@ -548,22 +556,22 @@ msgstr "linha %d: Demasiados nomes: %s\n"
 #: build/parseFiles.cc:33
 #, c-format
 msgid "line %d: Error parsing %%files: %s\n"
-msgstr "linha %d: Erro ao analisar o %%files: %s\n"
+msgstr "linha %d: Erro ao analisar %%files: %s\n"
 
 #: build/parseFiles.cc:73
 #, c-format
 msgid "line %d: multiple %%files for package '%s'\n"
-msgstr ""
+msgstr "linha %d: múltiplos %%files para pacote '%s'\n"
 
 #: build/parsePolicies.cc:32
 #, c-format
 msgid "line %d: Error parsing %%policies: %s\n"
-msgstr ""
+msgstr "linha %d: Erro ao analisar %%policies: %s\n"
 
 #: build/parsePreamble.cc:81
 #, c-format
 msgid "Error parsing tag field: %s\n"
-msgstr ""
+msgstr "Erro ao analisar campo de etiqueta: %s\n"
 
 #: build/parsePreamble.cc:194
 #, c-format
@@ -573,17 +581,17 @@ msgstr "linha %d: Número inválido: %s\n"
 #: build/parsePreamble.cc:200
 #, c-format
 msgid "line %d: Bad no%s number: %u\n"
-msgstr ""
+msgstr "linha %d: Número no%s inválido: %u\n"
 
 #: build/parsePreamble.cc:228
 #, c-format
 msgid "Downloading %s to %s\n"
-msgstr ""
+msgstr "A descarregar %s para %s\n"
 
 #: build/parsePreamble.cc:230
 #, c-format
 msgid "Couldn't download %s\n"
-msgstr ""
+msgstr "Incapaz de descarregar %s\n"
 
 #: build/parsePreamble.cc:302
 #, c-format
@@ -593,7 +601,7 @@ msgstr "linha %d: Número %s inválido: %s\n"
 #: build/parsePreamble.cc:320
 #, c-format
 msgid "%s %d defined multiple times\n"
-msgstr ""
+msgstr "%s %d definido múltiplas vezes\n"
 
 #: build/parsePreamble.cc:472
 #, c-format
@@ -621,10 +629,9 @@ msgid "%s field must be present in package: %s\n"
 msgstr "O campo %s tem de estar presente no pacote: %s\n"
 
 #: build/parsePreamble.cc:536
-#, fuzzy, c-format
-#| msgid "%s field must be present in package: %s\n"
+#, c-format
 msgid "%s field must be present before build in package: %s\n"
-msgstr "O campo %s tem de estar presente no pacote: %s\n"
+msgstr "O campo %s tem de estar presente antes da compilação no pacote: %s\n"
 
 #: build/parsePreamble.cc:559
 #, c-format
@@ -634,12 +641,12 @@ msgstr "Entradas %s duplicadas no pacote: %s\n"
 #: build/parsePreamble.cc:632
 #, c-format
 msgid "Unable to open icon %s: %s\n"
-msgstr "Não consegui abrir o ícone %s: %s\n"
+msgstr "Incapaz de abrir o ícone %s: %s\n"
 
 #: build/parsePreamble.cc:648
 #, c-format
 msgid "Unable to read icon %s: %s\n"
-msgstr "Não consegui ler o ícone %s: %s\n"
+msgstr "Incapaz de ler ícone %s: %s\n"
 
 #: build/parsePreamble.cc:658
 #, c-format
@@ -649,55 +656,55 @@ msgstr "Tipo de ícone desconhecido: %s\n"
 #: build/parsePreamble.cc:672
 #, c-format
 msgid "line %d: Tag takes single token only: %s\n"
-msgstr "linha %d: Opção só recebe um parâmetro: %s\n"
+msgstr "linha %d: Etiqueta recebe apenas um testemunho: %s\n"
 
 #: build/parsePreamble.cc:680
 #, c-format
 msgid "line %d: %s in: %s\n"
-msgstr ""
+msgstr "linha %d: %s em: %s\n"
 
 #: build/parsePreamble.cc:682
 #, c-format
 msgid "%s in: %s\n"
-msgstr ""
+msgstr "%s em: %s\n"
 
 #: build/parsePreamble.cc:703 build/parsePreamble.cc:710
 #, c-format
 msgid "Illegal char '%c' (0x%x)"
-msgstr ""
+msgstr "Caractere ilegal '%c' (0x%x)"
 
 #: build/parsePreamble.cc:717
 msgid "Possible unexpanded macro"
-msgstr ""
+msgstr "Macro possivelmente não expandida"
 
 #: build/parsePreamble.cc:723
 msgid "Illegal sequence \"..\""
-msgstr ""
+msgstr "Sequência ilegal \"..\""
 
 #: build/parsePreamble.cc:826
 #, c-format
 msgid "line %d: Malformed tag: %s\n"
-msgstr "Linha %d: Opção inválida: %s\n"
+msgstr "Linha %d: Etiqueta mal formada: %s\n"
 
 #: build/parsePreamble.cc:834
 #, c-format
 msgid "line %d: Empty tag: %s\n"
-msgstr "linha %d: Opção em branco: %s\n"
+msgstr "linha %d: Etiqueta vazia: %s\n"
 
 #: build/parsePreamble.cc:913
 #, c-format
 msgid "line %d: Prefixes must not end with \"/\": %s\n"
-msgstr "linha %d: Os prefixos não podem acabar em \"/\": %s\n"
+msgstr "linha %d: Prefixos não podem acabar com \"/\": %s\n"
 
 #: build/parsePreamble.cc:925
 #, c-format
 msgid "line %d: Docdir must begin with '/': %s\n"
-msgstr "linha %d: A docdir tem de começar por '/': %s\n"
+msgstr "linha %d: Diretório de documentos tem de começar com '/': %s\n"
 
 #: build/parsePreamble.cc:937
 #, c-format
 msgid "line %d: Epoch field must be an unsigned number: %s\n"
-msgstr ""
+msgstr "linha %d: Campo Epoch tem de ser um número não atribuído: %s\n"
 
 #: build/parsePreamble.cc:978
 #, c-format
@@ -707,73 +714,71 @@ msgstr "linha %d: Qualificadores %s: inválidos: %s\n"
 #: build/parsePreamble.cc:1008
 #, c-format
 msgid "line %d: Bad BuildArchitecture format: %s\n"
-msgstr "linha %d: Formato da BuildArchitecture inválido: %s\n"
+msgstr "linha %d: Formato de BuildArchitecture inválido: %s\n"
 
 #: build/parsePreamble.cc:1015
 #, c-format
 msgid "line %d: Duplicate BuildArch entry: %s\n"
-msgstr ""
+msgstr "linha %d: Entrada BuildArch duplicada: %s\n"
 
 #: build/parsePreamble.cc:1023
 #, c-format
 msgid "line %d: Only noarch is allowed after the build: %s\n"
-msgstr ""
+msgstr "linha %d: Apenas noarch é permitido após compilação: %s\n"
 
 #: build/parsePreamble.cc:1033
 #, c-format
 msgid "line %d: Only noarch subpackages are supported: %s\n"
-msgstr ""
+msgstr "linha %d: Apenas sub-pacotes noarch são suportados: %s\n"
 
 #: build/parsePreamble.cc:1049
 #, c-format
 msgid "Internal error: Bogus tag %d\n"
-msgstr "Erro interno: Opção esquisita %d\n"
+msgstr "Erro interno: Etiqueta falsa %d\n"
 
 #: build/parsePreamble.cc:1153
 #, c-format
 msgid "line %d: %s is deprecated: %s\n"
-msgstr ""
+msgstr "linha %d: %s está descontinuada: %s\n"
 
 #: build/parsePreamble.cc:1213
 #, c-format
 msgid "Bad package specification: %s\n"
-msgstr "Descrição do pacote inválida: %s\n"
+msgstr "Especificação de pacote inválida: %s\n"
 
 #: build/parsePreamble.cc:1260
 msgid "Binary rpm package found. Expected spec file!\n"
-msgstr ""
+msgstr "Pacote rpm binário encontrado. Esperado ficheiro de especificações!\n"
 
 #: build/parsePreamble.cc:1263
 #, c-format
 msgid "line %d: Unknown tag: %s\n"
-msgstr "linha %d: Opção desconhecida: %s\n"
+msgstr "linha %d: Etiqueta desconhecida: %s\n"
 
 #: build/parsePreamble.cc:1268
-#, fuzzy, c-format
-#| msgid "line %d: Tag takes single token only: %s\n"
+#, c-format
 msgid "line %d: Tag not allowed after build is done: %s\n"
-msgstr "linha %d: Opção só recebe um parâmetro: %s\n"
+msgstr "linha %d: Etiqueta não permitida após compilação estar feita: %s\n"
 
 #: build/parsePreamble.cc:1330
-#, fuzzy, c-format
-#| msgid "Invalid %s token: %s\n"
+#, c-format
 msgid "Invalid buildroot: '%s'\n"
-msgstr "Elemento %s inválido: %s\n"
+msgstr "buildroot inválido: '%s'\n"
 
 #: build/parsePrep.cc:72
 #, c-format
 msgid "No patch number %u\n"
-msgstr ""
+msgstr "Nenhum número de patch %u\n"
 
 #: build/parsePrep.cc:134
 #, c-format
 msgid "No source number %u\n"
-msgstr ""
+msgstr "Nenhum número de fonte %u\n"
 
 #: build/parsePrep.cc:189
 #, c-format
 msgid "Error parsing %%setup: %s\n"
-msgstr "Erro ao analisar o %%setup: %s\n"
+msgstr "Erro ao analisar %%setup: %s\n"
 
 #: build/parsePrep.cc:200
 #, c-format
@@ -783,94 +788,95 @@ msgstr "linha %d: Argumento inválido para %%setup: %s\n"
 #: build/parsePrep.cc:216
 #, c-format
 msgid "line %d: Bad %%setup option %s: %s\n"
-msgstr "linha %d: Opção inválida do %%setup %s: %s\n"
+msgstr "linha %d: Opção %%setup inválida %s: %s\n"
 
 #: build/parsePrep.cc:369
 #, c-format
 msgid "Patch number not specified: %s\n"
-msgstr ""
+msgstr "Número de patch não especificado: %s\n"
 
 #: build/parsePrep.cc:378
 #, c-format
 msgid "Invalid patch number %s: %s\n"
-msgstr ""
+msgstr "Número de patch inválido %s: %s\n"
 
 #: build/parseReqs.cc:52
 msgid "Dependency tokens must begin with alpha-numeric, '_' or '/'"
-msgstr ""
+msgstr "Testemunhos de dependência têm de começar com alfa-numérico, '_' ou '/'"
 
 #: build/parseReqs.cc:57
 msgid "Versioned file name not permitted"
-msgstr ""
+msgstr "Nome de ficheiro com versão não permitido"
 
 #: build/parseReqs.cc:222
 msgid "No rich dependencies allowed for this type"
-msgstr ""
+msgstr "Nenhumas dependências ricas permitidas para este tipo"
 
 #: build/parseReqs.cc:232 build/parseReqs.cc:325
 msgid "invalid dependency"
-msgstr ""
+msgstr "dependência inválida"
 
 #: build/parseReqs.cc:267 lib/rpmds.cc:1349
 msgid "Version required"
-msgstr ""
+msgstr "Versão obrigatória"
 
 #: build/parseReqs.cc:282
-#, fuzzy
-#| msgid "relocations must begin with a /"
 msgid "file trigger conditions must begin with '/'"
-msgstr "os novos locais têm de começar por /"
+msgstr "condições de despoletar ficheiro têm de começar com /"
 
 #: build/parseReqs.cc:294
 msgid "Only package names are allowed in Obsoletes"
-msgstr ""
+msgstr "Apenas nomes de pacotes são permitidos em Obsoletes"
 
 #: build/parseReqs.cc:299
 msgid "It's not recommended to have unversioned Obsoletes"
-msgstr ""
+msgstr "Não é recomendado ter Obsoletes sem a versão"
 
 #: build/parseReqs.cc:302
 msgid "It's not recommended to use '>' in Obsoletes"
-msgstr ""
+msgstr "Não é recomendado usar '>' em Obsoletes"
 
 #: build/parseReqs.cc:314
 msgid "Trigger fired by the same package is already defined in spec file"
 msgstr ""
+"Gatilho disparado pelo mesmo pacote já está definido no ficheiro de "
+"especificações"
 
 #: build/parseReqs.cc:342
 #, c-format
 msgid "line %d: %s: %s\n"
-msgstr ""
+msgstr "linha %d: %s: %s\n"
 
 #: build/parseScript.cc:260
 #, c-format
 msgid "line %d: triggers must have --: %s\n"
-msgstr "linha %d: os 'triggers' (que activam) têm de ter --: %s\n"
+msgstr "linha %d: gatilhos têm de ter --: %s\n"
 
 #: build/parseScript.cc:268
 #, c-format
 msgid "line %d: missing trigger condition: %s\n"
-msgstr ""
+msgstr "linha %d: condição de gatilho em falta: %s\n"
 
 #: build/parseScript.cc:278 build/parseScript.cc:348
 #, c-format
 msgid "line %d: Error parsing %s: %s\n"
-msgstr "linha %d: Erro ao analisar o %s: %s\n"
+msgstr "linha %d: Erro ao analisar %s: %s\n"
 
 #: build/parseScript.cc:290
 #, c-format
 msgid "line %d: internal script must end with '>': %s\n"
-msgstr ""
+msgstr "linha %d: script interno tem de terminar com '>': %s\n"
 
 #: build/parseScript.cc:296
 #, c-format
 msgid "line %d: script program must begin with '/': %s\n"
-msgstr "linha %d: o programa de 'script' tem de começar por '/': %s\n"
+msgstr "linha %d: programa script tem de começar com '/': %s\n"
 
 #: build/parseScript.cc:310
 #, c-format
 msgid "line %d: Priorities are allowed only for file triggers : %s\n"
 msgstr ""
+"linha %d: Prioridades são permitidas apenas para gatilhos de ficheiros: %s\n"
 
 #: build/parseScript.cc:341
 #, c-format
@@ -880,169 +886,168 @@ msgstr "linha %d: Segundo %s\n"
 #: build/parseScript.cc:369
 #, c-format
 msgid "line %d: unsupported internal script: %s\n"
-msgstr ""
+msgstr "linha %d: script interno não suportado: %s\n"
 
 #: build/parseScript.cc:387
 #, c-format
 msgid "line %d: interpreter arguments not allowed in triggers: %s\n"
-msgstr ""
+msgstr "linha %d: argumentos de interpretador não permitidos em gatilhos: %s\n"
 
 #: build/parseSpec.cc:251
 #, c-format
 msgid "extra tokens at the end of %s directive in line %d:  %s\n"
-msgstr ""
+msgstr "testemunhos extra no fim da diretiva %s na linha %d:  %s\n"
 
 #: build/parseSpec.cc:287
 #, c-format
 msgid "Macro expanded in comment on line %d: %s\n"
-msgstr ""
+msgstr "Macro expandida em comentário na linha %d: %s\n"
 
 #: build/parseSpec.cc:411
 #, c-format
 msgid "Unable to open %s: %s\n"
-msgstr "Incapaz de aceder ao %s: %s\n"
+msgstr "Incapaz de abrir %s: %s\n"
 
 #: build/parseSpec.cc:445
 #, c-format
 msgid "%s:%d: Argument expected for %s\n"
-msgstr ""
+msgstr "%s:%d: Argumento esperado para %s\n"
 
 #: build/parseSpec.cc:470
 #, c-format
 msgid "line %d: Unclosed %%if\n"
-msgstr ""
+msgstr "linha %d: Não fechado %%if\n"
 
 #: build/parseSpec.cc:475
 #, c-format
 msgid "line %d: unclosed macro or bad line continuation\n"
-msgstr ""
+msgstr "linha %d: macro não fechada ou má continuação de linha\n"
 
 #: build/parseSpec.cc:503
-#, fuzzy, c-format
+#, c-format
 msgid "%s: line %d: %s with no %%if\n"
-msgstr "%s:%d: Descobri um %%else sem um %%if\n"
+msgstr "%s: linha %d: %s sem nenhum %%if\n"
 
 #: build/parseSpec.cc:506
-#, fuzzy, c-format
+#, c-format
 msgid "%s: line %d: %s after %s\n"
-msgstr "linha %d: Qualificadores %s: inválidos: %s\n"
+msgstr "%s: linha %d: %s após %s\n"
 
 #: build/parseSpec.cc:533
-#, fuzzy, c-format
+#, c-format
 msgid "%s:%d: bad %s condition: %s\n"
-msgstr "linha %d: Opção inválida do %%setup %s: %s\n"
+msgstr "%s:%d: condição %s errada: %s\n"
 
 #: build/parseSpec.cc:561
 #, c-format
 msgid "%s:%d: malformed %%include statement\n"
-msgstr ""
+msgstr "%s:%d: declaração %%include mal formada\n"
 
 #: build/parseSpec.cc:623
 #, c-format
 msgid "%%patchN is obsolete, use %%patch N (or %%patch -P N): %s\n"
-msgstr ""
+msgstr "%%patchN é obsoleto, use %%patch N (ou %%patch -P N): %s\n"
 
 #: build/parseSpec.cc:823
 #, c-format
 msgid "encoding %s not supported by system\n"
-msgstr ""
+msgstr "codificar %s não é suportado pelo sistema\n"
 
 #: build/parseSpec.cc:852
 #, c-format
 msgid "Package %s: invalid %s encoding in %s: %s - %s\n"
-msgstr ""
+msgstr "Pacote %s: codificação %s inválida em %s: %s - %s\n"
 
 #: build/parseSpec.cc:889
 #, c-format
 msgid "line %d: %%end doesn't take any arguments: %s\n"
-msgstr ""
+msgstr "linha %d: %%end não recebe nenhuns argumentos: %s\n"
 
 #: build/parseSpec.cc:897
 #, c-format
 msgid "line %d: %%end not expected here, no section to close: %s\n"
-msgstr ""
+msgstr "linha %d: %%end não esperado aqui, nenhuma secção para fechar: %s\n"
 
 #: build/parseSpec.cc:913
 #, c-format
 msgid "line %d doesn't belong to any section: %s\n"
-msgstr ""
+msgstr "linha %d não pertence a nenhuma secção: %s\n"
 
 #: build/parseSpec.cc:979
-#, fuzzy, c-format
-#| msgid "line %d: Unknown tag: %s\n"
+#, c-format
 msgid "line %d: Unknown buildsystem: %s\n"
-msgstr "linha %d: Opção desconhecida: %s\n"
+msgstr "linha %d: Sistema de compilação desconhecido: %s\n"
 
 #: build/parseSpec.cc:983
 #, c-format
 msgid ""
 "line %d: Required parametric macro %%%s not defined for buildsystem %s\n"
 msgstr ""
+"linha %d: Macro paramétrica obrigatória %%%s não definida para sistema de "
+"compilação %s\n"
 
 #: build/parseSpec.cc:1014
-#, fuzzy, c-format
-#| msgid "Failed to rename %s to %s: %m\n"
+#, c-format
 msgid "failed to write buildsystem %s %%%s: %s\n"
-msgstr "Não consegui mudar o nome de %s para %s: %m\n"
+msgstr "falhou ao escrever sistema de compilação %s %%%s: %s\n"
 
 #: build/parseSpec.cc:1036
-#, fuzzy, c-format
-#| msgid "Failed to read spec file from %s\n"
+#, c-format
 msgid "failed to create temp file for buildsystem: %s\n"
-msgstr "Não consegui ler o ficheiro spec do %s\n"
+msgstr "falhou ao criar ficheiro temporário para sistema de compilação: %s\n"
 
 #: build/parseSpec.cc:1096
 #, c-format
 msgid "Section %s is not allowed after build is done!\n"
-msgstr ""
+msgstr "Secção %s não é permitida após compilação estar feita!\n"
 
 #: build/parseSpec.cc:1249
 msgid "No compatible architectures found for build\n"
-msgstr "Não foram encontradas arquitecturas compatíveis para as quais criar\n"
+msgstr "Não foram encontradas arquitecturas compatíveis para compilação\n"
 
 #: build/parseSpec.cc:1369
 #, c-format
 msgid "invalid rpm format %d requested, using %d\n"
-msgstr ""
+msgstr "formato rpm inválido %d requisitado, a usar %d\n"
 
 #: build/parseSpec.cc:1404
 #, c-format
 msgid "Package has no %%description: %s\n"
-msgstr "O pacote não tem uma %%description: %s\n"
+msgstr "O pacote não tem %%description: %s\n"
 
 #: build/policies.cc:94
 #, c-format
 msgid "Policy module '%s' duplicated with overlapping types\n"
-msgstr ""
+msgstr "Módulo de política '%s' duplicado com tipos sobrepostos\n"
 
 #: build/policies.cc:100
 #, c-format
 msgid "Base modules '%s' and '%s' have overlapping types\n"
-msgstr ""
+msgstr "Módulos base '%s' e '%s' têm tipos sobrepostos\n"
 
 #: build/policies.cc:108
 msgid "Failed to get policies from header\n"
-msgstr ""
+msgstr "Falhou ao obter políticas do cabeçalho\n"
 
 #: build/policies.cc:161
 #, c-format
 msgid "%%semodule requires a file path\n"
-msgstr ""
+msgstr "%%semodule requer um caminho de ficheiro\n"
 
 #: build/policies.cc:170
 #, c-format
 msgid "Failed to read  policy file: %s\n"
-msgstr ""
+msgstr "Falhou ao ler ficheiro de política: %s\n"
 
 #: build/policies.cc:177
 #, c-format
 msgid "Failed to encode policy file: %s\n"
-msgstr ""
+msgstr "Falhou ao codificar ficheiro de política: %s\n"
 
 #: build/policies.cc:194
 #, c-format
 msgid "Failed to determine a policy name: %s\n"
-msgstr ""
+msgstr "Falhou ao determinar um nome de política: %s\n"
 
 #: build/policies.cc:206
 #, c-format
@@ -1050,171 +1055,177 @@ msgid ""
 "'%s' type given with other types in %%semodule %s. Compacting types to "
 "'%s'.\n"
 msgstr ""
+"tipo '%s' dado com outros tipos em %%semodule %s. A compactar tipos para "
+"'%s'.\n"
 
 #: build/policies.cc:253
 #, c-format
 msgid "Error parsing %s: %s\n"
-msgstr ""
+msgstr "Erro ao analisar %s: %s\n"
 
 #: build/policies.cc:259
 #, c-format
 msgid "Expecting %%semodule tag: %s\n"
-msgstr ""
+msgstr "A esperar etiqueta de %%semodule: %s\n"
 
 #: build/policies.cc:269
 #, c-format
 msgid "Missing module path in line: %s\n"
-msgstr ""
+msgstr "Caminho de modulo em falta na linha: %s\n"
 
 #: build/policies.cc:275
 #, c-format
 msgid "Too many arguments in line: %s\n"
-msgstr ""
+msgstr "Demasiados argumentos na linha: %s\n"
 
 #: build/policies.cc:320
 #, c-format
 msgid "Processing policies: %s\n"
-msgstr ""
+msgstr "A processar políticas: %s\n"
 
 #: build/rpmfc.cc:164
 #, c-format
 msgid "Ignoring invalid regex %s\n"
-msgstr ""
+msgstr "A ignorar expressão regular inválida %s\n"
 
 #: build/rpmfc.cc:198
 #, c-format
 msgid "%s: mime and magic supplied, only mime will be used\n"
-msgstr ""
+msgstr "%s: mime e magic fornecidos, apenas mime vai ser usado\n"
 
 #: build/rpmfc.cc:269
 #, c-format
 msgid "Couldn't create pipe for %s: %m\n"
-msgstr ""
+msgstr "Incapaz de criar cano para %s: %m\n"
 
 #: build/rpmfc.cc:280 lib/rpmscript.cc:381
 #, c-format
 msgid "Couldn't fork %s: %s\n"
-msgstr "Não consegui executar à parte o %s: %s\n"
+msgstr "Incapaz de bifurcar %s: %s\n"
 
 #: build/rpmfc.cc:321
 #, c-format
 msgid "Couldn't exec %s: %s\n"
-msgstr "Não consegui executar o %s: %s\n"
+msgstr "Incapaz de executar %s: %s\n"
 
 #: build/rpmfc.cc:412
-#, fuzzy, c-format
-#| msgid "Bad exit status from %s (%s)\n"
+#, c-format
 msgid "Failed to wait for exit status of %s: %s\n"
-msgstr "Código de saída inválido do %s (%s)\n"
+msgstr "Falhou ao esperar o estado de saída de %s: %s\n"
 
 #: build/rpmfc.cc:421
 #, c-format
 msgid "%s failed: %x\n"
-msgstr ""
+msgstr "%s falhou: %x\n"
 
 #: build/rpmfc.cc:425
 #, c-format
 msgid "failed to write all data to %s: %s\n"
-msgstr ""
+msgstr "falhou ao escrever todos os dados para %s: %s\n"
 
 #: build/rpmfc.cc:639
 #, c-format
 msgid "invalid or out of order path from generator: %s\n"
-msgstr ""
+msgstr "caminho inválido ou fora-de-serviço do gerador: %s\n"
 
 #: build/rpmfc.cc:1231
 msgid "Empty file classifier\n"
-msgstr ""
+msgstr "Classificador de ficheiro vazio\n"
 
 #: build/rpmfc.cc:1240
 msgid "No file attributes configured\n"
-msgstr ""
+msgstr "Nenhuns atributos de ficheiro configurados\n"
 
 #: build/rpmfc.cc:1268
 #, c-format
 msgid "magic_open(0x%x) failed: %s\n"
-msgstr ""
+msgstr "magic_open(0x%x) falhou: %s\n"
 
 #: build/rpmfc.cc:1274 build/rpmfc.cc:1278
 #, c-format
 msgid "magic_load failed: %s\n"
-msgstr ""
+msgstr "magic_load falhou: %s\n"
 
 #: build/rpmfc.cc:1325
 #, c-format
 msgid "Recognition of file \"%s\" failed: mode %06o %s\n"
-msgstr ""
+msgstr "Reconhecimento de ficheiro \"%s\" falhou: modo %06o %s\n"
 
 #: build/rpmfc.cc:1344
 #, c-format
 msgid "Recognition of file mtype \"%s\" failed: mode %06o %s\n"
-msgstr ""
+msgstr "Reconhecimento de ficheiro mtype \"%s\" falhou: modo %06o %s\n"
 
 #: build/rpmfc.cc:1562
 #, c-format
 msgid "Finding  %s: %s\n"
-msgstr ""
+msgstr "A encontrar %s: %s\n"
 
 #: build/rpmfc.cc:1571 build/rpmfc.cc:1580
 #, c-format
 msgid "Failed to find %s:\n"
-msgstr "Não consegui encontrar o %s:\n"
+msgstr "Falhou ao encontrar %s:\n"
 
 #: build/rpmfc.cc:1620
 msgid "Deprecated external dependency generator is used!\n"
-msgstr ""
+msgstr "E usado um gerador de dependência externa descontinuado!\n"
 
 #: build/rpmfc.cc:1624
 msgid "External dependency generator is incompatible with v6 packages\n"
-msgstr ""
+msgstr "Gerador de dependência externa  é incompatível com pacotes v6\n"
 
 #: build/spec.cc:77
 #, c-format
 msgid "line %d: %s: package %s does not exist\n"
-msgstr ""
+msgstr "linha %d: %s: pacote %s não existe\n"
 
 #: build/spec.cc:80
 #, c-format
 msgid "line %d: %s: package %s already exists\n"
-msgstr ""
+msgstr "linha %d: %s: pacote %s já existe\n"
 
 #: build/spec.cc:457
 #, c-format
 msgid "query of specfile %s failed, can't parse\n"
-msgstr "a pesquisa do ficheiro spec %s falhou, não consigo analisar\n"
+msgstr "consulta de ficheiro de especificações %s falhou, incapaz de analisar\n"
 
 #: lib/backend/dbi.cc:96
 #, c-format
 msgid "invalid %%_db_backend: %s\n"
-msgstr ""
+msgstr "%%_db_backend inválido: %s\n"
 
 #: lib/backend/dbi.cc:114
 #, c-format
 msgid "Converting database from %s to %s backend\n"
-msgstr ""
+msgstr "A converter base de dados de %s para %s backend\n"
 
 #: lib/backend/dbi.cc:118
 #, c-format
 msgid "Found %s %s database while attempting %s backend: using %s backend.\n"
 msgstr ""
+"Encontrada base de dados %s %s ao tentar backend %s: a usar backend %s.\n"
 
 #: lib/backend/ndb/glue.cc:102
 msgid "Detected outdated index databases\n"
-msgstr ""
+msgstr "Detetado índice de bases de dados desatualizado\n"
 
 #: lib/backend/ndb/glue.cc:104
 msgid "Rebuilding outdated index databases\n"
-msgstr ""
+msgstr "A reconstruir índice de bases de dados desatualizado\n"
 
 #: lib/backend/ndb/rpmidx.c:205
 #, c-format
 msgid "rpmidx: Version mismatch. Expected version: %u. Found version: %u\n"
 msgstr ""
+"rpmidx: Incompatibilidade de versão. Esperada versão: %u. Encontrada versão: "
+"%u\n"
 
 #: lib/backend/ndb/rpmpkg.c:121
 #, c-format
 msgid "rpmpkg: Version mismatch. Expected version: %u. Found version: %u\n"
 msgstr ""
+"rpmpkg: Incompatibilidade de versão. Esperada versão: %u. Encontrada versão: "
+"%u\n"
 
 #: lib/backend/ndb/rpmpkg.c:495
 msgid "rpmpkg: detected non-zero blob, trying auto repair\n"
@@ -4022,8 +4033,8 @@ msgstr "O buildroot já foi especificado, a ignorar o %s\n"
 #, c-format
 msgid "build through %prep (unpack sources and apply patches) from <specfile>"
 msgstr ""
-"criar através do %prep (desempacotar o código e aplicar patches) do "
-"<fichspec>"
+"compilar através de %prep (desempacotar fontes e aplicar patches) a partir "
+"de <specfile>"
 
 #: tools/rpmbuild.cc:152 tools/rpmbuild.cc:155 tools/rpmbuild.cc:158
 #: tools/rpmbuild.cc:161 tools/rpmbuild.cc:164 tools/rpmbuild.cc:167
@@ -4033,14 +4044,16 @@ msgid "<specfile>"
 msgstr "<fichspec>"
 
 #: tools/rpmbuild.cc:154
-#, fuzzy, c-format
+#, c-format
 msgid "build through %conf (%prep, then %conf) from <specfile>"
-msgstr "criar através do %build (%prep e depois compilar) do <fichspec>"
+msgstr "compilar através de %conf (%prep, depois %conf) a partir de <specfile>"
 
 #: tools/rpmbuild.cc:157
 #, c-format
 msgid "build through %build (%prep, %conf, then compile) from <specfile>"
-msgstr "criar através do %build (%prep e depois compilar) do <fichspec>"
+msgstr ""
+"compilar através de %build (%prep, %conf, e depois compilar) a partir de "
+"<specfile>"
 
 #: tools/rpmbuild.cc:160
 msgid "check build dependencies <specfile>"
