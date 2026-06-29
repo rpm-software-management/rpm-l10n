@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: RPM\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
-"PO-Revision-Date: 2026-06-28 23:17+0000\n"
+"PO-Revision-Date: 2026-06-29 19:39+0000\n"
 "Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
 "Language-Team: Portuguese <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/pt/>\n"
@@ -1229,41 +1229,43 @@ msgstr ""
 
 #: lib/backend/ndb/rpmpkg.c:495
 msgid "rpmpkg: detected non-zero blob, trying auto repair\n"
-msgstr ""
+msgstr "rpmpkg: detetado bolha não-zero, a tentar auto reparação\n"
 
 #: lib/backend/ndb/rpmxdb.c:242
 #, c-format
 msgid "rpmxdb: Version mismatch. Expected version: %u. Found version: %u\n"
 msgstr ""
+"rpmxdb: Incompatibilidade de versão. Esperada versão: %u. Encontrada versão: "
+"%u\n"
 
 #: lib/backend/sqlite.cc:152
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to open sqlite database %s: %s\n"
-msgstr "Não consegui abrir ficheiro spec %s: %s\n"
+msgstr "Incapaz de abrir base de dados sqlite %s: %s\n"
 
 #: lib/depends.cc:59
 #, c-format
 msgid "%s is a Delta RPM and cannot be directly installed\n"
-msgstr ""
+msgstr "%s é um RPM Delta e não pode ser instalado diretamente\n"
 
 #: lib/depends.cc:63
 #, c-format
 msgid "Unsupported payload (%s) in package %s\n"
-msgstr ""
+msgstr "Conteúdo não suportado (%s) no pacote %s\n"
 
 #: lib/depends.cc:344
 #, c-format
 msgid "package %s was already added, skipping %s\n"
-msgstr ""
+msgstr "pacote %s já foi adicionado, a saltar %s\n"
 
 #: lib/depends.cc:345
 #, c-format
 msgid "package %s was already added, replacing with %s\n"
-msgstr ""
+msgstr "pacote %s já foi adicionado, a substituir por %s\n"
 
 #: lib/formats.cc:44
 msgid "(not a blob)"
-msgstr "(não é um blob)"
+msgstr "(não é uma bolha)"
 
 #: lib/formats.cc:45
 msgid "(not a number)"
@@ -1271,7 +1273,7 @@ msgstr "(não é um número)"
 
 #: lib/formats.cc:46
 msgid "(not a string)"
-msgstr ""
+msgstr "(não é uma sequência de caracteres)"
 
 #: lib/formats.cc:49 lib/formats.cc:138 lib/formats.cc:260 lib/formats.cc:467
 msgid "(invalid type)"
@@ -1279,188 +1281,189 @@ msgstr "(tipo inválido)"
 
 #: lib/formats.cc:246
 msgid "(not base64)"
-msgstr "(não é um base64)"
+msgstr "(não é base64)"
 
 #: lib/formats.cc:306
 msgid "(invalid xml type)"
-msgstr ""
+msgstr "(tipo de xml inválido)"
 
 #: lib/formats.cc:428
 msgid "(not an OpenPGP signature)"
-msgstr ""
+msgstr "(não é uma assinatura OpenPGP)"
 
 #: lib/formats.cc:439
 #, c-format
 msgid "Invalid date %u"
-msgstr ""
+msgstr "Data inválida %u"
 
 #: lib/formats.cc:505
 msgid "normal"
-msgstr ""
+msgstr "normal"
 
 #: lib/formats.cc:508 lib/verify.cc:314
 msgid "replaced"
-msgstr ""
+msgstr "substituído"
 
 #: lib/formats.cc:511 lib/verify.cc:308
 msgid "not installed"
-msgstr ""
+msgstr "não instalado"
 
 #: lib/formats.cc:514 lib/verify.cc:310
 msgid "net shared"
-msgstr ""
+msgstr "partilhado na rede"
 
 #: lib/formats.cc:517 lib/verify.cc:312
 msgid "wrong color"
-msgstr ""
+msgstr "cor errada"
 
 #: lib/formats.cc:520
 msgid "missing"
-msgstr ""
+msgstr "em falta"
 
 #: lib/formats.cc:523
 msgid "(unknown)"
-msgstr ""
+msgstr "(desconhecido)"
 
 #: lib/fsm.cc:420
 #, c-format
 msgid "failed to open dir %s of %s: %s\n"
-msgstr ""
+msgstr "falhou ao abrir diretório %s de %s: %s\n"
 
 #: lib/fsm.cc:730
 #, c-format
 msgid "%s%s saved as %s%s\n"
-msgstr ""
+msgstr "%s%s salvo como %s%s\n"
 
 #: lib/fsm.cc:788
 #, c-format
 msgid "%s%s created as %s%s\n"
-msgstr ""
+msgstr "%s%s criado como %s%s\n"
 
 #: lib/fsm.cc:1182
-#, fuzzy, c-format
-#| msgid "%s: open failed: %s\n"
+#, c-format
 msgid "%s %s%s: remove failed: %s\n"
-msgstr "%s: o acesso falhou: %s\n"
+msgstr "%s %s%s: remoção falhou: %s\n"
 
 #: lib/fsm.cc:1183
 msgid "directory"
-msgstr ""
+msgstr "diretório"
 
 #: lib/fsm.cc:1183
 msgid "file"
-msgstr ""
+msgstr "ficheiro"
 
 #: lib/header.cc:352
 #, c-format
 msgid "tag[%d]: BAD, tag %d type %d offset %d count %d len %d"
-msgstr ""
+msgstr "tag[%d]: MÁ, etiqueta %d tipo %d desvio %d contagem %d comprimento %d"
 
 #: lib/header.cc:1042
 msgid "hdr load: BAD"
-msgstr ""
+msgstr "carga de hdr: MÁ"
 
 #: lib/header.cc:1857
 msgid "region: no tags"
-msgstr ""
+msgstr "região: nenhumas etiquetas"
 
 #: lib/header.cc:1879
 #, c-format
 msgid "region tag: BAD, tag %d type %d offset %d count %d"
-msgstr ""
+msgstr "etiqueta de região: MAU, etiqueta %d tipo %d desvio %d contagem %d"
 
 #: lib/header.cc:1887
 #, c-format
 msgid "region offset: BAD, tag %d type %d offset %d count %d"
-msgstr ""
+msgstr "desvio de região: MAU, etiqueta %d tipo %d desvio %d contagem %d"
 
 #: lib/header.cc:1909
 #, c-format
 msgid "region trailer: BAD, tag %d type %d offset %d count %d"
-msgstr ""
+msgstr "final de região: MAU, etiqueta %d tipo %d desvio %d contagem %d"
 
 #: lib/header.cc:1918
 #, c-format
 msgid "region %d size: BAD, ril %d il %d rdl %d dl %d"
-msgstr ""
+msgstr "região %d tamanho: MAU, ril %d il %d rdl %d dl %d"
 
 #: lib/header.cc:1926
 #, c-format
 msgid "region %d: tag number mismatch il %d ril %d dl %d rdl %d\n"
 msgstr ""
+"região %d: incompatibilidade de número de etiqueta il %d ril %d dl %d rdl "
+"%d\n"
 
 #: lib/header.cc:1962
 #, c-format
 msgid "hdr tags: BAD, no. of tags(%<PRIu32>) out of range"
-msgstr ""
+msgstr "etiquetas hdr: MAU, número de etiquetas(%<PRIu32>) fora de alcance"
 
 #: lib/header.cc:1966
 #, c-format
 msgid "hdr data: BAD, no. of bytes(%<PRIu32>) out of range"
-msgstr ""
+msgstr "dados hdr: MAU, número de bytes(%<PRIu32>) fora de alcance"
 
 #: lib/header.cc:1988
 #, c-format
 msgid "hdr size(%d): BAD, read returned %d"
-msgstr ""
+msgstr "tamanho hdr(%d): MAU, leitura retornou %d"
 
 #: lib/header.cc:1992
 msgid "hdr magic: BAD"
-msgstr ""
+msgstr "magic hdr: MAU"
 
 #: lib/header.cc:2006
 #, c-format
 msgid "hdr blob(%zd): BAD, read returned %d"
-msgstr ""
+msgstr "bolha hdr(%zd): MAU, leitura retornou %d"
 
 #: lib/header.cc:2015
 #, c-format
 msgid "sigh pad(%zd): BAD, read %zd bytes"
-msgstr ""
+msgstr "sinal pad(%zd): MAU, lido %zd bytes"
 
 #: lib/header.cc:2028
 msgid "signature "
-msgstr ""
+msgstr "assinatura "
 
 #: lib/header.cc:2044
 msgid "hdr length: BAD"
-msgstr ""
+msgstr "comprimento hdr: MAU"
 
 #: lib/header.cc:2062
 #, c-format
 msgid "blob size(%d): BAD, 8 + 16 * il(%d) + dl(%d)"
-msgstr ""
+msgstr "tamanho de bolha(%d): MAU, 8 + 16 * il(%d) + dl(%d)"
 
 #: lib/headerfmt.cc:447
 msgid "invalid field width"
-msgstr ""
+msgstr "campo de largura inválido"
 
 #: lib/headerfmt.cc:453
 #, c-format
 msgid "missing { after %%"
-msgstr ""
+msgstr "{ em falta após %%"
 
 #: lib/headerfmt.cc:475
 #, c-format
 msgid "missing } after %%{"
-msgstr ""
+msgstr "} em falta após %%{"
 
 #: lib/headerfmt.cc:486
 msgid "empty tag format"
-msgstr "formato da opção em branco"
+msgstr "formato de etiqueta vazio"
 
 #: lib/headerfmt.cc:497
 msgid "empty tag name"
-msgstr "nome da opção em branco"
+msgstr "nome de etiqueta vazio"
 
 #: lib/headerfmt.cc:504
 #, c-format
 msgid "unknown tag: \"%s\""
-msgstr ""
+msgstr "etiqueta desconhecida: \"%s\""
 
 #: lib/headerfmt.cc:524
 msgid "] expected at end of array"
-msgstr "] esperado no fim do vector"
+msgstr "] esperado no fim da matriz"
 
 #: lib/headerfmt.cc:536
 msgid "unexpected ]"
@@ -1472,7 +1475,7 @@ msgstr "} inesperado"
 
 #: lib/headerfmt.cc:564
 msgid "escaped char expected after \\"
-msgstr ""
+msgstr "caractere escapado esperado após \\"
 
 #: lib/headerfmt.cc:606
 msgid "? expected in expression"
@@ -1480,7 +1483,7 @@ msgstr "esperado um ? na expressão"
 
 #: lib/headerfmt.cc:613
 msgid "{ expected after ? in expression"
-msgstr "esperado um { a seguir ao ? na expressão"
+msgstr "esperado um { a seguir a ? na expressão"
 
 #: lib/headerfmt.cc:625 lib/headerfmt.cc:665
 msgid "} expected in expression"
@@ -1500,42 +1503,42 @@ msgstr "esperado um | no fim da expressão"
 
 #: lib/headerfmt.cc:833
 msgid "array iterator used with different sized arrays"
-msgstr ""
+msgstr "iterador de matriz usado com matrizes de diferentes tamanhos"
 
 #: lib/keystore.cc:62
 #, c-format
 msgid "%s: reading of public key failed.\n"
-msgstr ""
+msgstr "%s: leitura de chave pública falhou.\n"
 
 #: lib/keystore.cc:90 lib/keystore.cc:195
-#, fuzzy, c-format
+#, c-format
 msgid "failed to create keyring directory %s: %s\n"
-msgstr "Não consegui ler o ficheiro spec do %s\n"
+msgstr "falhou ao criar diretório de chaveiro %s: %s\n"
 
 #: lib/keystore.cc:105
 #, c-format
 msgid "failed to import key: %s: %s\n"
-msgstr ""
+msgstr "falhou ao importar chave: %s: %s\n"
 
 #: lib/keystore.cc:201
-#, fuzzy, c-format
+#, c-format
 msgid "Can't create writelock for keyring at %s: %s\n"
-msgstr "Não consigo aceder ao %s: %s\n"
+msgstr "Incapaz de criar tranca de escrita para chaveiro em %s: %s\n"
 
 #: lib/keystore.cc:203
 #, c-format
 msgid "Can't acquire writelock for keyring at %s\n"
-msgstr ""
+msgstr "Incapaz de adquirir tranca de escrita para chaveiro em %s\n"
 
 #: lib/keystore.cc:298
 #, c-format
 msgid "%s is not a valid public key\n"
-msgstr ""
+msgstr "%s não é uma chave pública válida\n"
 
 #: lib/package.cc:265
 #, c-format
 msgid "RPM v3 packages are deprecated: %s\n"
-msgstr ""
+msgstr "Pacotes RPM v3 estão descontinuados: %s\n"
 
 #: lib/poptALL.cc:59 tools/cliutils.cc:24
 #, c-format
@@ -1544,164 +1547,166 @@ msgstr "RPM versão %s\n"
 
 #: lib/poptALL.cc:139
 msgid "Error writing to stdout"
-msgstr ""
+msgstr "Erro ao escrever no stdout"
 
 #: lib/poptALL.cc:150 rpmio/macro.cc:1300
-#, fuzzy, c-format
+#, c-format
 msgid "failed to load macro file %s\n"
-msgstr "Não consegui ler o ficheiro spec do %s\n"
+msgstr "falhou ao carregar ficheiro de macro %s\n"
 
 #: lib/poptALL.cc:157
-#, fuzzy, c-format
+#, c-format
 msgid "arguments to --dbpath must begin with '/'\n"
-msgstr "os argumentos do --prefix têm de começar por /"
+msgstr "argumentos para --dbpath têm de começar com '/'\n"
 
 #: lib/poptALL.cc:180
 #, c-format
 msgid ""
 "%s: error: more than one --pipe specified (incompatible popt aliases?)\n"
 msgstr ""
+"%s: erro: mais do que um --pipe especificado (nomes alternativos de popt "
+"incompatíveis?)\n"
 
 #: lib/poptALL.cc:213
 msgid "predefine MACRO with value EXPR"
-msgstr ""
+msgstr "predefine MACRO com valor EXPR"
 
 #: lib/poptALL.cc:214 lib/poptALL.cc:217
 msgid "'MACRO EXPR'"
-msgstr ""
+msgstr "'MACRO EXPR'"
 
 #: lib/poptALL.cc:216
 msgid "define MACRO with value EXPR"
-msgstr ""
+msgstr "define MACRO com valor EXPR"
 
 #: lib/poptALL.cc:219
 msgid "undefine MACRO"
-msgstr ""
+msgstr "remove definição de MACRO"
 
 #: lib/poptALL.cc:220
 msgid "MACRO"
-msgstr ""
+msgstr "MACRO"
 
 #: lib/poptALL.cc:222
 msgid "print macro expansion of EXPR"
-msgstr ""
+msgstr "escreve expansão de macro de EXPR"
 
 #: lib/poptALL.cc:223
 msgid "'EXPR'"
-msgstr ""
+msgstr "'EXPR'"
 
 #: lib/poptALL.cc:225
 msgid "Specify target platform"
-msgstr ""
+msgstr "Especifica plataforma alvo"
 
 #: lib/poptALL.cc:225
 msgid "CPU-VENDOR-OS"
-msgstr ""
+msgstr "CPU-FORNECEDOR-SO"
 
 #: lib/poptALL.cc:227 lib/poptALL.cc:249
 msgid "read <FILE:...> instead of default file(s)"
-msgstr ""
+msgstr "lê <FILE:...> em vez dos ficheiro(s) predefinidos"
 
 #: lib/poptALL.cc:228 lib/poptALL.cc:250
 msgid "<FILE:...>"
-msgstr ""
+msgstr "<FILE:...>"
 
 #: lib/poptALL.cc:230
 msgid "load a single macro file"
-msgstr ""
+msgstr "carrega um ficheiro de macro única"
 
 #: lib/poptALL.cc:231
 msgid "<FILE>"
-msgstr ""
+msgstr "<FILE>"
 
 #: lib/poptALL.cc:236
 msgid "don't enable any plugins"
-msgstr ""
+msgstr "não ativa nenhuns plugins"
 
 #: lib/poptALL.cc:239
 msgid "don't verify package digest(s)"
-msgstr ""
+msgstr "não verifica resumo(s) do pacote"
 
 #: lib/poptALL.cc:241
 msgid "don't verify database header(s) when retrieved"
-msgstr ""
+msgstr "não verifica cabeçalho(s) da base de dados quando recuperados"
 
 #: lib/poptALL.cc:243
 msgid "don't verify package signature(s)"
-msgstr ""
+msgstr "não verifica assinatura(s) do pacote"
 
 #: lib/poptALL.cc:246
 msgid "send stdout to CMD"
-msgstr ""
+msgstr "envia stdout para CMD"
 
 #: lib/poptALL.cc:247
 msgid "CMD"
-msgstr ""
+msgstr "CMD"
 
 #: lib/poptALL.cc:252
 msgid "use ROOT as top level directory"
-msgstr ""
+msgstr "usa ROOT como diretório de nível de topo"
 
 #: lib/poptALL.cc:253
 msgid "ROOT"
-msgstr ""
+msgstr "ROOT"
 
 #: lib/poptALL.cc:255
 msgid "use database in DIRECTORY"
-msgstr ""
+msgstr "usa base de dados em DIRETÓRIO"
 
 #: lib/poptALL.cc:256
 msgid "DIRECTORY"
-msgstr ""
+msgstr "DIRETÓRIO"
 
 #: lib/poptALL.cc:259
 msgid "display known query tags"
-msgstr "mostrar as opções de pesquisa conhecidas"
+msgstr "mostra etiquetas de pesquisa conhecidas"
 
 #: lib/poptALL.cc:261
 msgid "display final rpmrc and macro configuration"
-msgstr "mostra a configuração final do rpmrc e das macros"
+msgstr "mostra a configuração final de rpmrc e macro"
 
 #: lib/poptALL.cc:263
 msgid "provide less detailed output"
-msgstr "devolver um resultado menos detalhado"
+msgstr "fornece resultado menos detalhado"
 
 #: lib/poptALL.cc:265 tools/rpmuncompress.cc:26
 msgid "provide more detailed output"
-msgstr "devolver um resultado mais detalhado"
+msgstr "fornece resultado mais detalhado"
 
 #: lib/poptALL.cc:267
 msgid "print the version of rpm being used"
-msgstr "imprime a versão do RPM que está a usar"
+msgstr "escreve a versão do rpm que está a usar"
 
 #: lib/poptALL.cc:270
 msgid "debug payload file state machine"
-msgstr ""
+msgstr "depurar ficheiro de conteúdo de estado de máquina"
 
 #: lib/poptALL.cc:276
 msgid "debug rpmio I/O"
-msgstr "depurar a E/S da rpmio"
+msgstr "depurar a I/O de rpmio"
 
 #: lib/poptALL.cc:337
 #, c-format
 msgid "%s: option table misconfigured (%d)\n"
-msgstr ""
+msgstr "%s: tabela de opções mal configurada (%d)\n"
 
 #: lib/poptI.cc:54
 msgid "exclude paths must begin with a /"
-msgstr "as directorias de exclusão têm de começar por /"
+msgstr "directórios de exclusão têm de começar com /"
 
 #: lib/poptI.cc:66
 msgid "relocations must begin with a /"
-msgstr "os novos locais têm de começar por /"
+msgstr "relocalizações têm de começar com /"
 
 #: lib/poptI.cc:69
 msgid "relocations must contain a ="
-msgstr "os novos locais têm de conter um ="
+msgstr "relocalizações têm de conter um ="
 
 #: lib/poptI.cc:72
 msgid "relocations must have a / following the ="
-msgstr "os novos locais têm de ter um / a seguir ao ="
+msgstr "relocalizações têm de ter um / a seguir ao ="
 
 #: lib/poptI.cc:120
 msgid "install all files, even configurations which might otherwise be skipped"
@@ -1715,15 +1720,15 @@ msgid ""
 "<package> specified multiple packages)"
 msgstr ""
 "remove todos os pacotes que correspondam a <pacote> (normalmente aparece um "
-"erro se o <pacote> especifica vários pacotes)"
+"erro se <pacote> especificar vários pacotes)"
 
 #: lib/poptI.cc:129
 msgid "relocate files in non-relocatable package"
-msgstr ""
+msgstr "relocaliza ficheiros em pacote não-relocalizável"
 
 #: lib/poptI.cc:133
 msgid "print dependency loops as warning"
-msgstr ""
+msgstr "escreve ciclos de dependências como avisos"
 
 #: lib/poptI.cc:137
 msgid "erase (uninstall) package"
@@ -1734,13 +1739,12 @@ msgid "<package>+"
 msgstr "<pacote>+"
 
 #: lib/poptI.cc:140
-#, fuzzy
 msgid "do not install artifacts"
-msgstr "não instala a documentação"
+msgstr "não instala artefactos"
 
 #: lib/poptI.cc:143 lib/poptI.cc:185
 msgid "do not install configuration files"
-msgstr ""
+msgstr "não instala ficheiros de configuração"
 
 #: lib/poptI.cc:146 lib/poptI.cc:190
 msgid "do not install documentation"
@@ -1748,7 +1752,7 @@ msgstr "não instala a documentação"
 
 #: lib/poptI.cc:148
 msgid "skip files with leading component <path> "
-msgstr "ignorar os ficheiros com a componente inicial <dir> "
+msgstr "salta os ficheiros com a componente inicial <caminho> "
 
 #: lib/poptI.cc:149
 msgid "<path>"
@@ -1760,16 +1764,16 @@ msgstr "abreviatura para --replacepkgs --replacefiles"
 
 #: lib/poptI.cc:156
 msgid "upgrade package(s) if already installed"
-msgstr "actualizar o pacote(s) se já estiver instalado"
+msgstr "actualiza pacote(s) se já estiverem instalados"
 
 #: lib/poptI.cc:157 lib/poptI.cc:176 lib/poptI.cc:277 lib/poptI.cc:281
 #: lib/poptI.cc:285
 msgid "<packagefile>+"
-msgstr "<pacote>+"
+msgstr "<packagefile>+"
 
 #: lib/poptI.cc:159
 msgid "print hash marks as package installs (good with -v)"
-msgstr "mostra cardinais enquanto o pacote instala (conveniente com o -v)"
+msgstr "escreve sinais de hash quando o pacote instala (bom com -v)"
 
 #: lib/poptI.cc:162
 msgid "don't verify package architecture"
@@ -1784,9 +1788,8 @@ msgid "don't check disk space before installing"
 msgstr "não verifica o espaço em disco antes de instalar"
 
 #: lib/poptI.cc:171
-#, fuzzy
 msgid "short hand for --ignorepayload --ignoresignature"
-msgstr "abreviatura para --replacepkgs --replacefiles"
+msgstr "abreviatura para --ignorepayload --ignoresignature"
 
 #: lib/poptI.cc:173
 msgid "install documentation"
@@ -1794,7 +1797,7 @@ msgstr "instala a documentação"
 
 #: lib/poptI.cc:176
 msgid "install package(s)"
-msgstr ""
+msgstr "instala pacotes(s)"
 
 #: lib/poptI.cc:179
 msgid "update the database, but do not modify the filesystem"
