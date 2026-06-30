@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: RPM\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
-"PO-Revision-Date: 2026-06-29 19:39+0000\n"
+"PO-Revision-Date: 2026-06-30 21:18+0000\n"
 "Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
 "Language-Team: Portuguese <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/pt/>\n"
@@ -1805,7 +1805,7 @@ msgstr "actualiza a base de dados, mas não altera o sistema de ficheiros"
 
 #: lib/poptI.cc:181
 msgid "do not update the database, but modify the filesystem"
-msgstr ""
+msgstr "não actualiza a base de dados, mas altera o sistema de ficheiros"
 
 #: lib/poptI.cc:187
 msgid "do not verify package dependencies"
@@ -1813,19 +1813,19 @@ msgstr "não verifica as dependências do pacote"
 
 #: lib/poptI.cc:193 lib/poptQV.cc:243 lib/poptQV.cc:245
 msgid "don't verify digest of files"
-msgstr ""
+msgstr "não verifica o resumo dos ficheiros"
 
 #: lib/poptI.cc:195
 msgid "don't verify digest of files (obsolete)"
-msgstr ""
+msgstr "não verifica o resumo dos ficheiros (obsoleto)"
 
 #: lib/poptI.cc:197
 msgid "don't install file security contexts"
-msgstr ""
+msgstr "não instala contextos de segurança dos ficheiros"
 
 #: lib/poptI.cc:199
 msgid "don't install file capabilities"
-msgstr ""
+msgstr "não instala capacidades dos ficheiros"
 
 #: lib/poptI.cc:203
 msgid "do not reorder package installation to satisfy dependencies"
@@ -1834,94 +1834,92 @@ msgstr ""
 
 #: lib/poptI.cc:207
 msgid "do not execute package scriptlet(s)"
-msgstr "não executar nenhuns scripts do pacote"
+msgstr "não executa nenhuns scripts do pacote"
 
 #: lib/poptI.cc:211
 #, c-format
 msgid "do not execute %%pre scriptlet (if any)"
-msgstr "não executar o script %%pre (se existir)"
+msgstr "não executa o script %%pre (se existir)"
 
 #: lib/poptI.cc:214
 #, c-format
 msgid "do not execute %%post scriptlet (if any)"
-msgstr "não executar o script %%post (se existir)"
+msgstr "não executa o script %%post (se existir)"
 
 #: lib/poptI.cc:217
 #, c-format
 msgid "do not execute %%preun scriptlet (if any)"
-msgstr "não executar o script %%preun (se existir)"
+msgstr "não executa o script %%preun (se existir)"
 
 #: lib/poptI.cc:220
 #, c-format
 msgid "do not execute %%postun scriptlet (if any)"
-msgstr "não executar o script %%postun (se existir)"
+msgstr "não executa o script %%postun (se existir)"
 
 #: lib/poptI.cc:223
 #, c-format
 msgid "do not execute %%pretrans scriptlet (if any)"
-msgstr ""
+msgstr "não executa o script %%pretrans (se existir)"
 
 #: lib/poptI.cc:226
 #, c-format
 msgid "do not execute %%posttrans scriptlet (if any)"
-msgstr ""
+msgstr "não executa o script %%posttrans (se existir)"
 
 #: lib/poptI.cc:229
-#, fuzzy, c-format
-#| msgid "do not execute %%preun scriptlet (if any)"
+#, c-format
 msgid "do not execute %%preuntrans scriptlet (if any)"
-msgstr "não executar o script %%preun (se existir)"
+msgstr "não executa o script %%preuntrans (se existir)"
 
 #: lib/poptI.cc:232
-#, fuzzy, c-format
-#| msgid "do not execute %%postun scriptlet (if any)"
+#, c-format
 msgid "do not execute %%postuntrans scriptlet (if any)"
-msgstr "não executar o script %%postun (se existir)"
+msgstr "não executa o script %%postuntrans (se existir)"
 
 #: lib/poptI.cc:235
 msgid "do not execute any scriptlet(s) triggered by this package"
-msgstr "não executar nenhum dos scripts activados por este pacote"
+msgstr "não executa nenhum dos scripts despoletados por este pacote"
 
 #: lib/poptI.cc:238
 #, c-format
 msgid "do not execute any %%triggerprein scriptlet(s)"
-msgstr "não executar nenhum dos scripts %%triggerprein"
+msgstr "não executa nenhum dos scripts %%triggerprein"
 
 #: lib/poptI.cc:241
 #, c-format
 msgid "do not execute any %%triggerin scriptlet(s)"
-msgstr "não executar nenhum dos scripts %%triggerin"
+msgstr "não executa nenhum dos scripts %%triggerin"
 
 #: lib/poptI.cc:244
 #, c-format
 msgid "do not execute any %%triggerun scriptlet(s)"
-msgstr "não executar nenhum dos scripts %%triggerun"
+msgstr "não executa nenhum dos scripts %%triggerun"
 
 #: lib/poptI.cc:247
 #, c-format
 msgid "do not execute any %%triggerpostun scriptlet(s)"
-msgstr "não executar nenhum dos scripts %%triggerpostun"
+msgstr "não executa nenhum dos scripts %%triggerpostun"
 
 #: lib/poptI.cc:251
 #, c-format
 msgid "do not create %%sysusers users and groups"
-msgstr ""
+msgstr "não cria utilizadores e grupos %%sysusers"
 
 #: lib/poptI.cc:255
 msgid ""
 "upgrade to an old version of the package (--force on upgrades does this "
 "automatically)"
 msgstr ""
-"actualiza para um versão antiga do pacote (o --force faz isto "
-"automaticamente)"
+"actualiza para uma versão antiga do pacote (o --force em atualizações faz "
+"isto automaticamente)"
 
 #: lib/poptI.cc:259
 msgid "print percentages as package installs"
-msgstr "mostra percentagens enquanto o pacote instala"
+msgstr "escreve percentagens enquanto o pacote instala"
 
 #: lib/poptI.cc:261
 msgid "relocate the package to <dir>, if relocatable"
-msgstr "muda o pacote para <dir>, se for possível"
+msgstr "relocaliza o pacote para <dir>, se for possível"
 
 #: lib/poptI.cc:262
 msgid "<dir>"
@@ -1929,7 +1927,7 @@ msgstr "<dir>"
 
 #: lib/poptI.cc:264
 msgid "relocate files from path <old> to <new>"
-msgstr "muda os ficheiros de <velho> para <novo>"
+msgstr "relocaliza os ficheiros de <velho> para <novo>"
 
 #: lib/poptI.cc:265
 msgid "<old>=<new>"
@@ -1937,11 +1935,11 @@ msgstr "<velho>=<novo>"
 
 #: lib/poptI.cc:268
 msgid "ignore file conflicts between packages"
-msgstr ""
+msgstr "ignora conflitos de ficheiros entre pacotes"
 
 #: lib/poptI.cc:271
 msgid "reinstall if the package is already present"
-msgstr "reinstalar se o pacote já estiver presente"
+msgstr "reinstala se o pacote já estiver presente"
 
 #: lib/poptI.cc:273
 msgid "don't install, but tell if it would work or not"
@@ -1953,142 +1951,139 @@ msgstr "actualizar pacote(s)"
 
 #: lib/poptI.cc:280
 msgid "reinstall package(s)"
-msgstr ""
+msgstr "reinstalar pacotes(s)"
 
 #: lib/poptI.cc:284
 msgid "restore package(s)"
-msgstr ""
+msgstr "restaurar pacote(s)"
 
 #: lib/poptQV.cc:79
 msgid "query/verify all packages"
-msgstr "pesquisar/verificar todos os pacotes"
+msgstr "consultar/verificar todos os pacotes"
 
 #: lib/poptQV.cc:81
 msgid "rpm checksig mode"
-msgstr ""
+msgstr "modo checksig de rpm"
 
 #: lib/poptQV.cc:83
 msgid "query/verify package(s) owning installed file"
-msgstr ""
+msgstr "consultar/verificar o dono dos ficheiros instalados dos pacote(s)"
 
 #: lib/poptQV.cc:85
 msgid "query/verify package(s) owning path, installed or not"
-msgstr ""
+msgstr "consultar/verificar o dono do caminho dos pacote(s), instalados ou não"
 
 #: lib/poptQV.cc:87
 msgid "query/verify package(s) in group"
-msgstr "pesquisar/verificar o(s) pacote(s) no grupo"
+msgstr "consultar/verificar o(s) pacote(s) no grupo"
 
 #: lib/poptQV.cc:89
 msgid "query/verify a package file"
-msgstr ""
+msgstr "consultar/verificar um ficheiro de pacote"
 
 #: lib/poptQV.cc:92
 msgid "rpm query mode"
-msgstr "modo de pesquisa do rpm"
+msgstr "modo de consulta do rpm"
 
 #: lib/poptQV.cc:94
 msgid "query/verify a header instance"
-msgstr ""
+msgstr "consultar/verificar uma instância de cabeçalho"
 
 #: lib/poptQV.cc:96
 msgid "query/verify package(s) from install transaction"
-msgstr "pesquisar/verificar o(s) pacote(s) de transacção de instalação"
+msgstr "consultar/verificar o(s) pacote(s) de transação de instalação"
 
 #: lib/poptQV.cc:98
 msgid "query the package(s) triggered by the package"
-msgstr "pesquisar o(s) pacote(s) activados pelo pacote"
+msgstr "consultar o(s) pacote(s) despoletados pelo pacote"
 
 #: lib/poptQV.cc:100
 msgid "rpm verify mode"
 msgstr "modo de verificação do rpm"
 
 #: lib/poptQV.cc:102
-#, fuzzy
 msgid "query/verify the package(s) which conflict with a dependency"
-msgstr "pesquisar/verificar o(s) pacote(s) que precisa duma dependência"
+msgstr ""
+"consultar/verificar o(s) pacote(s) que fazem conflito com uma dependência"
 
 #: lib/poptQV.cc:104
 msgid "query/verify the package(s) which require a dependency"
-msgstr "pesquisar/verificar o(s) pacote(s) que precisa duma dependência"
+msgstr "consultar/verificar o(s) pacote(s) que requerem uma dependência"
 
 #: lib/poptQV.cc:106
-#, fuzzy
 msgid "query/verify the package(s) which obsolete a dependency"
-msgstr "pesquisar/verificar o(s) pacote(s) que precisa duma dependência"
+msgstr "consultar/verificar o(s) pacote(s) que tornam uma dependência obsoleta"
 
 #: lib/poptQV.cc:108
 msgid "query/verify the package(s) which provide a dependency"
-msgstr "pesquisar/verificar o(s) pacote(s) que oferecem uma dependência"
+msgstr "consultar/verificar o(s) pacote(s) que fornecem uma dependência"
 
 #: lib/poptQV.cc:110
 msgid "query/verify the package(s) which recommends a dependency"
-msgstr ""
+msgstr "consultar/verificar o(s) pacote(s) que recomendam uma dependência"
 
 #: lib/poptQV.cc:112
 msgid "query/verify the package(s) which suggests a dependency"
-msgstr ""
+msgstr "consultar/verificar o(s) pacote(s) que sugerem uma dependência"
 
 #: lib/poptQV.cc:114
 msgid "query/verify the package(s) which supplements a dependency"
-msgstr ""
+msgstr "consultar/verificar o(s) pacote(s) que complementam uma dependência"
 
 #: lib/poptQV.cc:116
 msgid "query/verify the package(s) which enhances a dependency"
-msgstr ""
+msgstr "consultar/verificar o(s) pacote(s) que melhoram uma dependência"
 
 #: lib/poptQV.cc:119
 msgid "do not glob arguments"
-msgstr ""
+msgstr "não agrupar os argumentos"
 
 #: lib/poptQV.cc:121
 msgid "do not process non-package files as manifests"
-msgstr ""
+msgstr "não processar ficheiros não-pacote como manifestos"
 
 #: lib/poptQV.cc:190
-#, fuzzy
 msgid "only include configuration files"
-msgstr "listar todos os ficheiros de configuração"
+msgstr "apenas incluir ficheiros de configuração"
 
 #: lib/poptQV.cc:193
-#, fuzzy
 msgid "only include documentation files"
-msgstr "listar todos os ficheiros de documentação"
+msgstr "apenas incluir ficheiros de documentação"
 
 #: lib/poptQV.cc:196
 msgid "only include license files"
-msgstr ""
+msgstr "apenas incluir ficheiros de licença"
 
 #: lib/poptQV.cc:199
 msgid "only include artifact files"
-msgstr ""
+msgstr "apenas incluir ficheiros de artefactos"
 
 #: lib/poptQV.cc:202
-#, fuzzy, c-format
+#, c-format
 msgid "exclude %%ghost files"
-msgstr "ignorar ficheiros %%ghost"
+msgstr "excluir ficheiros %%ghost"
 
 #: lib/poptQV.cc:205
 #, c-format
 msgid "exclude %%config files"
-msgstr ""
+msgstr "excluir ficheiros %%config"
 
 #: lib/poptQV.cc:208
 #, c-format
 msgid "exclude %%artifact files"
-msgstr ""
+msgstr "excluir ficheiros %%artifact"
 
 #: lib/poptQV.cc:220
 msgid "dump basic file information"
-msgstr "apresentar a informação básica do ficheiro"
+msgstr "despejar informação básica do ficheiro"
 
 #: lib/poptQV.cc:224
 msgid "list files in package"
-msgstr "listar os ficheiros no pacote"
+msgstr "lista os ficheiros no pacote"
 
 #: lib/poptQV.cc:228 tools/rpmspec.cc:44
 msgid "use the following query format"
-msgstr "usar o formato de pesquisa seguinte"
+msgstr "usa o formato de consulta seguinte"
 
 #: lib/poptQV.cc:230
 msgid "display the states of the listed files"
@@ -2096,66 +2091,65 @@ msgstr "mostrar os estados dos ficheiros listados"
 
 #: lib/poptQV.cc:248
 msgid "don't verify size of files"
-msgstr "não verificar os tamanho dos ficheiros"
+msgstr "não verifica os tamanho dos ficheiros"
 
 #: lib/poptQV.cc:251
 msgid "don't verify symlink path of files"
-msgstr "não verificar as ligações simbólicas dos ficheiros"
+msgstr "não verifica os caminhos das ligações simbólicas dos ficheiros"
 
 #: lib/poptQV.cc:254
 msgid "don't verify owner of files"
-msgstr "não verificar o dono dos ficheiros"
+msgstr "não verifica o dono dos ficheiros"
 
 #: lib/poptQV.cc:257
 msgid "don't verify group of files"
-msgstr "não verificar o grupo dos ficheiros"
+msgstr "não verifica o grupo dos ficheiros"
 
 #: lib/poptQV.cc:260
 msgid "don't verify modification time of files"
-msgstr "não verificar hora de modificação dos ficheiros"
+msgstr "não verifica hora de modificação dos ficheiros"
 
 #: lib/poptQV.cc:263 lib/poptQV.cc:266
 msgid "don't verify mode of files"
-msgstr "não verificar o modo dos ficheiros"
+msgstr "não verifica o modo dos ficheiros"
 
 #: lib/poptQV.cc:269
 msgid "don't verify file security contexts"
-msgstr ""
+msgstr "não verifica os contextos de segurança dos ficheiros"
 
 #: lib/poptQV.cc:271
 msgid "don't verify capabilities of files"
-msgstr ""
+msgstr "não verifica as capacidades dos ficheiros"
 
 #: lib/poptQV.cc:273
 msgid "don't verify files in package"
-msgstr "não verificar os ficheiros no pacote"
+msgstr "não verifica os ficheiros no pacote"
 
 #: lib/poptQV.cc:275 tools/rpmgraph.cc:214
 msgid "don't verify package dependencies"
-msgstr "não verificar as dependências do pacote"
+msgstr "não verifica as dependências do pacote"
 
 #: lib/poptQV.cc:278 lib/poptQV.cc:281
 msgid "don't execute verify script(s)"
-msgstr ""
+msgstr "não executa scripts de verificação"
 
 #: lib/psm.cc:135
 #, c-format
 msgid "Missing rpmlib features for %s:\n"
-msgstr ""
+msgstr "Funcionalidade de rpmlib em falta para %s:\n"
 
 #: lib/psm.cc:173
 msgid "source package expected, binary found\n"
-msgstr ""
-"esperava-se um pacote com código-fonte, foi encontrado um pacote binário\n"
+msgstr "esperado um pacote fonte, encontrado binário\n"
 
 #: lib/psm.cc:184
 msgid "source package contains no .spec file\n"
-msgstr "o pacote de código-fonte não contem um ficheiro .spec\n"
+msgstr "o pacote fonte não contem um ficheiro .spec\n"
 
 #: lib/psm.cc:802
 #, c-format
 msgid "unpacking of archive failed%s%s: %s\n"
-msgstr "a abertura do pacote falhou%s%s: %s\n"
+msgstr "desempacotar do arquivo falhou%s%s: %s\n"
 
 #: lib/psm.cc:803
 msgid " on file "
@@ -2164,11 +2158,11 @@ msgstr " no ficheiro "
 #: lib/query.cc:109
 #, c-format
 msgid "incorrect format: %s\n"
-msgstr "formato incorrecto: %s\n"
+msgstr "formato incorreto: %s\n"
 
 #: lib/query.cc:125
 msgid "(contains no files)\n"
-msgstr ""
+msgstr "(não contem ficheiros)\n"
 
 #: lib/query.cc:154
 msgid "normal        "
@@ -2184,11 +2178,11 @@ msgstr "não instalado "
 
 #: lib/query.cc:163
 msgid "net shared    "
-msgstr "partilhado"
+msgstr "partilhado na rede    "
 
 #: lib/query.cc:166
 msgid "wrong color   "
-msgstr ""
+msgstr "cor errada   "
 
 #: lib/query.cc:169
 msgid "(no state)    "
@@ -2201,11 +2195,11 @@ msgstr "(desconhecido %3d)"
 
 #: lib/query.cc:192
 msgid "package has not file owner/group lists\n"
-msgstr ""
+msgstr "pacote não tem listas de dono/grupo de ficheiros\n"
 
 #: lib/query.cc:226
 msgid "package has neither file owner or id lists\n"
-msgstr "o pacote nem tem um dono do ficheiro ou as listas de IDs\n"
+msgstr "pacote não tem nem dono do ficheiro nem listas de id\n"
 
 #: lib/query.cc:322
 #, c-format
@@ -2215,57 +2209,57 @@ msgstr "o grupo %s não contém nenhum pacote\n"
 #: lib/query.cc:329
 #, c-format
 msgid "no package triggers %s\n"
-msgstr "nenhum pacote activa o %s\n"
+msgstr "nenhum pacote despoleta %s\n"
 
 #: lib/query.cc:338
 #, c-format
 msgid "malformed %s: %s\n"
-msgstr "malformado %s: %s\n"
+msgstr "mal formado %s: %s\n"
 
 #: lib/query.cc:343
 #, c-format
 msgid "no package matches %s: %s\n"
-msgstr "nenhum pacote coincide com %s: %s\n"
+msgstr "nenhum pacote corresponde a %s: %s\n"
 
 #: lib/query.cc:351
-#, fuzzy, c-format
+#, c-format
 msgid "no package conflicts %s\n"
-msgstr "nenhum pacote oferece o %s\n"
+msgstr "nenhum pacote faz conflito com %s\n"
 
 #: lib/query.cc:358
-#, fuzzy, c-format
+#, c-format
 msgid "no package obsoletes %s\n"
-msgstr "nenhum pacote precisa do %s\n"
+msgstr "nenhum pacote torna obsoleto %s\n"
 
 #: lib/query.cc:365
 #, c-format
 msgid "no package requires %s\n"
-msgstr "nenhum pacote precisa do %s\n"
+msgstr "nenhum pacote requer %s\n"
 
 #: lib/query.cc:372
 #, c-format
 msgid "no package recommends %s\n"
-msgstr ""
+msgstr "nenhum pacote recomenda %s\n"
 
 #: lib/query.cc:379
 #, c-format
 msgid "no package suggests %s\n"
-msgstr ""
+msgstr "nenhum pacote sugere %s\n"
 
 #: lib/query.cc:386
 #, c-format
 msgid "no package supplements %s\n"
-msgstr ""
+msgstr "nenhum pacote complementa %s\n"
 
 #: lib/query.cc:393
 #, c-format
 msgid "no package enhances %s\n"
-msgstr ""
+msgstr "nenhum pacote melhora %s\n"
 
 #: lib/query.cc:401
 #, c-format
 msgid "no package provides %s\n"
-msgstr "nenhum pacote oferece o %s\n"
+msgstr "nenhum pacote fornece %s\n"
 
 #: lib/query.cc:437
 #, c-format
@@ -2275,7 +2269,7 @@ msgstr "ficheiro %s: %s\n"
 #: lib/query.cc:440
 #, c-format
 msgid "file %s is not owned by any package\n"
-msgstr "o ficheiro %s não pertence a nenhum pacote\n"
+msgstr "o ficheiro %s não é posse de nenhum pacote\n"
 
 #: lib/query.cc:452
 #, c-format
@@ -2285,7 +2279,7 @@ msgstr "número de pacote inválido: %s\n"
 #: lib/query.cc:459
 #, c-format
 msgid "record %u could not be read\n"
-msgstr ""
+msgstr "o registo %u não pôde ser lido\n"
 
 #: lib/query.cc:468 lib/rpminstall.cc:737
 #, c-format
@@ -2295,43 +2289,43 @@ msgstr "o pacote %s não está instalado\n"
 #: lib/query.cc:499
 #, c-format
 msgid "unknown tag: \"%s\"\n"
-msgstr ""
+msgstr "etiqueta desconhecida: \"%s\"\n"
 
 #: lib/rpmchecksig.cc:48 lib/rpmchecksig.cc:56
 #, c-format
 msgid "%s: key %d import failed.\n"
-msgstr ""
+msgstr "%s: importar de chave %d falhou.\n"
 
 #: lib/rpmchecksig.cc:64
 #, c-format
 msgid "%s: key %d not an armored public key.\n"
-msgstr ""
+msgstr "%s: chave %d não é uma chave pública blindada.\n"
 
 #: lib/rpmchecksig.cc:96
 #, c-format
 msgid "%s: import read failed(%d).\n"
-msgstr ""
+msgstr "%s: leitura da importação falhou(%d).\n"
 
 #: lib/rpmchecksig.cc:116
 #, c-format
 msgid "Fread failed: %s"
-msgstr ""
+msgstr "Fread falhou: %s"
 
 #: lib/rpmchecksig.cc:239
 msgid "DIGESTS"
-msgstr ""
+msgstr "RESUMOS"
 
 #: lib/rpmchecksig.cc:239
 msgid "digests"
-msgstr ""
+msgstr "resumos"
 
 #: lib/rpmchecksig.cc:243
 msgid "SIGNATURES"
-msgstr ""
+msgstr "ASSINATURAS"
 
 #: lib/rpmchecksig.cc:243
 msgid "signatures"
-msgstr ""
+msgstr "assinaturas"
 
 #: lib/rpmchecksig.cc:245
 msgid "NOT OK"
@@ -2344,122 +2338,123 @@ msgstr "OK"
 #: lib/rpmchecksig.cc:287 sign/rpmgensig.cc:81
 #, c-format
 msgid "%s: open failed: %s\n"
-msgstr "%s: o acesso falhou: %s\n"
+msgstr "%s: abrir falhou: %s\n"
 
 #: lib/rpmchroot.cc:46
 #, c-format
 msgid "Unable to open current directory: %m\n"
-msgstr ""
+msgstr "Incapaz de abrir diretório atual: %m\n"
 
 #: lib/rpmchroot.cc:65 lib/rpmchroot.cc:91
 #, c-format
 msgid "%s: chroot directory not set\n"
-msgstr ""
+msgstr "%s: diretório chroot não definido\n"
 
 #: lib/rpmchroot.cc:77
 #, c-format
 msgid "Unable to change root directory: %m\n"
-msgstr ""
+msgstr "Incapaz de alterar diretório raiz: %m\n"
 
 #: lib/rpmchroot.cc:103
 #, c-format
 msgid "Unable to restore root directory: %m\n"
-msgstr ""
+msgstr "Incapaz de restaurar diretório raiz: %m\n"
 
 #: lib/rpmdb.cc:57
 #, c-format
 msgid "Generating %d missing index(es), please wait...\n"
-msgstr ""
+msgstr "A gerar %d índice(s) em falta, por favor aguarde...\n"
 
 #: lib/rpmdb.cc:138 lib/rpmdb.cc:184
 #, c-format
 msgid "cannot open %s index using %s - %s (%d)\n"
-msgstr ""
+msgstr "incapaz de abrir índice %s usando %s - %s (%d)\n"
 
 #: lib/rpmdb.cc:397
 msgid "no dbpath has been set\n"
-msgstr "não foi definido o dbpath\n"
+msgstr "nenhum dbpath foi definido\n"
 
 #: lib/rpmdb.cc:896
 msgid "miFreeHeader: skipping"
-msgstr ""
+msgstr "miFreeHeader: a saltar"
 
 #: lib/rpmdb.cc:912
 #, c-format
 msgid "error(%d) storing record #%d into %s\n"
-msgstr ""
+msgstr "erro(%d) a guardar registo #%d em %s\n"
 
 #: lib/rpmdb.cc:1012
 #, c-format
 msgid "%s: regexec failed: %s\n"
-msgstr ""
+msgstr "%s: expressão regular falhou: %s\n"
 
 #: lib/rpmdb.cc:1179
 #, c-format
 msgid "%s: regcomp failed: %s\n"
-msgstr ""
+msgstr "%s: regcomp falhou: %s\n"
 
 #: lib/rpmdb.cc:1342
 msgid "rpmdbNextIterator: skipping"
-msgstr ""
+msgstr "rpmdbNextIterator: a saltar"
 
 #: lib/rpmdb.cc:1429
 #, c-format
 msgid "rpmdb: damaged header #%u retrieved -- skipping.\n"
-msgstr ""
+msgstr "rpmdb: cabeçalho danificado #%u recuperado -- a saltar.\n"
 
 #: lib/rpmdb.cc:1931
 #, c-format
 msgid "%s: cannot read header at 0x%x\n"
-msgstr "%s: não consigo ler o cabeçalho em 0x%x\n"
+msgstr "%s: incapaz de ler o cabeçalho em 0x%x\n"
 
 #: lib/rpmdb.cc:2286
 msgid "could not move new database in place\n"
-msgstr ""
+msgstr "incapaz de mover a base de dados no lugar\n"
 
 #: lib/rpmdb.cc:2289
 #, c-format
 msgid "could also not restore old database from %s\n"
-msgstr ""
+msgstr "também não pude restaurar a base de dados antiga a partir de %s\n"
 
 #: lib/rpmdb.cc:2291 lib/rpmdb.cc:2466
 #, c-format
 msgid "replace files in %s with files from %s to recover\n"
-msgstr ""
+msgstr "substitua os ficheiros em %s por ficheiros de %s para recuperação\n"
 
 #: lib/rpmdb.cc:2300
 #, c-format
 msgid "Could not get public keys from %s\n"
-msgstr ""
+msgstr "Incapaz de obter chaves públicas a partir de %s\n"
 
 #: lib/rpmdb.cc:2307
 #, c-format
 msgid "could not delete old database at %s\n"
-msgstr ""
+msgstr "incapaz de apagar base de dados antiga em %s\n"
 
 #: lib/rpmdb.cc:2378
 msgid "no dbpath has been set"
-msgstr "não foi definido o dbpath"
+msgstr "nenhum dbpath foi definido"
 
 #: lib/rpmdb.cc:2396
 #, c-format
 msgid "failed to create directory %s: %s\n"
-msgstr ""
+msgstr "falhou ao criar diretório %s: %s\n"
 
 #: lib/rpmdb.cc:2427
 #, c-format
 msgid "header #%u in the database is bad -- skipping.\n"
-msgstr ""
+msgstr "cabeçalho #%u na base de dados está corrompido -- a saltar.\n"
 
 #: lib/rpmdb.cc:2434
 #, c-format
 msgid "cannot add record originally at %u\n"
-msgstr "não consigo adicionar o registo originalmente em %u\n"
+msgstr "incapaz de adicionar o registo originalmente em %u\n"
 
 #: lib/rpmdb.cc:2451
 msgid "failed to rebuild database: original database remains in place\n"
 msgstr ""
-"falhou a reconstrução da base de dados: a base de dados original mantém-se\n"
+"falhou a reconstrução da base de dados: a base de dados original mantém-se "
+"no lugar\n"
 
 #: lib/rpmdb.cc:2464
 msgid "failed to replace old database with new database!\n"
@@ -2467,7 +2462,7 @@ msgstr "falhou a substituição da base de dados antiga pela nova!\n"
 
 #: lib/rpmds.cc:677
 msgid "NO "
-msgstr "NÃO"
+msgstr "NÃO "
 
 #: lib/rpmds.cc:677
 msgid "YES"
@@ -2475,171 +2470,178 @@ msgstr "SIM"
 
 #: lib/rpmds.cc:1042
 msgid "PreReq:, Provides:, and Obsoletes: dependencies support versions."
-msgstr ""
+msgstr "PreReq:, Provides:, e Obsoletes: versões de suporte de dependências."
 
 #: lib/rpmds.cc:1045
 msgid "file name(s) stored as (dirName,baseName,dirIndex) tuple, not as path."
 msgstr ""
+"nome(s) de ficheiro guardados como (dirName,baseName,dirIndex) tuple, não "
+"como caminho."
 
 #: lib/rpmds.cc:1049
 msgid "package payload can be compressed using bzip2."
-msgstr ""
+msgstr "conteúdo de pacote pode ser comprimido usando bzip2."
 
 #: lib/rpmds.cc:1054
 msgid "package payload can be compressed using xz."
-msgstr ""
+msgstr "conteúdo de pacote pode ser comprimido usando xz."
 
 #: lib/rpmds.cc:1057
 msgid "package payload can be compressed using lzma."
-msgstr ""
+msgstr "conteúdo de pacote pode ser comprimido usando lzma."
 
 #: lib/rpmds.cc:1061
 msgid "package payload file(s) have \"./\" prefix."
-msgstr ""
+msgstr "ficheiro(s) do conteúdo do pacote têm prefixo \"./\"."
 
 #: lib/rpmds.cc:1064
 msgid "package name-version-release is not implicitly provided."
-msgstr ""
+msgstr "nome-versão-lançamento do pacote não está fornecido implicitamente."
 
 #: lib/rpmds.cc:1067
 msgid "header tags are always sorted after being loaded."
-msgstr ""
+msgstr "etiquetas do cabeçalho são sempre ordenadas após serem carregadas."
 
 #: lib/rpmds.cc:1070
 msgid "the scriptlet interpreter can use arguments from header."
-msgstr ""
+msgstr "o interpretador do script pode usar argumentos do cabeçalho."
 
 #: lib/rpmds.cc:1073
 msgid "a hardlink file set may be installed without being complete."
 msgstr ""
+"um conjunto de ficheiro hardlink pode estar instalado sem estar completo."
 
 #: lib/rpmds.cc:1076
 msgid "package scriptlets may access the rpm database while installing."
 msgstr ""
+"os scripts do pacote podem aceder à base de dados rpm enquanto instalam."
 
 #: lib/rpmds.cc:1079
 msgid "internal support for lua scripts."
-msgstr ""
+msgstr "suporte interno para scripts de lua."
 
 #: lib/rpmds.cc:1082
 msgid "file digest algorithm is per package configurable"
-msgstr ""
+msgstr "o algoritmo de resumo do ficheiro é configurável por pacote"
 
 #: lib/rpmds.cc:1086
 msgid "support for POSIX.1e file capabilities"
-msgstr ""
+msgstr "suporte para capacidades de ficheiro 1e do POSIX."
 
 #: lib/rpmds.cc:1090
 msgid "package scriptlets can be expanded at install time."
-msgstr ""
+msgstr "os scripts do pacote podem ser expandidos durante a instalação."
 
 #: lib/rpmds.cc:1093
 msgid "dependency comparison supports versions with tilde."
-msgstr ""
+msgstr "comparação de dependência suporta versões com til."
 
 #: lib/rpmds.cc:1096
 msgid "dependency comparison supports versions with caret."
-msgstr ""
+msgstr "comparação de dependência suporta versões com acento circunflexo."
 
 #: lib/rpmds.cc:1099
 msgid "support files larger than 4GB"
-msgstr ""
+msgstr "suporta ficheiros maiores que 4GB"
 
 #: lib/rpmds.cc:1102
 msgid "support for rich dependencies."
-msgstr ""
+msgstr "suporte para dependências ricas."
 
 #: lib/rpmds.cc:1105
 msgid "support for dynamic buildrequires."
-msgstr ""
+msgstr "suporte para requisições de compilação dinâmicas."
 
 #: lib/rpmds.cc:1109
 msgid "package payload can be compressed using zstd."
-msgstr ""
+msgstr "conteúdo de pacote pode ser comprimido usando zstd."
 
 #: lib/rpmds.cc:1289
 #, c-format
 msgid "Unknown rich dependency op '%.*s'"
-msgstr ""
+msgstr "Opção de dependência rica desconhecida '%.*s'"
 
 #: lib/rpmds.cc:1330
 msgid "Name required"
-msgstr ""
+msgstr "Nome obrigatório"
 
 #: lib/rpmds.cc:1367
 msgid "Illegal ops in with/without"
-msgstr ""
+msgstr "opções ilegais em with/without"
 
 #: lib/rpmds.cc:1374
 msgid "Illegal context for 'unless', please use 'or' instead"
-msgstr ""
+msgstr "Contexto ilegal para 'unless', por favor use 'or' em vez disto"
 
 #: lib/rpmds.cc:1379
 msgid "Illegal context for 'if', please use 'and' instead"
-msgstr ""
+msgstr "Contexto ilegal para 'if', por favor use 'and' em vez disto"
 
 #: lib/rpmds.cc:1395
 msgid "Rich dependency does not start with '('"
-msgstr ""
+msgstr "Dependência rica não começa com '('"
 
 #: lib/rpmds.cc:1403
 msgid "Missing argument to rich dependency op"
-msgstr ""
+msgstr "Argumento em falta para opção de dependência rica"
 
 #: lib/rpmds.cc:1405
 msgid "Empty rich dependency"
-msgstr ""
+msgstr "Dependência rica vazia"
 
 #: lib/rpmds.cc:1423
 #, c-format
 msgid "Unterminated rich dependency: %s"
-msgstr ""
+msgstr "Dependência rica não terminada: %s"
 
 #: lib/rpmds.cc:1438
 msgid "Cannot chain different ops"
-msgstr ""
+msgstr "Não pode fazer cadeia com diferentes opções"
 
 #: lib/rpmds.cc:1443
 msgid "Can only chain and/or/with ops"
-msgstr ""
+msgstr "Só pode fazer cadeia com opções and/or/with"
 
 #: lib/rpmds.cc:1574
 msgid "Junk after rich dependency"
-msgstr ""
+msgstr "Lixo após dependência rica"
 
 #: lib/rpmfi.cc:820
 #, c-format
 msgid "user %s does not exist - using %s\n"
-msgstr ""
+msgstr "utilizador %s não existe - a usar %s\n"
 
 #: lib/rpmfi.cc:827
 #, c-format
 msgid "group %s does not exist - using %s\n"
-msgstr ""
+msgstr "grupo %s não existe - a usar %s\n"
 
 #: lib/rpmfi.cc:1347
 #, c-format
 msgid "Wrong number of entries for tag %s: %u found but %u expected.\n"
 msgstr ""
+"Número errado de entradas para etiqueta %s: encontrado %u mas esperado %u.\n"
 
 #: lib/rpmfi.cc:1352
 #, c-format
 msgid "Malformed data for tag %s: %u bytes found but %<PRIu64> expected.\n"
 msgstr ""
+"Dados mal formados para etiqueta %s: %u bytes encontrados mas esperado "
+"%<PRIu64>.\n"
 
 #: lib/rpmfi.cc:1537
 #, c-format
 msgid "%s: base64 decode failed, len %zu\n"
-msgstr ""
+msgstr "%s: descodificação base64 falhada, comprimento %zu\n"
 
 #: lib/rpmfi.cc:1545
 #, c-format
 msgid "%s: base64 decode success, len %zu\n"
-msgstr ""
+msgstr "%s: descodificação base64 com sucesso, comprimento %zu\n"
 
 #: lib/rpmfi.cc:2405
 msgid "Bad magic"
-msgstr "Código de integridade inválido"
+msgstr "Código magic inválido"
 
 #: lib/rpmfi.cc:2406
 msgid "Bad/unreadable  header"
@@ -2651,7 +2653,7 @@ msgstr "Tamanho do cabeçalho demasiado grande"
 
 #: lib/rpmfi.cc:2430
 msgid "File too large for archive"
-msgstr ""
+msgstr "Ficheiro demasiado grande para arquivar"
 
 #: lib/rpmfi.cc:2431
 msgid "Unknown file type"
@@ -2659,11 +2661,11 @@ msgstr "Tipo de ficheiro desconhecido"
 
 #: lib/rpmfi.cc:2432
 msgid "Missing file(s)"
-msgstr ""
+msgstr "Ficheiro(s) em falta"
 
 #: lib/rpmfi.cc:2433
 msgid "Digest mismatch"
-msgstr ""
+msgstr "Incompatibilidade do resumo"
 
 #: lib/rpmfi.cc:2434
 msgid "Internal error"
@@ -2675,11 +2677,11 @@ msgstr "Ficheiro de arquivo não está no cabeçalho"
 
 #: lib/rpmfi.cc:2436
 msgid "Unsafe symlink"
-msgstr ""
+msgstr "Link simbólico não seguro"
 
 #: lib/rpmfi.cc:2441
 msgid "File from package already exists as a directory in system"
-msgstr ""
+msgstr "Ficheiro do pacote já existe como um diretório no sistema"
 
 #: lib/rpmfi.cc:2448
 msgid " failed - "
@@ -2688,65 +2690,63 @@ msgstr " falhou - "
 #: lib/rpmfi.cc:2451
 #, c-format
 msgid "%s: (error 0x%x)"
-msgstr ""
+msgstr "%s: (erro 0x%x)"
 
 #: lib/rpmgi.cc:56 lib/rpminstall.cc:113 lib/rpminstall.cc:319
 #: lib/rpminstall.cc:351 tools/rpmgraph.cc:84 tools/rpmgraph.cc:123
 #, c-format
 msgid "open of %s failed: %s\n"
-msgstr "o acesso ao %s falhou: %s\n"
+msgstr "abertura de %s falhou: %s\n"
 
 #: lib/rpmgi.cc:145
 #, c-format
 msgid "Max level of manifest recursion exceeded: %s\n"
-msgstr ""
+msgstr "Nível máximo de recursão de manifesto excedido: %s\n"
 
 #: lib/rpmgi.cc:156
 #, c-format
 msgid "%s: not an rpm package (or package manifest)\n"
-msgstr ""
+msgstr "%s: não é um pacote rpm (ou manifesto de pacote)\n"
 
 #: lib/rpminstall.cc:139
 #, c-format
 msgid "Updating / installing...\n"
-msgstr ""
+msgstr "A atualizar / a instalar...\n"
 
 #: lib/rpminstall.cc:141
 #, c-format
 msgid "Cleaning up / removing...\n"
-msgstr ""
+msgstr "A limpar / a remover...\n"
 
 #: lib/rpminstall.cc:193
 msgid "Preparing..."
 msgstr "A preparar..."
 
 #: lib/rpminstall.cc:193
-#, fuzzy
 msgid "Verifying..."
-msgstr "A preparar..."
+msgstr "A verificar..."
 
 #: lib/rpminstall.cc:196
 msgid "Preparing packages..."
-msgstr ""
+msgstr "A preparar pacotes..."
 
 #: lib/rpminstall.cc:196
-#, fuzzy
 msgid "Verifying packages..."
-msgstr "pesquisar/verificar todos os pacotes"
+msgstr "A verificar pacotes..."
 
 #: lib/rpminstall.cc:274 tools/rpmgraph.cc:164
 msgid "Failed dependencies:\n"
-msgstr ""
+msgstr "Dependências falhadas:\n"
 
 #: lib/rpminstall.cc:333
 #, c-format
 msgid "%s: not an rpm package (or package manifest): %s\n"
-msgstr ""
+msgstr "%s: não é um pacote rpm (ou manifesto de pacote): %s\n"
 
 #: lib/rpminstall.cc:371 lib/rpminstall.cc:840 tools/rpmgraph.cc:105
 #, c-format
 msgid "%s cannot be installed\n"
-msgstr "o %s não pode ser instalado\n"
+msgstr "%s não pode ser instalado\n"
 
 #: lib/rpminstall.cc:468
 #, c-format
@@ -2761,23 +2761,22 @@ msgstr "A obter o %s\n"
 #: lib/rpminstall.cc:520
 #, c-format
 msgid "skipping %s - transfer failed\n"
-msgstr ""
+msgstr "a saltar %s - transferência falhou\n"
 
 #: lib/rpminstall.cc:602
 #, c-format
 msgid "package %s is not relocatable\n"
-msgstr ""
+msgstr "pacote %s não é relocalizável\n"
 
 #: lib/rpminstall.cc:634
 #, c-format
 msgid "error reading from file %s\n"
-msgstr "erro ao ler do ficheiros %s\n"
+msgstr "erro ao ler do ficheiro %s\n"
 
 #: lib/rpminstall.cc:640
-#, fuzzy, c-format
-#| msgid "no package matches %s: %s\n"
+#, c-format
 msgid "package format not supported: %s\n"
-msgstr "nenhum pacote coincide com %s: %s\n"
+msgstr "formato de pacote não suportado: %s\n"
 
 #: lib/rpminstall.cc:744
 #, c-format
