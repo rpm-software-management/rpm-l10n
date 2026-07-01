@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: RPM\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
-"PO-Revision-Date: 2026-06-30 21:18+0000\n"
+"PO-Revision-Date: 2026-07-01 22:17+0000\n"
 "Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
 "Language-Team: Portuguese <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/pt/>\n"
@@ -2781,26 +2781,26 @@ msgstr "formato de pacote não suportado: %s\n"
 #: lib/rpminstall.cc:744
 #, c-format
 msgid "\"%s\" specifies multiple packages:\n"
-msgstr ""
+msgstr "\"%s\" especifica múltiplos pacotes:\n"
 
 #: lib/rpminstall.cc:785
 #, c-format
 msgid "failed to add restore element to transaction: %s\n"
-msgstr ""
+msgstr "falhou ao adicionar elemento de restauro a transação: %s\n"
 
 #: lib/rpminstall.cc:824
 #, c-format
 msgid "cannot open %s: %s\n"
-msgstr "não consigo aceder ao %s: %s\n"
+msgstr "não pode abrir %s: %s\n"
 
 #: lib/rpminstall.cc:830
 #, c-format
 msgid "Installing %s\n"
-msgstr "A instalar o %s\n"
+msgstr "A instalar %s\n"
 
 #: lib/rpmlead.cc:89
 msgid "not an rpm package"
-msgstr ""
+msgstr "não é um pacote rpm"
 
 #: lib/rpmlead.cc:104
 #, c-format
@@ -2809,119 +2809,123 @@ msgstr "a leitura falhou: %s (%d)\n"
 
 #: lib/rpmlead.cc:107
 msgid "not an rpm package\n"
-msgstr ""
+msgstr "não é um pacote rpm\n"
 
 #: lib/rpmlock.cc:125 lib/rpmlock.cc:146
 #, c-format
 msgid "can't create %s lock on %s (%s)\n"
-msgstr ""
+msgstr "incapaz de criar tranca %s em %s (%s)\n"
 
 #: lib/rpmlock.cc:141
 #, c-format
 msgid "waiting for %s lock on %s\n"
-msgstr ""
+msgstr "a esperar por tranca %s em %s\n"
 
 #: lib/rpmplugins.cc:75
 #, c-format
 msgid "Failed to dlopen %s %s\n"
-msgstr ""
+msgstr "Falhou ao dlopen %s %s\n"
 
 #: lib/rpmplugins.cc:85
 #, c-format
 msgid "Failed to resolve symbol %s: %s\n"
-msgstr ""
+msgstr "Falhou ao resolver símbolo %s: %s\n"
 
 #: lib/rpmplugins.cc:164
 #, c-format
 msgid "Plugin %%__%s_%s not configured\n"
-msgstr ""
+msgstr "Plugin %%__%s_%s não configurado\n"
 
 #: lib/rpmplugins.cc:207
 #, c-format
 msgid "Plugin %s not loaded\n"
-msgstr ""
+msgstr "Plugin %s não carregado\n"
 
 #: lib/rpmprob.cc:98
 msgid "different"
-msgstr ""
+msgstr "diferente"
 
 #: lib/rpmprob.cc:103
 #, c-format
 msgid "package %s is intended for a %s architecture"
-msgstr ""
+msgstr "pacote %s é destinado para uma %s arquitetura"
 
 #: lib/rpmprob.cc:107
 #, c-format
 msgid "package %s is intended for a %s operating system"
-msgstr ""
+msgstr "pacote %s é destinado para um %s sistema operativo"
 
 #: lib/rpmprob.cc:112
 #, c-format
 msgid "package %s is already installed"
-msgstr "o pacote %s já está instalado"
+msgstr "pacote %s já está instalado"
 
 #: lib/rpmprob.cc:114
-#, fuzzy, c-format
+#, c-format
 msgid "package %s is not installed"
-msgstr "o pacote %s não está instalado\n"
+msgstr "pacote %s não está instalado"
 
 #: lib/rpmprob.cc:117
 #, c-format
 msgid "path %s in package %s is not relocatable"
-msgstr ""
+msgstr "caminho %s no pacote %s não é relocalizável"
 
 #: lib/rpmprob.cc:122
 #, c-format
 msgid "file %s conflicts between attempted installs of %s and %s"
 msgstr ""
-"o ficheiro %s está em conflito com as tentativas de instalação do %s e %s"
+"o ficheiro %s está em conflito com as tentativas de instalação de %s e %s"
 
 #: lib/rpmprob.cc:127
 #, c-format
 msgid "file %s from install of %s conflicts with file from package %s"
 msgstr ""
-"o ficheiro %s da instalação do %s está em conflito com o ficheiro do pacote "
+"o ficheiro %s da instalação de %s está em conflito com o ficheiro do pacote "
 "%s"
 
 #: lib/rpmprob.cc:132
 #, c-format
 msgid "package %s (which is newer than %s) is already installed"
-msgstr "o pacote %s (que é mais recente que o %s) já está instalado"
+msgstr "o pacote %s (que é mais recente que %s) já está instalado"
 
 #: lib/rpmprob.cc:137
 #, c-format
 msgid ""
 "installing package %s needs %<PRIu64>%cB more space on the %s filesystem"
 msgstr ""
+"a instalar o pacote %s precisa de %<PRIu64>%cB mais espaço no sistema de "
+"ficheiros %s"
 
 #: lib/rpmprob.cc:147
 #, c-format
 msgid "installing package %s needs %<PRIu64> more inodes on the %s filesystem"
 msgstr ""
+"a instalar o pacote %s precisa de %<PRIu64> mais inodes no sistema de "
+"ficheiros %s"
 
 #: lib/rpmprob.cc:151
 #, c-format
 msgid "%s is needed by %s%s"
-msgstr ""
+msgstr "%s é preciso por %s%s"
 
 #: lib/rpmprob.cc:152 lib/rpmprob.cc:156 lib/rpmprob.cc:160
 msgid "(installed) "
-msgstr ""
+msgstr "(instalado) "
 
 #: lib/rpmprob.cc:155
 #, c-format
 msgid "%s conflicts with %s%s"
-msgstr ""
+msgstr "%s faz conflito com %s%s"
 
 #: lib/rpmprob.cc:159
 #, c-format
 msgid "%s is obsoleted by %s%s"
-msgstr ""
+msgstr "%s está obsoleto por %s%s"
 
 #: lib/rpmprob.cc:163
-#, fuzzy, c-format
+#, c-format
 msgid "package %s does not verify: %s"
-msgstr "o pacote %s não está instalado\n"
+msgstr "pacote %s não verifica: %s"
 
 #: lib/rpmprob.cc:168
 #, c-format
@@ -2956,38 +2960,37 @@ msgstr "Número de arq./SO errado: %s (%s:%d)\n"
 #: lib/rpmrc.cc:325
 #, c-format
 msgid "Incomplete default line at %s:%d\n"
-msgstr "Linha por omissão incompleta em %s:%d\n"
+msgstr "Linha de predefinição incompleta em %s:%d\n"
 
 #: lib/rpmrc.cc:330
 #, c-format
 msgid "Too many args in default line at %s:%d\n"
-msgstr "Demasiados argumentos na linha por omissão em %s:%d\n"
+msgstr "Demasiados argumentos na linha de predefinição em %s:%d\n"
 
 #: lib/rpmrc.cc:456
 #, c-format
 msgid "missing ':' (found 0x%02x) at %s:%d\n"
-msgstr "falta um ':' (encontrado um 0x%02x) em %s:%d\n"
+msgstr "falta um ':' (encontrado 0x%02x) em %s:%d\n"
 
 #: lib/rpmrc.cc:473 lib/rpmrc.cc:510
 #, c-format
 msgid "missing argument for %s at %s:%d\n"
-msgstr "faltam argumentos para o %s em %s:%d\n"
+msgstr "falta argumento para %s em %s:%d\n"
 
 #: lib/rpmrc.cc:484
 #, c-format
 msgid "cannot open %s at %s:%d: %m\n"
-msgstr ""
+msgstr "incapaz de abrir %s em %s:%d: %m\n"
 
 #: lib/rpmrc.cc:493
-#, fuzzy, c-format
-#| msgid "bad option '%s' at %s:%d\n"
+#, c-format
 msgid "Ignoring %s at %s:%d\n"
-msgstr "má opção '%s' em %s:%d\n"
+msgstr "A ignorar %s em %s:%d\n"
 
 #: lib/rpmrc.cc:502
 #, c-format
 msgid "missing architecture for %s at %s:%d\n"
-msgstr "falta a arquitectura para o %s em %s:%d\n"
+msgstr "falta a arquitectura para %s em %s:%d\n"
 
 #: lib/rpmrc.cc:566
 #, c-format
@@ -2996,7 +2999,7 @@ msgstr "má opção '%s' em %s:%d\n"
 
 #: lib/rpmrc.cc:1023
 msgid "Failed to read auxiliary vector, /proc not mounted?\n"
-msgstr ""
+msgstr "Falhou ao ler vector auxiliar, /proc não montado?\n"
 
 #: lib/rpmrc.cc:1508
 #, c-format
@@ -3006,407 +3009,395 @@ msgstr "Sistema desconhecido: %s\n"
 #: lib/rpmrc.cc:1510
 #, c-format
 msgid "Please contact %s\n"
-msgstr "Por favor contacte o %s\n"
+msgstr "Por favor contacte %s\n"
 
 #: lib/rpmrc.cc:1651
 #, c-format
 msgid "Unable to open %s for reading: %m.\n"
-msgstr ""
+msgstr "Incapaz de abrir %s para leitura: %m.\n"
 
 #: lib/rpmscript.cc:198
 #, c-format
 msgid "Unable to restore current directory: %m"
-msgstr ""
+msgstr "Incapaz de restaurar diretório atual: %m"
 
 #: lib/rpmscript.cc:285
-#, fuzzy, c-format
+#, c-format
 msgid "failed to exec scriptlet interpreter %s: %s\n"
-msgstr "Não consegui analisar o %s: %m\n"
+msgstr "falhou ao executar interpretador de script %s: %s\n"
 
 #: lib/rpmscript.cc:339
 #, c-format
 msgid "Couldn't create temporary file for %s: %s\n"
-msgstr ""
+msgstr "Incapaz de criar ficheiro temporário para %s: %s\n"
 
 #: lib/rpmscript.cc:374
 #, c-format
 msgid "Couldn't duplicate file descriptor: %s: %s\n"
-msgstr ""
+msgstr "Incapaz de duplicar descritor de ficheiro: %s: %s\n"
 
 #: lib/rpmscript.cc:415
 #, c-format
 msgid "Fwrite failed: %s"
-msgstr ""
+msgstr "Fwrite falhou: %s"
 
 #: lib/rpmscript.cc:433
 #, c-format
 msgid "%s scriptlet failed, waitpid(%d) rc %d: %s\n"
-msgstr ""
+msgstr "%s scriptlet falhou, waitpid(%d) rc %d: %s\n"
 
 #: lib/rpmscript.cc:437
 #, c-format
 msgid "%s scriptlet failed, signal %d\n"
-msgstr ""
+msgstr "%s scriptlet falhou, sinal %d\n"
 
 #: lib/rpmscript.cc:440
 #, c-format
 msgid "%s scriptlet failed, exit status %d\n"
-msgstr ""
+msgstr "%s scriptlet falhou, estado de saída %d\n"
 
 #: lib/rpmtd.cc:247
 msgid "Unknown format"
-msgstr ""
+msgstr "Formato desconhecido"
 
 #: lib/rpmte.cc:152
 #, c-format
 msgid "erasing gpg-pubkey packages is deprecated; use rpmkeys --delete %s\n"
-msgstr ""
+msgstr "apagar pacotes gpg-pubkey está descontinuado; use rpmkeys --delete %s\n"
 
 #: lib/rpmte.cc:159
 msgid ""
 "public keys can not be installed as gpg-pubkey packages; use rpmkeys --"
 "import <keyfile> for that\n"
 msgstr ""
+"chaves públicas não podem ser instaladas como pacotes gpg-pubkey; use "
+"rpmkeys --import <ficheiro de chave> para isso\n"
 
 #: lib/rpmte.cc:770
 msgid "install"
-msgstr ""
+msgstr "instalar"
 
 #: lib/rpmte.cc:771
 msgid "erase"
-msgstr ""
+msgstr "apagar"
 
 #: lib/rpmte.cc:772
 msgid "rpmdb"
-msgstr ""
+msgstr "base de dados de rpm"
 
 #: lib/rpmte.cc:773
 msgid "restored"
-msgstr ""
+msgstr "restaurado"
 
 #: lib/rpmts.cc:99
 #, c-format
 msgid "cannot open Packages database in %s\n"
-msgstr "não consigo abrir a base de dados Packages em %s\n"
+msgstr "incapaz de abrir a base de dados Packages em %s\n"
 
 #: lib/rpmts.cc:211
 #, c-format
 msgid "extra '(' in package label: %s\n"
-msgstr ""
+msgstr "'(' extra na etiqueta do pacote: %s\n"
 
 #: lib/rpmts.cc:229
 #, c-format
 msgid "missing '(' in package label: %s\n"
-msgstr ""
+msgstr "'(' em falta na etiqueta do pacote: %s\n"
 
 #: lib/rpmts.cc:237
 #, c-format
 msgid "missing ')' in package label: %s\n"
-msgstr ""
+msgstr "')' em falta na etiqueta do pacote: %s\n"
 
 #: lib/rpmts.cc:285
 #, c-format
 msgid "unknown keyring type: %s, using rpmdb\n"
-msgstr ""
+msgstr "tipo de chaveiro desconhecido: %s, a usar rpmdb\n"
 
 #: lib/rpmts.cc:422
-#, fuzzy, c-format
-#| msgid "Unknown icon type: %s\n"
+#, c-format
 msgid "unknown keyring type: %s\n"
-msgstr "Tipo de ícone desconhecido: %s\n"
+msgstr "tipo de chaveiro desconhecido: %s\n"
 
 #: lib/rpmts.cc:931
-#, fuzzy, c-format
+#, c-format
 msgid "invalid package verify level %s\n"
-msgstr "número de pacote inválido: %s\n"
+msgstr "nível de verificação de pacote inválido %s\n"
 
 #: lib/rpmts.cc:1095
 msgid "transaction"
-msgstr ""
+msgstr "transação"
 
 #: lib/rpmvs.cc:181
 #, c-format
 msgid "%s tag %u: invalid type %u"
-msgstr ""
+msgstr "%s etiqueta %u: tipo inválido %u"
 
 #: lib/rpmvs.cc:187
 #, c-format
 msgid "%s: tag %u: invalid count %u"
-msgstr ""
+msgstr "%s: etiqueta %u: contagem inválida %u"
 
 #: lib/rpmvs.cc:207
 #, c-format
 msgid "%s tag %u: invalid data %p (%u)"
-msgstr ""
+msgstr "%s etiqueta %u: dados inválidos %p (%u)"
 
 #: lib/rpmvs.cc:217
 #, c-format
 msgid "%s tag %u: invalid size %u"
-msgstr ""
+msgstr "%s etiqueta %u: tamanho inválido %u"
 
 #: lib/rpmvs.cc:225
 #, c-format
 msgid "%s tag %u: invalid base64"
-msgstr ""
+msgstr "%s etiqueta %u: base64 inválido"
 
 #: lib/rpmvs.cc:244
 #, c-format
 msgid "%s tag %u: invalid OpenPGP signature"
-msgstr ""
+msgstr "%s etiqueta %u: assinatura OpenPGP inválida"
 
 #: lib/rpmvs.cc:261
 #, c-format
 msgid "%s: tag %u: invalid hex"
-msgstr ""
+msgstr "%s etiqueta %u: hexadecimal inválido"
 
 #: lib/rpmvs.cc:320
-#, fuzzy, c-format
-#| msgid "%s saved as %s\n"
+#, c-format
 msgid "%s %s%s %s"
-msgstr "%s gravado como %s\n"
+msgstr "%s %s%s %s"
 
 #: lib/rpmvs.cc:324
 msgid "digest"
-msgstr ""
+msgstr "resumo"
 
 #: lib/rpmvs.cc:329 lib/rpmvs.cc:339
 #, c-format
 msgid "%s OpenPGP %s"
-msgstr ""
+msgstr "%s OpenPGP %s"
 
 #: lib/rpmvs.cc:334
 #, c-format
 msgid "%s OpenPGP %s %s"
-msgstr ""
+msgstr "%s OpenPGP %s %s"
 
 #: lib/rpmvs.cc:337 lib/rpmvs.cc:341
 msgid "signature"
-msgstr ""
+msgstr "assinatura"
 
 #: lib/rpmvs.cc:360
 #, c-format
 msgid ", key fingerprint: %s"
-msgstr ""
+msgstr ", chave impressão digital: %s"
 
 #: lib/rpmvs.cc:386
 msgid "header"
-msgstr ""
+msgstr "cabeçalho"
 
 #: lib/rpmvs.cc:386
 msgid "package"
-msgstr ""
+msgstr "pacote"
 
 #: lib/rpmvs.cc:634
 msgid "Header"
-msgstr ""
+msgstr "Cabeçalho"
 
 #: lib/rpmvs.cc:635
 msgid "Payload"
-msgstr ""
+msgstr "Conteúdo"
 
 #: lib/signature.cc:232
 msgid "Unable to reload signature header.\n"
-msgstr "Não consegui reler o cabeçalho do assinatura.\n"
+msgstr "Incapaz de recarregar o cabeçalho da assinatura.\n"
 
 #: lib/transaction.cc:1198
 msgid "no signature"
-msgstr ""
+msgstr "nenhuma assinatura"
 
 #: lib/transaction.cc:1198
 msgid "no digest"
-msgstr ""
+msgstr "nenhum resumo"
 
 #: lib/transaction.cc:1636
 msgid "skipped"
-msgstr ""
+msgstr "saltado"
 
 #: lib/transaction.cc:1636
 msgid "failed"
-msgstr ""
+msgstr "falhado"
 
 #: lib/verify.cc:316
 msgid "no state"
-msgstr ""
+msgstr "nenhum estado"
 
 #: lib/verify.cc:318
 msgid "unknown state"
-msgstr ""
+msgstr "estado desconhecido"
 
 #: lib/verify.cc:374
 #, c-format
 msgid "missing   %c %s"
-msgstr ""
+msgstr "em falta   %c %s"
 
 #: lib/verify.cc:429
 #, c-format
 msgid "Unsatisfied dependencies for %s:\n"
-msgstr ""
+msgstr "Dependências não satisfeitas para %s:\n"
 
 #: plugins/prioreset.c:30
 #, c-format
 msgid "Unable to reset nice value: %s"
-msgstr ""
+msgstr "Incapaz de reiniciar valor bonito: %s"
 
 #: plugins/prioreset.c:41
 #, c-format
 msgid "Unable to reset I/O priority: %s"
-msgstr ""
+msgstr "Incapaz de reiniciar prioridade de I/O: %s"
 
 #: rpmio/expression.cc:365
-#, fuzzy
 msgid "syntax error while parsing =="
-msgstr "erro de sintaxe ao analisar o ==\n"
+msgstr "erro de sintaxe ao analisar =="
 
 #: rpmio/expression.cc:395
-#, fuzzy
 msgid "syntax error while parsing &&"
-msgstr "erro de sintaxe ao analisar o &&\n"
+msgstr "erro de sintaxe ao analisar &&"
 
 #: rpmio/expression.cc:404
-#, fuzzy
 msgid "syntax error while parsing ||"
-msgstr "erro de sintaxe ao analisar o ||\n"
+msgstr "erro de sintaxe ao analisar ||"
 
 #: rpmio/expression.cc:435
 msgid "macro expansion returned a bare word, please use \"...\""
-msgstr ""
+msgstr "expansão de macro retornou uma palavra crua, por favor use \"...\""
 
 #: rpmio/expression.cc:437
 msgid "macro expansion did not return an integer"
-msgstr ""
+msgstr "expansão de macro não retornou um inteiro"
 
 #: rpmio/expression.cc:438
 #, c-format
 msgid "expanded string: %s\n"
-msgstr ""
+msgstr "sequência expandida: %s\n"
 
 #: rpmio/expression.cc:467
-#, fuzzy
 msgid "unterminated string in expression"
-msgstr "esperado um { a seguir ao ? na expressão"
+msgstr "sequência não terminada na expressão"
 
 #: rpmio/expression.cc:481
-#, fuzzy
 msgid "invalid version"
-msgstr "(tipo inválido)"
+msgstr "versão inválida"
 
 #: rpmio/expression.cc:493
 msgid "bare words are no longer supported, please use \"...\""
-msgstr ""
+msgstr "palavras cruas não são mais suportadas, por favor use \"...\""
 
 #: rpmio/expression.cc:497
-#, fuzzy
 msgid "parse error in expression"
-msgstr "erro de análise na expressão\n"
+msgstr "erro de análise na expressão"
 
 #: rpmio/expression.cc:542
 msgid "unsupported function argument type"
-msgstr ""
+msgstr "tipo de argumento de função não suportado"
 
 #: rpmio/expression.cc:571 rpmio/expression.cc:578 rpmio/expression.cc:666
 #: rpmio/expression.cc:953 rpmio/expression.cc:1007 rpmio/expression.cc:1044
-#, fuzzy
 msgid "syntax error in expression"
-msgstr "erro de sintaxe na expressão\n"
+msgstr "erro de sintaxe na expressão"
 
 #: rpmio/expression.cc:589
-#, fuzzy
 msgid "unsupported function"
-msgstr "- não suportado em cadeias de caracteres\n"
+msgstr "função não suportada"
 
 #: rpmio/expression.cc:620
-#, fuzzy
 msgid "unmatched ("
-msgstr "( não correspondido\n"
+msgstr "( não correspondente"
 
 #: rpmio/expression.cc:643
-#, fuzzy
 msgid "- only on numbers"
-msgstr "- só em números\n"
+msgstr "- só em números"
 
 #: rpmio/expression.cc:662
-#, fuzzy
 msgid "unexpected end of expression"
-msgstr "esperado um | no fim da expressão"
+msgstr "fim da expressão inesperado"
 
 #: rpmio/expression.cc:707 rpmio/expression.cc:769 rpmio/expression.cc:832
 #: rpmio/expression.cc:909 rpmio/expression.cc:968
-#, fuzzy
 msgid "types must match"
-msgstr "os tipos têm de corresponder\n"
+msgstr "tipos têm de corresponder"
 
 #: rpmio/expression.cc:717
 msgid "division by zero"
-msgstr ""
+msgstr "divisão por zero"
 
 #: rpmio/expression.cc:725
 msgid "* and / not supported for versions"
-msgstr ""
+msgstr "* e / não suportados para versões"
 
 #: rpmio/expression.cc:728
-#, fuzzy
 msgid "* and / not supported for strings"
-msgstr "* / não suportados em cadeias de caracteres\n"
+msgstr "* e / não suportados para sequências de caracteres"
 
 #: rpmio/expression.cc:781
 msgid "+ and - not supported for versions"
-msgstr ""
+msgstr "+ e - não suportados para versões"
 
 #: rpmio/expression.cc:785
-#, fuzzy
 msgid "- not supported for strings"
-msgstr "- não suportado em cadeias de caracteres\n"
+msgstr "- não suportado para sequências de caracteres"
 
 #: rpmio/macro.cc:300
-#, fuzzy, c-format
+#, c-format
 msgid "%3d>%*s(empty)\n"
-msgstr "%3d>%*s(vazio)"
+msgstr "%3d>%*s(vazio)\n"
 
 #: rpmio/macro.cc:427
 msgid ""
 "Too many levels of recursion in macro expansion. It is likely caused by "
 "recursive macro declaration.\n"
 msgstr ""
+"Demasiados níveis de recursão na expansão de macro. É causado provavelmente "
+"por declaração de macro recursiva.\n"
 
 #: rpmio/macro.cc:501
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to open shell expansion pipe for command: %s: %m \n"
-msgstr "Não consegui abrir o 'pipe' para o tar: %m\n"
+msgstr "Falhou ao abrir cano e expansão de shell para comando: %s: %m \n"
 
 #: rpmio/macro.cc:576
 #, c-format
 msgid "Macro %%%s has illegal name (%s)\n"
-msgstr ""
+msgstr "Macro %%%s tem nome ilegal (%s)\n"
 
 #: rpmio/macro.cc:582
-#, fuzzy, c-format
+#, c-format
 msgid "Macro %%%s is a built-in (%s)\n"
-msgstr "A macro %%%s tem as opções incompletas\n"
+msgstr "Macro %%%s é embutida (%s)\n"
 
 #: rpmio/macro.cc:628
 #, c-format
 msgid "Macro %%%s has unterminated opts\n"
-msgstr "A macro %%%s tem as opções incompletas\n"
+msgstr "A macro %%%s tem as opções não terminadas\n"
 
 #: rpmio/macro.cc:643 rpmio/macro.cc:682
 #, c-format
 msgid "Macro %%%s has unterminated body\n"
-msgstr "A macro %%%s tem o conteúdo incompleto\n"
+msgstr "A macro %%%s tem corpo não terminado\n"
 
 #: rpmio/macro.cc:702
 #, c-format
 msgid "Macro %%%s has empty body\n"
-msgstr "A macro %%%s tem o conteúdo em branco\n"
+msgstr "A macro %%%s tem corpo vazio\n"
 
 #: rpmio/macro.cc:707
 #, c-format
 msgid "Macro %%%s needs whitespace before body\n"
-msgstr ""
+msgstr "Macro %%%s precisa de espaço e branco antes do corpo\n"
 
 #: rpmio/macro.cc:712
 #, c-format
 msgid "Macro %%%s failed to expand\n"
-msgstr "A macro %%%s não conseguiu ser expandida\n"
+msgstr "A macro %%%s falhou ao expandir\n"
 
 #: rpmio/macro.cc:839 rpmio/rpmlua.cc:268
 #, c-format
@@ -3416,33 +3407,30 @@ msgstr "Opção desconhecida %c em %s(%s)\n"
 #: rpmio/macro.cc:891
 #, c-format
 msgid "Macro %%%s defined but not used within scope\n"
-msgstr ""
+msgstr "Macro %%%s definida mas não usada dentro do escopo\n"
 
 #: rpmio/macro.cc:1010
 #, c-format
 msgid "no such macro: '%s'\n"
-msgstr ""
+msgstr "não existe tal macro: '%s'\n"
 
 #: rpmio/macro.cc:1195
-#, fuzzy, c-format
-#| msgid "invalid package number: %s\n"
+#, c-format
 msgid "invalid argument: %s\n"
-msgstr "número de pacote inválido: %s\n"
+msgstr "argumento inválido: %s\n"
 
 #: rpmio/macro.cc:1207
-#, fuzzy, c-format
+#, c-format
 msgid "failed to get available memory for %s\n"
-msgstr "Não consegui ler o ficheiro spec do %s\n"
+msgstr "falhou a obter memória disponível para %s\n"
 
 #: rpmio/macro.cc:1458
-#, fuzzy
 msgid "argument expected"
-msgstr "] inesperado"
+msgstr "esperado argumento"
 
 #: rpmio/macro.cc:1458
-#, fuzzy
 msgid "unexpected argument"
-msgstr "] inesperado"
+msgstr "argumento inesperado"
 
 #: rpmio/macro.cc:1578
 #, c-format
@@ -3452,28 +3440,29 @@ msgstr "%c não terminado: %s\n"
 #: rpmio/macro.cc:1633
 #, c-format
 msgid "A %% is followed by an unparseable macro\n"
-msgstr "Segue-se uma macro impossível de analisar ao %%\n"
+msgstr "Um %% é seguido por uma macro impossível de analisar\n"
 
 #: rpmio/macro.cc:1682
 #, c-format
 msgid "unexpected argument to non-parametric macro %%%s\n"
-msgstr ""
+msgstr "argumento inesperado para macro não-paramétrica %%%s\n"
 
 #: rpmio/macro.cc:2044
 #, c-format
 msgid "macro value out of range for int: %<PRIu64> using %i instead.\n"
 msgstr ""
+"valor de macro fora de alcance para inteiro: %<PRIu64> a usar %i em vez "
+"disto.\n"
 
 #: rpmio/macro.cc:2094
-#, fuzzy, c-format
-#| msgid "======================== active %d empty %d\n"
+#, c-format
 msgid "======================== active %zu empty %d\n"
-msgstr "======================== activo %d vazio %d\n"
+msgstr "======================== ativo %zu vazio %d\n"
 
 #: rpmio/rpmfileutil.cc:97
 #, c-format
 msgid "error creating temporary file %s: %m\n"
-msgstr ""
+msgstr "erro ao criar ficheiro temporário %s: %m\n"
 
 #: rpmio/rpmfileutil.cc:164 rpmio/rpmfileutil.cc:170
 #, c-format
@@ -3487,7 +3476,7 @@ msgstr "O ficheiro %s tem menos de %u bytes\n"
 
 #: rpmio/rpmio.cc:286
 msgid "[none]"
-msgstr ""
+msgstr "[nenhum]"
 
 #: rpmio/rpmlog.cc:95
 msgid "(no error)"
@@ -3507,102 +3496,100 @@ msgstr "aviso: "
 
 #: rpmio/rpmlog.cc:265
 msgid "Error writing to log"
-msgstr ""
+msgstr "Erro ao escrever no relatório"
 
 #: rpmio/rpmlua.cc:203
 #, c-format
 msgid "invalid syntax in lua scriptlet: %s\n"
-msgstr ""
+msgstr "sintaxe inválida em script de lua: %s\n"
 
 #: rpmio/rpmlua.cc:229
 msgid "runaway fork() in Lua script\n"
-msgstr ""
+msgstr "bifurcação() fugidia em script de Lua\n"
 
 #: rpmio/rpmlua.cc:255
 #, c-format
 msgid "invalid syntax in lua script: %s\n"
-msgstr ""
+msgstr "sintaxe inválida em script de lua: %s\n"
 
 #: rpmio/rpmlua.cc:285 rpmio/rpmlua.cc:323
 #, c-format
 msgid "lua script failed: %s\n"
-msgstr ""
+msgstr "script de lua falhou: %s\n"
 
 #: rpmio/rpmlua.cc:296
 #, c-format
 msgid "result print failed: %s\n"
-msgstr ""
+msgstr "escrita de resultados falhou: %s\n"
 
 #: rpmio/rpmlua.cc:318
 #, c-format
 msgid "invalid syntax in lua file: %s\n"
-msgstr ""
+msgstr "sintaxe inválida em ficheiro de lua: %s\n"
 
 #: rpmio/rpmlua.cc:661
 #, c-format
 msgid "lua hook failed: %s\n"
-msgstr ""
+msgstr "gancho lua falhou: %s\n"
 
 #: rpmio/rpmmalloc.cc:26
 #, c-format
 msgid "memory alloc (%u bytes) returned NULL.\n"
-msgstr "a alocação de memória (%u bytes) devolveu NULL.\n"
+msgstr "a alocação de memória (%u bytes) retornou NULL.\n"
 
 #: rpmio/rpmpgp.cc:57
 #, c-format
 msgid "V%d %s/%s %s, key ID %s"
-msgstr ""
+msgstr "V%d %s/%s %s, ID de chave %s"
 
 #: rpmio/rpmpgp.cc:67
 msgid "(none)"
-msgstr ""
+msgstr "(nenhum)"
 
 #: rpmio/url.cc:125
-#, fuzzy, c-format
-#| msgid "Could not open %s: %s\n"
+#, c-format
 msgid "Could not find url helper: \"%s\"\n"
-msgstr "Não consigo aceder ao %s: %s\n"
+msgstr "Incapaz de encontrar ajudante de url: \"%s\"\n"
 
 #: rpmio/url.cc:129
 #, c-format
 msgid "Executing url helper \"%s\" failed with status %i\n"
-msgstr ""
+msgstr "Executar de ajudante url \"%s\" falhou com estado %i\n"
 
 #: sign/rpmgensig.cc:114
 #, c-format
 msgid "%s: Fwrite failed: %s\n"
-msgstr "%s: O fwrite falhou: %s\n"
+msgstr "%s: O Fwrite falhou: %s\n"
 
 #: sign/rpmgensig.cc:120
 #, c-format
 msgid "%s: Fread failed: %s\n"
-msgstr "%s: O fread falhou: %s\n"
+msgstr "%s: O Fread falhou: %s\n"
 
 #: sign/rpmgensig.cc:124
 #, c-format
 msgid "%s: Fflush failed: %s\n"
-msgstr ""
+msgstr "%s: O Fflush falhou: %s\n"
 
 #: sign/rpmgensig.cc:144
 #, c-format
 msgid "Expanding signing macro %s failed\n"
-msgstr ""
+msgstr "Expandir macro de assinatura %s falhou\n"
 
 #: sign/rpmgensig.cc:150
-#, fuzzy, c-format
-#| msgid "Invalid %s token: %s\n"
+#, c-format
 msgid "Invalid sign command: %s\n"
-msgstr "Elemento %s inválido: %s\n"
+msgstr "Comando de assinar inválido: %s\n"
 
 #: sign/rpmgensig.cc:173
-#, fuzzy, c-format
+#, c-format
 msgid "Could not create pipe for signing: %m\n"
-msgstr "Não consigo aceder ao %s: %s\n"
+msgstr "Incapaz de criar cano para assinatura: %m\n"
 
 #: sign/rpmgensig.cc:185
-#, fuzzy, c-format
+#, c-format
 msgid "Could not set GPG_TTY to stdin: %m\n"
-msgstr "Não consigo aceder ao %s: %s\n"
+msgstr "Incapaz de definir GPG_TTY para stdin: %m\n"
 
 #: sign/rpmgensig.cc:194
 #, c-format
