@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: RPM\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
-"PO-Revision-Date: 2026-07-03 22:17+0000\n"
+"PO-Revision-Date: 2026-07-03 22:56+0000\n"
 "Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
 "Language-Team: Portuguese <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/pt/>\n"
@@ -1172,7 +1172,7 @@ msgstr "E usado um gerador de dependência externa descontinuado!\n"
 
 #: build/rpmfc.cc:1624
 msgid "External dependency generator is incompatible with v6 packages\n"
-msgstr "Gerador de dependência externa  é incompatível com pacotes v6\n"
+msgstr "Gerador de dependência externa é incompatível com pacotes v6\n"
 
 #: build/spec.cc:77
 #, c-format
@@ -2170,7 +2170,7 @@ msgstr "normal        "
 
 #: lib/query.cc:157
 msgid "replaced      "
-msgstr "substituído   "
+msgstr "substituído      "
 
 #: lib/query.cc:160
 msgid "not installed "
@@ -2186,12 +2186,12 @@ msgstr "cor errada   "
 
 #: lib/query.cc:169
 msgid "(no state)    "
-msgstr "(sem estado)  "
+msgstr "(sem estado)    "
 
 #: lib/query.cc:172
 #, c-format
 msgid "(unknown %3d) "
-msgstr "(desconhecido %3d)"
+msgstr "(desconhecido %3d) "
 
 #: lib/query.cc:192
 msgid "package has not file owner/group lists\n"
@@ -2526,7 +2526,7 @@ msgstr "o algoritmo de resumo do ficheiro é configurável por pacote"
 
 #: lib/rpmds.cc:1086
 msgid "support for POSIX.1e file capabilities"
-msgstr "suporte para capacidades de ficheiro 1e do POSIX."
+msgstr "suporte para capacidades de ficheiro 1e do POSIX"
 
 #: lib/rpmds.cc:1090
 msgid "package scriptlets can be expanded at install time."
@@ -2955,7 +2955,7 @@ msgstr "Demasiados argumentos na linha de dados em %s:%d\n"
 #: lib/rpmrc.cc:308
 #, c-format
 msgid "Bad arch/os number: %s (%s:%d)\n"
-msgstr "Número de arq./SO errado: %s (%s:%d)\n"
+msgstr "Número de arquitetura/SO errado: %s (%s:%d)\n"
 
 #: lib/rpmrc.cc:325
 #, c-format
@@ -3871,7 +3871,7 @@ msgstr "--excludedocs só pode ser especificado durante a instalação do pacote
 
 #: tools/rpm.cc:164
 msgid "--includedocs may only be specified during package installation"
-msgstr "--includedocs  só pode ser especificado durante a instalação do pacote"
+msgstr "--includedocs só pode ser especificado durante a instalação do pacote"
 
 #: tools/rpm.cc:168
 msgid "only one of --excludedocs and --includedocs may be specified"
@@ -4014,14 +4014,14 @@ msgstr "buildroot já foi especificado, a ignorar %s\n"
 msgid "build through %prep (unpack sources and apply patches) from <specfile>"
 msgstr ""
 "compilar através de %prep (desempacotar fontes e aplicar patches) a partir "
-"de <fichspec>"
+"de <specfile>"
 
 #: tools/rpmbuild.cc:152 tools/rpmbuild.cc:155 tools/rpmbuild.cc:158
 #: tools/rpmbuild.cc:161 tools/rpmbuild.cc:164 tools/rpmbuild.cc:167
 #: tools/rpmbuild.cc:170 tools/rpmbuild.cc:173 tools/rpmbuild.cc:176
 #: tools/rpmbuild.cc:179 tools/rpmbuild.cc:186 tools/rpmbuild.cc:217
 msgid "<specfile>"
-msgstr "<fichspec>"
+msgstr "<specfile>"
 
 #: tools/rpmbuild.cc:154
 #, c-format
@@ -4260,53 +4260,54 @@ msgstr "não aceita mensagens de i18N do ficheiro de especificações"
 
 #: tools/rpmbuild.cc:275
 msgid "remove sources when done"
-msgstr "apagar o código-fonte quando acabar"
+msgstr "apaga as fontes quando acabado"
 
 #: tools/rpmbuild.cc:277
 msgid "remove specfile when done"
-msgstr "apagar o ficheiro spec quando acabar"
+msgstr "apaga o ficheiro spec quando acabado"
 
 #: tools/rpmbuild.cc:279
 msgid "skip straight to specified stage (only for c,i)"
-msgstr "saltar directamente para a etapa indicada (só para c,i)"
+msgstr "salta directamente para o estágio indicado (apenas para c,i)"
 
 #: tools/rpmbuild.cc:281
 msgid "override target platform"
-msgstr "ignorar a plataforma-alvo"
+msgstr "sobrepor a plataforma visada"
 
 #: tools/rpmbuild.cc:298
 msgid "Build options with [ <specfile> | <tarball> | <source package> ]:"
-msgstr "Opções de criação com [ <fich spec> | <fich tar> | <pacote fonte> ]:"
+msgstr ""
+"Opções de compilação com [ <ficheiro spec> | <tarball> | <pacote fonte> ]:"
 
 #: tools/rpmbuild.cc:322
 #, c-format
 msgid "Unable to open spec file %s: %s\n"
-msgstr "Não consegui abrir ficheiro spec %s: %s\n"
+msgstr "Incapaz de abrir ficheiro spec %s: %s\n"
 
 #: tools/rpmbuild.cc:383
 #, c-format
 msgid "Failed to open tar pipe: %m\n"
-msgstr "Não consegui abrir o 'pipe' para o tar: %m\n"
+msgstr "Falhou ao abrir cano de tar: %m\n"
 
 #: tools/rpmbuild.cc:398
 #, c-format
 msgid "Found more than one spec file in %s\n"
-msgstr ""
+msgstr "Encontrado mais do que um ficheiro spec em %s\n"
 
 #: tools/rpmbuild.cc:409
 #, c-format
 msgid "Failed to read spec file from %s\n"
-msgstr "Não consegui ler o ficheiro spec do %s\n"
+msgstr "Falhou ao ler o ficheiro spec a partir de %s\n"
 
 #: tools/rpmbuild.cc:415
 #, c-format
 msgid "Failed to rename %s to %s: %m\n"
-msgstr "Não consegui mudar o nome de %s para %s: %m\n"
+msgstr "Falhou ao mudar o nome de %s para %s: %m\n"
 
 #: tools/rpmbuild.cc:479
 #, c-format
 msgid "failed to stat %s: %m\n"
-msgstr "Não consegui analisar o %s: %m\n"
+msgstr "falhou ao fazer stat a %s: %m\n"
 
 #: tools/rpmbuild.cc:483
 #, c-format
@@ -4335,133 +4336,133 @@ msgstr "%s: a leitura do manifesto falhou: %s\n"
 
 #: tools/rpmgraph.cc:216
 msgid "don't verify header+payload signature"
-msgstr ""
+msgstr "não verifica a assinatura do cabeçalho e conteúdo"
 
 #: tools/rpmkeys.cc:27
 msgid "verify package signature(s)"
-msgstr ""
+msgstr "verifica assinatura(s) do pacote"
 
 #: tools/rpmkeys.cc:29
 msgid "import an armored public key"
-msgstr ""
+msgstr "importar uma chave pública blindada"
 
 #: tools/rpmkeys.cc:31
 msgid "export an public key"
-msgstr ""
+msgstr "exportar uma chave pública"
 
 #: tools/rpmkeys.cc:33
 msgid "don't import, but tell if it would work or not"
-msgstr ""
+msgstr "não importa, mas diz se iria funcionar ou não"
 
 #: tools/rpmkeys.cc:35 tools/rpmkeys.cc:37
 msgid "Erase keys from RPM keyring"
-msgstr ""
+msgstr "Apaga chaves do chaveiro do RPM"
 
 #: tools/rpmkeys.cc:39
 msgid "list keys from RPM keyring"
-msgstr ""
+msgstr "Lista chaves do chaveiro do RPM"
 
 #: tools/rpmkeys.cc:41
 msgid "rebuild the keyring - convert to current backend"
-msgstr ""
+msgstr "reconstrói o chaveiro - converte para o backend atual"
 
 #: tools/rpmkeys.cc:43
 msgid "get keys from this backend when rebuilding current backend"
-msgstr ""
+msgstr "obtém chaves deste backend ao reconstruir o backend atual"
 
 #: tools/rpmkeys.cc:49
 msgid "Keyring options:"
-msgstr ""
+msgstr "Opções de chaveiro:"
 
 #: tools/rpmkeys.cc:153 tools/rpmsign.cc:209
 msgid "no arguments given"
-msgstr ""
+msgstr "nenhum argumento fornecido"
 
 #: tools/rpmlua.cc:24
 msgid "getopt string for scripts options"
-msgstr ""
+msgstr "string de getopt para opções de scripts"
 
 #: tools/rpmlua.cc:26
 msgid "execute statement"
-msgstr ""
+msgstr "executa declaração"
 
 #: tools/rpmlua.cc:28
 msgid "interactive session"
-msgstr ""
+msgstr "sessão interativa"
 
 #: tools/rpmsign.cc:36
 msgid "sign package(s), adding a new signature"
-msgstr ""
+msgstr "assinar pacote(s), adicionar uma nova assinatura"
 
 #: tools/rpmsign.cc:38
 msgid "resign package(s), deleting any previous signatures"
-msgstr ""
+msgstr "re-assinar pacote(s), apagar quaisquer assinaturas anteriores"
 
 #: tools/rpmsign.cc:40
 msgid "delete package signatures"
-msgstr ""
+msgstr "apagar assinaturas de pacote"
 
 #: tools/rpmsign.cc:43
 msgid "delete IMA and fsverity file signatures"
-msgstr ""
+msgstr "apagar assinaturas de ficheiros IMA e fsverity"
 
 #: tools/rpmsign.cc:47
 msgid "request legacy rpm v3 header+payload signatures on v4 packages"
 msgstr ""
+"requisitar assinaturas rpm v3 legado de cabeçalho e conteúdo em pacotes v4"
 
 #: tools/rpmsign.cc:50
 msgid "request legacy rpm v4 header signatures on v6 packages"
-msgstr ""
+msgstr "requisitar assinaturas rpm v4 legado de cabeçalho em pacotes v6"
 
 #: tools/rpmsign.cc:53
 msgid "request rpm v6 header signature on v4 packages"
-msgstr ""
+msgstr "requisitar assinaturas rpm v6 de cabeçalho em pacotes v4"
 
 #: tools/rpmsign.cc:57
 msgid "sign package(s) files"
-msgstr ""
+msgstr "assinar ficheiros de pacote(s)"
 
 #: tools/rpmsign.cc:62
 msgid "generate fsverity signatures for package(s) files"
-msgstr ""
+msgstr "gerar assinaturas fsverity para ficheiros de pacote(s)"
 
 #: tools/rpmsign.cc:64
 msgid "algorithm to use for verity signatures, default sha256"
-msgstr ""
+msgstr "algoritmo a usar para verificar assinaturas, predefinição sha256"
 
 #: tools/rpmsign.cc:65
 msgid "<algorithm>"
-msgstr ""
+msgstr "<algoritmo>"
 
 #: tools/rpmsign.cc:67
 msgid "use file signing cert <cert>"
-msgstr ""
+msgstr "usar certificado de assinatura de ficheiro <cert>"
 
 #: tools/rpmsign.cc:68
 msgid "<cert>"
-msgstr ""
+msgstr "<cert>"
 
 #: tools/rpmsign.cc:72
 msgid "use file signing key <key>"
-msgstr ""
+msgstr "usar chave de assinatura de ficheiro <key>"
 
 #: tools/rpmsign.cc:73
 msgid "<key>"
-msgstr ""
+msgstr "<key>"
 
 #: tools/rpmsign.cc:75
 msgid "prompt for file signing key password"
-msgstr ""
+msgstr "aviso por palavra passe de chave de assinatura de ficheiro"
 
 #: tools/rpmsign.cc:82
 msgid "Signature options:"
 msgstr "Opções de assinatura:"
 
 #: tools/rpmsign.cc:139
-#, fuzzy, c-format
-#| msgid "You must set \"%%_gpg_name\" in your macro file\n"
+#, c-format
 msgid "You must set \"%%_openpgp_sign_id\" in your macro file\n"
-msgstr "Precisa definir o \"%%_gpg_name\" no seu ficheiro de macros\n"
+msgstr "Tem de definir \"%%_openpgp_sign_id\" no seu ficheiro de macro\n"
 
 #: tools/rpmsign.cc:161
 #, c-format
@@ -4469,59 +4470,63 @@ msgid ""
 "You must set \"%%_file_signing_key\" in your macro file or on the command "
 "line with --fskpath\n"
 msgstr ""
+"Tem de definir \"%%_file_signing_key\" no seu ficheiro de macro ou na linha "
+"de comandos com --fskpath\n"
 
 #: tools/rpmsign.cc:214
 msgid "--fskpath may only be specified when signing files"
-msgstr ""
+msgstr "--fskpath apenas pode ser especificado ao assinar ficheiros"
 
 #: tools/rpmspec.cc:30
 msgid "parse spec file(s) to stdout"
-msgstr ""
+msgstr "analisa ficheiros spec para o stdout"
 
 #: tools/rpmspec.cc:32
 msgid "query spec file(s)"
-msgstr ""
+msgstr "consulta ficheiros spec"
 
 #: tools/rpmspec.cc:35
 msgid "interactive macro shell"
-msgstr ""
+msgstr "shell de macro interativa"
 
 #: tools/rpmspec.cc:38
 msgid "operate on binary rpms generated by spec (default)"
-msgstr ""
+msgstr "operar em rpms binários gerados por spec (predefinição)"
 
 #: tools/rpmspec.cc:40
 msgid "operate on binary package header(s) that would be built from spec"
 msgstr ""
+"operar em cabeçalhos de pacotes binários que seriam compilados a partir de "
+"spec"
 
 #: tools/rpmspec.cc:42
 msgid "operate on source package header generated by spec"
-msgstr ""
+msgstr "operar em cabeçalho de pacote fonte gerado por spec"
 
 #: tools/rpmspec.cc:53
 msgid "Spec options:"
-msgstr ""
+msgstr "Opções de spec:"
 
 #: tools/rpmspec.cc:68
 #, c-format
 msgid "RPM version %s macro shell\n"
-msgstr ""
+msgstr "Versão RPM %s shell de macro\n"
 
 #: tools/rpmspec.cc:95
 msgid "no arguments given for parse"
-msgstr ""
+msgstr "nenhuns argumentos fornecidos para análise"
 
 #: tools/rpmuncompress.cc:24
 msgid "extract an archive"
-msgstr ""
+msgstr "extrai um arquivo"
 
 #: tools/rpmuncompress.cc:28
 msgid "only print what would be done"
-msgstr ""
+msgstr "apenas escreve o que seria feito"
 
 #: tools/rpmuncompress.cc:30
 msgid "extract into a specific path"
-msgstr ""
+msgstr "extrai para um caminho específico"
 
 #, c-format
 #~ msgid "files over 4GB not supported by cpio, use rpm2archive instead\n"
