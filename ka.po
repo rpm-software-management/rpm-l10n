@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
-"PO-Revision-Date: 2026-04-05 18:58+0000\n"
+"PO-Revision-Date: 2026-07-12 03:17+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/ka/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.16.2\n"
+"X-Generator: Weblate 2026.7.1\n"
 
 #: build/build.cc:42
 msgid "unable to parse _buildtime macro\n"
@@ -389,7 +389,7 @@ msgstr ""
 #: build/pack.cc:102
 #, c-format
 msgid "create archive failed on file %s: %s\n"
-msgstr ""
+msgstr "არქივის შექმნის შეცდომა ფაილზე %s: %s\n"
 
 #: build/pack.cc:105
 #, c-format
@@ -546,7 +546,7 @@ msgstr ""
 #: build/parseFiles.cc:33
 #, c-format
 msgid "line %d: Error parsing %%files: %s\n"
-msgstr ""
+msgstr "ხაზი %d: %%files-ის დამუშავების შეცდომა: %s\n"
 
 #: build/parseFiles.cc:73
 #, c-format
