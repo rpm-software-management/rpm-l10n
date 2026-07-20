@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
-"PO-Revision-Date: 2026-05-05 18:59+0000\n"
+"PO-Revision-Date: 2026-07-21 18:18+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/rpm/rpm-l10n/pt_BR/>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.17.1\n"
+"X-Generator: Weblate 2026.7.1\n"
 
 #: build/build.cc:42
 msgid "unable to parse _buildtime macro\n"
@@ -1374,7 +1374,7 @@ msgstr "região: sem tags"
 #: lib/header.cc:1879
 #, c-format
 msgid "region tag: BAD, tag %d type %d offset %d count %d"
-msgstr ""
+msgstr "tag região: INCORRETA, tag %d tipo %d posição %d contagem %d"
 
 #: lib/header.cc:1887
 #, c-format
