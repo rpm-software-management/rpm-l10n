@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
-"PO-Revision-Date: 2026-07-21 18:18+0000\n"
+"PO-Revision-Date: 2026-07-24 15:17+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/rpm/rpm-l10n/pt_BR/>\n"
@@ -1534,13 +1534,12 @@ msgstr "não foi possível criar o bloqueio de transação %s em %s (%s)\n"
 #: lib/keystore.cc:203
 #, c-format
 msgid "Can't acquire writelock for keyring at %s\n"
-msgstr ""
+msgstr "não foi possível adquirir bloqueio de escrita para chaveiro em %s\n"
 
 #: lib/keystore.cc:298
-#, fuzzy, c-format
-#| msgid "%s: not an armored public key.\n"
+#, c-format
 msgid "%s is not a valid public key\n"
-msgstr "%s: não é uma chave pública blindada.\n"
+msgstr "%s não é uma chave pública válida\n"
 
 #: lib/package.cc:265
 #, c-format
@@ -1554,12 +1553,12 @@ msgstr "RPM versão %s\n"
 
 #: lib/poptALL.cc:139
 msgid "Error writing to stdout"
-msgstr ""
+msgstr "Erro ao escrever para a saída padrão"
 
 #: lib/poptALL.cc:150 rpmio/macro.cc:1300
 #, c-format
 msgid "failed to load macro file %s\n"
-msgstr ""
+msgstr "falha a carregar arquivo de macro %s\n"
 
 #: lib/poptALL.cc:157
 #, c-format
@@ -1571,10 +1570,11 @@ msgstr "argumentos para --dbpath devem começar com '/'\n"
 msgid ""
 "%s: error: more than one --pipe specified (incompatible popt aliases?)\n"
 msgstr ""
+"%s: erro: mais de um --pipe especificado (apelidos de popt incompatíveis?)\n"
 
 #: lib/poptALL.cc:213
 msgid "predefine MACRO with value EXPR"
-msgstr "predefinir MACRO com valor EXPR"
+msgstr "predefine MACRO com valor EXPR"
 
 #: lib/poptALL.cc:214 lib/poptALL.cc:217
 msgid "'MACRO EXPR'"
@@ -1582,11 +1582,11 @@ msgstr "\"MACRO EXPR\""
 
 #: lib/poptALL.cc:216
 msgid "define MACRO with value EXPR"
-msgstr "definir MACRO com valor EXPR"
+msgstr "define MACRO com valor EXPR"
 
 #: lib/poptALL.cc:219
 msgid "undefine MACRO"
-msgstr ""
+msgstr "MACRO indefinida"
 
 #: lib/poptALL.cc:220
 msgid "MACRO"
@@ -1594,7 +1594,7 @@ msgstr "MACRO"
 
 #: lib/poptALL.cc:222
 msgid "print macro expansion of EXPR"
-msgstr "imprimir expansão do macro da EXPR"
+msgstr "imprime expansão do macro da EXPR"
 
 #: lib/poptALL.cc:223
 msgid "'EXPR'"
@@ -1602,15 +1602,15 @@ msgstr "\"EXPR\""
 
 #: lib/poptALL.cc:225
 msgid "Specify target platform"
-msgstr ""
+msgstr "Especifica a plataforma de destino"
 
 #: lib/poptALL.cc:225
 msgid "CPU-VENDOR-OS"
-msgstr ""
+msgstr "SO-FABRICANTE-CPU"
 
 #: lib/poptALL.cc:227 lib/poptALL.cc:249
 msgid "read <FILE:...> instead of default file(s)"
-msgstr "ler <ARQUIVO:...> ao invés do(s) arquivo(s) padrão"
+msgstr "lê <ARQUIVO:...> ao invés do(s) arquivo(s) padrão"
 
 #: lib/poptALL.cc:228 lib/poptALL.cc:250
 msgid "<FILE:...>"
@@ -1618,7 +1618,7 @@ msgstr "<ARQUIVO:...>"
 
 #: lib/poptALL.cc:230
 msgid "load a single macro file"
-msgstr ""
+msgstr "carrega um único arquivo de macro"
 
 #: lib/poptALL.cc:231
 msgid "<FILE>"
@@ -1626,23 +1626,23 @@ msgstr "<ARQUIVO>"
 
 #: lib/poptALL.cc:236
 msgid "don't enable any plugins"
-msgstr ""
+msgstr "não ativa qualquer plugins"
 
 #: lib/poptALL.cc:239
 msgid "don't verify package digest(s)"
-msgstr "não verificar digest(s) dos pacotes"
+msgstr "não verifica digest(s) dos pacotes"
 
 #: lib/poptALL.cc:241
 msgid "don't verify database header(s) when retrieved"
-msgstr "não verificar cabeçalho(s) do banco de dados ao recuperá-lo(s)"
+msgstr "não verifica cabeçalho(s) do banco de dados ao recuperá-lo(s)"
 
 #: lib/poptALL.cc:243
 msgid "don't verify package signature(s)"
-msgstr "não verificar a(s) assinatura(s) do pacote"
+msgstr "não verifica a(s) assinatura(s) do pacote"
 
 #: lib/poptALL.cc:246
 msgid "send stdout to CMD"
-msgstr "enviar stdout para CMD"
+msgstr "envia stdout para CMD"
 
 #: lib/poptALL.cc:247
 msgid "CMD"
@@ -1650,7 +1650,7 @@ msgstr "CMD"
 
 #: lib/poptALL.cc:252
 msgid "use ROOT as top level directory"
-msgstr "utilizar ROOT como o diretório de nível mais alto"
+msgstr "usa ROOT como o diretório de nível mais alto"
 
 #: lib/poptALL.cc:253
 msgid "ROOT"
@@ -1658,7 +1658,7 @@ msgstr "ROOT"
 
 #: lib/poptALL.cc:255
 msgid "use database in DIRECTORY"
-msgstr ""
+msgstr "usa banco de dados no DIRETÓRIO"
 
 #: lib/poptALL.cc:256
 msgid "DIRECTORY"
@@ -1666,11 +1666,11 @@ msgstr "DIRETÓRIO"
 
 #: lib/poptALL.cc:259
 msgid "display known query tags"
-msgstr "exibir etiquetas de consulta conhecidas"
+msgstr "exibe etiquetas de consulta conhecidas"
 
 #: lib/poptALL.cc:261
 msgid "display final rpmrc and macro configuration"
-msgstr "exibir configuração final do rpmrc e do macro"
+msgstr "exibe configuração final do rpmrc e do macro"
 
 #: lib/poptALL.cc:263
 msgid "provide less detailed output"
@@ -1686,11 +1686,11 @@ msgstr "mostra a versão do rpm que está sendo usada"
 
 #: lib/poptALL.cc:270
 msgid "debug payload file state machine"
-msgstr "depurar máquina de estados do arquivo de carga últil"
+msgstr "depura máquina de estados do arquivo de carga últil"
 
 #: lib/poptALL.cc:276
 msgid "debug rpmio I/O"
-msgstr "depurar E/S rpmio"
+msgstr "depura E/S rpmio"
 
 #: lib/poptALL.cc:337
 #, c-format
@@ -1723,20 +1723,20 @@ msgid ""
 "remove all packages which match <package> (normally an error is generated if "
 "<package> specified multiple packages)"
 msgstr ""
-"remover todos os pacotes iguais ao <pacote> (normalmente um erro é gerado se "
+"remove todos os pacotes iguais ao <pacote> (normalmente um erro é gerado se "
 "o <pacote> especificou múltiplos pacotes)"
 
 #: lib/poptI.cc:129
 msgid "relocate files in non-relocatable package"
-msgstr "realocar arquivos em pacotes não realocáveis"
+msgstr "realoca arquivos em pacotes não realocáveis"
 
 #: lib/poptI.cc:133
 msgid "print dependency loops as warning"
-msgstr "exibir loops de dependências como aviso"
+msgstr "exibe loops de dependências como aviso"
 
 #: lib/poptI.cc:137
 msgid "erase (uninstall) package"
-msgstr "remover (desinstalar) pacote"
+msgstr "remove (desinstala) pacote"
 
 #: lib/poptI.cc:137
 msgid "<package>+"
