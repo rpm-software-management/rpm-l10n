@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
-"PO-Revision-Date: 2026-07-12 03:17+0000\n"
+"PO-Revision-Date: 2026-08-22 04:18+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/rpm/"
 "rpm-l10n/ka/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.7.1\n"
+"X-Generator: Weblate 2026.8.1\n"
 
 #: build/build.cc:42
 msgid "unable to parse _buildtime macro\n"
@@ -102,7 +102,7 @@ msgstr "%s-ში ')' აკლია %s\n"
 #: build/files.cc:381 build/files.cc:692
 #, c-format
 msgid "Invalid %s token: %s\n"
-msgstr ""
+msgstr "არასწორი %s-ის ტოკენი: %s\n"
 
 #: build/files.cc:493
 #, c-format
@@ -286,7 +286,7 @@ msgstr ""
 #: build/files.cc:1936
 #, c-format
 msgid "Missing build-id in %s\n"
-msgstr ""
+msgstr "აკლია build-id %s-ში\n"
 
 #: build/files.cc:1941
 #, c-format
@@ -314,7 +314,7 @@ msgstr ""
 #: build/files.cc:2231
 #, c-format
 msgid "Could not open %s file %s: %m\n"
-msgstr ""
+msgstr "ვერ გავხსენი %s-ის ფაილი %s: %m\n"
 
 #: build/files.cc:2256
 #, c-format
@@ -529,7 +529,7 @@ msgstr ""
 #: build/parseDescription.cc:33
 #, c-format
 msgid "line %d: Error parsing %%description: %s\n"
-msgstr ""
+msgstr "ხაზი %d: %%description-ის დამუშავების შეცდომა: %s\n"
 
 #: build/parseDescription.cc:46 build/parseFiles.cc:46
 #: build/parsePolicies.cc:45 build/parseScript.cc:318
@@ -561,7 +561,7 @@ msgstr "ხაზი %d: %%policies-ის დამუშავების შ
 #: build/parsePreamble.cc:81
 #, c-format
 msgid "Error parsing tag field: %s\n"
-msgstr ""
+msgstr "ჭდის ველის დამუშავების შეცდომა: %s\n"
 
 #: build/parsePreamble.cc:194
 #, c-format
