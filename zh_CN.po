@@ -33,7 +33,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
 "PO-Revision-Date: 2026-10-12 02:18+0000\n"
-"Last-Translator: Kung Kun <kun17.kung317@silomails.com>\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/rpm/rpm-l10n/zh_CN/>\n"
 "Language: zh_CN\n"
@@ -183,7 +184,7 @@ msgstr "缺少引号： %s\n"
 #: build/files.cc:902
 #, c-format
 msgid "Trailing backslash: %s\n"
-msgstr ""
+msgstr "尾部反斜杠：%s\n"
 
 #: build/files.cc:914
 #, c-format
@@ -195,7 +196,7 @@ msgstr "文件必须以 \"/\" 开头： %s\n"
 msgid ""
 "%%clamp_mtime_to_source_date_epoch is deprecated, please use "
 "%%build_mtime_policy\n"
-msgstr ""
+msgstr "%%clamp_mtime_to_source_date_epoch 已弃用，请使用 %%build_mtime_policy\n"
 
 #: build/files.cc:1050
 #, c-format
