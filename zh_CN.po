@@ -32,9 +32,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-11 08:40+0200\n"
-"PO-Revision-Date: 2026-10-12 02:18+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"PO-Revision-Date: 2026-10-13 12:18+0000\n"
+"Last-Translator: Cold Mint <cold_mint@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/rpm/rpm-l10n/zh_CN/>\n"
 "Language: zh_CN\n"
@@ -1213,9 +1212,9 @@ msgid "Converting database from %s to %s backend\n"
 msgstr "将资料库从 %s 转换至 %s 后端\n"
 
 #: lib/backend/dbi.cc:118
-#, c-format, fuzzy
+#, c-format
 msgid "Found %s %s database while attempting %s backend: using %s backend.\n"
-msgstr "尝试 %3$s 后端时发现 %1$s %2$s 数据库：使用 %4$s 后端。\n"
+msgstr "尝试加载 %s 后端时，检测到 %s %s 数据库：将使用 %s 后端。\n"
 
 #: lib/backend/ndb/glue.cc:102
 msgid "Detected outdated index databases\n"
@@ -2362,9 +2361,9 @@ msgid "Generating %d missing index(es), please wait...\n"
 msgstr "正在生成缺失的 %d 个索引，请稍后……\n"
 
 #: lib/rpmdb.cc:138 lib/rpmdb.cc:184
-#, c-format, fuzzy
+#, c-format
 msgid "cannot open %s index using %s - %s (%d)\n"
-msgstr "无法使用%2$s - %3$s (%4$d) 开启 %1$s 索引\n"
+msgstr "无法使用 %s 打开 %s索引 - %s（%s）\n"
 
 #: lib/rpmdb.cc:397
 msgid "no dbpath has been set\n"
